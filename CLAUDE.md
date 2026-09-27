@@ -29,7 +29,7 @@ It is a source of baselines, negative results, benchmark definitions, leakage co
 - Several apparent quantum wins disappeared under stronger classical controls.
 - CVaR tail collapse and solver equivalence were real failure mechanisms.
 
-The local path of that repository is not yet recorded. Ask the user rather than guessing.
+The S29–S33 history lives in `C:\Users\abena\cvar-vqe-protein-folding-v3` (its S29 contract says the work originally ran in the `Protein-Folding-Algorithm` repo, branch `s26`). Treat it as **read-only**. Its evidence for S29–S33 is already imported, with citations, into `research/sprint29/` … `research/sprint33/`. Read those files before going back to the source.
 
 ## Non-negotiable scientific rules
 
