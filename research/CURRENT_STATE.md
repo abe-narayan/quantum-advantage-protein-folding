@@ -1,5 +1,27 @@
 # Current State
 
+_Last updated: 2026-09-27, later the same day. **Discovery sprint RESUMED.** This supersedes the "PAUSED" entry below, which is kept for history._
+
+## Status after resume and the adversarial review of R1
+
+- **Compute.** The governor is running again on `research/results/RAW/master/spool_resume.jsonl`.
+  - Limits: 4 workers; RAM launch ≤ 82%, suspend 88%, kill 92% (live-configurable via `control.json`).
+  - Queue order: R1-SIM cone convergence (T-A) first, then transmission (R2-T), census L = 120/150, 2048-restart census, T-scan, temperature exchange and the synthetic lab.
+  - Cancelled (`cancel.txt`): C1/HN NMR panel jobs, C2 N ≥ 14, PoP N=12.
+- **R1 (NMR echo window) is KILLED** as a protein-structure quantum advantage (KILLBOOK K-105; `experiments/ADVERSARIAL/R1_SYNTHESIS.md`, `R1_CRITIC.md`).
+  1. The N=10 "classical failure" was a failure of truncations that stopped at ε ≥ 1e-4. At ε = 3e-5, which is roughly the full operator space, and in exact simulation (seconds), the echo is reproduced.
+  2. The 10-spin reference is unconverged.
+  3. The pre-registered C3 feasibility survival clause failed: the informative window lies beyond measured reversal horizons.
+  4. Value: gain ~1.1–1.5 under realistic priors and attenuation; fault-tolerant break-even needs N_eff ≈ 30–47 at 4–6 h per evaluation.
+- **Open residue: R1-SIM.** Is the converged dense-network echo beyond exact classical reach?
+  - This is a physics-simulation, category-3 candidate. It cannot revive R1.
+  - Pre-registered; T-A running.
+- **Every discovery mechanism is killed** (28/28, K-101…K-105). **No quantum advantage for protein-structure computation survives in any examined regime.**
+
+---
+
+# Previous entry (PAUSED)
+
 _Last updated: 2026-09-27. **Discovery sprint PAUSED** at the user's request (resume in ~2 h). The previous entry (same date, "in progress") is superseded by this one; see git history for it._
 
 | Field | Value |

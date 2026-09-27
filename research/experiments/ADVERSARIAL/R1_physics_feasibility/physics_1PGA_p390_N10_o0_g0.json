@@ -1,0 +1,14 @@
+{
+ "job": "1PGA_p390_N10_o0_g0.json",
+ "rotor": {
+  "rotor_protons_in_cluster": [
+   "HG23/THR53",
+   "HG21/THR53"
+  ],
+  "max_dF_over_sigma_easy": 24.47636995614517,
+  "max_dF_over_sigma_hard": 49.470105825551165,
+  "max_dS_over_sigma": 5.606396058599935,
+  "first_time_dF_exceeds_sigma_us": 40.0,
+  "t_c_us": 80.0
+ }
+}

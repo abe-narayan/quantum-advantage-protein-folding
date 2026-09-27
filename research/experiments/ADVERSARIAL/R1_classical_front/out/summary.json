@@ -1,0 +1,619 @@
+{
+ "threshold": 0.01,
+ "grid_us": "0..320 step 20",
+ "kill_rule": "t_c >= 160 us on all 3 clusters at poly cost",
+ "panel_best_otoc_us": 80.0,
+ "estimators": {
+  "E1_cce_add_k0": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   }
+  },
+  "E1_cce_add_k1": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   }
+  },
+  "E1_cce_add_k2": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   }
+  },
+  "E1_cce_add_k3": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   },
+   "1UBQ_p245": {
+    "t_c_us": 60.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   }
+  },
+  "E1_cce_add_k4": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   },
+   "1UBQ_p245": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   }
+  },
+  "E1_cce_add_k5": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   },
+   "1UBQ_p245": {
+    "t_c_us": 80.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   },
+   "1PGA_p390": {
+    "t_c_us": 80.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   }
+  },
+  "E1_cce_add_k6": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   },
+   "1UBQ_p245": {
+    "t_c_us": 80.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   },
+   "1PGA_p390": {
+    "t_c_us": 100.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   }
+  },
+  "E1_cce_add_k7": {
+   "1UBQ_p19": {
+    "t_c_us": 80.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   },
+   "1UBQ_p245": {
+    "t_c_us": 100.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   },
+   "1PGA_p390": {
+    "t_c_us": 120.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   }
+  },
+  "E1_cce_add_k8": {
+   "1UBQ_p19": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   },
+   "1UBQ_p245": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   },
+   "1PGA_p390": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   }
+  },
+  "E1_cce_mul_k0": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_sub": 2,
+    "n_sub_sims": 4
+   }
+  },
+  "E1_cce_mul_k1": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 3,
+    "n_sub_sims": 36
+   }
+  },
+  "E1_cce_mul_k2": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 4,
+    "n_sub_sims": 148
+   }
+  },
+  "E1_cce_mul_k3": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 5,
+    "n_sub_sims": 372
+   }
+  },
+  "E1_cce_mul_k4": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   },
+   "1UBQ_p245": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 6,
+    "n_sub_sims": 652
+   }
+  },
+  "E1_cce_mul_k5": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   },
+   "1UBQ_p245": {
+    "t_c_us": 80.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   },
+   "1PGA_p390": {
+    "t_c_us": 80.0,
+    "max_sub": 7,
+    "n_sub_sims": 876
+   }
+  },
+  "E1_cce_mul_k6": {
+   "1UBQ_p19": {
+    "t_c_us": 60.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   },
+   "1UBQ_p245": {
+    "t_c_us": 80.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   },
+   "1PGA_p390": {
+    "t_c_us": 80.0,
+    "max_sub": 8,
+    "n_sub_sims": 988
+   }
+  },
+  "E1_cce_mul_k7": {
+   "1UBQ_p19": {
+    "t_c_us": 80.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   },
+   "1UBQ_p245": {
+    "t_c_us": 80.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   },
+   "1PGA_p390": {
+    "t_c_us": 120.0,
+    "max_sub": 9,
+    "n_sub_sims": 1020
+   }
+  },
+  "E1_cce_mul_k8": {
+   "1UBQ_p19": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   },
+   "1UBQ_p245": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   },
+   "1PGA_p390": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": 1024
+   }
+  },
+  "E1_cce_nested_n5": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_sub": 5,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_sub": 5,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_sub": 5,
+    "n_sub_sims": null
+   }
+  },
+  "E1_cce_nested_n6": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 6,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_sub": 6,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 6,
+    "n_sub_sims": null
+   }
+  },
+  "E1_cce_nested_n7": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 7,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_sub": 7,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 7,
+    "n_sub_sims": null
+   }
+  },
+  "E1_cce_nested_n8": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 8,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 8,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "max_sub": 8,
+    "n_sub_sims": null
+   }
+  },
+  "E1_cce_nested_n9": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "max_sub": 9,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "max_sub": 9,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 60.0,
+    "max_sub": 9,
+    "n_sub_sims": null
+   }
+  },
+  "E1_cce_nested_n10": {
+   "1UBQ_p19": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": null
+   },
+   "1PGA_p390": {
+    "t_c_us": null,
+    "max_sub": 10,
+    "n_sub_sims": null
+   }
+  },
+  "E2_markov_lam1": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_err": 0.6172616669611031,
+    "lam": null,
+    "nc": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_err": 0.5984347297585001,
+    "lam": null,
+    "nc": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_err": 0.6101851728264447,
+    "lam": null,
+    "nc": null
+   }
+  },
+  "E2_markov_fit_N8": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_err": 0.4209715713006123,
+    "lam": 2.0,
+    "nc": 1
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_err": 0.5697957131220843,
+    "lam": 1.5,
+    "nc": 5
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_err": 0.2997478239520781,
+    "lam": 1.5,
+    "nc": 5
+   }
+  },
+  "E2_meanfield_lam1": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_err": 0.6182426827494623,
+    "lam": null,
+    "nc": null
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_err": 0.6896141729643473,
+    "lam": null,
+    "nc": null
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_err": 0.604873854321134,
+    "lam": null,
+    "nc": null
+   }
+  },
+  "E2_meanfield_fit_N8": {
+   "1UBQ_p19": {
+    "t_c_us": 20.0,
+    "max_err": 0.4276226274798412,
+    "lam": 2.0,
+    "nc": 1
+   },
+   "1UBQ_p245": {
+    "t_c_us": 20.0,
+    "max_err": 0.9392188156033687,
+    "lam": 1.5,
+    "nc": 5
+   },
+   "1PGA_p390": {
+    "t_c_us": 20.0,
+    "max_err": 0.6163365661872574,
+    "lam": 1.5,
+    "nc": 5
+   }
+  },
+  "E4_mpo_chi32": {
+   "1PGA_p390": {
+    "t_c_us": 40.0,
+    "err_60us": 0.05767696635532349,
+    "err_80us": 0.14553309448362683,
+    "cpu": 51.375,
+    "disc": 1.2050085035132154
+   },
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "err_60us": 0.13273692572807094,
+    "err_80us": 0.2552693439402388,
+    "cpu": 54.171875,
+    "disc": 1.0736555470097335
+   },
+   "1UBQ_p245": {
+    "t_c_us": 40.0,
+    "err_60us": 0.07646459260873384,
+    "err_80us": 0.1905524504455509,
+    "cpu": 57.359375,
+    "disc": 1.2246541034208265
+   }
+  },
+  "E4_mpo_chi16": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "err_60us": 0.27078102646194424,
+    "err_80us": 0.34572889473747437,
+    "cpu": 17.140625,
+    "disc": 1.6036614074852442
+   }
+  },
+  "E4_mpo_chi64": {
+   "1UBQ_p19": {
+    "t_c_us": 40.0,
+    "err_60us": 0.09844853754234284,
+    "err_80us": 0.20842889612743198,
+    "cpu": 238.640625,
+    "disc": 1.0456404284324499
+   }
+  },
+  "E3_stochpauli_M3000_R3": {
+   "1PGA_p390": {
+    "t_c_us_unbiased": 40.0,
+    "t_c_us_ratio": 40.0,
+    "err_40us_unbiased": 103.80920620108041,
+    "err_40us_ratio": 2.6943143975919903,
+    "cpu": 40.03125
+   },
+   "1UBQ_p245": {
+    "t_c_us_unbiased": 40.0,
+    "t_c_us_ratio": 40.0,
+    "err_40us_unbiased": 164.9417315296817,
+    "err_40us_ratio": 1.3400649008431047,
+    "cpu": 40.21875
+   }
+  },
+  "E3_stochpauli_M10000_R3": {
+   "1UBQ_p19": {
+    "t_c_us_unbiased": 40.0,
+    "t_c_us_ratio": 40.0,
+    "err_40us_unbiased": 897.2037237996386,
+    "err_40us_ratio": 1.3904846869227128,
+    "cpu": 141.125
+   }
+  }
+ },
+ "light_cone": {
+  "1UBQ_p19": {
+   "leave_one_out_min_us": 20.0,
+   "leave_one_out_max_us": 160.0,
+   "t_embed_N11_us": 120.0,
+   "t_embed_N12_us": 120.0,
+   "max_dev_N11_80to320": 0.02751389981606106,
+   "max_dev_N12_80to320": 0.040875113015186204
+  },
+  "1UBQ_p245": {
+   "leave_one_out_min_us": 20.0,
+   "leave_one_out_max_us": 120.0,
+   "t_embed_N11_us": 60.0,
+   "t_embed_N12_us": 40.0,
+   "max_dev_N11_80to320": 0.14201944803577465,
+   "max_dev_N12_80to320": 0.12470845513618872
+  },
+  "1PGA_p390": {
+   "leave_one_out_min_us": 40.0,
+   "leave_one_out_max_us": 100.0,
+   "t_embed_N11_us": 100.0,
+   "t_embed_N12_us": 80.0,
+   "max_dev_N11_80to320": 0.0970044984658599,
+   "max_dev_N12_80to320": 0.11392961245280564
+  }
+ },
+ "worst_cluster_t_c_us": {
+  "E1_cce_add_k0": 20.0,
+  "E1_cce_add_k1": 40.0,
+  "E1_cce_add_k2": 40.0,
+  "E1_cce_add_k3": 60.0,
+  "E1_cce_add_k4": 60.0,
+  "E1_cce_add_k5": 60.0,
+  "E1_cce_add_k6": 60.0,
+  "E1_cce_add_k7": 80.0,
+  "E1_cce_add_k8": 1000000000.0,
+  "E1_cce_mul_k0": 20.0,
+  "E1_cce_mul_k1": 40.0,
+  "E1_cce_mul_k2": 40.0,
+  "E1_cce_mul_k3": 40.0,
+  "E1_cce_mul_k4": 60.0,
+  "E1_cce_mul_k5": 60.0,
+  "E1_cce_mul_k6": 60.0,
+  "E1_cce_mul_k7": 80.0,
+  "E1_cce_mul_k8": 1000000000.0,
+  "E1_cce_nested_n5": 20.0,
+  "E1_cce_nested_n6": 20.0,
+  "E1_cce_nested_n7": 20.0,
+  "E1_cce_nested_n8": 40.0,
+  "E1_cce_nested_n9": 40.0,
+  "E1_cce_nested_n10": 1000000000.0,
+  "E2_markov_lam1": 20.0,
+  "E2_markov_fit_N8": 20.0,
+  "E2_meanfield_lam1": 20.0,
+  "E2_meanfield_fit_N8": 20.0,
+  "E4_mpo_chi32": 40.0
+ }
+}

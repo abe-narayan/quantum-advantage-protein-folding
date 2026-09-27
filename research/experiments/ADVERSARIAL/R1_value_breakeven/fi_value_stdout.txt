@@ -1,0 +1,291 @@
+job                                      param                      r   CRB_S   CRB_F  CRB_cl   CRB_q      g
+1PGA H/THR44 o0 N10                      radial_HB3/TRP43        3.84   0.026   0.013   0.020   0.011    2.9
+1PGA H/THR44 o0 N10                      radial_HG1/THR44        3.77   0.035   0.019   0.022   0.017    1.7
+1PGA H/THR44 o0 N10                      radial_HE3/TRP43        3.44   0.042   0.020   0.026   0.018    2.1
+1PGA H/THR44 o0 N10                      rigid_res43             3.84   0.049   0.016   0.023   0.015    2.5
+1PGA H/THR53 o0 N10                      radial_HG21/THR53       3.80   0.056   0.017   0.037   0.016    5.1
+1PGA H/THR53 o0 N10                      radial_HG1/THR44        3.78   0.099   0.025   0.050   0.020    6.0
+1PGA H/THR53 o0 N10                      radial_HE3/TRP43        3.51   0.029   0.008   0.018   0.007    6.1
+1PGA H/THR53 o0 N10                      rigid_res44             3.78   0.107   0.034   0.060   0.026    5.2
+1UBQ H/ILE3 o0 N10                       radial_HA/GLU16         3.80   0.047   0.011   0.030   0.011    7.7
+1UBQ H/ILE3 o0 N10                       radial_HG22/ILE3        3.49   0.129   0.011   0.057   0.011   29.1
+1UBQ H/ILE3 o0 N10                       radial_HG3/GLN2         3.25   0.125   0.040   0.079   0.038    4.4
+1UBQ H/ILE3 o1 N10                       radial_HA/GLU16         3.80   0.040   0.008   0.032   0.008   17.4
+1UBQ H/ILE3 o1 N10                       radial_HG22/ILE3        3.49   0.143   0.013   0.110   0.013   67.6
+1UBQ H/ILE3 o1 N10                       radial_HG3/GLN2         3.25   0.006   0.002   0.006   0.002   11.8
+1UBQ H/ILE3 o0 N14                       radial_HB2/GLN2         3.98   0.033
+1UBQ H/ILE3 o0 N14                       radial_HB/ILE3          3.97   0.080
+1UBQ H/ILE3 o0 N14                       radial_HB2/LEU15        3.90   0.206
+1UBQ H/ILE3 o0 N14                       rigid_res2              3.98   0.070
+1PGAHN H/TYR33 o0 N10                    radial_H/LYS28          7.71   0.201   0.062   0.115   0.055    4.3
+1PGAHN H/TYR33 o0 N10                    radial_H/ASN37          6.41   0.099   0.027   0.076   0.026    8.5
+1PGAHN H/TYR33 o0 N10                    radial_H/VAL29          5.93   0.218   0.053   0.118   0.048    6.1
+1PGAHN H/THR44 o0 N10                    radial_H/GLU42          7.26   0.124   0.012   0.080   0.012   47.0
+1PGAHN H/THR44 o0 N10                    radial_H/ILE6           6.93   0.031   0.010   0.017   0.008    4.2
+1PGAHN H/THR44 o0 N10                    radial_H/PHE52          6.78   0.100   0.036   0.063   0.030    4.3
+1PGAHN H/THR53 o0 N10                    radial_H/THR51          7.20   0.127   0.031   0.075   0.030    6.4
+1PGAHN H/THR53 o0 N10                    radial_H/TRP43          6.74   0.067   0.014   0.043   0.014    9.8
+1PGAHN H/THR53 o0 N10                    radial_H/THR55          6.61   0.708   0.062   0.351   0.061   32.9
+1UBQHN H/ILE3 o0 N10                     radial_H/VAL5           6.38   0.690   0.108   0.144   0.107    1.8
+1UBQHN H/ILE3 o0 N10                     radial_H/SER65          6.16   0.033   0.011   0.016   0.010    2.3
+1UBQHN H/ILE3 o0 N10                     radial_H/MET1           6.05   0.012   0.005   0.006   0.004    1.6
+1UBQHN H/ILE44 o0 N10                    radial_H/LYS6           6.76   0.078   0.032   0.060   0.030    4.1
+1UBQHN H/ILE44 o0 N10                    radial_H/LEU67          6.73   0.050   0.025   0.030   0.022    1.8
+1UBQHN H/ILE44 o0 N10                    radial_H/ARG42          6.36   0.040   0.010   0.037   0.009   16.3
+1UBQHN H/ILE61 o0 N10                    radial_H/SER65          8.28   0.756   0.224   0.456   0.213    4.6
+1UBQHN H/ILE61 o0 N10                    radial_H/THR55          8.27   0.088   0.010   0.028   0.010    8.4
+1UBQHN H/ILE61 o0 N10                    radial_H/LYS63          7.54   0.239   0.036   0.107   0.036    9.0
+1UBQHN H/HIS68 o0 N10                    radial_H/THR66          6.99   0.139   0.011   0.087   0.011   59.5
+1UBQHN H/HIS68 o0 N10                    radial_H/GLY47          6.65   0.446   0.140   0.415   0.134    9.7
+1UBQHN H/HIS68 o0 N10                    radial_H/VAL70          6.33   0.045   0.009   0.037   0.009   16.8
+{
+ "dense": {
+  "r": {
+   "n": 18,
+   "min": 3.252277663422971,
+   "median": 3.788584946120796,
+   "max": 3.9777626877429473
+  },
+  "CRB_transfer_marg": {
+   "n": 18,
+   "min": 0.006021088352572486,
+   "median": 0.052672205252299875,
+   "max": 0.20583075641472676
+  },
+  "CRB_echo_marg": {
+   "n": 14,
+   "min": 0.0018271599500181844,
+   "median": 0.014572745431608136,
+   "max": 0.0395280139100437
+  },
+  "CRB_classical_marg": {
+   "n": 14,
+   "min": 0.0059938895533901545,
+   "median": 0.03125253514771033,
+   "max": 0.10971861192521709
+  },
+  "CRB_quantum_marg": {
+   "n": 14,
+   "min": 0.0017471197569759948,
+   "median": 0.014036227937579233,
+   "max": 0.03763056336395287
+  },
+  "g_param": {
+   "n": 14,
+   "min": 1.6788801931867816,
+   "median": 5.565601494266437,
+   "max": 67.59341317691771
+  },
+  "CRB_classical_early_marg": {
+   "n": 14,
+   "min": 0.027047088326637443,
+   "median": 0.05323188545347583,
+   "max": 0.5302390929221552
+  },
+  "g_param_early": {
+   "n": 14,
+   "min": 2.6454449221627945,
+   "median": 24.393790816413457,
+   "max": 2883.2543263911584
+  },
+  "g_exact_reach_infl_med": {
+   "n": 14,
+   "min": 1.068887095460489,
+   "median": 2.6872773350070114,
+   "max": 10.402298764860387
+  },
+  "g_exact_reach_pure_infl_med": {
+   "n": 14,
+   "min": 1.2723127501531801,
+   "median": 5.595411295149232,
+   "max": 66.4864633682218
+  },
+  "g_exact_reach_infl_fast": {
+   "n": 14,
+   "min": 2.4524399319673775,
+   "median": 13.37998268075787,
+   "max": 149.068680525095
+  },
+  "g_exact_reach_pure_infl_fast": {
+   "n": 14,
+   "min": 5.570574340300064,
+   "median": 4749.980814617052,
+   "max": 504445.0651812671
+  },
+  "max_gain_eig": {
+   "min": 3.0513059543820646,
+   "median": 25.25577268236455,
+   "max": 67.95741143356348
+  },
+  "max_gain_eig_early": {
+   "min": 9.790526542849918,
+   "median": 243.2964320406155,
+   "max": 2891.5522552261914
+  },
+  "frac_echoFI_beyond_tex_infl_med": {
+   "min": 0.2267214235650914,
+   "median": 0.7142796956663402,
+   "max": 0.9519985402390436
+  },
+  "t_ex_infl_med_us": [
+   141.02370945008855,
+   118.50299082526803,
+   104.25469604093746,
+   102.59680778567707
+  ],
+  "frac_echoFI_beyond_tex_infl_fast": {
+   "min": 0.9188889720721878,
+   "median": 0.9991817770688407,
+   "max": 0.999906139251945
+  },
+  "t_ex_infl_fast_us": [
+   44.65186707118535,
+   37.52120699775312,
+   33.00981691177497,
+   32.48488527948823
+  ],
+  "frac_echoFI_beyond_tex_infl_slow": {
+   "min": 0.0,
+   "median": 0.10273046447076084,
+   "max": 0.3175095756881873
+  },
+  "t_ex_infl_slow_us": [
+   null,
+   289.45536466714987,
+   254.65248472326198,
+   250.6029274406836
+  ],
+  "sigma_needed_classical_for_0.1A_median": 0.03199740421932662,
+  "frac_params_classical_CRB_below_0.1A": 0.9285714285714286,
+  "frac_params_classical_CRB_below_0.05A": 0.7142857142857143
+ },
+ "amide-only": {
+  "r": {
+   "n": 21,
+   "min": 5.930738739819854,
+   "median": 6.741523937508494,
+   "max": 8.281261981123407
+  },
+  "CRB_transfer_marg": {
+   "n": 21,
+   "min": 0.012118323799396924,
+   "median": 0.10025654697568667,
+   "max": 0.7564536823146343
+  },
+  "CRB_echo_marg": {
+   "n": 21,
+   "min": 0.00470126685503506,
+   "median": 0.027204865586521822,
+   "max": 0.22412924025456005
+  },
+  "CRB_classical_marg": {
+   "n": 21,
+   "min": 0.005531624291479376,
+   "median": 0.07488970154267807,
+   "max": 0.45592089665429264
+  },
+  "CRB_quantum_marg": {
+   "n": 21,
+   "min": 0.004307567973808951,
+   "median": 0.026192040140028138,
+   "max": 0.21274863130212507
+  },
+  "g_param": {
+   "n": 21,
+   "min": 1.6490775199198628,
+   "median": 6.432481502219865,
+   "max": 59.46612546275836
+  },
+  "CRB_classical_early_marg": {
+   "n": 21,
+   "min": 0.0060409693536483,
+   "median": 0.10671898889115254,
+   "max": 1.1659157781240863
+  },
+  "g_param_early": {
+   "n": 21,
+   "min": 1.8816786502985599,
+   "median": 10.673166031592178,
+   "max": 148.6348985500771
+  },
+  "g_exact_reach_infl_med": {
+   "n": 21,
+   "min": 1.0,
+   "median": 1.0,
+   "max": 1.3900725884705283
+  },
+  "g_exact_reach_pure_infl_med": {
+   "n": 21,
+   "min": 1.0,
+   "median": 1.0,
+   "max": 1.4282541453114976
+  },
+  "g_exact_reach_infl_fast": {
+   "n": 21,
+   "min": 1.468747299759138,
+   "median": 5.978491350781203,
+   "max": 46.98865076820581
+  },
+  "g_exact_reach_pure_infl_fast": {
+   "n": 21,
+   "min": 1.725479703394202,
+   "median": 7.730931684609007,
+   "max": 85.81185119181269
+  },
+  "max_gain_eig": {
+   "min": 2.4780722893522174,
+   "median": 30.288321137786586,
+   "max": 63.40929560644079
+  },
+  "max_gain_eig_early": {
+   "min": 3.0091489562060043,
+   "median": 83.28957181144244,
+   "max": 355.068044460947
+  },
+  "frac_echoFI_beyond_tex_infl_med": {
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.2410906351482095
+  },
+  "t_ex_infl_med_us": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   940.1029496171159,
+   null
+  ],
+  "frac_echoFI_beyond_tex_infl_fast": {
+   "min": 0.5189070352945422,
+   "median": 0.8647740006318527,
+   "max": 0.9843401743591891
+  },
+  "t_ex_infl_fast_us": [
+   553.905334863602,
+   474.80932635917986,
+   478.33365309348284,
+   325.0841442535118,
+   357.89724434452853,
+   297.66166344099355,
+   385.92018623389845
+  ],
+  "frac_echoFI_beyond_tex_infl_slow": {
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.0
+  },
+  "t_ex_infl_slow_us": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sigma_needed_classical_for_0.1A_median": 0.013352970827772908,
+  "frac_params_classical_CRB_below_0.1A": 0.6666666666666666,
+  "frac_params_classical_CRB_below_0.05A": 0.38095238095238093
+ }
+}

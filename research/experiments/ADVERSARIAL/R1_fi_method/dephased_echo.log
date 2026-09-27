@@ -1,0 +1,21 @@
+validation 0.0
+gamma 1000: (33s) L(320us)=0.236  adversaries eps0.001(C2): tcF 2 tcR 2 tcS 3 maxbF 0.0490; eps0.0001(C2): tcF 6 tcR 5 tcS 17 maxbF 0.0132; eps3e-05(C2): tcF 17 tcR 17 tcS 17 maxbF 0.0025
+   radial_HA/GLU16      FI_S    484.8 FI_F   1649.1 FI_R    827.5 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG22/ILE3     FI_S     59.5 FI_F   1299.9 FI_R    412.0 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG3/GLN2      FI_S     44.1 FI_F     90.6 FI_R     51.1 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   rigid_res2           FI_S  10260.1 FI_F  15510.5 FI_R  10327.9 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   gamma 5000 eps 0.001 sparse 2.6s
+   gamma 5000 eps 0.0001 sparse 26.9s
+gamma 5000: (62s) L(320us)=0.139  adversaries eps0.001: tcF 17 tcR 17 tcS 3 maxbF 0.0093; eps0.0001: tcF 17 tcR 17 tcS 17 maxbF 0.0015
+   radial_HA/GLU16      FI_S    838.0 FI_F    153.2 FI_R     17.9 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG22/ILE3     FI_S     95.9 FI_F    113.8 FI_R      6.8 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG3/GLN2      FI_S     25.4 FI_F     10.6 FI_R      2.4 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   rigid_res2           FI_S  10928.2 FI_F   2850.4 FI_R   1518.4 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   gamma 20000 eps 0.001 sparse 2.2s
+   gamma 20000 eps 0.0001 sparse 5.3s
+gamma 20000: (41s) L(320us)=0.122  adversaries eps0.001: tcF 6 tcR 17 tcS 4 maxbF 0.0203; eps0.0001: tcF 17 tcR 17 tcS 17 maxbF 0.0014
+   radial_HA/GLU16      FI_S    698.9 FI_F     85.0 FI_R      0.1 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG22/ILE3     FI_S    107.4 FI_F     21.8 FI_R      0.0 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   radial_HG3/GLN2      FI_S      9.1 FI_F      1.8 FI_R      0.0 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+   rigid_res2           FI_S   9661.5 FI_F    644.6 FI_R     59.3 f_hard F 0.000 R 0.000 joint gain F 1.00 R 1.00
+wrote C:\Users\abena\quantum-advantage-protein-folding\research\experiments\ADVERSARIAL\R1_fi_method\dephased_echo.json

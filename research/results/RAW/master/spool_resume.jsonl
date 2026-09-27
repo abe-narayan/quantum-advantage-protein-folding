@@ -175,3 +175,11 @@
 {"name": "r_synth_hideseek", "cmd": "python scripts/synthetic_lab.py --family hideseek --nmin 6 --nmax 16 --seeds 3", "ram_gb": 2.5, "threads": 1}
 {"name": "r_synth_persistence", "cmd": "python scripts/synthetic_lab.py --family persistence --nmin 6 --nmax 16 --seeds 3", "ram_gb": 2.5, "threads": 1}
 {"name": "r_synth_sk", "cmd": "python scripts/synthetic_lab.py --family sk --nmin 6 --nmax 16 --seeds 3", "ram_gb": 2.5, "threads": 1}
+{"name": "cone_1UBQ_p245_N12", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 12", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p245_N14", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 14", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p245_N20", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 20", "ram_gb": 1.2, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p19_N20", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 19 --N 20", "ram_gb": 1.2, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p245_N18", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 18", "ram_gb": 0.8, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p19_N18", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 19 --N 18", "ram_gb": 0.8, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p245_N16", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 16", "ram_gb": 0.8, "threads": 1, "priority": 1}
+{"name": "cone_1UBQ_p19_N16", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 19 --N 16", "ram_gb": 0.8, "threads": 1, "priority": 1}

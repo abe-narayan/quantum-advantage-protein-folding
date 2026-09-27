@@ -127,3 +127,35 @@ Rationale: sparser, weaker couplings lead to less ergodic dynamics. O'Brien et a
   Minimisation now runs 3 rounds of 400 L-BFGS iterations with memory restarts. The kill rule is unchanged and is applied to both weightings. The v1 outputs are moved to `RAW/g1_transmission_v1_invalid/`.
 - 2026-09-27 (compute-budget pruning, before these jobs produced output): the queued C2 runs at N = 16/20 with γ = 1000 are cancelled. Transfer at γ > 0 is already classically exact at N ≤ 10, and the C2/C3 decision rests on the γ = 0 series. The C1 N = 12 orientation-1 runs are also cancelled. They are listed in `research/results/RAW/master/cancel.txt`.
 - 2026-09-27 (compute pruning, before output): cancelled C1 N=12 at γ ∈ {1000, 5000} (transfer at γ > 0 is classically exact at N = 10 in every job) and the 1UBQ C1-HN N=12 runs (the 1PGA HN N=12 runs are kept). Listed in `cancel.txt`.
+
+## Adversarial outcome for R1 and corrections (2026-09-27, echo-window-attack workflow; `research/experiments/ADVERSARIAL/R1_*`)
+
+**Deviation / correction entries** (logged on the adversarial review's findings; they change no pre-registered threshold):
+- **Rigid-parameter rule changed after 92bb4eb.** The rigid shift now requires ≥ 2 cluster protons in the moved residue, not the probe's residue. The stored 1UBQ p19 N10 files from 92bb4eb carry the duplicate `rigid_res16` (= radial_HA/GLU16, deduplicated in analysis). The current rule's `rigid_res2` moves the probe's nearest proton (2.16 Å), so it is flagged short-range.
+- **ε-ladder completion.** C1's adversary panel stopped at ε ≥ 1e-4. The C2 runs at ε = 3e-5 reproduce the echo within σ over the whole window for 1UBQ p19/p245, 1PGA p390 and 1PGAHN p260 at N = 10. Across 17 unique parameters, the median f_hard^OTOC falls from 0.95 to 0.00 (10 of 17 closed). Two jobs keep part of the window (1PGA p325; 1UBQHN p548).
+  - **C3 kill-1 (median f_hard^OTOC < 0.3 at N = 10) is indicated under the per-point criterion.**
+  - Under the estimator-level criterion (Mahalanobis bias D = 1.17–1.41 > 0.5), the window is not closed. The closure is conclusive only because exact classical simulation of N = 10 costs seconds.
+- **C2/C3 scaling variable redefined.**
+  - At N ≤ 10, M* is ≈ 0.46–0.50 of the parity-allowed 4^N/2 strings. Its growth is the growth of the operator space, so the pre-registered exp-vs-power-law and M*(60) criteria cannot measure hardness against exact methods.
+  - At N = 12, ε = 1e-4 held 7.5–8% of 4^12/4 strings and still failed. Sparse Pauli is dominated by exact simulation by 64–115×.
+  - The decisive variable is the converged σ-cone N_σ(t) of the echo (R1-SIM below). C2 runs at N ≥ 14 were stopped and cancelled. Their exact N = 14 references are kept in the `.partial` files.
+- **Claim corrections.**
+  - "Every classical adversary fails on the echo" is wrong. The correct statement: every sub-exponential truncation tested fails, which covers weight/ε ≥ 1e-4 Pauli, CCE to order N−3, operator-spreading/FKPP, stochastic Pauli, MPO χ ≤ 64 and classical spins/DTWA. ε = 3e-5 sparse Pauli (≈ full symmetric operator space) and exact simulation reproduce it at N = 10. The N = 10 reference is itself unconverged in cluster size (|F12 − F10| up to 0.46).
+  - The echo/transfer FI ratio is 3.2–183×; stored-panel f_hard^OTOC is 0.49–1.0.
+- **C3 survival clause failed (pre-registered).** It requires time reversal to be available and OTOC SNR not below σ. The physics audit puts the informative window at 4.8–25 T2, beyond measured reversal horizons T3 ≈ 4–6.7 T2 in dipolar solids (Sánchez, Chattah & Pastawski PRA 105, 052232 (2022)). Model-error nuisances (methyl rotation, 1 kHz offsets, 15% reversal mismatch) move the echo by 5–66 σ.
+  - Transfer of T3/T2 to proteins is INFERENCE. Fine et al. PRE 89, 012923 (2014) and Krojanski–Suter 2004/2006 point to possible exceptions (UNVERIFIED in detail).
+- **Verdict on R1 as a protein-structure advantage: KILLED (practical L0).** Grounds:
+  - cost: exact classical simulation beats a fault-tolerant forward model below N_eff ≈ 30–47, at 4–6 h per quantum evaluation;
+  - the failed C3 feasibility survival clause;
+  - small information gain under realistic priors and attenuation (median 1.1–1.5, max ≤ 2.3 on the one job analysed with 27-coordinate priors).
+
+## R1-SIM (added 2026-09-27, before any output): is the converged echo of a dense protein ¹H network beyond exact classical reach?
+
+This is a physics-simulation question (category-3 candidate), not a protein-structure lead. A positive result does NOT revive R1, which is killed on feasibility and value.
+
+- **Measurement (T-A).** Echo F_ab(t) at the instrument's observed sites b (defined on the N = 10 core, nested clusters). N ∈ {12, 14, 16, 18, 20}, 1UBQ probes 19 and 245, orientation 0, γ = 0, t = 40…320 µs every 40 µs. Statevector typicality, n_rand = 1, err = 2^{−N/2}. Script: `research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py`.
+- **Statistic.** Δ_N(t) = max_b |F^{(N+2)}(t) − F^{(N)}(t)|, compared with σ = 0.01 plus 2·(err_N + err_{N+2}).
+- **KILL R1-SIM (exact light-cone simulation suffices):** on both probes there is N ≤ 18 with Δ_{N'}(t) ≤ threshold for all N' ≥ N and all t ≤ 320 µs, i.e. converged by N ≤ 20.
+- **SUPPORT the "beyond exact reach" premise:** Δ_18(t) > 3σ at some t ≥ 160 µs on both probes.
+- **INCONCLUSIVE otherwise** (needs N ≥ 22).
+- **Follow-up only if SUPPORT:** the hybrid adversary (exact quantum core N_c = 10–12 + classical-spin bath, Starkov–Fine type) against the N = 20 reference. KILL if its error stays < σ over 80–320 µs.

@@ -142,11 +142,15 @@ class Governor:
             c = json.load(open(f))
         except Exception:
             return
-        global CPU_LAUNCH_MAX, CPU_SUSPEND, CPU_RESUME
+        global CPU_LAUNCH_MAX, CPU_SUSPEND, CPU_RESUME, RAM_LAUNCH_CAP, RAM_SUSPEND, RAM_RESUME, RAM_KILL
         self.max_workers = int(c.get("max_workers", self.max_workers))
         CPU_LAUNCH_MAX = float(c.get("cpu_launch_max", CPU_LAUNCH_MAX))
         CPU_SUSPEND = float(c.get("cpu_suspend", CPU_SUSPEND))
         CPU_RESUME = float(c.get("cpu_resume", CPU_RESUME))
+        RAM_LAUNCH_CAP = float(c.get("ram_launch_cap", RAM_LAUNCH_CAP))
+        RAM_SUSPEND = float(c.get("ram_suspend", RAM_SUSPEND))
+        RAM_RESUME = float(c.get("ram_resume", RAM_RESUME))
+        RAM_KILL = float(c.get("ram_kill", RAM_KILL))
         self.paused = bool(c.get("pause", False))
 
     def step(self):

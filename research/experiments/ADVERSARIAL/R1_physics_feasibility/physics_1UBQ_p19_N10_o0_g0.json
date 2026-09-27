@@ -1,0 +1,295 @@
+{
+ "job": "1UBQ_p19_N10_o0_g0.json",
+ "rotor": {
+  "rotor_protons_in_cluster": [
+   "HG22/ILE3"
+  ],
+  "max_dF_over_sigma_easy": 7.107187348486921,
+  "max_dF_over_sigma_hard": 32.59514861656378,
+  "max_dS_over_sigma": 1.44067245463121,
+  "first_time_dF_exceeds_sigma_us": 40.0,
+  "t_c_us": 80.0
+ },
+ "nuisance": {
+  "check_perfect_reversal_vs_RAW": 2.220446049250313e-16,
+  "omega_sd_hz": 1000.0,
+  "offsets_model_error": {
+   "max_over_sigma_easy": 5.443133232633068,
+   "max_over_sigma_hard": 9.154224148636736,
+   "first_time_exceeds_sigma_us": 40.0
+  },
+  "eta_scan": {
+   "0.005": {
+    "max_dev_over_sigma_easy": 0.14185045346059022,
+    "max_dev_over_sigma_hard": 0.17060566962853185,
+    "first_time_dev_exceeds_sigma_us": null
+   },
+   "0.02": {
+    "max_dev_over_sigma_easy": 0.6143658441002287,
+    "max_dev_over_sigma_hard": 1.02201397586974,
+    "first_time_dev_exceeds_sigma_us": 280.0
+   },
+   "0.05": {
+    "max_dev_over_sigma_easy": 1.7648799505647905,
+    "max_dev_over_sigma_hard": 4.5768106198023295,
+    "first_time_dev_exceeds_sigma_us": 40.0
+   },
+   "0.15": {
+    "max_dev_over_sigma_easy": 7.374952326278483,
+    "max_dev_over_sigma_hard": 22.58547445799827,
+    "first_time_dev_exceeds_sigma_us": 20.0
+   }
+  },
+  "fisher": {
+   "hard": {
+    "no_prior": {
+     "trace_Fss": 24684.541740970206,
+     "trace_Feff": 5087.540035104192,
+     "retained_trace": 0.20610226790883215,
+     "retained_diag": [
+      0.1468604167636111,
+      0.3083774296585358,
+      0.3633886536478943,
+      0.1468604167636111
+     ]
+    },
+    "prior_eta_0p02_omega_0p2ppm": {
+     "trace_Fss": 24684.541740970206,
+     "trace_Feff": 11442.284197713301,
+     "retained_trace": 0.46354047475477145,
+     "retained_diag": [
+      0.3442596946835526,
+      0.6639986799202984,
+      0.908325555220149,
+      0.3442596946835526
+     ]
+    },
+    "prior_eta_0p005_omega_0p05ppm": {
+     "trace_Fss": 24684.541740970206,
+     "trace_Feff": 20529.58460127829,
+     "retained_trace": 0.8316777688930834,
+     "retained_diag": [
+      0.769530485921031,
+      0.9393580751729054,
+      0.9875606413449677,
+      0.769530485921031
+     ]
+    },
+    "eta_only_no_prior": {
+     "retained_trace": 0.6202692964642278,
+     "retained_diag": [
+      0.5792448696527045,
+      0.6799142915488563,
+      0.9910781192170734,
+      0.5792448696527045
+     ]
+    },
+    "omegas_only_no_prior": {
+     "retained_trace": 0.2652183770821523,
+     "retained_diag": [
+      0.19011312577438844,
+      0.39813494265663896,
+      0.3883755301792137,
+      0.19011312577438844
+     ]
+    }
+   },
+   "easy": {
+    "no_prior": {
+     "trace_Fss": 1339.5061358340718,
+     "trace_Feff": 377.9839057437222,
+     "retained_trace": 0.2821815411157953,
+     "retained_diag": [
+      0.16240402142369287,
+      0.8005110643017019,
+      0.2958976033898313,
+      0.16240402142369287
+     ]
+    },
+    "prior_eta_0p02_omega_0p2ppm": {
+     "trace_Fss": 1339.5061358340718,
+     "trace_Feff": 1257.111049986081,
+     "retained_trace": 0.9384884595570101,
+     "retained_diag": [
+      0.9464324036296458,
+      0.9803143546288398,
+      0.7274821226370998,
+      0.9464324036296458
+     ]
+    },
+    "prior_eta_0p005_omega_0p05ppm": {
+     "trace_Fss": 1339.5061358340718,
+     "trace_Feff": 1329.5331049444244,
+     "retained_trace": 0.9925546956278498,
+     "retained_diag": [
+      0.9935364822240454,
+      0.9977031001018271,
+      0.9665339948544625,
+      0.9935364822240454
+     ]
+    },
+    "eta_only_no_prior": {
+     "retained_trace": 0.8852419579716225,
+     "retained_diag": [
+      0.9013184170533441,
+      0.9651236351088763,
+      0.4713523152312796,
+      0.9013184170533441
+     ]
+    },
+    "omegas_only_no_prior": {
+     "retained_trace": 0.02988900831568194,
+     "retained_diag": [
+      0.038056251051184105,
+      0.002577264653592764,
+      0.006810396104866483,
+      0.038056251051184105
+     ]
+    }
+   },
+   "all": {
+    "no_prior": {
+     "trace_Fss": 26024.04787680428,
+     "trace_Feff": 6431.766521094692,
+     "retained_trace": 0.24714704459283773,
+     "retained_diag": [
+      0.18566526161685415,
+      0.35543217276805467,
+      0.42210622014803206,
+      0.18566526161685415
+     ]
+    },
+    "prior_eta_0p02_omega_0p2ppm": {
+     "trace_Fss": 26024.04787680428,
+     "trace_Feff": 13132.591014555417,
+     "retained_trace": 0.5046329101730842,
+     "retained_diag": [
+      0.3817959064299312,
+      0.7189451248342499,
+      0.8939481050851955,
+      0.3817959064299312
+     ]
+    },
+    "prior_eta_0p005_omega_0p05ppm": {
+     "trace_Fss": 26024.04787680428,
+     "trace_Feff": 21773.308517177516,
+     "retained_trace": 0.8366610997739699,
+     "retained_diag": [
+      0.7782618637145082,
+      0.9406529416734368,
+      0.9806587216037226,
+      0.7782618637145082
+     ]
+    },
+    "eta_only_no_prior": {
+     "retained_trace": 0.6917558627002364,
+     "retained_diag": [
+      0.6556109566796203,
+      0.7475607639558625,
+      0.9480737451999631,
+      0.6556109566796203
+     ]
+    },
+    "omegas_only_no_prior": {
+     "retained_trace": 0.29056660698296904,
+     "retained_diag": [
+      0.22459529417307397,
+      0.4044687440142817,
+      0.5230414914580417,
+      0.22459529417307397
+     ]
+    }
+   }
+  },
+  "param_names": [
+   "radial_HA/GLU16",
+   "radial_HG22/ILE3",
+   "radial_HG3/GLN2",
+   "rigid_res16"
+  ],
+  "RAW_FI_echo_hard_no_offsets": 24190.21154261542,
+  "t_c_us": 80.0,
+  "secs": 148.99531817436218
+ },
+ "disorder": {
+  "param": "radial_HG22/ILE3",
+  "FI_single_hard": 8894.118864479542,
+  "FI_single_easy": 249.8828161196974,
+  "settings": {
+   "res=0.05": {
+    "FI_ens_hard": 8794.788216849303,
+    "FI_ens_easy": 251.36778423008545,
+    "FI_ens_hard_biascorr": 8790.78282558981,
+    "FI_ens_easy_biascorr": 251.32850670153618,
+    "retained_hard": 0.9883815316093395,
+    "retained_easy": 1.0057854741846126,
+    "ensmean_vs_single_max_over_sigma_easy": 2.4908989869955156,
+    "ensmean_vs_single_max_over_sigma_hard": 1.0668866963862822,
+    "member_spread_hard_over_sigma": 1.9792851709111492,
+    "M": 8
+   },
+   "res=0.1": {
+    "FI_ens_hard": 8577.402678849498,
+    "FI_ens_easy": 250.47624549577685,
+    "FI_ens_hard_biascorr": 8565.712162622383,
+    "FI_ens_easy_biascorr": 250.36326179598245,
+    "retained_hard": 0.9630759711151695,
+    "retained_easy": 1.0019226839353967,
+    "ensmean_vs_single_max_over_sigma_easy": 4.925740127220485,
+    "ensmean_vs_single_max_over_sigma_hard": 4.326971586489231,
+    "member_spread_hard_over_sigma": 3.9251194081841843,
+    "M": 8
+   },
+   "res=0.2": {
+    "FI_ens_hard": 7958.956278550047,
+    "FI_ens_easy": 228.1922386544314,
+    "FI_ens_hard_biascorr": 7940.243151627134,
+    "FI_ens_easy_biascorr": 227.7899387186683,
+    "retained_hard": 0.892752084002171,
+    "retained_easy": 0.9115870481047953,
+    "ensmean_vs_single_max_over_sigma_easy": 12.53526147350905,
+    "ensmean_vs_single_max_over_sigma_hard": 14.338161223149626,
+    "member_spread_hard_over_sigma": 7.531162237118862,
+    "M": 8
+   },
+   "mosaic=2.0": {
+    "FI_ens_hard": 8843.343225235087,
+    "FI_ens_easy": 248.7704905180255,
+    "FI_ens_hard_biascorr": 8839.503282600097,
+    "FI_ens_easy_biascorr": 248.59816025293722,
+    "retained_hard": 0.9938593600207477,
+    "retained_easy": 0.9948589667480584,
+    "ensmean_vs_single_max_over_sigma_easy": 1.4303255953144078,
+    "ensmean_vs_single_max_over_sigma_hard": 1.1004996087451535,
+    "member_spread_hard_over_sigma": 1.3437401337676287,
+    "M": 8
+   }
+  },
+  "secs": 118.3576066493988
+ },
+ "powder": {
+  "param": "radial_HG22/ILE3",
+  "M": 16,
+  "echo_easy": {
+   "mean_single_orientation_FI": 519.0419543234347,
+   "powder_FI_biascorr": 304.5735258338336,
+   "retained": 0.5867994355694075
+  },
+  "echo_hard": {
+   "mean_single_orientation_FI": 6922.493766584876,
+   "powder_FI_biascorr": 3846.6651593757733,
+   "retained": 0.5556762185823501
+  },
+  "transfer_easy": {
+   "mean_single_orientation_FI": 33.39809870593206,
+   "powder_FI_biascorr": 15.356840102444968,
+   "retained": 0.4598118065839879
+  },
+  "transfer_hard": {
+   "mean_single_orientation_FI": 321.766800854283,
+   "powder_FI_biascorr": 84.33450061173627,
+   "retained": 0.26209820400311723
+  },
+  "secs": 43.30969023704529
+ }
+}

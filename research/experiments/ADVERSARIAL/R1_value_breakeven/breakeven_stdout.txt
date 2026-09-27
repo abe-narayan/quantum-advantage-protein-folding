@@ -1,0 +1,79 @@
+MEASURED numpy statevector throughput: 5.28e+07 amplitude-gate updates / s / core; sparse-Pauli (C2 run): 1.72e-06 s per string-pair-gate
+
+=== (a) break-even vs EXACT classical light-cone simulation: smallest N_eff where quantum wall-clock wins (or classical memory wall) ===
+  dense tT=1us   AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 20  (time; quantum 6.13 h per eval)
+  dense tT=1us   AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 30  (time; quantum 6.23 h per eval)
+  dense tT=1us   AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 37  (time; quantum 6.29 h per eval)
+  dense tT=1us   AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 44  (time; quantum 6.33 h per eval)
+  dense tT=1us   AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 44  (time; quantum 6.33 h per eval)
+  dense tT=1us   sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 28.1 d per eval)
+  dense tT=10us  AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 24  (time; quantum 2.57 d per eval)
+  dense tT=10us  AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 33  (time; quantum 2.61 d per eval)
+  dense tT=10us  AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 40  (time; quantum 2.63 d per eval)
+  dense tT=10us  AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 2.64 d per eval)
+  dense tT=10us  AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 2.64 d per eval)
+  dense tT=10us  sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 281 d per eval)
+  dense tT=170us AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 27  (time; quantum 44 d per eval)
+  dense tT=170us AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 35  (memory wall; quantum 44.4 d per eval)
+  dense tT=170us AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 41  (memory wall; quantum 44.7 d per eval)
+  dense tT=170us AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 45 d per eval)
+  dense tT=170us AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 45 d per eval)
+  dense tT=170us sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 13.1 yr per eval)
+  amide tT=1us   AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 20  (time; quantum 3.93 h per eval)
+  amide tT=1us   AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 30  (time; quantum 3.99 h per eval)
+  amide tT=1us   AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 37  (time; quantum 4.03 h per eval)
+  amide tT=1us   AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 44  (time; quantum 4.06 h per eval)
+  amide tT=1us   AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 44  (time; quantum 4.06 h per eval)
+  amide tT=1us   sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 18 d per eval)
+  amide tT=10us  AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 24  (time; quantum 1.65 d per eval)
+  amide tT=10us  AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 33  (time; quantum 1.67 d per eval)
+  amide tT=10us  AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 40  (time; quantum 1.68 d per eval)
+  amide tT=10us  AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 1.7 d per eval)
+  amide tT=10us  AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 1.7 d per eval)
+  amide tT=10us  sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 180 d per eval)
+  amide tT=170us AE-depth       vs numpy-1core (MEASURED kernel)   : N* = 27  (time; quantum 28.2 d per eval)
+  amide tT=170us AE-depth       vs opt-node (64 cores, 1 TB)       : N* = 35  (memory wall; quantum 28.5 d per eval)
+  amide tT=170us AE-depth       vs cluster (1e4 cores, 64 TB)      : N* = 41  (memory wall; quantum 28.7 d per eval)
+  amide tT=170us AE-depth       vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 28.8 d per eval)
+  amide tT=170us AE-100fact     vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 28.8 d per eval)
+  amide tT=170us sampling-depth vs leadership (1e6 core-eq, 4 PB)  : N* = 47  (memory wall; quantum 8.37 yr per eval)
+
+=== (b) break-even vs the MEASURED sparse-Pauli adversary (1 core) and dominance check ===
+  dense kappa=4.0 tT=1us: N* = 12
+  dense kappa=4.0 tT=10us: N* = 13
+  dense kappa=4.0 tT=170us: N* = 15
+    exact(numpy,1 core) cheaper than Pauli(kappa=4.0) for N in [10]..[39] (30 of 30 values)
+  dense kappa=2.0 tT=1us: N* = 13
+  dense kappa=2.0 tT=10us: N* = 16
+  dense kappa=2.0 tT=170us: N* = 20
+    exact(numpy,1 core) cheaper than Pauli(kappa=2.0) for N in [10]..[39] (30 of 30 values)
+  amide kappa=4.0 tT=1us: N* = 12
+  amide kappa=4.0 tT=10us: N* = 13
+  amide kappa=4.0 tT=170us: N* = 15
+    exact(numpy,1 core) cheaper than Pauli(kappa=4.0) for N in [10]..[39] (30 of 30 values)
+  amide kappa=2.0 tT=1us: N* = 13
+  amide kappa=2.0 tT=10us: N* = 16
+  amide kappa=2.0 tT=170us: N* = 20
+    exact(numpy,1 core) cheaper than Pauli(kappa=2.0) for N in [10]..[39] (30 of 30 values)
+
+=== (3) end-to-end tasks (Gauss-Newton, 20 iterations, finite-difference Jacobian on the quantum side; adjoint on the classical side) ===
+  T1 GB1 amide-only, 1 probe, P=4                  N_eff=  30 evals_Q=   180  T/eval=1.92e+11  Q total @1us depth 30 d | @1us 100 fact 30 d | @170us depth 13.9 yr || classical exact: node 12.9 d, leadership 1.19 min
+  T2 ubiquitin amide-only, 1 probe, P=4            N_eff=  45 evals_Q=   180  T/eval=2.92e+11  Q total @1us depth 30.5 d | @1us 100 fact 30.5 d | @170us depth 14.2 yr || classical exact: node -, leadership 40.5 d
+  T3 ubiquitin amide-only, full cone, P=4          N_eff=  73 evals_Q=   180  T/eval=4.84e+11  Q total @1us depth 31.1 d | @1us 100 fact 31.1 d | @170us depth 14.5 yr || classical exact: node -, leadership -
+  T4 ubiquitin dense, 1 probe, P=4                 N_eff= 100 evals_Q=   180  T/eval=1.10e+12  Q total @1us depth 49 d | @1us 100 fact 49 d | @170us depth 22.8 yr || classical exact: node -, leadership -
+  T5 ubiquitin dense, 1 probe, P=4, full molecule  N_eff= 629 evals_Q=   180  T/eval=7.43e+12  Q total @1us depth 52.5 d | @1us 100 fact 155 d | @170us depth 24.4 yr || classical exact: node -, leadership -
+  T6 ubiquitin dense, 76 probes, P=3*76            N_eff= 250 evals_Q=694640  T/eval=2.86e+12  Q total @1us depth 536 yr | @1us 100 fact 629 yr | @170us depth 9.12e+04 yr || classical exact: node -, leadership -
+
+=== value break-even: acquisition time per probe data set needed before the saved (g-1) x T_acq pays for the quantum inversion (price ratio QC-hour / spectrometer-hour = r) ===
+  dense N_eff=100 r=  1 g_median         (g=  5.6): T_acq >= 10.7 d  (quantum inversion 49 d @1us depth-limited)
+  dense N_eff=100 r=  1 g_best_direction (g= 68.0): T_acq >= 17.6 h  (quantum inversion 49 d @1us depth-limited)
+  dense N_eff=100 r= 10 g_median         (g=  5.6): T_acq >= 107 d  (quantum inversion 49 d @1us depth-limited)
+  dense N_eff=100 r= 10 g_best_direction (g= 68.0): T_acq >= 7.32 d  (quantum inversion 49 d @1us depth-limited)
+  dense N_eff=100 r=100 g_median         (g=  5.6): T_acq >= 2.94 yr  (quantum inversion 49 d @1us depth-limited)
+  dense N_eff=100 r=100 g_best_direction (g= 68.0): T_acq >= 73.2 d  (quantum inversion 49 d @1us depth-limited)
+  amide N_eff=45 r=  1 g_median         (g=  6.4): T_acq >= 5.61 d  (quantum inversion 30.5 d @1us depth-limited)
+  amide N_eff=45 r=  1 g_best_direction (g= 63.4): T_acq >= 11.7 h  (quantum inversion 30.5 d @1us depth-limited)
+  amide N_eff=45 r= 10 g_median         (g=  6.4): T_acq >= 56.1 d  (quantum inversion 30.5 d @1us depth-limited)
+  amide N_eff=45 r= 10 g_best_direction (g= 63.4): T_acq >= 4.88 d  (quantum inversion 30.5 d @1us depth-limited)
+  amide N_eff=45 r=100 g_median         (g=  6.4): T_acq >= 1.53 yr  (quantum inversion 30.5 d @1us depth-limited)
+  amide N_eff=45 r=100 g_best_direction (g= 63.4): T_acq >= 48.8 d  (quantum inversion 30.5 d @1us depth-limited)

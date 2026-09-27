@@ -43,3 +43,20 @@ _Updated 2026-09-26 after the S29–S33 reconstruction; updated again 2026-09-26
 ## Answered by the reconstruction (kept for history)
 
 - ~~Which parts of the Sprint 33 conclusions survive independent reconstruction?~~ All six points of the user's summary are consistent with the source, with two qualifications (`SCIENTIFIC_MEMORY.md`, 2026-09-26). The synthesis is in `research/sprint29-33/`.
+
+## Added by the discovery sprint (2026-09-27)
+
+- **R1-SIM (physics-simulation residue of the killed NMR echo lead).** Does the converged first-order echo (OTOC(1)) of a dense protein ¹H dipolar network require a light cone beyond exact classical reach (N_σ(t) > 30–47 spins) at 80–320 µs?
+  - Measured so far: N_σ ≈ 16–20 at 40 µs. No compressible representation was found at any N ≤ 12.
+  - Pre-registered test T-A (nested clusters N ≤ 20) is running.
+  - Strongest untried adversary: a hybrid exact-core + classical-spin bath (Starkov–Fine).
+  - A positive answer would be a category-3 candidate for a physics computation, not a protein-structure advantage.
+- **R1-DQ.** Does a phase-reversible double-quantum Hamiltonian (1.8–4× more echo FI in 0–100 µs) keep information inside its own reversal envelope?
+  - Low prior: it is 7× more environment-sensitive.
+- **Protein Loschmidt-echo T3/T2.** The feasibility kill assumes model-solid values (4–6.7). A measured protein value ≥ 15 would reopen R1 practically; none is known.
+- **Is OTOC(1) of geometric dipolar Hamiltonians classically hard on average?**
+  - Only worst-case anchors exist (DQC1, universality).
+  - Google's beyond-classical echo evidence concerns OTOC(2).
+  - Mi et al. 2021 report both an efficient classical model of operator *spreading* and exponential cost of operator *entanglement*.
+- **Transmission (R2-T).** Does posterior averaging over modes beat the argmin for the A80 learned energy at L = 60/100? Running.
+- **Is the measured classical difficulty of the λ-path (0 NRPT round trips) a barrier or ill-conditioning?** Relevant only as classical science; the quantum route is killed regardless (K-101).

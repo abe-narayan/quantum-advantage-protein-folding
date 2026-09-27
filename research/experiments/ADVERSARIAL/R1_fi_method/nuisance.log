@@ -1,0 +1,118 @@
+######## attenuation none
+== radial_HA/GLU16  (v.rhat = -0.000)
+   F|N0     FI all     7998.6 easy      623.5 gain    12.83  sd all 0.0112 A  easy 0.04 A
+   F|N1     FI all     6700.7 easy      545.7 gain    12.28  sd all 0.0122 A  easy 0.0428 A
+   F|N2     FI all     5657.0 easy      405.2 gain    13.96  sd all 0.0133 A  easy 0.0497 A
+   F|N3     FI all        0.2 easy        0.0 gain 45813407961561836814336.00  sd all 2.3453 A  easy 501990236430.7383 A
+   S+F|N0   FI all     8477.5 easy     1102.4 gain     7.69  sd all 0.0109 A  easy 0.0301 A
+   S+F|N1   FI all     7063.6 easy      935.7 gain     7.55  sd all 0.0119 A  easy 0.0327 A
+   S+F|N2   FI all     5897.1 easy      660.6 gain     8.93  sd all 0.0130 A  easy 0.0389 A
+   S+F|N3   FI all        0.5 easy        0.0 gain    14.80  sd all 1.4504 A  easy 5.5798 A
+== radial_HG22/ILE3  (v.rhat = -0.000)
+   F|N0     FI all     9149.6 easy      250.3 gain    36.55  sd all 0.0105 A  easy 0.0632 A
+   F|N1     FI all     6267.9 easy      241.7 gain    25.93  sd all 0.0126 A  easy 0.0643 A
+   F|N2     FI all     5648.3 easy      191.5 gain    29.49  sd all 0.0133 A  easy 0.0723 A
+   F|N3     FI all        0.4 easy        0.0 gain 1469933220110403909976064.00  sd all 1.6762 A  easy 2032227034446.3833 A
+   S+F|N0   FI all     9212.2 easy      312.9 gain    29.44  sd all 0.0104 A  easy 0.0565 A
+   S+F|N1   FI all     6490.0 easy      298.9 gain    21.71  sd all 0.0124 A  easy 0.0578 A
+   S+F|N2   FI all     5932.2 easy      283.9 gain    20.90  sd all 0.0130 A  easy 0.0594 A
+   S+F|N3   FI all        0.6 easy        0.0 gain    14.91  sd all 1.2711 A  easy 4.9076 A
+== radial_HG3/GLN2  (v.rhat = +0.000)
+   F|N0     FI all      637.3 easy       97.2 gain     6.56  sd all 0.0396 A  easy 0.1014 A
+   F|N1     FI all      625.8 easy       43.3 gain    14.45  sd all 0.0400 A  easy 0.152 A
+   F|N2     FI all      359.3 easy       24.6 gain    14.63  sd all 0.0528 A  easy 0.2018 A
+   F|N3     FI all        0.4 easy        0.0 gain 104650309065013817507840.00  sd all 1.5147 A  easy 490008039200.1732 A
+   S+F|N0   FI all      701.5 easy      161.4 gain     4.35  sd all 0.0378 A  easy 0.0787 A
+   S+F|N1   FI all      691.1 easy      120.7 gain     5.72  sd all 0.0380 A  easy 0.091 A
+   S+F|N2   FI all      429.8 easy      114.2 gain     3.76  sd all 0.0482 A  easy 0.0936 A
+   S+F|N3   FI all        0.7 easy        0.0 gain    14.63  sd all 1.2170 A  easy 4.6551 A
+== rigid_res2  (v.rhat = -0.068)
+   F|N0     FI all    52812.4 easy    15269.1 gain     3.46  sd all 0.0044 A  easy 0.0081 A
+   F|N1     FI all    47351.1 easy    14228.1 gain     3.33  sd all 0.0046 A  easy 0.0084 A
+   F|N2     FI all     5314.6 easy      338.7 gain    15.69  sd all 0.0137 A  easy 0.0543 A
+   F|N3     FI all        1.2 easy        0.0 gain 50990310826890611392512.00  sd all 0.9130 A  easy 206168871110.2813 A
+   S+F|N0   FI all    62423.9 easy    24880.6 gain     2.51  sd all 0.0040 A  easy 0.0063 A
+   S+F|N1   FI all    56632.4 easy    24503.1 gain     2.31  sd all 0.0042 A  easy 0.0064 A
+   S+F|N2   FI all     5873.3 easy      866.0 gain     6.78  sd all 0.0130 A  easy 0.034 A
+   S+F|N3   FI all        1.8 easy        0.1 gain    17.85  sd all 0.7370 A  easy 3.1141 A
+gain spectrum (coords, S+F, dim 26): top [6511.5, 1392.8, 316.1, 100.9, 66.0, 22.1]  #>2: 15  #>10: 8  #dirs with sd<0.1A: all 14 easy 10 S-only 9
+gain spectrum (coords+s, S+F, dim 27): top [6516.9, 1495.5, 326.0, 105.8, 66.3, 30.4]  #>2: 16  #>10: 8  #dirs with sd<0.1A: all 14 easy 10 S-only 9
+######## attenuation EXP_T3=130us
+== radial_HA/GLU16  (v.rhat = -0.000)
+   F|N0     FI all     1437.3 easy      258.0 gain     5.57  sd all 0.0264 A  easy 0.0623 A
+   F|N1     FI all     1140.2 easy      232.7 gain     4.90  sd all 0.0296 A  easy 0.0655 A
+   F|N2     FI all      920.0 easy      173.5 gain     5.30  sd all 0.0330 A  easy 0.0759 A
+   F|N3     FI all        0.0 easy        0.0 gain 2420955432722405785600.00  sd all 10.1940 A  easy 501576040464.9961 A
+   S+F|N0   FI all     1916.2 easy      736.9 gain     2.60  sd all 0.0228 A  easy 0.0368 A
+   S+F|N1   FI all     1503.1 easy      624.2 gain     2.41  sd all 0.0258 A  easy 0.04 A
+   S+F|N2   FI all     1119.5 easy      399.5 gain     2.80  sd all 0.0299 A  easy 0.05 A
+   S+F|N3   FI all        0.1 easy        0.0 gain     2.09  sd all 4.0182 A  easy 5.8122 A
+== radial_HG22/ILE3  (v.rhat = -0.000)
+   F|N0     FI all      924.8 easy      106.5 gain     8.68  sd all 0.0329 A  easy 0.0969 A
+   F|N1     FI all      791.6 easy      103.1 gain     7.68  sd all 0.0355 A  easy 0.0985 A
+   F|N2     FI all      704.4 easy       80.9 gain     8.71  sd all 0.0377 A  easy 0.1112 A
+   F|N3     FI all        0.0 easy        0.0 gain 78787209722883022520320.00  sd all 7.2582 A  easy 2037314714429.5596 A
+   S+F|N0   FI all      987.4 easy      169.1 gain     5.84  sd all 0.0318 A  easy 0.0769 A
+   S+F|N1   FI all      865.2 easy      160.4 gain     5.39  sd all 0.0340 A  easy 0.0789 A
+   S+F|N2   FI all      806.4 easy      153.6 gain     5.25  sd all 0.0352 A  easy 0.0807 A
+   S+F|N3   FI all        0.1 easy        0.0 gain     2.06  sd all 3.5823 A  easy 5.1472 A
+== radial_HG3/GLN2  (v.rhat = +0.000)
+   F|N0     FI all       71.1 easy       41.4 gain     1.72  sd all 0.1186 A  easy 0.1555 A
+   F|N1     FI all       51.0 easy       19.7 gain     2.59  sd all 0.1400 A  easy 0.2253 A
+   F|N2     FI all       36.9 easy       10.9 gain     3.40  sd all 0.1645 A  easy 0.3035 A
+   F|N3     FI all        0.0 easy        0.0 gain 5010548215550500143104.00  sd all 6.9202 A  easy 489845463321.9365 A
+   S+F|N0   FI all      135.3 easy      105.5 gain     1.28  sd all 0.0860 A  easy 0.0973 A
+   S+F|N1   FI all      121.4 easy       92.8 gain     1.31  sd all 0.0908 A  easy 0.1038 A
+   S+F|N2   FI all      103.5 easy       83.2 gain     1.24  sd all 0.0983 A  easy 0.1096 A
+   S+F|N3   FI all        0.1 easy        0.0 gain     2.21  sd all 3.2958 A  easy 4.9004 A
+== rigid_res2  (v.rhat = -0.068)
+   F|N0     FI all    12215.6 easy     7490.5 gain     1.63  sd all 0.0090 A  easy 0.0116 A
+   F|N1     FI all    12209.1 easy     6583.4 gain     1.85  sd all 0.0091 A  easy 0.0123 A
+   F|N2     FI all      790.4 easy      158.9 gain     4.97  sd all 0.0356 A  easy 0.0793 A
+   F|N3     FI all        0.1 easy        0.0 gain 2518453326771258392576.00  sd all 4.1078 A  easy 206145497050.0837 A
+   S+F|N0   FI all    21827.2 easy    17102.0 gain     1.28  sd all 0.0068 A  easy 0.0076 A
+   S+F|N1   FI all    21768.1 easy    16952.1 gain     1.28  sd all 0.0068 A  easy 0.0077 A
+   S+F|N2   FI all     1281.0 easy      660.5 gain     1.94  sd all 0.0279 A  easy 0.0389 A
+   S+F|N3   FI all        0.2 easy        0.1 gain     2.40  sd all 2.0742 A  easy 3.215 A
+gain spectrum (coords, S+F, dim 26): top [415.7, 126.5, 17.0, 9.7, 6.6, 3.4]  #>2: 7  #>10: 3  #dirs with sd<0.1A: all 10 easy 9 S-only 9
+gain spectrum (coords+s, S+F, dim 27): top [416.6, 131.3, 17.0, 10.0, 6.7, 3.5]  #>2: 8  #>10: 3  #dirs with sd<0.1A: all 10 easy 10 S-only 9
+######## attenuation EXP_T3=85us
+== radial_HA/GLU16  (v.rhat = -0.000)
+   F|N0     FI all      671.8 easy      162.5 gain     4.13  sd all 0.0386 A  easy 0.0784 A
+   F|N1     FI all      548.4 easy      148.9 gain     3.68  sd all 0.0427 A  easy 0.0819 A
+   F|N2     FI all      430.5 easy      111.3 gain     3.87  sd all 0.0482 A  easy 0.0948 A
+   F|N3     FI all        0.0 easy        0.0 gain 562674151073453309952.00  sd all 21.1624 A  easy 501987134521.5004 A
+   S+F|N0   FI all     1150.6 easy      641.4 gain     1.79  sd all 0.0295 A  easy 0.0395 A
+   S+F|N1   FI all      912.8 easy      539.8 gain     1.69  sd all 0.0331 A  easy 0.043 A
+   S+F|N2   FI all      627.3 easy      328.7 gain     1.91  sd all 0.0399 A  easy 0.0552 A
+   S+F|N3   FI all        0.0 easy        0.0 gain     1.37  sd all 5.0901 A  easy 5.9677 A
+== radial_HG22/ILE3  (v.rhat = -0.000)
+   F|N0     FI all      356.3 easy       68.3 gain     5.22  sd all 0.0530 A  easy 0.121 A
+   F|N1     FI all      322.1 easy       66.2 gain     4.87  sd all 0.0557 A  easy 0.1229 A
+   F|N2     FI all      288.4 easy       51.5 gain     5.60  sd all 0.0589 A  easy 0.1394 A
+   F|N3     FI all        0.0 easy        0.0 gain 19362992892615856226304.00  sd all 14.6143 A  easy 2033598853126.4949 A
+   S+F|N0   FI all      418.9 easy      130.9 gain     3.20  sd all 0.0489 A  easy 0.0874 A
+   S+F|N1   FI all      382.3 easy      123.5 gain     3.09  sd all 0.0511 A  easy 0.09 A
+   S+F|N2   FI all      362.6 easy      118.6 gain     3.06  sd all 0.0525 A  easy 0.0918 A
+   S+F|N3   FI all        0.0 easy        0.0 gain     1.36  sd all 4.5506 A  easy 5.3 A
+== radial_HG3/GLN2  (v.rhat = +0.000)
+   F|N0     FI all       36.4 easy       26.5 gain     1.37  sd all 0.1656 A  easy 0.1942 A
+   F|N1     FI all       23.2 easy       13.1 gain     1.77  sd all 0.2077 A  easy 0.2761 A
+   F|N2     FI all       16.8 easy        7.1 gain     2.38  sd all 0.2437 A  easy 0.3759 A
+   F|N3     FI all        0.0 easy        0.0 gain 1107078547992780865536.00  sd all 14.7220 A  easy 489841538761.8941 A
+   S+F|N0   FI all      100.6 easy       90.7 gain     1.11  sd all 0.0997 A  easy 0.105 A
+   S+F|N1   FI all       93.2 easy       84.1 gain     1.11  sd all 0.1036 A  easy 0.1091 A
+   S+F|N2   FI all       79.8 easy       72.1 gain     1.11  sd all 0.1119 A  easy 0.1178 A
+   S+F|N3   FI all        0.1 easy        0.0 gain     1.52  sd all 4.1137 A  easy 5.08 A
+== rigid_res2  (v.rhat = -0.068)
+   F|N0     FI all     7147.6 easy     5227.3 gain     1.37  sd all 0.0118 A  easy 0.0138 A
+   F|N1     FI all     6946.0 easy     4407.8 gain     1.58  sd all 0.0120 A  easy 0.0151 A
+   F|N2     FI all      358.6 easy      107.3 gain     3.34  sd all 0.0528 A  easy 0.0965 A
+   F|N3     FI all        0.0 easy        0.0 gain 575187911994441400320.00  sd all 8.5974 A  easy 206192902241.446 A
+   S+F|N0   FI all    16759.1 easy    14838.8 gain     1.13  sd all 0.0077 A  easy 0.0082 A
+   S+F|N1   FI all    16758.5 easy    14772.8 gain     1.13  sd all 0.0077 A  easy 0.0082 A
+   S+F|N2   FI all      839.9 easy      601.0 gain     1.40  sd all 0.0345 A  easy 0.0408 A
+   S+F|N3   FI all        0.1 easy        0.1 gain     1.60  sd all 2.6042 A  easy 3.2905 A
+gain spectrum (coords, S+F, dim 26): top [118.9, 47.6, 5.8, 4.3, 2.9, 2.2]  #>2: 6  #>10: 2  #dirs with sd<0.1A: all 10 easy 9 S-only 9
+gain spectrum (coords+s, S+F, dim 27): top [119.1, 48.8, 5.8, 4.5, 2.9, 2.2]  #>2: 6  #>10: 2  #dirs with sd<0.1A: all 10 easy 9 S-only 9
+secs 75.7 null-mode check 0.00025986761920111144

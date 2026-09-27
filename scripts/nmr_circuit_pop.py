@@ -48,6 +48,9 @@ def main():
     fj = os.path.join(a.out, f"{a.pdb}_p{a.probe}_N{a.N}_o{a.orient}.json")
     if os.path.exists(fj):
         print("exists"); return
+    _cancel = os.path.join(ROOT, "research", "results", "RAW", "master", "cancel.txt")
+    if os.path.exists(_cancel) and f"{a.pdb}_p{a.probe}_N{a.N}_o{a.orient}" in open(_cancel).read().split():
+        print("cancelled"); return
     t0 = time.time()
     names, xyz, resid = SP.read_h_coords(os.path.join(ROOT, "data", "instruments", "nmr", f"{a.pdb}_H.pdb"))
     idx = SP.cluster(xyz, a.probe, a.N)

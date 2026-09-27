@@ -1,0 +1,181 @@
+{
+ "note": "classical-spin (sphere) / DTWA echo adversary vs sector-exact Trotter F (RAW/nmr_sparse); M=4000 samples, SE<=0.017; window = 80-320 us; late = 160-320 us mean per observed b",
+ "rows": [
+  {
+   "file": "out\\cspin_echo_1UBQ_p19_N10_dtwa.json",
+   "N": 10,
+   "probe": 19,
+   "mode": "dtwa",
+   "t_fail_F_us": 59.99999999999999,
+   "maxerr_F_80_320": 0.232,
+   "maxSE": 0.016,
+   "secs": 34.4,
+   "F_exact_late_mean": [
+    0.318,
+    0.45,
+    0.504,
+    0.477
+   ],
+   "F_cl_late_mean": [
+    0.247,
+    0.247,
+    0.282,
+    0.27
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p19_N10_sphere.json",
+   "N": 10,
+   "probe": 19,
+   "mode": "sphere",
+   "t_fail_F_us": 59.99999999999999,
+   "maxerr_F_80_320": 0.236,
+   "maxSE": 0.016,
+   "secs": 35.7,
+   "F_exact_late_mean": [
+    0.318,
+    0.45,
+    0.504,
+    0.477
+   ],
+   "F_cl_late_mean": [
+    0.245,
+    0.295,
+    0.278,
+    0.286
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p19_N12_sphere.json",
+   "N": 12,
+   "probe": 19,
+   "mode": "sphere",
+   "t_fail_F_us": 59.99999999999999,
+   "maxerr_F_80_320": 0.368,
+   "maxSE": 0.0162,
+   "secs": 43.6,
+   "F_exact_late_mean": [
+    0.289,
+    0.464,
+    0.581,
+    0.535
+   ],
+   "F_cl_late_mean": [
+    0.214,
+    0.227,
+    0.238,
+    0.24
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p19_N14_sphere.json",
+   "N": 14,
+   "probe": 19,
+   "mode": "sphere",
+   "t_fail_F_us": 40.0,
+   "maxerr_F_80_320": 0.361,
+   "maxSE": 0.0161,
+   "secs": 50.6,
+   "F_exact_late_mean": [
+    0.257,
+    0.5,
+    0.429,
+    0.311
+   ],
+   "F_cl_late_mean": [
+    0.148,
+    0.175,
+    0.184,
+    0.156
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p245_N10_sphere.json",
+   "N": 10,
+   "probe": 245,
+   "mode": "sphere",
+   "t_fail_F_us": 80.0,
+   "maxerr_F_80_320": 0.567,
+   "maxSE": 0.0163,
+   "secs": 35.2,
+   "F_exact_late_mean": [
+    0.485,
+    0.365,
+    0.445,
+    0.857
+   ],
+   "F_cl_late_mean": [
+    0.295,
+    0.247,
+    0.259,
+    0.385
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p245_N12_sphere.json",
+   "N": 12,
+   "probe": 245,
+   "mode": "sphere",
+   "t_fail_F_us": 80.0,
+   "maxerr_F_80_320": 0.603,
+   "maxSE": 0.0165,
+   "secs": 41.9,
+   "F_exact_late_mean": [
+    0.375,
+    0.825,
+    0.438,
+    0.387
+   ],
+   "F_cl_late_mean": [
+    0.211,
+    0.298,
+    0.221,
+    0.211
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p245_N14_dtwa.json",
+   "N": 14,
+   "probe": 245,
+   "mode": "dtwa",
+   "t_fail_F_us": 80.0,
+   "maxerr_F_80_320": 0.198,
+   "maxSE": 0.0162,
+   "secs": 47.8,
+   "F_exact_late_mean": [
+    0.278,
+    0.308,
+    0.268,
+    0.218
+   ],
+   "F_cl_late_mean": [
+    0.141,
+    0.15,
+    0.148,
+    0.13
+   ]
+  },
+  {
+   "file": "out\\cspin_echo_1UBQ_p245_N14_sphere.json",
+   "N": 14,
+   "probe": 245,
+   "mode": "sphere",
+   "t_fail_F_us": 59.99999999999999,
+   "maxerr_F_80_320": 0.187,
+   "maxSE": 0.0162,
+   "secs": 45.9,
+   "F_exact_late_mean": [
+    0.278,
+    0.308,
+    0.268,
+    0.218
+   ],
+   "F_cl_late_mean": [
+    0.156,
+    0.149,
+    0.163,
+    0.157
+   ]
+  }
+ ]
+}

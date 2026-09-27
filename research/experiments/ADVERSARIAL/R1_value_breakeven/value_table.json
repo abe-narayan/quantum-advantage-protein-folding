@@ -1,0 +1,340 @@
+{
+ "sigma_sweep": {
+  "dense": {
+   "sigma=0.01": {
+    "classical_route_median_A": 0.03125253514771033,
+    "quantum_median_A": 0.014036227937579233,
+    "transfer_only_median_A": 0.052672205252299875
+   },
+   "sigma=0.03": {
+    "classical_route_median_A": 0.09375760544313098,
+    "quantum_median_A": 0.0421086838127377,
+    "transfer_only_median_A": 0.15801661575689963
+   },
+   "sigma=0.1": {
+    "classical_route_median_A": 0.31252535147710325,
+    "quantum_median_A": 0.14036227937579232,
+    "transfer_only_median_A": 0.5267220525229988
+   },
+   "frac_params_CRB_gain_gt_2x (g>4)": 0.7142857142857143,
+   "frac_params_CRB_gain_gt_3x (g>9)": 0.2857142857142857,
+   "diag_FI_echo_over_transfer": {
+    "min": 3.1854268873253098,
+    "median": 9.750479829743597,
+    "max": 146.14105009956467
+   }
+  },
+  "amide-only": {
+   "sigma=0.01": {
+    "classical_route_median_A": 0.07488970154267807,
+    "quantum_median_A": 0.02619204014002814,
+    "transfer_only_median_A": 0.10025654697568669
+   },
+   "sigma=0.03": {
+    "classical_route_median_A": 0.22466910462803422,
+    "quantum_median_A": 0.07857612042008441,
+    "transfer_only_median_A": 0.30076964092706
+   },
+   "sigma=0.1": {
+    "classical_route_median_A": 0.7488970154267808,
+    "quantum_median_A": 0.2619204014002814,
+    "transfer_only_median_A": 1.0025654697568667
+   },
+   "frac_params_CRB_gain_gt_2x (g>4)": 0.8095238095238095,
+   "frac_params_CRB_gain_gt_3x (g>9)": 0.38095238095238093,
+   "diag_FI_echo_over_transfer": {
+    "min": 4.218430910705828,
+    "median": 16.222869556962134,
+    "max": 182.6066183081862
+   }
+  }
+ },
+ "truncation_bias": {
+  "1UBQ_p19_core10_o0.json|transfer_all_exact_N12": {
+   "max_abs_bias_A": 0.05775056997207099,
+   "max_bias_over_crb": 1.0261879684929234,
+   "max_misfit_sigma": 1.9427552919855615
+  },
+  "1UBQ_p19_core10_o0.json|transfer_all_exact_N14": {
+   "max_abs_bias_A": 0.5254096220132349,
+   "max_bias_over_crb": 16.120144107412802,
+   "max_misfit_sigma": 12.701874057772235
+  },
+  "1UBQ_p19_core10_o0.json|transfer_all_deph": {
+   "max_abs_bias_A": 0.9363652016107487,
+   "max_bias_over_crb": 12.041010417959885,
+   "max_misfit_sigma": 11.871587568705209
+  },
+  "1UBQ_p19_core10_o0.json|echo_all_exact_N12": {
+   "max_abs_bias_A": 0.24018148580110796,
+   "max_bias_over_crb": 7.250518802055425,
+   "max_misfit_sigma": 4.08751130151862
+  },
+  "1UBQ_p245_core10_o0.json|transfer_all_exact_N12": {
+   "max_abs_bias_A": 0.44233991371417236,
+   "max_bias_over_crb": 9.115123001243752,
+   "max_misfit_sigma": 5.425531062220311
+  },
+  "1UBQ_p245_core10_o0.json|transfer_all_exact_N14": {
+   "max_abs_bias_A": 0.5749199146035846,
+   "max_bias_over_crb": 15.373507198493177,
+   "max_misfit_sigma": 8.752017551900504
+  },
+  "1UBQ_p245_core10_o0.json|transfer_all_deph": {
+   "max_abs_bias_A": 0.6287685096405414,
+   "max_bias_over_crb": 8.416845198240726,
+   "max_misfit_sigma": 5.638162797120271
+  },
+  "1UBQ_p245_core10_o0.json|echo_all_exact_N12": {
+   "max_abs_bias_A": 0.22055722583502377,
+   "max_bias_over_crb": 19.78167614849941,
+   "max_misfit_sigma": 12.470845513618873
+  }
+ },
+ "light_cone_Neff": {
+  "dense": {
+   "t50": {
+    "median_calibration": [
+     21,
+     110
+    ],
+    "full_bracket": [
+     7,
+     589
+    ]
+   },
+   "t90": {
+    "median_calibration": [
+     143,
+     280
+    ],
+    "full_bracket": [
+     23,
+     627
+    ]
+   }
+  },
+  "amide-only": {
+   "t50": {
+    "median_calibration": [
+     20,
+     39
+    ],
+    "full_bracket": [
+     9,
+     73
+    ]
+   },
+   "t90": {
+    "median_calibration": [
+     20,
+     50
+    ],
+    "full_bracket": [
+     16,
+     73
+    ]
+   }
+  }
+ },
+ "comparators": [
+  {
+   "method": "1H dipolar echo (OTOC), static oriented sample, exact forward model [this program]",
+   "distances": "3.3-4.0 A (dense), 5.9-8.3 A (amide-only); MEASURED parameter set",
+   "precision": "CRB median 0.014 A dense / 0.026 A amide at sigma=0.01 (classical-route 0.031 / 0.075 A); truncation bias of the N=10 model 0.06-0.6 A (MEASURED-derived)",
+   "throughput": "3-4 local parameters per probe data set (n_b x n_t = 63-84 site-resolved points at SNR 100); site resolution in a static dense 1H network is not available without isotopic dilution (INFERENCE)",
+   "interpretation": "needs quantum forward model only if N_eff > ~47-51 (exact-classical memory wall)",
+   "tag": "MEASURED/DERIVED (model); physical data never acquired for a protein"
+  },
+  {
+   "method": "Classical twin: transfer S_ab(t) + echo before t_c* on the same sample",
+   "distances": "same",
+   "precision": "median 0.031 A dense / 0.075 A amide at sigma=0.01; reaches the quantum CRB with g x more scans (g median 5.6 / 6.4)",
+   "throughput": "same",
+   "interpretation": "classical (sparse Pauli exact for S at N=10; exact to N~47)",
+   "tag": "MEASURED-derived"
+  },
+  {
+   "method": "NOESY build-up (solution; 15N/13C-edited; deuterated for large proteins)",
+   "distances": "<= 5-6 A (1H-1H)",
+   "precision": "bounds 2.5/3.5/5-6 A classes, ~0.3-1 A effective; exact-NOE protocols ~0.1-0.2 A",
+   "throughput": "~10-20 restraints per residue per 1-3 days of 3D spectra",
+   "interpretation": "classical (relaxation matrix)",
+   "tag": "INFERENCE-unverified (domain values)"
+  },
+  {
+   "method": "MAS ssNMR 1H-1H / 13C-13C contacts (RFDR, CHHC, DARR), REDOR 13C-15N",
+   "distances": "<= 6-8 A",
+   "precision": "REDOR isolated pairs ~0.1 A; contacts ~1 A bins",
+   "throughput": "days per 2D/3D",
+   "interpretation": "classical",
+   "tag": "INFERENCE-unverified"
+  },
+  {
+   "method": "19F-1H / 19F-19F REDOR, CODEX",
+   "distances": "up to ~15 A (value from task brief)",
+   "precision": "~0.5-1 A",
+   "throughput": "1 label pair per sample, days",
+   "interpretation": "classical",
+   "tag": "task-brief value, unverified"
+  },
+  {
+   "method": "PRE (paramagnetic tag)",
+   "distances": "up to ~25-35 A",
+   "precision": "~2-4 A (tag flexibility)",
+   "throughput": "one tag site per sample, all backbone amides at once, hours-days",
+   "interpretation": "classical",
+   "tag": "INFERENCE (Clore & Iwahara, Chem. Rev. 2009, cited from memory, not re-verified)"
+  },
+  {
+   "method": "DEER/PELDOR (spin labels)",
+   "distances": "~18-80 A (longer when deuterated)",
+   "precision": "distribution; mean ~1-3 A including label rotamers",
+   "throughput": "hours per distance (Q-band)",
+   "interpretation": "classical",
+   "tag": "INFERENCE-unverified"
+  },
+  {
+   "method": "RDCs (weak alignment)",
+   "distances": "orientational (no range limit)",
+   "precision": "few degrees per bond vector",
+   "throughput": "hundreds of couplings per day",
+   "interpretation": "classical",
+   "tag": "INFERENCE-unverified"
+  },
+  {
+   "method": "Cross-linking MS",
+   "distances": "Calpha-Calpha <= ~25-35 A (DSS/BS3)",
+   "precision": "binary contact",
+   "throughput": "tens-hundreds of links per experiment",
+   "interpretation": "classical",
+   "tag": "INFERENCE-unverified"
+  },
+  {
+   "method": "AlphaFold-class prediction",
+   "distances": "all pairs",
+   "precision": "median backbone ~1 A RMSD on CASP14 targets; short-range H-H distances in confident regions well under 1 A",
+   "throughput": "minutes per protein on one GPU",
+   "interpretation": "classical",
+   "tag": "LITERATURE-SUPPORTED from memory (Jumper et al. Nature 2021, 0.96 A median backbone RMSD95), not re-verified"
+  },
+  {
+   "method": "Small-molecule OTOC NMR + Willow simulation (Zhang et al. arXiv:2510.19550)",
+   "distances": "one H-H distance, one dihedral",
+   "precision": "'similar accuracy and precision to independent spectroscopic measurements'",
+   "throughput": "-",
+   "interpretation": "quantum processor used; not beyond classical",
+   "tag": "LITERATURE-SUPPORTED (abstract verified 2026-09-27)"
+  }
+ ],
+ "quantum_inversion_costs": [
+  {
+   "task": "T1 GB1 amide-only, 1 probe, P=4",
+   "network": "amide",
+   "N_eff": 30,
+   "P": 4,
+   "note": "N_eff(t50) median 20-31 (bracket 13-56)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2588563.772429312,
+   "quantum_total_1us_100fact": 2588563.772429312,
+   "quantum_total_10us_depth": 25885637.724293128,
+   "quantum_total_10us_100fact": 25885637.724293128,
+   "quantum_total_170us_depth": 440055841.3129831,
+   "quantum_total_170us_100fact": 440055841.3129831,
+   "T_count_per_eval": 191745464624.3935,
+   "logical_qubits": 70,
+   "classical_exact_leadership_total": 71.12465842175999,
+   "classical_exact_node_total": 1111322.78784
+  },
+  {
+   "task": "T2 ubiquitin amide-only, 1 probe, P=4",
+   "network": "amide",
+   "N_eff": 45,
+   "P": 4,
+   "note": "N_eff(t90) median 35-50 (bracket 16-73)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2631701.9008552074,
+   "quantum_total_1us_100fact": 2631701.9008552074,
+   "quantum_total_10us_depth": 26317019.00855208,
+   "quantum_total_10us_100fact": 26317019.00855208,
+   "quantum_total_170us_depth": 447389323.14538527,
+   "quantum_total_170us_100fact": 447389323.14538527,
+   "T_count_per_eval": 292411322317.2453,
+   "logical_qubits": 100,
+   "classical_exact_leadership_total": 3495919.210746348,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T3 ubiquitin amide-only, full cone, P=4",
+   "network": "amide",
+   "N_eff": 73,
+   "P": 4,
+   "note": "all 73 amide H (fast-calibration bracket)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2683173.8884646464,
+   "quantum_total_1us_100fact": 2683173.8884646464,
+   "quantum_total_10us_depth": 26831738.884646468,
+   "quantum_total_10us_100fact": 26831738.884646468,
+   "quantum_total_170us_depth": 456139561.03899,
+   "quantum_total_170us_100fact": 456139561.03899,
+   "T_count_per_eval": 483633811994.8623,
+   "logical_qubits": 156,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T4 ubiquitin dense, 1 probe, P=4",
+   "network": "dense",
+   "N_eff": 100,
+   "P": 4,
+   "note": "N_eff(t50) median 21-110",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 4236552.466478104,
+   "quantum_total_1us_100fact": 4236552.466478104,
+   "quantum_total_10us_depth": 42365524.66478105,
+   "quantum_total_10us_100fact": 42365524.66478105,
+   "quantum_total_170us_depth": 720213919.3012778,
+   "quantum_total_170us_100fact": 720213919.3012778,
+   "T_count_per_eval": 1103268871478.673,
+   "logical_qubits": 210,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T5 ubiquitin dense, 1 probe, P=4, full molecule",
+   "network": "dense",
+   "N_eff": 629,
+   "P": 4,
+   "note": "N_eff(t90) up to 629",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 4536894.537269947,
+   "quantum_total_1us_100fact": 13376749.98723186,
+   "quantum_total_10us_depth": 45368945.37269948,
+   "quantum_total_10us_100fact": 133767499.87231861,
+   "quantum_total_170us_depth": 771272071.3358911,
+   "quantum_total_170us_100fact": 2274047497.8294163,
+   "T_count_per_eval": 7431527770684.367,
+   "logical_qubits": 1268,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T6 ubiquitin dense, 76 probes, P=3*76",
+   "network": "dense",
+   "N_eff": 250,
+   "P": 228,
+   "note": "whole-backbone refinement, 76 probe data sets",
+   "quantum_evals": 694640,
+   "quantum_total_1us_depth": 16926842950.190187,
+   "quantum_total_1us_100fact": 19836144082.254128,
+   "quantum_total_10us_depth": 169268429501.90192,
+   "quantum_total_10us_100fact": 198361440822.54132,
+   "quantum_total_170us_depth": 2877563301532.3325,
+   "quantum_total_170us_100fact": 3372144493983.202,
+   "T_count_per_eval": 2855600610712.6177,
+   "logical_qubits": 510,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  }
+ ]
+}

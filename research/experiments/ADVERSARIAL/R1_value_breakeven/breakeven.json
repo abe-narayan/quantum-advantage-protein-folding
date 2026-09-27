@@ -1,0 +1,728 @@
+{
+ "measured": {
+  "numpy_amp_gate_per_s": 52814491.02995343,
+  "pauli_s_per_string_gate": 1.7227418228029973e-06
+ },
+ "breakeven": {
+  "dense|tT=1us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 20,
+   "q_wall": 22076.0915885016,
+   "c_wall": 22633.4972975892,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 30,
+   "q_wall": 22443.98720854764,
+   "c_wall": 28689.03936,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 37,
+   "q_wall": 22634.27550522014,
+   "c_wall": 28985.8752872448,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 44,
+   "q_wall": 22791.49225719168,
+   "c_wall": 44121.20259939533,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 20,
+   "q_wall": 22076.0915885016,
+   "c_wall": 22633.4972975892,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 30,
+   "q_wall": 22443.98720854764,
+   "c_wall": 28689.03936,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 37,
+   "q_wall": 22634.27550522014,
+   "c_wall": 28985.8752872448,
+   "c_fits": true
+  },
+  "dense|tT=1us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 44,
+   "q_wall": 22791.49225719168,
+   "c_wall": 44121.20259939533,
+   "c_fits": true
+  },
+  "dense|tT=1us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 2371237.7368601006,
+   "c_wall": 3911068.333023414,
+   "c_fits": true
+  },
+  "dense|tT=1us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 2396221.3991584796,
+   "c_wall": 1071057.46944,
+   "c_fits": false
+  },
+  "dense|tT=1us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 2411453.940885232,
+   "c_wall": 513911.7348225024,
+   "c_fits": false
+  },
+  "dense|tT=1us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 2424602.3410474146,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=10us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 24,
+   "q_wall": 222415.19638519106,
+   "c_wall": 434563.14811371267,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 33,
+   "q_wall": 225304.66160730273,
+   "c_wall": 252463.546368,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 40,
+   "q_wall": 227050.13305009055,
+   "c_wall": 250688.651132928,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 228513.38707533514,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=10us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 24,
+   "q_wall": 222415.19638519106,
+   "c_wall": 434563.14811371267,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 33,
+   "q_wall": 225304.66160730273,
+   "c_wall": 252463.546368,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 40,
+   "q_wall": 227050.13305009055,
+   "c_wall": 250688.651132928,
+   "c_fits": true
+  },
+  "dense|tT=10us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 228513.38707533514,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=10us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 29,
+   "q_wall": 23781172.34374591,
+   "c_wall": 16803108.393730223,
+   "c_fits": false
+  },
+  "dense|tT=10us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 23962213.9915848,
+   "c_wall": 1071057.46944,
+   "c_fits": false
+  },
+  "dense|tT=10us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 24114539.40885232,
+   "c_wall": 513911.7348225024,
+   "c_fits": false
+  },
+  "dense|tT=10us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 24246023.410474148,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 3799226.1575576356,
+   "c_wall": 3911068.333023414,
+   "c_fits": true
+  },
+  "dense|tT=170us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 3839255.2874251776,
+   "c_wall": 1071057.46944,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 3863661.052429152,
+   "c_wall": 513911.7348225024,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 3884727.5802806974,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 3799226.1575576356,
+   "c_wall": 3911068.333023414,
+   "c_fits": true
+  },
+  "dense|tT=170us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 3839255.2874251776,
+   "c_wall": 1071057.46944,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 3863661.052429152,
+   "c_wall": 513911.7348225024,
+   "c_fits": false
+  },
+  "dense|tT=170us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 3884727.5802806974,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "dense|tT=170us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 29,
+   "q_wall": 404279929.84368044,
+   "c_wall": 16803108.393730223,
+   "c_fits": false
+  },
+  "dense|tT=170us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 407357637.85694164,
+   "c_wall": 1071057.46944,
+   "c_fits": false
+  },
+  "dense|tT=170us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 409947169.95048946,
+   "c_wall": 513911.7348225024,
+   "c_fits": false
+  },
+  "dense|tT=170us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 412182397.9780605,
+   "c_wall": 377035.7313039237,
+   "c_fits": false
+  },
+  "amide|tT=1us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 20,
+   "q_wall": 14141.253577796766,
+   "c_wall": 14612.503518443555,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 30,
+   "q_wall": 14380.909846829512,
+   "c_wall": 18522.046464,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 37,
+   "q_wall": 14504.868330530462,
+   "c_wall": 18713.68790474752,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 44,
+   "q_wall": 14607.283195383248,
+   "c_wall": 28485.267643118386,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 20,
+   "q_wall": 14141.253577796766,
+   "c_wall": 14612.503518443555,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 30,
+   "q_wall": 14380.909846829512,
+   "c_wall": 18522.046464,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 37,
+   "q_wall": 14504.868330530462,
+   "c_wall": 18713.68790474752,
+   "c_fits": true
+  },
+  "amide|tT=1us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 44,
+   "q_wall": 14607.283195383248,
+   "c_wall": 28485.267643118386,
+   "c_fits": true
+  },
+  "amide|tT=1us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 1519254.3510491627,
+   "c_wall": 2525040.6079870462,
+   "c_fits": true
+  },
+  "amide|tT=1us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 1535529.3240767142,
+   "c_wall": 691489.734656,
+   "c_fits": false
+  },
+  "amide|tT=1us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 1545452.1769708649,
+   "c_wall": 331788.6287976858,
+   "c_fits": false
+  },
+  "amide|tT=1us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 1554017.3687125437,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=10us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 24,
+   "q_wall": 142490.17484460285,
+   "c_wall": 280560.06755411625,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 33,
+   "q_wall": 144372.44366461356,
+   "c_wall": 162994.0088832,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 40,
+   "q_wall": 145509.48675751413,
+   "c_wall": 161848.1116086272,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 146462.68647294806,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=10us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 24,
+   "q_wall": 142490.17484460285,
+   "c_wall": 280560.06755411625,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 33,
+   "q_wall": 144372.44366461356,
+   "c_wall": 162994.0088832,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 40,
+   "q_wall": 145509.48675751413,
+   "c_wall": 161848.1116086272,
+   "c_fits": true
+  },
+  "amide|tT=10us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 146462.68647294806,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=10us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 29,
+   "q_wall": 15237358.251883123,
+   "c_wall": 10848322.612092495,
+   "c_fits": false
+  },
+  "amide|tT=10us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 15355293.240767146,
+   "c_wall": 691489.734656,
+   "c_fits": false
+  },
+  "amide|tT=10us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 15454521.769708652,
+   "c_wall": 331788.6287976858,
+   "c_fits": false
+  },
+  "amide|tT=10us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 15540173.687125439,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 2434167.9371770932,
+   "c_wall": 2525040.6079870462,
+   "c_fits": true
+  },
+  "amide|tT=170us|AE-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 2460243.898384465,
+   "c_wall": 691489.734656,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 2476142.414879472,
+   "c_wall": 331788.6287976858,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 2489865.6700401166,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-100fact|numpy-1core (MEASURED kernel)": {
+   "N_star": 27,
+   "q_wall": 2434167.9371770932,
+   "c_wall": 2525040.6079870462,
+   "c_fits": true
+  },
+  "amide|tT=170us|AE-100fact|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 2460243.898384465,
+   "c_wall": 691489.734656,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-100fact|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 2476142.414879472,
+   "c_wall": 331788.6287976858,
+   "c_fits": false
+  },
+  "amide|tT=170us|AE-100fact|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 2489865.6700401166,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "amide|tT=170us|sampling-depth|numpy-1core (MEASURED kernel)": {
+   "N_star": 29,
+   "q_wall": 259035090.2820131,
+   "c_wall": 10848322.612092495,
+   "c_fits": false
+  },
+  "amide|tT=170us|sampling-depth|opt-node (64 cores, 1 TB)": {
+   "N_star": 35,
+   "q_wall": 261039985.09304145,
+   "c_wall": 691489.734656,
+   "c_fits": false
+  },
+  "amide|tT=170us|sampling-depth|cluster (1e4 cores, 64 TB)": {
+   "N_star": 41,
+   "q_wall": 262726870.08504707,
+   "c_wall": 331788.6287976858,
+   "c_fits": false
+  },
+  "amide|tT=170us|sampling-depth|leadership (1e6 core-eq, 4 PB)": {
+   "N_star": 47,
+   "q_wall": 264182952.68113244,
+   "c_wall": 243419.5598593753,
+   "c_fits": false
+  },
+  "dense|tT=1us|AE-depth|pauli-kappa4.0": {
+   "N_star": 12
+  },
+  "dense|tT=10us|AE-depth|pauli-kappa4.0": {
+   "N_star": 13
+  },
+  "dense|tT=170us|AE-depth|pauli-kappa4.0": {
+   "N_star": 15
+  },
+  "dense|dominance_exact_over_pauli_kappa4.0": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39
+  ],
+  "dense|tT=1us|AE-depth|pauli-kappa2.0": {
+   "N_star": 13
+  },
+  "dense|tT=10us|AE-depth|pauli-kappa2.0": {
+   "N_star": 16
+  },
+  "dense|tT=170us|AE-depth|pauli-kappa2.0": {
+   "N_star": 20
+  },
+  "dense|dominance_exact_over_pauli_kappa2.0": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39
+  ],
+  "amide|tT=1us|AE-depth|pauli-kappa4.0": {
+   "N_star": 12
+  },
+  "amide|tT=10us|AE-depth|pauli-kappa4.0": {
+   "N_star": 13
+  },
+  "amide|tT=170us|AE-depth|pauli-kappa4.0": {
+   "N_star": 15
+  },
+  "amide|dominance_exact_over_pauli_kappa4.0": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39
+  ],
+  "amide|tT=1us|AE-depth|pauli-kappa2.0": {
+   "N_star": 13
+  },
+  "amide|tT=10us|AE-depth|pauli-kappa2.0": {
+   "N_star": 16
+  },
+  "amide|tT=170us|AE-depth|pauli-kappa2.0": {
+   "N_star": 20
+  },
+  "amide|dominance_exact_over_pauli_kappa2.0": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39
+  ]
+ },
+ "tasks": [
+  {
+   "task": "T1 GB1 amide-only, 1 probe, P=4",
+   "network": "amide",
+   "N_eff": 30,
+   "P": 4,
+   "note": "N_eff(t50) median 20-31 (bracket 13-56)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2588563.772429312,
+   "quantum_total_1us_100fact": 2588563.772429312,
+   "quantum_total_10us_depth": 25885637.724293128,
+   "quantum_total_10us_100fact": 25885637.724293128,
+   "quantum_total_170us_depth": 440055841.3129831,
+   "quantum_total_170us_100fact": 440055841.3129831,
+   "T_count_per_eval": 191745464624.3935,
+   "logical_qubits": 70,
+   "classical_exact_leadership_total": 71.12465842175999,
+   "classical_exact_node_total": 1111322.78784
+  },
+  {
+   "task": "T2 ubiquitin amide-only, 1 probe, P=4",
+   "network": "amide",
+   "N_eff": 45,
+   "P": 4,
+   "note": "N_eff(t90) median 35-50 (bracket 16-73)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2631701.9008552074,
+   "quantum_total_1us_100fact": 2631701.9008552074,
+   "quantum_total_10us_depth": 26317019.00855208,
+   "quantum_total_10us_100fact": 26317019.00855208,
+   "quantum_total_170us_depth": 447389323.14538527,
+   "quantum_total_170us_100fact": 447389323.14538527,
+   "T_count_per_eval": 292411322317.2453,
+   "logical_qubits": 100,
+   "classical_exact_leadership_total": 3495919.210746348,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T3 ubiquitin amide-only, full cone, P=4",
+   "network": "amide",
+   "N_eff": 73,
+   "P": 4,
+   "note": "all 73 amide H (fast-calibration bracket)",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 2683173.8884646464,
+   "quantum_total_1us_100fact": 2683173.8884646464,
+   "quantum_total_10us_depth": 26831738.884646468,
+   "quantum_total_10us_100fact": 26831738.884646468,
+   "quantum_total_170us_depth": 456139561.03899,
+   "quantum_total_170us_100fact": 456139561.03899,
+   "T_count_per_eval": 483633811994.8623,
+   "logical_qubits": 156,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T4 ubiquitin dense, 1 probe, P=4",
+   "network": "dense",
+   "N_eff": 100,
+   "P": 4,
+   "note": "N_eff(t50) median 21-110",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 4236552.466478104,
+   "quantum_total_1us_100fact": 4236552.466478104,
+   "quantum_total_10us_depth": 42365524.66478105,
+   "quantum_total_10us_100fact": 42365524.66478105,
+   "quantum_total_170us_depth": 720213919.3012778,
+   "quantum_total_170us_100fact": 720213919.3012778,
+   "T_count_per_eval": 1103268871478.673,
+   "logical_qubits": 210,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T5 ubiquitin dense, 1 probe, P=4, full molecule",
+   "network": "dense",
+   "N_eff": 629,
+   "P": 4,
+   "note": "N_eff(t90) up to 629",
+   "quantum_evals": 180,
+   "quantum_total_1us_depth": 4536894.537269947,
+   "quantum_total_1us_100fact": 13376749.98723186,
+   "quantum_total_10us_depth": 45368945.37269948,
+   "quantum_total_10us_100fact": 133767499.87231861,
+   "quantum_total_170us_depth": 771272071.3358911,
+   "quantum_total_170us_100fact": 2274047497.8294163,
+   "T_count_per_eval": 7431527770684.367,
+   "logical_qubits": 1268,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  },
+  {
+   "task": "T6 ubiquitin dense, 76 probes, P=3*76",
+   "network": "dense",
+   "N_eff": 250,
+   "P": 228,
+   "note": "whole-backbone refinement, 76 probe data sets",
+   "quantum_evals": 694640,
+   "quantum_total_1us_depth": 16926842950.190187,
+   "quantum_total_1us_100fact": 19836144082.254128,
+   "quantum_total_10us_depth": 169268429501.90192,
+   "quantum_total_10us_100fact": 198361440822.54132,
+   "quantum_total_170us_depth": 2877563301532.3325,
+   "quantum_total_170us_100fact": 3372144493983.202,
+   "T_count_per_eval": 2855600610712.6177,
+   "logical_qubits": 510,
+   "classical_exact_leadership_total": null,
+   "classical_exact_node_total": null
+  }
+ ],
+ "value_breakeven_Tacq_s": {
+  "dense|N=100|r=1|g_median": 927928.6577679724,
+  "dense|N=100|r=1|g_best_direction": 63272.34544725042,
+  "dense|N=100|r=10|g_median": 9279286.577679724,
+  "dense|N=100|r=10|g_best_direction": 632723.4544725042,
+  "dense|N=100|r=100|g_median": 92792865.77679725,
+  "dense|N=100|r=100|g_best_direction": 6327234.544725043,
+  "amide|N=45|r=1|g_median": 484438.2626576492,
+  "amide|N=45|r=1|g_best_direction": 42168.42820100039,
+  "amide|N=45|r=10|g_median": 4844382.626576492,
+  "amide|N=45|r=10|g_best_direction": 421684.28201000387,
+  "amide|N=45|r=100|g_median": 48443826.265764914,
+  "amide|N=45|r=100|g_best_direction": 4216842.820100038
+ }
+}

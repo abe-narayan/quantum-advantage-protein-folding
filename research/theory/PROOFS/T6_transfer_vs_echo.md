@@ -25,9 +25,16 @@ _Discovery sprint, 2026-09-27. Tags: DERIVED (short derivation here), THEORETICA
    - The α-calibrated mixture is fitted on N = 8 (α = 0.36 for probe 19, 0 for probe 245) and evaluated out of sample (C3; see the report).
 4. **Transfer is local in operator space; the echo is global.** Transfer asks "how much of the operator is exactly Z_b". The echo asks "how much of the operator has any non-commuting content at b". The second is a property of the whole operator distribution. Its exact evaluation needs the full operator, i.e. the dynamics of every spin inside the light cone.
 
+## 3b. Correction (2026-09-27, after the adversarial review `experiments/ADVERSARIAL/R1_SYNTHESIS.md`)
+
+- At N = 10, sparse Pauli dynamics at ε = 3e-5 reproduces the echo within σ over the whole window for 4 of 6 jobs (MEASURED). It then holds ≈ 0.46–0.50 of the parity-allowed operator space, i.e. it is exact simulation in disguise.
+- The correct statement is: **no compressed classical representation of the echo was found at any N ≤ 12**, from 9 approximation families. **Exact simulation reproduces it at seconds of cost.**
+- The 10-spin reference is itself unconverged in cluster size (|F12 − F10| up to 0.46).
+- Corrected ranges: echo/transfer FI ratio 3.2–183×; stored-panel f_hard^OTOC 0.49–1.0.
+
 ## 4. What this does and does not imply
 
-- **It explains** why f_hard(transfer) = 0 while f_hard(echo) = 0.55–1.0 at N = 10 (MEASURED).
+- **It explains** why truncated approximations reproduce transfer at N = 10 (f_hard = 0) but need essentially the whole operator space for the echo (f_hard 0.49–1.0 against the ε ≥ 1e-4 panel; ≈ 0 at ε = 3e-5) (MEASURED).
 - **It does not imply exponential classical hardness.** Two classical routes remain.
   - (a) **Exact simulation of the light cone.** The cost is exponential in the number of spins N_cone(t) the operator reaches by time t, not in the protein size. C2/C3 measure how the needed string count M*(N) grows with N at fixed accuracy. If N_cone at the informative times is ≤ ~30–40 spins, exact or sector methods remain feasible (sector-exact N = 14 takes ~15 min).
   - (b) **Coarse-grained front models.** For random circuits, averaged OTOCs map to classical stochastic front propagation (operator-spreading / FKPP-type descriptions; THEORETICAL, the Nahum–Vijay–Haah and von Keyserlingk et al. 2018 line, cited from memory, not re-verified). For a *specific* protein Hamiltonian, such a model is an approximation whose accuracy at σ = 0.01 is untested here. **It is the strongest untested classical adversary for the echo branch** (listed in OPEN_QUESTIONS).

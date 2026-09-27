@@ -1,0 +1,160 @@
+== 1UBQ_p19_N10_o0_g0.json
+   plain            eps=[0.01]                 peak=      59  t_fail=20.0  maxerr[80,320]=0.3241
+   normcorr         eps=[0.01]                 peak=      59  t_fail=20.0  maxerr[80,320]=0.5645
+   plain            eps=[0.003]                peak=     464  t_fail=40.0  maxerr[80,320]=0.1725
+   normcorr         eps=[0.003]                peak=     464  t_fail=40.0  maxerr[80,320]=0.5517
+   plain            eps=[0.001]                peak=    3569  t_fail=40.0  maxerr[80,320]=0.1135
+   normcorr         eps=[0.001]                peak=    3569  t_fail=40.0  maxerr[80,320]=0.5084
+   plain            eps=[0.0003]               peak=   29942  t_fail=59.99999999999999  maxerr[80,320]=0.1187
+   normcorr         eps=[0.0003]               peak=   29942  t_fail=59.99999999999999  maxerr[80,320]=0.3536
+   plain            eps=[0.0001]               peak=  170818  t_fail=80.0  maxerr[80,320]=0.0675
+   normcorr         eps=[0.0001]               peak=  170818  t_fail=59.99999999999999  maxerr[80,320]=0.1130
+   plain            eps=[3e-05]                peak=  256643  t_fail=None  maxerr[80,320]=0.0075
+   normcorr         eps=[3e-05]                peak=  256643  t_fail=140.0  maxerr[80,320]=0.0110
+   extrap_plain     eps=[0.01, 0.003]          peak=     464  t_fail=40.0  maxerr[80,320]=0.5349
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     464  t_fail=40.0  maxerr[80,320]=1.2550
+   extrap_plain     eps=[0.003, 0.001]         peak=    3569  t_fail=40.0  maxerr[80,320]=0.4436
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    3569  t_fail=40.0  maxerr[80,320]=0.6902
+   extrap_plain     eps=[0.001, 0.0003]        peak=   29942  t_fail=59.99999999999999  maxerr[80,320]=0.1939
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   29942  t_fail=59.99999999999999  maxerr[80,320]=0.2155
+   extrap_plain     eps=[0.0003, 0.0001]       peak=  170818  t_fail=80.0  maxerr[80,320]=0.0358
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=  170818  t_fail=80.0  maxerr[80,320]=0.0717
+   extrap_plain     eps=[0.0001, 3e-05]        peak=  256643  t_fail=None  maxerr[80,320]=0.0059
+   extrap_normcorr  eps=[0.0001, 3e-05]        peak=  256643  t_fail=None  maxerr[80,320]=0.0068
+== 1UBQ_p19_N12_o0_g0.json.partial
+   plain            eps=[0.01]                 peak=      64  t_fail=20.0  maxerr[80,320]=0.3841
+   normcorr         eps=[0.01]                 peak=      64  t_fail=40.0  maxerr[80,320]=0.5791
+   plain            eps=[0.003]                peak=     512  t_fail=40.0  maxerr[80,320]=0.2323
+   normcorr         eps=[0.003]                peak=     512  t_fail=40.0  maxerr[80,320]=0.4913
+   plain            eps=[0.001]                peak=    4286  t_fail=40.0  maxerr[80,320]=0.2092
+   normcorr         eps=[0.001]                peak=    4286  t_fail=40.0  maxerr[80,320]=0.4157
+   plain            eps=[0.0003]               peak=   42572  t_fail=59.99999999999999  maxerr[80,320]=0.1855
+   normcorr         eps=[0.0003]               peak=   42572  t_fail=40.0  maxerr[80,320]=0.3646
+   plain            eps=[0.0001]               peak=  332047  t_fail=59.99999999999999  maxerr[80,320]=0.1409
+   normcorr         eps=[0.0001]               peak=  332047  t_fail=59.99999999999999  maxerr[80,320]=0.2414
+   extrap_plain     eps=[0.01, 0.003]          peak=     512  t_fail=40.0  maxerr[80,320]=0.8137
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     512  t_fail=40.0  maxerr[80,320]=2.1969
+   extrap_plain     eps=[0.003, 0.001]         peak=    4286  t_fail=40.0  maxerr[80,320]=0.4832
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    4286  t_fail=40.0  maxerr[80,320]=0.9350
+   extrap_plain     eps=[0.001, 0.0003]        peak=   42572  t_fail=80.0  maxerr[80,320]=0.2287
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   42572  t_fail=80.0  maxerr[80,320]=0.5552
+   extrap_plain     eps=[0.0003, 0.0001]       peak=  332047  t_fail=80.0  maxerr[80,320]=0.0704
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=  332047  t_fail=80.0  maxerr[80,320]=0.3089
+== 1UBQ_p19_N14_o0_g0.json.partial
+   plain            eps=[0.01]                 peak=      72  t_fail=20.0  maxerr[80,320]=0.3884
+   normcorr         eps=[0.01]                 peak=      72  t_fail=20.0  maxerr[80,320]=0.6521
+   plain            eps=[0.003]                peak=     611  t_fail=40.0  maxerr[80,320]=0.2385
+   normcorr         eps=[0.003]                peak=     611  t_fail=40.0  maxerr[80,320]=0.6332
+   plain            eps=[0.001]                peak=    4944  t_fail=40.0  maxerr[80,320]=0.2283
+   normcorr         eps=[0.001]                peak=    4944  t_fail=40.0  maxerr[80,320]=0.5936
+   plain            eps=[0.0003]               peak=   50287  t_fail=59.99999999999999  maxerr[80,320]=0.2081
+   normcorr         eps=[0.0003]               peak=   50287  t_fail=40.0  maxerr[80,320]=0.5339
+   extrap_plain     eps=[0.01, 0.003]          peak=     611  t_fail=20.0  maxerr[80,320]=0.9615
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     611  t_fail=20.0  maxerr[80,320]=3.7275
+   extrap_plain     eps=[0.003, 0.001]         peak=    4944  t_fail=40.0  maxerr[80,320]=0.8861
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    4944  t_fail=40.0  maxerr[80,320]=2.1409
+   extrap_plain     eps=[0.001, 0.0003]        peak=   50287  t_fail=59.99999999999999  maxerr[80,320]=0.3088
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   50287  t_fail=59.99999999999999  maxerr[80,320]=1.5288
+== 1UBQ_p19_N8_o0_g0.json
+   plain            eps=[0.01]                 peak=      61  t_fail=20.0  maxerr[80,320]=0.4426
+   normcorr         eps=[0.01]                 peak=      61  t_fail=20.0  maxerr[80,320]=0.5758
+   plain            eps=[0.003]                peak=     434  t_fail=40.0  maxerr[80,320]=0.2259
+   normcorr         eps=[0.003]                peak=     434  t_fail=40.0  maxerr[80,320]=0.3039
+   plain            eps=[0.001]                peak=    2665  t_fail=40.0  maxerr[80,320]=0.0929
+   normcorr         eps=[0.001]                peak=    2665  t_fail=40.0  maxerr[80,320]=0.2368
+   plain            eps=[0.0003]               peak=   12060  t_fail=59.99999999999999  maxerr[80,320]=0.0397
+   normcorr         eps=[0.0003]               peak=   12060  t_fail=59.99999999999999  maxerr[80,320]=0.0964
+   plain            eps=[0.0001]               peak=   16063  t_fail=None  maxerr[80,320]=0.0073
+   normcorr         eps=[0.0001]               peak=   16063  t_fail=320.0  maxerr[80,320]=0.0102
+   plain            eps=[3e-05]                peak=   16328  t_fail=None  maxerr[80,320]=0.0015
+   normcorr         eps=[3e-05]                peak=   16328  t_fail=None  maxerr[80,320]=0.0015
+   extrap_plain     eps=[0.01, 0.003]          peak=     434  t_fail=40.0  maxerr[80,320]=0.2805
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     434  t_fail=40.0  maxerr[80,320]=0.7974
+   extrap_plain     eps=[0.003, 0.001]         peak=    2665  t_fail=40.0  maxerr[80,320]=0.2131
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    2665  t_fail=40.0  maxerr[80,320]=0.2388
+   extrap_plain     eps=[0.001, 0.0003]        peak=   12060  t_fail=99.99999999999999  maxerr[80,320]=0.0618
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   12060  t_fail=99.99999999999999  maxerr[80,320]=0.0646
+   extrap_plain     eps=[0.0003, 0.0001]       peak=   16063  t_fail=None  maxerr[80,320]=0.0053
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=   16063  t_fail=None  maxerr[80,320]=0.0053
+   extrap_plain     eps=[0.0001, 3e-05]        peak=   16328  t_fail=None  maxerr[80,320]=0.0014
+   extrap_normcorr  eps=[0.0001, 3e-05]        peak=   16328  t_fail=None  maxerr[80,320]=0.0014
+== 1UBQ_p245_N10_o0_g0.json
+   plain            eps=[0.01]                 peak=      37  t_fail=20.0  maxerr[80,320]=0.3401
+   normcorr         eps=[0.01]                 peak=      37  t_fail=20.0  maxerr[80,320]=0.6059
+   plain            eps=[0.003]                peak=     276  t_fail=59.99999999999999  maxerr[80,320]=0.2554
+   normcorr         eps=[0.003]                peak=     276  t_fail=40.0  maxerr[80,320]=0.6059
+   plain            eps=[0.001]                peak=    2806  t_fail=59.99999999999999  maxerr[80,320]=0.2494
+   normcorr         eps=[0.001]                peak=    2806  t_fail=40.0  maxerr[80,320]=0.3996
+   plain            eps=[0.0003]               peak=   27484  t_fail=59.99999999999999  maxerr[80,320]=0.1578
+   normcorr         eps=[0.0003]               peak=   27484  t_fail=59.99999999999999  maxerr[80,320]=0.2161
+   plain            eps=[0.0001]               peak=  139592  t_fail=80.0  maxerr[80,320]=0.0489
+   normcorr         eps=[0.0001]               peak=  139592  t_fail=80.0  maxerr[80,320]=0.0571
+   plain            eps=[3e-05]                peak=  240390  t_fail=None  maxerr[80,320]=0.0068
+   normcorr         eps=[3e-05]                peak=  240390  t_fail=199.99999999999997  maxerr[80,320]=0.0147
+   extrap_plain     eps=[0.01, 0.003]          peak=     276  t_fail=40.0  maxerr[80,320]=0.6059
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     276  t_fail=40.0  maxerr[80,320]=0.6059
+   extrap_plain     eps=[0.003, 0.001]         peak=    2806  t_fail=59.99999999999999  maxerr[80,320]=3.3546
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    2806  t_fail=59.99999999999999  maxerr[80,320]=5.3498
+   extrap_plain     eps=[0.001, 0.0003]        peak=   27484  t_fail=80.0  maxerr[80,320]=0.0887
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   27484  t_fail=80.0  maxerr[80,320]=0.1183
+   extrap_plain     eps=[0.0003, 0.0001]       peak=  139592  t_fail=99.99999999999999  maxerr[80,320]=0.0369
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=  139592  t_fail=140.0  maxerr[80,320]=0.0414
+   extrap_plain     eps=[0.0001, 3e-05]        peak=  240390  t_fail=300.0  maxerr[80,320]=0.0121
+   extrap_normcorr  eps=[0.0001, 3e-05]        peak=  240390  t_fail=300.0  maxerr[80,320]=0.0119
+== 1UBQ_p245_N12_o0_g0.json
+   plain            eps=[0.01]                 peak=      51  t_fail=20.0  maxerr[80,320]=0.5001
+   normcorr         eps=[0.01]                 peak=      51  t_fail=20.0  maxerr[80,320]=0.6963
+   plain            eps=[0.003]                peak=     435  t_fail=40.0  maxerr[80,320]=0.3629
+   normcorr         eps=[0.003]                peak=     435  t_fail=40.0  maxerr[80,320]=0.6963
+   plain            eps=[0.001]                peak=    3949  t_fail=59.99999999999999  maxerr[80,320]=0.3599
+   normcorr         eps=[0.001]                peak=    3949  t_fail=40.0  maxerr[80,320]=0.5761
+   plain            eps=[0.0003]               peak=   40598  t_fail=59.99999999999999  maxerr[80,320]=0.3189
+   normcorr         eps=[0.0003]               peak=   40598  t_fail=59.99999999999999  maxerr[80,320]=0.4732
+   plain            eps=[0.0001]               peak=  315464  t_fail=80.0  maxerr[80,320]=0.2186
+   normcorr         eps=[0.0001]               peak=  315464  t_fail=59.99999999999999  maxerr[80,320]=0.2996
+   extrap_plain     eps=[0.01, 0.003]          peak=     435  t_fail=40.0  maxerr[80,320]=0.6963
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     435  t_fail=40.0  maxerr[80,320]=0.9596
+   extrap_plain     eps=[0.003, 0.001]         peak=    3949  t_fail=59.99999999999999  maxerr[80,320]=1.2585
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    3949  t_fail=59.99999999999999  maxerr[80,320]=3.2663
+   extrap_plain     eps=[0.001, 0.0003]        peak=   40598  t_fail=59.99999999999999  maxerr[80,320]=0.1607
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   40598  t_fail=80.0  maxerr[80,320]=0.6142
+   extrap_plain     eps=[0.0003, 0.0001]       peak=  315464  t_fail=99.99999999999999  maxerr[80,320]=0.0686
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=  315464  t_fail=99.99999999999999  maxerr[80,320]=0.1975
+== 1UBQ_p245_N14_o0_g0.json.partial
+   plain            eps=[0.01]                 peak=      51  t_fail=20.0  maxerr[80,320]=0.2761
+   normcorr         eps=[0.01]                 peak=      51  t_fail=20.0  maxerr[80,320]=0.8045
+   plain            eps=[0.003]                peak=     493  t_fail=40.0  maxerr[80,320]=0.3104
+   normcorr         eps=[0.003]                peak=     493  t_fail=40.0  maxerr[80,320]=0.7769
+   plain            eps=[0.001]                peak=    4349  t_fail=40.0  maxerr[80,320]=0.2723
+   normcorr         eps=[0.001]                peak=    4349  t_fail=40.0  maxerr[80,320]=0.6820
+   plain            eps=[0.0003]               peak=   46308  t_fail=59.99999999999999  maxerr[80,320]=0.1990
+   normcorr         eps=[0.0003]               peak=   46308  t_fail=40.0  maxerr[80,320]=0.6493
+   extrap_plain     eps=[0.01, 0.003]          peak=     493  t_fail=40.0  maxerr[80,320]=0.7769
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     493  t_fail=40.0  maxerr[80,320]=1.9965
+   extrap_plain     eps=[0.003, 0.001]         peak=    4349  t_fail=40.0  maxerr[80,320]=1.3753
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    4349  t_fail=40.0  maxerr[80,320]=7.0976
+   extrap_plain     eps=[0.001, 0.0003]        peak=   46308  t_fail=59.99999999999999  maxerr[80,320]=0.6911
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=   46308  t_fail=59.99999999999999  maxerr[80,320]=4.0566
+== 1UBQ_p245_N8_o0_g0.json
+   plain            eps=[0.01]                 peak=      35  t_fail=20.0  maxerr[80,320]=0.5160
+   normcorr         eps=[0.01]                 peak=      35  t_fail=40.0  maxerr[80,320]=0.6860
+   plain            eps=[0.003]                peak=     198  t_fail=59.99999999999999  maxerr[80,320]=0.3633
+   normcorr         eps=[0.003]                peak=     198  t_fail=40.0  maxerr[80,320]=0.4985
+   plain            eps=[0.001]                peak=    1413  t_fail=59.99999999999999  maxerr[80,320]=0.1857
+   normcorr         eps=[0.001]                peak=    1413  t_fail=59.99999999999999  maxerr[80,320]=0.2785
+   plain            eps=[0.0003]               peak=    6547  t_fail=80.0  maxerr[80,320]=0.0562
+   normcorr         eps=[0.0003]               peak=    6547  t_fail=80.0  maxerr[80,320]=0.0731
+   plain            eps=[0.0001]               peak=   15791  t_fail=320.0  maxerr[80,320]=0.0113
+   normcorr         eps=[0.0001]               peak=   15791  t_fail=160.0  maxerr[80,320]=0.0136
+   plain            eps=[3e-05]                peak=   16342  t_fail=None  maxerr[80,320]=0.0027
+   normcorr         eps=[3e-05]                peak=   16342  t_fail=None  maxerr[80,320]=0.0028
+   extrap_plain     eps=[0.01, 0.003]          peak=     198  t_fail=40.0  maxerr[80,320]=0.4726
+   extrap_normcorr  eps=[0.01, 0.003]          peak=     198  t_fail=40.0  maxerr[80,320]=0.4646
+   extrap_plain     eps=[0.003, 0.001]         peak=    1413  t_fail=59.99999999999999  maxerr[80,320]=0.4529
+   extrap_normcorr  eps=[0.003, 0.001]         peak=    1413  t_fail=59.99999999999999  maxerr[80,320]=0.5271
+   extrap_plain     eps=[0.001, 0.0003]        peak=    6547  t_fail=80.0  maxerr[80,320]=0.0741
+   extrap_normcorr  eps=[0.001, 0.0003]        peak=    6547  t_fail=80.0  maxerr[80,320]=0.0751
+   extrap_plain     eps=[0.0003, 0.0001]       peak=   15791  t_fail=119.99999999999999  maxerr[80,320]=0.0141
+   extrap_normcorr  eps=[0.0003, 0.0001]       peak=   15791  t_fail=119.99999999999999  maxerr[80,320]=0.0142
+   extrap_plain     eps=[0.0001, 3e-05]        peak=   16342  t_fail=None  maxerr[80,320]=0.0026
+   extrap_normcorr  eps=[0.0001, 3e-05]        peak=   16342  t_fail=None  maxerr[80,320]=0.0026

@@ -1,0 +1,487 @@
+{
+ "assumptions": {
+  "sigma": 0.01,
+  "Trec_s": 2.0,
+  "s1": [
+   0.1,
+   0.3,
+   1.0,
+   3.0
+  ]
+ },
+ "jobs": [
+  {
+   "file": "1PGA_p325_N10_o0_g0.json",
+   "n_hard_points": 13,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 167.58223569690685,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 11997.595926740585,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 39.347695658001754,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 3172.983735463574,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 6989.996093986403,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 133083.5561041515
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 18.620248410767424,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1333.066214082287,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 4.3719661842224165,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 352.55374838484147,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 776.6662326651558,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 14787.061789350164
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1.6758223569690684,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 119.97595926740584,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 0.3934769565800176,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 31.729837354635738,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 69.89996093986403,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 1330.835561041515
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 0.18620248410767432,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 13.330662140822874,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 0.04371966184222418,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 3.525537483848416,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 7.76666232665156,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 147.8706178935017
+    }
+   }
+  },
+  {
+   "file": "1PGA_p390_N10_o0_g0.json",
+   "n_hard_points": 13,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 147199.21493959997,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 71216.4837169611,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1545.491928650975,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 10134.534303664004,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 20258400.76669807,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 274763.8750118845
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 16355.468326622218,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 7912.942635217899,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 171.72132540566386,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1126.059367073778,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 2250933.4185220078,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 30529.319445764937
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1471.9921493959998,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 712.164837169611,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 15.45491928650975,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 101.34534303664005,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 202584.00766698073,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 2747.6387501188447
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 163.5546832662222,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 79.12942635217901,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.7172132540566392,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 11.260593670737785,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 22509.334185220083,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 305.29319445764946
+    }
+   }
+  },
+  {
+   "file": "1UBQ_p19_N10_o0_g0.json",
+   "n_hard_points": 13,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 126220.72626402197,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 114812.27813301916,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1410.3809372798257,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 11692.329450620391,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 6865366.31386773,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 495333.44040036446
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 14024.525140446882,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 12756.919792557683,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 156.70899303109172,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1299.1477167355988,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 762818.4793186366,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 55037.04893337382
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1262.2072626402196,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1148.1227813301916,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 14.103809372798256,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 116.9232945062039,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 68653.66313867731,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 4953.3344040036445
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 140.2452514044689,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 127.56919792557689,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.5670899303109178,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 12.991477167355992,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 7628.184793186369,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 550.3704893337384
+    }
+   }
+  },
+  {
+   "file": "1UBQ_p19_N10_o1_g0.json",
+   "n_hard_points": 13,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 99269.62555520164,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 190283.50717698626,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1222.0420047196476,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 20625.143268616528,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 2049497225.4625843,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 5066981.602145697
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 11029.958395022402,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 21142.611908554023,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 135.78244496884975,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 2291.682585401836,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 227721913.94028708,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 562997.9557939662
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 992.6962555520163,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1902.8350717698625,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 12.220420047196477,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 206.25143268616526,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 20494972.254625842,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 50669.816021456965
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 110.29958395022405,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 211.4261190855403,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.3578244496884977,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 22.91682585401837,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 2277219.1394028715,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 5629.979557939664
+    }
+   }
+  },
+  {
+   "file": "1PGAHN_p260_N10_o0_g0.json",
+   "n_hard_points": 17,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 2.2514039191676643e+20,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 11982416.075628472,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 2622705100.1118054,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 459584.8613586625,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 3240069.0607752483,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 82538.37248558941
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 2.5015599101862932e+19,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1331379.563958719,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 291411677.7902006,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 51064.98459540693,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 360007.67341947195,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 9170.9302761766
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 2.2514039191676644e+18,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 119824.16075628472,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 26227051.001118056,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 4595.848613586625,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 32400.69060775248,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 825.3837248558941
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 2.5015599101862938e+17,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 13313.795639587192,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 2914116.777902007,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 510.64984595406946,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 3600.0767341947203,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 91.70930276176603
+    }
+   }
+  },
+  {
+   "file": "1PGAHN_p325_N10_o0_g0.json",
+   "n_hard_points": 11,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 77627.60257090315,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 275446.3887205152,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1054.7485058791547,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 17756.696793339164,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 2312256653.7038074,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 118600604.94925313
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 8625.289174544794,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 30605.15430227946,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 117.1942784310172,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1972.9663103710182,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 256917405.96708965,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 13177844.994361456
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 776.2760257090316,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 2754.463887205152,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 10.54748505879155,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 177.56696793339165,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 23122566.537038073,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 1186006.0494925312
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 86.25289174544797,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 306.0515430227947,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.1719427843101722,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 19.729663103710187,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 2569174.0596708977,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 131778.44994361463
+    }
+   }
+  },
+  {
+   "file": "1PGAHN_p390_N10_o0_g0.json",
+   "n_hard_points": 13,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 65018.05718556992,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 136567.4466796775,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 948.3233898477625,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 14160.174489291805,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 446915744.811465,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 5857036.384888128
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 7224.228576174435,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 15174.160742186386,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 105.36926553864028,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1573.3527210324226,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 49657304.97905166,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 650781.8205431253
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 650.1805718556992,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1365.674466796775,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 9.483233898477627,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 141.60174489291805,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 4469157.44811465,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 58570.36384888129
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 72.24228576174438,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 151.74160742186393,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.053692655386403,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 15.733527210324231,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 496573.0497905168,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 6507.818205431256
+    }
+   }
+  },
+  {
+   "file": "1UBQHN_p19_N10_o0_g0.json",
+   "n_hard_points": 8,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1056261600646.9344,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 160081369010598.75,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 3490261.8382414174,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 493160142.915092,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 76649963.00942804,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 11038743135.111242
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 117362400071.88159,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 17786818778955.414,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 387806.87091571296,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 54795571.43501022,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 8516662.556603115,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 1226527015.01236
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 10562616006.469345,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1600813690105.9873,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 34902.61838241417,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 4931601.429150919,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 766499.6300942805,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 110387431.35111243
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1173624000.7188163,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 177868187789.5542,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 3878.0687091571313,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 547955.7143501022,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 85166.62556603119,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 12265270.150123606
+    }
+   }
+  },
+  {
+   "file": "1UBQHN_p359_N10_o0_g0.json",
+   "n_hard_points": 15,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 35538.232681309724,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 102094.73217645209,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 659.3603886956996,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 12503.531449474394,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 13192956.530950053,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 729708.2496767935
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 3948.6925201455247,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 11343.859130716899,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 73.26226541063326,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1389.2812721638218,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 1465884.05899445,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 81078.69440853261
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 355.3823268130973,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1020.9473217645209,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 6.593603886956996,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 125.03531449474396,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 131929.56530950053,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 7297.0824967679355
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 39.48692520145526,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 113.43859130716902,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 0.732622654106333,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 13.89281272163822,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 14658.840589944504,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 810.7869440853264
+    }
+   }
+  },
+  {
+   "file": "1UBQHN_p487_N10_o0_g0.json",
+   "n_hard_points": 11,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 6.37808025656638e+24,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 31530705990937.52,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 49372844604.46911,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 647050234.8049331,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 15085816152.790827,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 304227093.6670085
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 7.08675584062931e+23,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 3503411776770.8354,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 5485871622.718789,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 71894470.53388144,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 1676201794.7545364,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 33803010.407445386
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 6.3780802565663795e+22,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 315307059909.37524,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 493728446.04469115,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 6470502.348049331,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 150858161.52790827,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 3042270.936670085
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 7.086755840629312e+21,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 35034117767.70837,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 54858716.22718791,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 718944.7053388148,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 16762017.947545366,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 338030.104074454
+    }
+   }
+  },
+  {
+   "file": "1UBQHN_p548_N10_o0_g0.json",
+   "n_hard_points": 16,
+   "n_butterfly_label_patterns": 4,
+   "per_s1": {
+    "0.1": {
+     "days_per_point_A1": 23.14814814814815,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 142356.6622674944,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 141503.04360672578,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1515.0650185461297,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 15703.185963134625,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 394548.63609014236,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 130528.18446249812
+    },
+    "0.3": {
+     "days_per_point_A1": 2.5720164609053495,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 15817.406918610486,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 15722.560400747308,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 168.34055761623662,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 1744.7984403482915,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 43838.737343349145,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 14503.131606944233
+    },
+    "1.0": {
+     "days_per_point_A1": 0.23148148148148148,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 1423.566622674944,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 1415.0304360672578,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 15.150650185461297,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 157.03185963134624,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 3945.4863609014237,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 1305.2818446249812
+    },
+    "3.0": {
+     "days_per_point_A1": 0.025720164609053502,
+     "days_per_point_at_t50|cluster|generous|PE_gauss_T3=4T2": 158.1740691861049,
+     "days_to_recover_ideal_hardFI|cluster|generous|PE_gauss_T3=4T2": 157.22560400747312,
+     "days_per_point_at_t50|cluster|generous|LE_logistic_T3=6.7T2": 1.6834055761623667,
+     "days_to_recover_ideal_hardFI|cluster|generous|LE_logistic_T3=6.7T2": 17.44798440348292,
+     "days_per_point_at_t50|network|generous|LE_logistic_T3=6.7T2": 438.3873734334917,
+     "days_to_recover_ideal_hardFI|network|generous|LE_logistic_T3=6.7T2": 145.03131606944237
+    }
+   }
+  }
+ ]
+}

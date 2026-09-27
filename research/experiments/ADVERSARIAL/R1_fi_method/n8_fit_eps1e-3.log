@@ -1,0 +1,9 @@
+eps1e-3 radial_HG3/GLN2    S tc_gate  4 phi_hat +0.0014 A (linJe -0.8009, linJc +0.0014) sd_exact 0.0813 |bias|/sd    0.0 RMSE_c full 0.0170 easy 1.1736  gain_rmse 0.04 gain_gate 52.12 relJerr 4.55
+eps1e-3 radial_HG3/GLN2    F tc_gate  2 phi_hat +0.1376 A (linJe +0.1581, linJc +0.1174) sd_exact 0.0168 |bias|/sd    8.2 RMSE_c full 0.1378 easy 6.4031  gain_rmse 67.38 gain_gate 44907.65 relJerr 1.87
+eps1e-3 radial_HG12/ILE3   S tc_gate  4 phi_hat -0.0524 A (linJe -0.0151, linJc -0.0524) sd_exact 0.0225 |bias|/sd    2.3 RMSE_c full 0.0538 easy 0.0788  gain_rmse 5.73 gain_gate 7.99 relJerr 1.95
+eps1e-3 radial_HG12/ILE3   F tc_gate  2 phi_hat -0.0314 A (linJe -0.0121, linJc -0.0314) sd_exact 0.0048 |bias|/sd    6.6 RMSE_c full 0.0320 easy 0.1072  gain_rmse 45.25 gain_gate 490.96 relJerr 0.74
+eps1e-3 radial_HA/ILE3     S tc_gate  4 phi_hat -0.0032 A (linJe -0.8985, linJc -0.0032) sd_exact 0.0806 |bias|/sd    0.0 RMSE_c full 0.0193 easy 1.0904  gain_rmse 0.06 gain_gate 178.84 relJerr 4.33
+eps1e-3 radial_HA/ILE3     F tc_gate  2 phi_hat +0.0236 A (linJe +0.0396, linJc +0.0339) sd_exact 0.0209 |bias|/sd    1.1 RMSE_c full 0.0260 easy 2.0865  gain_rmse 1.55 gain_gate 8248.40 relJerr 1.71
+eps1e-3 rigid_res2         S tc_gate  4 phi_hat -0.0248 A (linJe -0.0470, linJc -0.0248) sd_exact 0.0082 |bias|/sd    3.0 RMSE_c full 0.0261 easy 0.0187  gain_rmse 5.25 gain_gate 5.17 relJerr 0.50
+eps1e-3 rigid_res2         F tc_gate  2 phi_hat +0.0000 A (linJe +0.0081, linJc +0.0090) sd_exact 0.0044 |bias|/sd    0.0 RMSE_c full 0.0035 easy 0.0267  gain_rmse 0.62 gain_gate 37.02 relJerr 0.55
+secs 78.2 classical runs 17

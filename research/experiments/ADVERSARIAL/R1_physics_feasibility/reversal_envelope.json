@@ -1,0 +1,3435 @@
+[
+ {
+  "file": "1PGA_p325_N10_o0_g0.json",
+  "hn_only": false,
+  "probe": "H/THR44",
+  "t_c_us": 80.0,
+  "ideal": {
+   "FI_echo_easy": 4877.320282986052,
+   "FI_echo_hard": 12548.524537197001,
+   "FI_transfer": 4254.566161998671,
+   "gain_vs_classical": 2.3741437339147717,
+   "hard_over_transfer": 2.9494251727189194
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.5307527431030713,
+    "A_at_t50": 0.3716585571883575,
+    "hard_retained": 0.10032874177908047,
+    "FI_echo_hard": 1258.977678000893,
+    "FI_echo_easy": 2808.975958961689,
+    "hard_over_transfer": 0.29591211655043625,
+    "gain_vs_classical": 1.1782360261242022,
+    "gain_per_param": [
+     1.2613798357916959,
+     1.1234130964577818,
+     1.1121444882436438,
+     1.1571462833815815
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.8585484719822482,
+    "A_at_t50": 0.767005494027472,
+    "hard_retained": 0.379360187148215,
+    "FI_echo_hard": 4760.410616865022,
+    "FI_echo_easy": 4264.94685257401,
+    "hard_over_transfer": 1.1188944855023055,
+    "gain_vs_classical": 1.5587655783519916,
+    "gain_per_param": [
+     1.901229029636198,
+     1.3667540616476563,
+     1.308220734863244,
+     1.4792207537283546
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9797605464950071,
+    "A_at_t50": 0.9720065817268161,
+    "hard_retained": 0.8788320267622423,
+    "FI_echo_hard": 11028.045251900568,
+    "FI_echo_easy": 4763.116066249439,
+    "hard_over_transfer": 2.592049302324144,
+    "gain_vs_classical": 2.2229356693624602,
+    "gain_per_param": [
+     2.8274795793209986,
+     1.66688992898038,
+     1.8277237433995748,
+     2.287750108962063
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9936045692890766,
+    "A_at_t50": 0.9916919204507306,
+    "hard_retained": 0.9719936988341067,
+    "FI_echo_hard": 12197.08677982066,
+    "FI_echo_easy": 4838.309856699383,
+    "hard_over_transfer": 2.8668226830654864,
+    "gain_vs_classical": 2.3413893200280405,
+    "gain_per_param": [
+     2.9898300744851274,
+     1.7065229800526578,
+     1.9490936704441797,
+     2.429398974652016
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 6.222892953756746,
+    "T3_over_T2_for_gain_2.0": 12.173260647862252,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.07935403042939011,
+    "A_at_t50": 0.019079919865868575,
+    "hard_retained": 0.0015253268872323993,
+    "FI_echo_hard": 19.140601871682087,
+    "FI_echo_easy": 783.1080517102771,
+    "hard_over_transfer": 0.004498837517828231,
+    "gain_vs_classical": 1.0037994918011164,
+    "gain_per_param": [
+     1.0043045212026382,
+     1.0027702759253503,
+     1.0034219790830379,
+     1.0042361797251613
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.3667151009013114,
+    "A_at_t50": 0.15728380863333413,
+    "hard_retained": 0.03586360375461991,
+    "FI_echo_hard": 450.0353117071584,
+    "FI_echo_easy": 2565.095540298102,
+    "hard_over_transfer": 0.10577701569829272,
+    "gain_vs_classical": 1.0659908557569053,
+    "gain_per_param": [
+     1.0907249578715563,
+     1.0457571590174262,
+     1.0494619667683889,
+     1.0609856905856632
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9389312133064169,
+    "A_at_t50": 0.90603235605511,
+    "hard_retained": 0.6163334378456891,
+    "FI_echo_hard": 7734.075267901612,
+    "FI_echo_easy": 4577.365004234383,
+    "hard_over_transfer": 1.8178293563704668,
+    "gain_vs_classical": 1.8756946948897366,
+    "gain_per_param": [
+     2.3744049780666137,
+     1.5322034564809635,
+     1.508383610847992,
+     1.8382690235823351
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9850502769688171,
+    "A_at_t50": 0.9797605464950071,
+    "hard_retained": 0.9187597131712907,
+    "FI_echo_hard": 11529.07880451802,
+    "FI_echo_easy": 4790.69182797302,
+    "hard_over_transfer": 2.709813025707419,
+    "gain_vs_classical": 2.274599222852471,
+    "gain_per_param": [
+     2.897249594894717,
+     1.6837560140098042,
+     1.8817348032107948,
+     2.350233465965597
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 12.445785907513493,
+    "T3_over_T2_for_gain_2.0": 24.346521295724504,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.026301295845613387,
+    "A_at_t50": 0.003397928931322778,
+    "hard_retained": 0.00016274384305472743,
+    "FI_echo_hard": 2.042195107849985,
+    "FI_echo_easy": 482.31155387953476,
+    "hard_over_transfer": 0.00048000078741063015,
+    "gain_vs_classical": 1.0004311268372,
+    "gain_per_param": [
+     1.0004645934753196,
+     1.0003222287006708,
+     1.0004026047277585,
+     1.0005091755445883
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.1907946697371667,
+    "A_at_t50": 0.057546598749711964,
+    "hard_retained": 0.009044721518875573,
+    "FI_echo_hard": 113.49790991172387,
+    "FI_echo_easy": 1787.6322916669133,
+    "hard_over_transfer": 0.026676729328004117,
+    "gain_vs_classical": 1.0187842075665139,
+    "gain_per_param": [
+     1.023850477622162,
+     1.0129671551119515,
+     1.0157453384175965,
+     1.0187451867091781
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9136984558239402,
+    "A_at_t50": 0.862213314218786,
+    "hard_retained": 0.5188637613990813,
+    "FI_echo_hard": 6510.974641378702,
+    "FI_echo_easy": 4476.303209680693,
+    "hard_over_transfer": 1.5303498390820736,
+    "gain_vs_classical": 1.7457418458806158,
+    "gain_per_param": [
+     2.191699395717021,
+     1.4678863466923897,
+     1.4199053706353129,
+     1.6777573789132554
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.980917849358442,
+    "A_at_t50": 0.9737246340612298,
+    "hard_retained": 0.8878537424806234,
+    "FI_echo_hard": 11141.25447296029,
+    "FI_echo_easy": 4769.047418427343,
+    "hard_over_transfer": 2.618658177765052,
+    "gain_vs_classical": 2.2346777013066976,
+    "gain_per_param": [
+     2.843230287036018,
+     1.6707172256844396,
+     1.8400357944637586,
+     2.302048618076401
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 14.913260365618981,
+    "T3_over_T2_for_gain_2.0": 29.173409680864953,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.785293562963942e-07,
+    "A_at_t50": 1.3330829225365915e-10,
+    "hard_retained": 5.324548920446725e-14,
+    "FI_echo_hard": 6.681523277773153e-10,
+    "FI_echo_easy": 67.72689373702923,
+    "hard_over_transfer": 1.5704358619338917e-13,
+    "gain_vs_classical": 1.0000000000001548,
+    "gain_per_param": [
+     1.0000000000001543,
+     1.0000000000001212,
+     1.0000000000001403,
+     1.0000000000002167
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0010689454607145834,
+    "A_at_t50": 7.224774033186504e-05,
+    "hard_retained": 2.665455295028816e-07,
+    "FI_echo_hard": 0.0033447531172470773,
+    "FI_echo_easy": 294.225802700088,
+    "hard_over_transfer": 7.861560943914924e-07,
+    "gain_vs_classical": 1.0000007353058005,
+    "gain_per_param": [
+     1.0000007692036998,
+     1.0000005699008072,
+     1.000000694995591,
+     1.000000884329539
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.5935009026017608,
+    "A_at_t50": 0.36503395453106585,
+    "hard_retained": 0.11006758048427785,
+    "FI_echo_hard": 1381.1857344568664,
+    "FI_echo_easy": 3397.8187462323267,
+    "hard_over_transfer": 0.3246360925805948,
+    "gain_vs_classical": 1.180490886308038,
+    "gain_per_param": [
+     1.2707189278677118,
+     1.1260481483286144,
+     1.1160153486094986,
+     1.1543532040822115
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9434434718718658,
+    "A_at_t50": 0.9136984558239402,
+    "hard_retained": 0.6374452037294321,
+    "FI_echo_hard": 7998.996780117321,
+    "FI_echo_easy": 4596.271349331175,
+    "hard_over_transfer": 1.880096930108527,
+    "gain_vs_classical": 1.9037559179996133,
+    "gain_per_param": [
+     2.4119083593221204,
+     1.5452897728155885,
+     1.529243236211404,
+     1.87491762726607
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 29.826520731237963,
+    "T3_over_T2_for_gain_2.0": 58.34681936172991,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network_rotoravg|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.08985848784270437,
+    "A_at_t50": 0.02317053720767404,
+    "hard_retained": 0.0019681451809578712,
+    "FI_echo_hard": 24.69731809601588,
+    "FI_echo_easy": 835.9509235494057,
+    "hard_over_transfer": 0.005804896940282579,
+    "gain_vs_classical": 1.0048516324925283,
+    "gain_per_param": [
+     1.005543417906745,
+     1.0035268785353741,
+     1.0043333755978585,
+     1.0053597997457948
+    ]
+   },
+   "network_rotoravg|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.39334882845332797,
+    "A_at_t50": 0.17677516337183993,
+    "hard_retained": 0.041845176278981946,
+    "FI_echo_hard": 525.0952213001389,
+    "FI_echo_easy": 2668.2603024175683,
+    "hard_over_transfer": 0.12341921627408996,
+    "gain_vs_classical": 1.075849831567953,
+    "gain_per_param": [
+     1.1053984176433116,
+     1.052654617983959,
+     1.055886630761101,
+     1.0693987437270762
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9416680076701,
+    "A_at_t50": 0.9106898982191405,
+    "hard_retained": 0.6289635025235548,
+    "FI_echo_hard": 7892.563944418196,
+    "FI_echo_easy": 4588.796643980876,
+    "hard_over_transfer": 1.8550807870644324,
+    "gain_vs_classical": 1.892484467456378,
+    "gain_per_param": [
+     2.3969147161182396,
+     1.5400759491468954,
+     1.5207683751907974,
+     1.8601361355514325
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9855358582753362,
+    "A_at_t50": 0.9804590938244969,
+    "hard_retained": 0.9222141361089612,
+    "FI_echo_hard": 11572.426715513235,
+    "FI_echo_easy": 4793.286586601737,
+    "hard_over_transfer": 2.720001587677002,
+    "gain_vs_classical": 2.279024652263858,
+    "gain_per_param": [
+     2.903286305467523,
+     1.6852128387812622,
+     1.8863229824867918,
+     2.3555365771908257
+    ]
+   },
+   "network_rotoravg|generous|required": {
+    "T3_over_T2_for_gain_1.5": 12.13663433828848,
+    "T3_over_T2_for_gain_2.0": 23.741757135415472,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network_rotoravg|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 6.519832277809683e-05,
+    "A_at_t50": 2.882334712124605e-07,
+    "hard_retained": 9.884266003740736e-10,
+    "FI_echo_hard": 1.2403295448012278e-05,
+    "FI_echo_easy": 132.04864446945703,
+    "hard_over_transfer": 2.9152902965282765e-09,
+    "gain_vs_classical": 1.0000000028275324,
+    "gain_per_param": [
+     1.0000000028585794,
+     1.0000000022100537,
+     1.0000000026002565,
+     1.0000000037706067
+    ]
+   },
+   "network_rotoravg|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.007903007444653267,
+    "A_at_t50": 0.0008875176205044662,
+    "hard_retained": 1.4652754892160705e-05,
+    "FI_echo_hard": 0.183870454301812,
+    "FI_echo_easy": 480.14836682343474,
+    "hard_over_transfer": 4.321720412861908e-05,
+    "gain_vs_classical": 1.0000388345386364,
+    "gain_per_param": [
+     1.0000419592078527,
+     1.0000290618036414,
+     1.0000369675356944,
+     1.0000448470952914
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.747812416601015,
+    "A_at_t50": 0.5777508473881269,
+    "hard_retained": 0.21675881257112228,
+    "FI_echo_hard": 2720.0032782024136,
+    "FI_echo_easy": 3901.007992370296,
+    "hard_over_transfer": 0.6393138982059302,
+    "gain_vs_classical": 1.333514627752517,
+    "gain_per_param": [
+     1.5275818993992614,
+     1.2300219776299681,
+     1.1912326811045404,
+     1.2765156488302443
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9603117144004604,
+    "A_at_t50": 0.9416680076701,
+    "hard_retained": 0.7325147700564812,
+    "FI_echo_hard": 9191.979565912974,
+    "FI_echo_easy": 4669.956444260908,
+    "hard_over_transfer": 2.160497502192997,
+    "gain_vs_classical": 2.02996876936205,
+    "gain_per_param": [
+     2.5756630793382564,
+     1.5991210862064091,
+     1.6345668458580924,
+     2.0424858405497175
+    ]
+   },
+   "network_rotoravg|literal|required": {
+    "T3_over_T2_for_gain_1.5": 24.27326867657696,
+    "T3_over_T2_for_gain_2.0": 47.483514270830945,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1PGA_p390_N10_o0_g0.json",
+  "hn_only": false,
+  "probe": "H/THR53",
+  "t_c_us": 80.0,
+  "ideal": {
+   "FI_echo_easy": 2301.207575362938,
+   "FI_echo_hard": 33574.322966645304,
+   "FI_transfer": 3850.72525770019,
+   "gain_vs_classical": 6.457524306215191,
+   "hard_over_transfer": 8.718960902107375
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.3346388390750202,
+    "A_at_t50": 0.012540226470149199,
+    "hard_retained": 0.016902037855275723,
+    "FI_echo_hard": 567.4744777474921,
+    "FI_echo_easy": 866.4250613155996,
+    "hard_over_transfer": 0.14736820722608784,
+    "gain_vs_classical": 1.120300274396575,
+    "gain_per_param": [
+     1.353525505204739,
+     1.1955918596606123,
+     1.0834619679710253,
+     1.0438776079476662
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.7383853158747243,
+    "A_at_t50": 0.1223840316645874,
+    "hard_retained": 0.11877247317309102,
+    "FI_echo_hard": 3987.705373860573,
+    "FI_echo_easy": 1802.1427400487987,
+    "hard_over_transfer": 1.0355725498427777,
+    "gain_vs_classical": 1.705430478024342,
+    "gain_per_param": [
+     2.586868086511704,
+     2.315968272201075,
+     1.5188709256595,
+     1.3747434785784902
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9697735330474534,
+    "A_at_t50": 0.8957766639030094,
+    "hard_retained": 0.7202532315172288,
+    "FI_echo_hard": 24182.014612729392,
+    "FI_echo_easy": 2221.601065630927,
+    "hard_over_transfer": 6.2798597652152095,
+    "gain_vs_classical": 4.982331206380849,
+    "gain_per_param": [
+     4.740016276041943,
+     7.842244834238451,
+     4.678549696982911,
+     5.494512117556432
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9911748278285194,
+    "A_at_t50": 0.9782676479234288,
+    "hard_retained": 0.9459641802297908,
+    "FI_echo_hard": 31760.106901912863,
+    "FI_echo_easy": 2275.4255620779327,
+    "hard_over_transfer": 8.247824702217601,
+    "gain_vs_classical": 6.184349493874059,
+    "gain_per_param": [
+     5.143467620633412,
+     9.11188861067528,
+     5.989219869155442,
+     7.026164749752953
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 5.986803633023175,
+    "T3_over_T2_for_gain_2.0": 7.614080795071992,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.012540226470149199,
+    "A_at_t50": 2.4729852088664606e-08,
+    "hard_retained": 1.727213493568551e-05,
+    "FI_echo_hard": 0.5799002366541827,
+    "FI_echo_easy": 107.51955119155252,
+    "hard_over_transfer": 0.00015059506920016484,
+    "gain_vs_classical": 1.0001465043888522,
+    "gain_per_param": [
+     1.000532155392287,
+     1.0001992772838444,
+     1.0000973810542735,
+     1.0000402603291894
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.1223840316645874,
+    "A_at_t50": 0.00037557435452098293,
+    "hard_retained": 0.0017483643989794915,
+    "FI_echo_hard": 58.70015099472215,
+    "FI_echo_easy": 602.7833752781785,
+    "hard_over_transfer": 0.015243920837338646,
+    "gain_vs_classical": 1.0131806527913847,
+    "gain_per_param": [
+     1.044611843326544,
+     1.018923017522663,
+     1.0087945728590837,
+     1.0040217662665527
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8957766639030094,
+    "A_at_t50": 0.5036906828957665,
+    "hard_retained": 0.307760978603621,
+    "FI_echo_hard": 10332.866492168787,
+    "FI_echo_easy": 2072.3545065152657,
+    "hard_over_transfer": 2.683355939639276,
+    "gain_vs_classical": 2.744509090455822,
+    "gain_per_param": [
+     3.680346916958498,
+     4.544665927691806,
+     2.4112874349488314,
+     2.495853718799857
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9782676479234288,
+    "A_at_t50": 0.9329501282885373,
+    "hard_retained": 0.8165702970869922,
+    "FI_echo_hard": 27415.794879368183,
+    "FI_echo_easy": 2241.9028757790916,
+    "hard_over_transfer": 7.11964449412369,
+    "gain_vs_classical": 5.499830660715543,
+    "gain_per_param": [
+     4.913187381246499,
+     8.39456982987343,
+     5.241926634488084,
+     6.155909998085345
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 11.97360726604635,
+    "T3_over_T2_for_gain_2.0": 15.228161590143984,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.026301295845613387,
+    "A_at_t50": 4.785293562963942e-07,
+    "hard_retained": 7.674749254801408e-05,
+    "FI_echo_hard": 2.5767451016872287,
+    "FI_echo_easy": 154.9795896893171,
+    "hard_over_transfer": 0.000669158386860912,
+    "gain_vs_classical": 1.0006432688377844,
+    "gain_per_param": [
+     1.0023196126035991,
+     1.0008824861381473,
+     1.0004278024047366,
+     1.0001788883620522
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.1907946697371667,
+    "A_at_t50": 0.0010689454607145834,
+    "hard_retained": 0.004380865947721983,
+    "FI_echo_hard": 147.0846082023965,
+    "FI_echo_easy": 787.7434413984025,
+    "hard_over_transfer": 0.03819659891556154,
+    "gain_vs_classical": 1.0317097339108874,
+    "gain_per_param": [
+     1.1036487481779742,
+     1.0463100620930728,
+     1.0212584110449672,
+     1.010076386430109
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9136984558239402,
+    "A_at_t50": 0.5935009026017608,
+    "hard_retained": 0.360541442871153,
+    "FI_echo_hard": 12104.934845816388,
+    "FI_echo_easy": 2105.6048114627056,
+    "hard_over_transfer": 3.143546743982963,
+    "gain_vs_classical": 3.032280734153072,
+    "gain_per_param": [
+     3.870501550902468,
+     5.09502046669051,
+     2.6794720777755088,
+     2.879421484040945
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.980917849358442,
+    "A_at_t50": 0.9434434718718658,
+    "hard_retained": 0.8463963682256653,
+    "FI_echo_hard": 28417.185024604132,
+    "FI_echo_easy": 2248.4869834355286,
+    "hard_over_transfer": 7.379696842245253,
+    "gain_vs_classical": 5.659156609266091,
+    "gain_per_param": [
+     4.965625966701041,
+     8.559933385733286,
+     5.416223797232642,
+     6.358043805031419
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 10.914059185584367,
+    "T3_over_T2_for_gain_2.0": 13.88061702622998,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.785293562963942e-07,
+    "A_at_t50": 5.243657802877033e-26,
+    "hard_retained": 2.495639374286685e-14,
+    "FI_echo_hard": 8.378940236057777e-10,
+    "FI_echo_easy": 9.26034198379792,
+    "hard_over_transfer": 2.1759382130165321e-13,
+    "gain_vs_classical": 1.0000000000002172,
+    "gain_per_param": [
+     1.0000000000007916,
+     1.0000000000002913,
+     1.0000000000001446,
+     1.0000000000000584
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0010689454607145834,
+    "A_at_t50": 2.224268039170621e-08,
+    "hard_retained": 1.2514263634819283e-07,
+    "FI_echo_hard": 0.004201579289651672,
+    "FI_echo_easy": 55.11315809310147,
+    "hard_over_transfer": 1.0911137535065346e-06,
+    "gain_vs_classical": 1.0000010757176416,
+    "gain_per_param": [
+     1.0000039289100706,
+     1.0000014553721492,
+     1.0000007154115467,
+     1.0000002926109754
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.5935009026017608,
+    "A_at_t50": 0.035147425731887776,
+    "hard_retained": 0.05832204357233131,
+    "FI_echo_hard": 1958.1231269722114,
+    "FI_echo_easy": 1578.2696311749714,
+    "hard_over_transfer": 0.5085076176381594,
+    "gain_vs_classical": 1.3606787567593228,
+    "gain_per_param": [
+     1.9504539184114988,
+     1.6097267854695394,
+     1.2539860740358868,
+     1.151649183682245
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9434434718718658,
+    "A_at_t50": 0.7577518898044722,
+    "hard_retained": 0.49667135619394637,
+    "FI_echo_hard": 16675.404521137283,
+    "FI_echo_easy": 2164.1889998439656,
+    "hard_over_transfer": 4.330458135851664,
+    "gain_vs_classical": 3.772342847651119,
+    "gain_per_param": [
+     4.265673331031746,
+     6.315386005621252,
+     3.405173744607491,
+     3.8906440273659695
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 21.828118371168735,
+    "T3_over_T2_for_gain_2.0": 27.76123405245996,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network_rotoravg|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.08985848784270437,
+    "A_at_t50": 6.519832277809683e-05,
+    "hard_retained": 0.0009447520017463148,
+    "FI_echo_hard": 31.71940883001542,
+    "FI_echo_easy": 322.569766361726,
+    "hard_over_transfer": 0.008237255765413797,
+    "gain_vs_classical": 1.0076005670931798,
+    "gain_per_param": [
+     1.026419081343286,
+     1.0108030306046105,
+     1.0050826997405582,
+     1.0022192431609622
+    ]
+   },
+   "network_rotoravg|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.39334882845332797,
+    "A_at_t50": 0.007903007444653267,
+    "hard_retained": 0.02102910822798585,
+    "FI_echo_hard": 706.0380713469351,
+    "FI_echo_easy": 1220.871598610855,
+    "hard_over_transfer": 0.18335197244599316,
+    "gain_vs_classical": 1.1392141550975898,
+    "gain_per_param": [
+     1.412933828843058,
+     1.2159332072298628,
+     1.0951217026739388,
+     1.049817808899233
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9416680076701,
+    "A_at_t50": 0.747812416601015,
+    "hard_retained": 0.4859475331241737,
+    "FI_echo_hard": 16315.359421955576,
+    "FI_echo_easy": 2160.539738500961,
+    "hard_over_transfer": 4.236957541785199,
+    "gain_vs_classical": 3.714130791483348,
+    "gain_per_param": [
+     4.23840014236753,
+     6.228908802731627,
+     3.346344470522217,
+     3.8112977596003694
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9855358582753362,
+    "A_at_t50": 0.9603117144004604,
+    "hard_retained": 0.8952642073982675,
+    "FI_echo_hard": 30057.88963966716,
+    "FI_echo_easy": 2260.3006200793598,
+    "hard_over_transfer": 7.805773621361643,
+    "gain_vs_classical": 5.918632360723817,
+    "gain_per_param": [
+     5.051741237420062,
+     8.829201375404804,
+     5.700031648883565,
+     6.687129679955173
+    ]
+   },
+   "network_rotoravg|generous|required": {
+    "T3_over_T2_for_gain_1.5": 8.882024603234925,
+    "T3_over_T2_for_gain_2.0": 11.296253743785714,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network_rotoravg|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 6.519832277809683e-05,
+    "A_at_t50": 1.8069481665675975e-17,
+    "hard_retained": 4.632832152452824e-10,
+    "FI_echo_hard": 1.5554420293670964e-05,
+    "FI_echo_easy": 21.016368862133035,
+    "hard_over_transfer": 4.039348240326213e-09,
+    "gain_vs_classical": 1.0000000040174222,
+    "gain_per_param": [
+     1.0000000146664387,
+     1.0000000053973963,
+     1.0000000026742257,
+     1.0000000010843304
+    ]
+   },
+   "network_rotoravg|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.007903007444653267,
+    "A_at_t50": 1.2322723846639604e-06,
+    "hard_retained": 6.899924272935967e-06,
+    "FI_echo_hard": 0.23166028598494745,
+    "FI_echo_easy": 136.5179656725333,
+    "hard_over_transfer": 6.016016996323036e-05,
+    "gain_vs_classical": 1.0000581003648403,
+    "gain_per_param": [
+     1.0002109617762802,
+     1.0000795949777137,
+     1.0000385993431706,
+     1.0000160821861066
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.747812416601015,
+    "A_at_t50": 0.12503976147136683,
+    "hard_retained": 0.12274045025853775,
+    "FI_echo_hard": 4120.92751805161,
+    "FI_echo_easy": 1824.435240157084,
+    "hard_over_transfer": 1.0701691869112457,
+    "gain_vs_classical": 1.7261340925261086,
+    "gain_per_param": [
+     2.625111260543774,
+     2.357664388391752,
+     1.5346309985264635,
+     1.388161726346808
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9603117144004604,
+    "A_at_t50": 0.8491693279475706,
+    "hard_retained": 0.6244493938775524,
+    "FI_echo_hard": 20965.465626370846,
+    "FI_echo_easy": 2200.1548048275395,
+    "hard_over_transfer": 5.444549850563027,
+    "gain_vs_classical": 4.464862203468071,
+    "gain_per_param": [
+     4.554319571209186,
+     7.242870396225808,
+     4.123942040933973,
+     4.819915162483713
+    ]
+   },
+   "network_rotoravg|literal|required": {
+    "T3_over_T2_for_gain_1.5": 17.76404920646985,
+    "T3_over_T2_for_gain_2.0": 22.592507487571428,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1UBQ_p19_N10_o0_g0.json",
+  "hn_only": false,
+  "probe": "H/ILE3",
+  "t_c_us": 80.0,
+  "ideal": {
+   "FI_echo_easy": 1594.52760281242,
+   "FI_echo_hard": 24190.21154261542,
+   "FI_transfer": 1080.8104543293769,
+   "gain_vs_classical": 10.041927048449004,
+   "hard_over_transfer": 22.38154844424132
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.24543726489506046,
+    "A_at_t50": 0.013542311188539477,
+    "hard_retained": 0.010484102600151502,
+    "FI_echo_hard": 253.61265973214918,
+    "FI_echo_easy": 389.90077088128675,
+    "hard_over_transfer": 0.23465045023968722,
+    "gain_vs_classical": 1.1724421867357557,
+    "gain_per_param": [
+     1.1729469252246278,
+     1.282135782479783,
+     1.0107363686417243,
+     1.1729469252246278
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.6518814049047127,
+    "A_at_t50": 0.12811202971358912,
+    "hard_retained": 0.10294815150285007,
+    "FI_echo_hard": 2490.3375627751648,
+    "FI_echo_easy": 1108.7711729968732,
+    "hard_over_transfer": 2.3041390401061337,
+    "gain_vs_classical": 2.137357717883382,
+    "gain_per_param": [
+     2.1417120809301147,
+     2.6823797988321285,
+     1.1071691795222258,
+     2.1417120809301147
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9632161682316056,
+    "A_at_t50": 0.8976749125023837,
+    "hard_retained": 0.7197954318568447,
+    "FI_echo_hard": 17412.003764025296,
+    "FI_echo_easy": 1524.0408662614573,
+    "hard_over_transfer": 16.110136328047574,
+    "gain_vs_classical": 7.68445205543474,
+    "gain_per_param": [
+     6.303109403031993,
+     20.20074299735927,
+     2.5505603915998827,
+     6.303109403031993
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9897279822255373,
+    "A_at_t50": 0.9785395947535893,
+    "hard_retained": 0.9449173328999814,
+    "FI_echo_hard": 22857.750173134507,
+    "FI_echo_easy": 1572.554120856927,
+    "hard_over_transfer": 21.14871306210424,
+    "gain_vs_classical": 9.614628531222312,
+    "gain_per_param": [
+     7.435453839174514,
+     27.88154753813448,
+     4.105139250476946,
+     7.435453839174514
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 5.475977489193484,
+    "T3_over_T2_for_gain_2.0": 6.446540721672052,
+    "T3_over_T2_for_gain_10.0": 298.29904074463275
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.003628791456681172,
+    "A_at_t50": 3.3633429779361244e-08,
+    "hard_retained": 1.7593797464482124e-06,
+    "FI_echo_hard": 0.042559768250375336,
+    "FI_echo_easy": 16.454308814706142,
+    "hard_over_transfer": 3.9377643026947674e-05,
+    "gain_vs_classical": 1.00003878714571,
+    "gain_per_param": [
+     1.0000382209074388,
+     1.0000848717685262,
+     1.0000011679108147,
+     1.0000382209074388
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.05970532651274766,
+    "A_at_t50": 0.00041684094267512104,
+    "hard_retained": 0.0004998813308591135,
+    "FI_echo_hard": 12.092235139686085,
+    "FI_echo_easy": 179.6219332621084,
+    "hard_over_transfer": 0.011188118222995072,
+    "gain_vs_classical": 1.0095937197891216,
+    "gain_per_param": [
+     1.0096259124840878,
+     1.0167616501722034,
+     1.000343538537352,
+     1.0096259124840878
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8639610888362149,
+    "A_at_t50": 0.5127173166656472,
+    "hard_retained": 0.31773465202303347,
+    "FI_echo_hard": 7686.068446856478,
+    "FI_echo_easy": 1379.0789739323154,
+    "hard_over_transfer": 7.111393506667682,
+    "gain_vs_classical": 4.124558510049747,
+    "gain_per_param": [
+     3.9212493182236443,
+     7.059645924716669,
+     1.4011144847867387,
+     3.9212493182236443
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9739506578835436,
+    "A_at_t50": 0.9340528643054303,
+    "hard_retained": 0.8127285084916573,
+    "FI_echo_hard": 19660.074547127504,
+    "FI_echo_easy": 1542.6875439052076,
+    "hard_over_transfer": 18.190122484822023,
+    "gain_vs_classical": 8.493840117414706,
+    "gain_per_param": [
+     6.777369726335413,
+     23.474580199640066,
+     3.1323668681938863,
+     6.777369726335413
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 10.951954978386969,
+    "T3_over_T2_for_gain_2.0": 12.893081443344103,
+    "T3_over_T2_for_gain_10.0": 596.5980814892655
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.01375629371859731,
+    "A_at_t50": 1.9914098933301598e-06,
+    "hard_retained": 2.548942876709991e-05,
+    "FI_echo_hard": 0.6165946739765737,
+    "FI_echo_easy": 37.1393488187944,
+    "hard_over_transfer": 0.0005704928847668849,
+    "gain_vs_classical": 1.0005515405720724,
+    "gain_per_param": [
+     1.0005450134830536,
+     1.001161205606797,
+     1.0000171462148524,
+     1.0005450134830536
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.1293143918579133,
+    "A_at_t50": 0.0018362265781312185,
+    "hard_retained": 0.0024300877056287235,
+    "FI_echo_hard": 58.78433566626777,
+    "FI_echo_easy": 330.9345998093208,
+    "hard_over_transfer": 0.05438912570728452,
+    "gain_vs_classical": 1.0416394840512702,
+    "gain_per_param": [
+     1.0421434231948792,
+     1.06575395649345,
+     1.0016818945118533,
+     1.0421434231948792
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8980609384679633,
+    "A_at_t50": 0.6382998548801203,
+    "hard_retained": 0.40127781358189224,
+    "FI_echo_hard": 9706.995197904169,
+    "FI_echo_easy": 1425.3787037077718,
+    "hard_over_transfer": 8.98121882428236,
+    "gain_vs_classical": 4.8732093173313,
+    "gain_per_param": [
+     4.497597581269631,
+     9.357913492330246,
+     1.5344160303347942,
+     4.497597581269631
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9785951307768043,
+    "A_at_t50": 0.9483968192306464,
+    "hard_retained": 0.8547179182960957,
+    "FI_echo_hard": 20675.807252846436,
+    "FI_echo_easy": 1551.123413949596,
+    "hard_over_transfer": 19.12991049450516,
+    "gain_vs_classical": 8.855747251873918,
+    "gain_per_param": [
+     6.988587219031126,
+     24.917384169930454,
+     3.436271760548954,
+     6.988587219031126
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 9.565483130675496,
+    "T3_over_T2_for_gain_2.0": 11.260871076635619,
+    "T3_over_T2_for_gain_10.0": 521.0712512552202
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 3.581011869304739e-08,
+    "A_at_t50": 1.5726882479485317e-23,
+    "hard_retained": 1.709353765008786e-16,
+    "FI_echo_hard": 4.134962917672866e-12,
+    "FI_echo_easy": 0.4105935969814665,
+    "hard_over_transfer": 3.825798409989044e-15,
+    "gain_vs_classical": 1.0000000000000038,
+    "gain_per_param": [
+     1.0000000000000038,
+     1.0000000000000087,
+     1.0000000000000002,
+     1.0000000000000038
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.00042584585568511304,
+    "A_at_t50": 6.573292904126517e-08,
+    "hard_retained": 2.4263496396182796e-08,
+    "FI_echo_hard": 0.0005869391105871487,
+    "FI_echo_easy": 5.2839606115217475,
+    "hard_over_transfer": 5.4305462001784e-07,
+    "gain_vs_classical": 1.0000005404126038,
+    "gain_per_param": [
+     1.0000005313741904,
+     1.0000012145147605,
+     1.0000000164528928,
+     1.0000005313741904
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.5145678907941504,
+    "A_at_t50": 0.05003452201484637,
+    "hard_retained": 0.05157180830538409,
+    "FI_echo_hard": 1247.532952542452,
+    "FI_echo_easy": 943.4021502154559,
+    "hard_over_transfer": 1.154256925944081,
+    "gain_vs_classical": 1.6163052980410493,
+    "gain_per_param": [
+     1.6270174168704639,
+     1.8635655215217604,
+     1.045813457263061,
+     1.6270174168704639
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9342773435029698,
+    "A_at_t50": 0.7852849162629042,
+    "hard_retained": 0.5372084359834792,
+    "FI_echo_hard": 12995.185708917936,
+    "FI_echo_easy": 1477.9018602097963,
+    "hard_over_transfer": 12.023556634619352,
+    "gain_vs_classical": 6.078799064309183,
+    "gain_per_param": [
+     5.322969038451556,
+     13.731265180711342,
+     1.8303500364815641,
+     5.322969038451556
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 19.13096626135099,
+    "T3_over_T2_for_gain_2.0": 22.521742153271237,
+    "T3_over_T2_for_gain_10.0": 1042.1425025104404
+   },
+   "network_rotoravg|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.054790821676360485,
+    "A_at_t50": 0.0001371805938649149,
+    "hard_retained": 0.0004203375957338524,
+    "FI_echo_hard": 10.16805536011625,
+    "FI_echo_easy": 103.16862185616385,
+    "hard_over_transfer": 0.009407806261853141,
+    "gain_vs_classical": 1.0085880363636788,
+    "gain_per_param": [
+     1.0085370386500019,
+     1.0165810739041978,
+     1.0003098644744821,
+     1.0085370386500019
+    ]
+   },
+   "network_rotoravg|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.2958807872095155,
+    "A_at_t50": 0.011127660551093103,
+    "hard_retained": 0.014040639852251666,
+    "FI_echo_hard": 339.6460482196443,
+    "FI_echo_easy": 625.9335438389913,
+    "hard_over_transfer": 0.31425126104131595,
+    "gain_vs_classical": 1.199002339298772,
+    "gain_per_param": [
+     1.2030117792092891,
+     1.2843712465679433,
+     1.0105044436118826,
+     1.2030117792092891
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9306582395039328,
+    "A_at_t50": 0.7704894217218653,
+    "hard_retained": 0.5202068542524996,
+    "FI_echo_hard": 12583.913850286473,
+    "FI_echo_easy": 1472.4413425723055,
+    "hard_over_transfer": 11.643034909478704,
+    "gain_vs_classical": 5.928583175994153,
+    "gain_per_param": [
+     5.2258315694522945,
+     13.151178234127855,
+     1.7853610984100574,
+     5.2258315694522945
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9836319553654622,
+    "A_at_t50": 0.962828249245647,
+    "hard_retained": 0.8984240678367122,
+    "FI_echo_hard": 21733.068255947135,
+    "FI_echo_easy": 1560.5821804665914,
+    "hard_over_transfer": 20.108121797759726,
+    "gain_vs_classical": 9.227882507753673,
+    "gain_per_param": [
+     7.206483011773111,
+     26.383346299744034,
+     3.7647241204280446,
+     7.206483011773111
+    ]
+   },
+   "network_rotoravg|generous|required": {
+    "T3_over_T2_for_gain_1.5": 7.87378243798433,
+    "T3_over_T2_for_gain_2.0": 9.269333049710562,
+    "T3_over_T2_for_gain_10.0": 428.91734907927713
+   },
+   "network_rotoravg|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 9.012208977549825e-06,
+    "A_at_t50": 3.5413651934327636e-16,
+    "hard_retained": 1.0826401501698433e-11,
+    "FI_echo_hard": 2.6189294257137434e-07,
+    "FI_echo_easy": 1.3622757328592348,
+    "hard_over_transfer": 2.423116296870705e-10,
+    "gain_vs_classical": 1.0000000002420066,
+    "gain_per_param": [
+     1.0000000002378195,
+     1.0000000005492182,
+     1.0000000000072464,
+     1.0000000002378195
+    ]
+   },
+   "network_rotoravg|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.003363645181372298,
+    "A_at_t50": 2.4586771762110053e-06,
+    "hard_retained": 1.524238784394095e-06,
+    "FI_echo_hard": 0.03687165863595213,
+    "FI_echo_easy": 22.03810740980579,
+    "hard_over_transfer": 3.4114824193507936e-05,
+    "gain_vs_classical": 1.0000334331112313,
+    "gain_per_param": [
+     1.0000329717491085,
+     1.0000722088119236,
+     1.0000010428949817,
+     1.0000329717491085
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.6860268176303148,
+    "A_at_t50": 0.15316294316594242,
+    "hard_retained": 0.12010247909659491,
+    "FI_echo_hard": 2905.3043761391773,
+    "FI_echo_easy": 1156.8044349088968,
+    "hard_over_transfer": 2.6880794541739195,
+    "gain_vs_classical": 2.2983933875807367,
+    "gain_per_param": [
+     2.298814848849263,
+     2.9462208712025006,
+     1.1277238451815048,
+     2.298814848849263
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9535832391096728,
+    "A_at_t50": 0.8620080116333498,
+    "hard_retained": 0.6481224229332648,
+    "FI_echo_hard": 15678.218516268134,
+    "FI_echo_easy": 1508.1152939697843,
+    "hard_over_transfer": 14.505983406679928,
+    "gain_vs_classical": 7.055878012943479,
+    "gain_per_param": [
+     5.928725385144751,
+     17.6382564608568,
+     2.206890483661701,
+     5.928725385144751
+    ]
+   },
+   "network_rotoravg|literal|required": {
+    "T3_over_T2_for_gain_1.5": 15.74756487596866,
+    "T3_over_T2_for_gain_2.0": 18.538666099421125,
+    "T3_over_T2_for_gain_10.0": 857.8346981585543
+   }
+  }
+ },
+ {
+  "file": "1UBQ_p19_N10_o1_g0.json",
+  "hn_only": false,
+  "probe": "H/ILE3",
+  "t_c_us": 80.0,
+  "ideal": {
+   "FI_echo_easy": 733.0289158275448,
+   "FI_echo_hard": 338784.6229477772,
+   "FI_transfer": 29867.06253583691,
+   "gain_vs_classical": 12.071359818741634,
+   "hard_over_transfer": 11.343084795877603
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.4377783782647129,
+    "A_at_t50": 0.015270383172184649,
+    "hard_retained": 0.006325843587611176,
+    "FI_echo_hard": 2143.0985346554667,
+    "FI_echo_easy": 363.3035922330555,
+    "hard_over_transfer": 0.07175458021973216,
+    "gain_vs_classical": 1.0708922454189373,
+    "gain_per_param": [
+     1.1479426646928286,
+     1.9085064302631318,
+     1.0636558902119972,
+     1.1479426646928286
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.8103528443335739,
+    "A_at_t50": 0.1376306178792308,
+    "hard_retained": 0.0583609862984697,
+    "FI_echo_hard": 19771.804737987448,
+    "FI_echo_easy": 617.2046042527462,
+    "hard_over_transfer": 0.6619936163545926,
+    "gain_vs_classical": 1.6485904564189335,
+    "gain_per_param": [
+     1.913558119427298,
+     6.642899881339602,
+     1.6136983365679296,
+     1.913558119427298
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9755255507165872,
+    "A_at_t50": 0.90062267862277,
+    "hard_retained": 0.7289503605128564,
+    "FI_echo_hard": 246957.17303399433,
+    "FI_echo_easy": 712.8026138000994,
+    "hard_over_transfer": 8.268545751282879,
+    "gain_vs_classical": 9.075809746889147,
+    "gain_per_param": [
+     11.429726166801409,
+     47.112837133546,
+     8.771649128570253,
+     11.429726166801409
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.992535739947023,
+    "A_at_t50": 0.9789657261291078,
+    "hard_retained": 0.9471008087048304,
+    "FI_echo_hard": 320863.19037060085,
+    "FI_echo_easy": 726.2657199223363,
+    "hard_over_transfer": 10.743044783383144,
+    "gain_vs_classical": 11.488011885735178,
+    "gain_per_param": [
+     15.310470267116996,
+     59.80169215622913,
+     11.035550650824925,
+     15.310470267116996
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 6.327805056329628,
+    "T3_over_T2_for_gain_2.0": 7.365037907291474,
+    "T3_over_T2_for_gain_10.0": 24.1681600075922
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.03672968741889063,
+    "A_at_t50": 5.437505871499009e-08,
+    "hard_retained": 1.5822671527807857e-05,
+    "FI_echo_hard": 5.360477807574915,
+    "FI_echo_easy": 76.95344349116769,
+    "hard_over_transfer": 0.00017947790483724275,
+    "gain_vs_classical": 1.0001790166626707,
+    "gain_per_param": [
+     1.0006263258085673,
+     1.003294209520602,
+     1.0001469507651197,
+     1.0006263258085673
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.23323033350401076,
+    "A_at_t50": 0.0004914853895445797,
+    "hard_retained": 0.0008250546642218121,
+    "FI_echo_hard": 279.51583332969153,
+    "FI_echo_easy": 305.0251493511388,
+    "hard_over_transfer": 0.009358665017502337,
+    "gain_vs_classical": 1.009264053460474,
+    "gain_per_param": [
+     1.0257099855383858,
+     1.141542882610812,
+     1.007889804990676,
+     1.0257099855383858
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9215127453458593,
+    "A_at_t50": 0.5269747251068321,
+    "hard_retained": 0.25865445529628744,
+    "FI_echo_hard": 87628.15211131544,
+    "FI_echo_easy": 677.9139434991571,
+    "hard_over_transfer": 2.9339394192573214,
+    "gain_vs_classical": 3.8688236892438477,
+    "gain_per_param": [
+     4.035364228660615,
+     18.178783923639244,
+     3.810204965702013,
+     4.035364228660615
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9821395798445473,
+    "A_at_t50": 0.9357690419014831,
+    "hard_retained": 0.8243824579776465,
+    "FI_echo_hard": 279288.1001907188,
+    "FI_echo_easy": 717.7971675783867,
+    "hard_over_transfer": 9.35104012507445,
+    "gain_vs_classical": 10.131580229532055,
+    "gain_per_param": [
+     13.142276901528842,
+     52.735956464611746,
+     9.76157659502762,
+     13.142276901528842
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 12.655610112659256,
+    "T3_over_T2_for_gain_2.0": 14.730075814582948,
+    "T3_over_T2_for_gain_10.0": 48.3363200151844
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.014437372156108115,
+    "A_at_t50": 4.812921377273998e-10,
+    "hard_retained": 2.3237238181098048e-06,
+    "FI_echo_hard": 0.7872418975530995,
+    "FI_echo_easy": 51.903358847400526,
+    "hard_over_transfer": 2.6358196311019978e-05,
+    "gain_vs_classical": 1.0000263124701678,
+    "gain_per_param": [
+     1.000095779236344,
+     1.000496480758432,
+     1.0000214246985601,
+     1.000095779236344
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.13309561323570107,
+    "A_at_t50": 0.00010627581869400996,
+    "hard_retained": 0.00023755833318873224,
+    "FI_echo_hard": 80.48111033744708,
+    "FI_echo_easy": 226.11580720073343,
+    "hard_over_transfer": 0.002694644317327134,
+    "gain_vs_classical": 1.0026743971480856,
+    "gain_per_param": [
+     1.0081414900513281,
+     1.0443015250782326,
+     1.002242624300017,
+     1.0081414900513281
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8992485025276201,
+    "A_at_t50": 0.39630134048997817,
+    "hard_retained": 0.17966363663137414,
+    "FI_echo_hard": 60867.27739358654,
+    "FI_echo_easy": 665.2348167536252,
+    "hard_over_transfer": 2.037939865045418,
+    "gain_vs_classical": 2.9935374233613707,
+    "gain_per_param": [
+     3.172575821985056,
+     13.782292220909396,
+     2.9456610909445815,
+     3.172575821985056
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9787664840622778,
+    "A_at_t50": 0.9185240979554571,
+    "hard_retained": 0.7762584432012699,
+    "FI_echo_hard": 262984.42398997076,
+    "FI_echo_easy": 715.2183262268439,
+    "hard_over_transfer": 8.805165344747943,
+    "gain_vs_classical": 9.599241671218634,
+    "gain_per_param": [
+     12.278035007322533,
+     49.91610494224267,
+     9.262488216057868,
+     12.278035007322533
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 14.332734391235233,
+    "T3_over_T2_for_gain_2.0": 16.682108751279586,
+    "T3_over_T2_for_gain_10.0": 54.74185993881039
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.3446280940193145e-08,
+    "A_at_t50": 5.365807260970829e-38,
+    "hard_retained": 2.0459542828993177e-17,
+    "FI_echo_hard": 6.931378503004353e-12,
+    "FI_echo_easy": 4.858771662378479,
+    "hard_over_transfer": 2.3207432919415916e-16,
+    "gain_vs_classical": 1.0000000000000002,
+    "gain_per_param": [
+     1.0000000000000009,
+     1.0000000000000044,
+     1.0000000000000002,
+     1.0000000000000009
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0004549564604725677,
+    "A_at_t50": 2.1944442911025675e-10,
+    "hard_retained": 2.2659338080719496e-09,
+    "FI_echo_hard": 0.0007676635307922765,
+    "FI_echo_easy": 26.0223310997963,
+    "hard_over_transfer": 2.570267932680597e-08,
+    "gain_vs_classical": 1.0000000256803048,
+    "gain_per_param": [
+     1.0000000957070465,
+     1.0000004905973443,
+     1.0000000208359616,
+     1.0000000957070465
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.5202922991175718,
+    "A_at_t50": 0.007515153588055638,
+    "hard_retained": 0.006645615152294308,
+    "FI_echo_hard": 2251.4322236260623,
+    "FI_echo_easy": 477.6581965143258,
+    "hard_over_transfer": 0.07538177619324339,
+    "gain_vs_classical": 1.0741951868163266,
+    "gain_per_param": [
+     1.1605893475839413,
+     1.934101687338834,
+     1.0658169456576316,
+     1.1605893475839413
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.934968421409666,
+    "A_at_t50": 0.6192466717927487,
+    "hard_retained": 0.32656475320424777,
+    "FI_echo_hard": 110635.116782335,
+    "FI_echo_easy": 685.9377631416744,
+    "hard_over_transfer": 3.704251686940624,
+    "gain_vs_classical": 4.621088459388835,
+    "gain_per_param": [
+     4.876089314298891,
+     22.161961790953498,
+     4.545093709454331,
+     4.876089314298891
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 28.665468782470466,
+    "T3_over_T2_for_gain_2.0": 33.36421750255917,
+    "T3_over_T2_for_gain_10.0": 109.48371987762079
+   },
+   "network_rotoravg|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0565388196525812,
+    "A_at_t50": 4.82786768429808e-07,
+    "hard_retained": 3.930007689089362e-05,
+    "FI_echo_hard": 13.314261731300048,
+    "FI_echo_easy": 95.15304601100163,
+    "hard_over_transfer": 0.00044578410465791614,
+    "gain_vs_classical": 1.000444368397755,
+    "gain_per_param": [
+     1.0015035649125208,
+     1.0079982824535283,
+     1.000367315705806,
+     1.0015035649125208
+    ]
+   },
+   "network_rotoravg|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.3013949871805374,
+    "A_at_t50": 0.0010724553109435829,
+    "hard_retained": 0.0015145159694713894,
+    "FI_echo_hard": 513.0947216657519,
+    "FI_echo_easy": 350.6872333716187,
+    "hard_over_transfer": 0.017179283066424744,
+    "gain_vs_classical": 1.016979911660682,
+    "gain_per_param": [
+     1.044382555319748,
+     1.2468320089061529,
+     1.0146080257548349,
+     1.044382555319748
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9313668487076219,
+    "A_at_t50": 0.5937771222095284,
+    "hard_retained": 0.3064704727673867,
+    "FI_echo_hard": 103827.48356112612,
+    "FI_echo_easy": 683.7585146116168,
+    "hard_over_transfer": 3.4763205600331646,
+    "gain_vs_classical": 4.398516962594097,
+    "gain_per_param": [
+     4.616523472032555,
+     20.960779368459345,
+     4.3285572565045,
+     4.616523472032555
+    ]
+   },
+   "network_rotoravg|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9837507298579107,
+    "A_at_t50": 0.9434744237739527,
+    "hard_retained": 0.8464234180220537,
+    "FI_echo_hard": 286755.2385287703,
+    "FI_echo_easy": 719.0546463043831,
+    "hard_over_transfer": 9.60105260384071,
+    "gain_vs_classical": 10.375339694840433,
+    "gain_per_param": [
+     13.537266768366345,
+     54.017916870728186,
+     9.990160049477801,
+     13.537266768366345
+    ]
+   },
+   "network_rotoravg|generous|required": {
+    "T3_over_T2_for_gain_1.5": 11.80067085698479,
+    "T3_over_T2_for_gain_2.0": 13.734997747161207,
+    "T3_over_T2_for_gain_10.0": 45.070999964396165
+   },
+   "network_rotoravg|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 1.021849531951077e-05,
+    "A_at_t50": 5.432771461682809e-26,
+    "hard_retained": 1.1317959606676396e-12,
+    "FI_echo_hard": 3.834350677886036e-07,
+    "FI_echo_easy": 10.175146868660185,
+    "hard_over_transfer": 1.2838057553484788e-11,
+    "gain_vs_classical": 1.0000000000128337,
+    "gain_per_param": [
+     1.0000000000483442,
+     1.0000000002459823,
+     1.0000000000103937,
+     1.0000000000483442
+    ]
+   },
+   "network_rotoravg|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.00354334398665955,
+    "A_at_t50": 2.2389140806709363e-08,
+    "hard_retained": 1.399240777375662e-07,
+    "FI_echo_hard": 0.04740412591763684,
+    "FI_echo_easy": 47.06351709087792,
+    "hard_over_transfer": 1.587170678762183e-06,
+    "gain_vs_classical": 1.0000015846736032,
+    "gain_per_param": [
+     1.0000057914128972,
+     1.000030032003676,
+     1.0000012899425235,
+     1.0000057914128972
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.6899892509636719,
+    "A_at_t50": 0.03522322695746115,
+    "hard_retained": 0.019781828842434377,
+    "FI_echo_hard": 6701.779425601595,
+    "FI_echo_easy": 560.6262192749169,
+    "hard_over_transfer": 0.22438696197727043,
+    "gain_vs_classical": 1.2202526613026334,
+    "gain_per_param": [
+     1.398624860340342,
+     3.428854756735632,
+     1.200907865576411,
+     1.398624860340342
+    ]
+   },
+   "network_rotoravg|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9540124277350808,
+    "A_at_t50": 0.7579249152923876,
+    "hard_retained": 0.46622169444554046,
+    "FI_echo_hard": 157948.74096280622,
+    "FI_echo_easy": 697.9309151052822,
+    "hard_over_transfer": 5.288392213773503,
+    "gain_vs_classical": 6.167635360901322,
+    "gain_per_param": [
+     6.918702009219208,
+     30.872829475180648,
+     6.030282001900102,
+     6.918702009219208
+    ]
+   },
+   "network_rotoravg|literal|required": {
+    "T3_over_T2_for_gain_1.5": 23.60134171396958,
+    "T3_over_T2_for_gain_2.0": 27.469995494322415,
+    "T3_over_T2_for_gain_10.0": 90.14199992879233
+   }
+  }
+ },
+ {
+  "file": "1PGAHN_p260_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/TYR33",
+  "t_c_us": 200.0,
+  "ideal": {
+   "FI_echo_easy": 272.2210395324682,
+   "FI_echo_hard": 40544.57410100333,
+   "FI_transfer": 2006.316272428106,
+   "gain_vs_classical": 18.794123400207404,
+   "hard_over_transfer": 20.208465962315618
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.08812813955526369,
+    "A_at_t50": 3.2065012806960916e-10,
+    "hard_retained": 0.00013136533267907863,
+    "FI_echo_hard": 5.3261514651098585,
+    "FI_echo_easy": 22.136527315771737,
+    "hard_over_transfer": 0.0026546918540734286,
+    "gain_vs_classical": 1.0026257211731928,
+    "gain_per_param": [
+     1.0014939540923762,
+     1.0058367185783035,
+     1.0035366640999042
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.3890890698868277,
+    "A_at_t50": 9.394710379657371e-05,
+    "hard_retained": 0.0034249911309538507,
+    "FI_echo_hard": 138.8648067042376,
+    "FI_echo_easy": 125.41384963445304,
+    "hard_over_transfer": 0.06921381669111376,
+    "gain_vs_classical": 1.0651418325739466,
+    "gain_per_param": [
+     1.0410033936543337,
+     1.0953920862307784,
+     1.087567282777109
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9412412115012803,
+    "A_at_t50": 0.3862001613487312,
+    "hard_retained": 0.2702433960308662,
+    "FI_echo_hard": 10956.903395680245,
+    "FI_echo_easy": 253.59273346764786,
+    "hard_over_transfer": 5.4612044702303395,
+    "gain_vs_classical": 5.8483825530565055,
+    "gain_per_param": [
+     4.923643447367423,
+     2.64122141182803,
+     7.359371806344119
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9854595551027663,
+    "A_at_t50": 0.9170042684673644,
+    "hard_retained": 0.818192171933472,
+    "FI_echo_hard": 33173.253143817514,
+    "FI_echo_easy": 266.8966082052347,
+    "hard_over_transfer": 16.534408657150657,
+    "gain_vs_classical": 15.59311330955291,
+    "gain_per_param": [
+     13.463104268035835,
+     6.950112829956436,
+     19.289010814957752
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 9.653965059156588,
+    "T3_over_T2_for_gain_2.0": 11.423221412026253,
+    "T3_over_T2_for_gain_10.0": 28.54301904075533
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 6.031959374396353e-05,
+    "A_at_t50": 1.0571233624548116e-38,
+    "hard_retained": 5.4136756607650996e-11,
+    "FI_echo_hard": 2.1949517398668875e-06,
+    "FI_echo_easy": 0.1677961124945522,
+    "hard_over_transfer": 1.0940208032158803e-09,
+    "gain_vs_classical": 1.0000000010939294,
+    "gain_per_param": [
+     1.0000000005981073,
+     1.0000000028370424,
+     1.0000000014654504
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.007630718069415025,
+    "A_at_t50": 1.714793910274e-10,
+    "hard_retained": 8.878774015859299e-07,
+    "FI_echo_hard": 0.03599861110120703,
+    "FI_echo_easy": 3.9821176157411826,
+    "hard_over_transfer": 1.79426402486585e-05,
+    "gain_vs_classical": 1.0000179070984085,
+    "gain_per_param": [
+     1.0000098674632143,
+     1.000045055531681,
+     1.000024018816553
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.7454194854461625,
+    "A_at_t50": 0.006914765395804222,
+    "hard_retained": 0.03190785627033688,
+    "FI_echo_hard": 1293.6904429568376,
+    "FI_echo_easy": 207.63013855668325,
+    "hard_over_transfer": 0.6448088273695619,
+    "gain_vs_classical": 1.5843368369433066,
+    "gain_per_param": [
+     1.4362640435465786,
+     1.3418012648663429,
+     1.7821615771547155
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9600483238319981,
+    "A_at_t50": 0.611077813770325,
+    "hard_retained": 0.4111696952051199,
+    "FI_echo_hard": 16670.700175330938,
+    "FI_echo_easy": 258.91391100668284,
+    "hard_over_transfer": 8.309108790288352,
+    "gain_vs_classical": 8.359384621148303,
+    "gain_per_param": [
+     7.04776318759967,
+     3.6926849556126498,
+     10.523334702673356
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 19.307930118313177,
+    "T3_over_T2_for_gain_2.0": 22.846442824052506,
+    "T3_over_T2_for_gain_10.0": 57.08603808151066
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.2583873750266785,
+    "A_at_t50": 5.133831488491091e-06,
+    "hard_retained": 0.001572796000140647,
+    "FI_echo_hard": 63.768343973464106,
+    "FI_echo_easy": 64.92265963641783,
+    "hard_over_transfer": 0.03178379443450841,
+    "gain_vs_classical": 1.0307875363804129,
+    "gain_per_param": [
+     1.0192205243403196,
+     1.047598197674908,
+     1.0417035714708092
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.6663050312008393,
+    "A_at_t50": 0.002672889426675378,
+    "hard_retained": 0.019070815508857964,
+    "FI_echo_hard": 773.2180925654553,
+    "FI_echo_easy": 189.42566298228738,
+    "hard_over_transfer": 0.385391926084357,
+    "gain_vs_classical": 1.3521443390481758,
+    "gain_per_param": [
+     1.252689245057222,
+     1.2708091975227949,
+     1.4725593660445313
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9643023960796692,
+    "A_at_t50": 0.6682466376055989,
+    "hard_retained": 0.4590237985244068,
+    "FI_echo_hard": 18610.924413396835,
+    "FI_echo_easy": 260.17433980924307,
+    "hard_over_transfer": 9.276166808373297,
+    "gain_vs_classical": 9.211339730644285,
+    "gain_per_param": [
+     7.784518233397357,
+     4.050295697769435,
+     11.579767356048523
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9899608723689834,
+    "A_at_t50": 0.9516564265657816,
+    "hard_retained": 0.8948989286360828,
+    "FI_echo_hard": 36283.29592499415,
+    "FI_echo_easy": 268.460604516731,
+    "hard_over_transfer": 18.084534539054992,
+    "gain_vs_classical": 16.950265844852797,
+    "gain_per_param": [
+     14.687389078277429,
+     7.601020381004083,
+     20.90571197437677
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 7.205954827989261,
+    "T3_over_T2_for_gain_2.0": 8.526570894008632,
+    "T3_over_T2_for_gain_10.0": 21.305205125746472
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0044574364460165,
+    "A_at_t50": 6.946506359021242e-22,
+    "hard_retained": 2.969298377585005e-07,
+    "FI_echo_hard": 0.012038893809798421,
+    "FI_echo_easy": 1.866208691271673,
+    "hard_over_transfer": 6.000496519538557e-06,
+    "gain_vs_classical": 1.000005994920244,
+    "gain_per_param": [
+     1.0000032834442245,
+     1.0000154268303385,
+     1.0000080317757118
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.06705350025119512,
+    "A_at_t50": 1.395103985528396e-07,
+    "hard_retained": 7.279610692905976e-05,
+    "FI_echo_hard": 2.9514871516498253,
+    "FI_echo_easy": 27.228516931177715,
+    "hard_over_transfer": 0.0014710976490649923,
+    "gain_vs_classical": 1.0014514001201713,
+    "gain_per_param": [
+     1.0008185598130255,
+     1.003313614440465,
+     1.0019484075788934
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8693908465847693,
+    "A_at_t50": 0.06371064855084793,
+    "hard_retained": 0.09552722244993112,
+    "FI_echo_hard": 3873.110549284261,
+    "FI_echo_easy": 235.48956266892924,
+    "hard_over_transfer": 1.9304586233539855,
+    "gain_vs_classical": 2.7276743992044326,
+    "gain_per_param": [
+     2.367474733562577,
+     1.5630036603116146,
+     3.301324851186429
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9746593444173417,
+    "A_at_t50": 0.8031649813208916,
+    "hard_retained": 0.6132108670853346,
+    "FI_echo_hard": 24862.37344008185,
+    "FI_echo_easy": 263.3569459668848,
+    "hard_over_transfer": 12.39205093521603,
+    "gain_vs_classical": 11.954164343386571,
+    "gain_per_param": [
+     10.199270023952902,
+     5.2435374185181125,
+     14.928943203277553
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 14.411909655978523,
+    "T3_over_T2_for_gain_2.0": 17.053141788017264,
+    "T3_over_T2_for_gain_10.0": 42.610410251492944
+   }
+  }
+ },
+ {
+  "file": "1PGAHN_p325_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/THR44",
+  "t_c_us": 500.0,
+  "ideal": {
+   "FI_echo_easy": 2651.8244170154294,
+   "FI_echo_hard": 26105.92872404411,
+   "FI_transfer": 1923.50350021832,
+   "gain_vs_classical": 6.705804960057987,
+   "hard_over_transfer": 13.572072377867292
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.20484520230593797,
+    "A_at_t50": 0.017268318080807796,
+    "hard_retained": 0.0036977014774078956,
+    "FI_echo_hard": 96.53193121200313,
+    "FI_echo_easy": 743.32017004588,
+    "hard_over_transfer": 0.05018547208312677,
+    "gain_vs_classical": 1.036197343037097,
+    "gain_per_param": [
+     1.1403420760663954,
+     1.0341303881422534,
+     1.018563857550492
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.6014371664509603,
+    "A_at_t50": 0.14814386369613763,
+    "hard_retained": 0.057359684088348115,
+    "FI_echo_hard": 1497.427824444103,
+    "FI_echo_easy": 1799.5111918033947,
+    "hard_over_transfer": 0.7784897840186634,
+    "gain_vs_classical": 1.402208411278375,
+    "gain_per_param": [
+     2.9706838232816097,
+     1.3604894515840658,
+     1.2211671385973026
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9593926638742633,
+    "A_at_t50": 0.9036183775610991,
+    "hard_retained": 0.8039514186651447,
+    "FI_echo_hard": 20987.898433266415,
+    "FI_echo_easy": 2531.4851648805575,
+    "hard_over_transfer": 10.911286842412434,
+    "gain_vs_classical": 5.71110029924186,
+    "gain_per_param": [
+     38.03364036827334,
+     4.573728608683594,
+     4.490912309649317
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9889274393552259,
+    "A_at_t50": 0.9794037594671917,
+    "hard_retained": 0.9577742448995014,
+    "FI_echo_hard": 25003.58617107155,
+    "FI_echo_easy": 2615.007301386653,
+    "hard_over_transfer": 12.998981373433224,
+    "gain_vs_classical": 6.5092049493920845,
+    "gain_per_param": [
+     44.98014138414891,
+     5.139249011055625,
+     5.188423301728913
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 7.001469184034519,
+    "T3_over_T2_for_gain_2.0": 8.251160450225793,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0017607722581232358,
+    "A_at_t50": 8.892014431729114e-08,
+    "hard_retained": 1.1384876491978962e-07,
+    "FI_echo_hard": 0.0029721277423164815,
+    "FI_echo_easy": 92.67240817121038,
+    "hard_over_transfer": 1.5451636776221835e-06,
+    "gain_vs_classical": 1.0000014741410856,
+    "gain_per_param": [
+     1.000003670120798,
+     1.0000014551250547,
+     1.000000770554539
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.040108084412288886,
+    "A_at_t50": 0.0005832062975412202,
+    "hard_retained": 8.178062247287307e-05,
+    "FI_echo_hard": 2.1349591012847844,
+    "FI_echo_easy": 498.0559453892502,
+    "hard_over_transfer": 0.0011099325273088735,
+    "gain_vs_classical": 1.0008816463726122,
+    "gain_per_param": [
+     1.0027672171028168,
+     1.0008548914124682,
+     1.0004657378362143
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8444119334610306,
+    "A_at_t50": 0.5417557746203353,
+    "hard_retained": 0.3008791728138383,
+    "FI_echo_hard": 7854.730240027413,
+    "FI_echo_easy": 2272.2082771754676,
+    "hard_over_transfer": 4.083553910422254,
+    "gain_vs_classical": 2.8720852758161723,
+    "gain_per_param": [
+     13.582786367340491,
+     2.5254037880091333,
+     2.174694306602846
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9714746036833978,
+    "A_at_t50": 0.9375180421168041,
+    "hard_retained": 0.8716424145066619,
+    "FI_echo_hard": 22755.03474596463,
+    "FI_echo_easy": 2563.9052954793683,
+    "hard_over_transfer": 11.829993937303419,
+    "gain_vs_classical": 6.070862892585374,
+    "gain_per_param": [
+     41.18908445054095,
+     4.828190645792765,
+     4.804451792297209
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 14.002938368069039,
+    "T3_over_T2_for_gain_2.0": 16.502320900451586,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0002121756601493048,
+    "A_at_t50": 3.9476681608520756e-10,
+    "hard_retained": 1.5504465280844038e-09,
+    "FI_echo_hard": 4.04758465526131e-05,
+    "FI_echo_easy": 48.67115475028847,
+    "hard_over_transfer": 2.104277249717458e-08,
+    "gain_vs_classical": 1.0000000205234594,
+    "gain_per_param": [
+     1.0000000494836085,
+     1.0000000203058512,
+     1.000000010711645
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.013682751018638582,
+    "A_at_t50": 0.00010005530212106367,
+    "hard_retained": 8.587802051720753e-06,
+    "FI_echo_hard": 0.22419254825842178,
+    "FI_echo_easy": 323.0713762856156,
+    "hard_over_transfer": 0.0001165542710127513,
+    "gain_vs_classical": 1.0000997930452278,
+    "gain_per_param": [
+     1.0002892772915108,
+     1.0000974205353823,
+     1.000052290992308
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.7835846924460951,
+    "A_at_t50": 0.39134811067908915,
+    "hard_retained": 0.18605775169484745,
+    "FI_echo_hard": 4857.210404301585,
+    "FI_echo_easy": 2151.125095095229,
+    "hard_over_transfer": 2.5251892724657306,
+    "gain_vs_classical": 2.1920621206772384,
+    "gain_per_param": [
+     8.276090325600004,
+     2.005034728737548,
+     1.701407483350658
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9643023960796692,
+    "A_at_t50": 0.9177832310088777,
+    "hard_retained": 0.8319137175926007,
+    "FI_echo_hard": 21717.880216026995,
+    "FI_echo_easy": 2544.4346953163817,
+    "hard_over_transfer": 11.290793187307427,
+    "gain_vs_classical": 5.860828253562693,
+    "gain_per_param": [
+     39.34939784249119,
+     4.6796141881340905,
+     4.621160918542863
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 16.171200779644124,
+    "T3_over_T2_for_gain_2.0": 19.057596169947274,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 2.026666311029624e-15,
+    "A_at_t50": 2.428636712579806e-38,
+    "hard_retained": 1.353616591232552e-31,
+    "FI_echo_hard": 3.533741825040056e-27,
+    "FI_echo_easy": 0.5607895363657668,
+    "hard_over_transfer": 1.8371382348090202e-30,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 3.7363115964170158e-06,
+    "A_at_t50": 1.9450490528404755e-10,
+    "hard_retained": 4.876543706426732e-13,
+    "FI_echo_hard": 1.2730670241966217e-08,
+    "FI_echo_easy": 9.676063712650674,
+    "hard_over_transfer": 6.618480413745684e-12,
+    "gain_vs_classical": 1.0000000000065854,
+    "gain_per_param": [
+     1.000000000015635,
+     1.0000000000065206,
+     1.000000000003425
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.1726121564594871,
+    "A_at_t50": 0.00721527230788709,
+    "hard_retained": 0.0019570458047045956,
+    "FI_echo_hard": 51.090498287307724,
+    "FI_echo_easy": 945.0835541775351,
+    "hard_over_transfer": 0.02656116730825231,
+    "gain_vs_classical": 1.0178103356525352,
+    "gain_per_param": [
+     1.0639511971955096,
+     1.0169883423753099,
+     1.009634478921797
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.8693908465847693,
+    "A_at_t50": 0.6152580151313123,
+    "hard_retained": 0.3727156285859044,
+    "FI_echo_hard": 9730.087634200918,
+    "FI_echo_easy": 2324.0876260940167,
+    "hard_over_transfer": 5.058523487530198,
+    "gain_vs_classical": 3.290730756528433,
+    "gain_per_param": [
+     17.027198467028704,
+     2.8367738407151286,
+     2.48795896749585
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 32.34240155928825,
+    "T3_over_T2_for_gain_2.0": 38.11519233989455,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1PGAHN_p390_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/THR53",
+  "t_c_us": 400.0,
+  "ideal": {
+   "FI_echo_easy": 766.653846130572,
+   "FI_echo_hard": 10737.54381148778,
+   "FI_transfer": 493.4785147684163,
+   "gain_vs_classical": 9.5209650546769,
+   "hard_over_transfer": 21.758888158538742
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.32325417621272684,
+    "A_at_t50": 0.01886866320015415,
+    "hard_retained": 0.008813987029625164,
+    "FI_echo_hard": 94.64057188448524,
+    "FI_echo_easy": 269.5965492381847,
+    "hard_over_transfer": 0.19178255800842506,
+    "gain_vs_classical": 1.1240252451542128,
+    "gain_per_param": [
+     1.1074226582161595,
+     1.124191155866113,
+     1.4460839114087694
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.7288365009435677,
+    "A_at_t50": 0.1562355625301771,
+    "hard_retained": 0.08500627620189055,
+    "FI_echo_hard": 912.7586149692308,
+    "FI_echo_easy": 581.5840272813743,
+    "hard_over_transfer": 1.8496420566507903,
+    "gain_vs_classical": 1.849028386040593,
+    "gain_per_param": [
+     1.6346596560307125,
+     1.8650693379880359,
+     3.7491274674684143
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9690392712599618,
+    "A_at_t50": 0.9057636834323356,
+    "hard_retained": 0.8059967956903118,
+    "FI_echo_hard": 8654.425905643488,
+    "FI_echo_easy": 738.2051443032631,
+    "hard_over_transfer": 17.537594133566095,
+    "gain_vs_classical": 8.026500548173493,
+    "gain_per_param": [
+     5.059736479962604,
+     8.2862731380403,
+     28.946985273620545
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9910076832540465,
+    "A_at_t50": 0.9797206635441538,
+    "hard_retained": 0.958376574240063,
+    "FI_echo_hard": 10290.610453806246,
+    "FI_echo_easy": 757.574570693564,
+    "hard_over_transfer": 20.853208692653034,
+    "gain_vs_classical": 9.225558590110667,
+    "gain_per_param": [
+     5.811088387658393,
+     9.516358009719887,
+     33.635332667441965
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 5.886023241663284,
+    "T3_over_T2_for_gain_2.0": 6.9845051596096575,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.010918841895139177,
+    "A_at_t50": 1.2675483378377963e-07,
+    "hard_retained": 4.646798041553772e-06,
+    "FI_echo_hard": 0.04989519755431924,
+    "FI_echo_easy": 31.960789750657078,
+    "hard_over_transfer": 0.0001011091588814854,
+    "gain_vs_classical": 1.0000949590126302,
+    "gain_per_param": [
+     1.0000814887487057,
+     1.0000958307543637,
+     1.0003778069969151
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.11274012094387462,
+    "A_at_t50": 0.0006608187865402601,
+    "hard_retained": 0.0006181444109509673,
+    "FI_echo_hard": 6.637352694412318,
+    "FI_echo_easy": 187.39026047199164,
+    "hard_over_transfer": 0.013450135103707909,
+    "gain_vs_classical": 1.0097483581796929,
+    "gain_per_param": [
+     1.0090139885568608,
+     1.0096873874329781,
+     1.035925182258223
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8923358472719382,
+    "A_at_t50": 0.5525160458038614,
+    "hard_retained": 0.3258594102611816,
+    "FI_echo_hard": 3498.929694065008,
+    "FI_echo_easy": 682.7773817696294,
+    "hard_over_transfer": 7.0903384632804425,
+    "gain_vs_classical": 3.974633074625217,
+    "gain_per_param": [
+     2.7215887088853763,
+     4.0957527899344575,
+     12.27347741378638
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9777794274012112,
+    "A_at_t50": 0.9387737559623616,
+    "hard_retained": 0.8730394213038845,
+    "FI_echo_hard": 9374.299035406397,
+    "FI_echo_easy": 745.5673811938552,
+    "hard_over_transfer": 18.99636712614661,
+    "gain_vs_classical": 8.565739950355997,
+    "gain_per_param": [
+     5.398351877055529,
+     8.839258987132617,
+     31.083193471849764
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 11.772046483326568,
+    "T3_over_T2_for_gain_2.0": 13.969010319219315,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0044574364460165,
+    "A_at_t50": 5.4333166316702754e-09,
+    "hard_retained": 7.443545285224228e-07,
+    "FI_echo_hard": 0.007992539361288846,
+    "FI_echo_easy": 21.04149043494599,
+    "hard_over_transfer": 1.6196326936421236e-05,
+    "gain_vs_classical": 1.0000155339720138,
+    "gain_per_param": [
+     1.0000131612799636,
+     1.0000157193293404,
+     1.000061343473306
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.06705350025119512,
+    "A_at_t50": 0.00022758587224811004,
+    "hard_retained": 0.00020551412431198254,
+    "FI_echo_hard": 2.2067169136794584,
+    "FI_echo_easy": 141.19396092005357,
+    "hard_over_transfer": 0.004471758845904456,
+    "gain_vs_classical": 1.0034769381030517,
+    "gain_per_param": [
+     1.0031780738943992,
+     1.0034627762853916,
+     1.0135207813687324
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8693908465847693,
+    "A_at_t50": 0.4604683317479391,
+    "hard_retained": 0.2552511491170547,
+    "FI_echo_hard": 2740.770396576975,
+    "FI_echo_easy": 667.9240188770606,
+    "hard_over_transfer": 5.553981205976489,
+    "gain_vs_classical": 3.3598798152903004,
+    "gain_per_param": [
+     2.4146592977726837,
+     3.4508720599510423,
+     9.710392904196832
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9746593444173417,
+    "A_at_t50": 0.9274670926172384,
+    "hard_retained": 0.8497823533517501,
+    "FI_echo_hard": 9124.575249343607,
+    "FI_echo_easy": 742.8963755300935,
+    "hard_over_transfer": 18.490319185680583,
+    "gain_vs_classical": 8.380103980549599,
+    "gain_per_param": [
+     5.28167068536741,
+     8.648899457193695,
+     30.351411636632307
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 12.88666264287236,
+    "T3_over_T2_for_gain_2.0": 15.29164225553698,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 3.9476681608520756e-10,
+    "A_at_t50": 8.714852856280976e-34,
+    "hard_retained": 5.4852227679680126e-21,
+    "FI_echo_hard": 5.88978197868268e-17,
+    "FI_echo_easy": 0.23385008706646834,
+    "hard_over_transfer": 1.193523487328863e-19,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.00010005530212106367,
+    "A_at_t50": 1.0065829692894184e-09,
+    "hard_retained": 3.6734888658969315e-10,
+    "FI_echo_hard": 3.944424763858086e-06,
+    "FI_echo_easy": 4.199912533160438,
+    "hard_over_transfer": 7.993103338468866e-09,
+    "gain_vs_classical": 1.0000000079256495,
+    "gain_per_param": [
+     1.0000000066010646,
+     1.0000000080499116,
+     1.0000000308806776
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.39134811067908915,
+    "A_at_t50": 0.012551255697632421,
+    "hard_retained": 0.01062991504746296,
+    "FI_echo_hard": 114.13917853452674,
+    "FI_echo_easy": 389.61808270717194,
+    "hard_over_transfer": 0.2312951326525146,
+    "gain_vs_classical": 1.1292488034273984,
+    "gain_per_param": [
+     1.1188418003035825,
+     1.1284732567257174,
+     1.392080774571898
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9177832310088777,
+    "A_at_t50": 0.668246637605599,
+    "hard_retained": 0.43904871154475644,
+    "FI_echo_hard": 4714.304775589083,
+    "FI_echo_easy": 699.9450829363584,
+    "hard_over_transfer": 9.553211810652893,
+    "gain_vs_classical": 4.950235930189217,
+    "gain_per_param": [
+     3.234835707588534,
+     5.113729662324366,
+     16.355106195122314
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 25.77332528574472,
+    "T3_over_T2_for_gain_2.0": 30.58328451107396,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1UBQHN_p19_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/ILE3",
+  "t_c_us": 650.0000000000001,
+  "ideal": {
+   "FI_echo_easy": 27780.87335428935,
+   "FI_echo_hard": 29150.593102622097,
+   "FI_transfer": 10228.177168454835,
+   "gain_vs_classical": 1.7669382081822518,
+   "hard_over_transfer": 2.850028174377611
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.681363673073357e-06,
+    "A_at_t50": 4.681363673073357e-06,
+    "hard_retained": 4.627276398989925e-12,
+    "FI_echo_hard": 1.3488785148032173e-07,
+    "FI_echo_easy": 44.028450806349156,
+    "hard_over_transfer": 1.3187868107753864e-11,
+    "gain_vs_classical": 1.0000000000131313,
+    "gain_per_param": [
+     1.0000000000614302,
+     1.0000000000330616,
+     1.0000000000110818
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0025753076752811797,
+    "A_at_t50": 0.0025753076752811797,
+    "hard_retained": 1.502028806225476e-06,
+    "FI_echo_hard": 0.043785030558696064,
+    "FI_echo_easy": 323.6445597785222,
+    "hard_over_transfer": 4.280824416469376e-06,
+    "gain_vs_classical": 1.0000041495233416,
+    "gain_per_param": [
+     1.0000128380978017,
+     1.0000105942474466,
+     1.0000034345095161
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.6653285424447851,
+    "A_at_t50": 0.6653285424447851,
+    "hard_retained": 0.21040580881574306,
+    "FI_echo_hard": 6133.454119215823,
+    "FI_echo_easy": 18839.9141440352,
+    "hard_over_transfer": 0.5996624831775769,
+    "gain_vs_classical": 1.211002987890725,
+    "gain_per_param": [
+     1.333714501546865,
+     1.473466405844044,
+     1.1774425656192569
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9513398262793936,
+    "A_at_t50": 0.9513398262793936,
+    "hard_retained": 0.8482997130344803,
+    "FI_echo_hard": 24728.439763739225,
+    "FI_echo_easy": 26088.882660468753,
+    "hard_over_transfer": 2.417678082464711,
+    "gain_vs_classical": 1.6809042328929125,
+    "gain_per_param": [
+     1.8574193013647948,
+     2.2844074301075183,
+     1.605899189799979
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 30.058430532447307,
+    "T3_over_T2_for_gain_2.0": null,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.802744937758941e-22,
+    "A_at_t50": 4.802744937758941e-22,
+    "hard_retained": 4.841617151470191e-44,
+    "FI_echo_hard": 1.411360115411838e-39,
+    "FI_echo_easy": 1.0918044362963382,
+    "hard_over_transfer": 1.379874529123992e-43,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 1.2948501624153968e-07,
+    "A_at_t50": 1.2948501624153968e-07,
+    "hard_retained": 3.570296742407844e-15,
+    "FI_echo_hard": 1.0407626759354826e-10,
+    "FI_echo_easy": 13.215264258511565,
+    "hard_over_transfer": 1.0175446306750961e-14,
+    "gain_vs_classical": 1.0000000000000102,
+    "gain_per_param": [
+     1.0000000000000542,
+     1.0000000000000262,
+     1.0000000000000087
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.06221301281226416,
+    "A_at_t50": 0.06221301281226416,
+    "hard_retained": 0.0009531420554602898,
+    "FI_echo_hard": 27.784656227719772,
+    "FI_echo_easy": 2822.937846315223,
+    "hard_over_transfer": 0.0027164817122460137,
+    "gain_vs_classical": 1.0021289105334124,
+    "gain_per_param": [
+     1.0040940561688387,
+     1.0048856965508202,
+     1.0017635521050199
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.8014389006229508,
+    "A_at_t50": 0.8014389006229508,
+    "hard_retained": 0.41653663598698853,
+    "FI_echo_hard": 12142.289987991719,
+    "FI_echo_easy": 22079.729561602828,
+    "hard_over_transfer": 1.1871411482233885,
+    "gain_vs_classical": 1.3758302910010303,
+    "gain_per_param": [
+     1.5371562227721367,
+     1.7805467930077723,
+     1.3248355976999155
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 60.116861064894614,
+    "T3_over_T2_for_gain_2.0": null,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 7.501401619782464e-08,
+    "A_at_t50": 7.501401619782464e-08,
+    "hard_retained": 1.18298646356305e-15,
+    "FI_echo_hard": 3.448475704523635e-11,
+    "FI_echo_easy": 22.909052241451352,
+    "hard_over_transfer": 3.3715447510620256e-15,
+    "gain_vs_classical": 1.0000000000000033,
+    "gain_per_param": [
+     1.0000000000000169,
+     1.0000000000000084,
+     1.0000000000000029
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0005495435966640693,
+    "A_at_t50": 0.0005495435966640693,
+    "hard_retained": 6.710372110975621e-08,
+    "FI_echo_hard": 0.0019561132697423363,
+    "FI_echo_easy": 165.13566453967204,
+    "hard_over_transfer": 1.9124749576838288e-07,
+    "gain_vs_classical": 1.000000188208832,
+    "gain_per_param": [
+     1.000000696677582,
+     1.0000004869767574,
+     1.0000001562127965
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.5366248222224527,
+    "A_at_t50": 0.5366248222224527,
+    "hard_retained": 0.11002930930218686,
+    "FI_echo_hard": 3207.4196248306016,
+    "FI_echo_easy": 15829.94878956827,
+    "hard_over_transfer": 0.3135866315185411,
+    "gain_vs_classical": 1.1230871180067752,
+    "gain_per_param": [
+     1.2064379120796846,
+     1.2872406049959348,
+     1.1017541840996001
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9369141954239485,
+    "A_at_t50": 0.9369141954239485,
+    "hard_retained": 0.7993165547777379,
+    "FI_echo_hard": 23300.551648515582,
+    "FI_echo_easy": 25654.404944884584,
+    "hard_over_transfer": 2.278074701362998,
+    "gain_vs_classical": 1.6493554888251354,
+    "gain_per_param": [
+     1.8259690720283506,
+     2.233611721519255,
+     1.576657713989163
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 34.75409320670196,
+    "T3_over_T2_for_gain_2.0": null,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 3.1664283964970984e-29,
+    "A_at_t50": 3.1664283964970984e-29,
+    "hard_retained": 2.104508685453895e-58,
+    "FI_echo_hard": 6.134767637060061e-54,
+    "FI_echo_easy": 0.44916529761834845,
+    "hard_over_transfer": 5.997909046765991e-58,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 5.872697117070777e-09,
+    "A_at_t50": 5.872697117070777e-09,
+    "hard_retained": 7.303669348075213e-18,
+    "FI_echo_hard": 2.1290629332183372e-13,
+    "FI_echo_easy": 5.564060615020608,
+    "hard_over_transfer": 2.0815663418352515e-17,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0000000000000002,
+     1.0,
+     1.0
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.022633288695166662,
+    "A_at_t50": 0.022633288695166662,
+    "hard_retained": 0.00012123775787977587,
+    "FI_echo_hard": 3.5341525486275622,
+    "FI_echo_easy": 1288.3500559175468,
+    "hard_over_transfer": 0.00034553102575573245,
+    "gain_vs_classical": 1.0003068765852563,
+    "gain_per_param": [
+     1.0006738215242217,
+     1.0007336566419718,
+     1.0002540558490087
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.7211163120668512,
+    "A_at_t50": 0.7211163120668512,
+    "hard_retained": 0.2779938128863368,
+    "FI_echo_hard": 8103.684524496068,
+    "FI_echo_easy": 20150.34527606407,
+    "hard_over_transfer": 0.7922901990287178,
+    "gain_vs_classical": 1.2667570333381433,
+    "gain_per_param": [
+     1.4066513605089712,
+     1.5822899462430462,
+     1.2266637797686064
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 69.50818641340392,
+    "T3_over_T2_for_gain_2.0": null,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1UBQHN_p359_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/ILE44",
+  "t_c_us": 300.0,
+  "ideal": {
+   "FI_echo_easy": 1025.004181023191,
+   "FI_echo_hard": 13323.11458233251,
+   "FI_transfer": 1217.6182087177579,
+   "gain_vs_classical": 6.940863982844431,
+   "hard_over_transfer": 10.941947555435078
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.39969393045033524,
+    "A_at_t50": 0.025521736080845608,
+    "hard_retained": 0.013603923133746492,
+    "FI_echo_hard": 181.24662668014847,
+    "FI_echo_easy": 409.2075894163377,
+    "hard_over_transfer": 0.14885341347762415,
+    "gain_vs_classical": 1.1114112075724587,
+    "gain_per_param": [
+     1.1411185427166877,
+     1.0816837223416318,
+     1.1335994475550661
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.7864850552623361,
+    "A_at_t50": 0.18736855176484332,
+    "hard_retained": 0.11107972931497469,
+    "FI_echo_hard": 1479.9279614378872,
+    "FI_echo_easy": 816.1052131432355,
+    "hard_over_transfer": 1.2154285726363776,
+    "gain_vs_classical": 1.7276938179153454,
+    "gain_per_param": [
+     1.7176696391272792,
+     1.2784924223631433,
+     2.4016449115053105
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9735631155426927,
+    "A_at_t50": 0.9129863735113112,
+    "hard_retained": 0.7785802119437855,
+    "FI_echo_hard": 10373.113375263783,
+    "FI_echo_easy": 991.0381069961486,
+    "hard_over_transfer": 8.519183846788428,
+    "gain_vs_classical": 5.6965719842703875,
+    "gain_per_param": [
+     3.525210965897033,
+     1.6616472983080435,
+     13.307262174658582
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9920605914157407,
+    "A_at_t50": 0.9808087136522988,
+    "hard_retained": 0.9548376475959984,
+    "FI_echo_hard": 12721.411386446316,
+    "FI_echo_easy": 1013.927447051024,
+    "hard_over_transfer": 10.447783463950415,
+    "gain_vs_classical": 6.700717506522942,
+    "gain_per_param": [
+     3.858012126886725,
+     1.7151248147326663,
+     16.289409274012417
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 6.0430996714263525,
+    "T3_over_T2_for_gain_2.0": 7.36965441486607,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.025521736080845608,
+    "A_at_t50": 4.242685632696311e-07,
+    "hard_retained": 2.2117348130047313e-05,
+    "FI_echo_hard": 0.294671963393958,
+    "FI_echo_easy": 50.558838140219834,
+    "hard_over_transfer": 0.0002420068633042778,
+    "gain_vs_classical": 1.0002323586948085,
+    "gain_per_param": [
+     1.0004064242337587,
+     1.0004219193416424,
+     1.000056197630857
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.18736855176484332,
+    "A_at_t50": 0.001022478093620349,
+    "hard_retained": 0.0015056433326685104,
+    "FI_echo_hard": 20.05985864126755,
+    "FI_echo_easy": 299.7287435286813,
+    "hard_over_transfer": 0.016474670383249332,
+    "gain_vs_classical": 1.0132203505675277,
+    "gain_per_param": [
+     1.0216397923227527,
+     1.0168955023865047,
+     1.0071405532608027
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9129863735113112,
+    "A_at_t50": 0.5897511152459851,
+    "hard_retained": 0.3339351853303107,
+    "FI_echo_hard": 4449.056737228171,
+    "FI_echo_easy": 928.4627886907692,
+    "hard_over_transfer": 3.653901284798753,
+    "gain_vs_classical": 3.0731075586618464,
+    "gain_per_param": [
+     2.531273744229825,
+     1.4721388506352295,
+     5.858693760650157
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9808087136522988,
+    "A_at_t50": 0.9430226807448355,
+    "hard_retained": 0.8562275774605275,
+    "FI_echo_hard": 11407.618123059592,
+    "FI_echo_easy": 999.6414154456202,
+    "hard_over_transfer": 9.368797248090319,
+    "gain_vs_classical": 6.144917626578774,
+    "gain_per_param": [
+     3.671619303998511,
+     1.6851034594590801,
+     14.627255880578005
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 12.086199342852705,
+    "T3_over_T2_for_gain_2.0": 14.73930882973214,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.0303583985566332,
+    "A_at_t50": 8.494062123877491e-07,
+    "hard_retained": 3.172941276387183e-05,
+    "FI_echo_hard": 0.42273460188318807,
+    "FI_echo_easy": 56.16586832133851,
+    "hard_over_transfer": 0.00034718157042703797,
+    "gain_vs_classical": 1.0003318730462276,
+    "gain_per_param": [
+     1.0005782534039585,
+     1.0005938198433093,
+     1.0000850511430484
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.20800571738563037,
+    "A_at_t50": 0.0013246070459340435,
+    "hard_retained": 0.0019033482073199301,
+    "FI_echo_hard": 25.3585262562006,
+    "FI_echo_easy": 321.42352249499606,
+    "hard_over_transfer": 0.020826336264226048,
+    "gain_vs_classical": 1.016476828237931,
+    "gain_per_param": [
+     1.0267623297020168,
+     1.0204199270142666,
+     1.0094429341303268
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9170751636496556,
+    "A_at_t50": 0.6114576788294072,
+    "hard_retained": 0.35000757577197883,
+    "FI_echo_hard": 4663.191036694502,
+    "FI_echo_easy": 932.350367634453,
+    "hard_over_transfer": 3.829764538101962,
+    "gain_vs_classical": 3.1689577643066773,
+    "gain_per_param": [
+     2.5776538226229078,
+     1.4823480254335202,
+     6.118586393099575
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9814402339169283,
+    "A_at_t50": 0.9454438314225516,
+    "hard_retained": 0.8626358675081955,
+    "FI_echo_hard": 11492.996505641495,
+    "FI_echo_easy": 1000.4105161940213,
+    "hard_over_transfer": 9.438916421711918,
+    "gain_vs_classical": 6.181626539168748,
+    "gain_per_param": [
+     3.6836588967856203,
+     1.6870228892059613,
+     14.735956011310194
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 11.79683807373459,
+    "T3_over_T2_for_gain_2.0": 14.386428243543786,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 8.494062123877491e-07,
+    "A_at_t50": 5.205491384692693e-25,
+    "hard_retained": 2.2205453167072755e-14,
+    "FI_echo_hard": 2.9584579689752865e-10,
+    "FI_echo_easy": 1.7789202875635406,
+    "hard_over_transfer": 2.4297090399877984e-13,
+    "gain_vs_classical": 1.0000000000002427,
+    "gain_per_param": [
+     1.0000000000004374,
+     1.0000000000004932,
+     1.000000000000034
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.0013246070459340435,
+    "A_at_t50": 3.417182316787852e-08,
+    "hard_retained": 5.6264917318271814e-08,
+    "FI_echo_hard": 0.0007496239403968002,
+    "FI_echo_easy": 16.385604372055557,
+    "hard_over_transfer": 6.156477745074211e-07,
+    "gain_vs_classical": 1.000000607472953,
+    "gain_per_param": [
+     1.0000010777394053,
+     1.0000011855883155,
+     1.00000011044937
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.6114576788294072,
+    "A_at_t50": 0.040452674726317625,
+    "hard_retained": 0.03391185252885379,
+    "FI_echo_hard": 451.81149694108154,
+    "FI_echo_easy": 678.9204402018324,
+    "hard_over_transfer": 0.3710617118783666,
+    "gain_vs_classical": 1.2382295226087099,
+    "gain_per_param": [
+     1.3002843872007657,
+     1.1511288883309878,
+     1.333290165340088
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9454438314225516,
+    "A_at_t50": 0.7689122607493132,
+    "hard_retained": 0.5068197714820711,
+    "FI_echo_hard": 6752.417888047213,
+    "FI_echo_easy": 960.4254235692504,
+    "hard_over_transfer": 5.545595359614413,
+    "gain_vs_classical": 4.100221587827872,
+    "gain_per_param": [
+     2.97303911361014,
+     1.5645091001579483,
+     8.705112575766192
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 23.59367614746918,
+    "T3_over_T2_for_gain_2.0": 28.772856487087573,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1UBQHN_p487_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/ILE61",
+  "t_c_us": 500.0,
+  "ideal": {
+   "FI_echo_easy": 1234.1980757062593,
+   "FI_echo_hard": 10244.627197694812,
+   "FI_transfer": 155.25653916637918,
+   "gain_vs_classical": 8.373128339736281,
+   "hard_over_transfer": 65.9851575508601
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 2.641441939252749e-05,
+    "A_at_t50": 1.9050796446878526e-12,
+    "hard_retained": 3.230243302548502e-11,
+    "FI_echo_hard": 3.309263839245989e-07,
+    "FI_echo_easy": 6.370392772406278,
+    "hard_over_transfer": 2.131481132462735e-09,
+    "gain_vs_classical": 1.0000000020474706,
+    "gain_per_param": [
+     1.0000000004140632,
+     1.000000002307868,
+     1.000000000629785
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.005300319563887528,
+    "A_at_t50": 2.165279936498762e-05,
+    "hard_retained": 1.5740949677973184e-06,
+    "FI_echo_hard": 0.016126016118850946,
+    "FI_echo_easy": 49.49535606166289,
+    "hard_over_transfer": 0.00010386690445012211,
+    "gain_vs_classical": 1.0000787588124687,
+    "gain_per_param": [
+     1.0000188966602848,
+     1.0000885037072997,
+     1.0000247702886655
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.7198045948036521,
+    "A_at_t50": 0.27552749526034237,
+    "hard_retained": 0.1281257406340784,
+    "FI_echo_hard": 1312.6004472246707,
+    "FI_echo_easy": 892.3711890099354,
+    "hard_over_transfer": 8.4543971820603,
+    "gain_vs_classical": 2.252926408801354,
+    "gain_per_param": [
+     1.5721855300936578,
+     2.286625941750351,
+     1.895335212335772
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9572473526009919,
+    "A_at_t50": 0.8972829537818084,
+    "hard_retained": 0.7957181622005747,
+    "FI_echo_hard": 8151.835926179739,
+    "FI_echo_easy": 1167.4530711233942,
+    "hard_over_transfer": 52.50558829888577,
+    "gain_vs_classical": 7.162982307502755,
+    "gain_per_param": [
+     3.5651861589984946,
+     7.209704517176323,
+     6.76588240957752
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 16.003914231740303,
+    "T3_over_T2_for_gain_2.0": 18.824384704849518,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 4.868153639080634e-19,
+    "A_at_t50": 1.3172025016880902e-47,
+    "hard_retained": 1.0822591692516232e-38,
+    "FI_echo_hard": 1.108734172026977e-34,
+    "FI_echo_easy": 0.16424361652943378,
+    "hard_over_transfer": 7.141304179393131e-37,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 5.5143602676166e-07,
+    "A_at_t50": 9.107761845520449e-12,
+    "hard_retained": 1.430388078357737e-14,
+    "FI_echo_hard": 1.465379261080209e-10,
+    "FI_echo_easy": 1.5338592509547215,
+    "hard_over_transfer": 9.438438270930728e-13,
+    "gain_vs_classical": 1.0000000000009346,
+    "gain_per_param": [
+     1.0000000000001845,
+     1.0000000000010518,
+     1.0000000000002913
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.09800840681551061,
+    "A_at_t50": 0.002559831323242196,
+    "hard_retained": 0.0006825058270121763,
+    "FI_echo_hard": 6.992017757994132,
+    "FI_echo_easy": 225.53415444301433,
+    "hard_over_transfer": 0.04503525452477852,
+    "gain_vs_classical": 1.0183618399171446,
+    "gain_per_param": [
+     1.00656975864431,
+     1.0199394197790117,
+     1.0072068405925512
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.8331765634190375,
+    "A_at_t50": 0.5108434428326468,
+    "hard_retained": 0.28618420770732517,
+    "FI_echo_hard": 2931.8505178292044,
+    "FI_echo_easy": 1015.0208943454145,
+    "hard_over_transfer": 18.88391003413592,
+    "gain_vs_classical": 3.5052610892711518,
+    "gain_per_param": [
+     2.066688611688075,
+     3.548870994039518,
+     3.051603440251279
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 32.00782846348061,
+    "T3_over_T2_for_gain_2.0": 37.648769409699035,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 6.0828616599163175e-05,
+    "A_at_t50": 1.61181920209656e-11,
+    "hard_retained": 1.722972733705696e-10,
+    "FI_echo_hard": 1.7651213328607955e-06,
+    "FI_echo_easy": 7.804485162129014,
+    "hard_over_transfer": 1.1369062728940648e-08,
+    "gain_vs_classical": 1.0000000108249125,
+    "gain_per_param": [
+     1.000000002203726,
+     1.000000012204206,
+     1.0000000033254166
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.007659631092263578,
+    "A_at_t50": 3.917181738547073e-05,
+    "hard_retained": 3.347888928108872e-06,
+    "FI_echo_hard": 0.03429787396776548,
+    "FI_echo_easy": 58.72024511277799,
+    "hard_over_transfer": 0.00022091097838404403,
+    "gain_vs_classical": 1.000160287827875,
+    "gain_per_param": [
+     1.0000397060919717,
+     1.0001797523009888,
+     1.000050997033458
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.7456782106320919,
+    "A_at_t50": 0.31785172465146705,
+    "hard_retained": 0.1518573883493785,
+    "FI_echo_hard": 1555.7223308549464,
+    "FI_echo_easy": 919.6614832808875,
+    "hard_over_transfer": 10.020333695495887,
+    "gain_vs_classical": 2.4472939315995768,
+    "gain_per_param": [
+     1.651738706175993,
+     2.4833138532587733,
+     2.064631295176925
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9600767847940374,
+    "A_at_t50": 0.9056207808738387,
+    "hard_retained": 0.8116143080926372,
+    "FI_echo_hard": 8314.686014724088,
+    "FI_echo_easy": 1171.4335115986323,
+    "hard_over_transfer": 53.55449799002498,
+    "gain_vs_classical": 7.2672407997102075,
+    "gain_per_param": [
+     3.610886437540263,
+     7.313800767926933,
+     6.874867148784738
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 15.35767681856132,
+    "T3_over_T2_for_gain_2.0": 18.06425680737421,
+    "T3_over_T2_for_gain_10.0": null
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 1.3690892435066851e-17,
+    "A_at_t50": 6.749402086234482e-44,
+    "hard_retained": 8.559852268783053e-36,
+    "FI_echo_hard": 8.76924953610245e-32,
+    "FI_echo_easy": 0.20218534417362377,
+    "hard_over_transfer": 5.64823200567737e-34,
+    "gain_vs_classical": 1.0,
+    "gain_per_param": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 1.1569878314344929e-06,
+    "A_at_t50": 2.980889838275893e-11,
+    "hard_retained": 6.327249725946883e-14,
+    "FI_echo_hard": 6.482031462904248e-10,
+    "FI_echo_easy": 1.9240671041088786,
+    "hard_over_transfer": 4.175045700302414e-12,
+    "gain_vs_classical": 1.000000000004124,
+    "gain_per_param": [
+     1.000000000000815,
+     1.0000000000046436,
+     1.000000000001282
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.12270773573050335,
+    "A_at_t50": 0.003826020482123194,
+    "hard_retained": 0.0011119290670571372,
+    "FI_echo_hard": 11.391298762280966,
+    "FI_echo_easy": 257.9487177457834,
+    "hard_over_transfer": 0.07337081467514608,
+    "gain_vs_classical": 1.0275681361060285,
+    "gain_per_param": [
+     1.0103017662793885,
+     1.0297950917788263,
+     1.0112228539964043
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.8479565748562287,
+    "A_at_t50": 0.5517948433118798,
+    "hard_retained": 0.32206260749251964,
+    "FI_echo_hard": 3299.411348078376,
+    "FI_echo_easy": 1031.7825069940984,
+    "hard_over_transfer": 21.251351896634727,
+    "gain_vs_classical": 3.7795305965296135,
+    "gain_per_param": [
+     2.173075798132248,
+     3.824208071160474,
+     3.319286742496257
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 30.71535363712264,
+    "T3_over_T2_for_gain_2.0": 36.12851361474842,
+    "T3_over_T2_for_gain_10.0": null
+   }
+  }
+ },
+ {
+  "file": "1UBQHN_p548_N10_o0_g0.json",
+  "hn_only": true,
+  "probe": "H/HIS68",
+  "t_c_us": 250.0,
+  "ideal": {
+   "FI_echo_easy": 301.8053970697886,
+   "FI_echo_hard": 20040.93104718904,
+   "FI_transfer": 571.8592973971524,
+   "gain_vs_classical": 23.9389274559353,
+   "hard_over_transfer": 35.045213286566096
+  },
+  "cases": {
+   "cluster|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.33604102987955337,
+    "A_at_t50": 0.012751733511297237,
+    "hard_retained": 0.010469608594419415,
+    "FI_echo_hard": 209.82070393181723,
+    "FI_echo_easy": 84.481245976892,
+    "hard_over_transfer": 0.36690966621829385,
+    "gain_vs_classical": 1.3196826800508066,
+    "gain_per_param": [
+     1.5741590842223998,
+     1.0056417874507204,
+     1.2892692501527312
+    ]
+   },
+   "cluster|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.7395356739319734,
+    "A_at_t50": 0.12360683638729449,
+    "hard_retained": 0.09434273305808527,
+    "FI_echo_hard": 1890.7162080204487,
+    "FI_echo_easy": 219.99826320251472,
+    "hard_over_transfer": 3.306261202058168,
+    "gain_vs_classical": 3.3876973613646184,
+    "gain_per_param": [
+     4.57054334755795,
+     1.0983069664614764,
+     3.2118500384065443
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9698623029638258,
+    "A_at_t50": 0.8961904010400019,
+    "hard_retained": 0.7285729341376666,
+    "FI_echo_hard": 14601.279935901177,
+    "FI_echo_easy": 289.4971632407796,
+    "hard_over_transfer": 25.5329938716738,
+    "gain_vs_classical": 17.951495232400386,
+    "gain_per_param": [
+     41.43824947156627,
+     5.479241711582946,
+     13.843056664118375
+    ]
+   },
+   "cluster|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9911951293898488,
+    "A_at_t50": 0.9783267598639848,
+    "hard_retained": 0.9470103089816639,
+    "FI_echo_hard": 18978.968303278714,
+    "FI_echo_easy": 297.9091718274923,
+    "hard_over_transfer": 33.18817826283927,
+    "gain_vs_classical": 22.820713183817205,
+    "gain_per_param": [
+     59.605562788712916,
+     9.512037818972884,
+     16.27754610495639
+    ]
+   },
+   "cluster|generous|required": {
+    "T3_over_T2_for_gain_1.5": 4.801810420984621,
+    "T3_over_T2_for_gain_2.0": 5.449159511251452,
+    "T3_over_T2_for_gain_10.0": 11.335768613127275
+   },
+   "cluster|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.012751733511297237,
+    "A_at_t50": 2.644094133802057e-08,
+    "hard_retained": 7.172233583531226e-06,
+    "FI_echo_hard": 0.14373823870188285,
+    "FI_echo_easy": 3.4375824124216106,
+    "hard_over_transfer": 0.00025135245567592407,
+    "gain_vs_classical": 1.000249850544556,
+    "gain_per_param": [
+     1.0005752167417745,
+     1.0000014171047362,
+     1.0002183726593672
+    ]
+   },
+   "cluster|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.12360683638729449,
+    "A_at_t50": 0.00038415992836582407,
+    "hard_retained": 0.0008106382155396347,
+    "FI_echo_hard": 16.245944581846185,
+    "FI_echo_easy": 42.694731168483564,
+    "hard_over_transfer": 0.02840898916182784,
+    "gain_vs_classical": 1.0264353398183135,
+    "gain_per_param": [
+     1.0534269123693973,
+     1.0002107252748675,
+     1.023500348153783
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.8961904010400019,
+    "A_at_t50": 0.5056476563329161,
+    "hard_retained": 0.2996587463222598,
+    "FI_echo_hard": 6005.440272731521,
+    "FI_echo_easy": 265.10616186783216,
+    "hard_over_transfer": 10.501604678048599,
+    "gain_vs_classical": 8.175254613261393,
+    "gain_per_param": [
+     12.894608065880702,
+     1.6241971755095925,
+     7.405861096676235
+    ]
+   },
+   "cluster|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9783267598639848,
+    "A_at_t50": 0.9331903208030954,
+    "hard_retained": 0.8220571690842801,
+    "FI_echo_hard": 16474.791042465476,
+    "FI_echo_easy": 292.7060404483591,
+    "hard_over_transfer": 28.80916882430932,
+    "gain_vs_classical": 20.055576624804893,
+    "gain_per_param": [
+     49.28808686479197,
+     7.135941345742103,
+     14.90309812440297
+    ]
+   },
+   "cluster|literal|required": {
+    "T3_over_T2_for_gain_1.5": 9.603620841969242,
+    "T3_over_T2_for_gain_2.0": 10.898319022502903,
+    "T3_over_T2_for_gain_10.0": 22.67153722625455
+   },
+   "network|generous|PE_gauss_T3=4T2": {
+    "A_at_tc": 0.08831347723129403,
+    "A_at_t50": 6.0828616599163175e-05,
+    "hard_retained": 0.00041545345029298864,
+    "FI_echo_hard": 8.326073950638564,
+    "FI_echo_easy": 19.93922097070957,
+    "hard_over_transfer": 0.014559654776157572,
+    "gain_vs_classical": 1.0140691023924855,
+    "gain_per_param": [
+     1.0302514766375472,
+     1.0001098289791237,
+     1.012421253312527
+    ]
+   },
+   "network|generous|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.3895476440123569,
+    "A_at_t50": 0.007659631092263578,
+    "hard_retained": 0.011349897246959135,
+    "FI_echo_hard": 227.46250811898872,
+    "FI_echo_easy": 124.47250686376692,
+    "hard_over_transfer": 0.3977595698002922,
+    "gain_vs_classical": 1.3266582205884097,
+    "gain_per_param": [
+     1.548325390197485,
+     1.0044931960036727,
+     1.2980431085091333
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.9412873467655052,
+    "A_at_t50": 0.7456782106320919,
+    "hard_retained": 0.48891061723759727,
+    "FI_echo_hard": 9798.22396829732,
+    "FI_echo_easy": 279.45971545842536,
+    "hard_over_transfer": 17.133976859158274,
+    "gain_vs_classical": 12.509462164401986,
+    "gain_per_param": [
+     23.480304196122646,
+     2.6299042397232255,
+     10.644944784151525
+    ]
+   },
+   "network|generous|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9854677927482838,
+    "A_at_t50": 0.9600767847940374,
+    "hard_retained": 0.8969462710811054,
+    "FI_echo_hard": 17975.63837176976,
+    "FI_echo_easy": 295.5358481140615,
+    "hard_over_transfer": 31.43367337662747,
+    "gain_vs_classical": 21.723701838538094,
+    "gain_per_param": [
+     55.57616225717754,
+     8.573782310059709,
+     15.724304418229213
+    ]
+   },
+   "network|generous|required": {
+    "T3_over_T2_for_gain_1.5": 7.1632545052040095,
+    "T3_over_T2_for_gain_2.0": 8.128958246240654,
+    "T3_over_T2_for_gain_10.0": 16.91049593150821
+   },
+   "network|literal|PE_gauss_T3=4T2": {
+    "A_at_tc": 6.0828616599163175e-05,
+    "A_at_t50": 1.3690892435066851e-17,
+    "hard_retained": 1.5652167164082846e-10,
+    "FI_echo_hard": 3.1368400287446073e-06,
+    "FI_echo_easy": 0.18335109522811732,
+    "hard_over_transfer": 5.4853353666226975e-09,
+    "gain_vs_classical": 1.0000000054835774,
+    "gain_per_param": [
+     1.0000000128168869,
+     1.000000000028349,
+     1.00000000478138
+    ]
+   },
+   "network|literal|LE_logistic_T3=6.7T2": {
+    "A_at_tc": 0.007659631092263578,
+    "A_at_t50": 1.1569878314344929e-06,
+    "hard_retained": 2.633323974922394e-06,
+    "FI_echo_hard": 0.052774264206329455,
+    "FI_echo_easy": 3.2906824283877962,
+    "hard_over_transfer": 9.228540035378333e-05,
+    "gain_vs_classical": 1.0000917573955619,
+    "gain_per_param": [
+     1.000211031374302,
+     1.0000005370230995,
+     1.0000802328745069
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=20T2": {
+    "A_at_tc": 0.7456782106320919,
+    "A_at_t50": 0.12270773573050335,
+    "hard_retained": 0.09583103906804767,
+    "FI_echo_hard": 1920.5432461432224,
+    "FI_echo_easy": 222.5293560963866,
+    "hard_over_transfer": 3.358419203612979,
+    "gain_vs_classical": 3.417636804978412,
+    "gain_per_param": [
+     4.601887406386485,
+     1.09915342673113,
+     3.2411333996318823
+    ]
+   },
+   "network|literal|hypothetical_logistic_T3=50T2": {
+    "A_at_tc": 0.9600767847940374,
+    "A_at_t50": 0.8479565748562287,
+    "hard_retained": 0.6306871249503013,
+    "FI_echo_hard": 12639.557183478886,
+    "FI_echo_easy": 285.9412921948659,
+    "hard_over_transfer": 22.10256481097447,
+    "gain_vs_classical": 15.734843198802686,
+    "gain_per_param": [
+     33.589514429545005,
+     4.055795098414243,
+     12.641729815510416
+    ]
+   },
+   "network|literal|required": {
+    "T3_over_T2_for_gain_1.5": 14.326509010408019,
+    "T3_over_T2_for_gain_2.0": 16.257916492481307,
+    "T3_over_T2_for_gain_10.0": 33.82099186301642
+   }
+  }
+ }
+]

@@ -1,0 +1,18 @@
+== 1UBQ_p19_core10_o0.json ['radial_HA/GLU16', 'radial_HG22/ILE3', 'radial_HG3/GLN2', 'rigid_res2']
+  transfer_all_exact_N12           misfit max    1.9 sigma | bias(A) +0.058 +0.042 +0.033 -0.012 | CRB(A) 0.056 0.129 0.135 0.013 | |bias|/CRB 1.0 0.3 0.2 0.9 | unexplained 0.6 sigma
+  transfer_all_exact_N14           misfit max   12.7 sigma | bias(A) +0.209 -0.401 -0.525 -0.214 | CRB(A) 0.056 0.129 0.135 0.013 | |bias|/CRB 3.7 3.1 3.9 16.1 | unexplained 1.4 sigma
+  transfer_all_deph                misfit max   11.9 sigma | bias(A) +0.250 -0.936 +0.035 -0.160 | CRB(A) 0.056 0.129 0.135 0.013 | |bias|/CRB 4.4 7.3 0.3 12.0 | unexplained 3.6 sigma
+  transfer_late_ge_80us_exact_N12  misfit max    1.9 sigma | bias(A) +0.064 +0.043 +0.042 -0.014 | CRB(A) 0.059 0.133 0.140 0.016 | |bias|/CRB 1.1 0.3 0.3 0.9 | unexplained 0.7 sigma
+  transfer_late_ge_80us_exact_N14  misfit max   12.7 sigma | bias(A) +0.253 -0.427 -0.426 -0.234 | CRB(A) 0.059 0.133 0.140 0.016 | |bias|/CRB 4.3 3.2 3.1 14.5 | unexplained 1.5 sigma
+  transfer_late_ge_80us_deph       misfit max   11.6 sigma | bias(A) +0.197 -1.023 +0.089 -0.109 | CRB(A) 0.059 0.133 0.140 0.016 | |bias|/CRB 3.4 7.7 0.6 6.7 | unexplained 3.8 sigma
+  echo_all_exact_N12               misfit max    4.1 sigma | bias(A) +0.002 -0.078 -0.240 -0.004 | CRB(A) 0.014 0.011 0.042 0.006 | |bias|/CRB 0.2 7.3 5.7 0.6 | unexplained 1.3 sigma
+  echo_late_ge_80us_exact_N12      misfit max    4.1 sigma | bias(A) -0.013 -0.081 -0.312 +0.005 | CRB(A) 0.018 0.011 0.052 0.009 | |bias|/CRB 0.7 7.3 6.0 0.6 | unexplained 1.4 sigma
+== 1UBQ_p245_core10_o0.json ['radial_HB2/LYS29', 'radial_HA/LYS29', 'radial_HA/LYS27', 'rigid_res29']
+  transfer_all_exact_N12           misfit max    5.4 sigma | bias(A) +0.347 -0.442 -0.179 -0.096 | CRB(A) 0.163 0.138 0.020 0.067 | |bias|/CRB 2.1 3.2 9.1 1.4 | unexplained 0.8 sigma
+  transfer_all_exact_N14           misfit max    8.8 sigma | bias(A) +0.575 -0.007 +0.301 -0.300 | CRB(A) 0.163 0.138 0.020 0.067 | |bias|/CRB 3.5 0.0 15.4 4.5 | unexplained 1.6 sigma
+  transfer_all_deph                misfit max    5.6 sigma | bias(A) -0.291 +0.629 +0.165 +0.297 | CRB(A) 0.163 0.138 0.020 0.067 | |bias|/CRB 1.8 4.6 8.4 4.4 | unexplained 1.5 sigma
+  transfer_late_ge_80us_exact_N12  misfit max    5.4 sigma | bias(A) +0.337 -0.457 -0.194 -0.101 | CRB(A) 0.166 0.145 0.022 0.069 | |bias|/CRB 2.0 3.1 8.9 1.5 | unexplained 0.8 sigma
+  transfer_late_ge_80us_exact_N14  misfit max    8.8 sigma | bias(A) +0.593 -0.111 +0.363 -0.251 | CRB(A) 0.166 0.145 0.022 0.069 | |bias|/CRB 3.6 0.8 16.7 3.6 | unexplained 1.6 sigma
+  transfer_late_ge_80us_deph       misfit max    4.3 sigma | bias(A) -0.301 +0.703 +0.120 +0.262 | CRB(A) 0.166 0.145 0.022 0.069 | |bias|/CRB 1.8 4.8 5.5 3.8 | unexplained 1.6 sigma
+  echo_all_exact_N12               misfit max   12.5 sigma | bias(A) -0.128 -0.166 -0.061 -0.221 | CRB(A) 0.028 0.022 0.008 0.011 | |bias|/CRB 4.5 7.4 7.7 19.8 | unexplained 4.3 sigma
+  echo_late_ge_80us_exact_N12      misfit max   12.5 sigma | bias(A) -0.176 -0.214 -0.063 -0.233 | CRB(A) 0.030 0.024 0.010 0.011 | |bias|/CRB 6.0 8.9 6.2 20.4 | unexplained 4.9 sigma
