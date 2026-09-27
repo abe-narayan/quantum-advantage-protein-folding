@@ -17,8 +17,21 @@ import numpy as np
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def unique_params(r):
+    """drop parameters whose derivative time series duplicates an earlier one (v2 jobs before the rigid-shift fix)."""
+    out, seen = [], []
+    for p in r["params"]:
+        if "dS" not in p:
+            continue
+        v = np.concatenate([np.asarray(p["dS"][b]) for b in sorted(p["dS"])])
+        if any(np.allclose(v, w, rtol=1e-9, atol=1e-12) for w in seen):
+            continue
+        seen.append(v); out.append(p)
+    return out
+
+
 def fisher(r, t0, t1):
-    P = [p for p in r["params"] if "dS" in p]
+    P = unique_params(r)
     if not P:
         return None
     bs = sorted(P[0]["dS"])
@@ -56,11 +69,11 @@ def analyse(dirs):
             row = dict(file=os.path.basename(f), pdb=r["pdb"], probe=r["probe"], probe_name=r["probe_name"], N=r["N"],
                        orient=r["orient"], gamma=r["gamma"], nt=nt, best=best, best_tc=tcb,
                        tc={k: v["t_c_index"] for k, v in adv.items()},
-                       params=[dict(name=p["name"], r=p["r"], FI_total=p["FI_total"],
+                       params=[dict(name=p["name"], r=p["r"], FI_total=p["FI_total"], FI_otoc_total=p.get("FI_otoc_total"),
                                     frac_hard={k: v["FI_split"][p["name"]]["frac_hard"] for k, v in adv.items()},
                                     frac_hard_best=r["best_split"][p["name"]]["frac_hard"] if best else None,
                                     gain_best=r["best_split"][p["name"]]["gain"] if best else None)
-                               for p in r["params"]],
+                               for p in unique_params(r)],
                        FI_eig_total=ev_t.tolist() if ev_t is not None else None,
                        FI_eig_easy=ev_e.tolist() if ev_e is not None else None,
                        gain_spectrum=g.tolist() if g is not None else None,

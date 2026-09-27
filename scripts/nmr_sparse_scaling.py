@@ -65,15 +65,18 @@ def main():
     exact_ok = (a.N <= 14 and a.gamma == 0) or (a.N <= 12)
     if exact_ok:
         te = time.time()
-        tt, S0, _ = SP.sector_exact_correlators(dm, a.dt, a.steps, 0, bs, gamma=a.gamma, record_every=rec)
-        res["exact"] = dict(times=tt.tolist(), S={str(b): S0[b].tolist() for b in bs}, secs=time.time() - te)
+        do_f = a.gamma == 0
+        tt, S0, F0 = SP.sector_exact_correlators(dm, a.dt, a.steps, 0, bs, gamma=a.gamma, record_every=rec, otoc=do_f)
+        res["exact"] = dict(times=tt.tolist(), S={str(b): S0[b].tolist() for b in bs},
+                            F=({str(b): F0[b].tolist() for b in bs} if F0 else None), secs=time.time() - te)
         print(json.dumps({"exact_secs": round(time.time() - te, 1)}), flush=True)
     for e in [float(v) for v in a.eps.split(",") if v]:
         st = {}
-        tt_, Sw, _, nstr, norm2 = SP.pauli_correlators(dm, a.dt, a.steps, 0, bs, wmax=None, eps=e, gamma=a.gamma,
+        tt_, Sw, Fw, nstr, norm2 = SP.pauli_correlators(dm, a.dt, a.steps, 0, bs, wmax=None, eps=e, gamma=a.gamma,
                                                        record_every=rec, max_strings=a.max_strings,
                                                        time_budget_s=a.budget, stats=st)
         run = dict(eps=e, times=np.asarray(tt_).tolist(), S={str(b): np.asarray(Sw[b]).tolist() for b in bs},
+                   F={str(b): np.asarray(Fw[b]).tolist() for b in bs},
                    n_strings=np.asarray(nstr).tolist(), kept_norm2=np.asarray(norm2).tolist(), **st)
         if res["exact"]:
             n = len(tt_)

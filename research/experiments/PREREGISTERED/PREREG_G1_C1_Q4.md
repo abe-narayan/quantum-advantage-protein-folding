@@ -66,3 +66,49 @@ _Written 2026-09-27, during the quantum-advantage discovery sprint. **Timing dis
 **Kill (sparse Pauli dynamics is classically efficient on this instrument, and the protein NMR forward-model advantage claim is dropped).** ln M*(N) over N = 8–20 fits a power law N^k better than exp(κN) (ΔBIC > 10), or the fitted exp(κN) extrapolates to M*(60) < 10⁹ strings. N=60 is O'Brien's ubiquitin cluster; 10⁹ strings is roughly one node-day.
 
 **Survival.** exp(κN) is preferred and M*(60) > 10¹². Next steps would then be: the effective N of the dynamics at t_50 in the full protein (light-cone count), and a hybrid adversary (classical spins + exact core, Navez–Starkov–Fine type).
+
+## C3 — (added 2026-09-27, after seeing ONE γ=0 C1 v2 job with OTOC FI: 1UBQ H/ILE3 N=10) Echo (OTOC) observables
+
+**Observation that prompted C3 (exploratory, n = 1).** In that job, transfer S_ab(t) was reproduced exactly by sparse Pauli dynamics at ε = 1e-4 (f_hard = 0). The OTOC F_ab(t) = Tr[Z_a(t) Z_b Z_a(t) Z_b]/2^N was not: every adversary failed by 80 µs. The OTOC Fisher information was 10–150× the transfer FI, with 85–97% of it after that failure time.
+
+**Stronger adversary, added before further OTOC data.** Truncated Pauli dynamics loses operator norm, and that biases OTOCs directly. The norm-corrected estimator F_corr = Σ_kept c_P² s_P / Σ_kept c_P² (discarded strings assumed to behave like kept ones; valid at γ = 0 where the norm is conserved) is evaluated alongside the plain one. Each adversary uses whichever estimator fails later, chosen once over the whole window.
+
+**C3 statistics.** Over all γ=0 C1 jobs (N = 10, 12, 14) with OTOC FI: f_hard^OTOC (best adversary) per parameter, the gain g^OTOC, and C2's M*(N) computed for the OTOC signal (M*_F).
+
+**Kill (the OTOC-hardness observation is an artefact or small-N only).** Any of:
+- the median f_hard^OTOC over probes and parameters < 0.3 at N = 10;
+- f_hard^OTOC does not increase or stay ≥ 0.3 from N = 10 to N = 12–14;
+- ln M*_F(N) is fitted better by a power law (ΔBIC > 10), or extrapolates to M*_F(60) < 10⁹.
+
+**Survival** requires none of the kill conditions, **plus** the physical-feasibility audit (discovery report): time reversal of the secular dipolar Hamiltonian (magic-echo / MREV-type sequences, scaling −1/2) is available in solids; the OTOC SNR at the needed times is not below the per-point σ assumed here.
+
+## R1-E and R2-T — (added 2026-09-27, after the discovery-workflow synthesis, before any R1-E/R2-T output exists)
+
+### R1-E: does the late-window structural information of an isolated cluster survive embedding?
+
+**Motivation (synthesis R1).** In a real protein the N-spin cluster is embedded in ~600 protons, with bath second moment √M₂,out ≫ γ. The late-window FI of an isolated cluster may be a finite-size artefact.
+
+**Measurement (`scripts/nmr_embed.py`).**
+- Core: the N_core = 10 protons nearest the probe (1UBQ probes 19 and 245, orientation 0, γ = 0).
+- Parameters: the same as C1 v2 (radial moves of the 3 farthest core protons + a rigid residue shift), held fixed across embeddings.
+- Observables: S_ab and F_ab (OTOC) for the core's observed spins.
+- Environments:
+  - (i) exact embedding in larger clusters N_env ∈ {10, 12, 14} (the nearest protons to the probe; OTOC FI only for N_env ≤ 12);
+  - (ii) dephasing embedding: every core spin gets γ_i = √M₂,out,i, with M₂,out,i = Σ_j d_ij² over all protons within 12 Å outside the simulated cluster (2-point S only; a Gaussian-bath proxy).
+- Late window: t ≥ t_c*, the best-adversary failure time of the isolated core (from its C1 job, per observable type).
+
+**Kill for Program C:**
+- (a) FI_late(embedded) < 10% of FI_late(isolated), summed over parameters, for the largest exact embedding (N_env = 14 for S; 12 for OTOC) or for the dephasing embedding; or
+- (b) the embedded late-window FI's main direction (top generalised eigenvector) differs from the isolated one (|cos| < 0.5), i.e. the isolated information is not the protein's information.
+
+### R2-T: transmission of posterior sampling to structure accuracy (Program A closure)
+
+**Measurement (`scripts/g1_transmission.py`).**
+- Crops: 16 ladder chains at L = 60 and L = 100.
+- Converged multistart: 64 restarts, L-BFGS to |g| < 1e-3 or 2000 iterations.
+- 2 Å clustering. Each mode polished; Hessian by finite differences of gradients; eigenvalues floored at 1e-6·max.
+- Laplace mixture on a T-ladder {1, 2, 4, 8, 16, 32}: w_k ∝ exp(−E_k/T)·det(H_k/T)^{−½}.
+- Soft structure: w-weighted average of the CA coordinates, superposed on the argmin mode. T* is chosen native-free as the smallest T with mixture ESS ≥ 3, selected on odd-indexed chains and applied to even ones (and vice versa).
+- Metric: paired ΔRMSD(soft − argmin) to native (ORACLE label, evaluation only). MDE = 2.8016·SE over crops.
+
+**Kill (K-G1d extended, closes the transmission clause of H-006):** the median gain of the soft readout at T* is < 1.0 MDE at both L.

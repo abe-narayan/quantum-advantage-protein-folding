@@ -273,6 +273,11 @@ def pauli_correlators(dmat, dt, n_steps, a, bs, wmax=None, eps=1e-10, gamma=0.0,
             nstr.append(len(op.c))
             norm2 = float((op.c ** 2).sum())
             trunc.append(norm2)
+            if stats is not None:                           # c^2-weighted operator weight (light-cone diagnostic)
+                w_ = _popcount(op.x | op.z).astype(float)
+                c2 = op.c ** 2
+                stats.setdefault("wmean", []).append(float((w_ * c2).sum() / max(c2.sum(), 1e-300)))
+                stats.setdefault("w90", []).append(float(np.quantile(np.repeat(w_, 1) if len(w_) < 2 else w_, 0.9)))
             for b in bs:
                 zb = np.uint64(1 << b)
                 hit = (op.x == 0) & (op.z == zb)
@@ -446,7 +451,7 @@ def sector_exact_correlators(dmat, dt, n_steps, a, bs, gamma=0.0, record_every=1
     zb_full = {b: zsign(N, b) for b in bs}
     for idx, Uk in sector_step_unitaries(dmat, dt, chunk):
         za = za_full[idx]
-        if gamma == 0:
+        if np.ndim(gamma) == 0 and gamma == 0:
             Q, lam = _unitary_eig(Uk)
             del Uk
             Qh = Q.conj().T
@@ -466,8 +471,18 @@ def sector_exact_correlators(dmat, dt, n_steps, a, bs, gamma=0.0, record_every=1
                 del Bm, M
             del Q, Qh, A
         else:
-            pcb = _PC16[(idx[:, None] ^ idx[None, :]) & 0xFFFF] + _PC16[((idx[:, None] ^ idx[None, :]) >> 16) & 0xFFFF]
-            damp = np.exp(-2 * gamma * dt * pcb)
+            xr = idx[:, None] ^ idx[None, :]
+            if np.ndim(gamma) == 0:
+                pcb = _PC16[xr & 0xFFFF] + _PC16[(xr >> 16) & 0xFFFF]
+                damp = np.exp(-2 * gamma * dt * pcb)
+            else:                                           # per-spin dephasing rates gamma_i (embedding proxy)
+                acc = np.zeros(xr.shape)
+                for q, gq in enumerate(np.asarray(gamma, float)):
+                    if gq > 0:
+                        acc += gq * ((xr >> q) & 1)
+                damp = np.exp(-2 * dt * acc)
+                del acc
+            del xr
             O = np.diag(za.astype(complex))
             Uh = Uk.conj().T
             ti = 0

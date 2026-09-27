@@ -100,7 +100,12 @@ def main():
         u = (X0[k] - X0[0]) / dist[k]
         params.append(dict(name=f"radial_{names[idx[k]]}", move=[(int(k), u.tolist())], r=float(dist[k])))
     pres = resid[idx[0]]
-    kfar = next((int(k) for k in np.argsort(-dist) if resid[idx[k]] != pres), None)
+    # farthest proton whose residue differs from the probe's AND has >= 2 protons in the cluster (a rigid shift of a
+    # single proton would duplicate a radial parameter)
+    cnt = {}
+    for i in range(a.N):
+        cnt[resid[idx[i]]] = cnt.get(resid[idx[i]], 0) + 1
+    kfar = next((int(k) for k in np.argsort(-dist) if resid[idx[k]] != pres and cnt[resid[idx[k]]] >= 2), None)
     if kfar is not None:
         kres = resid[idx[kfar]]
         grp = [int(i) for i in range(a.N) if resid[idx[i]] == kres]
@@ -180,10 +185,20 @@ def main():
         rec_ = dict(t_c_index=tc, t_c=float(tt[tc]) if tc < len(tt) else None, max_bias=bias.tolist(), FI_split=fr,
                     FI_own_t=own, secs=time.time() - tw)
         if Fw is not None and F0:
-            bo = np.max(np.stack([np.abs(np.asarray(Fw[b]) - F0[b]) for b in bs]), axis=0)
-            bado = np.nonzero(bo > thr)[0]
-            tco = int(bado[0]) if len(bado) else len(tt)
-            rec_.update(t_c_otoc_index=tco, max_bias_otoc=bo.tolist(),
+            def _tc(Fx):
+                bo_ = np.max(np.stack([np.abs(np.asarray(Fx[b]) - F0[b]) for b in bs]), axis=0)
+                bad_ = np.nonzero(bo_ > thr)[0]
+                return (int(bad_[0]) if len(bad_) else len(tt)), bo_
+            tco, bo = _tc(Fw)
+            est = "plain"
+            nk = rec_.get("kept_norm2") or (out[1].get("kept_norm2") if len(out) > 1 else None)
+            if nk is not None and a.gamma == 0:            # norm-corrected estimator (C3), adversary's choice
+                nk = np.maximum(np.asarray(nk, float), 1e-12)
+                tcc, boc = _tc({b: np.asarray(Fw[b]) / nk for b in bs})
+                rec_.update(t_c_otoc_index_plain=tco, t_c_otoc_index_normcorr=tcc, max_bias_otoc_normcorr=boc.tolist())
+                if tcc > tco:
+                    tco, bo, est = tcc, boc, "normcorr"
+            rec_.update(t_c_otoc_index=tco, max_bias_otoc=bo.tolist(), otoc_estimator=est,
                         FI_split_otoc={pr["name"]: dict(frac_hard=float(np.sum(pr["FI_otoc_t"][tco:]) /
                                                                          max(pr["FI_otoc_total"], 1e-30)))
                                        for pr in res["params"] if "FI_otoc_t" in pr})
