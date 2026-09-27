@@ -1,0 +1,59 @@
+# T3 v2 diagnostic: per-distance breakdown of the float-spline error at L=120,150 (CB pairs at d<1.5 A cause the floor).
+4LPQA_120 CA g= 1024 sd of per-sample sum 1.1e-04 top |err| at d= ['3.09:2.7e-04', '3.12:2.4e-04', '3.12:2.3e-04', '2.87:2.3e-04', '3.10:2.3e-04']
+   d in [0.0,1.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [1.5,2.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [2.5,3.0): n/sample 0.08, sd of summed err 4.5e-05
+   d in [3.0,3.5): n/sample 2.30, sd of summed err 9.1e-05
+   d in [3.5,4.0): n/sample 15.37, sd of summed err 3.4e-05
+   d in [4.0,50.0): n/sample 6885.25, sd of summed err 2.1e-05
+4LPQA_120 CA g= 2048 sd of per-sample sum 6.0e-06 top |err| at d= ['2.97:1.6e-05', '2.92:1.4e-05', '3.02:1.3e-05', '3.15:1.2e-05', '2.93:1.2e-05']
+   d in [0.0,1.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [1.5,2.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [2.5,3.0): n/sample 0.08, sd of summed err 3.6e-06
+   d in [3.0,3.5): n/sample 2.30, sd of summed err 5.0e-06
+   d in [3.5,4.0): n/sample 15.37, sd of summed err 2.5e-06
+   d in [4.0,50.0): n/sample 6885.25, sd of summed err 1.4e-06
+4LPQA_120 CB g= 1024 sd of per-sample sum 1.4e-02 top |err| at d= ['0.90:3.6e-02', '0.88:3.6e-02', '0.88:3.6e-02', '0.87:3.5e-02', '1.40:3.2e-02']
+   d in [0.0,1.5): n/sample 0.43, sd of summed err 1.4e-02
+   d in [1.5,2.5): n/sample 3.58, sd of summed err 2.5e-05
+   d in [2.5,3.0): n/sample 4.92, sd of summed err 4.2e-05
+   d in [3.0,3.5): n/sample 7.32, sd of summed err 5.9e-05
+   d in [3.5,4.0): n/sample 11.97, sd of summed err 4.8e-05
+   d in [4.0,50.0): n/sample 6874.78, sd of summed err 1.9e-05
+4LPQA_120 CB g= 2048 sd of per-sample sum 5.9e-03 top |err| at d= ['0.90:2.2e-02', '0.88:2.1e-02', '0.88:2.1e-02', '0.87:2.0e-02', '0.73:1.6e-02']
+   d in [0.0,1.5): n/sample 0.43, sd of summed err 5.9e-03
+   d in [1.5,2.5): n/sample 3.58, sd of summed err 1.9e-06
+   d in [2.5,3.0): n/sample 4.92, sd of summed err 1.9e-06
+   d in [3.0,3.5): n/sample 7.32, sd of summed err 3.8e-06
+   d in [3.5,4.0): n/sample 11.97, sd of summed err 2.5e-06
+   d in [4.0,50.0): n/sample 6874.78, sd of summed err 1.1e-06
+5O37A_150 CA g= 1024 sd of per-sample sum 4.2e-04 top |err| at d= ['2.83:5.1e-04', '2.83:3.8e-04', '2.77:3.7e-04', '2.77:3.7e-04', '2.77:3.7e-04']
+   d in [0.0,1.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [1.5,2.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [2.5,3.0): n/sample 1.53, sd of summed err 2.6e-04
+   d in [3.0,3.5): n/sample 10.57, sd of summed err 3.2e-04
+   d in [3.5,4.0): n/sample 30.73, sd of summed err 5.8e-05
+   d in [4.0,50.0): n/sample 10835.17, sd of summed err 2.3e-05
+5O37A_150 CA g= 2048 sd of per-sample sum 2.5e-05 top |err| at d= ['3.00:2.9e-05', '2.64:2.8e-05', '2.61:2.5e-05', '2.83:2.4e-05', '2.83:2.4e-05']
+   d in [0.0,1.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [1.5,2.5): n/sample 0.00, sd of summed err 0.0e+00
+   d in [2.5,3.0): n/sample 1.53, sd of summed err 1.5e-05
+   d in [3.0,3.5): n/sample 10.57, sd of summed err 2.0e-05
+   d in [3.5,4.0): n/sample 30.73, sd of summed err 5.0e-06
+   d in [4.0,50.0): n/sample 10835.17, sd of summed err 1.6e-06
+5O37A_150 CB g= 1024 sd of per-sample sum 1.8e-02 top |err| at d= ['1.41:4.4e-02', '0.58:4.3e-02', '1.41:4.1e-02', '1.26:3.0e-02', '1.26:3.0e-02']
+   d in [0.0,1.5): n/sample 1.05, sd of summed err 1.8e-02
+   d in [1.5,2.5): n/sample 9.57, sd of summed err 4.2e-05
+   d in [2.5,3.0): n/sample 11.83, sd of summed err 4.7e-05
+   d in [3.0,3.5): n/sample 16.82, sd of summed err 7.4e-05
+   d in [3.5,4.0): n/sample 20.75, sd of summed err 5.6e-05
+   d in [4.0,50.0): n/sample 10817.98, sd of summed err 2.3e-05
+5O37A_150 CB g= 2048 sd of per-sample sum 2.7e-03 top |err| at d= ['0.58:2.1e-02', '1.41:1.1e-04', '1.41:9.6e-05', '1.35:7.5e-05', '1.36:7.4e-05']
+   d in [0.0,1.5): n/sample 1.05, sd of summed err 2.7e-03
+   d in [1.5,2.5): n/sample 9.57, sd of summed err 4.2e-06
+   d in [2.5,3.0): n/sample 11.83, sd of summed err 2.6e-06
+   d in [3.0,3.5): n/sample 16.82, sd of summed err 5.5e-06
+   d in [3.5,4.0): n/sample 20.75, sd of summed err 3.2e-06
+   d in [4.0,50.0): n/sample 10817.98, sd of summed err 1.4e-06
+
+[exited with code 0]

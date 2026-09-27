@@ -1,0 +1,68 @@
+# Pre-registration: G1 (learned-posterior sampling), C1 (NMR hardness–identifiability), Q4 (cooperativity)
+
+_Written 2026-09-27, during the quantum-advantage discovery sprint. **Timing disclosure.** Exploratory pilots of G1 already ran (research/results/RAW/g1_pilot, the first 256-restart census rows, and one invalid dephased NMR pilot). This pre-registration is written after those pilots but **before** any production output of the T-scan (g1_tscan), the 2048-restart census (g1_modes2k), the temperature-exchange ladder (tpt), the dephased NMR grid (nmr_gate) or the N=14 NMR pilot. Thresholds below are fixed now and are not changed after seeing production results. Deviations must be logged in §6._
+
+## G1 — H-006 / H-007 / QM-01..04 (Program A): is sampling the learned-energy structure posterior classically hard, and does sampling transmit?
+
+**Instrument.** The LADDER (16 leakage-screened chains × L ∈ {30,45,60,80,100,120,150}; data/instruments/ladder_manifest.json). The vendored A80/esmprior_v1 energy (bit-exact). Target π_{λ,T} ∝ exp(−(E_prior + λE_pair)/T).
+
+**Measurements (all classical).**
+- M1: 256-restart mode census, all 112 crops. 2048 restarts on 8 crops (L = 60, 100, 150).
+- M2: λ-path NRPT at T ∈ {1, 2, 4, 8}, on 5 crops (L = 45–120), with HMC + pivot moves, a 1500 s production budget, and N ≈ 2.5Λ rungs.
+- M3: temperature replica exchange at λ = 1, T ∈ [1, 40], 24 rungs, on 24 crops (L = 30–120).
+
+**Kill criteria (quantum sampling line M1/M2 of the opportunity matrix is KILLED if any holds).**
+- K-G1a (break-even). The measured cost of the best classical method stays below the T2/T3 break-even B*(L) at every tested L, with ≥ 3 orders of magnitude of margin at L ≤ 150. B*(L) is the break-even number of classical steps per independent sample. The measured cost is total energy+gradient evaluations per independent sample or per basin found.
+- K-G1b (bypass). A classical bypass reaches the dominant posterior modes at a cost polynomial in L on the ladder, e.g. multistart decoding where the gmean p_hit decays no faster than a power law, or temperature exchange with round trips. This holds even if the λ-path NRPT shows a first-order bottleneck.
+- K-G1c (irrelevance of T = 1). At the calibrated temperature T_cal the λ-path or T-path sampler makes round trips at every L. T_cal is the temperature at which posterior spread ≈ error; it is chosen on odd-indexed chains and evaluated on even ones. Hardness at T = 1 alone does not count.
+- K-G1d (transmission). Over modes of the posterior, Spearman(E, RMSD) < 0.3 in median at L ≥ 100. Or the lowest-energy mode is not better than the median mode. Or the sampled soft readout does not beat the lowest-energy structure by ≥ 0.3 Å on median over crops at L ≥ 80. In any of these cases, better sampling does not buy structure accuracy.
+
+**Survival (escalate to a category-3 resource-claim study) only if all hold.**
+- Classical cost grows super-polynomially: the gmean p_hit, or the inverse round-trip rate, fits exp(cL) better than L^k by ΔBIC > 10 over L = 30–150, with k ≤ 4 rejected.
+- No bypass above.
+- Transmission ≥ the K-G1d thresholds.
+- The extrapolated classical cost exceeds B*(L) at some L ≤ 500.
+
+## C1 — QM-19/20/21 (Program C): does structural information in protein 1H spin dynamics live in operator components that weight-truncated classical simulation cannot reach?
+
+**Instrument.** OpenMM hydrogens on 1UBQ (and 1PGA). Clusters of the N nearest protons around amide-H probes in six secondary-structure elements. Static oriented sample, single B0 orientation per job. Secular dipolar Hamiltonian; identical first-order Trotter circuit for all simulators (dt = 2 µs, 160 steps = 320 µs). Observables: transfer S_ab(t), plus OTOC F_ab(t) at γ = 0. Parameters: radial displacement of the 3 most distant cluster protons, and a rigid shift of the most distant proton's residue. Noise σ = 0.01 per time point. The exact reference is typicality at γ = 0 with N ≤ 14, or the deterministic Heisenberg matrix at γ > 0 with N = 10. The classical model is Heisenberg Pauli propagation truncated at weight w ∈ {2, 3, 4, 5}.
+
+**Primary statistic.** f_hard(w) is the fraction of Fisher information carried at times t ≥ t_c(w). t_c(w) is the first recorded time with truncation bias > max(σ, 3·SE_typicality).
+
+**Kill criteria (quantum-NMR family QM-19/20/21 is KILLED at this instrument if any holds).**
+- K-C1a. The median over probes and parameters of f_hard(w = 4) < 0.10 at every γ ∈ {1000, 5000} s⁻¹.
+- K-C1b. f_hard(w) at fixed w does not increase from N = 10 to N = 14 (γ = 0), i.e. no evidence that the needed weight grows with cluster size.
+- K-C1c. Dephasing at γ ≥ 1000 s⁻¹ reduces the total Fisher information of the long-range parameters by > 90% relative to γ = 0 before t_c(4).
+
+**Survival (a "hardness-and-identifiability window").** Escalate to protein-scale Pauli-propagation scaling (N = 20–30) and a novelty memo only if all hold:
+- median f_hard(4) ≥ 0.30 at γ = 1000 s⁻¹;
+- f_hard(w) at fixed w grows with N;
+- the long-range Fisher information is non-negligible (FI_total ≥ 1 at σ = 0.01) for ≥ 1/3 of the parameters.
+
+## Q4 — QM-04 (cooperativity): is there a first-order-like folding transition along temperature for the learned energy whose barrier grows with L?
+
+**Measurement.** M3 above. At the C_max rung: histogram bimodality (dip ratio) and the Lee–Kosterlitz-type barrier ΔF = −ln(dip ratio). Also C_max/L versus L, and round trips.
+
+**Kill criteria (QM-04 KILLED at this instrument if any holds).**
+- K-Q4a. Energy histograms at the C_max rung are unimodal (dip ratio > 0.8 or a single peak) for ≥ 75% of crops at each L ≥ 60.
+- K-Q4b. C_max/L does not increase with L (Spearman ρ(L, C_max/L) ≤ 0.2 over crops).
+- K-Q4c. The extrapolated ΔF(L) stays below 2 ln R for L ≤ 300. R = C_q/C_c from T3 (≈ 10⁷–10¹⁰) gives 2 ln R ≈ 32–46.
+
+**Survival.** Bimodality at L ≥ 60, and ΔF growing with L (Spearman ρ(L, ΔF) ≥ 0.5). This escalates to a learned-Q umbrella adversary and an L* estimate.
+
+## 6. Deviation log
+
+- 2026-09-27: The dephased NMR pilot (N = 12, γ = 3000) used a stochastic trajectory reference with 6 trajectories. It was found too noisy, because truncation bias did not decrease with w at early times, and it is excluded from C1. The deterministic matrix reference replaces it for γ > 0.
+- 2026-09-27 (before any v2 NMR result existed): **C1 instrument upgraded to nmr_gate v2.** (i) The exact reference is now deterministic (sector-exact, validated to 1e-15 against the dense matrix incl. dephasing), so SE_typ = 0 for N <= 14. (ii) Bug fix: the v1 "rigid shift" parameter could move the probe's own residue (geminal partner), which is unphysical; v2 rigid-shifts the residue of the farthest proton whose residue differs from the probe's. The N=14 v1 pilot (1UBQ_p17, typicality nrand=3, v1 rigid parameter) is therefore excluded from C1. (iii) The classical adversary is extended from weight-truncated Pauli propagation to a panel: weight-w Pauli (w=2..5), sparse Pauli dynamics (|c| < 1e-3, 1e-4), sub-cluster exact (N-4, N-2), classical-spin dynamics. The pre-registered statistics are computed with w=4 exactly as registered; the same statistics with the best adversary (latest failure time) are reported alongside, and **claims use the stricter best-adversary version**. (iv) Interpretation of K-C1c fixed now: it fires if, summed over the long-range parameters, FI in the hard window of w=4 at gamma in {1000,5000} is < 10% of FI_total at gamma = 0 for the same probe/orientation. (v) Added (not a kill criterion): full Fisher matrix and the generalised-eigenvalue information-gain spectrum g = max_v v'F_total v / v'F_easy v, to catch the degeneracy (non-identifiability) that O'Brien et al. (PRX Quantum 3, 030345, 2022) found in the ergodic regime.
+
+## C2 — (added 2026-09-27, after the first C1 v2 job, before any C2 output) Does the best classical adversary's cost explode with cluster size?
+
+**Motivation.** In the first C1 v2 job (1UBQ H/ILE3, N=10, γ=1000/s), sparse Pauli dynamics at ε=1e-4 reproduced the exact transfer signal to within 0.003 over the whole 320 µs window. So f_hard(best adversary) = 0 at N=10, while the pre-registered weight-4 statistic gave f_hard = 0.99. It used a peak of 5.3×10⁴ strings (the charge-conserving operator space has C(20,10) ≈ 1.8×10⁵). The live question is how the needed classical resource scales with N.
+
+**Measurement.** Sparse Pauli dynamics (coefficient threshold ε, no weight cap, max 4×10⁶ strings, 1 h budget per ε) through the same Trotter circuit. ε ladder 1e-2, 3e-3, 1e-3, 3e-4, 1e-4, 3e-5 (descending; the ladder stops at the first capped or budget-truncated run). Clusters: 1UBQ probes 19 and 245, orientation 0, γ ∈ {0, 1000} s⁻¹, N ∈ {8, 10, 12, 14, 16, 20}. Reference: sector-exact for N ≤ 14 (γ = 0) and N ≤ 12 (γ > 0); otherwise the smallest converged ε (two smallest ε agree to < σ/3).
+
+**Cost metric (implementation-independent).** M*(N) = peak string count of the largest ε whose bias stays < σ = 0.01 up to t_50. t_50 is the time by which half of the exact per-parameter FI has accrued (from C1 at the same probe, N ≤ 14; for N ≥ 16, the N=14 value).
+
+**Kill (sparse Pauli dynamics is classically efficient on this instrument, and the protein NMR forward-model advantage claim is dropped).** ln M*(N) over N = 8–20 fits a power law N^k better than exp(κN) (ΔBIC > 10), or the fitted exp(κN) extrapolates to M*(60) < 10⁹ strings. N=60 is O'Brien's ubiquitin cluster; 10⁹ strings is roughly one node-day.
+
+**Survival.** exp(κN) is preferred and M*(60) > 10¹². Next steps would then be: the effective N of the dynamics at t_50 in the full protein (light-cone count), and a hybrid adversary (classical spins + exact core, Navez–Starkov–Fine type).

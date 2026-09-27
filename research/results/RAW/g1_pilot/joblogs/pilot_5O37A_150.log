@@ -5,3 +5,5 @@ pilot Lambda=14.72 -> rungs N=39
 tune 0: Lambda=12.73 max_rej=0.96 eps[-1]=0.0012
 tune 1: Lambda=30.13 max_rej=0.97 eps[-1]=0.0010
 tune 2: Lambda=29.48 max_rej=1.00 eps[-1]=0.0010
+{"crop": "5O37A_150", "rungs": 39, "Lambda": 29.27456485760923, "round_trips": 0, "scans": 500, "cost_per_trip": null, "secs": 1315.4006977081299}
+{"post_expected_rmsd": 6.304935676481932, "post_rmsd_sd": 0.3380975330808991, "post_best_rmsd": 5.752228570138729, "medoid_rmsd": 6.555735150702138, "lowestE_rmsd": 6.680131584022375, "lowestE_polished_rmsd": 6.406407424566208, "lowestE": 52554.55230494495, "polishedE": 51923.43414330747, "pairwise_rmsd_mean": 1.9513849276714412, "n_samples_eval": 80}

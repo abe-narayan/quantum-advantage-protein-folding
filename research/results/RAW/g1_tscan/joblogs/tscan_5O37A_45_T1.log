@@ -1,1 +1,5 @@
 tune 0: Lambda=9.44 max_rej=0.94 eps[-1]=0.0049
+tune 1: Lambda=11.50 max_rej=0.98 eps[-1]=0.0025
+tune 2: Lambda=11.41 max_rej=0.89 eps[-1]=0.0029
+pilot Lambda=11.41 -> rungs N=31
+tune 0: Lambda=10.73 max_rej=0.76 eps[-1]=0.0039

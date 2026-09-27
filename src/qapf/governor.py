@@ -28,13 +28,13 @@ from dataclasses import dataclass, field
 
 import psutil
 
-RAM_LAUNCH_CAP = 0.90     # projected fraction after launching a new job
-RAM_SUSPEND = 0.935
-RAM_RESUME = 0.90
+RAM_LAUNCH_CAP = 0.88     # projected fraction after launching a new job
+RAM_SUSPEND = 0.93
+RAM_RESUME = 0.88
 RAM_KILL = 0.95
-CPU_LAUNCH_MAX = 0.88     # launch only if 10 s CPU mean below this
-CPU_SUSPEND = 0.97
-CPU_RESUME = 0.90
+CPU_LAUNCH_MAX = 0.80     # launch only if 10 s CPU mean below this
+CPU_SUSPEND = 0.93
+CPU_RESUME = 0.85
 SAMPLE_S = 2.0
 MAX_REQUEUE = 3
 
@@ -133,7 +133,24 @@ class Governor:
                 pass
         self._log(ev="kill", job=job.name)
 
+    def read_control(self):
+        """Optional live control file (JSON): {"max_workers": int, "cpu_launch_max": f, "cpu_suspend": f, "pause": bool}."""
+        f = getattr(self, "control", None)
+        if not f or not os.path.exists(f):
+            return
+        try:
+            c = json.load(open(f))
+        except Exception:
+            return
+        global CPU_LAUNCH_MAX, CPU_SUSPEND, CPU_RESUME
+        self.max_workers = int(c.get("max_workers", self.max_workers))
+        CPU_LAUNCH_MAX = float(c.get("cpu_launch_max", CPU_LAUNCH_MAX))
+        CPU_SUSPEND = float(c.get("cpu_suspend", CPU_SUSPEND))
+        CPU_RESUME = float(c.get("cpu_resume", CPU_RESUME))
+        self.paused = bool(c.get("pause", False))
+
     def step(self):
+        self.read_control()
         st = machine_state()
         self.cpu_hist.append(st["cpu_frac"])
         cpu_mean = sum(self.cpu_hist) / len(self.cpu_hist)
@@ -161,8 +178,10 @@ class Governor:
             self._suspend(max(active, key=lambda j: j.started))
         elif suspended and st["ram_frac"] < RAM_RESUME and cpu_mean < CPU_RESUME:
             self._resume(min(suspended, key=lambda j: j.started))
+        elif len(active) > self.max_workers:
+            self._suspend(max(active, key=lambda j: j.started))
         elif (self.queue and not suspended and len(self.running) < self.max_workers
-              and cpu_mean < CPU_LAUNCH_MAX):
+              and cpu_mean < CPU_LAUNCH_MAX and not getattr(self, "paused", False)):
             job = self.queue[0]
             proj = (st["ram_used_gb"] + job.ram_gb) / st["ram_total_gb"]
             if proj <= RAM_LAUNCH_CAP:
@@ -172,9 +191,38 @@ class Governor:
                   cpu_mean=round(cpu_mean, 4), running=len(self.running),
                   suspended=len(suspended), queued=len(self.queue))
 
-    def run(self):
+    def poll_spool(self):
+        if not getattr(self, "spool", None) or not os.path.exists(self.spool):
+            return
+        if os.path.getsize(self.spool) < getattr(self, "_spool_off", 0):
+            self._spool_off = 0                                     # file was rewritten: rescan (names dedupe)
+        with open(self.spool, encoding="utf-8") as f:
+            f.seek(getattr(self, "_spool_off", 0))
+            for line in f:
+                line = line.strip()
+                if line:
+                    try:
+                        d = json.loads(line)
+                    except json.JSONDecodeError:
+                        self._log(ev="spool_bad_line", line=line[:200])
+                        continue
+                    if d.get("name") in getattr(self, "_seen", set()):
+                        continue
+                    self._seen = getattr(self, "_seen", set()); self._seen.add(d.get("name"))
+                    j = Job(**{k: d[k] for k in d if k in ("name", "cmd", "ram_gb", "threads", "cwd")})
+                    if d.get("priority"):
+                        self.queue.appendleft(j)
+                    else:
+                        self.add(j)
+                    self._log(ev="spool_add", job=d.get("name"), priority=bool(d.get("priority")))
+            self._spool_off = f.tell()
+
+    def run(self, forever=False, stop_file=None):
         psutil.cpu_percent(interval=None)
-        while self.queue or self.running:
+        while self.queue or self.running or forever:
+            self.poll_spool()
+            if forever and stop_file and os.path.exists(stop_file) and not self.queue and not self.running:
+                break
             self.step()
             time.sleep(SAMPLE_S)
         self._log(ev="finished", done=[j.name for j in self.done], failed=[j.name for j in self.failed])
@@ -187,15 +235,20 @@ def main(argv=None):
     ap.add_argument("queue", help="JSONL file: one {name, cmd, ram_gb?, threads?, cwd?} per line")
     ap.add_argument("--log", required=True)
     ap.add_argument("--max-workers", type=int, default=max(1, (os.cpu_count() or 2) - 1))
+    ap.add_argument("--spool", default=None, help="JSONL file polled for NEW jobs (master-governor mode)")
+    ap.add_argument("--forever", action="store_true", help="keep running until --stop-file exists and all done")
+    ap.add_argument("--stop-file", default=None)
     a = ap.parse_args(argv)
     g = Governor(log_file=a.log, max_workers=a.max_workers)
+    g.spool = a.spool
+    g.control = os.path.join(os.path.dirname(a.log), "control.json")
     with open(a.queue, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line:
                 d = json.loads(line)
                 g.add(Job(**{k: d[k] for k in d if k in ("name", "cmd", "ram_gb", "threads", "cwd")}))
-    done, failed = g.run()
+    done, failed = g.run(forever=a.forever, stop_file=a.stop_file)
     print(json.dumps(dict(done=[j.name for j in done], failed=[j.name for j in failed])))
     return 0 if not failed else 1
 

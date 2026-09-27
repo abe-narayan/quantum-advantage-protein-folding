@@ -105,8 +105,16 @@ def main():
                             rmsd_native=kabsch_rmsd(C[reps[c]], nat)))
     # NOTE: Laplace masses are NOT computed: the learned energy has flat directions (tail bins, termini), so
     # the Hessian at L-BFGS endpoints has non-positive eigenvalues (n_nonpos) and Laplace volumes are ill-defined.
-    res = dict(crop=a.crop, L=L, T=a.T, restarts=a.restarts, iters=a.iters, clust=a.clust, n_modes=len(reps),
-               E_best=float(Emin), mode_E=rep_E[:50], mode_sizes=[len(m) for m in members[:50]],
+    # evaluation only: RMSD of every mode representative to the native; transmission = Spearman(E, RMSD) over modes
+    mode_rmsd = [kabsch_rmsd(C[r], nat) for r in reps]
+    from scipy.stats import spearmanr
+    rho = float(spearmanr(rep_E, mode_rmsd).correlation) if len(reps) > 3 else None
+    best_rmsd_mode = int(np.argmin(mode_rmsd))
+    res_extra = dict(mode_rmsd=mode_rmsd[:2000], spearman_E_rmsd_modes=rho, rank_of_best_rmsd_mode_by_E=best_rmsd_mode,
+                     min_mode_rmsd=float(min(mode_rmsd)))
+    res = dict(crop=a.crop, L=L, T=a.T, restarts=a.restarts, iters=a.iters, clust=a.clust, n_modes=len(reps), **res_extra,
+               E_best=float(Emin), mode_E=rep_E[:2000], mode_sizes=[len(m) for m in members[:2000]],
+               first_seen_restart=[int(min(m)) for m in members[:2000]],
                discovery_curve=curve, first_hit_best_mode=first_best, p_hit_best_mode=p_hit_best,
                frac_within_dE=within, laplace=laplace,
                best_mode_rmsd_native=kabsch_rmsd(C[order[0]], nat),

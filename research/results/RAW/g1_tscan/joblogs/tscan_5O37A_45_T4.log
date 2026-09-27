@@ -1,0 +1,2 @@
+tune 0: Lambda=8.11 max_rej=0.85 eps[-1]=0.0065
+tune 1: Lambda=9.21 max_rej=0.81 eps[-1]=0.0053

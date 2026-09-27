@@ -28,3 +28,7 @@ Thumbs.db
 *.hdf5
 *.pkl
 *.pt
+
+# In-progress job outputs (atomic-write temporaries)
+*.partial
+*.tmp

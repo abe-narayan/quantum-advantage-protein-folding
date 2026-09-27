@@ -1,0 +1,9 @@
+# T3 v2 fit check (function level), partial: 2AB0A_150 modes s/s2/d; stopped by hand when the machine hit 100% CPU (compute policy).
+2AB0A_150 L=150 CA cubic uniform-s: g=512: max 5.8e-03 p99 2.1e-03 med 6.6e-05 | g=1024: max 6.5e-04 p99 1.8e-04 med 4.1e-06 | g=2048: max 3.6e-05 p99 1.1e-05 med 2.7e-07
+2AB0A_150 L=150 CA cubic uniform-s2: g=512: max 4.8e-03 p99 2.0e-03 med 7.6e-05 | g=1024: max 8.9e-04 p99 2.4e-04 med 5.9e-06 | g=2048: max 5.6e-05 p99 1.5e-05 med 3.8e-07
+2AB0A_150 L=150 CA cubic uniform-d: g=64: max 6.7e-03 p99 2.1e-03 med 6.6e-04 | g=128: max 5.1e-04 p99 2.2e-04 med 4.9e-05
+2AB0A_150 L=150 CA shared rank-R basis: R=4: max 2.3e+00 p99 1.2e+00 | R=8: max 1.0e+00 p99 4.5e-01 | R=16: max 4.7e-01 p99 1.9e-01 | R=28: max 3.5e-01 p99 7.3e-02 | R=40: max 1.5e-01 p99 2.3e-02 | R=64: max 2.3e-02 p99 2.6e-03
+2AB0A_150 L=150 CB cubic uniform-s: g=512: max 3.5e-03 p99 5.1e-04 med 2.9e-04 | g=1024: max 2.0e-04 p99 7.2e-05 med 2.2e-05 | g=2048: max 1.7e-05 p99 5.2e-06 med 1.4e-06
+2AB0A_150 L=150 CB cubic uniform-s2: g=512: max 2.1e-03 p99 1.6e-03 med 4.2e-04 | g=1024: max 2.9e-04 p99 1.0e-04 med 3.1e-05 | g=2048: max 2.4e-05 p99 7.3e-06 med 1.9e-06
+2AB0A_150 L=150 CB cubic uniform-d: g=64: max 5.7e-03 p99 2.4e-03 med 9.1e-04 | g=128: max 4.5e-04 p99 2.0e-04 med 6.3e-05
+2AB0A_150 L=150 CB shared rank-R basis: R=4: max 1.8e+00 p99 1.0e+00 | R=8: max 9.2e-01 p99 4.2e-01 | R=16: max 4.0e-01 p99 1.7e-01 | R=28: max 1.8e-01 p99 7.1e-02 | R=40: max 7.0e-02 p99 2.2e-02 | R=64: max 9.6e-03 p99 2.3e-03

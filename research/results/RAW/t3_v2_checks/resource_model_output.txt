@@ -1,0 +1,333 @@
+## Primitive costs (central parameters at L=100, b_w = 23)
+
+- sqdist = 1760; horner(p=3) = 1656; sqrt (n^2 convention, m=2) = 6731; sqrt (HRS convention) = 14981; LOG = 1230; C_fun = 268; coin per step = 631
+- build per residue = 27094 (stored frames)
+- pair term D1 central: L=30: 17140, L=60: 17146, L=100: 18668, L=150: 20255, L=200: 21902; b_w = 22, 22, 23, 24, 25
+- pair term D2 central: L=30: 7034, L=60: 7040, L=100: 7623, L=150: 8227, L=200: 8849; b_w = 22, 22, 23, 24, 25
+- pair term D3 central: L=30: 10116, L=60: 11679, L=100: 13934, L=150: 16267, L=200: 18415; b_w = 22, 22, 23, 24, 25
+- pair term D1 generous: L=30: 9944, L=60: 9948, L=100: 11895, L=150: 12937, L=200: 14020; b_w = 20, 20, 22, 23, 24
+- pair term D2 generous: L=30: 3717, L=60: 3722, L=100: 4356, L=150: 4695, L=200: 5040; b_w = 20, 20, 22, 23, 24
+- pair term D3 generous: L=30: 6668, L=60: 8164, L=100: 10536, L=150: 12572, L=200: 14422; b_w = 20, 20, 22, 23, 24
+- head (torsion, moved residue) L=150: 5.89e+04; CB_cart 4.85e+04; head_cart 5.32e+04
+
+## G(L): Toffolis per walk step, CENTRAL
+
+| design | step | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|
+| D1 | LHPST | 5.8e7 | 2.4e8 | 7.3e8 | 1.8e9 | 3.5e9 |
+| D1 | Szegedy | 3.3e9 | 2.8e10 | 1.4e11 | 5.4e11 | 1.4e12 |
+| D2 | LHPST | 2.7e7 | 1.0e8 | 3.1e8 | 7.5e8 | 1.4e9 |
+| D2 | Szegedy | 1.6e9 | 1.3e10 | 6.3e10 | 2.3e11 | 5.8e11 |
+| D3 | LHPST | 6.8e6 | 1.3e7 | 2.4e7 | 4.1e7 | 6.1e7 |
+| D3 | Szegedy | 10.0e8 | 3.2e9 | 8.8e9 | 2.0e10 | 3.8e10 |
+- ratio Szegedy/LHPST D1: 58, 118, 198, 298, 398
+- ratio Szegedy/LHPST D2: 60, 121, 202, 302, 403
+- ratio Szegedy/LHPST D3: 146, 246, 360, 489, 611
+
+## share of pair terms in G_LHPST (CENTRAL)
+
+- D1: 0.900, 0.951, 0.971, 0.981, 0.986
+- D2: 0.788, 0.887, 0.931, 0.954, 0.965
+- D3: 0.594, 0.783, 0.869, 0.914, 0.936
+
+## G(L): Toffolis per walk step, GENEROUS
+
+| design | step | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|
+| D1 | LHPST | 1.8e7 | 7.1e7 | 2.4e8 | 5.8e8 | 1.1e9 |
+| D1 | Szegedy | 2.0e9 | 1.7e10 | 9.4e10 | 3.5e11 | 8.9e11 |
+| D2 | LHPST | 8.1e6 | 3.0e7 | 9.3e7 | 2.2e8 | 4.2e8 |
+| D2 | Szegedy | 9.8e8 | 7.3e9 | 3.8e10 | 1.3e11 | 3.4e11 |
+| D3 | LHPST | 4.4e6 | 9.0e6 | 1.8e7 | 3.2e7 | 4.8e7 |
+| D3 | Szegedy | 5.7e8 | 1.8e9 | 5.2e9 | 1.2e10 | 2.2e10 |
+- ratio Szegedy/LHPST D1: 116, 237, 397, 597, 798
+- ratio Szegedy/LHPST D2: 121, 244, 406, 608, 809
+- ratio Szegedy/LHPST D3: 130, 200, 287, 375, 458
+
+## share of pair terms in G_LHPST (GENEROUS)
+
+- D1: 0.858, 0.928, 0.958, 0.972, 0.979
+- D2: 0.693, 0.828, 0.892, 0.927, 0.944
+- D3: 0.605, 0.798, 0.877, 0.920, 0.941
+
+## Non-pair pieces of the LHPST step (central): coin, C_F (incl. sign flip), V+R, in-oracle moves 2*C_move
+
+- D2 L=30: coin 631, C_F 1156, V+R 66, 4*C_move 4620; sum/G = 2.4e-04
+- D2 L=60: coin 631, C_F 2416, V+R 75, 4*C_move 9660; sum/G = 1.2e-04
+- D2 L=100: coin 631, C_F 4096, V+R 84, 4*C_move 16380; sum/G = 6.8e-05
+- D2 L=150: coin 631, C_F 6196, V+R 93, 4*C_move 24780; sum/G = 4.2e-05
+- D2 L=200: coin 631, C_F 8296, V+R 93, 4*C_move 33180; sum/G = 3.0e-05
+- D3 L=30: coin 631, C_F 2911, V+R 75, 4*C_move 0; sum/G = 5.3e-04
+- D3 L=60: coin 631, C_F 5821, V+R 84, 4*C_move 0; sum/G = 5.0e-04
+- D3 L=100: coin 631, C_F 9701, V+R 93, 4*C_move 0; sum/G = 4.3e-04
+- D3 L=150: coin 631, C_F 14551, V+R 93, 4*C_move 0; sum/G = 3.7e-04
+- D3 L=200: coin 631, C_F 19401, V+R 102, 4*C_move 0; sum/G = 3.3e-04
+
+## D3 cost breakdown of C_diff at L=150 (central)
+
+- read 1.01e+05, pairs 1.89e+07, cb 5.82e+05, head 1.06e+06, bond 3.02e+04; C_diff 2.06e+07
+
+## D3 local growth exponents d log G / d log L
+
+- central: 30-60: 0.95, 60-100: 1.21, 100-150: 1.30, 150-200: 1.38
+- generous: 30-60: 1.03, 60-100: 1.39, 100-150: 1.36, 150-200: 1.43
+
+## Logical qubits (central; stored frames unless stated)
+
+| design | step | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|
+| D1 | LHPST | 1.5e4 | 3.0e4 | 5.1e4 | 7.9e4 | 1.1e5 |
+| D1 | LHPST, sqrt(L) checkpoints | 9.1e3 | 1.5e4 | 2.3e4 | 3.4e4 | 4.5e4 |
+| D1 | Szegedy | 2.3e4 | 4.5e4 | 7.7e4 | 1.2e5 | 1.6e5 |
+| D2 | LHPST | 1.5e4 | 3.0e4 | 5.1e4 | 7.9e4 | 1.1e5 |
+| D2 | LHPST, sqrt(L) checkpoints | 9.0e3 | 1.5e4 | 2.3e4 | 3.4e4 | 4.5e4 |
+| D2 | Szegedy | 2.3e4 | 4.5e4 | 7.7e4 | 1.2e5 | 1.6e5 |
+| D3 | LHPST | 5.2e3 | 7.4e3 | 1.0e4 | 1.3e4 | 1.7e4 |
+| D3 | Szegedy | 1.8e4 | 3.2e4 | 5.2e4 | 7.5e4 | 9.9e4 |
+
+- checkpointed-frame Toffoli penalty (D2 central): L=30: +27.8%, L=60: +14.8%, L=100: +9.1%, L=150: +6.1%, L=200: +4.6%
+
+## Wall-clock per LHPST step and physical qubits (central; d=31 unless stated)
+
+| design | L | G | t_step R=1 | R=10 | R=100 | R=1000 | n_L | phys (1 factory, d=31) | phys (100 factories + 99 pair workspaces, d=31) | d_req(1 step) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| D1 | 30 | 5.8e7 | 2.72 h | 16.3 min | 1.63 min | 9.79 s | 1.5e4 | 3.2e7 | 1.5e8 | 29 |
+| D1 | 60 | 2.4e8 | 11.3 h | 1.13 h | 6.76 min | 40.6 s | 3.0e4 | 6.2e7 | 1.8e8 | 31 |
+| D1 | 100 | 7.3e8 | 1.44 d | 3.45 h | 20.7 min | 2.07 min | 5.1e4 | 1.1e8 | 2.3e8 | 31 |
+| D1 | 150 | 1.8e9 | 3.54 d | 8.49 h | 50.9 min | 5.09 min | 7.9e4 | 1.6e8 | 2.9e8 | 33 |
+| D1 | 200 | 3.5e9 | 6.82 d | 16.4 h | 1.64 h | 9.82 min | 1.1e5 | 2.2e8 | 3.5e8 | 33 |
+| D2 | 30 | 2.7e7 | 1.28 h | 7.65 min | 45.9 s | 4.59 s | 1.5e4 | 3.2e7 | 1.7e8 | 27 |
+| D2 | 60 | 1.0e8 | 4.95 h | 29.7 min | 2.97 min | 17.8 s | 3.0e4 | 6.2e7 | 2.0e8 | 29 |
+| D2 | 100 | 3.1e8 | 14.7 h | 1.47 h | 8.82 min | 52.9 s | 5.1e4 | 1.1e8 | 2.3e8 | 31 |
+| D2 | 150 | 7.5e8 | 1.48 d | 3.54 h | 21.3 min | 2.13 min | 7.9e4 | 1.6e8 | 2.9e8 | 33 |
+| D2 | 200 | 1.4e9 | 2.81 d | 6.75 h | 40.5 min | 4.05 min | 1.1e5 | 2.2e8 | 3.6e8 | 33 |
+| D3 | 30 | 6.8e6 | 19.3 min | 1.93 min | 11.6 s | 1.16 s | 5.2e3 | 1.1e7 | 4.2e8 | 25 |
+| D3 | 60 | 1.3e7 | 37.2 min | 3.72 min | 22.3 s | 2.23 s | 7.4e3 | 1.5e7 | 5.7e8 | 27 |
+| D3 | 100 | 2.4e7 | 1.15 h | 6.91 min | 41.4 s | 4.14 s | 1.0e4 | 2.1e7 | 7.3e8 | 27 |
+| D3 | 150 | 4.1e7 | 1.95 h | 11.7 min | 1.17 min | 7.02 s | 1.3e4 | 2.8e7 | 9.0e8 | 27 |
+| D3 | 200 | 6.1e7 | 2.9 h | 17.4 min | 1.74 min | 10.4 s | 1.7e4 | 3.4e7 | 1.1e9 | 29 |
+
+## Classical time per energy+gradient: placeholder and measured fits
+
+- PILOT (PT wall-clock incl. overhead): t_C ~ L^1.48; PyTorch batch-64: t_C ~ L^1.73; placeholder L^2
+- L=30: placeholder 0.089 ms; PILOT fit 0.296 ms; PyTorch fit 0.374 ms; ratio^2 placeholder/PILOT 0.09, placeholder/PyTorch 0.056
+- L=60: placeholder 0.356 ms; PILOT fit 0.823 ms; PyTorch fit 1.238 ms; ratio^2 placeholder/PILOT 0.19, placeholder/PyTorch 0.082
+- L=100: placeholder 0.988 ms; PILOT fit 1.750 ms; PyTorch fit 2.993 ms; ratio^2 placeholder/PILOT 0.32, placeholder/PyTorch 0.11
+- L=150: placeholder 2.222 ms; PILOT fit 3.184 ms; PyTorch fit 6.030 ms; ratio^2 placeholder/PILOT 0.49, placeholder/PyTorch 0.14
+- L=200: placeholder 3.951 ms; PILOT fit 4.869 ms; PyTorch fit 9.913 ms; ratio^2 placeholder/PILOT 0.66, placeholder/PyTorch 0.16
+- measured points L=30: B(measured)/B(placeholder) =  PyTorch 1/11
+- measured points L=45: B(measured)/B(placeholder) = PILOT 1/8.7 PyTorch 1/24
+- measured points L=60: B(measured)/B(placeholder) = PILOT 1/4.8 PyTorch 1/16
+- measured points L=100: B(measured)/B(placeholder) = PILOT 1/2.2 PyTorch 1/8.9
+- measured points L=120: B(measured)/B(placeholder) = PILOT 1/2.8 
+- measured points L=150: B(measured)/B(placeholder) = PILOT 1/2.5 PyTorch 1/6
+
+## Break-even B(L) (energy+gradient evals per sample), kappa = kappa_min(design, L), c_q = 1, placeholder t_C, CENTRAL
+
+| design | S | R | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|---|
+| D1 | 1.0e0 | 1 | 1.8e16 (5.12e+04 yr) | 2.0e16 (2.2e+05 yr) | 2.4e16 (7.44e+05 yr) | 2.8e16 (2e+06 yr) | 3.3e16 (4.18e+06 yr) |
+| D1 | 1.0e0 | 100 | 1.8e12 (5.12 yr) | 2.0e12 (22 yr) | 2.4e12 (74.4 yr) | 2.8e12 (200 yr) | 3.3e12 (418 yr) |
+| D1 | 1.0e3 | 100 | 1.8e18 (5.12e+03 yr) | 2.0e18 (2.2e+04 yr) | 2.4e18 (7.44e+04 yr) | 2.8e18 (2e+05 yr) | 3.3e18 (4.18e+05 yr) |
+| D1 | 1.0e3 | 1000 | 1.8e16 (51.2 yr) | 2.0e16 (220 yr) | 2.4e16 (744 yr) | 2.8e16 (2e+03 yr) | 3.3e16 (4.18e+03 yr) |
+| D2 | 1.0e0 | 1 | 4.0e15 (1.13e+04 yr) | 3.8e15 (4.25e+04 yr) | 4.3e15 (1.35e+05 yr) | 4.9e15 (3.48e+05 yr) | 5.7e15 (7.11e+05 yr) |
+| D2 | 1.0e0 | 100 | 4.0e11 (1.13 yr) | 3.8e11 (4.25 yr) | 4.3e11 (13.5 yr) | 4.9e11 (34.8 yr) | 5.7e11 (71.1 yr) |
+| D2 | 1.0e3 | 100 | 4.0e17 (1.13e+03 yr) | 3.8e17 (4.25e+03 yr) | 4.3e17 (1.35e+04 yr) | 4.9e17 (3.48e+04 yr) | 5.7e17 (7.11e+04 yr) |
+| D2 | 1.0e3 | 1000 | 4.0e15 (11.3 yr) | 3.8e15 (42.5 yr) | 4.3e15 (135 yr) | 4.9e15 (348 yr) | 5.7e15 (711 yr) |
+| D3 | 1.0e0 | 1 | 6.4e14 (1.81e+03 yr) | 3.0e14 (3.34e+03 yr) | 2.2e14 (6.89e+03 yr) | 1.9e14 (1.32e+04 yr) | 1.7e14 (2.18e+04 yr) |
+| D3 | 1.0e0 | 100 | 6.4e10 (66.1 d) | 3.0e10 (122 d) | 2.2e10 (252 d) | 1.9e10 (1.32 yr) | 1.7e10 (2.18 yr) |
+| D3 | 1.0e3 | 100 | 6.4e16 (181 yr) | 3.0e16 (334 yr) | 2.2e16 (689 yr) | 1.9e16 (1.32e+03 yr) | 1.7e16 (2.18e+03 yr) |
+| D3 | 1.0e3 | 1000 | 6.4e14 (1.81 yr) | 3.0e14 (3.34 yr) | 2.2e14 (6.89 yr) | 1.9e14 (13.2 yr) | 1.7e14 (21.8 yr) |
+
+- kappa_min: torsion 1.5; D3 L=30: 3.8, L=60: 7.5, L=100: 12.5, L=150: 18.8, L=200: 25.0
+- reference line kappa = 1 (INFEASIBLE, below the floor), S=1, R=100: D2 2.7e11, 2.5e11, 2.9e11, 3.3e11, 3.8e11; D3 1.7e10, 3.9e9, 1.8e9, 10.0e8, 7.0e8
+
+## Break-even B(L) (energy+gradient evals per sample), kappa = kappa_min(design, L), c_q = 1, placeholder t_C, GENEROUS
+
+| design | S | R | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|---|
+| D1 | 1.0e0 | 1 | 1.7e15 (4.74e+03 yr) | 1.7e15 (1.94e+04 yr) | 2.5e15 (7.75e+04 yr) | 2.9e15 (2.07e+05 yr) | 3.5e15 (4.34e+05 yr) |
+| D1 | 1.0e0 | 100 | 1.7e11 (173 d) | 1.7e11 (1.94 yr) | 2.5e11 (7.75 yr) | 2.9e11 (20.7 yr) | 3.5e11 (43.4 yr) |
+| D1 | 1.0e3 | 100 | 1.7e17 (474 yr) | 1.7e17 (1.94e+03 yr) | 2.5e17 (7.75e+03 yr) | 2.9e17 (2.07e+04 yr) | 3.5e17 (4.34e+04 yr) |
+| D1 | 1.0e3 | 1000 | 1.7e15 (4.74 yr) | 1.7e15 (19.4 yr) | 2.5e15 (77.5 yr) | 2.9e15 (207 yr) | 3.5e15 (434 yr) |
+| D2 | 1.0e0 | 1 | 3.6e14 (1.02e+03 yr) | 3.0e14 (3.41e+03 yr) | 3.8e14 (1.2e+04 yr) | 4.3e14 (3e+04 yr) | 4.8e14 (6.02e+04 yr) |
+| D2 | 1.0e0 | 100 | 3.6e10 (37.1 d) | 3.0e10 (125 d) | 3.8e10 (1.2 yr) | 4.3e10 (3 yr) | 4.8e10 (6.02 yr) |
+| D2 | 1.0e3 | 100 | 3.6e16 (102 yr) | 3.0e16 (341 yr) | 3.8e16 (1.2e+03 yr) | 4.3e16 (3e+03 yr) | 4.8e16 (6.02e+03 yr) |
+| D2 | 1.0e3 | 1000 | 3.6e14 (1.02 yr) | 3.0e14 (3.41 yr) | 3.8e14 (12 yr) | 4.3e14 (30 yr) | 4.8e14 (60.2 yr) |
+| D3 | 1.0e0 | 1 | 2.7e14 (757 yr) | 1.4e14 (1.57e+03 yr) | 1.2e14 (3.87e+03 yr) | 1.1e14 (7.76e+03 yr) | 1.1e14 (1.33e+04 yr) |
+| D3 | 1.0e0 | 100 | 2.7e10 (27.6 d) | 1.4e10 (57.2 d) | 1.2e10 (141 d) | 1.1e10 (284 d) | 1.1e10 (1.33 yr) |
+| D3 | 1.0e3 | 100 | 2.7e16 (75.7 yr) | 1.4e16 (157 yr) | 1.2e16 (387 yr) | 1.1e16 (776 yr) | 1.1e16 (1.33e+03 yr) |
+| D3 | 1.0e3 | 1000 | 2.7e14 (276 d) | 1.4e14 (1.57 yr) | 1.2e14 (3.87 yr) | 1.1e14 (7.76 yr) | 1.1e14 (13.3 yr) |
+
+- kappa_min: torsion 1.5; D3 L=30: 3.8, L=60: 7.5, L=100: 12.5, L=150: 18.8, L=200: 25.0
+- reference line kappa = 1 (INFEASIBLE, below the floor), S=1, R=100: D2 2.4e10, 2.0e10, 2.6e10, 2.8e10, 3.2e10; D3 7.1e9, 1.9e9, 9.9e8, 5.9e8, 4.2e8
+
+## B under measured t_C (PILOT power-law fit), kappa_min, c_q = 1, S = 1 and 1e3, R = 100
+
+| design | params | S | L=30 | L=60 | L=100 | L=150 | L=200 |
+|---|---|---|---|---|---|---|---|
+| D1 | central | 1.0e0 | 1.6e11 | 3.6e11 | 7.6e11 | 1.4e12 | 2.2e12 |
+| D1 | central | 1.0e3 | 1.6e17 | 3.6e17 | 7.6e17 | 1.4e18 | 2.2e18 |
+| D1 | generous | 1.0e0 | 1.5e10 | 3.2e10 | 7.9e10 | 1.4e11 | 2.3e11 |
+| D1 | generous | 1.0e3 | 1.5e16 | 3.2e16 | 7.9e16 | 1.4e17 | 2.3e17 |
+| D2 | central | 1.0e0 | 3.6e10 | 7.0e10 | 1.4e11 | 2.4e11 | 3.7e11 |
+| D2 | central | 1.0e3 | 3.6e16 | 7.0e16 | 1.4e17 | 2.4e17 | 3.7e17 |
+| D2 | generous | 1.0e0 | 3.3e9 | 5.6e9 | 1.2e10 | 2.1e10 | 3.2e10 |
+| D2 | generous | 1.0e3 | 3.3e15 | 5.6e15 | 1.2e16 | 2.1e16 | 3.2e16 |
+| D3 | central | 1.0e0 | 5.8e9 | 5.5e9 | 7.0e9 | 9.1e9 | 1.1e10 |
+| D3 | central | 1.0e3 | 5.8e15 | 5.5e15 | 7.0e15 | 9.1e15 | 1.1e16 |
+| D3 | generous | 1.0e0 | 2.4e9 | 2.6e9 | 3.9e9 | 5.4e9 | 7.0e9 |
+| D3 | generous | 1.0e3 | 2.4e15 | 2.6e15 | 3.9e15 | 5.4e15 | 7.0e15 |
+
+## H-008 B-clause grid at L = 100 (B <= 1e12 ?), placeholder t_C, R = 100 (R = 1000: divide by 100)
+
+| design | params | kappa | S=1,cq=1 | S=1,cq=10 | S=1,cq=90 | S=1e3,cq=1 | S=1e3,cq=10 | S=1e3,cq=90 | S_max(cq=1) for B<=1e12 |
+|---|---|---|---|---|---|---|---|---|---|
+| D1 | central | kappa_min=1.5 | 2.4e12 | 2.4e14 | 1.9e16 F | 2.4e18 F | 2.4e20 F | 1.9e22 F | 0.649 |
+| D1 | central | 50 | 7.9e13 | 7.9e15 F | 6.4e17 F | 7.9e19 F | 7.9e21 F | 6.4e23 F | 0.112 |
+| D1 | central | L=100 | 1.6e14 | 1.6e16 F | 1.3e18 F | 1.6e20 F | 1.6e22 F | 1.3e24 F | 0.0795 |
+| D1 | generous | kappa_min=1.5 | 2.5e11 ok | 2.5e13 | 2.0e15 F | 2.5e17 F | 2.5e19 F | 2.0e21 F | 2.01 |
+| D1 | generous | 50 | 8.3e12 | 8.3e14 | 6.7e16 F | 8.3e18 F | 8.3e20 F | 6.7e22 F | 0.348 |
+| D1 | generous | L=100 | 1.7e13 | 1.7e15 F | 1.3e17 F | 1.7e19 F | 1.7e21 F | 1.3e23 F | 0.246 |
+| D2 | central | kappa_min=1.5 | 4.3e11 ok | 4.3e13 | 3.5e15 F | 4.3e17 F | 4.3e19 F | 3.5e21 F | 1.52 |
+| D2 | central | 50 | 1.4e13 | 1.4e15 F | 1.2e17 F | 1.4e19 F | 1.4e21 F | 1.2e23 F | 0.264 |
+| D2 | central | L=100 | 2.9e13 | 2.9e15 F | 2.3e17 F | 2.9e19 F | 2.9e21 F | 2.3e23 F | 0.187 |
+| D2 | generous | kappa_min=1.5 | 3.8e10 ok | 3.8e12 | 3.1e14 | 3.8e16 F | 3.8e18 F | 3.1e20 F | 5.11 |
+| D2 | generous | 50 | 1.3e12 | 1.3e14 | 1.0e16 F | 1.3e18 F | 1.3e20 F | 1.0e22 F | 0.885 |
+| D2 | generous | L=100 | 2.6e12 | 2.6e14 | 2.1e16 F | 2.6e18 F | 2.6e20 F | 2.1e22 F | 0.626 |
+| D3 | central | kappa_min=12.5 | 2.2e10 ok | 2.2e12 | 1.8e14 | 2.2e16 F | 2.2e18 F | 1.8e20 F | 6.74 |
+| D3 | central | 50 | 8.8e10 ok | 8.8e12 | 7.1e14 | 8.8e16 F | 8.8e18 F | 7.1e20 F | 3.37 |
+| D3 | central | L=100 | 1.8e11 ok | 1.8e13 | 1.4e15 F | 1.8e17 F | 1.8e19 F | 1.4e21 F | 2.38 |
+| D3 | generous | kappa_min=12.5 | 1.2e10 ok | 1.2e12 | 1.0e14 | 1.2e16 F | 1.2e18 F | 1.0e20 F | 9 |
+| D3 | generous | 50 | 4.9e10 ok | 4.9e12 | 4.0e14 | 4.9e16 F | 4.9e18 F | 4.0e20 F | 4.5 |
+| D3 | generous | L=100 | 9.9e10 ok | 9.9e12 | 8.0e14 | 9.9e16 F | 9.9e18 F | 8.0e20 F | 3.18 |
+
+## Hardware envelope: B at L = 100 vs effective Toffoli time t_T/R, kappa_min, c_q = 1
+
+| design | params | S | 170 us, R=1 | 170 us, R=100 | 170 us, R=1000 | 10 us, R=100 | 1 us, R=100 | 1 us, R=1000 |
+|---|---|---|---|---|---|---|---|---|
+| D1 | central | 1.0e0 | 2.4e16 (7.44e+05 yr) | 2.4e12 (74.4 yr) | 2.4e10 (272 d) | 8.2e9 (94 d) | 8.2e7 (22.6 h) | 8.2e5 (13.5 min) |
+| D1 | central | 1.0e3 | 2.4e22 (7.44e+08 yr) | 2.4e18 (7.44e+04 yr) | 2.4e16 (744 yr) | 8.2e15 (257 yr) | 8.2e13 (2.57 yr) | 8.2e11 (9.4 d) |
+| D1 | generous | 1.0e0 | 2.5e15 (7.75e+04 yr) | 2.5e11 (7.75 yr) | 2.5e9 (28.3 d) | 8.6e8 (9.8 d) | 8.6e6 (2.35 h) | 8.6e4 (1.41 min) |
+| D1 | generous | 1.0e3 | 2.5e21 (7.75e+07 yr) | 2.5e17 (7.75e+03 yr) | 2.5e15 (77.5 yr) | 8.6e14 (26.8 yr) | 8.6e12 (98 d) | 8.6e10 (23.5 h) |
+| D2 | central | 1.0e0 | 4.3e15 (1.35e+05 yr) | 4.3e11 (13.5 yr) | 4.3e9 (49.2 d) | 1.5e9 (17 d) | 1.5e7 (4.09 h) | 1.5e5 (2.45 min) |
+| D2 | central | 1.0e3 | 4.3e21 (1.35e+08 yr) | 4.3e17 (1.35e+04 yr) | 4.3e15 (135 yr) | 1.5e15 (46.6 yr) | 1.5e13 (170 d) | 1.5e11 (1.7 d) |
+| D2 | generous | 1.0e0 | 3.8e14 (1.2e+04 yr) | 3.8e10 (1.2 yr) | 3.8e8 (4.37 d) | 1.3e8 (1.51 d) | 1.3e6 (21.8 min) | 1.3e4 (13.1 s) |
+| D2 | generous | 1.0e3 | 3.8e20 (1.2e+07 yr) | 3.8e16 (1.2e+03 yr) | 3.8e14 (12 yr) | 1.3e14 (4.14 yr) | 1.3e12 (15.1 d) | 1.3e10 (3.63 h) |
+| D3 | central | 1.0e0 | 2.2e14 (6.89e+03 yr) | 2.2e10 (252 d) | 2.2e8 (2.52 d) | 7.6e7 (20.9 h) | 7.6e5 (12.5 min) | 7.6e3 (7.53 s) |
+| D3 | central | 1.0e3 | 2.2e20 (6.89e+06 yr) | 2.2e16 (689 yr) | 2.2e14 (6.89 yr) | 7.6e13 (2.38 yr) | 7.6e11 (8.71 d) | 7.6e9 (2.09 h) |
+| D3 | generous | 1.0e0 | 1.2e14 (3.87e+03 yr) | 1.2e10 (141 d) | 1.2e8 (1.41 d) | 4.3e7 (11.7 h) | 4.3e5 (7.04 min) | 4.3e3 (4.22 s) |
+| D3 | generous | 1.0e3 | 1.2e20 (3.87e+06 yr) | 1.2e16 (387 yr) | 1.2e14 (3.87 yr) | 4.3e13 (1.34 yr) | 4.3e11 (4.89 d) | 4.3e9 (1.17 h) |
+
+## Pilot PT lower bounds vs B at the same L (placeholder t_C; kappa_min; c_q = 1)
+
+| L | scans | grad_evals_production (63% bound) | 95% bound (= /3) | B D3 gen S=1 R=100 | ratio | B D2 cen S=1e3 R=100 | ratio | B D2 gen S=1e3 R=1000 | ratio | D3 gen S=1 R=100 with PILOT t_C | ratio |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 45 | 1500 | 3.9e5 | 1.3e5 | 1.8e10 | 1.3e5 | 3.9e17 | 2.9e12 | 3.2e14 | 2.5e9 | 2.0e9 | 1.5e4 |
+| 60 | 1200 | 3.4e5 | 1.1e5 | 1.4e10 | 1.2e5 | 3.8e17 | 3.4e12 | 3.0e14 | 2.7e9 | 2.9e9 | 2.6e4 |
+| 100 | 800 | 2.7e5 | 9.1e4 | 1.2e10 | 1.4e5 | 4.3e17 | 4.7e12 | 3.8e14 | 4.2e9 | 5.6e9 | 6.2e4 |
+| 120 | 600 | 1.9e5 | 6.5e4 | 1.1e10 | 1.7e5 | 4.3e17 | 6.6e12 | 3.8e14 | 5.8e9 | 4.0e9 | 6.1e4 |
+| 150 | 500 | 1.7e5 | 5.7e4 | 1.1e10 | 1.9e5 | 4.9e17 | 8.6e12 | 4.3e14 | 7.5e9 | 4.4e9 | 7.7e4 |
+
+## Self-consistent code distance at break-even and CCZ error budget (kappa_min, c_q = 1; stored frames)
+
+| design | params | L | S | R | n_L (+R-1 workspaces) | d | t_T (us) | B | T* | N_Toff per run | eps_CCZ needed | phys qubits (lower bound if eps_CCZ < 1e-12) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| D2 | central | 60 | 1.0e0 | 100 | 9.1e4 | 39 | 214 | 6.0e11 | 6.77 yr | 10.0e13 | 1.0e-15 | 3.1e8 LB |
+| D2 | central | 60 | 1.0e3 | 100 | 9.1e4 | 45 | 248 | 8.0e17 | 9.01e+03 yr | 1.1e17 | 8.7e-19 | 4.2e8 LB |
+| D2 | central | 150 | 1.0e0 | 100 | 1.4e5 | 41 | 225 | 8.7e11 | 61.3 yr | 8.6e14 | 1.2e-16 | 5.1e8 LB |
+| D2 | central | 150 | 1.0e3 | 100 | 1.4e5 | 47 | 258 | 1.1e18 | 8.05e+04 yr | 9.8e17 | 1.0e-19 | 6.6e8 LB |
+| D2 | generous | 60 | 1.0e0 | 100 | 8.3e4 | 37 | 204 | 4.3e10 | 178 d | 7.6e12 | 1.3e-14 | 2.6e8 LB |
+| D2 | generous | 60 | 1.0e3 | 100 | 8.3e4 | 43 | 236 | 5.9e16 | 660 yr | 8.8e15 | 1.1e-17 | 3.5e8 LB |
+| D2 | generous | 150 | 1.0e0 | 100 | 1.3e5 | 39 | 214 | 6.8e10 | 4.78 yr | 7.0e13 | 1.4e-15 | 4.4e8 LB |
+| D2 | generous | 150 | 1.0e3 | 100 | 1.3e5 | 45 | 248 | 9.0e16 | 6.37e+03 yr | 8.1e16 | 1.2e-18 | 5.9e8 LB |
+| D3 | central | 60 | 1.0e0 | 100 | 2.7e5 | 37 | 204 | 4.2e10 | 175 d | 7.4e12 | 1.3e-14 | 8.0e8 LB |
+| D3 | central | 60 | 1.0e3 | 100 | 2.7e5 | 43 | 236 | 5.7e16 | 646 yr | 8.6e15 | 1.2e-17 | 1.1e9 LB |
+| D3 | central | 150 | 1.0e0 | 100 | 4.3e5 | 39 | 214 | 3.0e10 | 2.1 yr | 3.1e13 | 3.2e-15 | 1.4e9 LB |
+| D3 | central | 150 | 1.0e3 | 100 | 4.3e5 | 45 | 248 | 4.0e16 | 2.8e+03 yr | 3.6e16 | 2.8e-18 | 1.9e9 LB |
+| D3 | generous | 60 | 1.0e0 | 100 | 2.5e5 | 37 | 204 | 2.0e10 | 82 d | 3.5e12 | 2.9e-14 | 7.5e8 LB |
+| D3 | generous | 60 | 1.0e3 | 100 | 2.5e5 | 43 | 236 | 2.7e16 | 303 yr | 4.0e15 | 2.5e-17 | 1.0e9 LB |
+| D3 | generous | 150 | 1.0e0 | 100 | 4.2e5 | 39 | 214 | 1.8e10 | 1.24 yr | 1.8e13 | 5.5e-15 | 1.4e9 LB |
+| D3 | generous | 150 | 1.0e3 | 100 | 4.2e5 | 45 | 248 | 2.3e16 | 1.65e+03 yr | 2.1e16 | 4.8e-18 | 1.8e9 LB |
+
+## Sensitivity of G_LHPST(D2 central, L=150)
+
+- base: 7.5e8 (b_w = 24)
+- bw=16: 3.7e8 (0.50x)
+- bw=20: 5.5e8 (0.73x)
+- bw=22: 6.4e8 (0.86x)
+- bw=24: 7.5e8 (1.00x)
+- bw=28: 9.9e8 (1.32x)
+- gs=512: 7.3e8 (0.98x)
+- gs=2048: 7.7e8 (1.03x)
+- u=1.5: 5.9e8 (0.78x)
+- sq=0.5: 6.0e8 (0.80x)
+- b=8: 7.5e8 (1.00x)
+- b=12: 7.5e8 (1.00x)
+- ecarry=True: 3.8e8 (0.50x)
+- bacc=32: 7.5e8 (1.00x)
+- bacc=48: 7.5e8 (1.00x)
+- guard=0: 7.4e8 (0.99x)
+- guard=8: 7.6e8 (1.01x)
+- store_frames=False: 8.0e8 (1.06x)
+- mulconv=hrs: 1.6e9 (2.16x)
+- parallel-prefix build instead of sequential: 9.9e8 (1.32x)
+- generous vs v1-generous(b_w=16): L=30: 1.41x, L=60: 1.42x, L=100: 1.65x, L=150: 1.78x, L=200: 1.91x
+- central vs b_w=20 central: L=30: 1.25x, L=60: 1.22x, L=100: 1.30x, L=150: 1.40x, L=200: 1.50x
+
+## Quantised-HMC variant (D2 energy), kappa = 1/n_leap relative to per-gradient accounting
+
+- L=30: G ~ 3.2e8; B(S=1,R=1) = 4.8e16 (1.34e+05 yr); D2 at kappa=3: 8.0e15
+- L=60: G ~ 1.3e9; B(S=1,R=1) = 4.5e16 (5.09e+05 yr); D2 at kappa=3: 7.5e15
+- L=100: G ~ 3.7e9; B(S=1,R=1) = 5.2e16 (1.62e+06 yr); D2 at kappa=3: 8.6e15
+- L=150: G ~ 9.0e9; B(S=1,R=1) = 5.9e16 (4.18e+06 yr); D2 at kappa=3: 9.9e15
+- L=200: G ~ 1.7e10; B(S=1,R=1) = 6.8e16 (8.53e+06 yr); D2 at kappa=3: 1.1e16
+
+## Representation variants: Toffolis per pair term (central) and G ratios
+
+- D1: L=30: 17140, L=60: 17146, L=100: 18668, L=150: 20255, L=200: 21902
+- D2: L=30: 7034, L=60: 7040, L=100: 7623, L=150: 8227, L=200: 8849
+- D2sb: L=30: 16464, L=60: 16470, L=100: 17868, L=150: 19326, L=200: 20838
+- D2svd: L=30: 223056, L=60: 223062, L=100: 242220, L=150: 265238, L=200: 286094
+- D3: L=30: 10116, L=60: 11679, L=100: 13934, L=150: 16267, L=200: 18415
+- D3sb: L=30: 16964, L=60: 17226, L=100: 18900, L=150: 20644, L=200: 22400
+- D2sb: L=30: 5.6e7 (2.06x; per term 2.34x), L=60: 2.3e8 (2.19x; per term 2.34x), L=100: 7.0e8 (2.25x; per term 2.34x), L=150: 1.7e9 (2.29x; per term 2.35x), L=200: 3.3e9 (2.31x; per term 2.35x)
+- D3sb: L=30: 9.6e6 (1.40x; per term 1.68x), L=60: 1.8e7 (1.37x; per term 1.47x), L=100: 3.2e7 (1.31x; per term 1.36x), L=150: 5.1e7 (1.25x; per term 1.27x), L=200: 7.4e7 (1.20x; per term 1.22x)
+- uniform-d (g=128) per term at L=150: 22253 vs D2 8227 (2.7x); D1/D2 per term 2.46x; Newton share of D1 arithmetic 0.74
+
+## g(L) = G_LHPST / L^2 (for T2 assumption A-G; Metropolis walks only)
+
+- CENTRAL D1: L=30: 6.4e+04, L=60: 6.6e+04, L=100: 7.3e+04, L=150: 8e+04, L=200: 8.7e+04
+- CENTRAL D2: L=30: 3e+04, L=60: 2.9e+04, L=100: 3.1e+04, L=150: 3.3e+04, L=200: 3.6e+04
+- CENTRAL D3: L=30: 7.6e+03, L=60: 3.6e+03, L=100: 2.4e+03, L=150: 1.8e+03, L=200: 1.5e+03
+- GENEROUS D1: L=30: 1.9e+04, L=60: 2e+04, L=100: 2.4e+04, L=150: 2.6e+04, L=200: 2.8e+04
+- GENEROUS D2: L=30: 9e+03, L=60: 8.3e+03, L=100: 9.3e+03, L=150: 9.8e+03, L=200: 1e+04
+- GENEROUS D3: L=30: 4.9e+03, L=60: 2.5e+03, L=100: 1.8e+03, L=150: 1.4e+03, L=200: 1.2e+03
+
+## Conditional per-step floor for the move-oblivious torsion class (H-008 per-step clause)
+
+- L=100, b_w=16: 2 (oracle applications) x 2 n_p (CA, CB) x 3 squarings x b_w^2/2 = 7.3e6
+- L=100, b_w=20: 2 (oracle applications) x 2 n_p (CA, CB) x 3 squarings x b_w^2/2 = 1.1e7
+- L=100, b_w=22: 2 (oracle applications) x 2 n_p (CA, CB) x 3 squarings x b_w^2/2 = 1.4e7
+- L=100, b_w=24: 2 (oracle applications) x 2 n_p (CA, CB) x 3 squarings x b_w^2/2 = 1.6e7
+- D3 analogue L=100, b_w=20: 2 x 2 (old/new) x 4(L-5) x 3 x b_w^2/2 = 9.1e5
+- D3 analogue L=100, b_w=24: 2 x 2 (old/new) x 4(L-5) x 3 x b_w^2/2 = 1.3e6
+
+## kappa growing with N_C: B for kappa = kappa0 * N_C^alpha (D2 central / D3 generous, L=100, S=1e3, R=100)
+
+- D2 central alpha=0.0: B = 4.3e17
+- D2 central alpha=0.25: B = 3.3e23
+- D2 central alpha=0.5: B = 1.9e35
+- D2 central alpha=0.75: B = 3.4e70
+- D2 central alpha -> 1: no break-even
+- D3 generous alpha=0.0: B = 1.2e16
+- D3 generous alpha=0.25: B = 2.9e21
+- D3 generous alpha=0.5: B = 1.5e32
+- D3 generous alpha=0.75: B = 2.3e64
+- D3 generous alpha -> 1: no break-even
+
+## Calibration
+
+- Sanders Table VIII SK N=512 LHPST: 2.6e3 Toffolis/step; Table IX LABS N=512 LHPST: 1.2e6
+- D2 L=100: 3.1e8 = 259x LABS-512
+- D2 L=150: 7.5e8 = 625x LABS-512

@@ -1,0 +1,132 @@
+{"name": "modes_5O37A_30", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_30", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_30", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_30", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_30", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_30", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_30", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_30", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_30", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_30", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_30", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_30", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_30", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_30", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_30", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_30", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_30 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_45", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_45", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_45", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_45", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_45", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_45", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_45", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_45", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_45", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_45", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_45", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_45", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_45", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_45", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_45", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_45", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_45 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_60", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_60", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_60", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_60", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_60", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_60", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_60", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_60", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_60", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_60", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_60", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_60", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_60", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_60", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_60", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_60", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_60 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_80", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_80", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_80", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_80", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_80", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_80", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_80", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_80", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_80", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_80", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_80", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_80", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_80", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_80", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_80", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_80", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_80 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_100", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_100", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_100", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_100", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_100", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_100", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_100", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_100", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_100", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_100", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_100", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_100", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_100", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_100", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_100", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_100", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_100 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_120", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_120", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_120", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_120", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_120", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_120", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_120", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_120", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_120", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_120", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_120", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_120", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_120", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_120", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_120", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_120", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_120 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5O37A_150", "cmd": "python scripts/g1_mode_census.py --crop 5O37A_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5QHWA_150", "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3S0QA_150", "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4PF3A_150", "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3W42A_150", "cmd": "python scripts/g1_mode_census.py --crop 3W42A_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3M3PA_150", "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_7B4RA_150", "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3BHLA_150", "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9PGXA_150", "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_8AXJA_150", "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_2AB0A_150", "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3GAHA_150", "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_5EMIA_150", "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_4LPQA_150", "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_9IXCA_150", "cmd": "python scripts/g1_mode_census.py --crop 9IXCA_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "modes_3TE4A_150", "cmd": "python scripts/g1_mode_census.py --crop 3TE4A_150 --restarts 256 --hess-top 6", "ram_gb": 0.8, "threads": 1}
+{"name": "tscan_5O37A_45_T1", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_45_T2", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_45_T4", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_45_T8", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_100_T1", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_100 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_100_T2", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_100 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_100_T4", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_100 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_5O37A_100_T8", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_100 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_60_T1", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_60 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_60_T2", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_60 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_60_T4", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_60 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_60_T8", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_60 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_120_T1", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_120 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_120_T2", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_120 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_120_T4", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_120 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_4LPQA_120_T8", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_120 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_3GAHA_80_T1", "cmd": "python scripts/g1_sample_crop.py --crop 3GAHA_80 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_3GAHA_80_T2", "cmd": "python scripts/g1_sample_crop.py --crop 3GAHA_80 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_3GAHA_80_T4", "cmd": "python scripts/g1_sample_crop.py --crop 3GAHA_80 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}
+{"name": "tscan_3GAHA_80_T8", "cmd": "python scripts/g1_sample_crop.py --crop 3GAHA_80 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "ram_gb": 1.0, "threads": 1}

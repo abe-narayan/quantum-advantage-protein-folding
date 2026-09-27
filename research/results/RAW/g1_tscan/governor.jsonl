@@ -23,3 +23,69 @@
 {"ev": "sample", "ram": 0.778, "cpu": 1.0, "cpu_mean": 0.989, "running": 4, "suspended": 0, "queued": 16, "t": 1790491001.426785}
 {"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491003.441196}
 {"ev": "sample", "ram": 0.778, "cpu": 0.971, "cpu_mean": 0.9942, "running": 4, "suspended": 1, "queued": 16, "t": 1790491003.4420333}
+{"ev": "suspend", "job": "tscan_5O37A_45_T2", "t": 1790491005.4567475}
+{"ev": "sample", "ram": 0.779, "cpu": 0.919, "cpu_mean": 0.978, "running": 4, "suspended": 2, "queued": 16, "t": 1790491005.4572978}
+{"ev": "sample", "ram": 0.766, "cpu": 0.715, "cpu_mean": 0.921, "running": 4, "suspended": 3, "queued": 16, "t": 1790491007.45893}
+{"ev": "resume", "job": "tscan_5O37A_45_T2", "t": 1790491009.4728925}
+{"ev": "sample", "ram": 0.765, "cpu": 0.614, "cpu_mean": 0.8438, "running": 4, "suspended": 3, "queued": 16, "t": 1790491009.4741085}
+{"ev": "resume", "job": "tscan_5O37A_45_T4", "t": 1790491011.5212536}
+{"ev": "sample", "ram": 0.767, "cpu": 0.901, "cpu_mean": 0.824, "running": 4, "suspended": 2, "queued": 16, "t": 1790491011.5227776}
+{"ev": "resume", "job": "tscan_5O37A_45_T8", "t": 1790491013.566216}
+{"ev": "sample", "ram": 0.768, "cpu": 1.0, "cpu_mean": 0.8298, "running": 4, "suspended": 1, "queued": 16, "t": 1790491013.5672922}
+{"ev": "sample", "ram": 0.774, "cpu": 1.0, "cpu_mean": 0.846, "running": 4, "suspended": 0, "queued": 16, "t": 1790491015.6758685}
+{"ev": "sample", "ram": 0.782, "cpu": 1.0, "cpu_mean": 0.903, "running": 4, "suspended": 0, "queued": 16, "t": 1790491017.7899525}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790491019.9515343}
+{"ev": "sample", "ram": 0.79, "cpu": 1.0, "cpu_mean": 0.9802, "running": 4, "suspended": 0, "queued": 16, "t": 1790491019.953511}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491022.0459166}
+{"ev": "sample", "ram": 0.796, "cpu": 1.0, "cpu_mean": 1.0, "running": 4, "suspended": 1, "queued": 16, "t": 1790491022.046359}
+{"ev": "suspend", "job": "tscan_5O37A_45_T2", "t": 1790491024.0801294}
+{"ev": "sample", "ram": 0.8, "cpu": 1.0, "cpu_mean": 1.0, "running": 4, "suspended": 2, "queued": 16, "t": 1790491024.0807452}
+{"ev": "sample", "ram": 0.798, "cpu": 0.88, "cpu_mean": 0.976, "running": 4, "suspended": 3, "queued": 16, "t": 1790491026.082064}
+{"ev": "sample", "ram": 0.797, "cpu": 0.736, "cpu_mean": 0.9232, "running": 4, "suspended": 3, "queued": 16, "t": 1790491028.084478}
+{"ev": "resume", "job": "tscan_5O37A_45_T2", "t": 1790491030.1013556}
+{"ev": "sample", "ram": 0.789, "cpu": 0.738, "cpu_mean": 0.8708, "running": 4, "suspended": 3, "queued": 16, "t": 1790491030.1023633}
+{"ev": "resume", "job": "tscan_5O37A_45_T4", "t": 1790491032.1659236}
+{"ev": "sample", "ram": 0.786, "cpu": 0.978, "cpu_mean": 0.8664, "running": 4, "suspended": 2, "queued": 16, "t": 1790491032.1673427}
+{"ev": "resume", "job": "tscan_5O37A_45_T8", "t": 1790491034.1820781}
+{"ev": "sample", "ram": 0.787, "cpu": 1.0, "cpu_mean": 0.8664, "running": 4, "suspended": 1, "queued": 16, "t": 1790491034.182781}
+{"ev": "sample", "ram": 0.789, "cpu": 1.0, "cpu_mean": 0.8904, "running": 4, "suspended": 0, "queued": 16, "t": 1790491036.369948}
+{"ev": "sample", "ram": 0.796, "cpu": 1.0, "cpu_mean": 0.9432, "running": 4, "suspended": 0, "queued": 16, "t": 1790491038.5836143}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790491040.7216203}
+{"ev": "sample", "ram": 0.797, "cpu": 1.0, "cpu_mean": 0.9956, "running": 4, "suspended": 0, "queued": 16, "t": 1790491040.7227035}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491042.8323605}
+{"ev": "sample", "ram": 0.799, "cpu": 1.0, "cpu_mean": 1.0, "running": 4, "suspended": 1, "queued": 16, "t": 1790491042.8330884}
+{"ev": "suspend", "job": "tscan_5O37A_45_T2", "t": 1790491044.8611207}
+{"ev": "sample", "ram": 0.799, "cpu": 0.992, "cpu_mean": 0.9984, "running": 4, "suspended": 2, "queued": 16, "t": 1790491044.861852}
+{"ev": "sample", "ram": 0.798, "cpu": 0.646, "cpu_mean": 0.9276, "running": 4, "suspended": 3, "queued": 16, "t": 1790491046.8667026}
+{"ev": "resume", "job": "tscan_5O37A_45_T2", "t": 1790491048.8823144}
+{"ev": "sample", "ram": 0.796, "cpu": 0.606, "cpu_mean": 0.8488, "running": 4, "suspended": 3, "queued": 16, "t": 1790491048.8828437}
+{"ev": "resume", "job": "tscan_5O37A_45_T4", "t": 1790491051.0115945}
+{"ev": "sample", "ram": 0.794, "cpu": 1.0, "cpu_mean": 0.8488, "running": 4, "suspended": 2, "queued": 16, "t": 1790491051.0128045}
+{"ev": "resume", "job": "tscan_5O37A_45_T8", "t": 1790491053.1495125}
+{"ev": "sample", "ram": 0.783, "cpu": 1.0, "cpu_mean": 0.8488, "running": 4, "suspended": 1, "queued": 16, "t": 1790491053.1500905}
+{"ev": "sample", "ram": 0.788, "cpu": 1.0, "cpu_mean": 0.8504, "running": 4, "suspended": 0, "queued": 16, "t": 1790491055.3140526}
+{"ev": "sample", "ram": 0.792, "cpu": 1.0, "cpu_mean": 0.9212, "running": 4, "suspended": 0, "queued": 16, "t": 1790491057.4602933}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790491059.6137416}
+{"ev": "sample", "ram": 0.8, "cpu": 1.0, "cpu_mean": 1.0, "running": 4, "suspended": 0, "queued": 16, "t": 1790491059.6146164}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491061.7802713}
+{"ev": "sample", "ram": 0.8, "cpu": 0.999, "cpu_mean": 0.9998, "running": 4, "suspended": 1, "queued": 16, "t": 1790491061.7814627}
+{"ev": "suspend", "job": "tscan_5O37A_45_T2", "t": 1790491063.8069491}
+{"ev": "sample", "ram": 0.798, "cpu": 0.951, "cpu_mean": 0.99, "running": 4, "suspended": 2, "queued": 16, "t": 1790491063.807682}
+{"ev": "sample", "ram": 0.787, "cpu": 0.825, "cpu_mean": 0.955, "running": 4, "suspended": 3, "queued": 16, "t": 1790491065.8100414}
+{"ev": "resume", "job": "tscan_5O37A_45_T2", "t": 1790491067.8280745}
+{"ev": "sample", "ram": 0.787, "cpu": 0.724, "cpu_mean": 0.8998, "running": 4, "suspended": 3, "queued": 16, "t": 1790491067.828809}
+{"ev": "resume", "job": "tscan_5O37A_45_T4", "t": 1790491069.8962402}
+{"ev": "sample", "ram": 0.786, "cpu": 0.94, "cpu_mean": 0.8878, "running": 4, "suspended": 2, "queued": 16, "t": 1790491069.8968434}
+{"ev": "resume", "job": "tscan_5O37A_45_T8", "t": 1790491072.0521762}
+{"ev": "sample", "ram": 0.793, "cpu": 1.0, "cpu_mean": 0.888, "running": 4, "suspended": 1, "queued": 16, "t": 1790491072.0527153}
+{"ev": "sample", "ram": 0.796, "cpu": 1.0, "cpu_mean": 0.8978, "running": 4, "suspended": 0, "queued": 16, "t": 1790491074.2711525}
+{"ev": "sample", "ram": 0.8, "cpu": 1.0, "cpu_mean": 0.9328, "running": 4, "suspended": 0, "queued": 16, "t": 1790491076.4769313}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790491078.6865733}
+{"ev": "sample", "ram": 0.8, "cpu": 1.0, "cpu_mean": 0.988, "running": 4, "suspended": 0, "queued": 16, "t": 1790491078.6880972}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491080.7338095}
+{"ev": "sample", "ram": 0.802, "cpu": 1.0, "cpu_mean": 1.0, "running": 4, "suspended": 1, "queued": 16, "t": 1790491080.7347987}
+{"ev": "suspend", "job": "tscan_5O37A_45_T2", "t": 1790491082.7527406}
+{"ev": "sample", "ram": 0.8, "cpu": 0.909, "cpu_mean": 0.9818, "running": 4, "suspended": 2, "queued": 16, "t": 1790491082.7535987}
+{"ev": "sample", "ram": 0.801, "cpu": 0.728, "cpu_mean": 0.9274, "running": 4, "suspended": 3, "queued": 16, "t": 1790491084.7553663}
+{"ev": "resume", "job": "tscan_5O37A_45_T2", "t": 1790491086.770775}
+{"ev": "sample", "ram": 0.8, "cpu": 0.714, "cpu_mean": 0.8702, "running": 4, "suspended": 3, "queued": 16, "t": 1790491086.7714317}

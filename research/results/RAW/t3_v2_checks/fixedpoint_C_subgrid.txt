@@ -1,0 +1,47 @@
+# T3 v2 run C: fixed-point emulation WITH sub-grid, round-to-nearest, 4 guard bits, L=60-150 (valid; used in RESOURCE_MODELS.md sec. 3.2).
+== fixed-point (round, guard 4), fine sub-grid, L >= 60
+
+3GAHA_60 (L=60, 60 PILOT samples on the b=10 lattice; E_pair ~ 8003 nats; |dE_move| median 0.08 nats)
+| b_w | guard | rounding | geometry-only sd | full pipeline: mean | sd | max abs | move error ddE: sd | max abs |
+|---|---|---|---|---|---|---|---|---|
+| 20 | 4 | round | 4.3e-03 | +4.6e-03 | 9.3e-03 | 2.6e-02 | 6.5e-03 | 1.7e-02 |
+| 22 | 4 | round | 9.9e-04 | +5.6e-04 | 2.2e-03 | 7.4e-03 | 1.7e-03 | 3.9e-03 |
+| 23 | 4 | round | 5.3e-04 | -8.9e-05 | 1.1e-03 | 2.9e-03 | 1.1e-03 | 3.2e-03 |
+| 24 | 4 | round | 2.3e-04 | -2.0e-04 | 5.2e-04 | 1.5e-03 | 4.2e-04 | 1.7e-03 |
+| 25 | 4 | round | 1.2e-04 | -2.5e-05 | 2.4e-04 | 7.2e-04 | 2.0e-04 | 5.3e-04 |
+| 26 | 4 | round | 6.0e-05 | -1.7e-06 | 1.3e-04 | 3.2e-04 | 1.1e-04 | 3.7e-04 |
+| 28 | 4 | round | 1.3e-05 | -3.3e-06 | 4.8e-05 | 2.1e-04 | 3.1e-05 | 6.9e-05 |
+
+5O37A_100 (L=100, 60 PILOT samples on the b=10 lattice; E_pair ~ 20656 nats; |dE_move| median 0.25 nats)
+| b_w | guard | rounding | geometry-only sd | full pipeline: mean | sd | max abs | move error ddE: sd | max abs |
+|---|---|---|---|---|---|---|---|---|
+| 20 | 4 | round | 2.3e-02 | +1.8e-02 | 2.5e-02 | 9.0e-02 | 2.3e-02 | 6.9e-02 |
+| 22 | 4 | round | 5.7e-03 | +2.4e-03 | 6.4e-03 | 2.0e-02 | 6.3e-03 | 1.9e-02 |
+| 23 | 4 | round | 2.8e-03 | -4.3e-05 | 3.3e-03 | 1.1e-02 | 2.8e-03 | 8.2e-03 |
+| 24 | 4 | round | 1.2e-03 | -8.5e-05 | 1.4e-03 | 3.8e-03 | 1.4e-03 | 4.6e-03 |
+| 25 | 4 | round | 6.1e-04 | +5.7e-05 | 6.5e-04 | 1.6e-03 | 5.3e-04 | 1.2e-03 |
+| 26 | 4 | round | 4.2e-04 | -4.9e-05 | 3.9e-04 | 1.1e-03 | 3.6e-04 | 1.1e-03 |
+| 28 | 4 | round | 8.2e-05 | +1.1e-05 | 1.2e-04 | 3.3e-04 | 7.9e-05 | 1.9e-04 |
+
+4LPQA_120 (L=120, 60 PILOT samples on the b=10 lattice; E_pair ~ 32900 nats; |dE_move| median 0.29 nats)
+| b_w | guard | rounding | geometry-only sd | full pipeline: mean | sd | max abs | move error ddE: sd | max abs |
+|---|---|---|---|---|---|---|---|---|
+| 20 | 4 | round | 3.0e-02 | +1.8e-02 | 3.3e-02 | 8.6e-02 | 3.0e-02 | 1.1e-01 |
+| 22 | 4 | round | 6.9e-03 | -1.5e-04 | 7.5e-03 | 2.2e-02 | 7.5e-03 | 2.2e-02 |
+| 23 | 4 | round | 3.7e-03 | +1.3e-04 | 3.9e-03 | 1.0e-02 | 4.4e-03 | 1.3e-02 |
+| 24 | 4 | round | 1.7e-03 | -1.0e-04 | 1.8e-03 | 4.8e-03 | 2.0e-03 | 5.6e-03 |
+| 25 | 4 | round | 7.8e-04 | +1.6e-04 | 9.7e-04 | 2.5e-03 | 9.3e-04 | 2.1e-03 |
+| 26 | 4 | round | 4.7e-04 | +1.3e-05 | 5.2e-04 | 1.2e-03 | 5.7e-04 | 1.7e-03 |
+| 28 | 4 | round | 9.9e-05 | +4.2e-05 | 1.7e-04 | 5.2e-04 | 1.2e-04 | 3.3e-04 |
+
+5O37A_150 (L=150, 60 PILOT samples on the b=10 lattice; E_pair ~ 52159 nats; |dE_move| median 1.1 nats)
+| b_w | guard | rounding | geometry-only sd | full pipeline: mean | sd | max abs | move error ddE: sd | max abs |
+|---|---|---|---|---|---|---|---|---|
+| 20 | 4 | round | 9.4e-02 | +2.7e-02 | 1.0e-01 | 2.6e-01 | 1.1e-01 | 3.6e-01 |
+| 22 | 4 | round | 2.5e-02 | +3.9e-03 | 2.6e-02 | 8.5e-02 | 2.7e-02 | 6.8e-02 |
+| 23 | 4 | round | 1.3e-02 | -2.1e-03 | 1.3e-02 | 3.1e-02 | 1.4e-02 | 3.9e-02 |
+| 24 | 4 | round | 6.1e-03 | -1.5e-03 | 6.3e-03 | 1.5e-02 | 7.5e-03 | 1.8e-02 |
+| 25 | 4 | round | 3.2e-03 | -2.0e-04 | 3.4e-03 | 1.1e-02 | 2.8e-03 | 8.4e-03 |
+| 26 | 4 | round | 1.4e-03 | +5.3e-04 | 1.5e-03 | 5.0e-03 | 1.6e-03 | 4.7e-03 |
+| 28 | 4 | round | 3.6e-04 | +1.9e-04 | 5.8e-04 | 1.8e-03 | 5.4e-04 | 1.4e-03 |
+DONE

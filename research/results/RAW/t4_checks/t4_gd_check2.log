@@ -1,0 +1,2 @@
+[d] Hessian at L-BFGS endpoints (R=16, D=85): lambda_max median 281 max 8.65e+04; lambda_min(>1e-3) median 0.495; kappa median 1.18e+03; #(<=1e-3) median 33.0
+[d] |lambda|_max at prior draws (4): [33025.8, 7968.3, 96875.3, 6087.2]

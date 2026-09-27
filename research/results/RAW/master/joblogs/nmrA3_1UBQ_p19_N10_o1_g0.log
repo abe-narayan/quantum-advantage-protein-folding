@@ -1,0 +1,6 @@
+{"exact_secs": 26.5, "mode": "sector"}
+{"adv": "pauli_w2", "t_c_index": 2, "secs": 2.1}
+{"adv": "pauli_w3", "t_c_index": 3, "secs": 110.4}
+{"adv": "pauli_w4", "t_c_index": 4, "secs": 374.8}
+{"adv": "pauli_w5", "t_c_index": 5, "secs": 285.3}
+{"adv": "pauli_eps0.001", "t_c_index": 3, "secs": 16.4}
