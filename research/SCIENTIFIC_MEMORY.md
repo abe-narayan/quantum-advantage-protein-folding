@@ -52,3 +52,19 @@ Measured results and the sprint's own interpretations are kept separate in the p
   - the objective or readout depends on more than argmin or an energy-order prefix;
   - there is a non-diagonal (non-commuting) structure, or a sampling or estimation task, where a quantum primitive has a known complexity-theoretic role.
 - The instruments, statistical contract (MDE = 2.8016·SE, fold CI, "< 0.7x is NOT A RESULT"), DEP/ORACLE discipline and adversary protocol are reusable as validated method. Source discrepancies are logged in each sprint's `LESSONS.md` importer notes.
+
+## 2026-09-26: Reconstructed scientific state and Quantum Opportunity Map (source: `research/sprint29-33/`, `research/QUANTUM_OPPORTUNITY_MAP.md`)
+
+The synthesis layer is now in place. Each statement is tagged M (measured), I(src) (the predecessor's interpretation), I(prog) (this program's reasoning) or U (untested). Durable points:
+
+1. **M.** 33 quantum experiments are recorded (QX-01 … QX-33), covering registers of 7–171 qubits, all simulated. None was load-bearing on the built chain. The decisive twins were **equal-tuning SA** and **random prior sampling** from the same warm start; greedy and untuned SA were not decisive. Every experiment tested only charter category 1, plus category 3 in simulation. Categories 2, 4, 5 and 6 were never tested.
+2. **M.** Twelve reduction results (R1–R12 in `sprint29-33/README.md` §3) explain the nulls: prefix theorem, solver-equivalence, tail collapse, closed-form p*, hull projection, a ≡ μ, dimension counting, P1 ∧ P2, distribution-equivalence, register bounds, monotonicity, and (C1)+(C2) non-classicality.
+3. **I(prog).** All of them share one structure. A quantum output consumed only via argmin, an energy-order prefix or a convex functional of a diagonal-energy distribution is classically reproducible. This is H-001's core.
+4. **I(prog).** The inherited evidence is silent on four things:
+   - classical sampling hardness (never measured);
+   - lengths > 60 aa;
+   - algorithms with known separations (amplitude estimation, quantum walks/QMCMC, QSVT, Hamiltonian simulation);
+   - fault-tolerant resource estimates and hardware.
+   The opportunity map targets exactly these gaps.
+5. **M → I(prog).** The only place where a sampler's *distribution* mattered on the chain was diversity: soft Boltzmann beat hard tails on mid30 (1.40×), and averaging beat selection. This makes posterior sampling at length (SP-1 / AA-1) the most defensible quantum-relevant line. It is conditional on classical mixing being slow, which has never been measured.
+6. **Rule adopted.** No quantum build without a classical kill test that failed to kill. DO-NOT-REPEAT registry: `sprint29-33/NEGATIVE_RESULTS.md` Part 2 (DNR-01 … DNR-18).

@@ -2,36 +2,67 @@
 
 Registry of scientific hypotheses. Each entry gets an ID (`H-###`), a statement, a claim category (see the charter taxonomy), predictions, a kill criterion, linked experiments and a status (OPEN / SUPPORTED / KILLED / SUPERSEDED). Killed hypotheses stay here and are cross-referenced in `KILLBOOK.md`.
 
+_Revision history:_
+- _2026-09-26: file created._
+- _2026-09-26: inherited table added; H-001/H-002 proposed._
+- _2026-09-26: after the S29–S33 reconstruction, H-001 and H-002 were sharpened and H-003 … H-005 added from `QUANTUM_OPPORTUNITY_MAP.md`._
+
 ## Inherited hypotheses (predecessor S29–S33): status as recorded in source
 
-These were tested in the predecessor project. They are listed so they are not re-tested unknowingly. The status is the source's own label, and details and citations are in `research/sprintNN/`. They have not been re-tested in this repository.
+These were tested in the predecessor project and are listed so they are not re-tested unknowingly. The status column uses the source's own label; the evidence is in `research/sprint29-33/QUANTUM_RESULTS.md` (QX-ids). Kills are in `KILLBOOK.md` (K-ids).
 
-| Source ID | Statement (source terminology) | Status in source | Where |
+| Source ID | Statement (source terminology) | Status in source | Record |
 |---|---|---|---|
-| S29 charter constraint | "Removing or randomizing the quantum stage measurably degrades the result." | Not satisfied: the deployed arm is indistinguishable from a fixed profile (S29-L55) | `sprint29/QUANTUM_RESULTS.md` |
-| S29 F5b / tail-then-aggregate | The TTA VQE endpoint improves on production | REFUTED (S29-L54) | `sprint29/NEGATIVE_RESULTS.md` |
-| S29 PREREG_B, bright line B1 | The compatibility Hamiltonian improves ordering | REFUTED (S29-L11) | `sprint29/NEGATIVE_RESULTS.md` |
-| S30 quadric / second-moment escape | A non-diagonal (quadric) objective escapes T1's prefix result | Closed before any Hamiltonian was built (S30-L12, L15) | `sprint30/QUANTUM_RESULTS.md` |
-| S31 CVaR objective solved exactly | Solving the deployed CVaR objective exactly (p*) improves the chain | Null (S31-L4, L20); the circuit was worse than p* on 126/126 | `sprint31/QUANTUM_RESULTS.md` |
-| S32 charter §14 | A quantum component can matter on this instrument | "NO on this instrument"; the binding reason is chain length (S32-L(Q3)) | `sprint32/QUANTUM_RESULTS.md` |
-| S33 H-Q1 | The posterior-mean readout of a tempered Born machine beats argmin and classical ensembles | FALSIFIED (E700, R60); the circuit is dominated by its Metropolis twin (E710) | `sprint33/QUANTUM_RESULTS.md` |
-| S33 D_decoder (a)/(b) | CVaR-VQE global search over a learned energy is load-bearing | (a) FAILS, SURVIVES attack; VQE ties random prior sampling | `sprint33/QUANTUM_RESULTS.md` |
-| S33 H_hybrid | The A41 energy advantage survives to the built chain | NOT load-bearing (E1000–E1007); the energy win was an SA-tuning artefact | `sprint33/QUANTUM_RESULTS.md` |
-| S33 next step (S34-A01) | esmprior_v2 + A80 + template gate, with a pre-registered quantum re-test (A82) | Proposed only, never run | `sprint33/README.md` H8 |
+| S29 charter constraint | "Removing or randomizing the quantum stage measurably degrades the result." | Not satisfied (S29-L55) | QX-01 |
+| S29 PREREG_B, B1 | Centring the coupling fixes trainability of the compatibility Hamiltonian | REFUTED (S29-L36) | QX-02 |
+| S29 F5b | The TTA VQE endpoint improves on production | REFUTED (S29-L54) | QX-03 |
+| S29 lane X | Configuration-space CVaR-VQE with a transverse field contributes | Closed negatively (S29-L56) | QX-04 |
+| S30 quadric / halfspace | Endogenous-order lifts escape T1 usefully | Closed by measurement; halfspace headline RETRACTED | QX-07 |
+| S31 exact CVaR (p*) | Solving the deployed objective exactly improves the chain | NULL (S31-L20) | QX-10 |
+| S32 charter §14 | A quantum component can matter on this instrument | "NO on this instrument" (S32-L(Q3)) | QX-14, QX-15 |
+| S33 A41 | CVaR-VQE is a better optimiser than SA on the (θ,τ) register | REFUTED / WEAKENED to a tie under equal tuning | QX-24 |
+| S33 H_hybrid | The A41 energy advantage survives to the built chain | NOT load-bearing (FAILED_E1000, E1006/7) | QX-25 |
+| S33 D_decoder H-a | Register search beats the register-free decoder on the chain | FAILS on both instruments | QX-30 |
+| S33 H-Q1 | Tempered Born machine / posterior-mean readout beats argmin and classical ensembles | FALSIFIED (E700, E710) | QX-28, QX-29 |
+| S33 S34-A01 / A82 | RF-seeded register re-test | Pre-registered, NOT RUN | QX-31 |
 
 ## Hypotheses of this program
 
-None are pre-registered yet. The following are **PROPOSED** working framings drawn from the import. They need sharpening, a kill criterion and pre-registration before any experiment.
+None are pre-registered yet. All five are **PROPOSED**. Each needs a written pre-registration in `experiments/preregistered/` before any compute is spent.
 
-### H-001 (PROPOSED): the predecessor's quantum null is structural, not tuning-related
-- **Statement:** In the predecessor's formulation, a diagonal cost Hamiltonian over enumerable registers with an argmin or CVaR-prefix readout, no quantum primitive can be load-bearing. The reason is that the stage reduces exactly to a classical sort or argmin. This follows from the set-equality/T1, solver-equivalence and enumerability arguments.
-- **Claim category:** 6, theoretical. It is a negative claim about the formulation.
-- **Prediction:** Any architecture that keeps these three properties will pass the ablation test with no capability loss, whatever the ansatz, optimiser or qubit count.
-- **Kill criterion (draft):** A pre-registered FULL-vs-ABLATION contrast within this formulation class that loses a capability when the quantum component is removed, against an equally tuned classical twin.
-- **Status:** PROPOSED. It needs a formal restatement in `theory/`.
+### H-001 (PROPOSED, theory): classical reproducibility of argmin/prefix/convex-consumed quantum stages
+- **Statement:** Suppose a pipeline's quantum component prepares a distribution p over a register with a diagonal cost E, and downstream stages consume p only through (a) argmin_x E, (b) an E-order prefix/tail, or (c) a convex functional of p. Then a classical algorithm reproduces the pipeline's output at no loss and at polynomial cost in the register size, or at a cost bounded by that of the classical solver for E. Therefore the quantum component cannot be load-bearing.
+- **Claim category:** 6 (a structural negative).
+- **Basis:** R1–R4, R9–R11 (`sprint29-33/README.md` §3); QX-01, 03, 10, 14, 22, 27.
+- **Prediction:** every inherited architecture falls inside the class, and every inherited null follows from it.
+- **Kill criterion:** a counterexample within the class, i.e. a pipeline of that form where the quantum stage changes the output in a way no classical algorithm of comparable cost reproduces.
+- **Deliverable:** `theory/quantum_advantage/` derivation plus a screening checklist.
+- **Status:** PROPOSED (opportunity-map rank 1).
 
-### H-002 (PROPOSED, competes with H-001 as the program's explanation): the binding bottleneck is information, not computation
-- **Statement:** At the lengths studied, the limit on accuracy is missing native-free information, such as long-range pair distributions or the per-target sign. It is not search, sampling or optimisation difficulty. If so, no computational primitive, quantum or classical, will move the endpoint without new information.
-- **Source basis:** S33 REPORT §1.7; S32 Q1-T1/T2; S30 H3; S29 L_8. These are interpretations in the sources.
-- **Consequence for this program:** A quantum-advantage search should target a sub-problem whose hardness is computational (sampling, estimation, simulation). It should not target structure-selection accuracy on inputs already limited by information.
-- **Status:** PROPOSED.
+### H-002 (PROPOSED, competing explanation): information-limited endpoint at ≤ 60 aa
+- **Statement:** At 9–60 aa with the available native-free inputs, the built-chain endpoint is limited by missing information: the per-target sign, the common mode, and the long-range pair distributions. It is not limited by search, sampling or estimation. No computational primitive, classical or quantum, moves it without new information.
+- **Claim category:** Not an advantage claim. It is the null that any advantage claim must defeat.
+- **Basis:** I-1 … I-6 in the opportunity map. Strong at 9–16 aa; moderate at 44–60 aa (I-5 rests on 6 targets).
+- **Kill criterion:** a measured computational gap (H-003, H-004 or H-005 surviving) at ≤ 60 aa.
+- **Status:** PROPOSED. It is the working prior.
+
+### H-003 (PROPOSED): classical sampling of learned-energy structure posteriors becomes hard with length, and better samples improve the chain
+- **Statement:** For the posterior over CA-trace structures under a learned pair-distance energy (esmprior-class), the best tuned classical samplers (PT, replica exchange, SMC, HMC) have mixing or round-trip times that grow steeply (super-polynomially or with a large exponent) in chain length from 30 to 150 aa. At the same time, higher-fidelity samples improve the built chain through a soft (Boltzmann-weighted) readout.
+- **Claim category:** Classical precondition for categories 3, 4 and 6 (AA-1: quantum walk / QMCMC gap speedup).
+- **Basis:** mid30 soft-over-hard 1.40× RESULT; diversity beats selection (M). Hardness never measured (U).
+- **Kill criterion (draft):** (a) mixing within the compute budget with polynomial scaling of modest degree at all tested lengths, or (b) the soft readout from a better-converged ensemble not improving the chain by ≥ 1.0× MDE.
+- **Status:** PROPOSED (opportunity-map rank 2). **Classical-only first step.**
+
+### H-004 (PROPOSED): a search gap opens beyond 60 aa
+- **Statement:** The gap between the continuous decoder's result and the information floor (the native relaxed under the same energy) grows with chain length, and multi-restart classical search stops closing it beyond about 60 aa.
+- **Claim category:** Classical precondition for category 3 / 6 (AA-2, QA-4).
+- **Basis:** At 44–60 aa, 32–64 restarts saturate and the gap is ≤ 0.14 Å on 6 dev targets (M). Nothing beyond 60 aa (U).
+- **Kill criterion (draft):** the gap does not grow with length, or stays within noise, on ≥ 20 targets per length band.
+- **Status:** PROPOSED (rank 3).
+
+### H-005 (PROPOSED): some pipeline decision is estimator-variance-limited
+- **Statement:** At least one decision in the best classical pipeline (e.g. ensemble weights, basin free-energy differences) changes with Monte Carlo sample count at feasible budgets. That makes quadratic-precision estimation (amplitude estimation) relevant.
+- **Claim category:** Classical precondition for category 3 / 6 (QA-1).
+- **Basis:** None positive. All inherited limits are bias- or information-limited (I(prog)).
+- **Kill criterion (draft):** decisions are stable at feasible sample counts.
+- **Status:** PROPOSED (rank 4, low prior).

@@ -1,23 +1,30 @@
 # Current State
 
-_Last updated: 2026-09-26 (predecessor S29–S33 evidence imported)_
+_Last updated: 2026-09-26 (S29–S33 reconstruction and Quantum Opportunity Map v1)_
 
 | Field | Value |
 |---|---|
 | Current research question | Where, if anywhere, does a quantum primitive provide a defensible advantage for protein structure computation? (See charter.) |
-| Strongest hypothesis | H-001 (PROPOSED, not pre-registered): the predecessor's quantum null is structural. A diagonal Hamiltonian over enumerable registers with an argmin/CVaR-prefix readout reduces to a classical sort. |
-| Strongest competing hypothesis | H-002 (PROPOSED): the binding bottleneck at the studied lengths is information, not computation, so no computational primitive moves the endpoint without new information. |
-| Current best quantum architecture | None in this repository. Predecessor: no CVaR-VQE design was load-bearing in S29–S33 (`sprint33/QUANTUM_RESULTS.md`). |
-| Current strongest classical baseline | None run here. Predecessor references (imported, not reproduced): tuning126 production 3.2105 Å; long40 E308/A31.2 4.739 and A80 4.343 (tied); mid30 A80 3.717 ungated / 3.815 gated. All built chain, DEP, and quantum-free (`sprint33/README.md` H1–H3). |
-| Current best result | None. No experiments have been run in this repository. |
-| Strongest counterevidence | Against any quantum role in the old formulation: S29–S33 (see `SCIENTIFIC_MEMORY.md`, 2026-09-26 cross-sprint entry). Against H-001 as a *general* claim: none yet, but it has only been shown for the predecessor's formulation class. |
+| Phase | **Reconstruction complete; opportunity map v1 exists.** No experiments run in this repository. Next phase: classical kill tests and theory (the gate rule applies). |
+| Strongest hypothesis | H-002 (PROPOSED, working prior): at ≤ 60 aa the endpoint is information-limited; no computational primitive moves it without new information. |
+| Strongest competing hypothesis | H-003 (PROPOSED): classical sampling of learned-energy structure posteriors becomes hard with length **and** better samples improve the chain. This would open AA-1 (quantum-walk/QMCMC gap speedup). |
+| Structural hypothesis under formalisation | H-001 (PROPOSED): argmin/prefix/convex-consumed quantum stages over diagonal costs are classically reproducible. It explains all 33 inherited quantum nulls. |
+| Current best quantum architecture | **None.** No inherited quantum architecture was load-bearing (QX-01 … QX-33). Candidates exist only on the opportunity map, all conditional on classical kill tests. |
+| Current strongest classical baseline | Inherited, **not yet reproduced here**: tuning126 production 3.2105 Å; long40 E308 4.739 / A80 4.343 (tie); mid30 A80 3.717 ungated / 3.815 gated. All built chain, DEP, and quantum-free. The strongest classical *twins* for quantum comparisons: equal-tuning SA, random prior sampling, register-free decoder, Metropolis/PT. |
+| Current best result | None in this repository. |
+| Strongest counterevidence | Against any quantum role in the predecessor's formulation class: 33 records, 12 reduction results, 13 inherited kills (`KILLBOOK.md` K-001 … K-013). Against H-002 at length: only that I-5 rests on 6 targets on the cloud basis, and nothing was measured beyond 60 aa. |
 | Running experiments | None |
-| Next experiments | PLANNED, and none started: (1) formalise H-001 in `theory/` (formulation-class conditions under which a quantum stage reduces to classical sort or argmin); (2) literature research into `LITERATURE_MAP.md`, focused on computational (sampling, estimation, simulation) sub-problems of structure computation; (3) architecture discovery against the three screening conditions in `SCIENTIFIC_MEMORY.md`. |
-| Current Git checkpoint | See `git log`. Last commit: import of the S29–S33 evidence. |
+| Next experiments | PLANNED, **none started**, and each needs pre-registration first. Ranked (from `QUANTUM_OPPORTUNITY_MAP.md` §8): (1) H-001 derivation in `theory/`; (2) sampling-hardness characterisation vs length on a new leakage-controlled long-chain instrument (H-003); (3) search-gap scaling beyond 60 aa (H-004); (4) variance audit of ensemble decisions (H-005); (5) A82 only if (3) opens a gap. Parallel prerequisite: `LITERATURE_MAP.md` for QMCMC / quantum-walk mixing speedups, amplitude estimation, and quantum backtracking resource models. |
+| Current Git checkpoint | See `git log`. Last commit: S29–S33 reconstruction and opportunity map. |
 
-## Imported evidence
+## Where things are
 
-- `research/sprint29/` … `research/sprint33/`: four files each (README, NEGATIVE_RESULTS, QUANTUM_RESULTS, LESSONS), imported 2026-09-26.
-- **Source:** the predecessor repo at `C:\Users\abena\cvar-vqe-protein-folding-v3` (GitHub `abe-narayan/cvar-vqe-protein-folding-v3`), commit `3d5b2d25`. It was only read. The S29 contract says the work originally ran in the `Protein-Folding-Algorithm` repository, branch `s26`.
-- **Not imported:** sprints before S29, `docs/FINDINGS.md` and `docs/CONDENSED_REPORT.md` (these have no S29–S33 content), code, and data.
-- **Source discrepancies:** logged, unresolved, in each sprint's `LESSONS.md` importer notes.
+- **Evidence of record (per sprint):** `research/sprint29/` … `research/sprint33/`, imported read-only from `cvar-vqe-protein-folding-v3@3d5b2d25`.
+- **Synthesis:** `research/sprint29-33/`: README (state, R1–R12), QUANTUM_RESULTS (QX-01 … QX-33), ARCHITECTURE_EVOLUTION, NEGATIVE_RESULTS (+ DNR registry), OPEN_PROBLEMS (OP / EI ids).
+- **Map:** `research/QUANTUM_OPPORTUNITY_MAP.md`.
+- **Gate rule:** no quantum build until a classical kill test has failed to kill the item.
+
+## Open logistics
+
+- A long-chain (60–150 aa) instrument does not exist yet. Designing it, with its leakage rules and splits, is a prerequisite for H-003 and H-004.
+- The inherited classical baselines have not been reproduced in this repository. Reproduction is needed before any comparison is claimed against them.
