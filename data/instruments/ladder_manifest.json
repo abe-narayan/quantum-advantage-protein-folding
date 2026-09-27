@@ -1,0 +1,903 @@
+{
+"created": "2026-09-26",
+"instrument": "ladder",
+"note": "crops of leakage-screened chains; esmprior_v1 predictions (vendored, bit-exact vs predecessor)",
+"crops": [
+{
+"id": "5O37A_30",
+"pdb": "5O37",
+"chain": "A",
+"L": 30,
+"start": 115,
+"file": "data/instruments/ladder/5O37A_30.npz"
+},
+{
+"id": "5O37A_45",
+"pdb": "5O37",
+"chain": "A",
+"L": 45,
+"start": 108,
+"file": "data/instruments/ladder/5O37A_45.npz"
+},
+{
+"id": "5O37A_60",
+"pdb": "5O37",
+"chain": "A",
+"L": 60,
+"start": 100,
+"file": "data/instruments/ladder/5O37A_60.npz"
+},
+{
+"id": "5O37A_80",
+"pdb": "5O37",
+"chain": "A",
+"L": 80,
+"start": 90,
+"file": "data/instruments/ladder/5O37A_80.npz"
+},
+{
+"id": "5O37A_100",
+"pdb": "5O37",
+"chain": "A",
+"L": 100,
+"start": 80,
+"file": "data/instruments/ladder/5O37A_100.npz"
+},
+{
+"id": "5O37A_120",
+"pdb": "5O37",
+"chain": "A",
+"L": 120,
+"start": 70,
+"file": "data/instruments/ladder/5O37A_120.npz"
+},
+{
+"id": "5O37A_150",
+"pdb": "5O37",
+"chain": "A",
+"L": 150,
+"start": 55,
+"file": "data/instruments/ladder/5O37A_150.npz"
+},
+{
+"id": "5QHWA_30",
+"pdb": "5QHW",
+"chain": "A",
+"L": 30,
+"start": 76,
+"file": "data/instruments/ladder/5QHWA_30.npz"
+},
+{
+"id": "5QHWA_45",
+"pdb": "5QHW",
+"chain": "A",
+"L": 45,
+"start": 68,
+"file": "data/instruments/ladder/5QHWA_45.npz"
+},
+{
+"id": "5QHWA_60",
+"pdb": "5QHW",
+"chain": "A",
+"L": 60,
+"start": 61,
+"file": "data/instruments/ladder/5QHWA_60.npz"
+},
+{
+"id": "5QHWA_80",
+"pdb": "5QHW",
+"chain": "A",
+"L": 80,
+"start": 51,
+"file": "data/instruments/ladder/5QHWA_80.npz"
+},
+{
+"id": "5QHWA_100",
+"pdb": "5QHW",
+"chain": "A",
+"L": 100,
+"start": 41,
+"file": "data/instruments/ladder/5QHWA_100.npz"
+},
+{
+"id": "5QHWA_120",
+"pdb": "5QHW",
+"chain": "A",
+"L": 120,
+"start": 31,
+"file": "data/instruments/ladder/5QHWA_120.npz"
+},
+{
+"id": "5QHWA_150",
+"pdb": "5QHW",
+"chain": "A",
+"L": 150,
+"start": 16,
+"file": "data/instruments/ladder/5QHWA_150.npz"
+},
+{
+"id": "3S0QA_30",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 30,
+"start": 89,
+"file": "data/instruments/ladder/3S0QA_30.npz"
+},
+{
+"id": "3S0QA_45",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 45,
+"start": 81,
+"file": "data/instruments/ladder/3S0QA_45.npz"
+},
+{
+"id": "3S0QA_60",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 60,
+"start": 74,
+"file": "data/instruments/ladder/3S0QA_60.npz"
+},
+{
+"id": "3S0QA_80",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 80,
+"start": 64,
+"file": "data/instruments/ladder/3S0QA_80.npz"
+},
+{
+"id": "3S0QA_100",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 100,
+"start": 54,
+"file": "data/instruments/ladder/3S0QA_100.npz"
+},
+{
+"id": "3S0QA_120",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 120,
+"start": 44,
+"file": "data/instruments/ladder/3S0QA_120.npz"
+},
+{
+"id": "3S0QA_150",
+"pdb": "3S0Q",
+"chain": "A",
+"L": 150,
+"start": 29,
+"file": "data/instruments/ladder/3S0QA_150.npz"
+},
+{
+"id": "4PF3A_30",
+"pdb": "4PF3",
+"chain": "A",
+"L": 30,
+"start": 109,
+"file": "data/instruments/ladder/4PF3A_30.npz"
+},
+{
+"id": "4PF3A_45",
+"pdb": "4PF3",
+"chain": "A",
+"L": 45,
+"start": 102,
+"file": "data/instruments/ladder/4PF3A_45.npz"
+},
+{
+"id": "4PF3A_60",
+"pdb": "4PF3",
+"chain": "A",
+"L": 60,
+"start": 94,
+"file": "data/instruments/ladder/4PF3A_60.npz"
+},
+{
+"id": "4PF3A_80",
+"pdb": "4PF3",
+"chain": "A",
+"L": 80,
+"start": 84,
+"file": "data/instruments/ladder/4PF3A_80.npz"
+},
+{
+"id": "4PF3A_100",
+"pdb": "4PF3",
+"chain": "A",
+"L": 100,
+"start": 74,
+"file": "data/instruments/ladder/4PF3A_100.npz"
+},
+{
+"id": "4PF3A_120",
+"pdb": "4PF3",
+"chain": "A",
+"L": 120,
+"start": 64,
+"file": "data/instruments/ladder/4PF3A_120.npz"
+},
+{
+"id": "4PF3A_150",
+"pdb": "4PF3",
+"chain": "A",
+"L": 150,
+"start": 49,
+"file": "data/instruments/ladder/4PF3A_150.npz"
+},
+{
+"id": "3W42A_30",
+"pdb": "3W42",
+"chain": "A",
+"L": 30,
+"start": 84,
+"file": "data/instruments/ladder/3W42A_30.npz"
+},
+{
+"id": "3W42A_45",
+"pdb": "3W42",
+"chain": "A",
+"L": 45,
+"start": 77,
+"file": "data/instruments/ladder/3W42A_45.npz"
+},
+{
+"id": "3W42A_60",
+"pdb": "3W42",
+"chain": "A",
+"L": 60,
+"start": 69,
+"file": "data/instruments/ladder/3W42A_60.npz"
+},
+{
+"id": "3W42A_80",
+"pdb": "3W42",
+"chain": "A",
+"L": 80,
+"start": 59,
+"file": "data/instruments/ladder/3W42A_80.npz"
+},
+{
+"id": "3W42A_100",
+"pdb": "3W42",
+"chain": "A",
+"L": 100,
+"start": 49,
+"file": "data/instruments/ladder/3W42A_100.npz"
+},
+{
+"id": "3W42A_120",
+"pdb": "3W42",
+"chain": "A",
+"L": 120,
+"start": 39,
+"file": "data/instruments/ladder/3W42A_120.npz"
+},
+{
+"id": "3W42A_150",
+"pdb": "3W42",
+"chain": "A",
+"L": 150,
+"start": 24,
+"file": "data/instruments/ladder/3W42A_150.npz"
+},
+{
+"id": "3M3PA_30",
+"pdb": "3M3P",
+"chain": "A",
+"L": 30,
+"start": 109,
+"file": "data/instruments/ladder/3M3PA_30.npz"
+},
+{
+"id": "3M3PA_45",
+"pdb": "3M3P",
+"chain": "A",
+"L": 45,
+"start": 102,
+"file": "data/instruments/ladder/3M3PA_45.npz"
+},
+{
+"id": "3M3PA_60",
+"pdb": "3M3P",
+"chain": "A",
+"L": 60,
+"start": 94,
+"file": "data/instruments/ladder/3M3PA_60.npz"
+},
+{
+"id": "3M3PA_80",
+"pdb": "3M3P",
+"chain": "A",
+"L": 80,
+"start": 84,
+"file": "data/instruments/ladder/3M3PA_80.npz"
+},
+{
+"id": "3M3PA_100",
+"pdb": "3M3P",
+"chain": "A",
+"L": 100,
+"start": 74,
+"file": "data/instruments/ladder/3M3PA_100.npz"
+},
+{
+"id": "3M3PA_120",
+"pdb": "3M3P",
+"chain": "A",
+"L": 120,
+"start": 64,
+"file": "data/instruments/ladder/3M3PA_120.npz"
+},
+{
+"id": "3M3PA_150",
+"pdb": "3M3P",
+"chain": "A",
+"L": 150,
+"start": 49,
+"file": "data/instruments/ladder/3M3PA_150.npz"
+},
+{
+"id": "7B4RA_30",
+"pdb": "7B4R",
+"chain": "A",
+"L": 30,
+"start": 93,
+"file": "data/instruments/ladder/7B4RA_30.npz"
+},
+{
+"id": "7B4RA_45",
+"pdb": "7B4R",
+"chain": "A",
+"L": 45,
+"start": 86,
+"file": "data/instruments/ladder/7B4RA_45.npz"
+},
+{
+"id": "7B4RA_60",
+"pdb": "7B4R",
+"chain": "A",
+"L": 60,
+"start": 78,
+"file": "data/instruments/ladder/7B4RA_60.npz"
+},
+{
+"id": "7B4RA_80",
+"pdb": "7B4R",
+"chain": "A",
+"L": 80,
+"start": 68,
+"file": "data/instruments/ladder/7B4RA_80.npz"
+},
+{
+"id": "7B4RA_100",
+"pdb": "7B4R",
+"chain": "A",
+"L": 100,
+"start": 58,
+"file": "data/instruments/ladder/7B4RA_100.npz"
+},
+{
+"id": "7B4RA_120",
+"pdb": "7B4R",
+"chain": "A",
+"L": 120,
+"start": 48,
+"file": "data/instruments/ladder/7B4RA_120.npz"
+},
+{
+"id": "7B4RA_150",
+"pdb": "7B4R",
+"chain": "A",
+"L": 150,
+"start": 33,
+"file": "data/instruments/ladder/7B4RA_150.npz"
+},
+{
+"id": "3BHLA_30",
+"pdb": "3BHL",
+"chain": "A",
+"L": 30,
+"start": 116,
+"file": "data/instruments/ladder/3BHLA_30.npz"
+},
+{
+"id": "3BHLA_45",
+"pdb": "3BHL",
+"chain": "A",
+"L": 45,
+"start": 109,
+"file": "data/instruments/ladder/3BHLA_45.npz"
+},
+{
+"id": "3BHLA_60",
+"pdb": "3BHL",
+"chain": "A",
+"L": 60,
+"start": 101,
+"file": "data/instruments/ladder/3BHLA_60.npz"
+},
+{
+"id": "3BHLA_80",
+"pdb": "3BHL",
+"chain": "A",
+"L": 80,
+"start": 91,
+"file": "data/instruments/ladder/3BHLA_80.npz"
+},
+{
+"id": "3BHLA_100",
+"pdb": "3BHL",
+"chain": "A",
+"L": 100,
+"start": 81,
+"file": "data/instruments/ladder/3BHLA_100.npz"
+},
+{
+"id": "3BHLA_120",
+"pdb": "3BHL",
+"chain": "A",
+"L": 120,
+"start": 71,
+"file": "data/instruments/ladder/3BHLA_120.npz"
+},
+{
+"id": "3BHLA_150",
+"pdb": "3BHL",
+"chain": "A",
+"L": 150,
+"start": 56,
+"file": "data/instruments/ladder/3BHLA_150.npz"
+},
+{
+"id": "9PGXA_30",
+"pdb": "9PGX",
+"chain": "A",
+"L": 30,
+"start": 74,
+"file": "data/instruments/ladder/9PGXA_30.npz"
+},
+{
+"id": "9PGXA_45",
+"pdb": "9PGX",
+"chain": "A",
+"L": 45,
+"start": 67,
+"file": "data/instruments/ladder/9PGXA_45.npz"
+},
+{
+"id": "9PGXA_60",
+"pdb": "9PGX",
+"chain": "A",
+"L": 60,
+"start": 59,
+"file": "data/instruments/ladder/9PGXA_60.npz"
+},
+{
+"id": "9PGXA_80",
+"pdb": "9PGX",
+"chain": "A",
+"L": 80,
+"start": 49,
+"file": "data/instruments/ladder/9PGXA_80.npz"
+},
+{
+"id": "9PGXA_100",
+"pdb": "9PGX",
+"chain": "A",
+"L": 100,
+"start": 39,
+"file": "data/instruments/ladder/9PGXA_100.npz"
+},
+{
+"id": "9PGXA_120",
+"pdb": "9PGX",
+"chain": "A",
+"L": 120,
+"start": 29,
+"file": "data/instruments/ladder/9PGXA_120.npz"
+},
+{
+"id": "9PGXA_150",
+"pdb": "9PGX",
+"chain": "A",
+"L": 150,
+"start": 14,
+"file": "data/instruments/ladder/9PGXA_150.npz"
+},
+{
+"id": "8AXJA_30",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 30,
+"start": 65,
+"file": "data/instruments/ladder/8AXJA_30.npz"
+},
+{
+"id": "8AXJA_45",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 45,
+"start": 58,
+"file": "data/instruments/ladder/8AXJA_45.npz"
+},
+{
+"id": "8AXJA_60",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 60,
+"start": 50,
+"file": "data/instruments/ladder/8AXJA_60.npz"
+},
+{
+"id": "8AXJA_80",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 80,
+"start": 40,
+"file": "data/instruments/ladder/8AXJA_80.npz"
+},
+{
+"id": "8AXJA_100",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 100,
+"start": 30,
+"file": "data/instruments/ladder/8AXJA_100.npz"
+},
+{
+"id": "8AXJA_120",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 120,
+"start": 20,
+"file": "data/instruments/ladder/8AXJA_120.npz"
+},
+{
+"id": "8AXJA_150",
+"pdb": "8AXJ",
+"chain": "A",
+"L": 150,
+"start": 5,
+"file": "data/instruments/ladder/8AXJA_150.npz"
+},
+{
+"id": "2AB0A_30",
+"pdb": "2AB0",
+"chain": "A",
+"L": 30,
+"start": 82,
+"file": "data/instruments/ladder/2AB0A_30.npz"
+},
+{
+"id": "2AB0A_45",
+"pdb": "2AB0",
+"chain": "A",
+"L": 45,
+"start": 75,
+"file": "data/instruments/ladder/2AB0A_45.npz"
+},
+{
+"id": "2AB0A_60",
+"pdb": "2AB0",
+"chain": "A",
+"L": 60,
+"start": 67,
+"file": "data/instruments/ladder/2AB0A_60.npz"
+},
+{
+"id": "2AB0A_80",
+"pdb": "2AB0",
+"chain": "A",
+"L": 80,
+"start": 57,
+"file": "data/instruments/ladder/2AB0A_80.npz"
+},
+{
+"id": "2AB0A_100",
+"pdb": "2AB0",
+"chain": "A",
+"L": 100,
+"start": 47,
+"file": "data/instruments/ladder/2AB0A_100.npz"
+},
+{
+"id": "2AB0A_120",
+"pdb": "2AB0",
+"chain": "A",
+"L": 120,
+"start": 37,
+"file": "data/instruments/ladder/2AB0A_120.npz"
+},
+{
+"id": "2AB0A_150",
+"pdb": "2AB0",
+"chain": "A",
+"L": 150,
+"start": 22,
+"file": "data/instruments/ladder/2AB0A_150.npz"
+},
+{
+"id": "3GAHA_30",
+"pdb": "3GAH",
+"chain": "A",
+"L": 30,
+"start": 78,
+"file": "data/instruments/ladder/3GAHA_30.npz"
+},
+{
+"id": "3GAHA_45",
+"pdb": "3GAH",
+"chain": "A",
+"L": 45,
+"start": 70,
+"file": "data/instruments/ladder/3GAHA_45.npz"
+},
+{
+"id": "3GAHA_60",
+"pdb": "3GAH",
+"chain": "A",
+"L": 60,
+"start": 63,
+"file": "data/instruments/ladder/3GAHA_60.npz"
+},
+{
+"id": "3GAHA_80",
+"pdb": "3GAH",
+"chain": "A",
+"L": 80,
+"start": 53,
+"file": "data/instruments/ladder/3GAHA_80.npz"
+},
+{
+"id": "3GAHA_100",
+"pdb": "3GAH",
+"chain": "A",
+"L": 100,
+"start": 43,
+"file": "data/instruments/ladder/3GAHA_100.npz"
+},
+{
+"id": "3GAHA_120",
+"pdb": "3GAH",
+"chain": "A",
+"L": 120,
+"start": 33,
+"file": "data/instruments/ladder/3GAHA_120.npz"
+},
+{
+"id": "3GAHA_150",
+"pdb": "3GAH",
+"chain": "A",
+"L": 150,
+"start": 18,
+"file": "data/instruments/ladder/3GAHA_150.npz"
+},
+{
+"id": "5EMIA_30",
+"pdb": "5EMI",
+"chain": "A",
+"L": 30,
+"start": 75,
+"file": "data/instruments/ladder/5EMIA_30.npz"
+},
+{
+"id": "5EMIA_45",
+"pdb": "5EMI",
+"chain": "A",
+"L": 45,
+"start": 67,
+"file": "data/instruments/ladder/5EMIA_45.npz"
+},
+{
+"id": "5EMIA_60",
+"pdb": "5EMI",
+"chain": "A",
+"L": 60,
+"start": 60,
+"file": "data/instruments/ladder/5EMIA_60.npz"
+},
+{
+"id": "5EMIA_80",
+"pdb": "5EMI",
+"chain": "A",
+"L": 80,
+"start": 50,
+"file": "data/instruments/ladder/5EMIA_80.npz"
+},
+{
+"id": "5EMIA_100",
+"pdb": "5EMI",
+"chain": "A",
+"L": 100,
+"start": 40,
+"file": "data/instruments/ladder/5EMIA_100.npz"
+},
+{
+"id": "5EMIA_120",
+"pdb": "5EMI",
+"chain": "A",
+"L": 120,
+"start": 30,
+"file": "data/instruments/ladder/5EMIA_120.npz"
+},
+{
+"id": "5EMIA_150",
+"pdb": "5EMI",
+"chain": "A",
+"L": 150,
+"start": 15,
+"file": "data/instruments/ladder/5EMIA_150.npz"
+},
+{
+"id": "4LPQA_30",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 30,
+"start": 87,
+"file": "data/instruments/ladder/4LPQA_30.npz"
+},
+{
+"id": "4LPQA_45",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 45,
+"start": 79,
+"file": "data/instruments/ladder/4LPQA_45.npz"
+},
+{
+"id": "4LPQA_60",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 60,
+"start": 72,
+"file": "data/instruments/ladder/4LPQA_60.npz"
+},
+{
+"id": "4LPQA_80",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 80,
+"start": 62,
+"file": "data/instruments/ladder/4LPQA_80.npz"
+},
+{
+"id": "4LPQA_100",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 100,
+"start": 52,
+"file": "data/instruments/ladder/4LPQA_100.npz"
+},
+{
+"id": "4LPQA_120",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 120,
+"start": 42,
+"file": "data/instruments/ladder/4LPQA_120.npz"
+},
+{
+"id": "4LPQA_150",
+"pdb": "4LPQ",
+"chain": "A",
+"L": 150,
+"start": 27,
+"file": "data/instruments/ladder/4LPQA_150.npz"
+},
+{
+"id": "9IXCA_30",
+"pdb": "9IXC",
+"chain": "A",
+"L": 30,
+"start": 120,
+"file": "data/instruments/ladder/9IXCA_30.npz"
+},
+{
+"id": "9IXCA_45",
+"pdb": "9IXC",
+"chain": "A",
+"L": 45,
+"start": 113,
+"file": "data/instruments/ladder/9IXCA_45.npz"
+},
+{
+"id": "9IXCA_60",
+"pdb": "9IXC",
+"chain": "A",
+"L": 60,
+"start": 105,
+"file": "data/instruments/ladder/9IXCA_60.npz"
+},
+{
+"id": "9IXCA_80",
+"pdb": "9IXC",
+"chain": "A",
+"L": 80,
+"start": 95,
+"file": "data/instruments/ladder/9IXCA_80.npz"
+},
+{
+"id": "9IXCA_100",
+"pdb": "9IXC",
+"chain": "A",
+"L": 100,
+"start": 85,
+"file": "data/instruments/ladder/9IXCA_100.npz"
+},
+{
+"id": "9IXCA_120",
+"pdb": "9IXC",
+"chain": "A",
+"L": 120,
+"start": 75,
+"file": "data/instruments/ladder/9IXCA_120.npz"
+},
+{
+"id": "9IXCA_150",
+"pdb": "9IXC",
+"chain": "A",
+"L": 150,
+"start": 60,
+"file": "data/instruments/ladder/9IXCA_150.npz"
+},
+{
+"id": "3TE4A_30",
+"pdb": "3TE4",
+"chain": "A",
+"L": 30,
+"start": 90,
+"file": "data/instruments/ladder/3TE4A_30.npz"
+},
+{
+"id": "3TE4A_45",
+"pdb": "3TE4",
+"chain": "A",
+"L": 45,
+"start": 82,
+"file": "data/instruments/ladder/3TE4A_45.npz"
+},
+{
+"id": "3TE4A_60",
+"pdb": "3TE4",
+"chain": "A",
+"L": 60,
+"start": 75,
+"file": "data/instruments/ladder/3TE4A_60.npz"
+},
+{
+"id": "3TE4A_80",
+"pdb": "3TE4",
+"chain": "A",
+"L": 80,
+"start": 65,
+"file": "data/instruments/ladder/3TE4A_80.npz"
+},
+{
+"id": "3TE4A_100",
+"pdb": "3TE4",
+"chain": "A",
+"L": 100,
+"start": 55,
+"file": "data/instruments/ladder/3TE4A_100.npz"
+},
+{
+"id": "3TE4A_120",
+"pdb": "3TE4",
+"chain": "A",
+"L": 120,
+"start": 45,
+"file": "data/instruments/ladder/3TE4A_120.npz"
+},
+{
+"id": "3TE4A_150",
+"pdb": "3TE4",
+"chain": "A",
+"L": 150,
+"start": 30,
+"file": "data/instruments/ladder/3TE4A_150.npz"
+}
+]
+}

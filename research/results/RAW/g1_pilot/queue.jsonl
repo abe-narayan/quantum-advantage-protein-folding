@@ -1,0 +1,5 @@
+{"name": "pilot_5O37A_45", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --scans 1500 --seed 0 --time-budget 1500 --out research/results/RAW/g1_pilot", "ram_gb": 1.2, "threads": 1}
+{"name": "pilot_5O37A_100", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_100 --scans 800 --seed 0 --time-budget 1500 --out research/results/RAW/g1_pilot", "ram_gb": 1.2, "threads": 1}
+{"name": "pilot_5O37A_150", "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_150 --scans 500 --seed 0 --time-budget 1500 --out research/results/RAW/g1_pilot", "ram_gb": 1.2, "threads": 1}
+{"name": "pilot_3GAHA_60", "cmd": "python scripts/g1_sample_crop.py --crop 3GAHA_60 --scans 1200 --seed 0 --time-budget 1500 --out research/results/RAW/g1_pilot", "ram_gb": 1.2, "threads": 1}
+{"name": "pilot_4LPQA_120", "cmd": "python scripts/g1_sample_crop.py --crop 4LPQA_120 --scans 600 --seed 0 --time-budget 1500 --out research/results/RAW/g1_pilot", "ram_gb": 1.2, "threads": 1}

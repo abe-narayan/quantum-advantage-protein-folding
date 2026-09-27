@@ -1,0 +1,115 @@
+{"ev": "launch", "job": "modes_5O37A_30", "pid": 49464, "cmd": "python scripts/g1_mode_census.py --crop 5O37A_30 --restarts 256 --hess-top 6", "t": 1790490866.7311919}
+{"ev": "sample", "ram": 0.726, "cpu": 0.0, "cpu_mean": 0.0, "running": 1, "suspended": 0, "queued": 111, "t": 1790490866.7341728}
+{"ev": "launch", "job": "modes_5QHWA_30", "pid": 3408, "cmd": "python scripts/g1_mode_census.py --crop 5QHWA_30 --restarts 256 --hess-top 6", "t": 1790490868.754429}
+{"ev": "sample", "ram": 0.732, "cpu": 0.641, "cpu_mean": 0.3205, "running": 2, "suspended": 0, "queued": 110, "t": 1790490868.7549021}
+{"ev": "launch", "job": "modes_3S0QA_30", "pid": 41684, "cmd": "python scripts/g1_mode_census.py --crop 3S0QA_30 --restarts 256 --hess-top 6", "t": 1790490870.779961}
+{"ev": "sample", "ram": 0.746, "cpu": 0.755, "cpu_mean": 0.4653, "running": 3, "suspended": 0, "queued": 109, "t": 1790490870.7806568}
+{"ev": "launch", "job": "modes_4PF3A_30", "pid": 3784, "cmd": "python scripts/g1_mode_census.py --crop 4PF3A_30 --restarts 256 --hess-top 6", "t": 1790490872.8019469}
+{"ev": "sample", "ram": 0.759, "cpu": 0.945, "cpu_mean": 0.5852, "running": 4, "suspended": 0, "queued": 108, "t": 1790490872.8027868}
+{"ev": "launch", "job": "modes_3W42A_30", "pid": 32820, "cmd": "python scripts/g1_mode_census.py --crop 3W42A_30 --restarts 256 --hess-top 6", "t": 1790490874.8776658}
+{"ev": "sample", "ram": 0.777, "cpu": 0.997, "cpu_mean": 0.6676, "running": 5, "suspended": 0, "queued": 107, "t": 1790490874.8787456}
+{"ev": "sample", "ram": 0.79, "cpu": 1.0, "cpu_mean": 0.8676, "running": 5, "suspended": 0, "queued": 107, "t": 1790490876.9752798}
+{"ev": "sample", "ram": 0.791, "cpu": 1.0, "cpu_mean": 0.9394, "running": 5, "suspended": 0, "queued": 107, "t": 1790490879.068118}
+{"ev": "suspend", "job": "modes_3W42A_30", "t": 1790490881.0993652}
+{"ev": "sample", "ram": 0.792, "cpu": 1.0, "cpu_mean": 0.9884, "running": 5, "suspended": 0, "queued": 107, "t": 1790490881.1005912}
+{"ev": "suspend", "job": "modes_4PF3A_30", "t": 1790490883.117587}
+{"ev": "sample", "ram": 0.793, "cpu": 0.926, "cpu_mean": 0.9846, "running": 5, "suspended": 1, "queued": 107, "t": 1790490883.118164}
+{"ev": "resume", "job": "modes_4PF3A_30", "t": 1790490885.1308615}
+{"ev": "sample", "ram": 0.793, "cpu": 0.572, "cpu_mean": 0.8996, "running": 5, "suspended": 2, "queued": 107, "t": 1790490885.1315148}
+{"ev": "resume", "job": "modes_3W42A_30", "t": 1790490887.1467276}
+{"ev": "sample", "ram": 0.794, "cpu": 0.793, "cpu_mean": 0.8582, "running": 5, "suspended": 1, "queued": 107, "t": 1790490887.1479712}
+{"ev": "sample", "ram": 0.79, "cpu": 0.959, "cpu_mean": 0.85, "running": 5, "suspended": 0, "queued": 107, "t": 1790490889.272822}
+{"ev": "sample", "ram": 0.791, "cpu": 1.0, "cpu_mean": 0.85, "running": 5, "suspended": 0, "queued": 107, "t": 1790490891.3582098}
+{"ev": "sample", "ram": 0.791, "cpu": 1.0, "cpu_mean": 0.8648, "running": 5, "suspended": 0, "queued": 107, "t": 1790490893.475025}
+{"ev": "sample", "ram": 0.792, "cpu": 1.0, "cpu_mean": 0.9504, "running": 5, "suspended": 0, "queued": 107, "t": 1790490895.5894408}
+{"ev": "suspend", "job": "modes_3W42A_30", "t": 1790490897.6203127}
+{"ev": "sample", "ram": 0.79, "cpu": 1.0, "cpu_mean": 0.9918, "running": 5, "suspended": 0, "queued": 107, "t": 1790490897.6214354}
+{"ev": "exit", "job": "modes_5O37A_30", "rc": 0, "secs": 32.9, "t": 1790490899.6236618}
+{"ev": "exit", "job": "modes_4PF3A_30", "rc": 0, "secs": 26.8, "t": 1790490899.6241922}
+{"ev": "sample", "ram": 0.765, "cpu": 0.82, "cpu_mean": 0.964, "running": 3, "suspended": 1, "queued": 107, "t": 1790490899.6247437}
+{"ev": "exit", "job": "modes_3S0QA_30", "rc": 0, "secs": 30.8, "t": 1790490901.6266046}
+{"ev": "resume", "job": "modes_3W42A_30", "t": 1790490901.635608}
+{"ev": "sample", "ram": 0.746, "cpu": 0.662, "cpu_mean": 0.8964, "running": 2, "suspended": 1, "queued": 107, "t": 1790490901.63621}
+{"ev": "exit", "job": "modes_5QHWA_30", "rc": 0, "secs": 34.9, "t": 1790490903.6379406}
+{"ev": "launch", "job": "modes_3M3PA_30", "pid": 932, "cmd": "python scripts/g1_mode_census.py --crop 3M3PA_30 --restarts 256 --hess-top 6", "t": 1790490903.6550128}
+{"ev": "sample", "ram": 0.714, "cpu": 0.36, "cpu_mean": 0.7684, "running": 2, "suspended": 0, "queued": 106, "t": 1790490903.6556153}
+{"ev": "launch", "job": "modes_7B4RA_30", "pid": 13248, "cmd": "python scripts/g1_mode_census.py --crop 7B4RA_30 --restarts 256 --hess-top 6", "t": 1790490905.67356}
+{"ev": "sample", "ram": 0.724, "cpu": 0.497, "cpu_mean": 0.6678, "running": 3, "suspended": 0, "queued": 105, "t": 1790490905.6741934}
+{"ev": "launch", "job": "modes_3BHLA_30", "pid": 40976, "cmd": "python scripts/g1_mode_census.py --crop 3BHLA_30 --restarts 256 --hess-top 6", "t": 1790490907.723326}
+{"ev": "sample", "ram": 0.735, "cpu": 0.791, "cpu_mean": 0.626, "running": 4, "suspended": 0, "queued": 104, "t": 1790490907.7239306}
+{"ev": "launch", "job": "modes_9PGXA_30", "pid": 49284, "cmd": "python scripts/g1_mode_census.py --crop 9PGXA_30 --restarts 256 --hess-top 6", "t": 1790490909.7448297}
+{"ev": "sample", "ram": 0.75, "cpu": 0.849, "cpu_mean": 0.6318, "running": 5, "suspended": 0, "queued": 103, "t": 1790490909.7452953}
+{"ev": "sample", "ram": 0.761, "cpu": 0.995, "cpu_mean": 0.6984, "running": 5, "suspended": 0, "queued": 103, "t": 1790490911.7953398}
+{"ev": "sample", "ram": 0.768, "cpu": 1.0, "cpu_mean": 0.8264, "running": 5, "suspended": 0, "queued": 103, "t": 1790490913.8331254}
+{"ev": "sample", "ram": 0.769, "cpu": 1.0, "cpu_mean": 0.927, "running": 5, "suspended": 0, "queued": 103, "t": 1790490915.8551917}
+{"ev": "sample", "ram": 0.768, "cpu": 0.984, "cpu_mean": 0.9656, "running": 5, "suspended": 0, "queued": 103, "t": 1790490917.8572538}
+{"ev": "suspend", "job": "modes_9PGXA_30", "t": 1790490919.8718026}
+{"ev": "sample", "ram": 0.766, "cpu": 0.949, "cpu_mean": 0.9856, "running": 5, "suspended": 0, "queued": 103, "t": 1790490919.8726814}
+{"ev": "exit", "job": "modes_3W42A_30", "rc": 0, "secs": 47.0, "t": 1790490921.874526}
+{"ev": "sample", "ram": 0.754, "cpu": 0.646, "cpu_mean": 0.9158, "running": 4, "suspended": 1, "queued": 103, "t": 1790490921.8755183}
+{"ev": "resume", "job": "modes_9PGXA_30", "t": 1790490923.8886707}
+{"ev": "sample", "ram": 0.755, "cpu": 0.606, "cpu_mean": 0.837, "running": 4, "suspended": 1, "queued": 103, "t": 1790490923.8893116}
+{"ev": "launch", "job": "modes_8AXJA_30", "pid": 20876, "cmd": "python scripts/g1_mode_census.py --crop 8AXJA_30 --restarts 256 --hess-top 6", "t": 1790490925.911154}
+{"ev": "sample", "ram": 0.754, "cpu": 0.925, "cpu_mean": 0.822, "running": 5, "suspended": 0, "queued": 102, "t": 1790490925.9118505}
+{"ev": "sample", "ram": 0.763, "cpu": 0.986, "cpu_mean": 0.8224, "running": 5, "suspended": 0, "queued": 102, "t": 1790490927.9134872}
+{"ev": "sample", "ram": 0.768, "cpu": 0.926, "cpu_mean": 0.8178, "running": 5, "suspended": 0, "queued": 102, "t": 1790490929.9601786}
+{"ev": "sample", "ram": 0.768, "cpu": 1.0, "cpu_mean": 0.8886, "running": 5, "suspended": 0, "queued": 102, "t": 1790490932.0162454}
+{"ev": "sample", "ram": 0.766, "cpu": 1.0, "cpu_mean": 0.9674, "running": 5, "suspended": 0, "queued": 102, "t": 1790490934.1006556}
+{"ev": "exit", "job": "modes_3M3PA_30", "rc": 0, "secs": 32.4, "t": 1790490936.1030393}
+{"ev": "suspend", "job": "modes_8AXJA_30", "t": 1790490936.1203547}
+{"ev": "sample", "ram": 0.754, "cpu": 0.997, "cpu_mean": 0.9818, "running": 4, "suspended": 0, "queued": 102, "t": 1790490936.1211038}
+{"ev": "exit", "job": "modes_7B4RA_30", "rc": 0, "secs": 32.4, "t": 1790490938.1233785}
+{"ev": "sample", "ram": 0.742, "cpu": 0.851, "cpu_mean": 0.9548, "running": 3, "suspended": 1, "queued": 102, "t": 1790490938.1238558}
+{"ev": "exit", "job": "modes_3BHLA_30", "rc": 0, "secs": 32.4, "t": 1790490940.1258264}
+{"ev": "sample", "ram": 0.729, "cpu": 0.665, "cpu_mean": 0.9026, "running": 2, "suspended": 1, "queued": 102, "t": 1790490940.1266165}
+{"ev": "resume", "job": "modes_8AXJA_30", "t": 1790490942.139777}
+{"ev": "sample", "ram": 0.727, "cpu": 0.571, "cpu_mean": 0.8168, "running": 2, "suspended": 1, "queued": 102, "t": 1790490942.1404712}
+{"ev": "launch", "job": "modes_2AB0A_30", "pid": 31212, "cmd": "python scripts/g1_mode_census.py --crop 2AB0A_30 --restarts 256 --hess-top 6", "t": 1790490944.2210584}
+{"ev": "sample", "ram": 0.727, "cpu": 0.847, "cpu_mean": 0.7862, "running": 3, "suspended": 0, "queued": 101, "t": 1790490944.2219343}
+{"ev": "launch", "job": "modes_3GAHA_30", "pid": 18628, "cmd": "python scripts/g1_mode_census.py --crop 3GAHA_30 --restarts 256 --hess-top 6", "t": 1790490946.4272304}
+{"ev": "sample", "ram": 0.737, "cpu": 0.926, "cpu_mean": 0.772, "running": 4, "suspended": 0, "queued": 100, "t": 1790490946.4279537}
+{"ev": "exit", "job": "modes_9PGXA_30", "rc": 0, "secs": 38.7, "t": 1790490948.4329503}
+{"ev": "launch", "job": "modes_5EMIA_30", "pid": 38680, "cmd": "python scripts/g1_mode_census.py --crop 5EMIA_30 --restarts 256 --hess-top 6", "t": 1790490948.5672119}
+{"ev": "sample", "ram": 0.739, "cpu": 0.962, "cpu_mean": 0.7942, "running": 4, "suspended": 0, "queued": 99, "t": 1790490948.5682685}
+{"ev": "launch", "job": "modes_4LPQA_30", "pid": 34776, "cmd": "python scripts/g1_mode_census.py --crop 4LPQA_30 --restarts 256 --hess-top 6", "t": 1790490950.7597613}
+{"ev": "sample", "ram": 0.751, "cpu": 0.922, "cpu_mean": 0.8456, "running": 5, "suspended": 0, "queued": 98, "t": 1790490950.7605429}
+{"ev": "sample", "ram": 0.763, "cpu": 1.0, "cpu_mean": 0.9314, "running": 5, "suspended": 0, "queued": 98, "t": 1790490952.796559}
+{"ev": "sample", "ram": 0.766, "cpu": 1.0, "cpu_mean": 0.962, "running": 5, "suspended": 0, "queued": 98, "t": 1790490954.8036385}
+{"ev": "suspend", "job": "modes_4LPQA_30", "t": 1790490956.8681135}
+{"ev": "sample", "ram": 0.77, "cpu": 1.0, "cpu_mean": 0.9768, "running": 5, "suspended": 0, "queued": 98, "t": 1790490956.869194}
+{"ev": "suspend", "job": "modes_5EMIA_30", "t": 1790490958.889843}
+{"ev": "sample", "ram": 0.77, "cpu": 0.996, "cpu_mean": 0.9836, "running": 5, "suspended": 1, "queued": 98, "t": 1790490958.8906908}
+{"ev": "suspend", "job": "modes_3GAHA_30", "t": 1790490960.9100277}
+{"ev": "sample", "ram": 0.762, "cpu": 0.985, "cpu_mean": 0.9962, "running": 5, "suspended": 2, "queued": 98, "t": 1790490960.910852}
+{"ev": "sample", "ram": 0.757, "cpu": 0.849, "cpu_mean": 0.966, "running": 5, "suspended": 3, "queued": 98, "t": 1790490962.912329}
+{"ev": "sample", "ram": 0.757, "cpu": 0.738, "cpu_mean": 0.9136, "running": 5, "suspended": 3, "queued": 98, "t": 1790490964.9154687}
+{"ev": "resume", "job": "modes_3GAHA_30", "t": 1790490966.930571}
+{"ev": "sample", "ram": 0.758, "cpu": 0.814, "cpu_mean": 0.8764, "running": 5, "suspended": 3, "queued": 98, "t": 1790490966.9314501}
+{"ev": "resume", "job": "modes_5EMIA_30", "t": 1790490968.9574642}
+{"ev": "sample", "ram": 0.757, "cpu": 0.995, "cpu_mean": 0.8762, "running": 5, "suspended": 2, "queued": 98, "t": 1790490968.9583523}
+{"ev": "exit", "job": "modes_8AXJA_30", "rc": 0, "secs": 45.1, "t": 1790490970.9622116}
+{"ev": "resume", "job": "modes_4LPQA_30", "t": 1790490970.9746175}
+{"ev": "sample", "ram": 0.743, "cpu": 0.979, "cpu_mean": 0.875, "running": 4, "suspended": 1, "queued": 98, "t": 1790490970.97517}
+{"ev": "sample", "ram": 0.743, "cpu": 0.992, "cpu_mean": 0.9036, "running": 4, "suspended": 0, "queued": 98, "t": 1790490973.0141253}
+{"ev": "exit", "job": "modes_2AB0A_30", "rc": 0, "secs": 30.8, "t": 1790490975.0367668}
+{"ev": "sample", "ram": 0.734, "cpu": 1.0, "cpu_mean": 0.956, "running": 3, "suspended": 0, "queued": 98, "t": 1790490975.0379896}
+{"ev": "suspend", "job": "modes_4LPQA_30", "t": 1790490977.071706}
+{"ev": "sample", "ram": 0.744, "cpu": 0.996, "cpu_mean": 0.9924, "running": 3, "suspended": 0, "queued": 98, "t": 1790490977.07239}
+{"ev": "suspend", "job": "modes_5EMIA_30", "t": 1790490979.0935872}
+{"ev": "sample", "ram": 0.756, "cpu": 0.966, "cpu_mean": 0.9866, "running": 3, "suspended": 1, "queued": 98, "t": 1790490979.0940866}
+{"ev": "sample", "ram": 0.773, "cpu": 0.979, "cpu_mean": 0.9866, "running": 3, "suspended": 2, "queued": 98, "t": 1790490981.1196167}
+{"ev": "sample", "ram": 0.783, "cpu": 0.999, "cpu_mean": 0.988, "running": 3, "suspended": 2, "queued": 98, "t": 1790490983.1622882}
+{"ev": "sample", "ram": 0.791, "cpu": 0.977, "cpu_mean": 0.9834, "running": 3, "suspended": 2, "queued": 98, "t": 1790490985.1996613}
+{"ev": "exit", "job": "modes_3GAHA_30", "rc": 0, "secs": 40.8, "t": 1790490987.201702}
+{"ev": "sample", "ram": 0.779, "cpu": 0.918, "cpu_mean": 0.9678, "running": 2, "suspended": 2, "queued": 98, "t": 1790490987.2026503}
+{"ev": "sample", "ram": 0.777, "cpu": 0.798, "cpu_mean": 0.9342, "running": 2, "suspended": 2, "queued": 98, "t": 1790490989.2041688}
+{"ev": "resume", "job": "modes_5EMIA_30", "t": 1790490991.2174811}
+{"ev": "sample", "ram": 0.775, "cpu": 0.73, "cpu_mean": 0.8844, "running": 2, "suspended": 2, "queued": 98, "t": 1790490991.2180827}
+{"ev": "resume", "job": "modes_4LPQA_30", "t": 1790490993.2654383}
+{"ev": "sample", "ram": 0.776, "cpu": 0.965, "cpu_mean": 0.8776, "running": 2, "suspended": 1, "queued": 98, "t": 1790490993.2662356}
+{"ev": "sample", "ram": 0.775, "cpu": 1.0, "cpu_mean": 0.8822, "running": 2, "suspended": 0, "queued": 98, "t": 1790490995.3502133}
+{"ev": "sample", "ram": 0.777, "cpu": 1.0, "cpu_mean": 0.8986, "running": 2, "suspended": 0, "queued": 98, "t": 1790490997.4490354}
+{"ev": "sample", "ram": 0.778, "cpu": 1.0, "cpu_mean": 0.939, "running": 2, "suspended": 0, "queued": 98, "t": 1790490999.5743423}
+{"ev": "suspend", "job": "modes_4LPQA_30", "t": 1790491001.6677172}
+{"ev": "sample", "ram": 0.778, "cpu": 1.0, "cpu_mean": 0.993, "running": 2, "suspended": 0, "queued": 98, "t": 1790491001.6684704}
+{"ev": "sample", "ram": 0.778, "cpu": 0.954, "cpu_mean": 0.9908, "running": 2, "suspended": 1, "queued": 98, "t": 1790491003.6702826}

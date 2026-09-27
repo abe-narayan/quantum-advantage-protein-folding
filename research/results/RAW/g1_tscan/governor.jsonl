@@ -1,0 +1,25 @@
+{"ev": "launch", "job": "tscan_5O37A_45_T1", "pid": 40352, "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 1 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "t": 1790490974.583971}
+{"ev": "sample", "ram": 0.732, "cpu": 0.0, "cpu_mean": 0.0, "running": 1, "suspended": 0, "queued": 19, "t": 1790490974.5869207}
+{"ev": "launch", "job": "tscan_5O37A_45_T2", "pid": 4576, "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 2 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "t": 1790490976.6839666}
+{"ev": "sample", "ram": 0.742, "cpu": 0.996, "cpu_mean": 0.498, "running": 2, "suspended": 0, "queued": 18, "t": 1790490976.6853304}
+{"ev": "launch", "job": "tscan_5O37A_45_T4", "pid": 33560, "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 4 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "t": 1790490978.7248158}
+{"ev": "sample", "ram": 0.754, "cpu": 0.967, "cpu_mean": 0.6543, "running": 3, "suspended": 0, "queued": 17, "t": 1790490978.725672}
+{"ev": "launch", "job": "tscan_5O37A_45_T8", "pid": 18036, "cmd": "python scripts/g1_sample_crop.py --crop 5O37A_45 --T 8 --scans 100000 --seed 1 --time-budget 1500 --pivot 4 --out research/results/RAW/g1_tscan", "t": 1790490980.7654738}
+{"ev": "sample", "ram": 0.771, "cpu": 0.979, "cpu_mean": 0.7355, "running": 4, "suspended": 0, "queued": 16, "t": 1790490980.766024}
+{"ev": "sample", "ram": 0.784, "cpu": 0.999, "cpu_mean": 0.7882, "running": 4, "suspended": 0, "queued": 16, "t": 1790490982.8076692}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790490984.873913}
+{"ev": "sample", "ram": 0.791, "cpu": 0.977, "cpu_mean": 0.9836, "running": 4, "suspended": 0, "queued": 16, "t": 1790490984.8749065}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790490986.887848}
+{"ev": "sample", "ram": 0.78, "cpu": 0.965, "cpu_mean": 0.9774, "running": 4, "suspended": 1, "queued": 16, "t": 1790490986.8884213}
+{"ev": "sample", "ram": 0.777, "cpu": 0.801, "cpu_mean": 0.9442, "running": 4, "suspended": 2, "queued": 16, "t": 1790490988.890188}
+{"ev": "resume", "job": "tscan_5O37A_45_T4", "t": 1790490990.9042065}
+{"ev": "sample", "ram": 0.777, "cpu": 0.703, "cpu_mean": 0.889, "running": 4, "suspended": 2, "queued": 16, "t": 1790490990.904661}
+{"ev": "resume", "job": "tscan_5O37A_45_T8", "t": 1790490992.921382}
+{"ev": "sample", "ram": 0.777, "cpu": 0.945, "cpu_mean": 0.8782, "running": 4, "suspended": 1, "queued": 16, "t": 1790490992.9219441}
+{"ev": "sample", "ram": 0.775, "cpu": 1.0, "cpu_mean": 0.8828, "running": 4, "suspended": 0, "queued": 16, "t": 1790490995.0570066}
+{"ev": "sample", "ram": 0.777, "cpu": 1.0, "cpu_mean": 0.8898, "running": 4, "suspended": 0, "queued": 16, "t": 1790490997.1846325}
+{"ev": "sample", "ram": 0.778, "cpu": 1.0, "cpu_mean": 0.9296, "running": 4, "suspended": 0, "queued": 16, "t": 1790490999.2902126}
+{"ev": "suspend", "job": "tscan_5O37A_45_T8", "t": 1790491001.4255924}
+{"ev": "sample", "ram": 0.778, "cpu": 1.0, "cpu_mean": 0.989, "running": 4, "suspended": 0, "queued": 16, "t": 1790491001.426785}
+{"ev": "suspend", "job": "tscan_5O37A_45_T4", "t": 1790491003.441196}
+{"ev": "sample", "ram": 0.778, "cpu": 0.971, "cpu_mean": 0.9942, "running": 4, "suspended": 1, "queued": 16, "t": 1790491003.4420333}
