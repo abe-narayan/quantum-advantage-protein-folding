@@ -1,0 +1,8 @@
+{"exact_secs": 2.4}
+{"eps": 0.01, "peak": 37, "capped": false, "steps_done": 160, "secs": 2.0, "maxbias": 0.2415}
+{"eps": 0.003, "peak": 276, "capped": false, "steps_done": 160, "secs": 3.0, "maxbias": 0.0473}
+{"eps": 0.001, "peak": 2806, "capped": false, "steps_done": 160, "secs": 20.9, "maxbias": 0.0392}
+{"eps": 0.0003, "peak": 27484, "capped": false, "steps_done": 160, "secs": 75.2, "maxbias": 0.0102}
+{"eps": 0.0001, "peak": 139592, "capped": false, "steps_done": 160, "secs": 554.9, "maxbias": 0.0048}
+{"eps": 3e-05, "peak": 240390, "capped": false, "steps_done": 160, "secs": 1439.0, "maxbias": 0.001}
+{"tag": "1UBQ_p245_N10_o0_g0", "secs": 2098, "n_runs": 6}

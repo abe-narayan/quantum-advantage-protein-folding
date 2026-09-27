@@ -1,0 +1,5 @@
+{"exact_secs": 69.2}
+{"eps": 0.01, "peak": 64, "capped": false, "steps_done": 160, "secs": 2.4, "maxbias": 0.16}
+{"eps": 0.003, "peak": 512, "capped": false, "steps_done": 160, "secs": 4.2, "maxbias": 0.0887}
+{"eps": 0.001, "peak": 4286, "capped": false, "steps_done": 160, "secs": 13.1, "maxbias": 0.0221}
+{"eps": 0.0003, "peak": 42572, "capped": false, "steps_done": 160, "secs": 194.5, "maxbias": 0.0101}

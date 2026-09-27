@@ -7,3 +7,5 @@
 {"adv": "pauli_eps0.0001", "t_c_index": 17, "secs": 845.0}
 {"adv": "sub_n6", "t_c_index": 2, "secs": 0.1}
 {"adv": "sub_n8", "t_c_index": 3, "secs": 0.5}
+{"adv": "cspin", "t_c_index": 3, "secs": 249.1}
+{"tag": "1UBQ_p19_N10_o0_g0", "secs": 1333, "best": "pauli_eps0.0001", "params": [["radial_HA/GLU16", 476.5], ["radial_HG22/ILE3", 62.6], ["radial_HG3/GLN2", 65.2], ["rigid_res16", 476.5]], "tc": {"pauli_w2": 2, "pauli_w3": 2, "pauli_w4": 3, "pauli_w5": 4, "pauli_eps0.001": 3, "pauli_eps0.0001": 17, "sub_n6": 2, "sub_n8": 3, "cspin": 3}}

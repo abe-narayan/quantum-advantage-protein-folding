@@ -112,3 +112,18 @@ _Written 2026-09-27, during the quantum-advantage discovery sprint. **Timing dis
 - Metric: paired ΔRMSD(soft − argmin) to native (ORACLE label, evaluation only). MDE = 2.8016·SE over crops.
 
 **Kill (K-G1d extended, closes the transmission clause of H-006):** the median gain of the soft readout at T* is < 1.0 MDE at both L.
+
+### C1-HN (added 2026-09-27, before any output): dilute amide-proton (perdeuterated) network
+
+The same C1 statistics apply (transfer, and OTOC for N ≤ 12), with the same kill thresholds, on the backbone amide-H-only network.
+- Probes: 1PGA, 6 probes across the strands and the helix; 1UBQ, 4 sheet probes.
+- N = 10 and 12; γ = 0; dt = 5 µs; 200 steps (1 ms window).
+
+Rationale: sparser, weaker couplings lead to less ergodic dynamics. O'Brien et al. found learnability there; the question is whether classical approximations are also easy there. Output: `research/results/RAW/nmr_gate_hn/`.
+- 2026-09-27 (R2-T deviation, logged after ONE crop's output was seen: 3TE4A_60, where the Laplace soft readout was 0.8–1.2 Å worse than the argmin at every T): **the Laplace weighting is invalid for the A80 energy.** The pair potentials are linearly interpolated on a 0.05 Å table, so E is piecewise smooth. Repeated L-BFGS with memory restarts plateaus at gradient norms of 2–130, never 0, and endpoint Hessians have ~40% non-positive eigenvalues. The Laplace volume term is replaced by two native-free weightings:
+  - (a) w_k ∝ exp(−E_k/T) (energy-only soft-min, as in the S33 soft readout);
+  - (b) w_k ∝ n_k·exp(−E_k/T), where n_k is the number of restarts in cluster k (prior basin-of-attraction weight).
+
+  Minimisation now runs 3 rounds of 400 L-BFGS iterations with memory restarts. The kill rule is unchanged and is applied to both weightings. The v1 outputs are moved to `RAW/g1_transmission_v1_invalid/`.
+- 2026-09-27 (compute-budget pruning, before these jobs produced output): the queued C2 runs at N = 16/20 with γ = 1000 are cancelled. Transfer at γ > 0 is already classically exact at N ≤ 10, and the C2/C3 decision rests on the γ = 0 series. The C1 N = 12 orientation-1 runs are also cancelled. They are listed in `research/results/RAW/master/cancel.txt`.
+- 2026-09-27 (compute pruning, before output): cancelled C1 N=12 at γ ∈ {1000, 5000} (transfer at γ > 0 is classically exact at N = 10 in every job) and the 1UBQ C1-HN N=12 runs (the 1PGA HN N=12 runs are kept). Listed in `cancel.txt`.

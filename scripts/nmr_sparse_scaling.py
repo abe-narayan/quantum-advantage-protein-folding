@@ -49,6 +49,15 @@ def main():
     fj = os.path.join(a.out, tag + ".json")
     if os.path.exists(fj):
         print("exists"); return
+    _cancel = os.path.join(ROOT, "research", "results", "RAW", "master", "cancel.txt")   # governed-queue pruning
+    if os.path.exists(_cancel) and tag in open(_cancel).read().split():
+        print("cancelled by research/results/RAW/master/cancel.txt"); return
+    _run = fj + ".running"                                   # duplicate-instance guard (re-queued job names)
+    if os.path.exists(_run) and time.time() - os.path.getmtime(_run) < 6 * 3600:
+        print("in progress elsewhere"); return
+    open(_run, "w").write(str(os.getpid()))
+    import atexit
+    atexit.register(lambda: os.path.exists(_run) and os.remove(_run))
     t0 = time.time()
     names, xyz, resid = SP.read_h_coords(os.path.join(ROOT, "data", "instruments", "nmr", f"{a.pdb}_H.pdb"))
     idx = SP.cluster(xyz, a.probe, a.N)

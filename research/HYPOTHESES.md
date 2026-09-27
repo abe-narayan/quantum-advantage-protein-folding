@@ -97,3 +97,18 @@ Full statements, falsifiers, minimal and scaling experiments, resources, confoun
 - **Category:** 6.
 - **Falsifier:** a KILLED row the theorem does not cover.
 - **Status:** PROPOSED — `THEORY_ROADMAP.md` T1.
+
+## Discovery-sprint status updates (2026-09-27)
+
+Earlier entries are kept as written; status changes are recorded here. Sources: `research/theory/` (T1–T5, BREAK_EVEN), `research/discovery/` (the 28-mechanism attack), `experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`.
+
+- **H-001.** Split into H-001a (output equivalence: **PROVED**, T1 Theorems 1–2) and H-001b (cost equivalence). H-001b is proved for explicit tabulated E, **false** in the query model for implicit black-box E (Dürr–Høyer; quadratic), and open for structured E.
+- **H-006.** **KILLED at the practical level, independent of the landscape.** For any route that quadratically speeds up a classical sampler, the per-sample quantum wall-clock at break-even is T*_Q ≥ 0.26 yr (the most optimistic Cartesian target) and ≥ 1–20 yr (A80 target) at 1 µs Toffolis (T2 corollary; BREAK_EVEN §1). The hardness clause is still open: 0 round trips in NRPT pilots is significant at L=45 and marginal at L=60; unsaturated mode census at L ≥ 100. The transmission clause is under test (R2-T); pilot posterior E[RMSD] ties the lowest-E structure.
+- **H-007.** **KILLED (exploratory, pending replication).** The white-box pair tables let distance-geometry seeding reach the deepest known basin (QM-02 lens: 61/64 runs at 1–5% of restart/PT cost). Prior sublevel mass ≤ e^{−KL} with KL = 113–960 nats.
+- **H-008.** **RESOLVED (negative).** Break-even is computable (T3): G(L) ≈ 3×10⁴·L² Toffolis per faithful walk step, far above the ≤ 10⁶ hypothesised. B* ≥ 10¹⁰ (most optimistic) to 10²² (cited constants).
+- **H-009.** **FALSIFIED as worded** (T1 §7). QM-06 gives a rescoped screening checklist instead.
+- **H-C1 (new; Program C): protein ¹H dipolar dynamics carry structural information past the best classical approximation's failure time.**
+  - Transfer (2-point) branch: **KILLED at N = 10.** Sparse Pauli dynamics at ε = 1e-4 reproduces transfer exactly (f_hard = 0) on 1UBQ and 1PGA, at γ = 0, 1000 and 5000 s⁻¹.
+  - OTOC/echo branch: **OPEN.** At N = 10 every classical adversary fails by 80 µs, and 55–100% of the OTOC Fisher information lies later (1UBQ ×2 orientations, 1PGA ×2 probes; exploratory under C3). The decisive tests are C2/C3 scaling and R1-E embedding.
+  - Prior art: O'Brien et al. 2022 (NM-1).
+- **H-C1-null (competing): the late-window information is a finite-size artefact of isolated clusters, or is destroyed by bath dephasing.** Under test (R1-E). The bath second moment gives γ_i ≈ 3–9×10⁴ s⁻¹, ≥ 10× the C1 dephasing grid.

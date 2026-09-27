@@ -1,0 +1,11 @@
+{"exact_secs": 25.6, "mode": "sector"}
+{"adv": "pauli_w2", "t_c_index": 1, "secs": 2.5}
+{"adv": "pauli_w3", "t_c_index": 2, "secs": 3.9}
+{"adv": "pauli_w4", "t_c_index": 3, "secs": 123.3}
+{"adv": "pauli_w5", "t_c_index": 4, "secs": 85.1}
+{"adv": "pauli_eps0.001", "t_c_index": 2, "secs": 6.8}
+{"adv": "pauli_eps0.0001", "t_c_index": 17, "secs": 608.5}
+{"adv": "sub_n6", "t_c_index": 1, "secs": 0.1}
+{"adv": "sub_n8", "t_c_index": 2, "secs": 0.6}
+{"adv": "cspin", "t_c_index": 2, "secs": 221.8}
+{"tag": "1PGA_p325_N10_o0_g0", "secs": 1078, "best": "pauli_eps0.0001", "params": [["radial_HB3/TRP43", 2050.2], ["radial_HG1/THR44", 931.8], ["radial_HE3/TRP43", 648.8], ["rigid_res43", 623.8]], "tc": {"pauli_w2": 1, "pauli_w3": 2, "pauli_w4": 3, "pauli_w5": 4, "pauli_eps0.001": 2, "pauli_eps0.0001": 17, "sub_n6": 1, "sub_n8": 2, "cspin": 2}}

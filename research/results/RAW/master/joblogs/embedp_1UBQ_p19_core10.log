@@ -1,0 +1,4 @@
+{"env": "iso", "N": 10, "otoc": true, "secs": 17.2}
+{"env": "deph", "N": 10, "otoc": false, "secs": 140.4}
+{"env": "exact_N12", "N": 12, "otoc": true, "secs": 2163.4}
+{"env": "exact_N14", "N": 14, "otoc": false, "secs": 7716.6}

@@ -1,3 +1,11 @@
 {"exact_secs": 93.8, "mode": "sector"}
 {"adv": "pauli_w2", "t_c_index": 2, "secs": 2.2}
 {"adv": "pauli_w3", "t_c_index": 3, "secs": 3.6}
+{"adv": "pauli_w4", "t_c_index": 4, "secs": 389.9}
+{"adv": "pauli_w5", "t_c_index": 5, "secs": 119.4}
+{"adv": "pauli_eps0.001", "t_c_index": 3, "secs": 4.1}
+{"adv": "pauli_eps0.0001", "t_c_index": 17, "secs": 175.3}
+{"adv": "sub_n6", "t_c_index": 2, "secs": 0.1}
+{"adv": "sub_n8", "t_c_index": 2, "secs": 1.0}
+{"adv": "cspin", "t_c_index": 2, "secs": 284.0}
+{"tag": "1UBQ_p19_N10_o1_g1000", "secs": 1073, "best": "pauli_eps0.0001", "params": [["radial_HA/GLU16", 611.8], ["radial_HG22/ILE3", 56.0], ["radial_HG3/GLN2", 12857.1], ["rigid_res16", 611.8]], "tc": {"pauli_w2": 2, "pauli_w3": 3, "pauli_w4": 4, "pauli_w5": 5, "pauli_eps0.001": 3, "pauli_eps0.0001": 17, "sub_n6": 2, "sub_n8": 2, "cspin": 2}}

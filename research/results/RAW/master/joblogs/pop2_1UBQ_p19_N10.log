@@ -1,0 +1,4 @@
+{"p_step": 0.0, "tc_raw_k": null, "tc_mit_k": null, "secs": 2686}
+{"p_step": 0.001, "tc_raw_k": 10, "tc_mit_k": 80, "secs": 8064}
+{"p_step": 0.003, "tc_raw_k": 10, "tc_mit_k": 40, "secs": 12969}
+{"p_step": 0.01, "tc_raw_k": 10, "tc_mit_k": 40, "secs": 18085}

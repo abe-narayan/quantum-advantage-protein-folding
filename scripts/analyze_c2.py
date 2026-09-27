@@ -39,21 +39,52 @@ def t50_index(probe, gamma, obs="S"):
     return 8, None
 
 
+ALPHA = {}          # calibrated mixing weight per (probe, gamma), fitted on N = 8 exact data (see calibrate_alpha)
+
+
+def f_alpha(x, alpha):
+    """alpha-mixture OTOC estimator: F_plain + alpha (1 - N_k) F_plain / N_k  (alpha = 0: plain; 1: norm-corrected)."""
+    nk = np.maximum(np.asarray(x["kept_norm2"], float), 1e-12)
+    return {b: np.asarray(u, float) + alpha * (1 - nk[:len(u)]) * np.asarray(u, float) / nk[:len(u)] for b, u in x["F"].items()}
+
+
+def calibrate_alpha(r):
+    """least-squares alpha on an exact-referenced job (all eps runs, all times)."""
+    ex = r.get("exact") or {}
+    if not ex.get("F"):
+        return None
+    num = den = 0.0
+    for x in r["runs"]:
+        if "F" not in x:
+            continue
+        nk = np.maximum(np.asarray(x["kept_norm2"], float), 1e-12)
+        for b, u in x["F"].items():
+            u = np.asarray(u, float); n = len(u)
+            e = np.asarray(ex["F"][b])[:n]
+            d = (1 - nk[:n]) * u / nk[:n]
+            num += float((d * (e - u)).sum()); den += float((d * d).sum())
+    return num / den if den > 0 else None
+
+
 def job_summary(r, t50, obs="S", normcorr=False):
-    """obs = 'S' (transfer) or 'F' (OTOC).  normcorr: divide the truncated OTOC by the kept norm (gamma = 0)."""
+    """obs = 'S' (transfer), 'F' (OTOC) or 'Fa' (alpha-calibrated OTOC).  normcorr: divide the truncated OTOC by the
+    kept norm (gamma = 0)."""
     sig = r["sigma"]
-    runs = [x for x in r["runs"] if obs in x]
+    key = "F" if obs == "Fa" else obs
+    runs = [x for x in r["runs"] if key in x]
 
     def series(x):
-        v = {b: np.asarray(u, float) for b, u in x[obs].items()}
+        if obs == "Fa":
+            return f_alpha(x, ALPHA.get((r["probe"], r["gamma"]), 0.0))
+        v = {b: np.asarray(u, float) for b, u in x[key].items()}
         if obs == "F" and normcorr:
             nk = np.maximum(np.asarray(x["kept_norm2"], float), 1e-12)
             v = {b: u / nk[:len(u)] for b, u in v.items()}
         return v
     ref, ref_kind = None, None
     ex = r.get("exact")
-    if ex and ex.get(obs):
-        ref = {b: np.asarray(v) for b, v in ex[obs].items()}
+    if ex and ex.get(key):
+        ref = {b: np.asarray(v) for b, v in ex[key].items()}
         ref_kind = "exact"
     else:
         done = [x for x in runs if not x.get("capped") and x.get("steps_done", 0) >= r["steps"]]
@@ -107,10 +138,18 @@ def fit(Ns, Ms):
 
 def main():
     by = defaultdict(dict)
-    for f in sorted(glob.glob(os.path.join(RAW, "nmr_sparse", "*.json"))):
+    files = sorted(glob.glob(os.path.join(RAW, "nmr_sparse", "*.json")))
+    for f in files:                                      # alpha calibration on the N = 8 exact jobs
         r = json.load(open(f))
-        for obs, nc in (("S", False), ("F", False), ("F", True)):
-            if not any(obs in x for x in r["runs"]):
+        if r["N"] == 8:
+            al = calibrate_alpha(r)
+            if al is not None:
+                ALPHA[(r["probe"], r["gamma"])] = float(np.clip(al, 0.0, 1.0))
+    print("alpha (N=8 calibration):", ALPHA)
+    for f in files:
+        r = json.load(open(f))
+        for obs, nc in (("S", False), ("F", False), ("F", True), ("Fa", False)):
+            if not any(("F" if obs == "Fa" else obs) in x for x in r["runs"]):
                 continue
             t50, src = t50_index(r["probe"], r["gamma"], obs)
             s = job_summary(r, t50, obs, nc)

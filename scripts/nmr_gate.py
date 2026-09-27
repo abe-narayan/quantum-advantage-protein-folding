@@ -79,15 +79,30 @@ def main():
     ap.add_argument("--own-fi", type=int, default=-1, help="adversary's own FI via FD: -1 auto (N <= 10), 0, 1")
     ap.add_argument("--max-strings", type=int, default=3_000_000)
     ap.add_argument("--exact", default="auto", help="sector (deterministic) | typ | matrix (alias of sector) | auto")
+    ap.add_argument("--hn-only", type=int, default=0, help="1 = perdeuterated model: keep only backbone amide H")
     ap.add_argument("--out", default=os.path.join(ROOT, "research", "results", "RAW", "nmr_gate"))
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
-    tag = f"{a.pdb}_p{a.probe}_N{a.N}_o{a.orient}_g{int(a.gamma)}"
+    tag = f"{a.pdb}{'HN' if a.hn_only else ''}_p{a.probe}_N{a.N}_o{a.orient}_g{int(a.gamma)}"
     fj = os.path.join(a.out, tag + ".json")
     if os.path.exists(fj):
         print("exists"); return
+    _cancel = os.path.join(ROOT, "research", "results", "RAW", "master", "cancel.txt")   # governed-queue pruning
+    if os.path.exists(_cancel) and tag in open(_cancel).read().split():
+        print("cancelled by research/results/RAW/master/cancel.txt"); return
+    _run = fj + ".running"                                   # duplicate-instance guard (re-queued job names)
+    if os.path.exists(_run) and time.time() - os.path.getmtime(_run) < 6 * 3600:
+        print("in progress elsewhere"); return
+    open(_run, "w").write(str(os.getpid()))
+    import atexit
+    atexit.register(lambda: os.path.exists(_run) and os.remove(_run))
     t0 = time.time()
     names, xyz, resid = SP.read_h_coords(os.path.join(ROOT, "data", "instruments", "nmr", f"{a.pdb}_H.pdb"))
+    if a.hn_only:                                            # perdeuterated protein: backbone amide protons only
+        keep = [i for i, n in enumerate(names) if n.startswith("H/")]
+        assert a.probe in keep, "probe must be a backbone amide H"
+        names = [names[i] for i in keep]; xyz = xyz[keep]; resid = np.asarray(resid)[keep]
+        a.probe = keep.index(a.probe)
     idx = SP.cluster(xyz, a.probe, a.N)
     X0 = xyz[idx].copy()
     b0 = random_b0(1000 + a.orient)

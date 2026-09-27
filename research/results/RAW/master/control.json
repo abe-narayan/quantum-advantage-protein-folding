@@ -1,1 +1,1 @@
-{"max_workers": 5, "cpu_launch_max": 0.75, "cpu_suspend": 0.91, "cpu_resume": 0.82}
+{"max_workers": 5, "cpu_launch_max": 0.78, "cpu_suspend": 0.92, "cpu_resume": 0.84}

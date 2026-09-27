@@ -32,3 +32,4 @@ Thumbs.db
 # In-progress job outputs (atomic-write temporaries)
 *.partial
 *.tmp
+*.running
