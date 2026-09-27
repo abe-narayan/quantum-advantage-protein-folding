@@ -1,25 +1,64 @@
 # Current State
 
-_Last updated: 2026-09-27 (discovery sprint in progress)_
+_Last updated: 2026-09-27. **Discovery sprint PAUSED** at the user's request (resume in ~2 h). The previous entry (same date, "in progress") is superseded by this one; see git history for it._
 
 | Field | Value |
 |---|---|
 | Current research question | Is there a real place where quantum computation does something important for protein structure that the best classical approach cannot do as efficiently? If not, where and why does it fail? |
-| Phase | **Discovery sprint (in progress).** Infrastructure committed (4036d44). Theory T1–T5 written and skeptic-revised (research/theory). Discovery workflow: 28 candidate mechanisms generated, deduplicated and attacked from three lenses; synthesis pending. Experiments G1 (learned-posterior sampling), Q4 (cooperativity) and C1 (NMR hardness–identifiability) are pre-registered (`experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`) and running under the governor. |
-| Strongest hypothesis | **H-C1 (Program C):** protein ¹H dipolar spin dynamics carry structural Fisher information past the failure time of the best classical approximation, so a quantum forward model saves repetitions or identifies parameters a classical inversion cannot. Prior art: O'Brien et al., PRX Quantum 2022 (`discovery/NOVELTY_MEMOS.md` NM-1). |
-| Strongest competing hypothesis | H-C1-null: in the classically hard (ergodic) window the information is degenerate or destroyed by dephasing (O'Brien's ergodicity finding). Structure is then identified from early-time data that classical models reproduce. |
-| Status of the sampling route (H-006, QM-01…13) | **Killed at the practical level** by every attack lens so far: quadratic ceiling (T5) and break-even ≥ 1e12–1e22 classical evaluations per sample (T2/T3) against measured costs of 1e5–1e6. Pilots show real classical difficulty (unsaturated mode census at L ≥ 100; first-order-like λ-path bottleneck; zero NRPT round trips). Transmission is weak (ρ(E,RMSD over modes) = 0.31 at L=120). Production G1 runs are still confirming the kill criteria. |
-| Current best quantum architecture | None load-bearing. Candidate: quantum forward simulation of the protein ¹H dipolar network (Trotterised secular dipolar Hamiltonian, 2-point transfer and OTOC echoes), pending C1. |
-| Current strongest classical baseline | Structure: inherited (not reproduced). Sampling: NRPT + HMC + pivot moves; multistart L-BFGS census. NMR: panel of weight-w Pauli propagation, sparse Pauli dynamics (ε), sub-cluster exact, classical-spin dynamics. |
-| Current best result | Instruments: sector-exact deterministic NMR reference (1e-15 agreement with the dense matrix, 200× faster). NMR smoke evidence (N=8): OTOC observables carry 10–40× the Fisher information of 2-point transfer, and classical models fail on them earlier (not yet a result). |
-| Running experiments | Governor (`research/results/RAW/master/`): NMR v2 grid (N=10 × 6 probes × 2 orientations × γ∈{0,1000,5000}; N=12; N=14 γ=0), mode census L=120/150, 2048-restart census, λ-path T-scan, temperature exchange, synthetic lab. |
-| Compute note | Workflow agents' own checks ran outside the governor and pushed CPU above 95% for stretches. Governed jobs were throttled to compensate. Suspending agent processes was refused by the permission classifier and is not done. |
-| Current Git checkpoint | 4036d44 (infrastructure). Later work uncommitted: theory T1–T5, prereg, NMR v2 instrument, discovery memos. |
+| Phase | **Discovery sprint, PAUSED mid-experiment.** The master governor (and every governed job) was stopped by the host for low system memory while the session was idle, and the user then asked to pause. Nothing is running. All completed results are committed. |
+| Strongest hypothesis | **H-C1 echo branch (Program C):** protein ¹H dipolar **echo (first-order OTOC)** signals carry structural Fisher information past the failure time of every classical approximation tested. MEASURED at N=10 on 1UBQ and 1PGA, dense and amide-only networks (f_hard 0.55–1.0; echo FI 10–160× transfer FI). Survives the embedding test to N_env = 12 (echo) / 14 (transfer). The needed classical string count grew 16× from N=8 to N=10 (≈ ¼ of the full 4^N operator space). Prior art: O'Brien et al., PRX Quantum 2022 (NM-1). |
+| Strongest competing hypothesis | H-C1-null: the echo window is a small-N effect. (i) Exact classical simulation of the light cone stays feasible (sector-exact N=14 ≈ 15 min). (ii) A coarse-grained operator-front model reproduces the echoes (untested). (iii) The information weakens in larger baths: transfer late-FI fell to 22–24% at N_env = 14. |
+| Killed | All 28 discovery mechanisms as quantum-advantage claims (`discovery/KILLED_DIRECTIONS.md`). Sampling/optimisation of the learned energy is killed at the practical level by the landscape-independent floor T*_Q ≥ 0.26 yr per sample (T2/T3). NMR 2-point transfer is killed: sparse Pauli dynamics is exact at N=10 (f_hard = 0). |
+| Current best quantum architecture | None load-bearing. Candidate: quantum forward simulation of NMR echo dynamics. The shot-based circuit is exact past the classical failure time without noise. With echo normalisation it keeps a window only at ≤ 1e-3 depolarising noise per qubit per Trotter step (≈ 1e-4 per two-qubit gate). Fault-tolerant cost ≈ 11 h per forward evaluation (depth-limited); practical level L0. |
+| Current strongest classical baseline | NMR: sparse Pauli dynamics (ε down to 3e-5), weight-w Pauli, sub-cluster exact, classical spins, norm-corrected and α-calibrated echo estimators, Gaussian-bath dephasing. Sampling: NRPT + HMC + pivots; converged multistart. |
+| Current Git checkpoint | 50e0c9e (plus the pause commit that adds this file and `scripts/make_resume_spool.py`). |
+
+## What finished (on disk, committed)
+
+- C1 v2: 1UBQ probe 19 (N=10; γ = 0, 1000, 5000; 2 orientations). 1PGA replication (2 probes). C1-HN dilute amide networks (≥ 8 jobs).
+- R1-E embedding (1UBQ probes 19 and 245): kill rules not fired. Summary: `results/PROCESSED/embed_summary.json`.
+- Q-PoP quantum circuit, N=10, 2 probes, 4 noise levels: `results/RAW/nmr_pop/`. The N=12 run is partial.
+- C2/C3 sparse-Pauli scaling at N = 8 and 10 (γ = 0 and 1000). The N=12 and N=14 runs were interrupted; their `.partial` files are kept but will be recomputed.
+- Theory T1–T6, resource models, all discovery artifacts, report and claim-audit drafts (`reports/`, with ⟦…⟧ fill-in markers).
+- R2-T transmission: 1 of 32 crops (v2 weighting).
+
+## RESUME PROCEDURE (do exactly this)
+
+1. **Check memory first.** Resume only if RAM use is < 75% with the user's apps open. The host kills background shells under memory pressure.
+2. **Rebuild the queue** (skips finished outputs, cancelled tags and duplicates; orders by decision value):
+   `python scripts/make_resume_spool.py`. At pause time this gave 177 jobs:
+   - 11 C2/C3 scaling (γ = 0 first, N ascending; **decisive**);
+   - 31 transmission crops;
+   - 1 PoP N=12;
+   - 52 C1/HN NMR;
+   - 33 census (L = 120/150 + 2048-restart);
+   - 20 T-scan;
+   - 24 temperature exchange;
+   - 5 synthetic.
+3. **Set a conservative control file.** Write `research/results/RAW/master/control.json` =
+   `{"max_workers": 3, "cpu_launch_max": 0.75, "cpu_suspend": 0.90, "cpu_resume": 0.80}`.
+   The N ≥ 14 jobs use 2–3.5 GB each, so keep ≤ 3 workers.
+4. **Start the governor on the resume spool** (a background shell):
+   `python -m qapf.governor /dev/null --log research/results/RAW/master/governor.jsonl --max-workers 3 --spool research/results/RAW/master/spool_resume.jsonl --forever --stop-file research/results/RAW/master/STOP`
+5. **Analyse as results land:**
+   - `python scripts/analyze_c2.py` for C2/C3. The pre-registered kill: power-law fit better by ΔBIC > 10, or M*(60) < 1e9.
+   - `python scripts/analyze_transmission.py`
+   - `python scripts/analyze_nmr2.py research/results/RAW/nmr_gate`
+   - `python scripts/analyze_g1.py`
+   - `python scripts/make_figures.py`
+6. **Then:**
+   - launch the adversarial-replication workflow on the echo claim (independent reimplementation, FI-methodology attack, operator-front classical estimator; agents must submit heavy runs through the governor);
+   - fill the ⟦…⟧ markers in `reports/QUANTUM_ADVANTAGE_DISCOVERY_REPORT.md` and `reports/QUANTUM_ADVANTAGE_CLAIM_AUDIT.md`;
+   - write `research/paper/*` and update KILLBOOK / SCIENTIFIC_MEMORY / OPEN_QUESTIONS;
+   - commit;
+   - give the user the condensed final report.
+
+If compute must be cut: C2/C3 at N = 12–16 (γ = 0) and the transmission test are the decisive items. The G1 production runs (T-scan, temperature exchange, 2048 census) are pre-registered confirmations of kills already established by theory.
 
 ## Where things are
 
-- **Discovery:** `research/discovery/` (NOVELTY_MEMOS so far; the other files follow the workflow synthesis).
-- **Theory:** `research/theory/PROOFS/` (T1 reduction, T2 sampling speedup + break-even, T4 amplified mode finding), `NO_GO_RESULTS/T5_quadratic_ceiling.md`, `RESOURCE_MODELS.md` (T3 Toffoli costs).
-- **Pre-registration:** `research/experiments/PREREGISTERED/PREREG_G1_C1_Q4.md` (with deviation log).
-- **Code:** `src/qapf/protein` (vendored A80/esmprior_v1, ladder instrument), `src/qapf/sampling` (NRPT, T-exchange), `src/qapf/nmr/spins.py` (exact, sector-exact, Pauli, classical-spin), `src/qapf/synthetic`, `scripts/`.
-- **Literature, map and inherited evidence:** as before (`research/literature/`, `QUANTUM_OPPORTUNITY_MAP.md`, `sprint29…33/`).
+- **Discovery:** `research/discovery/` (CANDIDATE_MECHANISMS, CLASSICAL_COUNTERARGUMENTS, KILLED/SURVIVING_DIRECTIONS, ADVANTAGE_THESES, ARCHITECTURE_SEARCH, QUANTUM_PRIMITIVES, NOVELTY_MEMOS, attack_records.json).
+- **Theory:** `research/theory/` (PROOFS T1, T2, T4, T6; NO_GO T5; RESOURCE_MODELS (T3); ADVANTAGE_CONDITIONS; COMPLEXITY; BREAK_EVEN; `nmr_resource_model.py`).
+- **Pre-registration + deviation log:** `research/experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`. Ledger: `research/experiments/README.md`.
+- **Code:** `src/qapf/nmr/` (spins.py: sector-exact, Pauli, classical spins; circuit_pop.py: shot-based quantum circuit), `src/qapf/protein`, `src/qapf/sampling`, `scripts/`.
+- **Governor state:** `research/results/RAW/master/` (governor.jsonl, spool.jsonl, cancel.txt, control.json, joblogs/).
