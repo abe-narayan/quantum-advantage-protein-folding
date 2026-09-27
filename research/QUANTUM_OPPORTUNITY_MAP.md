@@ -119,3 +119,44 @@ The ranking is by (evidence that the question is open) × (cost to decide) × (w
 - **Most likely:** ranks 2–4 kill themselves classically. Samplers mix adequately, search saturates, and decisions are bias-limited. The program then concludes with a strong, scoped negative: *at protein lengths up to N and with learned pair energies, no quantum primitive with a known separation addresses a measured bottleneck*. That is a publishable category-6 / negative result, and it keeps the predecessor's lesson intact.
 - **Less likely but valuable:** classical mixing time grows steeply with length on the learned-energy posterior, *and* better sampling transmits to the chain. That would make AA-1 the program's first genuinely load-bearing candidate. Even then, the claim available before hardware is a **resource-estimate (category 3) / theoretical (category 6)** claim, not an empirical advantage.
 - **Not expected:** any near-term empirical (category 2) or hardware (category 5) advantage. Nothing in the evidence supports planning for one.
+
+---
+
+## Version 2 update: literature phase (2026-09-26)
+
+_Source: `research/literature/` (six verified literature searches; the matrix is in `literature/OPPORTUNITY_MATRIX.md`). Version 1 above is kept unchanged as history. Where v2 and v1 differ, v2 governs._
+
+### Status changes from the literature
+
+| v1 item | v2 status | Reason (see literature files) |
+|---|---|---|
+| C-1 / SP-1 / AA-1 posterior sampling at length | **INTERESTING (conditional)**, unchanged in direction but sharpened | The only line that survives the classical-first filter. At most quadratic, query-model and fault-tolerant [A8, A31, A44, A45]. Needs a measured classical cost above an explicit fault-tolerant break-even (CA-1: [A56, B46]). |
+| *(new)* continuous quantum Langevin / replica-exchange / QSVT samplers | **INTERESTING, top theory line** | Best formal match to SP-1 [A44]. First provable continuous separation, Ω(α) vs Õ(√α), on hide-and-seek wells [A45]. |
+| QA-1 amplitude estimation (C-3) | **KILLED (practical)** | Biomolecular estimates are bias- and mixing-limited [B71]. Break-even needs σ/ε ≳ 10⁴; protein decisions need 10–10² [B §5]. The S33 soft-readout signal was an exact sum, with no variance [B §7]. |
+| QA-2 Grover over candidate/fragment spaces | **KILLED** | Structure plus fault-tolerant overhead [C63–C65]; oracle is a reversible decoder |
+| QA-3 quantum-walk hitting / search | **WEAK** | WE, TPS and MSMs already remove the waiting-time exponential [E60–E67]; kinetics are outside the endpoint |
+| QA-4 backtracking / B&B (C-4) | **WEAK** | Relative to the same tree; exact classical solvers prune it [C82, C83, C85]; CSP advantage "disappears" [C63] |
+| AA-2 amplitude-amplified restarts (C-2) | **KILLED** | Restart saturation gives at most ~8× fewer calls; quadratic fails the fault-tolerant test [C64, C65] |
+| AA-3 electronic structure | **WEAK / out of scope** | No generic exponential advantage [F64]; FeMoco model solved classically [F65]; energy accuracy is not the structure bottleneck (DE-7) |
+| AA-4 QSVT readouts | **KILLED** (confirmed) | Dequantisation [F52–F55]; QRAM [F56] |
+| SP-2 / SP-3 / SP-4 | Folded into M1/M2 | — |
+| DE-1 … DE-9 | **Confirmed** by the literature | The quantum-folding literature shows the same failure modes [D §4, §10] |
+
+### New required element: break-even
+
+Every sampling claim must be compared with **B(L)**, the fault-tolerant break-even number of classical steps per independent sample for a coherent learned-energy walk operator.
+- No published estimate exists (literature gap G-2).
+- A rough I(agent) estimate is ~10⁶–10⁸ Toffolis per step at L = 100, which makes quantum relevant only if the best classical sampler needs ≳10¹²–10¹⁵ steps per sample [A §3.9].
+
+### v2 ranking (supersedes v1 §8)
+
+| Rank | Item | Type | Status |
+|---|---|---|---|
+| 1 | **G1**: classical mixing-cost scaling of the learned-energy posterior vs length, with sampled soft-readout transmission (H-006) | Classical measurement | **HIGH PRIORITY: the next experimental gate** |
+| 1 (parallel) | **G2**: fault-tolerant resource estimate of a learned-energy walk operator → B(L) (H-008) | Theory / compilation | **HIGH PRIORITY** |
+| 2 | **G3**: landscape census for persistence / hide-and-seek structure (H-007) | Classical, from G1 runs | PROMISING |
+| 2 | **G4**: generalised H-001 reduction theorem (H-009) | Theory | PROMISING |
+| 3 | M1 / M2 quantum sampling | Quantum (only after G1–G3) | INTERESTING (conditional) |
+| — | Everything else | — | WEAK or KILLED (`literature/OPPORTUNITY_MATRIX.md`) |
+
+**Expected outcome (I(prog), unchanged in spirit from v1).** Most likely G1 or G2 kills M1/M2, giving a scoped, publishable negative (category 6/3). A positive would support a category-3 resource claim only, not an empirical or hardware advantage.

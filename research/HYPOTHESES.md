@@ -52,6 +52,7 @@ None are pre-registered yet. All five are **PROPOSED**. Each needs a written pre
 - **Basis:** mid30 soft-over-hard 1.40× RESULT; diversity beats selection (M). Hardness never measured (U).
 - **Kill criterion (draft):** (a) mixing within the compute budget with polynomial scaling of modest degree at all tested lengths, or (b) the soft readout from a better-converged ensemble not improving the chain by ≥ 1.0× MDE.
 - **Status:** PROPOSED (opportunity-map rank 2). **Classical-only first step.**
+- **2026-09-26 literature update:** SUPERSEDED by H-006 (sharpened: best classical *portfolio*, explicit break-even, sampled not enumerated soft readout) and H-007 (landscape mechanism). Kept for history.
 
 ### H-004 (PROPOSED): a search gap opens beyond 60 aa
 - **Statement:** The gap between the continuous decoder's result and the information floor (the native relaxed under the same energy) grows with chain length, and multi-restart classical search stops closing it beyond about 60 aa.
@@ -59,6 +60,7 @@ None are pre-registered yet. All five are **PROPOSED**. Each needs a written pre
 - **Basis:** At 44–60 aa, 32–64 restarts saturate and the gap is ≤ 0.14 Å on 6 dev targets (M). Nothing beyond 60 aa (U).
 - **Kill criterion (draft):** the gap does not grow with length, or stays within noise, on ≥ 20 targets per length band.
 - **Status:** PROPOSED (rank 3).
+- **2026-09-26 literature update:** the *quantum payoff* of a search gap (amplitude-amplified restarts, Grover, backtracking) is KILLED by fault-tolerant overhead and restart saturation [C63–C65] (`literature/OPPORTUNITY_MATRIX.md` M9). H-004 is retained only as a classical measurement of information value, measured opportunistically alongside H-006.
 
 ### H-005 (PROPOSED): some pipeline decision is estimator-variance-limited
 - **Statement:** At least one decision in the best classical pipeline (e.g. ensemble weights, basin free-energy differences) changes with Monte Carlo sample count at feasible budgets. That makes quadratic-precision estimation (amplitude estimation) relevant.
@@ -66,3 +68,32 @@ None are pre-registered yet. All five are **PROPOSED**. Each needs a written pre
 - **Basis:** None positive. All inherited limits are bias- or information-limited (I(prog)).
 - **Kill criterion (draft):** decisions are stable at feasible sample counts.
 - **Status:** PROPOSED (rank 4, low prior).
+- **2026-09-26 literature update:** RETIRED as a standalone hypothesis. Biomolecular estimates are bias-/mixing-limited [B71]; amplitude-estimation break-even needs σ/ε ≳ 10⁴ vs protein decisions at 10–10² (`literature/CLASSICAL_COUNTERARGUMENTS.md` CA-4). Kept only as a zero-cost side measurement in H-006 runs.
+
+## Hypotheses from the literature phase (2026-09-26)
+
+Full statements, falsifiers, minimal and scaling experiments, resources, confounds and differences from S29–S33 are in `literature/LITERATURE_REVIEW.md` §10. None is pre-registered yet.
+
+### H-006 (PROPOSED; supersedes H-003): learned-energy posterior sampling is classically hard at length **and** samples transmit
+- **Statement:** for π_L ∝ exp(−E_learned/T) over Cα traces, L ∈ [30,150], the best equal-effort classical portfolio (PT/REST2+HMC, SMC, learned-proposal MCMC, amortised independence proposal) needs cost growing super-polynomially in L — or ≳10¹² steps per independent sample — to reach a fixed soft-readout quality; and the *sampled* soft readout beats argmin/decoder on the built chain by ≥1.0× MDE.
+- **Category:** classical precondition for 3/4/6 (M1, M2).
+- **Falsifier (draft):** low-degree polynomial cost with ≤10⁹ steps/sample at L=150, OR no transmission at long40 scale.
+- **Status:** PROPOSED — **the next experimental gate (G1)**, after T1/T2 in `THEORY_ROADMAP.md`.
+
+### H-007 (PROPOSED): learned-energy landscapes exhibit persistence / hide-and-seek structure
+- **Statement:** at the posterior temperature, narrow deep modes carry mass comparable to broad modes (Woodard persistence [E39]; the instance class of the provable separation [A45]), increasingly with L.
+- **Category:** classical mechanism for H-006; determines relevance of M2.
+- **Falsifier:** funnel-like mass concentration in wide basins, or negligible narrow-mode mass at all L.
+- **Status:** PROPOSED — measured from G1 runs (G3).
+
+### H-008 (PROPOSED): the fault-tolerant break-even of a coherent learned-energy walk operator is computable and not astronomically far
+- **Statement:** one Metropolis/Szegedy (or quantum RELD) step for an O(L²) shared-spline pair energy compiles to ≤10⁶ Toffolis at L=100, giving break-even B(L) ≤10¹² classical steps/sample under Sanders/Babbush assumptions [A56, B46].
+- **Category:** 3 (resource estimate).
+- **Falsifier:** ≫10⁶ Toffolis/step or B(L) >10¹⁵.
+- **Status:** PROPOSED — paper study (G2), parallel to G1.
+
+### H-009 (PROPOSED; generalises H-001): a single classical-reproducibility theorem covers every KILLED direction
+- **Statement:** the S29–S33 reductions are instances of known general results — error-mitigated noisy circuits [F35], barren-plateau-free circuits [F37], trainable generative models [F91], dequantisation [F52–F55] — and one screening theorem covers all matrix rows marked KILLED.
+- **Category:** 6.
+- **Falsifier:** a KILLED row the theorem does not cover.
+- **Status:** PROPOSED — `THEORY_ROADMAP.md` T1.
