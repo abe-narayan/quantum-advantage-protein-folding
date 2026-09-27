@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qapf"
+version = "0.0.1"
+description = "Research program: where, if anywhere, can quantum computing give a defensible advantage for protein structure computation?"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+analysis = ["pandas>=2", "matplotlib>=3.8"]
+# Quantum libraries are added per research lane as separate extras, only when needed.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
