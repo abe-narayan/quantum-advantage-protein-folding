@@ -96,3 +96,5 @@ Concrete first projects, all laptop-scale:
 - **#4.** A minimal 4-Mn model of the S₂ state. Check whether the ordering of the g = 2 and g = 4.1 spin isomers is converged in DMRG bond dimension.
 
 Each of these is the direct analogue of the attack that killed the NMR echo at observable times (K-119). If the wall is never reached at useful sizes, record the kill. If it is reached, cost the quantum circuit for that exact regime.
+
+_See also `NOVEL_ADVANTAGE_SEARCH.md` (2026-09-28): the deep search for an undiscovered advantage, with a red-team pass, and the recommended "classical wall" project._
