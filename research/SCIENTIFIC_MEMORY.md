@@ -80,3 +80,25 @@ Durable conclusions (L = literature claim with key; I(prog) = program reasoning)
 6. **L.** Generic advantage claims (RCS, IBM utility, GBS) were mostly matched classically; D-Wave 2025 disputed; 67-q RCS and OTOC(2) stand but have no protein mapping [F §1]. Trainable ⇒ often classically simulable [F37, F91]; noisy+mitigated ⇒ classically simulable [F35]; dequantization [F52–F55]. These generalise H-001 (→ H-009).
 7. **I(prog).** Only one line survives the classical-first filter: sampling a **specified learned-energy posterior** at ≥60 aa (walk/QSA/continuous quantum samplers; M1/M2, INTERESTING-conditional). The S33 soft-readout signal was an exact enumerated sum — evidence of *value*, not of *hardness*.
 8. **I(prog).** The decisive missing measurement is **classical**: mixing-cost growth vs length of the best classical sampling portfolio on such a posterior, plus sampled-readout transmission (G1 / H-006), alongside the first FT resource estimate of the matching walk operator (G2 / H-008). This is the next experimental gate. A scoped negative is the most likely outcome.
+
+
+## 2026-09-27: Discovery sprint, durable lessons (source: `research/theory/`, `research/discovery/`, `research/experiments/ADVERSARIAL/`, PREREG deviation log)
+
+1. **DERIVED. Landscape-independent floor.** For any route that quadratically accelerates a classical sampler, the per-sample quantum wall-clock at break-even is T*_Q = Aρ(K n_b G t_T)²/c. No amount of classical hardness makes such a route practical below that floor. For the A80 learned energy, G(L) ≈ 3×10⁴·L² Toffolis gives T*_Q ≥ 0.26 yr/sample at 1 µs Toffolis. Always compute this floor before measuring classical hardness.
+2. **MEASURED. Stopping an adversary ladder early manufactures "hardness".**
+   - The NMR echo window at N = 10 (f_hard ≈ 0.95) vanished when sparse Pauli dynamics went from ε = 1e-4 to 3e-5 (median 0.00).
+   - An adversary ladder must be run to saturation, and exact classical cost must be reported alongside it.
+   - The pre-registered weight-4 adversary alone would have produced a false positive (f_hard 0.99).
+3. **DERIVED + MEASURED. Pauli-string counts are not a hardness metric at small N.** They saturate the parity-allowed operator space (M* ≈ 4^N/4). Exact sector or statevector simulation is cheaper at every N where they were measured.
+4. **MEASURED. Transfer is compressible; echoes are not.**
+   - Two-point transfer reads one Pauli coefficient and is truncation-robust (operator hydrodynamics).
+   - First-order echoes read the whole anticommuting operator weight. No sub-exponential representation was found (≥ 9 families, N ≤ 16).
+   - Incompressibility is a precondition for quantum advantage, not evidence of it. The other preconditions are exact reach, physical reversibility and informational value.
+5. **LITERATURE-SUPPORTED + INFERENCE. Irreversibility and classical hardness come from the same scrambling.** Both scale with T2. Rescaling couplings (dilution, deuteration, Floquet) moves the informative window and the reversal horizon together.
+6. **MEASURED. The A80 energy is piecewise smooth** (0.05 Å table interpolation). L-BFGS endpoints are not stationary points, so Laplace/Hessian basin masses are invalid for it.
+7. **MEASURED. Gain statistics.**
+   - "Information after the classical failure time" overstates the classical deficit by 3–5000× relative to an estimator-level fit of the biased model to all data.
+   - Use estimator-level bias, joint data and realistic priors.
+8. **Operational.**
+   - Workflow agents' own computations bypass the governor. Cap agent compute explicitly in prompts.
+   - The Claude Code host reaps background shells under low system memory. Run ≤ 4–5 workers with RAM launch ≤ 82%, and keep resume state on disk.

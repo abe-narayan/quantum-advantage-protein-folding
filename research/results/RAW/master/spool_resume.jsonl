@@ -183,3 +183,15 @@
 {"name": "cone_1UBQ_p19_N18", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 19 --N 18", "ram_gb": 0.8, "threads": 1, "priority": 1}
 {"name": "cone_1UBQ_p245_N16", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 245 --N 16", "ram_gb": 0.8, "threads": 1, "priority": 1}
 {"name": "cone_1UBQ_p19_N16", "cmd": "python research/experiments/ADVERSARIAL/R1_theory_hardness/typicality_cone.py --probe 19 --N 16", "ram_gb": 0.8, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc12_N20", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 12 --Ntot 20 --M 80", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc12_N20", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 12 --Ntot 20 --M 80", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc12_N16", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 12 --Ntot 16 --M 80", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc12_N16", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 12 --Ntot 16 --M 80", "ram_gb": 0.5, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc10_N18", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 10 --Ntot 18 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc10_N18", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 10 --Ntot 18 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc10_N14", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 10 --Ntot 14 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc10_N14", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 10 --Ntot 14 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc10_N20", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 10 --Ntot 20 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc10_N20", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 10 --Ntot 20 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p245_Nc10_N16", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 245 --Nc 10 --Ntot 16 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}
+{"name": "hyb_p19_Nc10_N16", "cmd": "python research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py --probe 19 --Nc 10 --Ntot 16 --M 120", "ram_gb": 0.4, "threads": 1, "priority": 1}

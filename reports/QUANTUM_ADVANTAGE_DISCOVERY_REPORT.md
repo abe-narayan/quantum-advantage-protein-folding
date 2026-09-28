@@ -95,11 +95,68 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 
 ## 10. Negative results
 
-⟦NEGATIVE⟧
+**N1. Sampling or optimising the learned structure energy: no advantage at any accounting (K-101, K-102).** DERIVED + MEASURED
+- The landscape-independent floor is T*_Q ≥ 0.26 yr per sample at 1 µs Toffolis, ≥ 1–20 yr on the A80 target, and 10⁵–10⁷ yr at central constants (T2 + T3).
+- Measured classical costs: NRPT 0 round trips within 2–4×10⁵ evaluations (a lower bound for one method); multistart ~2×10³–2.5×10⁴ evaluations per hit of the best-found basin.
+- Break-even needs ≥ 10¹⁰–10¹¹ evaluations per sample.
+- Amplified multistart: p* ≤ 10⁻¹¹ vs measured p_hit ~ 10⁻² (T4).
+
+**N2. 25 further mechanisms killed by theorem, measurement, resource or information arguments** (K-103, `research/discovery/KILLED_DIRECTIONS.md`). Among them:
+- QHD (Gaussian homotopy dequantises the known separation family);
+- ground-state parents (BCGL fixed-node dominance);
+- QLSA committors (barrier exponential conserved);
+- Kikuchi on pairwise protein data (arity collapse);
+- restraint posteriors (assignment collapse);
+- knots (≤ 8 crossings);
+- oscillator simulation (Ω(N) loading);
+- metal cofactors (outside the structure endpoint);
+- sensing (not computation).
+
+**N3. NMR two-point transfer as a quantum forward model: killed (K-104).** MEASURED
+- Sparse Pauli dynamics at ε = 1e-4 reproduces transfer exactly at N = 10 on 1UBQ and 1PGA, for dense and amide-only networks at γ = 0 / 10³ / 5×10³ s⁻¹ (f_hard = 0).
+- The pre-registered weight-4 adversary (f_hard ≈ 0.99) was too weak; the adversary panel caught it.
+
+**N4. NMR dipolar echo (OTOC(1)) as a quantum forward model for structure (R1): killed (K-105).**
+- ε = 3e-5 sparse Pauli (≈ full operator space) and exact simulation (seconds) reproduce the N = 10 echo. Median f_hard over 17 parameters falls from 0.95 to 0.00 once the ε ladder is completed (MEASURED).
+- The N = 10 reference is unconverged in cluster size (MEASURED).
+- The pre-registered C3 feasibility survival clause failed: the informative window lies at 4.8–25 T2 versus measured reversal horizons T3 ≈ 4–6.7 T2. Transfer of those horizons to proteins is INFERENCE.
+- Realistic value: gain ≈ 1.1–1.5 under priors and attenuation (MEASURED on stored Jacobians).
+- Break-even vs exact classical simulation needs N_eff ≈ 30–47 at 4–6 h per quantum evaluation (DERIVED).
+
+**N5. Quantum hardware noise (Q-PoP).** MEASURED, simulator only
+- Unmitigated echo circuits fail immediately (20 µs) at every noise level ≥ 1e-3 per qubit per Trotter step.
+- With echo-normalisation mitigation, a window beyond the (then) classical-approximation failure time exists only at ≤ 1e-3 (≈ 1e-4 per two-qubit gate) and closes at 3e-3.
+
+**N6. Transmission (R2-T).** ⟦R2T⟧
+
+**N7. G1 production (pre-registered confirmations).** ⟦G1PROD⟧
 
 ## 11. Positive results
 
-⟦POSITIVE⟧
+There is no positive quantum-advantage result. The following are measured facts that stand:
+
+**P1. Instruments (MEASURED).**
+- A deterministic sector-exact solver for protein ¹H dipolar dynamics, validated to 1e-15 against the dense Heisenberg matrix with and without dephasing, and independently reimplemented to 1e-14.
+- A shot-based quantum echo circuit that reproduces the exact echo within 1–2 SE.
+
+**P2. Echoes resist compression (MEASURED).** At N ≤ 16, no sub-exponential classical representation of the protein ¹H echo was found. Families tried:
+- weight-w and ε ≥ 1e-4 Pauli;
+- CCE to order N−3;
+- operator-spreading / FKPP;
+- stochastic Pauli;
+- MPO with χ ≤ 64;
+- classical spins / DTWA;
+- a hybrid exact-core + classical-spin bath (errors 4–20 σ against the N = 16 reference).
+
+Only representations holding essentially the full operator space succeed, and exact simulation is cheap there. Transfer, by contrast, is compressible. The mechanism is explained in T6: transfer is one Pauli coefficient, while the echo is the whole-operator anticommuting weight.
+
+**P3. Classical landscape science (MEASURED; classical, not quantum).** The first characterisation of a language-model-derived distogram posterior along a 30–150 aa ladder:
+- the mode census is unsaturated at L ≥ 100;
+- the λ-path shows a communication barrier Λ ≈ 14–29 with 0 round trips;
+- ρ(E, RMSD) over modes ≈ 0.31 at L = 120;
+- the A80 energy is piecewise smooth (0.05 Å table), which invalidates Laplace basin masses.
+
+**P4. R1-SIM (physics-simulation residue).** ⟦R1SIM⟧
 
 ## 12. Theoretical results
 
@@ -137,11 +194,33 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 
 ## 15. Hardware analysis
 
-⟦HARDWARE⟧
+- **NISQ.** Echo circuits for N = 14–120 spins need 3×10⁴–3×10⁵ two-qubit gates; fidelity is e^{−32} to e^{−270} at 10⁻³ error. The simulated noise attack (N5) shows mitigation only helps at ≤ 1e-4 per two-qubit gate, and only at N = 10, where exact classical simulation is trivial.
+- **Fault-tolerant.**
+  - The sampling family needs 10⁴–10⁵ logical and 10⁷–10⁸ physical qubits, with per-sample wall-clock ≥ months (T3, T2).
+  - The NMR forward model needs 10¹¹–10¹³ T gates per evaluation, 4–11 h per evaluation even with unlimited factories at 1 µs T-layers, and ~10 yr for an inversion.
+  - Every break-even run needs CCZ error ≤ 3×10⁻¹⁴ (T3), beyond assumed factories.
+- **No hardware experiment was run.** All quantum results are simulator results. Simulator runtime is never reported as quantum runtime.
 
 ## 16. Adversarial results
 
-⟦ADVERSARIAL⟧
+- **Discovery attack.** 25 mechanisms × 3 independent lenses: classical adversary, oracle/resource auditor, relevance/novelty. All 25 killed; 3 more dead on arrival (`research/discovery/CLASSICAL_COUNTERARGUMENTS.md`, `attack_records.json`).
+- **R1 attack.** Seven lenses:
+  - independent reimplementation;
+  - FI methodology;
+  - new classical echo adversaries;
+  - physical feasibility;
+  - value/break-even;
+  - hardness theory;
+  - amplification.
+
+  A director synthesis and a completeness critic followed (`research/experiments/ADVERSARIAL/R1_*`).
+  - The replication confirmed the numbers to machine precision, then showed the ε-ladder artefact.
+  - The critic added classical-spin/DTWA and δ-extrapolation adversaries (both fail on the echo) and prior-regularised information (gain 1.1–2.3 at best).
+- **Replication.** The echo result was replicated on a second protein (1PGA) and in amide-only networks. The C1 exact numbers were reproduced by an independent simulator (dense and Pauli-transfer-matrix engines).
+- **Controls that killed apparent wins:**
+  - the weight-4 statistic → ε-ladder completion;
+  - Laplace weights → invalid for piecewise-smooth A80;
+  - the per-point partition gain → estimator-level fits (overstatement 3–5000×).
 
 ## 17. Novelty analysis
 
@@ -157,27 +236,58 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 
 ## 18. Remaining uncertainties
 
-⟦UNCERTAINTIES⟧
+- **R1-SIM:** whether the converged dense-network echo exceeds exact classical reach (⟦R1SIM-SHORT⟧).
+- **Protein Loschmidt-echo T3/T2:** no measurement is known. The feasibility kill uses model-solid values (INFERENCE). Fine et al. 2014 and Krojanski–Suter 2004/06 suggest the size-dependence of irreversibility is not settled.
+- **Learned-energy hardness:** whether the λ-path's classical difficulty is a barrier or ill-conditioning (0 round trips, uninformative at L ≥ 100). It does not affect the quantum verdict (K-101 is landscape-independent).
+- **Generality:** only one learned energy (A80/esmprior_v1), two small proteins for NMR, one orientation mostly. No membrane or large protein.
+- **Literature scope:** general web search was exhausted. All "no evidence" statements are scoped to the arXiv API, Crossref and the 448-paper bibliography. Several lens citations are abstract-level only (flagged in the records).
 
 ## 19. Best candidate
 
-⟦BEST⟧
+The best candidate that was examined is **quantum forward simulation of dipolar echoes (OTOC(1)) in protein ¹H networks** (Program C, R1).
+- It is the only formulation for which classical *approximations* were measured to fail on protein-derived data, and the only one whose target is genuinely quantum (non-diagonal, non-commuting dynamics).
+- As a protein-structure advantage it is **killed** (K-105). What remains is a physics-simulation question (R1-SIM, P4), not a structure lead.
 
 ## 20. Strongest classical explanation
 
-⟦CLASSICAL-EXPLANATION⟧
+1. **The endpoint is information-limited, not computation-limited** (S29–S33 and this sprint).
+2. **Every classical-objective route is at most quadratically accelerable.** At break-even the quantum wall-clock is months to millennia per sample, whatever the landscape (T2 corollary).
+3. **White-box pair-additive energies leak their own structure.** Distance-geometry seeding and the e^{−KL} sublevel bound dequantise the constructions that separations need.
+4. **Fold information sits in weak couplings.** Those are classically perturbative. The genuinely quantum sector (echoes) either lies beyond the physical reversal horizon, or within cones that exact classical simulation covers, or it adds only a factor ~1–3 in information over classically usable data.
 
 ## 21. Final claim level
 
-⟦CLAIM-LEVEL⟧
+| Line | Theoretical | Practical | Claim ladder (A–I) |
+|---|---|---|---|
+| Learned-posterior sampling / optimisation | L2 same-chain (quadratic, walk steps), L3 with T3 costs; L0 vs best classical | L0 | D (resource-normalised) **negative** |
+| NMR transfer forward model | L0 | L0 | killed |
+| NMR echo forward model (R1) | L1 at most, in a narrow sense (measured failure of ≥ 9 compression families on a fixed unconverged model) | L0 | A (formulation; prior art O'Brien 2022) only |
+| R1-SIM | ⟦R1SIM-LEVEL⟧ | L0 | ⟦R1SIM-LADDER⟧ |
+
+**Overall: no quantum advantage for protein structure computation is supported at any level above practical L0.** The strongest supported statements are rigorous negatives (categories 3 and 6, in negative form).
 
 ## 22. Publication strategy
 
-⟦PUBLICATION⟧
+1. **Main paper (negative, category 3/6).** "Where quantum computing cannot accelerate learned-energy protein structure computation."
+   - T1 reduction; T2 landscape-independent runtime floor; T3 fault-tolerant cost of a learned pair-energy walk step; T4/T5 ceilings.
+   - The 28-mechanism adversarial map.
+   - Measured landscape of an LM-derived distogram posterior.
+   - Venue: a quantum-algorithms or computational-biology journal. Novelty: NM-2, NM-3, NM-9.
+2. **Short paper (NMR).** "Dipolar echoes in protein proton networks resist classical compression but not exact simulation or physical reality."
+   - The transfer-vs-echo mechanism (T6).
+   - The ε-ladder lesson.
+   - The reversal-horizon and value analysis.
+   - R1-SIM outcome.
+   - Must cite O'Brien et al. 2022 and Zhang et al. 2025 as the origin.
+3. **Methods note.** Sector-exact infinite-temperature correlators and adversary panels for spin forward models.
 
 ## 23. Next experiment
 
-⟦NEXT⟧
+- **The single most decisive next experiment** is a *measured* protein Loschmidt/polarisation-echo T3/T2, taken in an oriented or microcrystalline sample.
+  - T3/T2 ≥ 15 would reopen the physical side of R1.
+  - T3/T2 ≤ 7 closes it for good.
+- **Computationally**, extend R1-SIM to N = 22–26 (sector-reduced Krylov typicality) and against an improved hybrid (quantum core + quantum-corrected bath).
+- **For Program A** (classical science): diagnose barrier vs ill-conditioning (preconditioned NRPT, 4 seeds, T_cal) and publish the landscape characterisation.
 
 ## 24. Final sprint decision (the 17 questions)
 
@@ -212,4 +322,4 @@ python research/theory/PROOFS/T4_amplified_checks.py; python research/theory/T3_
 
 ## 26. Git checkpoint
 
-⟦GIT⟧
+Checkpoints of this sprint (newest first; `git log` is authoritative): the final commit that adds this report, then ae92f98 (adversarial kill of R1), b3fccd8 (pause), 50e0c9e, 0d60410 (discovery synthesis), 92bb4eb (theory + prereg), 4036d44 (infrastructure). Earlier history is preserved: 9ed5531, 86ff140, and the S29–S33 import (33dbaef, 7440b9a).
