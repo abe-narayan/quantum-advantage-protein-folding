@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/aYgTGGy+Xwlmpooi3c6Tp8Egz9w</id>
+  <title>arXiv Query: search_query=abs:quartic AND abs:quantum AND abs:planted&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:33Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:quartic+AND+(abs:quantum+AND+abs:planted)&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29672v1</id>
+    <title>The Kikuchi Hierarchy is Sharp for $k$XOR</title>
+    <updated>2026-07-31T17:54:11Z</updated>
+    <link href="https://arxiv.org/abs/2607.29672v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29672v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Planted noisy $k$XOR and the strong refutation of random $k$XOR are governed by a conjectured trade-off between signal strength and time: Level $\ell$ of the Kikuchi hierarchy should achieve the smooth curve \begin{equation*}
+  m\ \gtrsim\ ρ^{-2}n^{k/2}/\ell^{k/2-1}\ \text{clauses}
+  \quad\Longleftrightarrow\quad
+  \text{solvable in time }n^{O(\ell)}, \end{equation*} where $ρ$ is the bias of the planted signal or, for refutation, the target advantage. However, every spectral analysis of sparse $k$XOR to date loses polylogarithmic factors against this curve, a loss that enters the exponent of the running time.
+  We show that a normalized variant of the Kikuchi hierarchy achieves the sharp conjectured trade-off, with no logarithmic loss, at every arity $k\ge3$. At the scale above, our algorithms achieve strong detection, weak recovery, and strong refutation; an additional cleanup step boosts weak recovery to exact recovery, and the refutation certificates yield sum-of-squares proofs of degree $O_k(\ell)$. We also prove matching lower bounds in the same model. The inference and refutation upper bounds transfer to more general planting laws and predicates. Finally, we give a quantum algorithm that achieves a quartic speedup over the classical spectral algorithms for detection and weak recovery.
+  The proofs rest on two key ingredients: a normalization of the sparse Kikuchi matrix, and a sharp count of the closed walks in its trace expansion. We use a closely related trace-walk count to prove Feige's 2008 hypergraph Moore bound conjecture in a companion paper.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T17:54:11Z</published>
+    <arxiv:comment>Companion paper to arXiv:2607.26028</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Matthew B. Hastings</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.09422v1</id>
+    <title>A Classical Quadratic Speedup for Planted $k$XOR</title>
+    <updated>2025-08-13T01:45:47Z</updated>
+    <link href="https://arxiv.org/abs/2508.09422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.09422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A recent work of Schmidhuber et al (QIP, SODA, &amp; Phys. Rev. X 2025) exhibited a quantum algorithm for the noisy planted $k$XOR problem running quartically faster than all known classical algorithms. In this work, we design a new classical algorithm that is quadratically faster than the best previous one, in the case of large constant $k$. Thus for such $k$, the quantum speedup of Schmidhuber et al. becomes only quadratic (though it retains a space advantage). Our algorithm, which also works in the semirandom case, combines tools from sublinear-time algorithms (essentially, the birthday paradox) and polynomial anticoncentration.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-13T01:45:47Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Meghal Gupta</name>
+    </author>
+    <author>
+      <name>William He</name>
+    </author>
+    <author>
+      <name>Ryan O'Donnell</name>
+    </author>
+    <author>
+      <name>Noah G. Singer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.19378v2</id>
+    <title>Quartic quantum speedups for planted inference</title>
+    <updated>2025-06-03T13:46:41Z</updated>
+    <link href="https://arxiv.org/abs/2406.19378v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.19378v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a quantum algorithm for the Planted Noisy $k$XOR problem (also known as sparse Learning Parity with Noise) that achieves a nearly quartic ($4$th power) speedup over the best known classical algorithm while also only using logarithmically many qubits. Our work generalizes and simplifies prior work of Hastings, by building on his quantum algorithm for the Tensor Principal Component Analysis (PCA) problem. We achieve our quantum speedup using a general framework based on the Kikuchi Method (recovering the quartic speedup for Tensor PCA), and we anticipate it will yield similar speedups for further planted inference problems. These speedups rely on the fact that planted inference problems naturally instantiate the Guided Sparse Hamiltonian problem. Since the Planted Noisy $k$XOR problem has been used as a component of certain cryptographic constructions, our work suggests that some of these are susceptible to super-quadratic quantum attacks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-27T17:54:28Z</published>
+    <arxiv:comment>Short version appeared in SODA 2025 and QIP 2025. Full version published in Phys. Rev. X</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. X 15, 021077 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Ryan O'Donnell</name>
+    </author>
+    <author>
+      <name>Robin Kothari</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevX.15.021077</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevX.15.021077" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1707.09302v1</id>
+    <title>Multi-point Gaussian states, quadratic-exponential cost functionals, and large deviations estimates for linear quantum stochastic systems</title>
+    <updated>2017-07-28T16:12:57Z</updated>
+    <link href="https://arxiv.org/abs/1707.09302v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1707.09302v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper is concerned with risk-sensitive performance analysis for linear quantum stochastic systems interacting with external bosonic fields. We consider a cost functional in the form of the exponential moment of the integral of a quadratic polynomial of the system variables over a bounded time interval. An integro-differential equation is obtained for the time evolution of this quadratic-exponential functional, which is compared with the original quantum risk-sensitive performance criterion employed previously for measurement-based quantum control and filtering problems. Using multi-point Gaussian quantum states for the past history of the system variables and their first four moments, we discuss a quartic approximation of the cost functional and its infinite-horizon asymptotic behaviour. The computation of the asymptotic growth rate of this approximation is reduced to solving two algebraic Lyapunov equations. We also outline further approximations of the cost functional, based on higher-order cumulants and their growth rates, together with large deviations estimates. For comparison, an auxiliary classical Gaussian Markov diffusion process is considered in a complex Euclidean space which reproduces the quantum system variables at the level of covariances but has different higher-order moments relevant to the risk-sensitive criteria. The results of the paper are also demonstrated by a numerical example and may find applications to coherent quantum risk-sensitive control problems, where the plant and controller form a fully quantum closed-loop system, and other settings with nonquadratic cost functionals.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-07-28T16:12:57Z</published>
+    <arxiv:comment>34 pages, 3 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Igor G. Vladimirov</name>
+    </author>
+    <author>
+      <name>Ian R. Petersen</name>
+    </author>
+    <author>
+      <name>Matthew R. James</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,117 @@
+{
+  "lane": "new_mechanisms_A",
+  "date": "2026-09-28",
+  "novelty_check": "Checked against research/discovery/CANDIDATE_MECHANISMS.md (QM-01..QM-28), KILLED_DIRECTIONS.md and literature/domain_notes/lit_F_claims.md P1-P8 (grep for boson/hafnian/GBS, SDP, rotor/methyl, hidden subgroup, fingerprint, epsilon-machine, SPADE, Poisson, Ambainis). None of NA-1..NA-9 is one of the 28. Adjacent: NA-3 ~ K-011/QM-27 (other convex programs), NA-7 ~ QM-24 (sensing), NA-8 ~ QM-16 (tree search). Literature P1 killed RANDOM GBS for having no protein mapping; NA-1 supplies the mapping (protein-programmed kernel).",
+  "mechanisms": [
+    {
+      "id": "NA-1",
+      "name": "Programmable Gaussian boson sampling on the native-free contact-odds kernel",
+      "mechanism": "GBS kernel B = c*W, W_ij = p_ij/(1-p_ij) from esmprior_v1 contact probabilities (|i-j|>=6). Collision-free 2k-photon patterns S have P(S) ~ Haf(W_S)^2 [Hamilton et al. PRL 119,170501, arXiv 1612.01199, verified]. The max-weight perfect matching inside S is a k-pair contact/pairing hypothesis (beta-ladder registry, disulfide connectivity, contact-cluster seeds), the dense-subgraph use of GBS [Arrazola & Bromley PRL 121,030503, arXiv 1803.10730; Banchi et al. Sci. Adv. 6,eaax1950, arXiv 1902.00462; both verified].",
+      "protein_task": "proposal distribution over residue-pairing patterns for folding/assembly seeds",
+      "designed_to_satisfy": "category-4 sampling: exact Haf^2 probabilities are #P-hard, sampling conjectured hard at large photon number; photonic hardware exists (no QEC for sampling); answers literature-P1's objection (the kernel carries protein information).",
+      "classical_competitor": "Haf^1 = k-matching Gibbs measure (FPRAS family, Jerrum-Sinclair; LITERATURE, not re-verified); greedy max-weight k-matching; perturb-and-MAP (Gumbel-perturbed greedy); sequential edge sampler; double-dimer Metropolis for Haf^2 (this lane); Anand et al. arXiv 2511.16558 'Simulating Gaussian boson sampling on graphs in polynomial time' and Zhang et al. arXiv 2505.02445 (Glauber dynamics, unweighted) [abstracts verified via arXiv API; exact scope for weighted kernels UNVERIFIED].",
+      "hardest_condition": "A8 structural value (is Haf^2 privileged for the structural task?) then A2 (classical hardness for nonnegative kernels).",
+      "cheapest_falsification": "Exact-hafnian samplers at small k (6-10 photons): compare beta=2 against classically efficient samplers at native-free-matched concentration on ORACLE contact precision/coverage; classical double-dimer emulation at 20-60 photons.",
+      "tested": true,
+      "result": "KILLED (MEASURED, pre-registered rule fired)",
+      "level_theoretical": "L0 for the protein task",
+      "level_practical": "L0"
+    },
+    {
+      "id": "NA-2",
+      "name": "Coupled methyl-rotor tunnelling network as a quantum forward model of core packing",
+      "mechanism": "Protein CH3 groups are 3-fold quantum rotors (B ~ 0.65 meV). Tunnelling splittings depend exponentially on barriers set by packing; rotor-rotor (gearing) couplings make the low-temperature tunnelling band a 3^N-state many-body problem on the methyl contact network. A quantum computer would simulate the coupled-rotor network (qutrit clock model) to predict INS/low-T NMR tunnelling spectra used to refine side-chain packing.",
+      "protein_task": "core side-chain packing / methyl placement from cryogenic tunnelling spectroscopy",
+      "designed_to_satisfy": "quantum-native (Family B), exponential Hilbert space, exponential structural sensitivity (splitting ~ exp(-sqrt(V3/B))).",
+      "classical_competitor": "per-rotor C3 symmetry block-diagonalises H exactly (DERIVED); single-rotor Mathieu problem; Hartree mean field; exact small clusters; pair cluster expansion; ring-polymer instanton for multidimensional splittings (LITERATURE, not verified this session).",
+      "hardest_condition": "B5 physical realism (observable splitting at protein barriers) and B1 (classical approximations fail where the information is).",
+      "cheapest_falsification": "Exact 1-, 2- and 3-rotor symmetry-sector diagonalisation on 1UBQ methyl geometry; splitting vs barrier; non-additivity J, mean-field error, 3-body residual.",
+      "tested": true,
+      "result": "KILLED by kill (i) (observability at protein-typical barriers). Kill clause (ii) did NOT fire: the model shows real correlation (mean-field and pair-cluster failures) in jammed low-barrier clusters. Parked physics residue R-ROTOR.",
+      "level_theoretical": "L0 (no hardness result; correlation measured at N<=3 only)",
+      "level_practical": "L0"
+    },
+    {
+      "id": "NA-3",
+      "name": "Quantum SDP solvers for restraint-based Gram/EDM structure determination",
+      "mechanism": "Solve the SDP relaxation of distance-restraint structure determination (Gram G >= 0, G_ii+G_jj-2G_ij = d_ij^2) with a quantum SDP solver: O~((sqrt(m)+sqrt(n) gamma) s gamma^4), gamma = R r/eps [van Apeldoorn & Gilyen ICALP 2019, arXiv 1804.05058, verified; Brandao et al. arXiv 1710.02581, verified].",
+      "protein_task": "structure from sparse distance restraints (NMR NOEs, crosslinks, predicted distances)",
+      "designed_to_satisfy": "polynomial speedup in n and m (sqrt), which would matter for large assemblies.",
+      "classical_competitor": "Burer-Monteiro rank-3 stress minimisation (L-BFGS), first-order SDP, chordal decomposition.",
+      "hardest_condition": "A5 break-even (gamma^4..gamma^5 precision cost) and A9 readout (output is a Gibbs-state approximation of G/R; coordinates need tomography).",
+      "cheapest_falsification": "Measured classical CPU on ladder crops vs query lower bound with polylogs = 1, r = 1, 1 us per query.",
+      "tested": true,
+      "result": "KILLED (DERIVED + MEASURED classical)",
+      "level_theoretical": "L0 (quantum is asymptotically slower at fixed physical precision)",
+      "level_practical": "L0"
+    },
+    {
+      "id": "NA-4",
+      "name": "Hidden-subgroup / QFT symmetry and periodicity detection for helical assemblies, oligomers and repeat proteins",
+      "mechanism": "Use QFT-based hidden-subgroup algorithms (exponential query separations) to find helical rise/twist, point-group symmetry or repeat period from a density map or contact map.",
+      "protein_task": "helical indexing of fibrils/filaments; symmetry of homo-oligomers; repeat periodicity",
+      "designed_to_satisfy": "exponential query separation (HSP).",
+      "classical_competitor": "FFT / layer-line indexing, symmetry cross-correlation, explicit search over small symmetry groups.",
+      "hardest_condition": "A2: the HSP separation needs an exponentially large group behind an oracle; here groups are small (cyclic/dihedral order <= ~10^2) or 2-parameter continuous, and the data are explicit (n voxels): classical O(n log n), and data loading alone costs Omega(n) quantum.",
+      "cheapest_falsification": "Derivation: group order and data size vs n log n.",
+      "tested": false,
+      "result": "KILLED (DERIVED). The real difficulty of helical indexing is ambiguity between near-equivalent (rise, twist) solutions at limited resolution: information-limited (INFERENCE; literature not verified this session).",
+      "level_theoretical": "L0", "level_practical": "L0"
+    },
+    {
+      "id": "NA-5",
+      "name": "Quantum communication-complexity separations (quantum fingerprinting) for distributed structure comparison and database deduplication",
+      "mechanism": "Exponential savings in communication for equality testing in the simultaneous-message model (Buhrman, Cleve, Watrous, de Wolf, PRL 87, 167902 (2001); NOT verified this session).",
+      "protein_task": "comparing/deduplicating structures across labs or databases (AFDB/PDB)",
+      "designed_to_satisfy": "provable exponential separation (communication).",
+      "classical_competitor": "sending the structure (a 1000-residue CA trace is ~36 kB), hashing, structural sketches (Foldseek 3Di strings ~ L bytes).",
+      "hardest_condition": "structural value: communication is not a bottleneck; fingerprinting tests exact equality, while structure comparison needs approximate similarity (TM-score), for which classical sketches are already O(L).",
+      "cheapest_falsification": "Derivation of bits saved vs cost of transmitting/computing classically.",
+      "tested": false, "result": "KILLED (DERIVED, value)", "level_theoretical": "L6 for communication equality only; L0 for the protein task", "level_practical": "L0"
+    },
+    {
+      "id": "NA-6",
+      "name": "Quantum stochastic simulators with memory advantage (quantum epsilon-machines) for conformational-dynamics surrogates",
+      "mechanism": "Quantum models of stochastic processes can store less information than the classical minimal model (C_q < C_mu) [Gu, Wiesner, Rieper, Vedral, Nat. Commun. 3, 763 (2012), arXiv 1102.1994, verified].",
+      "protein_task": "compressed generative simulation of conformational dynamics (MSM/HMM surrogates, dihedral-jump renewal processes)",
+      "designed_to_satisfy": "provable (unbounded-ratio for some processes) memory separation.",
+      "classical_competitor": "classical epsilon-machine / HMM / MSM on a laptop.",
+      "hardest_condition": "structural value: the saving is in bits of memory (C_mu <= log2 #causal states ~ 10-20 bits for realistic MSMs); no time speedup; no structural observable changes.",
+      "cheapest_falsification": "Derivation: C_mu for a 10^3-10^6-state MSM is <= 20 bits.",
+      "tested": false, "result": "KILLED (DERIVED, value)", "level_theoretical": "L6 for memory only; L0 for the protein task", "level_practical": "L0"
+    },
+    {
+      "id": "NA-7",
+      "name": "Quantum-limited optical super-resolution receivers (SPADE / quantum-memory-assisted imaging) for intramolecular distances",
+      "mechanism": "Spatial-mode demultiplexing or a quantum receiver avoids the Rayleigh curse in two-point separation estimation [Tsang, Nair, Lu, PRX 6, 031033 (2016), arXiv 1511.00552, verified]; a quantum processor handling collected photons coherently would measure 2-10 nm fluorophore separations on single proteins.",
+      "protein_task": "single-molecule intramolecular distance restraints",
+      "designed_to_satisfy": "Fisher-information separation vs direct imaging at small separations.",
+      "classical_competitor": "photoswitching/blinking separates emitters in time (single-emitter localisation has no Rayleigh curse); MINFLUX-class localisation at ~1-3 nm (LITERATURE, not verified this session); smFRET.",
+      "hardest_condition": "classical bypass + information floor (dye/linker flexibility ~1 nm); it is sensing, not computation (QM-24 family).",
+      "cheapest_falsification": "Derivation: with temporal separation of emitters the two-point problem disappears.",
+      "tested": false, "result": "KILLED (DERIVED)", "level_theoretical": "L6 for the two-point estimation model only; L0 for the protein task", "level_practical": "L0"
+    },
+    {
+      "id": "NA-8",
+      "name": "Quantum speedups of exponential-time dynamic programming applied to the classical winner (subset DP) for beta-sheet topology assembly",
+      "mechanism": "Ambainis, Balodis, Iraids, Kokainis (arXiv 1807.05209, verified): e.g. O*(1.728^n) TSP, O*(1.817^n) path in the hypercube, vs 2^n classical DP.",
+      "protein_task": "exact strand-order / sheet-topology assembly (QM-16 showed subset DP beats backtracking for m >= 12)",
+      "designed_to_satisfy": "attacks the classical winner rather than the tree it replaced.",
+      "classical_competitor": "subset DP (2^m states), branch-and-bound.",
+      "hardest_condition": "A3: T -> T^(log2 1.817) = T^0.86 (T^0.79 for TSP-type): sub-quadratic by construction; needs QRAM over exponential DP tables; m <= ~20 strands gives 2^20 states (milliseconds classically).",
+      "cheapest_falsification": "Derivation of the exponent.",
+      "tested": false, "result": "KILLED (DERIVED)", "level_theoretical": "L2 (polynomial in T, sub-quadratic)", "level_practical": "L0"
+    },
+    {
+      "id": "NA-9",
+      "name": "Quantum linear-system / PDE solvers for implicit-solvent electrostatics (Poisson-Boltzmann) in structure scoring",
+      "mechanism": "QLSA/QSVT for the discretised (linearised) PB operator; read out solvation energies by amplitude estimation.",
+      "protein_task": "electrostatic scoring of candidate structures",
+      "designed_to_satisfy": "poly-log dependence on grid size N.",
+      "classical_competitor": "multigrid O(N) (N ~ 10^6-10^7 grid points, ~0.1-1 s), FFT/fast-multipole methods, GB approximations.",
+      "hardest_condition": "A3/A5: the scalar readout to precision eps costs Theta(1/eps) AE rounds times kappa-dependent block-encoding cost; classical multigrid is already optimal O(N); nonlinear PB needs Carleman linearisation. DE-7: physics energies carry no in-band ranking skill in this program.",
+      "cheapest_falsification": "Derivation (optimal classical O(N) vs quantum per-query overhead x 1/eps).",
+      "tested": false, "result": "KILLED (DERIVED)", "level_theoretical": "L0 vs multigrid", "level_practical": "L0"
+    }
+  ]
+}

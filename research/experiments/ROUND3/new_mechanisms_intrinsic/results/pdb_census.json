@@ -1,0 +1,3020 @@
+{
+ "census": {
+  "3U7Q": {
+   "title": "A. VINELANDII NITROGENASE MOFE PROTEIN AT ATOMIC RESOLUTION",
+   "resolution": 1.0,
+   "sites": [
+    {
+     "residues": [
+      "ICS"
+     ],
+     "chain": "A",
+     "resi": 6496,
+     "metals": {
+      "FE": 7,
+      "MO": 1
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "C": 1,
+      "S": 9
+     },
+     "n_bridges": 10,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS275A:SG",
+      "HCA6494A:O5",
+      "HCA6494A:O7",
+      "HIS442A:ND1"
+     ],
+     "n_second_shell_residues": 16,
+     "heavy_atoms_within_6A": 152,
+     "heavy_atoms_within_8A": 304,
+     "est_atoms_with_H_within_8A": 608,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 70,
+     "metal_metal_min": 2.576330918185782,
+     "metal_metal_max": 6.997335564341618,
+     "coords": {
+      "FE0": [
+       10.018,
+       -7.568,
+       56.109
+      ],
+      "MO1": [
+       16.132,
+       -5.638,
+       53.306
+      ],
+      "FE2": [
+       11.99,
+       -5.771,
+       56.166
+      ],
+      "FE3": [
+       11.277,
+       -6.902,
+       53.853
+      ],
+      "FE4": [
+       12.528,
+       -8.326,
+       55.692
+      ],
+      "FE5": [
+       14.82,
+       -7.601,
+       54.671
+      ],
+      "FE6": [
+       14.226,
+       -5.072,
+       55.094
+      ],
+      "FE7": [
+       13.55,
+       -6.198,
+       52.849
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "1CL",
+      "CYS"
+     ],
+     "chain": "B",
+     "resi": 6498,
+     "metals": {
+      "FE": 8
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 6,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS153B:SG",
+      "CYS154A:SG",
+      "CYS62A:SG",
+      "CYS70B:SG",
+      "CYS88A:N",
+      "SER188B:OG"
+     ],
+     "n_second_shell_residues": 24,
+     "heavy_atoms_within_6A": 173,
+     "heavy_atoms_within_8A": 318,
+     "est_atoms_with_H_within_8A": 636,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.5183855939867508,
+     "metal_metal_max": 7.975847165035197,
+     "coords": {
+      "FE0": [
+       19.528,
+       10.07,
+       60.086
+      ],
+      "FE1": [
+       21.329,
+       8.918,
+       58.755
+      ],
+      "FE2": [
+       18.904,
+       7.635,
+       58.862
+      ],
+      "FE3": [
+       19.348,
+       9.925,
+       57.47
+      ],
+      "FE4": [
+       21.149,
+       11.743,
+       54.811
+      ],
+      "FE5": [
+       22.903,
+       14.344,
+       57.246
+      ],
+      "FE6": [
+       23.823,
+       12.463,
+       55.395
+      ],
+      "FE7": [
+       22.991,
+       11.07,
+       57.619
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "3MIN": {
+   "title": "NITROGENASE MOFE PROTEIN FROM AZOTOBACTER VINELANDII, OXIDIZED STATE",
+   "resolution": 2.03,
+   "sites": [
+    {
+     "residues": [
+      "CFM"
+     ],
+     "chain": "A",
+     "resi": 496,
+     "metals": {
+      "FE": 7,
+      "MO": 1
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS275A:SG",
+      "HCA494A:O5",
+      "HCA494A:O7",
+      "HIS442A:ND1"
+     ],
+     "n_second_shell_residues": 17,
+     "heavy_atoms_within_6A": 146,
+     "heavy_atoms_within_8A": 290,
+     "est_atoms_with_H_within_8A": 580,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.44672944969402,
+     "metal_metal_max": 6.8606602451950645,
+     "coords": {
+      "FE0": [
+       -9.463,
+       -24.497,
+       -8.787
+      ],
+      "FE1": [
+       -8.837,
+       -22.782,
+       -6.873
+      ],
+      "FE2": [
+       -7.033,
+       -23.906,
+       -8.336
+      ],
+      "FE3": [
+       -8.33,
+       -25.308,
+       -6.61
+      ],
+      "FE4": [
+       -6.54,
+       -24.605,
+       -4.854
+      ],
+      "FE5": [
+       -7.08,
+       -22.165,
+       -5.239
+      ],
+      "FE6": [
+       -5.302,
+       -23.165,
+       -6.59
+      ],
+      "MO7": [
+       -4.792,
+       -22.754,
+       -4.074
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "CLF",
+      "CYS"
+     ],
+     "chain": "B",
+     "resi": 525,
+     "metals": {
+      "FE": 8
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS153B:SG",
+      "CYS154A:SG",
+      "CYS62A:SG",
+      "CYS70B:SG"
+     ],
+     "n_second_shell_residues": 19,
+     "heavy_atoms_within_6A": 166,
+     "heavy_atoms_within_8A": 305,
+     "est_atoms_with_H_within_8A": 610,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.4288785478076083,
+     "metal_metal_max": 7.601825372895645,
+     "coords": {
+      "FE0": [
+       -8.003,
+       -8.139,
+       2.879
+      ],
+      "FE1": [
+       -9.786,
+       -6.948,
+       1.738
+      ],
+      "FE2": [
+       -8.9,
+       -9.278,
+       0.598
+      ],
+      "FE3": [
+       -7.537,
+       -7.138,
+       0.57
+      ],
+      "FE4": [
+       -5.44,
+       -5.449,
+       2.053
+      ],
+      "FE5": [
+       -6.422,
+       -3.647,
+       3.607
+      ],
+      "FE6": [
+       -4.056,
+       -4.6,
+       4.125
+      ],
+      "FE7": [
+       -6.199,
+       -6.081,
+       4.279
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "2MIN": {
+   "title": "NITROGENASE MOFE PROTEIN FROM AZOTOBACTER VINELANDII, OXIDIZED STATE",
+   "resolution": 2.03,
+   "sites": [
+    {
+     "residues": [
+      "CFM"
+     ],
+     "chain": "A",
+     "resi": 496,
+     "metals": {
+      "FE": 7,
+      "MO": 1
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS275A:SG",
+      "HCA494A:O5",
+      "HCA494A:O7",
+      "HIS442A:ND1"
+     ],
+     "n_second_shell_residues": 16,
+     "heavy_atoms_within_6A": 148,
+     "heavy_atoms_within_8A": 297,
+     "est_atoms_with_H_within_8A": 594,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.4457532582008357,
+     "metal_metal_max": 7.0110336613084385,
+     "coords": {
+      "FE0": [
+       -9.638,
+       -24.488,
+       -9.044
+      ],
+      "FE1": [
+       -8.902,
+       -22.652,
+       -7.185
+      ],
+      "FE2": [
+       -6.982,
+       -23.831,
+       -8.656
+      ],
+      "FE3": [
+       -8.324,
+       -25.251,
+       -6.781
+      ],
+      "FE4": [
+       -6.538,
+       -24.585,
+       -5.064
+      ],
+      "FE5": [
+       -7.087,
+       -22.054,
+       -5.459
+      ],
+      "FE6": [
+       -5.307,
+       -23.132,
+       -6.744
+      ],
+      "MO7": [
+       -4.812,
+       -22.622,
+       -4.313
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "1CL",
+      "CYS"
+     ],
+     "chain": "A",
+     "resi": 498,
+     "metals": {
+      "FE": 8
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 6,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS153B:SG",
+      "CYS154A:SG",
+      "CYS62A:SG",
+      "CYS70B:SG",
+      "CYS88A:N",
+      "SER188B:OG"
+     ],
+     "n_second_shell_residues": 25,
+     "heavy_atoms_within_6A": 174,
+     "heavy_atoms_within_8A": 314,
+     "est_atoms_with_H_within_8A": 628,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.389815892490465,
+     "metal_metal_max": 7.89657900612664,
+     "coords": {
+      "FE0": [
+       -8.025,
+       -7.964,
+       2.549
+      ],
+      "FE1": [
+       -9.853,
+       -6.934,
+       1.405
+      ],
+      "FE2": [
+       -8.981,
+       -9.376,
+       0.389
+      ],
+      "FE3": [
+       -7.511,
+       -7.149,
+       0.267
+      ],
+      "FE4": [
+       -4.295,
+       -5.229,
+       1.079
+      ],
+      "FE5": [
+       -5.971,
+       -2.774,
+       3.505
+      ],
+      "FE6": [
+       -3.959,
+       -4.573,
+       3.759
+      ],
+      "FE7": [
+       -6.333,
+       -5.879,
+       3.806
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "4TKV": {
+   "title": "CO-BOUND NITROGENASE MOFE-PROTEIN FROM A. VINELANDII",
+   "resolution": 1.5,
+   "sites": [
+    {
+     "residues": [
+      "CMO",
+      "ICE"
+     ],
+     "chain": "A",
+     "resi": 502,
+     "metals": {
+      "FE": 7,
+      "MO": 1
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "C": 2,
+      "S": 8
+     },
+     "n_bridges": 10,
+     "n_terminal_ligands": 3,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS275A:SG",
+      "HCA501A:O6",
+      "HCA501A:O7"
+     ],
+     "n_second_shell_residues": 17,
+     "heavy_atoms_within_6A": 152,
+     "heavy_atoms_within_8A": 302,
+     "est_atoms_with_H_within_8A": 604,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 70,
+     "metal_metal_min": 2.486460536586092,
+     "metal_metal_max": 6.946894054179894,
+     "coords": {
+      "FE0": [
+       10.085,
+       -7.523,
+       56.055
+      ],
+      "MO1": [
+       16.157,
+       -5.695,
+       53.218
+      ],
+      "FE2": [
+       12.106,
+       -5.823,
+       55.997
+      ],
+      "FE3": [
+       11.323,
+       -6.936,
+       53.735
+      ],
+      "FE4": [
+       12.557,
+       -8.369,
+       55.575
+      ],
+      "FE5": [
+       14.89,
+       -7.687,
+       54.541
+      ],
+      "FE6": [
+       14.267,
+       -5.181,
+       54.948
+      ],
+      "FE7": [
+       13.61,
+       -6.259,
+       52.712
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "CLF",
+      "CYS"
+     ],
+     "chain": "A",
+     "resi": 507,
+     "metals": {
+      "FE": 8
+     },
+     "n_open_shell_tm": 8,
+     "bridges": {
+      "S": 9
+     },
+     "n_bridges": 9,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS153B:SG",
+      "CYS154A:SG",
+      "CYS62A:SG",
+      "CYS70B:SG"
+     ],
+     "n_second_shell_residues": 21,
+     "heavy_atoms_within_6A": 171,
+     "heavy_atoms_within_8A": 311,
+     "est_atoms_with_H_within_8A": 622,
+     "AS_d_orbitals": 40,
+     "AS_dp_orbitals": 67,
+     "metal_metal_min": 2.536293949840989,
+     "metal_metal_max": 7.67816182429102,
+     "coords": {
+      "FE0": [
+       21.419,
+       8.913,
+       58.623
+      ],
+      "FE1": [
+       19.598,
+       10.102,
+       59.928
+      ],
+      "FE2": [
+       18.953,
+       7.656,
+       58.744
+      ],
+      "FE3": [
+       19.426,
+       9.921,
+       57.349
+      ],
+      "FE4": [
+       21.311,
+       11.581,
+       55.988
+      ],
+      "FE5": [
+       22.368,
+       13.249,
+       57.587
+      ],
+      "FE6": [
+       23.926,
+       12.428,
+       55.36
+      ],
+      "FE7": [
+       23.263,
+       10.851,
+       57.494
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "FE2"
+     ],
+     "chain": "B",
+     "resi": 605,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "ARG108D:O",
+      "ASP353B:OD2",
+      "ASP357B:OD2",
+      "GLU109D:OE2",
+      "HOH803B:O",
+      "HOH966D:O"
+     ],
+     "n_second_shell_residues": 9,
+     "heavy_atoms_within_6A": 56,
+     "heavy_atoms_within_8A": 127,
+     "est_atoms_with_H_within_8A": 254,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       46.334,
+       6.677,
+       13.781
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "3WU2": {
+   "title": "CRYSTAL STRUCTURE ANALYSIS OF PHOTOSYSTEM II COMPLEX",
+   "resolution": 1.9,
+   "sites": [
+    {
+     "residues": [
+      "OEX"
+     ],
+     "chain": "A",
+     "resi": 401,
+     "metals": {
+      "MN": 4,
+      "CA": 1
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "O": 5
+     },
+     "n_bridges": 5,
+     "n_terminal_ligands": 16,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "ALA344A:O",
+      "ALA344A:OXT",
+      "ASP170A:OD1",
+      "ASP170A:OD2",
+      "ASP342A:OD1",
+      "ASP342A:OD2",
+      "GLU189A:OE2",
+      "GLU333A:OE1",
+      "GLU333A:OE2",
+      "GLU354C:OE1",
+      "GLU354C:OE2",
+      "HIS332A:NE2",
+      "HOH544A:O",
+      "HOH569A:O",
+      "HOH595A:O",
+      "HOH624A:O"
+     ],
+     "n_second_shell_residues": 12,
+     "heavy_atoms_within_6A": 110,
+     "heavy_atoms_within_8A": 228,
+     "est_atoms_with_H_within_8A": 456,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 35,
+     "metal_metal_min": 2.8689055404456965,
+     "metal_metal_max": 5.437893525989635,
+     "coords": {
+      "MN0": [
+       -24.953,
+       -35.539,
+       60.649
+      ],
+      "MN1": [
+       -27.384,
+       -35.236,
+       62.142
+      ],
+      "MN2": [
+       -27.248,
+       -33.273,
+       60.042
+      ],
+      "MN3": [
+       -27.578,
+       -33.241,
+       57.087
+      ],
+      "CA4": [
+       -27.979,
+       -36.462,
+       59.042
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "FE2"
+     ],
+     "chain": "A",
+     "resi": 402,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "BCT401D:O2",
+      "BCT401D:O3",
+      "HIS214D:NE2",
+      "HIS215A:NE2",
+      "HIS268D:NE2",
+      "HIS272A:NE2"
+     ],
+     "n_second_shell_residues": 7,
+     "heavy_atoms_within_6A": 46,
+     "heavy_atoms_within_8A": 115,
+     "est_atoms_with_H_within_8A": 230,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       -24.509,
+       -57.495,
+       22.004
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "F",
+     "resi": 101,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM101F:NA",
+      "HEM101F:NB",
+      "HEM101F:NC",
+      "HEM101F:ND",
+      "HIS23E:NE2",
+      "HIS24F:NE2"
+     ],
+     "n_second_shell_residues": 4,
+     "heavy_atoms_within_6A": 57,
+     "heavy_atoms_within_8A": 115,
+     "est_atoms_with_H_within_8A": 230,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       -3.921,
+       -83.225,
+       42.847
+      ]
+     },
+     "n_copies": 4
+    }
+   ]
+  },
+  "6JLJ": {
+   "title": "XFEL STRUCTURE OF CYANOBACTERIAL PHOTOSYSTEM II (DARK STATE, DATASET1)",
+   "resolution": 2.15,
+   "sites": [
+    {
+     "residues": [
+      "OEX"
+     ],
+     "chain": "A",
+     "resi": 417,
+     "metals": {
+      "MN": 4,
+      "CA": 1
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "O": 5
+     },
+     "n_bridges": 5,
+     "n_terminal_ligands": 16,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "ALA344A:O",
+      "ALA344A:OXT",
+      "ASP170A:OD1",
+      "ASP170A:OD2",
+      "ASP342A:OD1",
+      "ASP342A:OD2",
+      "GLU189A:OE2",
+      "GLU333A:OE1",
+      "GLU333A:OE2",
+      "GLU354C:OE1",
+      "GLU354C:OE2",
+      "HIS332A:NE2",
+      "HOH525A:O",
+      "HOH567A:O",
+      "HOH588A:O",
+      "HOH641A:O"
+     ],
+     "n_second_shell_residues": 12,
+     "heavy_atoms_within_6A": 109,
+     "heavy_atoms_within_8A": 219,
+     "est_atoms_with_H_within_8A": 438,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 35,
+     "metal_metal_min": 2.578089408845242,
+     "metal_metal_max": 5.28990463052029,
+     "coords": {
+      "MN0": [
+       24.97,
+       -35.292,
+       -61.012
+      ],
+      "MN1": [
+       27.184,
+       -35.022,
+       -62.305
+      ],
+      "MN2": [
+       27.288,
+       -33.229,
+       -60.269
+      ],
+      "MN3": [
+       27.623,
+       -33.163,
+       -57.372
+      ],
+      "CA4": [
+       27.907,
+       -36.335,
+       -59.235
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "FE2"
+     ],
+     "chain": "A",
+     "resi": 401,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 3,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "BCT404A:O2",
+      "HIS214D:NE2",
+      "HIS215A:NE2"
+     ],
+     "n_second_shell_residues": 8,
+     "heavy_atoms_within_6A": 45,
+     "heavy_atoms_within_8A": 113,
+     "est_atoms_with_H_within_8A": 226,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       24.435,
+       -57.569,
+       -22.084
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "E",
+     "resi": 102,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM102E:NA",
+      "HEM102E:NB",
+      "HEM102E:NC",
+      "HEM102E:ND",
+      "HIS23E:NE2",
+      "HIS24F:NE2"
+     ],
+     "n_second_shell_residues": 4,
+     "heavy_atoms_within_6A": 58,
+     "heavy_atoms_within_8A": 116,
+     "est_atoms_with_H_within_8A": 232,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       3.846,
+       -83.16,
+       -43.222
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "HEC"
+     ],
+     "chain": "V",
+     "resi": 205,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEC205V:NA",
+      "HEC205V:NB",
+      "HEC205V:NC",
+      "HEC205V:ND",
+      "HIS41V:NE2",
+      "HIS92V:NE2"
+     ],
+     "n_second_shell_residues": 5,
+     "heavy_atoms_within_6A": 54,
+     "heavy_atoms_within_8A": 112,
+     "est_atoms_with_H_within_8A": 224,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       21.996,
+       -43.792,
+       -86.005
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "6JLL": {
+   "title": "XFEL STRUCTURE OF CYANOBACTERIAL PHOTOSYSTEM II (2F STATE, DATASET1)",
+   "resolution": 2.15,
+   "sites": [
+    {
+     "residues": [
+      "OEX"
+     ],
+     "chain": "A",
+     "resi": 418,
+     "metals": {
+      "MN": 4,
+      "CA": 1
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "O": 5
+     },
+     "n_bridges": 5,
+     "n_terminal_ligands": 16,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "ALA344A:O",
+      "ALA344A:OXT",
+      "ASP170A:OD1",
+      "ASP170A:OD2",
+      "ASP342A:OD1",
+      "ASP342A:OD2",
+      "GLU189A:OE2",
+      "GLU333A:OE1",
+      "GLU333A:OE2",
+      "GLU354C:OE1",
+      "GLU354C:OE2",
+      "HIS332A:NE2",
+      "HOH512A:O",
+      "HOH519A:O",
+      "HOH523A:O",
+      "HOH635A:O"
+     ],
+     "n_second_shell_residues": 11,
+     "heavy_atoms_within_6A": 102,
+     "heavy_atoms_within_8A": 208,
+     "est_atoms_with_H_within_8A": 416,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 35,
+     "metal_metal_min": 2.6878549067983597,
+     "metal_metal_max": 5.222657082367177,
+     "coords": {
+      "MN0": [
+       24.973,
+       -35.321,
+       -60.97
+      ],
+      "MN1": [
+       27.315,
+       -35.037,
+       -62.258
+      ],
+      "MN2": [
+       27.332,
+       -33.247,
+       -60.16
+      ],
+      "MN3": [
+       27.538,
+       -33.08,
+       -57.421
+      ],
+      "CA4": [
+       27.765,
+       -36.508,
+       -59.223
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "FE2"
+     ],
+     "chain": "A",
+     "resi": 401,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 5,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "BCT404A:O1",
+      "BCT404A:O2",
+      "HIS214D:NE2",
+      "HIS215A:NE2",
+      "HIS268D:NE2"
+     ],
+     "n_second_shell_residues": 8,
+     "heavy_atoms_within_6A": 45,
+     "heavy_atoms_within_8A": 115,
+     "est_atoms_with_H_within_8A": 230,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       24.449,
+       -57.565,
+       -22.164
+      ]
+     },
+     "n_copies": 1
+    },
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "F",
+     "resi": 102,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM102F:NA",
+      "HEM102F:NB",
+      "HEM102F:NC",
+      "HEM102F:ND",
+      "HIS23E:NE2",
+      "HIS24F:NE2"
+     ],
+     "n_second_shell_residues": 3,
+     "heavy_atoms_within_6A": 59,
+     "heavy_atoms_within_8A": 116,
+     "est_atoms_with_H_within_8A": 232,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       3.831,
+       -83.163,
+       -43.234
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "HEC"
+     ],
+     "chain": "V",
+     "resi": 206,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEC206V:NA",
+      "HEC206V:NB",
+      "HEC206V:NC",
+      "HEC206V:ND",
+      "HIS41V:NE2",
+      "HIS92V:NE2"
+     ],
+     "n_second_shell_residues": 5,
+     "heavy_atoms_within_6A": 54,
+     "heavy_atoms_within_8A": 113,
+     "est_atoms_with_H_within_8A": 226,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       22.025,
+       -43.814,
+       -85.973
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "2CPP": {
+   "title": "HIGH-RESOLUTION CRYSTAL STRUCTURE OF CYTOCHROME P450-CAM",
+   "resolution": 1.63,
+   "sites": [
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "A",
+     "resi": 417,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 5,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "CYS357A:SG",
+      "HEM417A:NA",
+      "HEM417A:NB",
+      "HEM417A:NC",
+      "HEM417A:ND"
+     ],
+     "n_second_shell_residues": 7,
+     "heavy_atoms_within_6A": 62,
+     "heavy_atoms_within_8A": 114,
+     "est_atoms_with_H_within_8A": 228,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       48.383,
+       46.236,
+       8.805
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1A6N": {
+   "title": "DEOXY-MYOGLOBIN, ATOMIC RESOLUTION",
+   "resolution": 1.15,
+   "sites": [
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "A",
+     "resi": 154,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 5,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM154A:NA",
+      "HEM154A:NB",
+      "HEM154A:NC",
+      "HEM154A:ND",
+      "HIS93A:NE2"
+     ],
+     "n_second_shell_residues": 6,
+     "heavy_atoms_within_6A": 54,
+     "heavy_atoms_within_8A": 110,
+     "est_atoms_with_H_within_8A": 220,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       14.3,
+       27.846,
+       4.897
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1A6M": {
+   "title": "OXY-MYOGLOBIN, ATOMIC RESOLUTION",
+   "resolution": 1.0,
+   "sites": [
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "A",
+     "resi": 154,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 6,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM154A:NA",
+      "HEM154A:NB",
+      "HEM154A:NC",
+      "HEM154A:ND",
+      "HIS93A:NE2",
+      "OXY157A:O1"
+     ],
+     "n_second_shell_residues": 5,
+     "heavy_atoms_within_6A": 57,
+     "heavy_atoms_within_8A": 111,
+     "est_atoms_with_H_within_8A": 222,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       14.515,
+       27.975,
+       4.75
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "2HHB": {
+   "title": "THE CRYSTAL STRUCTURE OF HUMAN DEOXYHAEMOGLOBIN AT 1.74 ANGSTROMS RESOLUTION",
+   "resolution": 1.74,
+   "sites": [
+    {
+     "residues": [
+      "HEM"
+     ],
+     "chain": "A",
+     "resi": 142,
+     "metals": {
+      "FE": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 5,
+     "heme": true,
+     "terminal_ligand_residues": [
+      "HEM142A:NA",
+      "HEM142A:NB",
+      "HEM142A:NC",
+      "HEM142A:ND",
+      "HIS87A:NE2"
+     ],
+     "n_second_shell_residues": 3,
+     "heavy_atoms_within_6A": 52,
+     "heavy_atoms_within_8A": 103,
+     "est_atoms_with_H_within_8A": 206,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 9,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "FE0": [
+       18.381,
+       18.478,
+       23.761
+      ]
+     },
+     "n_copies": 4
+    }
+   ]
+  },
+  "1OXY": {
+   "title": "CRYSTALLOGRAPHIC ANALYSIS OF OXYGENATED AND DEOXYGENATED STATES OF ARTHROPOD HEMOCYANIN SHOWS UNUSUAL DIFFERENCES",
+   "resolution": 2.4,
+   "sites": [
+    {
+     "residues": [
+      "CU",
+      "OXY"
+     ],
+     "chain": "A",
+     "resi": 629,
+     "metals": {
+      "CU": 2
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "O": 2
+     },
+     "n_bridges": 2,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "HIS173A:NE2",
+      "HIS177A:NE2",
+      "HIS324A:NE2",
+      "HIS364A:NE2"
+     ],
+     "n_second_shell_residues": 9,
+     "heavy_atoms_within_6A": 71,
+     "heavy_atoms_within_8A": 176,
+     "est_atoms_with_H_within_8A": 352,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 16,
+     "metal_metal_min": 3.5939635501768787,
+     "metal_metal_max": 3.5939635501768787,
+     "coords": {
+      "CU0": [
+       22.759,
+       9.385,
+       20.253
+      ],
+      "CU1": [
+       25.842,
+       10.824,
+       21.411
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1LLA": {
+   "title": "CRYSTAL STRUCTURE OF DEOXYGENATED LIMULUS POLYPHEMUS SUBUNIT II HEMOCYANIN AT 2.18 ANGSTROMS RESOLUTION: CLUES FOR A MECHANISM FOR ALLOSTERIC REGULATION",
+   "resolution": 2.18,
+   "sites": [
+    {
+     "residues": [
+      "CU"
+     ],
+     "chain": "A",
+     "resi": 629,
+     "metals": {
+      "CU": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 3,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "HIS173A:NE2",
+      "HIS177A:NE2",
+      "HIS204A:NE2"
+     ],
+     "n_second_shell_residues": 7,
+     "heavy_atoms_within_6A": 44,
+     "heavy_atoms_within_8A": 120,
+     "est_atoms_with_H_within_8A": 240,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "CU0": [
+       33.868,
+       -10.123,
+       -3.666
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "1MTY": {
+   "title": "METHANE MONOOXYGENASE HYDROXYLASE FROM METHYLOCOCCUS CAPSULATUS (BATH)",
+   "resolution": 1.7,
+   "sites": [
+    {
+     "residues": [
+      "FE",
+      "HOH"
+     ],
+     "chain": "D",
+     "resi": 3,
+     "metals": {
+      "FE": 2
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "O": 1
+     },
+     "n_bridges": 1,
+     "n_terminal_ligands": 9,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "GLU114D:OE1",
+      "GLU144D:OE1",
+      "GLU144D:OE2",
+      "GLU209D:OE2",
+      "GLU243D:OE2",
+      "HIS147D:ND1",
+      "HIS246D:ND1",
+      "HOH640D:O",
+      "HOH641D:O"
+     ],
+     "n_second_shell_residues": 7,
+     "heavy_atoms_within_6A": 68,
+     "heavy_atoms_within_8A": 163,
+     "est_atoms_with_H_within_8A": 326,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 13,
+     "metal_metal_min": 3.039881247680571,
+     "metal_metal_max": 3.039881247680571,
+     "coords": {
+      "FE0": [
+       38.209,
+       32.961,
+       60.599
+      ],
+      "FE1": [
+       40.646,
+       34.739,
+       60.224
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "3C8Y": {
+   "title": "1.39 ANGSTROM CRYSTAL STRUCTURE OF FE-ONLY HYDROGENASE",
+   "resolution": 1.39,
+   "sites": [
+    {
+     "residues": [
+      "CYS",
+      "HCN",
+      "SF4"
+     ],
+     "chain": "A",
+     "resi": 575,
+     "metals": {
+      "FE": 6
+     },
+     "n_open_shell_tm": 6,
+     "bridges": {
+      "S": 7,
+      "C": 1
+     },
+     "n_bridges": 8,
+     "n_terminal_ligands": 8,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS300A:SG",
+      "CYS355A:SG",
+      "CYS499A:SG",
+      "HCN575A:C3",
+      "HCN575A:C4",
+      "HCN575A:C6",
+      "HCN575A:C7",
+      "HCN575A:O2"
+     ],
+     "n_second_shell_residues": 26,
+     "heavy_atoms_within_6A": 161,
+     "heavy_atoms_within_8A": 315,
+     "est_atoms_with_H_within_8A": 630,
+     "AS_d_orbitals": 30,
+     "AS_dp_orbitals": 54,
+     "metal_metal_min": 2.5504670160580374,
+     "metal_metal_max": 8.781141269789481,
+     "coords": {
+      "FE0": [
+       22.435,
+       17.057,
+       24.17
+      ],
+      "FE1": [
+       22.707,
+       14.934,
+       25.557
+      ],
+      "FE2": [
+       19.245,
+       16.109,
+       19.006
+      ],
+      "FE3": [
+       18.155,
+       17.934,
+       20.616
+      ],
+      "FE4": [
+       20.861,
+       17.694,
+       20.566
+      ],
+      "FE5": [
+       19.378,
+       18.71,
+       18.362
+      ]
+     },
+     "n_copies": 1
+    },
+    {
+     "residues": [
+      "SF4"
+     ],
+     "chain": "A",
+     "resi": 577,
+     "metals": {
+      "FE": 4
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "S": 4
+     },
+     "n_bridges": 4,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS157A:SG",
+      "CYS190A:SG",
+      "CYS193A:SG",
+      "CYS196A:SG"
+     ],
+     "n_second_shell_residues": 14,
+     "heavy_atoms_within_6A": 98,
+     "heavy_atoms_within_8A": 206,
+     "est_atoms_with_H_within_8A": 412,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 32,
+     "metal_metal_min": 2.681574351010989,
+     "metal_metal_max": 2.828196598541198,
+     "coords": {
+      "FE0": [
+       12.694,
+       20.383,
+       12.972
+      ],
+      "FE1": [
+       10.875,
+       22.5,
+       12.785
+      ],
+      "FE2": [
+       11.294,
+       20.885,
+       10.613
+      ],
+      "FE3": [
+       9.91,
+       19.957,
+       12.714
+      ]
+     },
+     "n_copies": 3
+    },
+    {
+     "residues": [
+      "FES"
+     ],
+     "chain": "A",
+     "resi": 580,
+     "metals": {
+      "FE": 2
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "S": 2
+     },
+     "n_bridges": 2,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS34A:SG",
+      "CYS46A:SG",
+      "CYS49A:SG",
+      "CYS62A:SG"
+     ],
+     "n_second_shell_residues": 12,
+     "heavy_atoms_within_6A": 90,
+     "heavy_atoms_within_8A": 167,
+     "est_atoms_with_H_within_8A": 334,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 16,
+     "metal_metal_min": 2.727903590671784,
+     "metal_metal_max": 2.727903590671784,
+     "coords": {
+      "FE0": [
+       16.39,
+       40.2,
+       0.067
+      ],
+      "FE1": [
+       14.253,
+       39.425,
+       1.575
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1WUI": {
+   "title": "ULTRA-HIGH RESOLUTION STRUCTURE OF THE NI-A STATE OF [NIFE]HYDROGENASE FROM DESULUFOVIBRIO VULGARIS MIYAZAKI F",
+   "resolution": 1.04,
+   "sites": [
+    {
+     "residues": [
+      "SF4"
+     ],
+     "chain": "S",
+     "resi": 1001,
+     "metals": {
+      "FE": 4
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "S": 4
+     },
+     "n_bridges": 4,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS114S:SG",
+      "CYS150S:SG",
+      "CYS17S:SG",
+      "CYS20S:SG"
+     ],
+     "n_second_shell_residues": 21,
+     "heavy_atoms_within_6A": 113,
+     "heavy_atoms_within_8A": 236,
+     "est_atoms_with_H_within_8A": 472,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 32,
+     "metal_metal_min": 2.653577396647783,
+     "metal_metal_max": 2.7492288009549117,
+     "coords": {
+      "FE0": [
+       60.958,
+       44.571,
+       75.134
+      ],
+      "FE1": [
+       63.125,
+       43.602,
+       73.885
+      ],
+      "FE2": [
+       61.711,
+       45.533,
+       72.739
+      ],
+      "FE3": [
+       60.624,
+       43.014,
+       72.916
+      ]
+     },
+     "n_copies": 2
+    },
+    {
+     "residues": [
+      "F3S"
+     ],
+     "chain": "S",
+     "resi": 1003,
+     "metals": {
+      "FE": 3
+     },
+     "n_open_shell_tm": 3,
+     "bridges": {
+      "S": 4
+     },
+     "n_bridges": 4,
+     "n_terminal_ligands": 3,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS231S:SG",
+      "CYS249S:SG",
+      "CYS252S:SG"
+     ],
+     "n_second_shell_residues": 16,
+     "heavy_atoms_within_6A": 94,
+     "heavy_atoms_within_8A": 215,
+     "est_atoms_with_H_within_8A": 430,
+     "AS_d_orbitals": 15,
+     "AS_dp_orbitals": 27,
+     "metal_metal_min": 2.69609068838568,
+     "metal_metal_max": 2.7057135842509226,
+     "coords": {
+      "FE0": [
+       59.94,
+       52.286,
+       63.017
+      ],
+      "FE1": [
+       58.017,
+       50.392,
+       62.828
+      ],
+      "FE2": [
+       59.737,
+       50.365,
+       64.904
+      ]
+     },
+     "n_copies": 1
+    },
+    {
+     "residues": [
+      "CSO",
+      "CYS",
+      "NFC"
+     ],
+     "chain": "L",
+     "resi": 1004,
+     "metals": {
+      "NI": 1,
+      "FE": 1
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "S": 2,
+      "O": 1
+     },
+     "n_bridges": 3,
+     "n_terminal_ligands": 8,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CSO546L:OD",
+      "CSO546L:SG",
+      "CSO84L:OD",
+      "CYS81L:SG",
+      "NFC1004L:C1",
+      "NFC1004L:C2",
+      "NFC1004L:C3",
+      "NFC1004L:O5"
+     ],
+     "n_second_shell_residues": 18,
+     "heavy_atoms_within_6A": 100,
+     "heavy_atoms_within_8A": 202,
+     "est_atoms_with_H_within_8A": 404,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 19,
+     "metal_metal_min": 2.7968929189370124,
+     "metal_metal_max": 2.7968929189370124,
+     "coords": {
+      "NI0": [
+       56.029,
+       46.894,
+       84.296
+      ],
+      "FE1": [
+       55.604,
+       49.126,
+       85.927
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1JJY": {
+   "title": "CRYSTAL STRUCTURE OF A NI-CONTAINING CARBON MONOXIDE DEHYDROGENASE FROM CARBOXYDOTHERMUS HYDROGENOFORMANS",
+   "resolution": null,
+   "sites": [
+    {
+     "residues": [
+      "NFS"
+     ],
+     "chain": "A",
+     "resi": 2003,
+     "metals": {
+      "NI": 1,
+      "FE": 4
+     },
+     "n_open_shell_tm": 5,
+     "bridges": {
+      "S": 5
+     },
+     "n_bridges": 5,
+     "n_terminal_ligands": 6,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS295A:SG",
+      "CYS333A:SG",
+      "CYS446A:SG",
+      "CYS476A:SG",
+      "CYS526A:SG",
+      "HIS261A:NE2"
+     ],
+     "n_second_shell_residues": 14,
+     "heavy_atoms_within_6A": 118,
+     "heavy_atoms_within_8A": 225,
+     "est_atoms_with_H_within_8A": 450,
+     "AS_d_orbitals": 25,
+     "AS_dp_orbitals": 40,
+     "metal_metal_min": 2.624486616464252,
+     "metal_metal_max": 4.684261841528502,
+     "coords": {
+      "NI0": [
+       55.027,
+       12.483,
+       47.357
+      ],
+      "FE1": [
+       53.526,
+       13.832,
+       49.327
+      ],
+      "FE2": [
+       54.683,
+       10.303,
+       50.281
+      ],
+      "FE3": [
+       54.626,
+       9.61,
+       47.622
+      ],
+      "FE4": [
+       52.511,
+       10.734,
+       48.695
+      ]
+     },
+     "n_copies": 1
+    },
+    {
+     "residues": [
+      "SF4"
+     ],
+     "chain": " ",
+     "resi": 1001,
+     "metals": {
+      "FE": 4
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "S": 4
+     },
+     "n_bridges": 4,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS48A:SG",
+      "CYS51A:SG",
+      "CYS56A:SG",
+      "CYS70A:SG"
+     ],
+     "n_second_shell_residues": 13,
+     "heavy_atoms_within_6A": 104,
+     "heavy_atoms_within_8A": 165,
+     "est_atoms_with_H_within_8A": 330,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 32,
+     "metal_metal_min": 2.719650712867372,
+     "metal_metal_max": 2.7839039135717316,
+     "coords": {
+      "FE0": [
+       40.971,
+       -0.019,
+       22.669
+      ],
+      "FE1": [
+       39.556,
+       2.319,
+       22.804
+      ],
+      "FE2": [
+       42.077,
+       2.161,
+       23.861
+      ],
+      "FE3": [
+       41.784,
+       2.135,
+       21.145
+      ]
+     },
+     "n_copies": 1
+    },
+    {
+     "residues": [
+      "SF4"
+     ],
+     "chain": " ",
+     "resi": 1002,
+     "metals": {
+      "FE": 2
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "S": 2
+     },
+     "n_bridges": 2,
+     "n_terminal_ligands": 2,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS39A:SG",
+      "CYS47A:SG"
+     ],
+     "n_second_shell_residues": 7,
+     "heavy_atoms_within_6A": 47,
+     "heavy_atoms_within_8A": 97,
+     "est_atoms_with_H_within_8A": 194,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 16,
+     "metal_metal_min": 2.7448453508349044,
+     "metal_metal_max": 2.7448453508349044,
+     "coords": {
+      "FE0": [
+       44.527,
+       -6.048,
+       33.55
+      ],
+      "FE1": [
+       43.587,
+       -4.088,
+       31.874
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1FDN": {
+   "title": "REFINED CRYSTAL STRUCTURE OF THE 2[4FE-4S] FERREDOXIN FROM CLOSTRIDIUM ACIDURICI AT 1.84 ANGSTROMS RESOLUTION",
+   "resolution": 1.84,
+   "sites": [
+    {
+     "residues": [
+      "SF4"
+     ],
+     "chain": "A",
+     "resi": 56,
+     "metals": {
+      "FE": 4
+     },
+     "n_open_shell_tm": 4,
+     "bridges": {
+      "S": 4
+     },
+     "n_bridges": 4,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS11A:SG",
+      "CYS14A:SG",
+      "CYS47A:SG",
+      "CYS8A:SG"
+     ],
+     "n_second_shell_residues": 15,
+     "heavy_atoms_within_6A": 106,
+     "heavy_atoms_within_8A": 175,
+     "est_atoms_with_H_within_8A": 350,
+     "AS_d_orbitals": 20,
+     "AS_dp_orbitals": 32,
+     "metal_metal_min": 2.713213961338101,
+     "metal_metal_max": 2.817925123206797,
+     "coords": {
+      "FE0": [
+       2.26,
+       14.394,
+       74.719
+      ],
+      "FE1": [
+       0.728,
+       16.628,
+       74.564
+      ],
+      "FE2": [
+       -0.061,
+       14.381,
+       73.264
+      ],
+      "FE3": [
+       -0.098,
+       14.443,
+       76.081
+      ]
+     },
+     "n_copies": 2
+    }
+   ]
+  },
+  "1A70": {
+   "title": "SPINACH FERREDOXIN",
+   "resolution": 1.7,
+   "sites": [
+    {
+     "residues": [
+      "FES"
+     ],
+     "chain": "A",
+     "resi": 1602,
+     "metals": {
+      "FE": 2
+     },
+     "n_open_shell_tm": 2,
+     "bridges": {
+      "S": 2
+     },
+     "n_bridges": 2,
+     "n_terminal_ligands": 4,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS39A:SG",
+      "CYS44A:SG",
+      "CYS47A:SG",
+      "CYS77A:SG"
+     ],
+     "n_second_shell_residues": 12,
+     "heavy_atoms_within_6A": 87,
+     "heavy_atoms_within_8A": 143,
+     "est_atoms_with_H_within_8A": 286,
+     "AS_d_orbitals": 10,
+     "AS_dp_orbitals": 16,
+     "metal_metal_min": 2.762299223473082,
+     "metal_metal_max": 2.762299223473082,
+     "coords": {
+      "FE0": [
+       13.398,
+       11.548,
+       21.999
+      ],
+      "FE1": [
+       12.925,
+       10.09,
+       19.701
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  },
+  "1PLC": {
+   "title": "ACCURACY AND PRECISION IN PROTEIN CRYSTAL STRUCTURE ANALYSIS: RESTRAINED LEAST-SQUARES REFINEMENT OF THE CRYSTAL STRUCTURE OF POPLAR PLASTOCYANIN AT 1.33 ANGSTROMS RESOLUTION",
+   "resolution": 1.33,
+   "sites": [
+    {
+     "residues": [
+      "CU"
+     ],
+     "chain": "A",
+     "resi": 100,
+     "metals": {
+      "CU": 1
+     },
+     "n_open_shell_tm": 1,
+     "bridges": {},
+     "n_bridges": 0,
+     "n_terminal_ligands": 3,
+     "heme": false,
+     "terminal_ligand_residues": [
+      "CYS84A:SG",
+      "HIS37A:ND1",
+      "HIS87A:ND1"
+     ],
+     "n_second_shell_residues": 9,
+     "heavy_atoms_within_6A": 50,
+     "heavy_atoms_within_8A": 117,
+     "est_atoms_with_H_within_8A": 234,
+     "AS_d_orbitals": 5,
+     "AS_dp_orbitals": 5,
+     "metal_metal_min": null,
+     "metal_metal_max": null,
+     "coords": {
+      "CU0": [
+       7.05,
+       34.96,
+       18.716
+      ]
+     },
+     "n_copies": 1
+    }
+   ]
+  }
+ },
+ "levers": {
+  "heme": {
+   "myoglobin_1A6N_deoxy_vs_1A6M_oxy": {
+    "deoxy": {
+     "fe_oop_N4": 0.36377592816619403,
+     "fe_oop_core24": 0.3899453758905229,
+     "fe_Np_mean": 2.07450037577447,
+     "fe_NE2_prox": 2.141143152617312
+    },
+    "oxy": {
+     "fe_oop_N4": 0.023471247635451362,
+     "fe_oop_core24": 0.08867697706595491,
+     "fe_Np_mean": 2.0059810797687865,
+     "fe_NE2_prox": 2.063512781642024
+    },
+    "d_fe_oop_N4": 0.34030468053074264,
+    "ca_shifts": {
+     "n_ca": 151,
+     "rmsd_all": 0.1470379820139703,
+     "profile": {
+      "0-8A": {
+       "n": 5,
+       "median": 0.20953677348784636,
+       "p90": 0.32865571873653404
+      },
+      "8-12A": {
+       "n": 29,
+       "median": 0.15600006728874485,
+       "p90": 0.25034843764355685
+      },
+      "12-16A": {
+       "n": 44,
+       "median": 0.10252522987818316,
+       "p90": 0.2152491888423868
+      },
+      "16-20A": {
+       "n": 36,
+       "median": 0.09828707167471856,
+       "p90": 0.20673862945997723
+      },
+      "20-99A": {
+       "n": 37,
+       "median": 0.09727324995954485,
+       "p90": 0.14967327648714696
+      }
+     },
+     "groups": {
+      "F_helix_82-97": {
+       "mean": 0.14856731235060375,
+       "max": 0.24900606571047576,
+       "n": 16
+      },
+      "His93": {
+       "mean": 0.24900606571047576,
+       "max": 0.24900606571047576,
+       "n": 1
+      },
+      "E_helix_58-77": {
+       "mean": 0.16681581243958105,
+       "max": 0.39973704290947226,
+       "n": 20
+      },
+      "far_A_helix_3-18": {
+       "mean": 0.08412323204681414,
+       "max": 0.16024141725132257,
+       "n": 16
+      }
+     }
+    }
+   },
+   "hemoglobin_2HHB_deoxyT_vs_1HHO_oxyR": {
+    "alpha": {
+     "deoxy": {
+      "fe_oop_N4": 0.4481639026450455,
+      "fe_oop_core24": 0.5607739969804373,
+      "fe_Np_mean": 2.099010533290214,
+      "fe_NE2_prox": 2.1456143642323044
+     },
+     "oxy": {
+      "fe_oop_N4": 0.12105096721288294,
+      "fe_oop_core24": 0.15497554556256588,
+      "fe_Np_mean": 1.9835256181424006,
+      "fe_NE2_prox": 1.9360870331676754
+     },
+     "d_fe_oop_N4": 0.3271129354321626,
+     "ca_shifts_subunit_superposed": {
+      "n_ca": 141,
+      "rmsd_all": 0.7049256542695957,
+      "profile": {
+       "0-8A": {
+        "n": 5,
+        "median": 0.6546732643607551,
+        "p90": 0.923059922056983
+       },
+       "8-12A": {
+        "n": 32,
+        "median": 0.37385280900359175,
+        "p90": 0.8920963877518794
+       },
+       "12-16A": {
+        "n": 43,
+        "median": 0.4184102522481791,
+        "p90": 0.9929282995716159
+       },
+       "16-20A": {
+        "n": 28,
+        "median": 0.4935839586513337,
+        "p90": 0.7701326123327145
+       },
+       "20-99A": {
+        "n": 33,
+        "median": 0.41933189542489885,
+        "p90": 0.6350879403533517
+       }
+      },
+      "groups": {
+       "F_helix": {
+        "mean": 0.8312281301839111,
+        "max": 1.6030443171010167,
+        "n": 10
+       },
+       "proximal_His": {
+        "mean": 0.8896919039015088,
+        "max": 0.8896919039015088,
+        "n": 1
+       }
+      }
+     }
+    },
+    "beta": {
+     "deoxy": {
+      "fe_oop_N4": 0.32767301521108544,
+      "fe_oop_core24": 0.4293257747548701,
+      "fe_Np_mean": 2.026231522373207,
+      "fe_NE2_prox": 2.1471751209437957
+     },
+     "oxy": {
+      "fe_oop_N4": -0.11070697416489714,
+      "fe_oop_core24": -0.05879426773920629,
+      "fe_Np_mean": 1.9610797233505242,
+      "fe_NE2_prox": 2.068046904690512
+     },
+     "d_fe_oop_N4": 0.43837998937598255,
+     "ca_shifts_subunit_superposed": {
+      "n_ca": 146,
+      "rmsd_all": 0.8190949607847702,
+      "profile": {
+       "0-8A": {
+        "n": 4,
+        "median": 1.0799867862425594,
+        "p90": 1.1205010405488716
+       },
+       "8-12A": {
+        "n": 33,
+        "median": 0.7206166973072875,
+        "p90": 1.3630519670949115
+       },
+       "12-16A": {
+        "n": 42,
+        "median": 0.5656514621393991,
+        "p90": 1.3577455257756847
+       },
+       "16-20A": {
+        "n": 29,
+        "median": 0.5393852816303347,
+        "p90": 1.1798293747104707
+       },
+       "20-99A": {
+        "n": 38,
+        "median": 0.45561039955167637,
+        "p90": 1.1023536483063703
+       }
+      },
+      "groups": {
+       "F_helix": {
+        "mean": 1.224178208176835,
+        "max": 1.6788460359969837,
+        "n": 10
+       },
+       "proximal_His": {
+        "mean": 1.11380159607548,
+        "max": 1.11380159607548,
+        "n": 1
+       }
+      }
+     }
+    }
+   }
+  },
+  "p_cluster": {
+   "3MIN_PN_reduced": {
+    "resolution": 2.03,
+    "clusters": [
+     {
+      "chain": "B",
+      "resi": 525,
+      "n_fe": 8,
+      "fe_fe_sorted": [
+       2.429,
+       2.435,
+       2.535,
+       2.537,
+       2.541,
+       2.559,
+       2.574,
+       2.603,
+       2.61,
+       2.632,
+       2.703,
+       2.741,
+       3.074,
+       3.074,
+       3.806,
+       4.082,
+       4.481,
+       4.608,
+       4.76,
+       4.817,
+       5.07,
+       5.362,
+       5.446,
+       5.574,
+       5.585,
+       6.637,
+       6.849,
+       7.602
+      ],
+      "n_fe_fe_below_2p9": 12,
+      "min_fe_serB188_OG": 2.804198994365414,
+      "min_fe_cysA88_N": 3.297051713273542
+     },
+     {
+      "chain": "D",
+      "resi": 525,
+      "n_fe": 8,
+      "fe_fe_sorted": [
+       2.408,
+       2.474,
+       2.495,
+       2.499,
+       2.546,
+       2.546,
+       2.628,
+       2.633,
+       2.688,
+       2.696,
+       2.703,
+       2.77,
+       2.992,
+       3.028,
+       3.742,
+       4.035,
+       4.443,
+       4.563,
+       4.647,
+       4.701,
+       4.971,
+       5.376,
+       5.395,
+       5.548,
+       5.566,
+       6.638,
+       6.801,
+       7.617
+      ],
+      "n_fe_fe_below_2p9": 12,
+      "min_fe_serB188_OG": 2.841136040389481,
+      "min_fe_cysA88_N": 3.4035115689534536
+     }
+    ]
+   },
+   "2MIN_POX_oxidized": {
+    "resolution": 2.03,
+    "clusters": [
+     {
+      "chain": "A",
+      "resi": 498,
+      "n_fe": 8,
+      "fe_fe_sorted": [
+       2.39,
+       2.477,
+       2.613,
+       2.671,
+       2.71,
+       2.711,
+       2.752,
+       2.78,
+       2.785,
+       2.965,
+       3.14,
+       3.466,
+       3.833,
+       3.837,
+       3.94,
+       4.39,
+       4.853,
+       5.431,
+       5.56,
+       5.608,
+       5.657,
+       5.663,
+       5.823,
+       6.065,
+       6.295,
+       6.772,
+       7.723,
+       7.897
+      ],
+      "n_fe_fe_below_2p9": 9,
+      "min_fe_serB188_OG": 1.896028480798746,
+      "min_fe_cysA88_N": 2.1456288122599396
+     },
+     {
+      "chain": "C",
+      "resi": 498,
+      "n_fe": 8,
+      "fe_fe_sorted": [
+       2.401,
+       2.531,
+       2.608,
+       2.657,
+       2.697,
+       2.715,
+       2.757,
+       2.763,
+       2.77,
+       3.018,
+       3.158,
+       3.381,
+       3.751,
+       3.833,
+       3.925,
+       4.388,
+       4.813,
+       5.493,
+       5.505,
+       5.578,
+       5.599,
+       5.715,
+       5.763,
+       6.026,
+       6.188,
+       6.783,
+       7.686,
+       7.825
+      ],
+      "n_fe_fe_below_2p9": 9,
+      "min_fe_serB188_OG": 2.0662277222029535,
+      "min_fe_cysA88_N": 2.188510680805557
+     }
+    ]
+   }
+  },
+  "femoco": {
+   "3U7Q": {
+    "title": "A. VINELANDII NITROGENASE MOFE PROTEIN AT ATOMIC RESOLUTION",
+    "resolution": 1.0,
+    "cofactors": [
+     {
+      "chain": "A",
+      "resi": 6496,
+      "atoms": [
+       "CX",
+       "FE1",
+       "FE2",
+       "FE3",
+       "FE4",
+       "FE5",
+       "FE6",
+       "FE7",
+       "MO1",
+       "S1A",
+       "S1B",
+       "S2A",
+       "S2B",
+       "S3A",
+       "S3B",
+       "S4A",
+       "S4B",
+       "S5A"
+      ],
+      "has_S2B": true,
+      "fe2_fe6": 2.576330918185782,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": []
+     },
+     {
+      "chain": "C",
+      "resi": 7496,
+      "atoms": [
+       "CX",
+       "FE1",
+       "FE2",
+       "FE3",
+       "FE4",
+       "FE5",
+       "FE6",
+       "FE7",
+       "MO1",
+       "S1A",
+       "S1B",
+       "S2A",
+       "S2B",
+       "S3A",
+       "S3B",
+       "S4A",
+       "S4B",
+       "S5A"
+      ],
+      "has_S2B": true,
+      "fe2_fe6": 2.5796470688836473,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": []
+     }
+    ],
+    "het_groups": []
+   },
+   "4TKV": {
+    "title": "CO-BOUND NITROGENASE MOFE-PROTEIN FROM A. VINELANDII",
+    "resolution": 1.5,
+    "cofactors": [
+     {
+      "chain": "A",
+      "resi": 502,
+      "atoms": [
+       "CX",
+       "FE1",
+       "FE2",
+       "FE3",
+       "FE4",
+       "FE5",
+       "FE6",
+       "FE7",
+       "MO1",
+       "S1A",
+       "S1B",
+       "S2A",
+       "S3A",
+       "S3B",
+       "S4A",
+       "S4B",
+       "S5A"
+      ],
+      "has_S2B": false,
+      "fe2_fe6": 2.486460536586092,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": [
+       "CMO504A:C"
+      ]
+     },
+     {
+      "chain": "A",
+      "resi": 506,
+      "atoms": [
+       "S1A"
+      ],
+      "has_S2B": false,
+      "fe2_fe6": null,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": []
+     },
+     {
+      "chain": "C",
+      "resi": 502,
+      "atoms": [
+       "CX",
+       "FE1",
+       "FE2",
+       "FE3",
+       "FE4",
+       "FE5",
+       "FE6",
+       "FE7",
+       "MO1",
+       "S1A",
+       "S1B",
+       "S2A",
+       "S3A",
+       "S3B",
+       "S4A",
+       "S4B",
+       "S5A"
+      ],
+      "has_S2B": false,
+      "fe2_fe6": 2.4951933792794505,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": [
+       "CMO504C:C"
+      ]
+     },
+     {
+      "chain": "C",
+      "resi": 506,
+      "atoms": [
+       "S1A"
+      ],
+      "has_S2B": false,
+      "fe2_fe6": null,
+      "bridging_non_cofactor_ligand_near_Fe2Fe6": []
+     }
+    ],
+    "het_groups": [
+     "CMO",
+     "FE2"
+    ]
+   }
+  },
+  "hemocyanin": {
+   "1LLA": {
+    "title": "CRYSTAL STRUCTURE OF DEOXYGENATED LIMULUS POLYPHEMUS SUBUNIT II HEMOCYANIN AT 2.18 ANGSTROMS RESOLUTION: CLUES FOR A MECHANISM FOR ALLOSTERIC REGULATION",
+    "resolution": 2.18,
+    "cu_cu": [
+     {
+      "a": "A629",
+      "b": "A630",
+      "d": 4.614297237933422
+     }
+    ]
+   },
+   "1OXY": {
+    "title": "CRYSTALLOGRAPHIC ANALYSIS OF OXYGENATED AND DEOXYGENATED STATES OF ARTHROPOD HEMOCYANIN SHOWS UNUSUAL DIFFERENCES",
+    "resolution": 2.4,
+    "cu_cu": [
+     {
+      "a": "A629",
+      "b": "A630",
+      "d": 3.5939635501768787
+     }
+    ]
+   }
+  },
+  "oec": {
+   "3WU2": {
+    "title": "CRYSTAL STRUCTURE ANALYSIS OF PHOTOSYSTEM II COMPLEX",
+    "resolution": 1.9,
+    "oec": [
+     {
+      "chain": "A",
+      "resi": 401,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.869,
+       "MN1-MN3": 3.282,
+       "MN1-MN4": 4.986,
+       "MN2-MN3": 2.878,
+       "MN2-MN4": 5.438,
+       "MN3-MN4": 2.974
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH595A:O-MN4:2.27",
+       "HOH624A:O-MN4:2.12"
+      ]
+     },
+     {
+      "chain": "a",
+      "resi": 404,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.761,
+       "MN1-MN3": 3.287,
+       "MN1-MN4": 4.924,
+       "MN2-MN3": 2.92,
+       "MN2-MN4": 5.384,
+       "MN3-MN4": 2.888
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH543a:O-MN4:2.20",
+       "HOH574a:O-MN4:2.17"
+      ]
+     }
+    ]
+   },
+   "6JLJ": {
+    "title": "XFEL STRUCTURE OF CYANOBACTERIAL PHOTOSYSTEM II (DARK STATE, DATASET1)",
+    "resolution": 2.15,
+    "oec": [
+     {
+      "chain": "A",
+      "resi": 417,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.578,
+       "MN1-MN3": 3.191,
+       "MN1-MN4": 4.982,
+       "MN2-MN3": 2.715,
+       "MN2-MN4": 5.29,
+       "MN3-MN4": 2.917
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH567A:O-MN4:2.23",
+       "HOH588A:O-MN4:2.07"
+      ]
+     },
+     {
+      "chain": "a",
+      "resi": 417,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.607,
+       "MN1-MN3": 3.132,
+       "MN1-MN4": 4.947,
+       "MN2-MN3": 2.724,
+       "MN2-MN4": 5.24,
+       "MN3-MN4": 2.862
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH527a:O-MN4:2.23",
+       "HOH550a:O-MN4:2.06"
+      ]
+     }
+    ]
+   },
+   "6JLL": {
+    "title": "XFEL STRUCTURE OF CYANOBACTERIAL PHOTOSYSTEM II (2F STATE, DATASET1)",
+    "resolution": 2.15,
+    "oec": [
+     {
+      "chain": "A",
+      "resi": 418,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.688,
+       "MN1-MN3": 3.244,
+       "MN1-MN4": 4.919,
+       "MN2-MN3": 2.758,
+       "MN2-MN4": 5.223,
+       "MN3-MN4": 2.752
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH512A:O-MN4:2.23",
+       "HOH523A:O-MN4:2.07"
+      ]
+     },
+     {
+      "chain": "a",
+      "resi": 417,
+      "atoms": [
+       "CA1",
+       "MN1",
+       "MN2",
+       "MN3",
+       "MN4",
+       "O1",
+       "O2",
+       "O3",
+       "O4",
+       "O5"
+      ],
+      "mn_mn": {
+       "MN1-MN2": 2.666,
+       "MN1-MN3": 3.166,
+       "MN1-MN4": 4.872,
+       "MN2-MN3": 2.729,
+       "MN2-MN4": 5.17,
+       "MN3-MN4": 2.76
+      },
+      "extra_O_within_2p3_of_Mn": [
+       "HOH511a:O-MN4:2.16",
+       "HOH529a:O-MN4:2.06"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "short_hbonds": {
+  "1NWZ": {
+   "title": "PYP ULTRA-HIGH RESOLUTION STRUCTURE OF A BACTERIAL PHOTORECEPTOR",
+   "resolution": 0.82,
+   "cutoff": 2.6,
+   "pairs": [
+    {
+     "a": "TYR42A:OH",
+     "b": "HC4169A:O4'",
+     "d": 2.485
+    },
+    {
+     "a": "ASP20A:OD1",
+     "b": "GLN41A:NE2",
+     "d": 2.516
+    },
+    {
+     "a": "GLU46A:OE1",
+     "b": "HC4169A:O4'",
+     "d": 2.578
+    }
+   ]
+  },
+  "1OH0": {
+   "title": "CRYSTAL STRUCTURE OF KETOSTEROID ISOMERASE COMPLEXED WITH EQUILENIN",
+   "resolution": 1.1,
+   "cutoff": 2.6,
+   "pairs": [
+    {
+     "a": "SER77A:OG",
+     "b": "ASN79A:ND2",
+     "d": 2.339
+    },
+    {
+     "a": "SER277B:OG",
+     "b": "ASN279B:ND2",
+     "d": 2.429
+    },
+    {
+     "a": "ASP103A:OD2",
+     "b": "EQU1128A:O1",
+     "d": 2.48
+    },
+    {
+     "a": "TYR16A:OH",
+     "b": "TYR57A:OH",
+     "d": 2.509
+    },
+    {
+     "a": "TYR216B:OH",
+     "b": "TYR257B:OH",
+     "d": 2.53
+    },
+    {
+     "a": "TYR16A:OH",
+     "b": "EQU1128A:O1",
+     "d": 2.536
+    },
+    {
+     "a": "TYR216B:OH",
+     "b": "EQU1331B:O1",
+     "d": 2.549
+    },
+    {
+     "a": "ASP303B:OD2",
+     "b": "EQU1331B:O1",
+     "d": 2.556
+    },
+    {
+     "a": "THR271B:N",
+     "b": "GLY272B:N",
+     "d": 2.569
+    }
+   ]
+  },
+  "1EMA": {
+   "title": "GREEN FLUORESCENT PROTEIN FROM AEQUOREA VICTORIA",
+   "resolution": 1.9,
+   "cutoff": 2.6,
+   "pairs": [
+    {
+     "a": "PHE64A:O",
+     "b": "CRO66A:N1",
+     "d": 2.236
+    },
+    {
+     "a": "CRO66A:O3",
+     "b": "VAL68A:N",
+     "d": 2.251
+    },
+    {
+     "a": "SER175A:OG",
+     "b": "VAL176A:N",
+     "d": 2.444
+    },
+    {
+     "a": "LYS209A:NZ",
+     "b": "HIS217A:O",
+     "d": 2.459
+    },
+    {
+     "a": "GLY4A:O",
+     "b": "LEU7A:N",
+     "d": 2.482
+    },
+    {
+     "a": "ASP155A:N",
+     "b": "GLY160A:O",
+     "d": 2.579
+    }
+   ]
+  }
+ }
+}

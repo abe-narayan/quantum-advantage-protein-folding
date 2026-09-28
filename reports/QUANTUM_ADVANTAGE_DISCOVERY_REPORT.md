@@ -140,12 +140,12 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
   - K-G1c (hardness only at T = 1) does not fire at L ≥ 80.
 - **Mode census** (256 restarts, 16 chains, L = 30–150):
   - Geometric-mean p_hit(best mode) falls 0.10 → 0.0039 and reaches the 1/256 censoring floor at L = 150.
-  - exp(−0.028 L) fits better than a power law (ΔBIC = 10.6; tail censored).
+  - exp(−0.028 L) fits better than a power law (ΔBIC = 10.6; tail censored). Round 3 showed this is **not** a hardness measure: it is confounded by fixed-depth (200-iteration) relaxation, and native-free distance-geometry seeding reaches the census-best basin on 14/16 crops at L = 150 in ~420 evaluations.
   - The 2048-restart census (8 crops) is unsaturated at L = 150 (p_hit ≈ 1/2048).
   - ρ(E, RMSD) over modes is 0.03–0.34.
 - **Pre-registered G1 survival requires all criteria**, and it **fails**:
   - super-polynomial p_hit: met descriptively, with a censoring caveat;
-  - no bypass: contradicted by the exploratory distance-geometry seeding (61/64);
+  - no bypass: contradicted by native-free distance-geometry seeding, which reaches the census-best basin on 14/16 crops at L = 150 (round 3, replicated);
   - transmission: weak at L = 60, absent at L = 100;
   - extrapolated classical cost > B* at some L ≤ 500: **fails**. p_hit ≈ 2×10⁻⁷ at L = 500 gives ~10⁹ evaluations, below B* ≥ 10¹⁰–10¹¹.
 - **The quantum sampling route is killed** by both the pre-registered G1 rule and the landscape-independent floor (K-101).

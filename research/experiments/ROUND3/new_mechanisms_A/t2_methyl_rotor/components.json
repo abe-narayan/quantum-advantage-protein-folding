@@ -1,0 +1,63 @@
+{
+ "n_methyls": 50,
+ "HH_lt_2.0": {
+  "n_edges": 0,
+  "largest_components": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "log10_sector_dim_largest_M24": 1.2304489213782739
+ },
+ "HH_lt_2.2": {
+  "n_edges": 4,
+  "largest_components": [
+   2,
+   2,
+   2,
+   2,
+   1,
+   1
+  ],
+  "log10_sector_dim_largest_M24": 2.4608978427565478
+ },
+ "HH_lt_2.4": {
+  "n_edges": 20,
+  "largest_components": [
+   11,
+   5,
+   2,
+   2,
+   2,
+   2
+  ],
+  "log10_sector_dim_largest_M24": 13.534938135161013
+ },
+ "HH_lt_2.6": {
+  "n_edges": 45,
+  "largest_components": [
+   34,
+   4,
+   2,
+   2,
+   1,
+   1
+  ],
+  "log10_sector_dim_largest_M24": 41.83526332686131
+ },
+ "HH_lt_3.0": {
+  "n_edges": 72,
+  "largest_components": [
+   34,
+   4,
+   2,
+   2,
+   2,
+   1
+  ],
+  "log10_sector_dim_largest_M24": 41.83526332686131
+ }
+}

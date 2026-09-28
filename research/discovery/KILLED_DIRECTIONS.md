@@ -43,4 +43,20 @@ _28 of 28 candidate mechanisms are killed as quantum-advantage claims for protei
 
 ## Kills added by this sprint's own experiments (production, pre-registered)
 
+- **K-104** NMR two-point transfer forward model; **K-105** NMR echo (OTOC(1)) forward model as a structure advantage (R1). See KILLBOOK.
+- **Round 3 (K-106 to K-116):**
+  - quantum-enhanced MCMC;
+  - any-exponent speedups on the learned energy (the distance-geometry portfolio makes it classically easy);
+  - structured super-quadratic families (DQI girth 3, Kikuchi arity, glued trees, QHD, ...);
+  - the double-quantum echo;
+  - GBS contact sampling;
+  - methyl-rotor tunnelling;
+  - quantum SDP;
+  - NA-4 to NA-9;
+  - quantum-memory learning (theorem);
+  - active-site FT-QPE for structure;
+  - R1-SIM as a resource claim against exact F_N.
+
+  Full table: `research/KILLBOOK.md` and `experiments/ROUND3/SYNTHESIS.md` §4.
+
 _Filled in from the C1/C2/C3/R1-E/PoP and G1/R2-T results; see `reports/QUANTUM_ADVANTAGE_DISCOVERY_REPORT.md` §Negative results._

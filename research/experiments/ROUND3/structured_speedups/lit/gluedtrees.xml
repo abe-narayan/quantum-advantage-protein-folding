@@ -1,0 +1,699 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/9bUbHfJ/eAeJeu4lWzH18RyTIOI</id>
+  <title>arXiv Query: search_query=abs:"glued trees" OR abs:"welded trees"&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22glued+trees%22+OR+abs:%22welded+trees%22&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>29</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.26712v1</id>
+    <title>A quantum lower bound for path finding in welded trees</title>
+    <updated>2026-09-22T17:03:38Z</updated>
+    <link href="https://arxiv.org/abs/2609.26712v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.26712v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the welded tree problem, an algorithm is tasked with navigating a graph formed from two binary trees joined at the leaves through a ``weld'' of connecting edges. A quantum walk can navigate from root to root exponentially faster than any classical algorithm. However, known efficient quantum algorithms cannot find a path between the roots, as recording the path destroys constructive interference and thus the speedup. We prove that this is inherent: any quantum algorithm needs exponentially many queries to find a path between the roots of an independently matched welded tree graph. This provides an example of a problem that a quantum computer can solve exponentially faster than any classical algorithm by exploring exponentially many paths in superposition, but where it is provably intractable to find any such path. The proof uses compressed permutation oracles to record the progress of a quantum algorithm as it queries the graph. We show that the compressed database remains path-free up to a small error. By controlling such errors and bounding the progress of the algorithm with each compressed oracle query, we show that $Ω(2^{n/12})$ queries are required to find a path in a height-$n$ tree with constant success probability.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-22T17:03:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Joseph Carolan</name>
+    </author>
+    <author>
+      <name>Andrew M. Childs</name>
+    </author>
+    <author>
+      <name>Matthew Coudron</name>
+    </author>
+    <author>
+      <name>Amin Shiraz Gilani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.20651v1</id>
+    <title>Hardness of Pathfinding in a Welded Tree</title>
+    <updated>2026-09-17T16:29:09Z</updated>
+    <link href="https://arxiv.org/abs/2609.20651v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.20651v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Starting from the entrance of a welded tree, a quantum walk algorithm can find its exit vertex exponentially faster than any classical algorithm. However, it has been an open question whether any quantum algorithm is able to efficiently find a path from the entrance to the exit. We answer this by proving an exponential quantum query lower bound for finding such path. Specifically, for trees of height $n$, any quantum query algorithm requires at least $Ω(2^{n/24})$ queries in order to succeed with constant probability.
+  Our proof uses the compressed permutation oracle technique in order to construct databases which track the graph information an algorithm has learned and forgotten, and show that no efficient quantum algorithm can build an entrance-to-exit path in these records.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-17T16:29:09Z</published>
+    <arxiv:comment>55 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>David Miloschewsky</name>
+    </author>
+    <author>
+      <name>Supartha Podder</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.02630v1</id>
+    <title>An Affine Semigroup from Orbifold Boundary Conditions: cut, phylogenetic and hierarchical models in the unit-weight sector, and weighted configurations beyond them</title>
+    <updated>2026-09-02T14:08:25Z</updated>
+    <link href="https://arxiv.org/abs/2609.02630v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.02630v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The equivalence classes of boundary conditions of a gauge theory on a two-dimensional orbifold are the fibres of a marginal map, indexed by an affine semigroup: one generator per alphabet label, graded by weight, embedded by its local data at the fixed points. This note identifies that semigroup. Without weights the configuration has a name and a literature, whose results about our cases are attributed here: over $\mathbb{Z}_2$ it is the cut configuration of an explicit graph in the sense of Sturmfels-Sullivant --- the four-cycle for $T^2/\mathbb{Z}_2$, the wheel $W_4$ for $S^1/\mathbb{Z}_2\times S^1/\mathbb{Z}_2$ --- verified as an equality of configurations; over $\mathbb{Z}_m$ with equal cone orders, the group-based phylogenetic model on a claw tree; with unequal orders, a mixed-order variant we do not find in the literature; for higher products, the binary hierarchical model of a cross-polytope boundary complex. The product orbifold's ring is a row of a 2008 table --- codimension, degree, minimal generators, normality --- every invariant of which our machinery reproduced without knowing of it. What none of the three covers is the alphabet with weights, which arise from induction to higher-dimensional irreducibles of a non-abelian space group and from conjugate-pair recombination over real or quaternionic ground. That sector is adjacent to, but not identified with, the non-abelian direction Sturmfels and Sullivant raised in 2005, and is where our contributions sit: gluing trees for the weighted alphabets and the orthogonal and symplectic columns, and the group-based model on the tripod, a complete intersection exactly when the finite abelian group has order at most three. The first group beyond $\mathbb{Z}_3$ separates local from global: the $\mathbb{Z}_4$ tripod is a complete intersection on the Zariski-open set the phylogenetics literature works in, and not globally.</summary>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.AC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-02T14:08:25Z</published>
+    <arxiv:comment>16 pages, 3 figures. Companion to Part IX-A, "The Alphabet of Orbifold Boundary Conditions", which determines the alphabet whose relations are computed here: https://doi.org/10.5281/zenodo.22254861 . This note's record, with every ancillary script and its archived receipt: https://doi.org/10.5281/zenodo.22254863</arxiv:comment>
+    <arxiv:primary_category term="math.CO"/>
+    <author>
+      <name>Carles Marín</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11228v1</id>
+    <title>Quantum Algorithm for Identifying Hidden Graphs: Spectral Theory and Numerical Evidence</title>
+    <updated>2026-05-11T20:44:32Z</updated>
+    <link href="https://arxiv.org/abs/2605.11228v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11228v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give a quantum algorithm for a novel type of black-box problem: identifying a hidden $d$-regular base graph $G$ on $n$ vertices from oracle access to an obfuscated version of it, rather than traversing it. From $G$ we build the spired graph $G_{\rm spire}$ in three steps: each vertex is lifted into an exponentially large cluster, with adjacent clusters joined by a random bipartite graph; each cluster is then crowned with a balanced spire; finally, all vertices are randomly relabelled. Specializing to $G=K_2$ recovers the welded-trees graph.
+  Our algorithm is conceptually simple: a continuous-time quantum walk on $G_{\rm spire}$, followed by a single Hadamard test at a classically precomputed time $t^*$; the algorithm returns the candidate whose predicted amplitude is closest to the measurement. The design rests on a rigorous spectral theory: from the apex of any spire, the walk is confined to a polynomial-dimensional invariant subspace evolving under the adjacency matrix of a simpler towered graph $G_{\rm tower}$; that matrix block-diagonalizes into $n$ independent tridiagonal systems of size $n$, each solved in closed form by a Chebyshev secular equation. Efficient numerics enabled by this decomposition supply $t^*$ and the predicted amplitudes.
+  On the prism graphs $Y_m$ versus the Möbius ladders $M_m$ (each on $n=2m$ vertices), the numerical study supports a precise conjecture that $\widetilde O(n^2/\log n)$ measurements at evolution time of order $m^2$ suffice to distinguish the two families; we have tested $4 \le m \le 5121$ ($n$ up to $10242$). By analogy with the welded-trees lower bounds, we further conjecture that any classical algorithm requires queries exponential in $n$. Together these conjectures point to an exponential quantum speedup for the identification of an obfuscated base graph.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T20:44:32Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Pawel Wocjan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.01657v1</id>
+    <title>Exponential Quantum Advantage for Message Complexity in Distributed Algorithms</title>
+    <updated>2025-10-02T04:28:54Z</updated>
+    <link href="https://arxiv.org/abs/2510.01657v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.01657v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate how much quantum distributed algorithms can outperform classical distributed algorithms with respect to the message complexity (the overall amount of communication used by the algorithm). Recently, Dufoulon, Magniez and Pandurangan (PODC 2025) have shown a polynomial quantum advantage for several tasks such as leader election and agreement. In this paper, we show an exponential quantum advantage for a fundamental task: routing information between two specified nodes of a network. We prove that for the family of ``welded trees" introduced in the seminal work by Childs, Cleve, Deotto, Farhi, Gutmann and Spielman (STOC 2003), there exists a quantum distributed algorithm that transfers messages from the entrance of the graph to the exit with message complexity exponentially smaller than any classical algorithm. Our quantum algorithm is based on the recent "succinct" implementation of quantum walks over the welded trees by Li, Li and Luo (SODA 2024). Our classical lower bound is obtained by ``lifting'' the lower bound from Childs, Cleve, Deotto, Farhi, Gutmann and Spielman (STOC 2003) from query complexity to message complexity.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-02T04:28:54Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>François Le Gall</name>
+    </author>
+    <author>
+      <name>Maël Luce</name>
+    </author>
+    <author>
+      <name>Joseph Marchand</name>
+    </author>
+    <author>
+      <name>Mathieu Roget</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.15194v1</id>
+    <title>Quantum phase discrimination with applications to quantum search on graphs</title>
+    <updated>2025-04-21T16:06:43Z</updated>
+    <link href="https://arxiv.org/abs/2504.15194v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.15194v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the phase discrimination problem, in which we want to decide whether the eigenphase $θ\in(-π,π]$ of a given eigenstate $|ψ\rangle$ with eigenvalue $e^{iθ}$ is zero or not, using applications of the unitary $U$ provided as a black box oracle.We propose a quantum algorithm named {\it quantum phase discrimination(QPD)} for this task, with optimal query complexity $Θ(\frac{1}λ\log\frac{1}δ)$ to the oracle $U$, where $λ$ is the gap between zero and non-zero eigenphases and $δ$ the allowed one-sided error. The quantum circuit is simple, consisting of only one ancillary qubit and a sequence of controlled-$U$ interleaved with single qubit $Y$ rotations, whose angles are given by a simple analytical formula. Quantum phase discrimination could become a fundamental subroutine in other quantum algorithms, as we present two applications to quantum search on graphs:
+  i) Spatial search on graphs. Inspired by the structure of QPD, we propose a new quantum walk model, and based on them we tackle the spatial search problem, obtaining a novel quantum search algorithm. For any graph with any number of marked vertices, the quantum algorithm that can find a marked vertex with probability $Ω(1)$ in total evolution time $ O(\frac{1}{λ\sqrt{\varepsilon}})$ and query complexity $ O(\frac{1}{\sqrt{\varepsilon}})$, where $λ$ is the gap between the zero and non-zero eigenvalues of the graph Laplacian and $\varepsilon$ is a lower bound on the proportion of marked vertices.
+  ii) Path-finding on graphs.} By using QPD, we reduce the query complexity of a path-finding algorithm proposed by Li and Zur [arxiv: 2311.07372] from $\tilde{O}(n^{11})$ to $\tilde{O}(n^8)$, in a welded-tree circuit graph with $Θ(n2^n)$ vertices.
+  Besides these two applications, we argue that more quantum algorithms might benefit from QPD.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-21T16:06:43Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Guanzhong Li</name>
+    </author>
+    <author>
+      <name>Lvzhou Li</name>
+    </author>
+    <author>
+      <name>Jingquan Luo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.22843v2</id>
+    <title>Glued tree lattices with only compact localized states</title>
+    <updated>2025-04-28T16:40:44Z</updated>
+    <link href="https://arxiv.org/abs/2503.22843v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.22843v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Flat band physics is a central theme in modern condensed matter physics. By constructing a tight--binding single particle system that has vanishing momentum dispersion in one or more bands, and subsequently including more particles and interactions, it is possible to study physics in strongly interacting regimes. Inspired by the glued trees that first arose in one of the few known examples of quantum supremacy, we define and analyze two infinite families of tight binding single particle Bose--Hubbard models that have only flat bands, and only compact localized states despite having any nonnegative number of translation symmetries. The first class of model that we introduce is constructed by replacing a sufficiently large fraction of the edges in a generic countable graph with glued trees modified to have complex hoppings. The second class arises from thinking of complex weighted glued trees as rhombi that can then be used to tile two dimensional space, giving rise to the familiar dice lattice and infinitely many generalizations thereof, of which some are Euclidian while others are hyperbolic.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.other" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-28T19:37:08Z</published>
+    <arxiv:comment>26 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <author>
+      <name>Andrew Osborne</name>
+    </author>
+    <author>
+      <name>Ciro Salcedo</name>
+    </author>
+    <author>
+      <name>Andrew A. Houck</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.08694v2</id>
+    <title>Calculating response functions of coupled oscillators using quantum phase estimation</title>
+    <updated>2025-06-12T12:33:33Z</updated>
+    <link href="https://arxiv.org/abs/2405.08694v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.08694v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the problem of estimating frequency response functions of systems of coupled, classical harmonic oscillators using a quantum computer. The functional form of these response functions can be mapped to a corresponding eigenproblem of a Hermitian matrix $H$, thus suggesting the use of quantum phase estimation. Our proposed quantum algorithm operates in the standard $s$-sparse, oracle-based query access model. For a network of $N$ oscillators with maximum norm $\lVert H \rVert_{\mathrm{max}}$, and when the eigenvalue tolerance $\varepsilon$ is much smaller than the minimum eigenvalue gap, we use $\mathcal{O}(\log(N s \lVert H \rVert_{\mathrm{max}}/\varepsilon)$ algorithmic qubits and obtain a rigorous worst-case query complexity upper bound $\mathcal{O}(s \lVert H \rVert_{\mathrm{max}}/(δ^2 \varepsilon) )$ up to logarithmic factors, where $δ$ denotes the desired precision on the coefficients appearing in the response functions. Crucially, our proposal does not suffer from the infamous state preparation bottleneck and can as such potentially achieve large quantum speedups compared to relevant classical methods. As a proof-of-principle of exponential quantum speedup, we show that a simple adaptation of our algorithm solves the random glued-trees problem in polynomial time. We discuss practical limitations as well as potential improvements for quantifying finite size, end-to-end complexities for application to relevant instances.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-14T15:28:37Z</published>
+    <arxiv:comment>12+10 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Sven Danz</name>
+    </author>
+    <author>
+      <name>Mario Berta</name>
+    </author>
+    <author>
+      <name>Stefan Schröder</name>
+    </author>
+    <author>
+      <name>Pascal Kienast</name>
+    </author>
+    <author>
+      <name>Frank K. Wilhelm</name>
+    </author>
+    <author>
+      <name>Alessandro Ciani</name>
+    </author>
+    <arxiv:doi>10.1103/5c6d-r1fb</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/5c6d-r1fb" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.19476v1</id>
+    <title>Global Phase Helps in Quantum Search: Yet Another Look at the Welded Tree Problem</title>
+    <updated>2024-04-30T11:45:49Z</updated>
+    <link href="https://arxiv.org/abs/2404.19476v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.19476v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Up to now, relatively few exponential quantum speed-ups have been achieved. Out of them, the welded tree problem (Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman'2003) is one of the unusual examples, as the exponential speed-up is attained by a quantum walk. In this paper, we give a very short proof of the optimal linear hitting time for this problem by a discrete-time quantum walk, which is based on a simple modification of the electric quantum walk framework. The same technique can be applied to other 1-dimensional hierarchical graphs, yielding results similar to (Balasubramanian, Li, and Harrow'2023).</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-30T11:45:49Z</published>
+    <arxiv:comment>14 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Aleksandrs Belovs</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.08550v2</id>
+    <title>Expanding Hardware-Efficiently Manipulable Hilbert Space via Hamiltonian Embedding</title>
+    <updated>2025-09-09T00:12:26Z</updated>
+    <link href="https://arxiv.org/abs/2401.08550v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.08550v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Many promising quantum applications depend on the efficient quantum simulation of an exponentially large sparse Hamiltonian, a task known as sparse Hamiltonian simulation, which is fundamentally important in quantum computation. Although several theoretically appealing quantum algorithms have been proposed for this task, they typically require a black-box query model of the sparse Hamiltonian, rendering them impractical for near-term implementation on quantum devices.
+  In this paper, we propose a technique named Hamiltonian embedding. This technique simulates a desired sparse Hamiltonian by embedding it into the evolution of a larger and more structured quantum system, allowing for more efficient simulation through hardware-efficient operations. We conduct a systematic study of this new technique and demonstrate significant savings in computational resources for implementing prominent quantum applications. As a result, we can now experimentally realize quantum walks on complicated graphs (e.g., binary trees, glued-tree graphs), quantum spatial search, and the simulation of real-space Schrödinger equations on current trapped-ion and neutral-atom platforms. Given the fundamental role of Hamiltonian evolution in the design of quantum algorithms, our technique markedly expands the horizon of implementable quantum advantages in the NISQ era.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-16T18:19:29Z</published>
+    <arxiv:comment>68 pages, 10 figures, an accompanying GitHub repository is at https://github.com/jiaqileng/hamiltonian-embedding</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1857 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Joseph Li</name>
+    </author>
+    <author>
+      <name>Yuxiang Peng</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-09-11-1857</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-09-11-1857" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.07372v7</id>
+    <title>Multidimensional Electrical Networks and their Application to Exponential Speedups for Graph Problems</title>
+    <updated>2025-05-25T04:31:21Z</updated>
+    <link href="https://arxiv.org/abs/2311.07372v7" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.07372v7" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, Apers and Piddock [TQC '23] strengthened the connection between quantum walks and electrical networks via Kirchhoff's Law and Ohm's Law. In this work, we develop a new multidimensional electrical network by defining Alternative Kirchhoff's Law and Alternative Ohm's Law based on the multidimensional quantum walk framework by Jeffery and Zur [STOC '23]. In analogy to the connection between the incidence matrix of a graph and Kirchhoff's Law and Ohm's Law in an electrical network, we rebuild the connection between the alternative incidence matrix and Alternative Kirchhoff's Law and Alternative Ohm's Law. This new framework enables generating an alternative electrical flow over the edges on graphs, which has the potential to be applied to a broader range of graph problems, benefiting both quantum and classical algorithm design.
+  We first use this framework to generate quantum alternative electrical flow states and use it to find a marked vertex in one-dimensional random hierarchical graphs as defined by Balasubramanian, Li, and Harrow [arXiv '23]. In this work, they generalised the exponential quantum-classical separation of the welded tree graph by Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman [STOC '03] to random hierarchical graphs. Our result partially recovers their results with an arguably simpler analysis.
+  Furthermore, this framework also allows us to demonstrate an exponential quantum speedup for the pathfinding problem in a type of regular graph, which we name the welded tree circuit graph. The exponential quantum advantage is obtained by efficiently generating quantum alternative electrical flow states and then sampling from them to find an s-t path in the welded tree circuit graph. By comparison, Li [arXiv '23] constructed a non-regular graph based on welded trees and used the degree information to achieve a similar speedup.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-13T14:39:55Z</published>
+    <arxiv:comment>minor update</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1733 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Jianqiang Li</name>
+    </author>
+    <author>
+      <name>Sebastian Zur</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-05-06-1733</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-05-06-1733" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.15062v2</id>
+    <title>Exponential speedups for quantum walks in random hierarchical graphs</title>
+    <updated>2024-08-02T17:27:42Z</updated>
+    <link href="https://arxiv.org/abs/2307.15062v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.15062v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There are few known exponential speedups for quantum algorithms and these tend to fall into even fewer families. One speedup that has mostly resisted generalization is the use of quantum walks to traverse the welded-tree graph, due to Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman. We show how to generalize this to a large class of hierarchical graphs in which the vertices are grouped into "supervertices" which are arranged according to a $d$-dimensional lattice. Supervertices can have different sizes, and edges between supervertices correspond to random connections between their constituent vertices.
+  The hitting times of quantum walks on these graphs are related to the localization properties of zero modes in certain disordered tight binding Hamiltonians. The speedups range from superpolynomial to exponential, depending on the underlying dimension and the random graph model. We also provide concrete realizations of these hierarchical graphs, and introduce a general method for constructing graphs with efficient quantum traversal times using graph sparsification.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-27T17:59:58Z</published>
+    <arxiv:comment>69 pages, 7 figures, v2: minor fixes and improved discussion of Section 6</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Commun. Math. Phys. 406, 209 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Shankar Balasubramanian</name>
+    </author>
+    <author>
+      <name>Tongyang Li</name>
+    </author>
+    <author>
+      <name>Aram Harrow</name>
+    </author>
+    <arxiv:doi>10.1007/s00220-025-05370-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00220-025-05370-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.12492v3</id>
+    <title>Exponential speedup of quantum algorithms for the pathfinding problem</title>
+    <updated>2024-12-23T18:05:32Z</updated>
+    <link href="https://arxiv.org/abs/2307.12492v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.12492v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Given $x, y$ on an unweighted undirected graph $G$, the goal of the pathfinding problem is to find an $x$-$y$ path. In this work, we first construct a graph $G$ based on welded trees and define a pathfinding problem in the adjacency list oracle $O$. Then we provide an efficient quantum algorithm to find an $x$-$y$ path in the graph $G$. Finally, we prove that no classical algorithm can find an $x$-$y$ path in subexponential time with high probability. The pathfinding problem is one of the fundamental graph-related problems. Our findings suggest that quantum algorithms could potentially offer advantages in more types of graphs to solve the pathfinding problem.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-24T02:50:34Z</published>
+    <arxiv:comment>11 pages,1 figure, minor update</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jianqiang Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.08395v2</id>
+    <title>Recovering the original simplicity: succinct and deterministic quantum algorithm for the welded tree problem</title>
+    <updated>2023-10-21T05:10:43Z</updated>
+    <link href="https://arxiv.org/abs/2304.08395v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.08395v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This work revisits quantum algorithms for the well-known welded tree problem, proposing a very succinct quantum algorithm based on the simplest coined quantum walks. It simply iterates the naturally defined coined quantum walk operator for a predetermined time and finally measure, where the predetermined time can be efficiently computed on classical computers. Then, the algorithm returns the correct answer deterministically, and achieves exponential speedups over any classical algorithm. The significance of the results may be seen as follows. (i) Our algorithm is rather simple compared with the one in (Jeffery and Zur, STOC'2023), which not only breaks the stereotype that coined quantum walks can only achieve quadratic speedups over classical algorithms, but also demonstrates the power of the simplest quantum walk model. (ii) Our algorithm theoretically achieves zero-error, which is not possible with existing methods. Thus, it becomes one of the few examples that exhibit exponential separation between deterministic (exact) quantum and randomized query complexities, which may also change people's perception that since quantum mechanics is inherently probabilistic, it impossible to have a deterministic quantum algorithm with exponential speedups for the weled tree problem.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-17T16:03:50Z</published>
+    <arxiv:comment>The paper has been revised and been accepted by SODA2024</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Guanzhong Li</name>
+    </author>
+    <author>
+      <name>Lvzhou Li</name>
+    </author>
+    <author>
+      <name>Jingquan Luo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.12447v1</id>
+    <title>Quantum algorithms and the power of forgetting</title>
+    <updated>2022-11-22T18:04:10Z</updated>
+    <link href="https://arxiv.org/abs/2211.12447v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.12447v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The so-called welded tree problem provides an example of a black-box problem that can be solved exponentially faster by a quantum walk than by any classical algorithm. Given the name of a special ENTRANCE vertex, a quantum walk can find another distinguished EXIT vertex using polynomially many queries, though without finding any particular path from ENTRANCE to EXIT. It has been an open problem for twenty years whether there is an efficient quantum algorithm for finding such a path, or if the path-finding problem is hard even for quantum computers. We show that a natural class of efficient quantum algorithms provably cannot find a path from ENTRANCE to EXIT. Specifically, we consider algorithms that, within each branch of their superposition, always store a set of vertex labels that form a connected subgraph including the ENTRANCE, and that only provide these vertex labels as inputs to the oracle. While this does not rule out the possibility of a quantum algorithm that efficiently finds a path, it is unclear how an algorithm could benefit by deviating from this behavior. Our no-go result suggests that, for some problems, quantum algorithms must necessarily forget the path they take to reach a solution in order to outperform classical computation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-22T18:04:10Z</published>
+    <arxiv:comment>49 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>14th Innovations in Theoretical Computer Science Conference (ITCS 2023), Leibniz International Proceedings in Informatics, vol. 251, pp. 37:1-37:22 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Andrew M. Childs</name>
+    </author>
+    <author>
+      <name>Matthew Coudron</name>
+    </author>
+    <author>
+      <name>Amin Shiraz Gilani</name>
+    </author>
+    <arxiv:doi>10.4230/LIPIcs.ITCS.2023.37</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.37" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.13492v4</id>
+    <title>Multidimensional Quantum Walks, with Application to $k$-Distinctness</title>
+    <updated>2025-03-03T16:08:50Z</updated>
+    <link href="https://arxiv.org/abs/2208.13492v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.13492v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While the quantum query complexity of $k$-distinctness is known to be $O\left(n^{3/4-1/4(2^k-1)}\right)$ for any constant $k \geq 4$, the best previous upper bound on the time complexity was $\widetilde{O}\left(n^{1-1/k}\right)$. We give a new upper bound of $\widetilde{O}\left(n^{3/4-1/4(2^k-1)}\right)$ on the time complexity, matching the query complexity up to polylogarithmic factors. In order to achieve this upper bound, we give a new technique for designing quantum walk search algorithms, which is an extension of the electric network framework. We also show how to solve the welded trees problem in $O(n)$ queries and $O(n^2)$ time using this new technique, showing that the new quantum walk framework can achieve exponential speedups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-29T10:51:56Z</published>
+    <arxiv:comment>Journal version for TheoretiCS</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>TheoretiCS, Volume 4 (March 4, 2025) theoretics:12337</arxiv:journal_ref>
+    <author>
+      <name>Stacey Jeffery</name>
+    </author>
+    <author>
+      <name>Sebastian Zur</name>
+    </author>
+    <arxiv:doi>10.46298/theoretics.25.7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.46298/theoretics.25.7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.09495v1</id>
+    <title>(Sub)Exponential advantage of adiabatic quantum computation with no sign problem</title>
+    <updated>2020-11-18T19:04:51Z</updated>
+    <link href="https://arxiv.org/abs/2011.09495v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.09495v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate the possibility of (sub)exponential quantum speedup via a quantum algorithm that follows an adiabatic path of a gapped Hamiltonian with no sign problem. This strengthens the superpolynomial separation recently proved by Hastings. The Hamiltonian that exhibits this speed-up comes from the adjacency matrix of an undirected graph, and we can view the adiabatic evolution as an efficient $\mathcal{O}(\mathrm{poly}(n))$-time quantum algorithm for finding a specific "EXIT" vertex in the graph given the "ENTRANCE" vertex. On the other hand we show that if the graph is given via an adjacency-list oracle, there is no classical algorithm that finds the "EXIT" with probability greater than $\exp(-n^δ)$ using at most $\exp(n^δ)$ queries for $δ= \frac15 - o(1)$. Our construction of the graph is somewhat similar to the "welded-trees" construction of Childs et al., but uses additional ideas of Hastings for achieving a spectral gap and a short adiabatic path.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-18T19:04:51Z</published>
+    <arxiv:comment>18 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>András Gilyén</name>
+    </author>
+    <author>
+      <name>Umesh Vazirani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.04062v5</id>
+    <title>Improved Upper Bounds for the Hitting Times of Quantum Walks</title>
+    <updated>2021-10-12T02:48:41Z</updated>
+    <link href="https://arxiv.org/abs/2005.04062v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.04062v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continuous-time quantum walks have proven to be an extremely useful framework for the design of several quantum algorithms. Often, the running time of quantum algorithms in this framework is characterized by the quantum hitting time: the time required by the quantum walk to find a vertex of interest with a high probability. In this article, we provide improved upper bounds for the quantum hitting time that can be applied to several CTQW-based quantum algorithms. In particular, we apply our techniques to the glued-trees problem, improving their hitting time upper bound by a polynomial factor: from $O(n^5)$ to $O(n^2\log n)$. Furthermore, our methods also help to exponentially improve the dependence on precision of the continuous-time quantum walk based algorithm to find a marked node on any ergodic, reversible Markov chain by Chakraborty et al. [PRA 102, 022227 (2020)].</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-08T14:25:24Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 104, 032215 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Yosi Atia</name>
+    </author>
+    <author>
+      <name>Shantanav Chakraborty</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.104.032215</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.104.032215" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1909.10503v3</id>
+    <title>Computations with Greater Quantum Depth Are Strictly More Powerful (Relative to an Oracle)</title>
+    <updated>2020-04-23T04:43:42Z</updated>
+    <link href="https://arxiv.org/abs/1909.10503v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1909.10503v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A conjecture of Jozsa (arXiv:quant-ph/0508124) states that any polynomial-time quantum computation can be simulated by polylogarithmic-depth quantum computation interleaved with polynomial-depth classical computation. Separately, Aaronson conjectured that there exists an oracle $\mathcal{O}$ such that $\textrm{BQP}^{\mathcal{O}} \neq (\textrm{BPP}^\textrm{BQNC})^{\mathcal{O}}$. These conjectures are intriguing allusions to the unresolved potential of combining classical and low-depth quantum computation. In this work we show that the Welded Tree Problem, which is an oracle problem that can be solved in quantum polynomial time as shown by Childs et al. (arXiv:quant-ph/0209131), cannot be solved in $\textrm{BPP}^{\textrm{BQNC}}$, nor can it be solved in the class that Jozsa describes. This proves Aaronson's oracle separation conjecture and provides a counterpoint to Jozsa's conjecture relative to the Welded Tree oracle problem. More precisely, we define two complexity classes, $\textrm{HQC}$ and $\textrm{JC}$ whose languages are decided by two different families of interleaved quantum-classical circuits. $\textrm{HQC}$ contains $\textrm{BPP}^\textrm{BQNC}$ and is therefore relevant to Aaronson's conjecture, while $\textrm{JC}$ captures the model of computation that Jozsa considers. We show that the Welded Tree Problem gives an oracle separation between either of $\{\textrm{JC}, \textrm{HQC}\}$ and $\textrm{BQP}$. Therefore, even when interleaved with arbitrary polynomial-time classical computation, greater "quantum depth" leads to strictly greater computational ability in this relativized setting.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-09-23T17:45:17Z</published>
+    <arxiv:comment>39 pages, revised</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Matthew Coudron</name>
+    </author>
+    <author>
+      <name>Sanketh Menda</name>
+    </author>
+    <arxiv:doi>10.1145/3357713.3384269</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3357713.3384269" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1901.02981v1</id>
+    <title>Sensitivity of quantum speedup by quantum annealing to a noisy oracle</title>
+    <updated>2019-01-10T00:31:09Z</updated>
+    <link href="https://arxiv.org/abs/1901.02981v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1901.02981v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The glued-trees problem is the only example known to date for which quantum annealing provides an exponential speedup, albeit by partly using excited state evolution, in an oracular setting. How robust is this speedup to noise on the oracle? To answer this, we construct phenomenological short-range and long-range noise models, and noise models that break or preserve the reflection symmetry of the spectrum. We show that under the long-range noise models an exponential quantum speedup is retained. However, we argue that a classical algorithm with an equivalent long-range noise model also exhibits an exponential speedup over the noiseless model. In the quantum setting the long-range noise is able to lift the spectral gap of the problem so that the evolution changes from diabatic to adiabatic. In the classical setting, long-range noise creates a significant probability of the walker landing directly on the EXIT vertex. Under short-range noise the exponential speedup is lost, but a polynomial quantum speedup is retained for sufficiently weak noise. In contrast to noise range, we find that breaking of spectral symmetry by the noise has no significant impact on the performance of the noisy algorithms. Our results about the long-range models highlight that care must be taken in selecting phenomenological noise models so as not to change the nature of the computational problem. We conclude from the short-range noise model results that the exponential speedup in the glued-trees problem is not robust to noise, but a polynomial quantum speedup is still possible.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-01-10T00:31:09Z</published>
+    <arxiv:comment>15 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 99, 032324 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Siddharth Muthukrishnan</name>
+    </author>
+    <author>
+      <name>Tameem Albash</name>
+    </author>
+    <author>
+      <name>Daniel A. Lidar</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.99.032324</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.99.032324" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1807.06625v2</id>
+    <title>Experimental Quantum Fast Hitting on Hexagonal Graphs</title>
+    <updated>2018-12-04T19:00:50Z</updated>
+    <link href="https://arxiv.org/abs/1807.06625v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1807.06625v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum walks are powerful kernels in quantum computing protocols that possess strong capabilities in speeding up various simulation and optimisation tasks. One striking example is given by quantum walkers evolving on glued trees for their faster hitting performances than in the case of classical random walks. However, its experimental implementation is challenging as it involves highly complex arrangements of exponentially increasing number of nodes. Here we propose an alternative structure with a polynomially increasing number of nodes. We successfully map such graphs on quantum photonic chips using femtosecond laser direct writing techniques in a geometrically scalable fashion. We experimentally demonstrate quantum fast hitting by implementing two-dimensional quantum walks on these graphs with up to 160 nodes and a depth of 8 layers, achieving a linear relationship between the optimal hitting time and the network depth. Our results open up a scalable way towards quantum speed-up in complex problems classically intractable.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-07-17T19:00:05Z</published>
+    <arxiv:comment>16 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nature Photonics 12, 754-758 (2018)</arxiv:journal_ref>
+    <author>
+      <name>Hao Tang</name>
+    </author>
+    <author>
+      <name>Carlo Di Franco</name>
+    </author>
+    <author>
+      <name>Zi-Yu Shi</name>
+    </author>
+    <author>
+      <name>Tian-Shen He</name>
+    </author>
+    <author>
+      <name>Zhen Feng</name>
+    </author>
+    <author>
+      <name>Jun Gao</name>
+    </author>
+    <author>
+      <name>Ke Sun</name>
+    </author>
+    <author>
+      <name>Zhan-Ming Li</name>
+    </author>
+    <author>
+      <name>Zhi-Qiang Jiao</name>
+    </author>
+    <author>
+      <name>Tian-Yu Wang</name>
+    </author>
+    <author>
+      <name>M. S. Kim</name>
+    </author>
+    <author>
+      <name>Xian-Min Jin</name>
+    </author>
+    <arxiv:doi>10.1038/s41566-018-0282-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41566-018-0282-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1701.05113v1</id>
+    <title>Mixing properties of tree-shifts</title>
+    <updated>2017-01-18T15:43:46Z</updated>
+    <link href="https://arxiv.org/abs/1701.05113v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1701.05113v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The uncertainty of multidimensional shift spaces draws attracted attention of researchers. For example, the emptiness problem is undecidable; there exist aperiodic shifts of finite type; there is a nonempty shift of finite type exhibiting nonextensible local patterns. This paper investigates symbolic dynamics on Cayley trees and gives affirmative answers to the above questions in tree-shifts. Beyond that, with introducing block gluing tree-shift, a sufficient condition of exhibiting positive topological entropy is revealed.</summary>
+    <category term="math.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-01-18T15:43:46Z</published>
+    <arxiv:comment>arXiv admin note: text overlap with arXiv:1509.01355</arxiv:comment>
+    <arxiv:primary_category term="math.DS"/>
+    <arxiv:journal_ref>J. Math. Phys. , 2017</arxiv:journal_ref>
+    <author>
+      <name>Jung-Chao Ban</name>
+    </author>
+    <author>
+      <name>Chih-Hung Chang</name>
+    </author>
+    <arxiv:doi>10.1063/1.5011339</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1063/1.5011339" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1312.1149v2</id>
+    <title>Localization of discrete time quantum walks on the glued trees</title>
+    <updated>2014-03-28T12:35:28Z</updated>
+    <link href="https://arxiv.org/abs/1312.1149v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1312.1149v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we consider the time averaged distribution of discrete time quantum walks on the glued trees. In order to analyse the walks on the glued trees, we consider a reduction to the walks on path graphs. Using a spectral analysis of the Jacobi matrices defined by the corresponding random walks on the path graphs, we have spectral decomposition of the time evolution operator of the quantum walks. We find significant contributions of the eigenvalues $\pm 1$ of the Jacobi matrices to the time averaged limit distribution of the quantum walks. As a consequence we obtain lower bounds of the time averaged distribution.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2013-12-04T13:16:28Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <arxiv:journal_ref>Entropy 16 (3), 1501-1514, 2014</arxiv:journal_ref>
+    <author>
+      <name>Yusuke Ide</name>
+    </author>
+    <author>
+      <name>Norio Konno</name>
+    </author>
+    <author>
+      <name>Etsuo Segawa</name>
+    </author>
+    <author>
+      <name>Xin-Ping Xu</name>
+    </author>
+    <arxiv:doi>10.3390/e16031501</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e16031501" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1303.5319v2</id>
+    <title>Glued trees algorithm under phase damping</title>
+    <updated>2014-01-04T15:25:33Z</updated>
+    <link href="https://arxiv.org/abs/1303.5319v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1303.5319v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the behaviour of the glued trees algorithm described by Childs et al. in [STOC `03, Proc. 35th ACM Symposium on Theory of Computing (2004) 59] under decoherence. We consider a discrete time reformulation of the continuous time quantum walk protocol and apply a phase damping channel to the coin state, investigating the effect of such a mechanism on the probability of the walker appearing on the target vertex of the graph. We pay particular attention to any potential advantage coming from the use of weak decoherence for the spreading of the walk across the glued trees graph.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2013-03-21T16:19:45Z</published>
+    <arxiv:comment>6 pages, 7 figures, RevTeX4</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Lett. A 378, 338 (2014)</arxiv:journal_ref>
+    <author>
+      <name>J. Lockhart</name>
+    </author>
+    <author>
+      <name>C. Di Franco</name>
+    </author>
+    <author>
+      <name>M. Paternostro</name>
+    </author>
+    <arxiv:doi>10.1016/j.physleta.2013.11.034</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.physleta.2013.11.034" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1206.3178v1</id>
+    <title>Quantum Walks on Trees with Disorder: Decay, Diffusion, and Localization</title>
+    <updated>2012-06-14T16:55:39Z</updated>
+    <link href="https://arxiv.org/abs/1206.3178v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1206.3178v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum walks have been shown to have impressive transport properties compared to classical random walks. However, imperfections in the quantum walk algorithm can destroy any quantum mechanical speed-up due to Anderson localization. We numerically study the effect of static disorder on a quantum walk on the glued trees graph. For small disorder, we find that the dominant effect is a type of quantum decay, and not quantum localization. For intermediate disorder, there is a crossover to diffusive transport, while a localization transition is observed at large disorder, in agreement with Anderson localization on the Cayley tree.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-06-14T16:55:39Z</published>
+    <arxiv:comment>12 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Steven R. Jackson</name>
+    </author>
+    <author>
+      <name>Teng Jian Khoo</name>
+    </author>
+    <author>
+      <name>Frederick W. Strauch</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.86.022335</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.86.022335" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1202.6257v1</id>
+    <title>Quantum Speedup by Quantum Annealing</title>
+    <updated>2012-02-28T15:32:39Z</updated>
+    <link href="https://arxiv.org/abs/1202.6257v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1202.6257v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the glued-trees problem of Childs et. al. in the adiabatic model of quantum computing and provide an annealing schedule to solve an oracular problem exponentially faster than classically possible. The Hamiltonians involved in the quantum annealing do not suffer from the so-called sign problem. Unlike the typical scenario, our schedule is efficient even though the minimum energy gap of the Hamiltonians is exponentially small in the problem size. We discuss generalizations based on initial-state randomization to avoid some slowdowns in adiabatic quantum computing due to small gaps.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-02-28T15:32:39Z</published>
+    <arxiv:comment>7 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 109, 050501 (2012)</arxiv:journal_ref>
+    <author>
+      <name>Daniel Nagaj</name>
+    </author>
+    <author>
+      <name>Rolando D. Somma</name>
+    </author>
+    <author>
+      <name>Maria Kieferova</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.109.050501</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.109.050501" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1004.4054v2</id>
+    <title>Quantum Snake Walk on Graphs</title>
+    <updated>2010-08-18T03:22:05Z</updated>
+    <link href="https://arxiv.org/abs/1004.4054v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1004.4054v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I introduce a new type of continuous-time quantum walk on graphs called the quantum snake walk, the basis states of which are fixed-length paths (snakes) in the underlying graph. First I analyze the quantum snake walk on the line, and I show that, even though most states stay localized throughout the evolution, there are specific states which most likely move on the line as wave packets with momentum inversely proportional to the length of the snake. Next I discuss how an algorithm based on the quantum snake walk might potentially be able to solve an extended version of the glued trees problem which asks to find a path connecting both roots of the glued trees graph. No efficient quantum algorithm solving this problem is known yet.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-04-23T06:03:53Z</published>
+    <arxiv:comment>22 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ansis Rosmanis</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.83.022304</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.83.022304" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0706.0304v3</id>
+    <title>Efficient quantum circuit implementation of quantum walks</title>
+    <updated>2009-10-29T11:51:49Z</updated>
+    <link href="https://arxiv.org/abs/0706.0304v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0706.0304v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Quantum walks, being the quantum analogue of classical random walks, are expected to provide a fruitful source of quantum algorithms. A few such algorithms have already been developed, including the `glued trees' algorithm, which provides an exponential speedup over classical methods, relative to a particular quantum oracle. Here, we discuss the possibility of a quantum walk algorithm yielding such an exponential speedup over possible classical algorithms, without the use of an oracle. We provide examples of some highly symmetric graphs on which efficient quantum circuits implementing quantum walks can be constructed, and discuss potential applications to quantum search for marked vertices along these graphs.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-06-03T08:07:37Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>B. L. Douglas</name>
+    </author>
+    <author>
+      <name>J. B. Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0504042v3</id>
+    <title>Entanglement in coined quantum walks on regular graphs</title>
+    <updated>2008-04-21T18:13:27Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0504042v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0504042v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Quantum walks, both discrete (coined) and continuous time, form the basis of several recent quantum algorithms. Here we use numerical simulations to study the properties of discrete, coined quantum walks. We investigate the variation in the entanglement between the coin and the position of the particle by calculating the entropy of the reduced density matrix of the coin. We consider both dynamical evolution and asymptotic limits for coins of dimensions from two to eight on regular graphs. For low coin dimensions, quantum walks which spread faster (as measured by the mean square deviation of their distribution from uniform) also exhibit faster convergence towards the asymptotic value of the entanglement between the coin and particle's position. For high-dimensional coins, the DFT coin operator is more efficient at spreading than the Grover coin. We study the entanglement of the coin on regular finite graphs such as cycles, and also show that on complete bipartite graphs, a quantum walk with a Grover coin is always periodic with period four. We generalize the 'glued trees' graph used by Childs et al (2003 Proc. STOC, pp 5968) to higher branching rate (fan out) and verify that the scaling with branching rate and with tree depth is polynomial.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2005-04-06T15:51:01Z</published>
+    <arxiv:comment>23 pages, many eps embedded figures; v2 published version: better quality figures on journal website (open access) at http://www.iop.org/EJ/abstract/1367-2630/7/1/156/; v3 corrects errors in fig 2 and related text (thanks to Annette Gattner and Mostafa Annabestani)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>New J. Phys. 7 (2005) 156</arxiv:journal_ref>
+    <author>
+      <name>Ivens Carneiro</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Meng Loo</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Xibai Xu</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mathieu Girerd</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Viv Kendon</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter L. Knight</name>
+      <arxiv:affiliation>Imperial College London and</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1088/1367-2630/7/1/156</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1367-2630/7/1/156" title="doi"/>
+  </entry>
+</feed>

@@ -102,3 +102,16 @@ Durable conclusions (L = literature claim with key; I(prog) = program reasoning)
 8. **Operational.**
    - Workflow agents' own computations bypass the governor. Cap agent compute explicitly in prompts.
    - The Claude Code host reaps background shells under low system memory. Run ≤ 4–5 workers with RAM launch ≤ 82%, and keep resume state on disk.
+
+
+## 2026-09-28: Round 3 lessons (source: `experiments/ROUND3/SYNTHESIS.md`, `CRITIC.md`)
+
+1. **MEASURED. The mandatory classical twin for any learned-energy route is the native-free distance-geometry portfolio**, not random multistart. Weighted SMACOF on distogram expected distances, plus ~400 energy+gradient evaluations, reaches or beats the 256-restart census best basin on 14/16 crops at L = 150; 5/8 are lower under symmetric polishing. It was replicated by two lanes. Random-restart p_hit decay reflected a weak baseline plus fixed-depth relaxation, not hardness. (Correction: the earlier "61/64 deepest basin" wording was a mis-transcription.)
+2. **DERIVED. Generalised floor for speedup exponent s.** T*_Q,s = K n_b G t_T · X^{1/(s−1)} with X = AρK n_b G t_T / c. Against the DG portfolio, every s, including exponential, needs t_T ≤ ~3 ns at L = 100–500.
+3. **DERIVED + MEASURED. Exact echo decomposition.** F_ab = H + floor + X. H = Σ_j G_aj² is two-point and classically computable (classical spin dynamics on 80–160 spins). The floor, ≈ (1 − H)/N, is a finite-cluster artefact of size ≥ 3σ at N = 18. X is the four-point remainder.
+4. **DERIVED. Step convergence is not convergence.** Under a 1/N drift, |F_{N+2} − F_N| < σ can hold while the true error is 10–20σ. Use an explicit F̂_∞ estimator and a cross-family check.
+5. **INFERENCE (thesis, with falsifiers).** In the regimes examined:
+   - learned-energy structure prediction is classically easy;
+   - dense-spin quantum dynamics that may be classically hard add no usable structural information (forward-model error, reversal horizons);
+   - physics-based all-atom sampling is classically hard and structure-bearing, but lacks any known super-quadratic quantum algorithm.
+6. **Process.** A negative program must red-team its own kills; a false kill is the costly error. Verify only SUPPORTS lanes and you miss that.

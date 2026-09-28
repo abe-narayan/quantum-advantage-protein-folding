@@ -1,0 +1,249 @@
+Verified excerpts (pdftotext -layout of arXiv PDFs fetched 2026-09-28; line numbers refer to that extraction). Used in README.md.
+
+=== 2011.03494 (Lee et al., THC, PRX Quantum 2021) Table III + runtime ===
+Algorithm                                                 Reiher et al. FeMoCo [23] Li et al. FeMoCo [35]
+                                                          logical qubits Toffoli count logical qubits Toffoli count
+
+Reiher et al. [23] (Trotter)                              111     5.0 × 1013            --     --
+
+Campbell/Kivlichan et al. [49, 50] (qDRIFT) (D16), (D17)  288     5.2 × 1027            328    1.8 × 1028
+
+qDRIFT with 95% confidence interval (D34)                 270     1.9 × 1016            310    1.0 × 1016
+
+Berry et al. [9] (single factorization) (B16), (B17)      3,320   9.5 × 1010            3,628  1.2 × 1011
+
+Berry et al. [9] (sparse) (A17), (A18)                    2,190   8.8 × 1010            2,489  4.4 × 1010
+
+von Burg et al. [10] (double factorization) (C39), (C40)  3,725   1.0 × 1010            6,404  6.4 × 1010
+
+
+code computation in spacetime and optimize resource usage. We determine that the computation could execute
+using approximately four million physical qubits and run in under four days, assuming surface code cycle times
+of 1 microsecond and gate error rates of about 0.1%. We find that if error rates were reduced to 0.01% that the
+computation could complete using about one million physical qubits and under two days.
+
+=== 2502.15882 (Low et al., spectrum amplification, PRX 2025) Table I + runtime ===
+   Year                           Innovation                                     FeMoco-54 [37]                     FeMoco-76 [38]
+                                                                        Qubits Toffolis Reference          Qubits Toffolis Reference
+
+   2017 First resource estimate by Trotterization [37] 111 5.0 × 1013 [37]                                   -           -              -
+
+   2019           Qubitization of Single-Factorization [17]             3320 9.5 × 1010 [7]                3628 1.2 × 1011 [7]
+
+   2020 Qubitization of Double-Factorization (DF) [9] 3600 2.3 × 1010 [9]                                  6404 5.3 × 1010 [7]
+
+   2020           Tensor-Hyper-Contraction (THC) [7]                    2142 5.3 × 109      [7]            2196 3.2 × 1010 [7]
+
+   2024           Symmetry compression of DF [39]                       1994 2.6 × 109 [39]                  -           -              -
+
+   2025           Symmetry compression of THC [8]                       -           -       -              1512 4.3 × 109           [8]
+
+This work         Spectrum amplification & DFTHC                        1137 3.41 × 108                    1459 9.99 × 108
+
+   Utilizing the same quantum error correction model as Ref. [7] we can estimate the physical resources required for
+ground-state energy estimation using DFTHC+BLISS+SA. Using four CCZ factories, a physical error rate of 0.001, a
+surface code cycle time of 1 microsecond and reaction time of 10 microseconds we estimate that the FeMoco76 example
+will require 4.5 million physical qubits running for 8.6 hours on a set of d = 27 surface code patches. FeMoco54 is
+estimated to require 3.2 million physical qubits running for 2.7 hours on a set of d = 27 surface code patches. For
+reference, prior THC based runtime estimates from Reference [7], not considering the additional space-time tradeoffs
+made in that work, result in a FeMoco54 runtime of 2 days and FeMoco76 runtime of 12 days [7].
+                                         Molecule            Fe2S2-20 Fe4S4-36          FeMoCo                      CPD1-P450X                                 CO2 [XVIII]
+
+                                                             [30e, 20o] [54e, 36o] [54e, 54o] [113e, 76o] [63e, 58o] [64e, 56o] [100e, 100o] [150e, 150o]
+                                                  eff/Ha        3906          7322         10169        43.6538        9535          924                          1960          2870
+                                                   CB.E          466           873          1137         14563         1150
+                                                  Qubits                                                  1459                   2.05×108                      1.06×109      2.81×109
+                                                             3.97×107      1.72×108      3.41×108                   4.91×108       121.9                         112.7         195.2
+
+=== 2601.04621 (Zhai et al., FeMoco classical, preprint 2026) ===
+
+The most expensive steps in the classical energy estimate arise from generating the data to extrapolate the UCCSDTQ
+composite upper bound and the UDMRG energies. The largest UCCSDTQ calculation took  400 CPU core hours
+per iteration, and 100 iterations to converge to 10-8 Hartrees, totaling 40,000 CPU core hours. For the variational
+UDMRG simulations, a single D = 18, 000 sweep took 317,440 CPU core hours (aggregated over multiple nodes),
+and we performed two sweeps. Including the cost of extrapolation using the 12 points at D = 16000, 15000, · · · , and
+5000, the total UDMRG cost was then 2,768,994 CPU core hours.
+
+                                                                     11
+Figure 4: Computational cost and scaling of classical methods. Hypothetical wall time cost of UCCSDTQ and
+UDMRG for the LLDUC model assuming efficient use of the total combined CPU and GPU resources on the Frontier
+supercomputer.
+
+We can also estimate the cost of higher accuracy calculations. A variational UDMRG estimate to an accuracy of
+1 kcal/mol with respect to the extrapolated UDMRG energy requires D  393, 000. Using the time-scaling T  D3.05
+(see SM Sec. 3.1.7) this requires 4.08 × 109 CPU core hours (for two sweeps). Similarly, a UCCSDTQ calculation in
+the full LLDUC space, using the leading scaling (allowing frozen orbitals to be partially occupied, with the observed
+occupied orbital scaling T  N 6.58 occ , see SM Sec. 3.1.7), would use 8.94 × 105 CPU core hours (assuming 100
+iterations).
+
+We now translate the above into the theoretical ideal cost of running the calculations on the Frontier supercomputer,
+shown in Fig. 4. For this we estimated the number of floating point operations (FLOP) associated with the above
+calculations, and divided them by the number of FLOP achievable per second (from combined CPU + GPU resources)
+on the Frontier supercomputer (1.102 exaFLOPS). Using this metric, the calculations take from 1.90 seconds for the
+largest UCCSDTQ calculation in this work, and 46.3 seconds for the UDMRG extrapolations, to 21.0 seconds for
+the estimated full space UCCSDTQ calculation (assuming no memory limitations and no usage of index-permutation
+symmetry) and 22.9 hours for two sweeps in a variational UDMRG calculation with D = 393, 000. These can be
+compared to a recent quantum algorithm resource estimate of 8.6 hours using sum-of-squares spectral amplification
+and quantum phase estimation to reach 1 kcal/mol accuracy, assuming O(1) overlap with the initial state (13). In
+SM Sec. 3.1.6 we show that the overlap of the filtered broken symmetry determinant with the D = 18, 000 UDMRG
+state is as large as 0.4468; this should be interpreted as the overlap with the manifold of eigenstates within 1 kcal/mol
+
+                                                                     12
+                                                                     13
+In the LLDUC model, although reaching a precision of 1 kcal/mol required substantial effort, qualitative features
+of the landscape could already be obtained by ranking mean-field solutions based on relatively affordable broken
+symmetry coupled cluster methods. For example, BS7 and BS8 correctly appear as the lowest energy spin-isomer
+classes (see Fig. 2C) at the UCCSD level (although the degeneracy of BS7-235, BS8-236, BS8-237 expands to a
+spread of  5 kcal/mol, which may be taken as the ordering uncertainty of the method). At the UCCSDT level the
+ordering of the families is consistent with large bond dimension UDMRG (see SM Sec. 3.1.3). Consequently, to
+obtain qualitative insights beyond the LLDUC model, we use a simplified protocol, ranking mean-field solutions at
+the UCCSD level, with additional energies recomputed at the UCCSD(T) level. For properties beyond the energy, we
+have also verified this protocol against UCCSDT and UDMRG data (see SM Sec. 3.1.2).
+
+We first consider the effect of the protein environment and its fluctuations (see Fig. 5A). Within a QM/MM setup, we
+included the heterotetramer of the Mo-Fe protein with water solvation, and using a custom force field, ran molecular
+dynamics to equilibrate the MM environment (see SM Sec. 3.3). From the MD trajectories (51), we then obtained the
+average electrostatic environment produced by protein fluctuations. Fig. 5B shows the relative energies of the states in
+the averaged electrostatic potential for the 76 orbital active space, compared to the LLDUC model with its continuum
+solvation. The low energy landscape is qualitatively unchanged, and in particular, BS7, BS8, and BS10 remain the
+lowest energy spin isomer classes (additional discussion of effects from different cluster geometries is in SM Sec. 6).
+
+We next consider electron correlation beyond the active space. Starting from the geometry (and continuum solvation
+treatment) of the LLDUC model, we used a Moller-Plesset second order perturbation theory (MP2) (52) natural orbital
+truncation to construct an active space of size (404o, 277e), localized to have overlap with the FeMo-co core. In the
+(404o, 277e) active space we carried out a full ranking of the Hartree-Fock references using UCCSD energies (as
+many as 24 references per spin isomer, for a total of 432 references for BS7 to BS10, see SM Sec. 3.2). Fig. 5B shows
+the UCCSD relative energies (with composite UMP2 corrections for the natural orbital truncation) of the spin isomers,
+and again we find the BS7, BS8, and BS10 to be the lowest in energy.
+
+As summarized earlier, there is strong experimental evidence from Ref. (29) that constrains the Fe1 spin to be aligned
+with the cluster total spin (29). This rules out the BS10 family as the ground-state, but is consistent with BS7 or BS8
+as the ground-state. BS8 does not appear as a low-energy spin isomer in most prior density functional calculations
+(SM Sec. 1.3), and hence has not been considered in analysing the experimental data. Fig. 5C shows that, similarly to
+in the LLDUC model, the gap between the lowest spin isomers is small in the 404 orbital active space: 1.6 kcal/mol
+at the UCCSD level. Thus at room temperature or lower, there is a population of different spin isomers, consistent
+with the unusual temperature dependence of the Mo¨ssbauer spectra, which has been posited to arise from a population
+
+                                                                     14
+shift (29). Although BS8 and BS10 lie somewhat higher in energy in the 404 orbital model, taking into account the 5
+kcal/mol ordering uncertainty of UCCSD, we also cannot rule them out from being thermally accessible after a more
+accurate correlation treatment. We do not consider the UCCSD(T) relative spin isomer energies to be more reliable
+than those of UCCSD due to the (T) reference sensitivity (SM Sec. 3.2 lists the UCCSD(T) energies). However, at
+both the UCCSD and UCCSD(T) level in the 404 orbital active space, we find BS7-235 to be the lowest energy isomer.
+genase. The small energy scale has a clear impact on interpreting spectroscopic measurements as small changes in
+different experiments may affect the electronic state being measured. At the same time, our work supports the use
+of broken symmetry theoretical approaches that capture the physical effect of orbital and spin dependent localization,
+significantly simplifying the computation of the low-energy manifold.
+
+For the purposes of understanding the catalytic mechanism of nitrogenase, computing the ground-state energy is only
+the starting point. Importantly, our work indicates that simpler single-reference electronic structure methods, which
+
+=== 2202.01244 (Goings et al., P450, PNAS 2022) ===
+                                               B. Spin-state ordering from DMRG+NEVPT2
+
+   In all active spaces, we found the sextet to be much higher in energy than the nearly-degenerate doublet and quartet
+states. This is largely consistent with previous calculations on models of the system [25-27]. In Figure 2 we show the
+DMRG and CCSD(T) spin gaps within the specified active space. CCSD(T) and DMRG agree to within 0.1 kcal/mol
+for the sextet and quartet states indicating single-reference character. However, for the doublet state, the DMRG
+energy is consistently much lower than the CCSD(T) energy. The DMRG natural orbital (NO) occupation numbers
+shown in Figure 3 reveal that the doublet state has three open-shell natural orbitals. This state is not well-described
+in traditional coupled cluster theory, and accurate computation therefore requires a method, such as DMRG, that is
+capable of treating systems with multiconfigurational character.
+
+   Our DMRG results for the G active space are the largest DMRG calculations yet performed on any model of Cpd
+I. We find the doublet state to be lower than the quartet by only 0.02 kcal/mol. Thus, from these estimates both
+the doublet and quartet states would be expected to be populated at room temperature. The sextet is 42.7 kcal/mol
+   The near-degeneracy of the doublet and quartet states makes prediction of the lowest energy spin state very difficult
+for this system. In particular, including the remaining dynamic correlation from outside of the active space can change
+this picture qualitatively (see the results in Appendix E). While NEVPT2 can provide a good estimate of the relatively
+large dynamic correlation energy, it is not accurate enough to resolve the doublet and quartet states. In this system,
+the addition of the NEVPT2 correlation energy can even shift the relative energy of the sextet such that it becomes
+the lowest spin state in some of the active spaces. Without larger, prohibitively expensive calculations, one cannot
+distinguish a real effect from an artifact of the various approximations. Furthermore, details of the protein model,
+dielectric environment, and cysteine ligand model can easily shift the energies by enough to change the qualitative
+result [51]. Together, these sources of uncertainty indicate that reliable identification of the lowest spin state of Cpd I
+as it appears in most experiments is not feasible. However, unambiguous identification of the lowest spin state in our
+model compound could be possible with a DMRG calculation in a very large active space, such as our `X' active space,
+                                                                                                                                                         6
+
+followed by a NEVPT2 correction for the remaining dynamic correlation. As the active space is made larger, the
+NEVPT2 correction becomes smaller and more reliable, though a DMRG-NEVPT2 calculation of this size is beyond
+our current capability. It is interesting to note that in a system like this, a very large active space is required not
+because there are a large number of strongly correlated orbitals, but rather because this is the only means to obtain
+a balanced combination of static and dynamic correlation for different spin states.
+
+   The computational cost of DMRG calculations depends on the bond dimension, M , and number of active orbitals,
+k. The bond dimension, M , is an adjustable parameter that controls the quality of the calculation, and convergence
+of the energy with respect to M must be carefully monitored to ensure accurate results. The theoretical asymptotic
+scaling of computational resources required for a DMRG calculation with a given bond dimension and number of
+active orbitals has been discussed elsewhere [52]. The scaling of the CPU time is O(k3M 3), and the memory and
+disk requirements scale as O(k2M 2) and O(k3M 2) respectively. Given the theoretical scaling, we can estimate the
+computational cost of a calculation in the 58 orbital X active space. These estimates are shown in Table II. For the
+StackBlock program, which implements both shared-memory and distributed-memory parallelism, it may be possible
+to perform an M = 3000 calculation on the 58 orbital X active space with a significant investment of computational
+resources over a period of approximately one month of wall time. However, there is no guarantee that a bond dimension
+of M = 3000 will be sufficient and it is likely that calculations of even higher bond dimension are required.
+
+TABLE II. Actual resources required for DMRG calculations in the 43 orbital G active space
+and estimated resources needed for DMRG calculations on the 58 orbital X active space.
+
+CPU time (hrs)  G (M = 1500)  X (M = 1500)  X (M = 3000)
+ Memory (Gb)          1800          4570         36564
+                        48            87           348
+   Disk (Gb)           235           572          2288
+
+   For systems like our model of Cpd I which do not have a quasi one-dimensional structure the bond dimension
+required to converge a DMRG calculation to the required precision will grow in such a way so as to make the overall
+scaling of the method weakly exponential. In practice, this means that active spaces larger than the X active space
+described here quickly become intractable.
+
+complexity we focus on the number of Toffoli gates which are the rate-limiting gate operation within the surface
+code [53]. To provide a range of estimates we consider the number of physical qubits and the resulting code distance
+required to implement the phase estimation algorithm on a surface code. We demonstrate assuming physical qubit
+error rates of 0.1% that the ground state energy of the largest model Hamiltonian for the active space `X' of Cpd I
+can be assessed with approximately 4.6 million physical qubits in 73 hours of run time. Anticipating improvements
+in qubit technology and reduction of error rates to 0.001% the same computation preparing the ground state of Cpd
+I can be performed in approximately 500 thousand physical qubits and 25 hours of runtime.
+
+=== 2603.22778 (Kanasugi et al., early-FT QPE, 2026) Table III ===
+
+partially randomized time evolution combined with UWC (blue hatched bars), all calculated for an initial-state parameter of
+
+ = 0.01. All values are presented in days. The target accuracy  and physical error rate pph are assumed to be  = 1.6 mHa
+and pph = 10-3, respectively.
+
+TABLE III. Physical resource estimates for the RPE algorithm applied to representative molecular active-space models. These
+
+estimates are derived from partially randomized product-formula circuits and UWC-optimized Pauli-LCU Hamiltonian represen-
+tations. The initial-state infidelity parameter is set to  = 0.01, corresponding to an initial-state overlap p0 = | 0| |2 > 0.99.
+The target accuracy  and physical error rate pph are assumed to be  = 1.6 mHa and pph = 10-3, respectively.
+
+Molecule ID     Physical qubits  Maximum per-shot           Time-to-solution   QPU parallelism k    Time-to-solution
+                    per QPU           runtime [s]         (single QPU) [days]  (Qbudget = 5 × 105)  (k QPUs) [days]
+
+                                 (a) Iron-sulfur clusters
+
+[2Fe-2S]-3      8.02 × 104       2.40 × 100               2.81 × 100                6               4.68 × 10-1
+[2Fe-2S]-2      8.02 × 104       3.09 × 100               3.39 × 100
+[4Fe-4S]-2      1.60 × 105       4.92 × 101               4.23 × 101                6               5.65 × 10-1
+                1.60 × 105       4.97 × 101               4.88 × 101
+[4Fe-4S]                                                                            3               1.41 × 101
+
+                                                                                    3               1.63 × 101
+
+                                 (b) Cytochrome P450
+
+P450-Cpd I (D)  8.98 × 104       6.36 × 100               7.19 × 100                5               1.44 × 100
+P450-Cpd I (E)  1.41 × 105       3.29 × 101               3.58 × 101
+P450-Cpd I (F)  2.15 × 105       6.76 × 101               6.89 × 101                3               1.19 × 101
+P450-Cpd I (G)  2.24 × 105       7.85 × 101               8.40 × 101
+                                                                                    2               3.44 × 101
+
+                                                                                    2               4.20 × 101
+
+                                 (c) Ruthenium-based catalysts for CO2 utilization
+
+Ru-XVIII (Md)   8.02 × 104       2.78 × 100               2.78 × 100                6               4.63 × 10-1
+                                                                                                    5.91 × 100
+
+=== 2409.11748 (Berry et al., state preparation, PRX Quantum 2025) abstract: see abstracts.txt (7.3e10 Toffoli incl. state prep, overlap^2 ~0.9) ===

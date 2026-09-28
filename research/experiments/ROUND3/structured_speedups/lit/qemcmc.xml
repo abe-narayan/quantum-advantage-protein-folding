@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Crc9RmoagY+rsXROqRWGTNK9XZk</id>
+  <title>arXiv Query: search_query=abs:"quantum-enhanced Markov chain Monte Carlo"&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:55Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22quantum-enhanced+Markov+chain+Monte+Carlo%22&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>12</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.15985v1</id>
+    <title>Quantum-enhanced Markov chain Monte Carlo sampling to model Lagrangian tracer dispersion in turbulent boundary layer</title>
+    <updated>2026-06-14T19:23:44Z</updated>
+    <link href="https://arxiv.org/abs/2606.15985v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.15985v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a quantum-enhanced Markov chain Monte Carlo (QE-MCMC) method to sample turbulent acceleration vectors from a joint target distribution that depends on all three components and height to model the transport and dispersion of massless Lagrangian tracer particles in two turbulent shear flows. A homogeneous shear flow, characterized by a uniform shear rate S, is considered as the starting point. Secondly, a turbulent boundary layer, which forms in both halves of a plane turbulent channel flow at friction Reynolds number Re_tau = 1000, is considered, where the mean shear rate S(y) varies with distance from the wall y. In this hybrid quantum-classical method, the proposal distribution Q for the first of two Metropolis-Hastings sampling substeps is constructed by a parametric quantum circuit. The algorithm generates synthetic tracer particle tracks. The resulting scaling laws for tracer-particle pair dispersion, a central quantity to probe turbulent mixing from a Lagrangian perspective, agree with a stochastic transport model consisting of coupled Langevin equations and with the classical MCMC counterpart. Differently from the classical sampling method, QE-MCMC uses a tempered target distribution. Due to the height dependence of the tracer dynamics in turbulent channel flow, an effective height-weighted spectral gap between the first and second eigenvalue of the Markov-chain transition matrix is introduced. The latter is found to significantly exceed the one of classical MCMC when sampling from a multivariate distribution with cross-correlations at the highest qubit numbers and thus resolutions. Consequently, our results support the applicability of this one-shot algorithm as a generative Lagrangian quantum-computing module, possibly embedded in a complex fluid-flow problem. Our module is found to work reliably for a relatively small number of qubits per spatial dimension of Nq &lt;= 6.</summary>
+    <category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-14T19:23:44Z</published>
+    <arxiv:primary_category term="physics.flu-dyn"/>
+    <author>
+      <name>Fabian Schindler</name>
+    </author>
+    <author>
+      <name>Jörg Schumacher</name>
+    </author>
+    <arxiv:doi>10.1103/5qcg-fhk1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/5qcg-fhk1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.20701v1</id>
+    <title>Divide-and-Conquer Neural Network Surrogates for Quantum Sampling: Accelerating Markov Chain Monte Carlo in Large-Scale Constrained Optimization Problems</title>
+    <updated>2026-04-22T15:44:30Z</updated>
+    <link href="https://arxiv.org/abs/2604.20701v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.20701v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling problems are promising candidates for demonstrating quantum advantage, and one approach known as quantum-enhanced Markov chain Monte Carlo [Layden, D. et al., Nature 619, 282-287 (2023)] uses quantum samples as a proposal distribution to accelerate convergence to a target distribution. On the other hand, many practical problems are large-scale and constrained, making it difficult to construct efficient proposal distributions in classical methods and slowing down MCMC mixing. In this work, we propose a divide-and-conquer neural network surrogate framework for quantum sampling to accelerate MCMC under fixed Hamming weight constraints. Our method divides the interaction graph for an Ising problem into subgraphs, generates samples using QAOA for those subproblems with an XY mixer, and trains neural network surrogates conditioned on the Hamming weight to provide proposal distributions for each subset while preserving the constraint. In numerical experiments of Boltzmann sampling on 3-regular graphs, our method consistently accelerated mixing as the system size $N$ increased, with average improvements in the autocorrelation decay rate constant by speedup factors of about $20.3$ and $7.6$ over classical pair-flip methods based on nearest-neighbor and non-nearest-neighbor exchanges, respectively. We also applied the method to an MNIST feature mask optimization problem with $N=784$, obtaining faster energy convergence and a $2.03\%$ higher classification accuracy. These results show that our method enables efficient and scalable MCMC and can outperform classical methods for practical applications on NISQ devices.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-22T15:44:30Z</published>
+    <arxiv:comment>12 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yuya Kawamata</name>
+    </author>
+    <author>
+      <name>Yuichiro Nakano</name>
+    </author>
+    <author>
+      <name>Keisuke Fujii</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.28076v1</id>
+    <title>Adiabatic dressing of quantum enhanced Markov chains</title>
+    <updated>2026-03-30T06:26:48Z</updated>
+    <link href="https://arxiv.org/abs/2603.28076v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.28076v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum-enhanced Markov chain Monte Carlo, a hybrid quantum-classical algorithm in which configurations are proposed by a quantum proposer and accepted or rejected by a classical algorithm, has been introduced as a possible method for robust quantum speedup. Previous work has identified competing factors that limit the algorithm's performance: the quantum dynamics should delocalize the system across a range of classical states to propose configurations beyond the reach of simple classical updates, whereas excessive delocalization produces configurations unlikely to be accepted, slowing the chain's convergence. Here, we show that controlling the degree of delocalization by adiabatically dressing the quench protocol can significantly enhance the Markov gap in paradigmatic spin-glass models.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-30T06:26:48Z</published>
+    <arxiv:comment>12 pages, 9 figures (3 in main text, 6 in appendix)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Wen Ting Hsieh</name>
+    </author>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.06171v2</id>
+    <title>Quantum-enhanced Markov Chain Monte Carlo for Combinatorial Optimization</title>
+    <updated>2026-03-27T11:57:21Z</updated>
+    <link href="https://arxiv.org/abs/2602.06171v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.06171v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computing offers an alternative paradigm for addressing combinatorial optimization problems compared to classical computing. Despite recent hardware improvements, the execution of empirical quantum optimization experiments at scales known to be hard for state-of-the-art classical solvers is not yet in reach. In this work, we offer a different way to approach combinatorial optimization with near-term quantum computing. Motivated by the promising results observed in using quantum-enhanced Markov chain Monte Carlo (QeMCMC) for approximating complicated probability distributions, we combine ideas of sampling from the device with QeMCMC together with warm-starting and parallel tempering, in the context of combinatorial optimization. We demonstrate empirically that our algorithm recovers the global optima for instances of the Maximum Independent Set problem (MIS) up to 117 decision variables using 117 qubits on IBM quantum hardware. We show early evidence of a scaling advantage of our algorithm compared to similar classical methods for the chosen instances of MIS. MIS is practically relevant across domains like financial services and molecular biology, and, in some cases, already difficult to solve to optimality classically with only a few hundred decision variables.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-05T20:20:54Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kate V. Marshall</name>
+    </author>
+    <author>
+      <name>Daniel J. Egger</name>
+    </author>
+    <author>
+      <name>Michael Garn</name>
+    </author>
+    <author>
+      <name>Francesca Schiavello</name>
+    </author>
+    <author>
+      <name>Sebastian Brandhofer</name>
+    </author>
+    <author>
+      <name>Christa Zoufal</name>
+    </author>
+    <author>
+      <name>Stefan Woerner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.19538v1</id>
+    <title>Dynamics of discrete spacetimes with Quantum-enhanced Markov Chain Monte Carlo</title>
+    <updated>2025-06-24T11:47:02Z</updated>
+    <link href="https://arxiv.org/abs/2506.19538v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.19538v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum algorithms offer the potential for significant computational advantages; however, in many cases, it remains unclear how these advantages can be practically realized. Causal Set Theory is a discrete, Lorentz-invariant approach to quantum gravity which may be well positioned to benefit from quantum computing. In this work, we introduce a quantum algorithm that investigates the dynamics of causal sets by sampling the space of causal sets, improving on classical methods. Our approach builds on the quantum-enhanced Markov chain Monte Carlo technique developed by Layden et al. [Nature 619, 282 (2023)], adapting it to sample from the constrained spaces required for application. This is done by adding a constraint term to the Hamiltonian of the system. A qubit Hamiltonian representing the Benincasa-Dowker action (the causal set equivalent of the Einstein-Hilbert action) is also derived and used in the algorithm as the problem Hamiltonian. We achieve a super-quadratic quantum scaling advantage and, under some conditions, demonstrate a greater potential compared to classical approaches than previously observed in unconstrained QeMCMC implementations.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-24T11:47:02Z</published>
+    <arxiv:comment>11 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Stuart Ferguson</name>
+    </author>
+    <author>
+      <name>Arad Nasiri</name>
+    </author>
+    <author>
+      <name>Petros Wallden</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.01335v1</id>
+    <title>Neural-network-assisted Monte Carlo sampling trained by Quantum Approximate Optimization Algorithm</title>
+    <updated>2025-06-02T05:26:26Z</updated>
+    <link href="https://arxiv.org/abs/2506.01335v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.01335v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling problems are widely regarded as the task for which quantum computers can most readily provide a quantum advantage. Leveraging this feature, the quantum-enhanced Markov chain Monte Carlo [Layden, D. et al., Nature 619, 282-287 (2023)] has been proposed recently, where sampling from a quantum computer is used as a proposal distribution and convergence to a target distribution is accelerated. However, guaranteeing convergence to the target distribution typically forces one to impose restrictive symmetry constraints on the quantum circuit, which makes it hard to design good proposal distributions and prevents making full use of the advantage of a quantum computer. We explore a hybrid quantum-classical MCMC framework that combines a quantum circuit with a generative neural sampler (GNS). The GNS is trained on quantum samples and acts as a classical surrogate to efficiently emulate quantum outputs, thereby lifting circuit constraints. We apply this method to Boltzmann sampling of spin glasses using proposals trained with a QAOA circuit. This approach outperforms conventional methods, showing a $\sim$100$\times$ improvement in spectral gap over uniform proposals. Notably, it maintains similar acceleration even without parameter optimization. These results establish the method as a viable sampling-based quantum algorithm for NISQ devices and highlight its potential for solving practical problems with quantum computation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-02T05:26:26Z</published>
+    <arxiv:comment>12 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>PRX Quantum 7, 010338 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Yuichiro Nakano</name>
+    </author>
+    <author>
+      <name>Ken N. Okada</name>
+    </author>
+    <author>
+      <name>Keisuke Fujii</name>
+    </author>
+    <arxiv:doi>10.1103/9nhx-5pym</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/9nhx-5pym" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.20799v2</id>
+    <title>Quantum-assisted variational Monte Carlo</title>
+    <updated>2025-06-08T12:26:50Z</updated>
+    <link href="https://arxiv.org/abs/2502.20799v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.20799v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Solving the ground state of quantum many-body systems remains a fundamental challenge in physics and chemistry. Recent advancements in quantum hardware have opened new avenues for addressing this challenge. Inspired by the quantum-enhanced Markov chain Monte Carlo (QeMCMC) algorithm [Nature, 619, 282-287 (2023)], which was originally designed for sampling the Boltzmann distribution of classical spin models using quantum computers, we introduce a quantum-assisted variational Monte Carlo (QA-VMC) algorithm for solving the ground state of quantum many-body systems by adapting QeMCMC to sample the distribution of a (neural-network) wave function in VMC. The central question is whether such quantum-assisted proposal can potentially offer a computational advantage over classical methods. Through numerical investigations for the Fermi-Hubbard model and molecular systems, we demonstrate that the quantum-assisted proposal exhibits larger absolute spectral gaps and reduced autocorrelation times compared to conventional classical proposals, leading to more efficient sampling and faster convergence to the ground state in VMC as well as more accurate and precise estimation of physical observables. This advantage is especially pronounced for specific parameter ranges, where the ground-state configurations are more concentrated in some configurations separated by large Hamming distances. Our results underscore the potential of quantum-assisted algorithms to enhance classical variational methods for solving the ground state of quantum many-body systems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-28T07:31:38Z</published>
+    <arxiv:comment>37 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>precision chemistry, 2025</arxiv:journal_ref>
+    <author>
+      <name>Longfei Chang</name>
+    </author>
+    <author>
+      <name>Zhendong Li</name>
+    </author>
+    <author>
+      <name>Wei-Hai Fang</name>
+    </author>
+    <arxiv:doi>10.1021/prechem.5c00025</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1021/prechem.5c00025" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.03853v2</id>
+    <title>Quantum Approximate Optimization Algorithm and Quantum-enhanced Markov Chain Monte Carlo: A Hybrid Approach to Data Assimilation in 4DVAR</title>
+    <updated>2025-04-28T16:14:05Z</updated>
+    <link href="https://arxiv.org/abs/2410.03853v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.03853v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a novel hybrid quantum-classical framework that integrates the Quantum Approximate Optimization Algorithm (QAOA) and Quantum-enhanced Markov Chain Monte Carlo (QMCMC) with variational particle filters to tackle the computational challenges in Four-Dimensional Variational Data Assimilation (4DVAR). 4DVAR, widely used in numerical weather prediction, suffers from inefficiencies in high-dimensional, non-linear systems. Our approach, the Quantum Variational Particle Filter (QVPF), uses QAOA to optimize particle proposals and QMCMC to efficiently compute particle weights and resample, accelerating convergence while reducing the computational load.
+  The QVPF framework addresses the curse of dimensionality by minimizing the number of particles required for accurate state estimation, thus improving efficiency in systems with complex dynamics. The hybrid model offers enhanced accuracy by integrating quantum algorithms into the variational particle filter, making it particularly suited for applications in climate modeling, space weather prediction, and defense. The potential for achieving unprecedented resolution in predictive models could transform sectors that rely on high-resolution forecasting.
+  We present the mathematical foundations of the approach, along with discussions on algorithmic implementation and hardware requirements. Early results suggest that this hybrid framework could significantly improve data assimilation, with future implementations on near-term quantum devices offering a practical pathway for scaling up. This work demonstrates how quantum computing can address the growing need for more accurate and computationally feasible methods in large-scale data assimilation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-04T18:37:35Z</published>
+    <arxiv:comment>Will require more permissions and data to be republished later for academic rigor</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Abhiram Sripat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.07881v1</id>
+    <title>Quantum enhanced Markov chains require fine-tuned quenches</title>
+    <updated>2024-08-15T01:40:07Z</updated>
+    <link href="https://arxiv.org/abs/2408.07881v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.07881v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum-enhanced Markov chain Monte Carlo, an algorithm in which configurations are proposed through a measured quantum quench and accepted or rejected by a classical algorithm, has been proposed as a possible method for robust quantum speedup on imperfect quantum devices. While this procedure is resilient to noise and control imperfections, the potential for quantum advantage is unclear. By upper-bounding the gap of the Markov chain, we identify competing factors that limit the algorithm's performance. One needs the quantum dynamics to efficiently delocalize the system over a range of classical states, however, it is also detrimental to introduce too much entropy through the quench. Specifically, we show that in the long-time limit, the gap of the Markov chain is bounded by the inverse participation ratio of the classical states in the eigenstate basis, showing there is no advantage when quenching to an ergodic system. For the paradigmatic Sherrington-Kirkpatrick and 3-spin model, we identify the regime of optimal spectral gap scaling and link it to the system's eigenstate properties.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-15T01:40:07Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.04247v2</id>
+    <title>Quantum-enhanced Markov Chain Monte Carlo for systems larger than your Quantum Computer</title>
+    <updated>2025-01-13T13:52:27Z</updated>
+    <link href="https://arxiv.org/abs/2405.04247v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.04247v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computers theoretically promise computational advantage in many tasks, but it is much less clear how such advantage can be maintained when using existing and near-term hardware that has limitations in the number and quality of its qubits. Layden et al. [Nature 619, 282 (2023)] proposed a promising application by introducing a Quantum-enhanced Markov Chain Monte Carlo (QeMCMC) approach to reduce the thermalization time required when sampling from hard probability distributions. In QeMCMC the size of the required quantum computer scales linearly with the problem, putting limitations on the sizes of systems that one can consider. In this work we introduce a framework to coarse grain the algorithm in such a way that the quantum computation can be performed using considerably smaller quantum computers and we term the method the Coarse Grained Quantum-enhanced Markov Chain Monte Carlo (CGQeMCMC). Example strategies within this framework are put to the test, with the quantum speedup persisting while using only $\sqrt{n}$ simulated qubits where $n$ is the number of qubits required in the original QeMCMC -- a quadratic reduction in resources. The coarse graining framework has the potential to be practically applicable in the near term as it requires very few qubits to approach classically intractable problem instances; in this case only 6 simulated qubits suffice to gain advantage compared to standard classical approaches when investigating the magnetization of a 36 spin system. Our method can be easily combined with other classical and quantum techniques and is adaptable to various quantum hardware specifications -- in particular those with limited connectivity.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-07T12:04:07Z</published>
+    <arxiv:comment>13 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Research 7, 013231 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Stuart Ferguson</name>
+    </author>
+    <author>
+      <name>Petros Wallden</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevResearch.7.013231</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevResearch.7.013231" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.03087v1</id>
+    <title>Bounding speedup of quantum-enhanced Markov chain Monte Carlo</title>
+    <updated>2024-03-05T16:20:01Z</updated>
+    <link href="https://arxiv.org/abs/2403.03087v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.03087v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling tasks are a natural class of problems for quantum computers due to the probabilistic nature of the Born rule. Sampling from useful distributions on noisy quantum hardware remains a challenging problem. A recent paper [Layden, D. et al. Nature 619, 282-287 (2023)] proposed a quantum-enhanced Markov chain Monte Carlo algorithm where moves are generated by a quantum device and accepted or rejected by a classical algorithm. While this procedure is robust to noise and control imperfections, its potential for quantum advantage is unclear. Here we show that there is no speedup over classical sampling on a worst-case unstructured sampling problem. We present an upper bound to the Markov gap that rules out a speedup for any unital quantum proposal.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-05T16:20:01Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.08789v1</id>
+    <title>QAOA-MC: Markov chain Monte Carlo enhanced by Quantum Alternating Operator Ansatz</title>
+    <updated>2023-05-15T16:47:31Z</updated>
+    <link href="https://arxiv.org/abs/2305.08789v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.08789v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computation is expected to accelerate certain computational task over classical counterpart. Its most primitive advantage is its ability to sample from classically intractable probability distributions. A promising approach to make use of this fact is the so-called quantum-enhanced Markov chain Monte Carlo (MCMC) [D. Layden, et al., arXiv:2203.12497 (2022)] which uses outputs from quantum circuits as the proposal distributions. In this work, we propose the use of Quantum Alternating Operator Ansatz (QAOA) for quantum-enhanced MCMC and provide a strategy to optimize its parameter to improve convergence speed while keeping its depth shallow. The proposed QAOA-type circuit is designed to satisfy the specific constraint which quantum-enhanced MCMC requires with arbitrary parameters. Through our extensive numerical analysis, we find a correlation in certain parameter range between an experimentally measurable value, acceptance rate of MCMC, and the spectral gap of the MCMC transition matrix, which determines the convergence speed. This allows us to optimize the parameter in the QAOA circuit and achieve quadratic speedup in convergence. Since MCMC is used in various areas such as statistical physics and machine learning makes, this work represents an important step toward realizing practical quantum advantage with currently available quantum computers through quantum-enhanced MCMC.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-15T16:47:31Z</published>
+    <arxiv:comment>10 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Research 6, 033105 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Yuichiro Nakano</name>
+    </author>
+    <author>
+      <name>Hideaki Hakoshima</name>
+    </author>
+    <author>
+      <name>Kosuke Mitarai</name>
+    </author>
+    <author>
+      <name>Keisuke Fujii</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevResearch.6.033105</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevResearch.6.033105" title="doi"/>
+  </entry>
+</feed>

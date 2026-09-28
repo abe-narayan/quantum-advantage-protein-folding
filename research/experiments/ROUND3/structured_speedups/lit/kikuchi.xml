@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/52cPOFQmVx7eFBbCkLp5ZUfE5iw</id>
+  <title>arXiv Query: search_query=abs:Kikuchi AND abs:quantum&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:29Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:Kikuchi+AND+abs:quantum&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>16</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29672v1</id>
+    <title>The Kikuchi Hierarchy is Sharp for $k$XOR</title>
+    <updated>2026-07-31T17:54:11Z</updated>
+    <link href="https://arxiv.org/abs/2607.29672v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29672v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Planted noisy $k$XOR and the strong refutation of random $k$XOR are governed by a conjectured trade-off between signal strength and time: Level $\ell$ of the Kikuchi hierarchy should achieve the smooth curve \begin{equation*}
+  m\ \gtrsim\ ρ^{-2}n^{k/2}/\ell^{k/2-1}\ \text{clauses}
+  \quad\Longleftrightarrow\quad
+  \text{solvable in time }n^{O(\ell)}, \end{equation*} where $ρ$ is the bias of the planted signal or, for refutation, the target advantage. However, every spectral analysis of sparse $k$XOR to date loses polylogarithmic factors against this curve, a loss that enters the exponent of the running time.
+  We show that a normalized variant of the Kikuchi hierarchy achieves the sharp conjectured trade-off, with no logarithmic loss, at every arity $k\ge3$. At the scale above, our algorithms achieve strong detection, weak recovery, and strong refutation; an additional cleanup step boosts weak recovery to exact recovery, and the refutation certificates yield sum-of-squares proofs of degree $O_k(\ell)$. We also prove matching lower bounds in the same model. The inference and refutation upper bounds transfer to more general planting laws and predicates. Finally, we give a quantum algorithm that achieves a quartic speedup over the classical spectral algorithms for detection and weak recovery.
+  The proofs rest on two key ingredients: a normalization of the sparse Kikuchi matrix, and a sharp count of the closed walks in its trace expansion. We use a closely related trace-walk count to prove Feige's 2008 hypergraph Moore bound conjecture in a companion paper.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T17:54:11Z</published>
+    <arxiv:comment>Companion paper to arXiv:2607.26028</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Matthew B. Hastings</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09728v1</id>
+    <title>Quantum Cut Sparsifiers</title>
+    <updated>2026-06-08T16:51:08Z</updated>
+    <link href="https://arxiv.org/abs/2606.09728v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09728v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we continue a line of research initiated by Basu, Brakensiek, and Putterman [2026] studying the sparsifiability of Hamiltonians. We focus particularly on the sparsifiability of the widely-studied Quantum Cut (QC) Hamiltonians. Our main result is that in an $n$-qubit system, any $n$-qubit QC Hamiltonian can be sparsified to $\widetilde{O}(n /\varepsilon^2)$ many terms while preserving the energy of every state up to a factor of $1 \pm \varepsilon$. Our result can be interpreted as giving an importance sampling scheme for the edges of an arbitrary graph $G$ such that the \emph{Kikuchi} graph at level $\ell$ of the sampled graph is a spectral approximation to the Kikuchi graph of $G$. Importantly, the \emph{same} sampling scheme works simultaneously for all $\ell$.
+  The natural approach of leverage score sampling, analyzed via matrix concentration inequalities, yields a polynomially worse bound in our setting because the underlying matrices have dimension $\sim 2^n$. Instead, our approach relies on decomposing the action of these matrices into invariant subspaces. Then, by using an operator-valued inequality of Alon and Kozma [Ann. Henri Poincaré, 2020], itself building on an \emph{octopus inequality} of Caputo, Liggett, and Richthammer [J. AMS, 2010], we extend our sparsification technique to all expander graphs. We then invoke expander decomposition to extend our sparsifier to all graphs.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T16:51:08Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Arpon Basu</name>
+    </author>
+    <author>
+      <name>Joshua Brakensiek</name>
+    </author>
+    <author>
+      <name>Pravesh K. Kothari</name>
+    </author>
+    <author>
+      <name>Aaron Putterman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.14994v1</id>
+    <title>Sharp Bounds on the Eigenvalues of Kikuchi Graphs and Applications to Quantum Max Cut</title>
+    <updated>2026-05-14T15:56:29Z</updated>
+    <link href="https://arxiv.org/abs/2605.14994v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.14994v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove that the maximum eigenvalue of the (both signed and unsigned) Laplacian of level $k$ Kikuchi graph of any graph $G$ with $m$ edges is at most $m+k$. This confirms four recent conjectures of Apte, Parekh, and Sud.
+  As applications, we obtain that tensor products of one and two qubit product states achieve an approximation ratio of $5/8$ for Quantum Max Cut and $5/7$ for the XY Hamiltonian. Moreover, combining our bounds with the algorithms analyzed by Apte, Parekh, and Sud, yields efficient algorithms achieving an approximation ratio of $0.614$ for Quantum Max Cut and $0.674$ for the XY Hamiltonian. Finally, we also make modest progress on Brouwer's conjecture and improve Lew's bound on the sum of the top-$k$ eigenvalues of a Graph Laplacian.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-14T15:56:29Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ainesh Bakshi</name>
+    </author>
+    <author>
+      <name>Arpon Basu</name>
+    </author>
+    <author>
+      <name>Pravesh Kothari</name>
+    </author>
+    <author>
+      <name>Anqi Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.02264v3</id>
+    <title>Spectral Certificates and Sum-of-Squares Lower Bounds for Semirandom Hamiltonians</title>
+    <updated>2026-02-01T20:02:22Z</updated>
+    <link href="https://arxiv.org/abs/2511.02264v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.02264v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The $k$-$\mathsf{XOR}$ problem is one of the most well-studied problems in classical complexity. We study a natural quantum analogue of $k$-$\mathsf{XOR}$, the problem of computing the ground energy of a certain subclass of structured local Hamiltonians, signed sums of $k$-local Pauli operators, which we refer to as $k$-$\mathsf{XOR}$ Hamiltonians. As an exhibition of the connection between this model and classical $k$-$\mathsf{XOR}$, we extend results on refuting $k$-$\mathsf{XOR}$ instances to the Hamiltonian setting by crafting a quantum variant of the Kikuchi matrix for CSP refutation, instead capturing ground energy optimization. As our main result, we show an $n^{O(\ell)}$-time classical spectral algorithm certifying ground energy at most $\frac{1}{2} + \varepsilon$ in (1) semirandom Hamiltonian $k$-$\mathsf{XOR}$ instances or (2) sums of Gaussian-signed $k$-local Paulis both with $O(n) \cdot \left(\frac{n}{\ell}\right)^{k/2-1} \log n /\varepsilon^4$ local terms, a tradeoff known as the refutation threshold. Additionally, we give evidence this tradeoff is tight in the semirandom regime via non-commutative Sum-of-Squares lower bounds embedding classical $k$-$\mathsf{XOR}$ instances as entirely classical Hamiltonians.</summary>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-04T05:17:48Z</published>
+    <arxiv:comment>49 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CC"/>
+    <author>
+      <name>Nicholas Kocurek</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08494v1</id>
+    <title>Quartic quantum speedups for community detection</title>
+    <updated>2025-10-09T17:35:17Z</updated>
+    <link href="https://arxiv.org/abs/2510.08494v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08494v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Community detection is a foundational problem in data science. Its natural extension to hypergraphs captures higher-order correlations beyond pairwise interactions. In this work, we develop a quantum algorithm for hypergraph community detection that achieves a quartic quantum speedup over the best known classical algorithm, along with superpolynomial savings in space. Our algorithm is based on the Kikuchi method, which we extend beyond previously considered problems such as Tensor PCA and $p$XORSAT to a broad family of generalized stochastic block models. To demonstrate (near) optimality of this method, we prove matching lower bounds (up to logarithmic factors) in the low-degree framework, showing that the algorithm saturates a smooth statistical-computational tradeoff. The quantum speedup arises from a quantized version of the Kikuchi method and is based on the efficient preparation of a guiding state correlated with the underlying community structure. Our work suggests that prior quantum speedups using the Kikuchi method are sufficiently robust to encompass a broader set of problems than previously believed; we conjecture that a quantity known as marginal order characterizes the existence of these quantum speedups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T17:35:17Z</published>
+    <arxiv:comment>40 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Alexander Zlokapa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.07273v1</id>
+    <title>End-to-end quantum algorithms for tensor problems</title>
+    <updated>2025-10-08T17:37:48Z</updated>
+    <link href="https://arxiv.org/abs/2510.07273v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.07273v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a comprehensive end-to-end quantum algorithm for tensor problems, including tensor PCA and planted kXOR, that achieves potential superquadratic quantum speedups over classical methods. We build upon prior works by Hastings~(\textit{Quantum}, 2020) and Schmidhuber~\textit{et al.}~(\textit{Phys.~Rev.~X.}, 2025), we address key limitations by introducing a native qubit-based encoding for the Kikuchi method, enabling explicit quantum circuit constructions and non-asymptotic resource estimation. Our approach substantially reduces constant overheads through a novel guiding state preparation technique as well as circuit optimizations, reducing the threshold for a quantum advantage. We further extend the algorithmic framework to support recovery in sparse tensor PCA and tensor completion, and generalize detection to asymmetric tensors, demonstrating that the quantum advantage persists in these broader settings. Detailed resource estimates show that 900 logical qubits, $\sim 10^{15}$ gates and $\sim 10^{12}$ gate depth suffice for a problem that classically requires $\sim 10^{23}$ FLOPs. The gate count and depth for the same problem without the improvements presented in this paper would be at least $10^{19}$ and $10^{18}$ respectively. These advances position tensor problems as a candidate for quantum advantage whose resource requirements benefit significantly from algorithmic and compilation improvements; the magnitude of the improvements suggest that further enhancements are possible, which would make the algorithm viable for upcoming fault-tolerant quantum hardware.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T17:37:48Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Enrico Fontana</name>
+    </author>
+    <author>
+      <name>Sivaprasad Omanakuttan</name>
+    </author>
+    <author>
+      <name>Junhyung Lyle Kim</name>
+    </author>
+    <author>
+      <name>Joseph Sullivan</name>
+    </author>
+    <author>
+      <name>Michael Perlin</name>
+    </author>
+    <author>
+      <name>Ruslan Shaydulin</name>
+    </author>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03061v1</id>
+    <title>Smooth Trade-off for Tensor PCA via Sharp Bounds for Kikuchi Matrices</title>
+    <updated>2025-10-03T14:43:19Z</updated>
+    <link href="https://arxiv.org/abs/2510.03061v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03061v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we revisit algorithms for Tensor PCA: given an order-$r$ tensor of the form $T = G+λ\cdot v^{\otimes r}$ where $G$ is a random symmetric Gaussian tensor with unit variance entries and $v$ is an unknown boolean vector in $\{\pm 1\}^n$, what's the minimum $λ$ at which one can distinguish $T$ from a random Gaussian tensor and more generally, recover $v$? As a result of a long line of work, we know that for any $\ell \in \N$, there is a $n^{O(\ell)}$ time algorithm that succeeds when the signal strength $λ\gtrsim \sqrt{\log n} \cdot n^{-r/4} \cdot \ell^{1/2-r/4}$. The question of whether the logarithmic factor is necessary turns out to be crucial to understanding whether larger polynomial time allows recovering the signal at a lower signal strength. Such a smooth trade-off is necessary for tensor PCA being a candidate problem for quantum speedups[SOKB25]. It was first conjectured by [WAM19] and then, more recently, with an eye on smooth trade-offs, reiterated in a blogpost of Bandeira.
+  In this work, we resolve these conjectures and show that spectral algorithms based on the Kikuchi hierarchy \cite{WAM19} succeed whenever $λ\geq Θ_r(1) \cdot n^{-r/4} \cdot \ell^{1/2-r/4}$ where $Θ_r(1)$ only hides an absolute constant independent of $n$ and $\ell$. A sharp bound such as this was previously known only for $\ell \leq 3r/4$ via non-asymptotic techniques in random matrix theory inspired by free probability.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-03T14:43:19Z</published>
+    <arxiv:comment>SODA'26</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Pravesh K. Kothari</name>
+    </author>
+    <author>
+      <name>Jeff Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.22575v3</id>
+    <title>Characterization of WSe$_2$ films using reflection Kikuchi diffraction in the scanning electron microscope and multivariate statistical analyses</title>
+    <updated>2025-11-24T17:06:06Z</updated>
+    <link href="https://arxiv.org/abs/2506.22575v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.22575v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The study of thin films and 2D materials, including transition metal dichalcogenides such as WSe$_2$ offers opportunities to leverage their properties in advanced sensors, quantum technologies, and device to optimize functional performance. In this work, we characterize thin WSe$_2$ samples with variable thicknesses using scanning electron microscope (SEM)-based techniques focused on analysis of backscattered electron signal and Kikuchi diffraction patterns. These data were collected via a pixelated electron-counting direct electron detector positioned below the pole piece primarily configured for reflection Kikuchi diffraction (RKD), and a similar detector placed in the more conventional electron backscatter diffraction geometry. In addition to conventional pattern analysis for orientation microscopy, multivariate statistical methods (MSA) based on principal component analysis were applied to analyze diffraction patterns and differentiate thickness variations and crystal orientations within the thin films through data clustering. These results were compared with atomic force microscopy to validate thickness measurements. Our findings indicate that RKD combined with MSA is highly effective for characterizing 2D materials, enabling simultaneous assessment of thickness and crystallographic orientation. Systematic acceleration voltage variations in RKD experiments and comparisons with EBSD data suggest that the thickness dependency arises from inelastic scattering of diffracted electrons, which affects pattern contrast in the thin film regime. Collection and analysis of patterns obtained from monolayer, bilayer and tri-layer of WSe$_2$ are also demonstrated. This work reinforces the utility of SEM-based techniques, such as RKD, as valuable tools for the materials characterization toolkit, particularly for thin films and 2D materials.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-27T18:44:15Z</published>
+    <arxiv:comment>Journal version with supplementary information + doi</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>Tianbi Zhang</name>
+    </author>
+    <author>
+      <name>Jakub Holzer</name>
+    </author>
+    <author>
+      <name>Tomáš Vystavěl</name>
+    </author>
+    <author>
+      <name>Miroslav Kolíbal</name>
+    </author>
+    <author>
+      <name>Estácio Paiva de Araújo</name>
+    </author>
+    <author>
+      <name>Chris Stephens</name>
+    </author>
+    <author>
+      <name>T. Ben Britton</name>
+    </author>
+    <arxiv:doi>10.1021/acsnano.5c10753</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1021/acsnano.5c10753" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.00042v2</id>
+    <title>The exact quantum chromatic number of Hadamard graphs</title>
+    <updated>2024-10-14T17:56:04Z</updated>
+    <link href="https://arxiv.org/abs/2410.00042v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.00042v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We compute the exact value of the quantum chromatic numbers of Hadamard graphs of order $n=2^N$ for $N$ a multiple of $4$ using the upper bound derived by Avis, Hasegawa, Kikuchi, and Sasaki, as well as an application of the Hoffman-like lower bound of Elphick and Wocjan that was generalized by Ganesan for quantum graphs. As opposed to prior computations for the lower bound, our approach uses Ito's results on conjugacy class graphs allowing us to also find bounds on the quantum chromatic numbers of products of Hadamard graphs. In particular, we also compute the exact quantum chromatic number of the categorical product of Hadamard graphs.</summary>
+    <category term="math.OA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-27T14:28:57Z</published>
+    <arxiv:comment>Added references for prior proofs of the quantum chromatic number of Hadamard graphs. Fixed several typos. Added new section with results on the quantum chromatic number of products of Hadamard graphs</arxiv:comment>
+    <arxiv:primary_category term="math.OA"/>
+    <author>
+      <name>Meenakshi McNamara</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.19378v2</id>
+    <title>Quartic quantum speedups for planted inference</title>
+    <updated>2025-06-03T13:46:41Z</updated>
+    <link href="https://arxiv.org/abs/2406.19378v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.19378v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a quantum algorithm for the Planted Noisy $k$XOR problem (also known as sparse Learning Parity with Noise) that achieves a nearly quartic ($4$th power) speedup over the best known classical algorithm while also only using logarithmically many qubits. Our work generalizes and simplifies prior work of Hastings, by building on his quantum algorithm for the Tensor Principal Component Analysis (PCA) problem. We achieve our quantum speedup using a general framework based on the Kikuchi Method (recovering the quartic speedup for Tensor PCA), and we anticipate it will yield similar speedups for further planted inference problems. These speedups rely on the fact that planted inference problems naturally instantiate the Guided Sparse Hamiltonian problem. Since the Planted Noisy $k$XOR problem has been used as a component of certain cryptographic constructions, our work suggests that some of these are susceptible to super-quadratic quantum attacks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-27T17:54:28Z</published>
+    <arxiv:comment>Short version appeared in SODA 2025 and QIP 2025. Full version published in Phys. Rev. X</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. X 15, 021077 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Ryan O'Donnell</name>
+    </author>
+    <author>
+      <name>Robin Kothari</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevX.15.021077</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevX.15.021077" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.11786v2</id>
+    <title>The Quantum Cluster Variational Method and the Phase Diagram of the quantum ferromagnetic $J_1$-$J_2$ model</title>
+    <updated>2020-12-11T23:45:40Z</updated>
+    <link href="https://arxiv.org/abs/2011.11786v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.11786v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We exploit the Quantum Cluster Variational Method (QCVM) to study the $J_1$-$J_2$ model for quantum Ising spins. We first describe the QCVM and discuss how it is related to other Mean Field approximations. The phase diagram of the model is studied at the level of the Kikuchi approximation in square lattices as a function of the ratio between $g = J_2/J_1$ , the temperature and the longitudinal and transverse external fields. Our results show that quantum fluctuations may change the order of the transition and induce a gap between the ferromagnetic and the stripe phases. Moreover, when both longitudinal and transverse fields are present, thermal fluctuations and quantum effects contribute to the appearance of a nematic phase.</summary>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-23T23:11:46Z</published>
+    <arxiv:comment>Added references</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.dis-nn"/>
+    <arxiv:journal_ref>Phys. Rev. B 104, 014205 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Eduardo Dominguez</name>
+    </author>
+    <author>
+      <name>Roberto Mulet</name>
+    </author>
+    <author>
+      <name>Carlos Lopetegui</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.104.014205</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.104.014205" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1710.08871v1</id>
+    <title>Quantum Cluster Variational Method and Message Passing Algorithms Revisited</title>
+    <updated>2017-10-24T16:28:39Z</updated>
+    <link href="https://arxiv.org/abs/1710.08871v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1710.08871v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a general framework to study quantum disordered systems in the context of the Kikuchi's Cluster Variational Method (CVM). The method relies in the solution of message passing-like equations for single instances or in the iterative solution of complex population dynamic algorithms for an average case scenario. We first show how a standard application of the Kikuchi's Cluster Variational Method can be easily translated to message passing equations for specific instances of the disordered system. We then present an "ad-hoc" extension of these equations to a population dynamic algorithm representing an average case scenario. At the Bethe level, these equations are equivalent to the dynamic population equations that can be derived from a proper Cavity Ansatz. However, at the plaquette approximation, the interpretation is more subtle and we discuss it taking also into account previous results in classical disordered models. Moreover, we develop a formalism to properly deal with the average case scenario using a Replica-Symmetric ansatz within this CVM for quantum disordered systems. Finally, we present and discuss numerical solutions of the different approximations for the Quantum Transverse Ising model and the Quantum Random Field Ising model in two dimensional lattices.</summary>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-10-24T16:28:39Z</published>
+    <arxiv:primary_category term="cond-mat.dis-nn"/>
+    <arxiv:journal_ref>Phys. Rev. B 97, 064202 (2018)</arxiv:journal_ref>
+    <author>
+      <name>Eduardo Dominguez</name>
+    </author>
+    <author>
+      <name>Roberto Mulet</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.97.064202</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.97.064202" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1707.00975v1</id>
+    <title>Local moment formation and magnetic coupling of Mn guest atoms in Bi$_2$Se$_3$: a low-temperature ferromagnetic resonance study</title>
+    <updated>2017-07-04T13:33:55Z</updated>
+    <link href="https://arxiv.org/abs/1707.00975v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1707.00975v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We compare the magnetic and electronic configuration of single Mn atoms in molecular beam epitaxy (MBE) grown Bi$_2$Se$_3$ thin films, focusing on electron paramagnetic (ferromagnetic) resonance (EPR and FMR, respectively) and superconducting quantum interference device (SQUID) techniques. X-ray diffraction (XRD) and electron backscatter diffraction (EBSD) reveal the expected increase of disorder with increasing concentration of magnetic guest atoms, however, Kikuchi patterns show that disorder consists majorly of mum-scale 60deg twin domains in the hexagonal Bi$_2$Se$_3$ structure, which are promoted by the presence of single unclustered Mn impurities. Ferromagnetism below T$_C$ ~ (5.4 +/- 0.3) K can be well described by critical scaling laws M(T) ~ (1-T/T$_C$)$^β$ with a critical exponent $β$ = (0.34 +/- 0.2)), suggesting 3D Heisenberg class magnetism instead of e.g. 2D-type coupling between Mn-spins in van der Waals gap sites. From EPR hyperfine structure data we determine a Mn$^{2+}$ (d$^5$, S = 5/2) electronic configuration with a g-factor of 2.002 for -1/2 --&gt; +1/2 transitions. In addition, from the strong dependence of the low temperature FMR fields and linewidth on the field strength and orientation with respect to the Bi$_2$Se$_3$ (0001) plane, we derive magnetic anisotropy energies of up to K1 = -3720 erg/cm3 in MBE-grown Mn-doped Bi$_2$Se$_3$, reflecting the first order magneto-crystalline anisotropy of an in-plane magnetic easy plane in a hexagonal (0001) crystal symmetry. Across the ferromagnetic-paramagnetic transition the FMR intensity is suppressed and resonance fields converge the paramagnetic limit of a Mn$^{2+}$ (d$^5$, S = 5/2).</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-07-04T13:33:55Z</published>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>D. Savchenko</name>
+    </author>
+    <author>
+      <name>R. Tarasenko</name>
+    </author>
+    <author>
+      <name>M. Vališka</name>
+    </author>
+    <author>
+      <name>J. Kopeček</name>
+    </author>
+    <author>
+      <name>L. Fekete</name>
+    </author>
+    <author>
+      <name>K. Carva</name>
+    </author>
+    <author>
+      <name>V. Holý</name>
+    </author>
+    <author>
+      <name>G. Springholz</name>
+    </author>
+    <author>
+      <name>V. Sechovský</name>
+    </author>
+    <author>
+      <name>J. Honolka</name>
+    </author>
+    <arxiv:doi>10.1016/j.physb.2017.10.016</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.physb.2017.10.016" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1106.0712v1</id>
+    <title>Kochen-Specker Sets and the Rank-1 Quantum Chromatic Number</title>
+    <updated>2011-06-03T17:37:40Z</updated>
+    <link href="https://arxiv.org/abs/1106.0712v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1106.0712v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The quantum chromatic number of a graph $G$ is sandwiched between its chromatic number and its clique number, which are well known NP-hard quantities. We restrict our attention to the rank-1 quantum chromatic number $χ_q^{(1)}(G)$, which upper bounds the quantum chromatic number, but is defined under stronger constraints. We study its relation with the chromatic number $χ(G)$ and the minimum dimension of orthogonal representations $ξ(G)$. It is known that $ξ(G) \leq χ_q^{(1)}(G) \leq χ(G)$. We answer three open questions about these relations: we give a necessary and sufficient condition to have $ξ(G) = χ_q^{(1)}(G)$, we exhibit a class of graphs such that $ξ(G) &lt; χ_q^{(1)}(G)$, and we give a necessary and sufficient condition to have $χ_q^{(1)}(G) &lt; χ(G)$. Our main tools are Kochen-Specker sets, collections of vectors with a traditionally important role in the study of noncontextuality of physical theories, and more recently in the quantification of quantum zero-error capacities. Finally, as a corollary of our results and a result by Avis, Hasegawa, Kikuchi, and Sasaki on the quantum chromatic number, we give a family of Kochen-Specker sets of growing dimension.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-06-03T17:37:40Z</published>
+    <arxiv:comment>12 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>IEEE Transactions on Information Theory, vol. 58, no. 4, April 2012</arxiv:journal_ref>
+    <author>
+      <name>Giannicola Scarpa</name>
+    </author>
+    <author>
+      <name>Simone Severini</name>
+    </author>
+    <arxiv:doi>10.1109/TIT.2011.2178018</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TIT.2011.2178018" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0706.2671v1</id>
+    <title>Monte Carlo Simulations of an Extended Feynman-Kikuchi Model</title>
+    <updated>2007-06-18T21:28:29Z</updated>
+    <link href="https://arxiv.org/abs/0706.2671v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0706.2671v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We present Quantum Monte Carlo simulations of a generalization of the Feynman-Kikuchi model which includes the possibility of vacancies and interactions between the particles undergoing exchange. By measuring the winding number (superfluid density) and density structure factor, we determine the phase diagram, and show that it exhibits regions which possess both superfluid and charge ordering.</summary>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-06-18T21:28:29Z</published>
+    <arxiv:comment>10 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.stat-mech"/>
+    <author>
+      <name>A. Zujev</name>
+    </author>
+    <author>
+      <name>R. T. Scalettar</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.76.174524</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.76.174524" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0012018v2</id>
+    <title>Ground State of Strongly Correlated Fermions: Short-Range Order</title>
+    <updated>2002-06-19T10:34:37Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0012018v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0012018v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  A new variational method is developed to calculate the ground state energy of Fermi systems with strong short-range correlations. A trial wave function of Gutzwiller's type contains additional variational parameters corresponding to configurations of pairs of nearest-neighbor sites. To evaluate the ground state energy, generalized Kikuchi's pseudo-ensemble method is used. The Hubbard model at half band-filling is investigated. The ground state energy of the paramagnetic phase is calculated for a chain, square and simple cubic lattices. It is shown that the short-range order lowers drastically the ground state energy of the Hubbard model at intermediate interaction strength. The paramagnetic phase of the Kondo-Hubbard model ($S=1/2$ and $S=5/2$) at half band-filling is investigated. The ground state energy, correlation functions and effective mass are calculated for chain, square and simple cubic lattices. A quantum phase transition was found for simple cubic lattice.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2000-12-01T19:03:12Z</published>
+    <arxiv:comment>RevTex,10 pages, 7 figures, 3 tables; a revision of text, combined figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <author>
+      <name>Yu. B. Kudasov</name>
+      <arxiv:affiliation>Russian Federal Nuclear Center - VNIIEF</arxiv:affiliation>
+    </author>
+  </entry>
+</feed>

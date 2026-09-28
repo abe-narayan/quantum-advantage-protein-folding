@@ -49,7 +49,7 @@ _"Exploratory" marks measurements that were not pre-registered or not replicated
 | C3 | Mode census: distinct-mode fraction 0.32 → 0.98 and gmean p_hit 0.10 → 0.008 from L=30 to 120; unsaturated at L ≥ 100 | MEASURED (256 restarts, 200-iteration minima) | `RAW/g1_modes/`, `PROCESSED/g1_summary.json` |
 | C4 | ρ(E, RMSD) over modes ≈ 0.31 at L=120; the best-RMSD mode ranks ~11th by energy | MEASURED (7 crops) | same |
 | C5 | The A80 energy is piecewise smooth (0.05 Å table interpolation): L-BFGS endpoints keep gradient norms 2–130; Hessians have ~40% non-positive eigenvalues | MEASURED | R2-T deviation log |
-| C6 | Distance-geometry seeding reaches the deepest known basin in 61/64 runs at 1–5% of restart/PT cost | MEASURED (exploratory lens run; not replicated) | `research/discovery/attack_records.json` QM-02 |
+| C6 | Distance-geometry seeding from native-free distogram expected distances reaches or beats the census-best basin on 14/16 crops at L = 150 (round 3, replicated; the earlier "61/64" wording was a mis-transcription) | MEASURED (replicated by two round-3 lanes) | `research/experiments/ROUND3/hardness_what_it_takes/dg_summary.json`, `ROUND3/structured_speedups/s4_planted_level1.json` |
 | C7 | Transmission of posterior averaging (R2-T) | ⟦R2T-CLASS⟧ | `RAW/g1_transmission/`, `PROCESSED/transmission_summary.json` |
 | C8 | λ-path T-scan / temperature exchange / 2048 census | ⟦G1PROD-CLASS⟧ | `RAW/g1_tscan`, `RAW/tpt`, `RAW/g1_modes2k` |
 

@@ -1,0 +1,91 @@
+{
+ "_bare_M_check": {
+  "18": 10.31106137344917,
+  "24": 10.311061314930647,
+  "45": 10.31106131476367
+ },
+ "ILE61:CG2|ILE61:CD1|LEU67:CD2": {
+  "sector_dim": 4624,
+  "secs": 83.07495141029358,
+  "rotors": {
+   "ILE61:CG2": {
+    "Delta_bare_ueV": 10.828821407999456,
+    "Delta_pairs_ueV": [
+     1.209145566875236,
+     4.42735339775524
+    ],
+    "Delta_exact3_ueV": 0.704591914171715,
+    "pred_additive_ueV": -5.19232244336898,
+    "pred_multiplicative_ueV": 0.4943580221880073,
+    "rel_err_additive": 8.369262035135373,
+    "rel_err_multiplicative": 0.2983768160763649
+   },
+   "ILE61:CD1": {
+    "Delta_bare_ueV": 10.34677288931718,
+    "Delta_pairs_ueV": [
+     0.07179138647472882,
+     60.55549336688415
+    ],
+    "Delta_exact3_ueV": 0.282222260842957,
+    "pred_additive_ueV": 50.2805118640417,
+    "pred_multiplicative_ueV": 0.4201660627883711,
+    "rel_err_additive": 177.15926962621978,
+    "rel_err_multiplicative": 0.48877718410091386
+   },
+   "LEU67:CD2": {
+    "Delta_bare_ueV": 10.930276285195717,
+    "Delta_pairs_ueV": [
+     12.065396674474371,
+     0.11337026744584477
+    ],
+    "Delta_exact3_ueV": 0.0009095094384292679,
+    "pred_additive_ueV": 1.248490656724499,
+    "pred_multiplicative_ueV": 0.12514388585749028,
+    "rel_err_additive": 1371.7077520829857,
+    "rel_err_multiplicative": 136.59492817756245
+   }
+  }
+ },
+ "ILE36:CG2|ILE36:CD1|LEU71:CD1": {
+  "sector_dim": 4624,
+  "secs": 89.60817003250122,
+  "rotors": {
+   "ILE36:CG2": {
+    "Delta_bare_ueV": 10.99756641985028,
+    "Delta_pairs_ueV": [
+     6.586641000374982,
+     16.499887302572347
+    ],
+    "Delta_exact3_ueV": 3.3886732555501453,
+    "pred_additive_ueV": 12.088961883097049,
+    "pred_multiplicative_ueV": 9.882080276644432,
+    "rel_err_additive": 2.567461649864624,
+    "rel_err_multiplicative": 1.916209245154884
+   },
+   "ILE36:CD1": {
+    "Delta_bare_ueV": 10.166847590177497,
+    "Delta_pairs_ueV": [
+     12.716378091578662,
+     11.67522183084202
+    ],
+    "Delta_exact3_ueV": 13.909993439430224,
+    "pred_additive_ueV": 14.224752332243185,
+    "pred_multiplicative_ueV": 14.603005876421166,
+    "rel_err_additive": 0.022628256022085787,
+    "rel_err_multiplicative": 0.04982119078694045
+   },
+   "LEU71:CD1": {
+    "Delta_bare_ueV": 11.577478318113954,
+    "Delta_pairs_ueV": [
+     1.202378579975516,
+     13.14920289408228
+    ],
+    "Delta_exact3_ueV": 2.5831722802891477,
+    "pred_additive_ueV": 2.774103155943841,
+    "pred_multiplicative_ueV": 1.3656099773350472,
+    "rel_err_additive": 0.07391333404728298,
+    "rel_err_multiplicative": 0.47134382489495147
+   }
+  }
+ }
+}

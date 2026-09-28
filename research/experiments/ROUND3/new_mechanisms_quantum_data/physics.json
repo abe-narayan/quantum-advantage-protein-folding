@@ -1,0 +1,90 @@
+{
+ "thermal_1H_polarisation": {
+  "9.4T_298K": 3.222806854738741e-05,
+  "14.1T_298K": 4.8342102800160093e-05,
+  "28.2T_298K": 9.668420537437317e-05,
+  "9.4T_100K": 9.603964400918743e-05,
+  "14.1T_100K": 0.00014405946546013583,
+  "6.7T_1.2K": 0.0057044205428506385
+ },
+ "NV_1H_coupling": {
+  "2.0nm": {
+   "nu_Hz": 9883.046737516665,
+   "transfer_time_us": 50.5916862764565
+  },
+  "3.0nm": {
+   "nu_Hz": 2928.310144449382,
+   "transfer_time_us": 170.7469411830407
+  },
+  "4.0nm": {
+   "nu_Hz": 1235.380842189583,
+   "transfer_time_us": 404.733490211652
+  },
+  "5.0nm": {
+   "nu_Hz": 632.5149912010667,
+   "transfer_time_us": 790.4950980696326
+  }
+ },
+ "protein_1H_T2_s": {
+  "protonated": [
+   8e-06,
+   1.08e-05
+  ],
+  "amide_only": [
+   3.315727981081153e-05,
+   3.6171577975430757e-05
+  ],
+  "source": "research/experiments/ADVERSARIAL/R1_physics_feasibility/README.md (MEASURED)"
+ },
+ "per_spin_transfer_fidelity_estimate": {
+  "3.0nm_protonated": {
+   "t_over_T2": 15.809901961392656,
+   "f_exponential": 1.3609645680461332e-07,
+   "log10_f_gaussian": -54.27660432384587
+  },
+  "3.0nm_amide_only": {
+   "t_over_T2": 4.720472557183409,
+   "f_exponential": 0.008910966612043894,
+   "log10_f_gaussian": -4.838661822080008
+  },
+  "5.0nm_protonated": {
+   "t_over_T2": 73.19399056200302,
+   "f_exponential": 1.630248429279766e-32,
+   "log10_f_gaussian": -1163.3359980248167
+  },
+  "5.0nm_amide_only": {
+   "t_over_T2": 21.854039616589848,
+   "f_exponential": 3.2278339654499034e-10,
+   "log10_f_gaussian": -103.70931545953371
+  }
+ },
+ "NV_nonsecular_ratio": {
+  "2.0nm": {
+   "ratio": 3.443570291817653e-06,
+   "prob": 1.1858176354689116e-11
+  },
+  "3.0nm": {
+   "ratio": 1.0203171235015267e-06,
+   "prob": 1.0410470325104296e-12
+  },
+  "4.0nm": {
+   "ratio": 4.3044628647720663e-07,
+   "prob": 1.8528400554201744e-13
+  },
+  "5.0nm": {
+   "ratio": 2.2038849867632985e-07,
+   "prob": 4.8571090348806645e-14
+  }
+ },
+ "molecules_in_1mg_ubiquitin": 7.031104214827788e+16,
+ "sigma_cone_spins": {
+  "40us": [
+   16,
+   20
+  ],
+  "80us_inference": 57
+ },
+ "cone_12_spins_all_transferred_prob_at_f0.99": 0.8863848717161292,
+ "cone_20_spins_all_transferred_prob_at_f0.99": 0.8179069375972308,
+ "cone_57_spins_all_transferred_prob_at_f0.99": 0.5639051904523875
+}

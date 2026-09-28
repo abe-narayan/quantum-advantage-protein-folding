@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/hJgkpHlnrEsFauBPDiTsXOnHVDA</id>
+  <title>arXiv Query: search_query=&amp;id_list=2408.08292,2509.14509,2509.14443,2509.19966,2606.13570,2603.04540,2411.12553,2605.10666,2510.08061,2510.10967,2607.28120,2604.15025,2606.04843,2511.20016,2510.06603&amp;start=0&amp;max_results=20</title>
+  <updated>2026-09-28T15:27:06Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=20&amp;id_list=2408.08292,2509.14509,2509.14443,2509.19966,2606.13570,2603.04540,2411.12553,2605.10666,2510.08061,2510.10967,2607.28120,2604.15025,2606.04843,2511.20016,2510.06603" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.06603v1</id>
+    <title>Algebraic Geometry Codes and Decoded Quantum Interferometry</title>
+    <updated>2025-10-08T03:25:30Z</updated>
+    <link href="https://arxiv.org/abs/2510.06603v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.06603v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) defines a duality that pairs decoding problems with optimization problems. The original work on DQI considered Reed-Solomon decoding, whose dual optimization problem, called Optimal Polynomial Intersection (OPI), is a polynomial regression problem over a finite field. Here, we consider a class of algebraic geometry codes called Hermitian codes, which achieve block length $q^3$ using alphabet $\mathbb{F}_{q^2}$ compared to Reed-Solomon's limitation to block length $q$ over $\mathbb{F}_q$, requiring approximately one-third fewer qubits per field element for quantum implementations. We show that the dual optimization problem, which we call Hermitian Optimal Polynomial Intersection (HOPI), is a polynomial regression problem over a Hermitian curve, and because the dual to a Hermitian code is another Hermitian code, the HOPI problem can also be viewed as approximate list recovery for Hermitian codes. By comparing to Prange's algorithm, simulated annealing, and algebraic list recovery algorithms, we find a large parameter regime in which DQI efficiently achieves a better approximation than these classical algorithms, suggesting that the apparent quantum speedup offered by DQI extends beyond Reed-Solomon codes to a broader class of polynomial regression problems on algebraic varieties.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T03:25:30Z</published>
+    <arxiv:comment>23 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Andi Gu</name>
+    </author>
+    <author>
+      <name>Stephen P. Jordan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.08292v5</id>
+    <title>Optimization by Decoded Quantum Interferometry</title>
+    <updated>2025-10-22T22:42:14Z</updated>
+    <link href="https://arxiv.org/abs/2408.08292v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.08292v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Achieving superpolynomial speedups for optimization has long been a central goal for quantum algorithms. Here we introduce Decoded Quantum Interferometry (DQI), a quantum algorithm that uses the quantum Fourier transform to reduce optimization problems to decoding problems. For approximating optimal polynomial fits over finite fields, DQI achieves a superpolynomial speedup over known classical algorithms. The speedup arises because the problem's algebraic structure is reflected in the decoding problem, which can be solved efficiently. We then investigate whether this approach can achieve speedup for optimization problems that lack algebraic structure but have sparse clauses. These problems reduce to decoding LDPC codes, for which powerful decoders are known. To test this, we construct a max-XORSAT instance where DQI finds an approximate optimum significantly faster than general-purpose classical heuristics, such as simulated annealing. While a tailored classical solver can outperform DQI on this instance, our results establish that combining quantum Fourier transforms with powerful decoding primitives provides a promising new path toward quantum speedups for hard optimization problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-15T17:47:42Z</published>
+    <arxiv:comment>80 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nature 646:831-836, 2025</arxiv:journal_ref>
+    <author>
+      <name>Stephen P. Jordan</name>
+    </author>
+    <author>
+      <name>Noah Shutty</name>
+    </author>
+    <author>
+      <name>Mary Wootters</name>
+    </author>
+    <author>
+      <name>Adam Zalcman</name>
+    </author>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Robbie King</name>
+    </author>
+    <author>
+      <name>Sergei V. Isakov</name>
+    </author>
+    <author>
+      <name>Tanuj Khattar</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <arxiv:doi>10.1038/s41586-025-09527-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41586-025-09527-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.10967v1</id>
+    <title>Verifiable Quantum Advantage via Optimized DQI Circuits</title>
+    <updated>2025-10-13T03:19:28Z</updated>
+    <link href="https://arxiv.org/abs/2510.10967v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.10967v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) provides a framework for superpolynomial quantum speedups by reducing certain optimization problems to reversible decoding tasks. We apply DQI to the Optimal Polynomial Intersection (OPI) problem, whose dual code is Reed-Solomon (RS). We establish that DQI for OPI is the first known candidate for verifiable quantum advantage with optimal asymptotic speedup: solving instances with classical hardness $O(2^N)$ requires only $\widetilde{O}(N)$ quantum gates, matching the theoretical lower bound. Realizing this speedup requires highly efficient reversible RS decoders. We introduce novel quantum circuits for the Extended Euclidean Algorithm, the decoder's bottleneck. Our techniques, including a new representation for implicit Bézout coefficient access, and optimized in-place architectures, reduce the leading-order space complexity to the theoretical minimum of $2nb$ qubits while significantly lowering gate counts. These improvements are broadly applicable, including to Shor's algorithm for the discrete logarithm. We analyze OPI over binary extension fields $GF(2^b)$, assess hardness against new classical attacks, and identify resilient instances. Our resource estimates show that classically intractable OPI instances (requiring $&gt;10^{23}$ classical trials) can be solved with approximately 5.72 million Toffoli gates. This is substantially less than the count required for breaking RSA-2048, positioning DQI as a compelling candidate for practical, verifiable quantum advantage.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-13T03:19:28Z</published>
+    <arxiv:comment>52 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tanuj Khattar</name>
+    </author>
+    <author>
+      <name>Noah Shutty</name>
+    </author>
+    <author>
+      <name>Craig Gidney</name>
+    </author>
+    <author>
+      <name>Adam Zalcman</name>
+    </author>
+    <author>
+      <name>Noureldin Yosri</name>
+    </author>
+    <author>
+      <name>Dmitri Maslov</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <author>
+      <name>Stephen P. Jordan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.10666v2</id>
+    <title>Multivariate Decoded Quantum Interferometry for Weighted Optimization</title>
+    <updated>2026-05-16T15:46:00Z</updated>
+    <link href="https://arxiv.org/abs/2605.10666v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.10666v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) is a recently introduced quantum algorithm that reduces discrete optimization to decoding with potential advantages over the best-known polynomial-time classical algorithms for certain Max-LINSAT problems. In its original formulation, however, DQI treats all constraints uniformly and cannot exploit the weight structure present in most optimization problems of interest. In this work, we develop multivariate Decoded Quantum Interferometry (multivariate DQI) for weighted optimization problems, focusing on the weighted Max-LINSAT problem over a prime field. Grouping constraints into $N$ blocks by distinct weights, we introduce multivariate DQI states built from $N$-variable polynomials of bounded total degree, and derive a closed-form asymptotic expression for both their optimal expectation value and their concentration behavior. We give an explicit preparation circuit using a single decoder call, and extend the analysis to imperfect decoding. We also show that, for certain weighted OPI problems, multivariate DQI outperforms a natural weighted analogue of Prange's algorithm, which serves as the weighted counterpart of the classical benchmark used in the unweighted setting. Finally, we extend the ideas to Hamiltonian DQI, obtaining approximate Gibbs states for commuting Pauli Hamiltonians with block structure.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T14:45:46Z</published>
+    <arxiv:comment>v2.57 pages, title is modified; v1. 57 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kaifeng Bu</name>
+    </author>
+    <author>
+      <name>Weichen Gu</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.14443v2</id>
+    <title>On the Complexity of Decoded Quantum Interferometry</title>
+    <updated>2026-04-30T17:48:39Z</updated>
+    <link href="https://arxiv.org/abs/2509.14443v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.14443v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the complexity of Decoded Quantum Interferometry (DQI), a quantum algorithm for approximate optimization. First, we show that the algorithm resists classical simulation strategies based on locating outputs with large probabilities. We then prove that DQI can be simulated at a low level of the polynomial hierarchy, posing challenges to standard quantum supremacy arguments. We further show that DQI is a constructive solution to a classical coding-theoretic bound based on the MacWilliams identity. Lastly, we interpret DQI as preparing low-energy states of a quantum simple harmonic oscillator, a viewpoint we believe suggests a physics-motivated route to generalizing DQI.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-17T21:31:58Z</published>
+    <arxiv:comment>31+4 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kunal Marwaha</name>
+    </author>
+    <author>
+      <name>Bill Fefferman</name>
+    </author>
+    <author>
+      <name>Alexandru Gheorghiu</name>
+    </author>
+    <author>
+      <name>Vojtech Havlicek</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08061v2</id>
+    <title>Optimization of Quadratic Constraints by Decoded Quantum Interferometry</title>
+    <updated>2026-03-10T10:20:32Z</updated>
+    <link href="https://arxiv.org/abs/2510.08061v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08061v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A recent paper by Jordan et al. introduced Decoded Quantum Interferometry (DQI), a novel quantum algorithm that uses the quantum Fourier transform to reduce linear optimization problems -- max-XORSAT and max-LINSAT -- to decoding problems. In this paper, we extend DQI to optimization problems involving quadratic constraints, which we call max-QUADSAT. Leveraging a connection to quadratic Gauss sums, we give an efficient algorithm to prepare the DQI state for max-QUADSAT (DISCLAIMER: A mistake was found in one of the algorithm's steps, which invalidates this result unless a fix is found). To demonstrate that our algorithm achieves a quantum advantage, we introduce the Quadratic Optimal Polynomial Intersection (quadratic-OPI) problem, a restricted variant of OPI for which, to our knowledge, the standard DQI framework offers no algorithmic speedup. We show that quadratic-OPI is an instance of max-QUADSAT and use our algorithm to optimize it. Lastly, we present a new generalized proof of the "semicircle law" for the fraction of satisfied constraints, generalizing it to any DQI state of problems where the distribution of the number of satisfied constraints for a random assignment is sufficiently close to a binomial distribution. This condition holds exactly for the DQI state of max-LINSAT, and approximately holds in the max-QUADSAT case, with the approximation becoming exponentially better as the problem size increases. This establishes performance guarantees for our algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T10:49:17Z</published>
+    <arxiv:comment>Added a disclaimer regarding a mistake that was found</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Daniel Cohen Hillel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.15025v3</id>
+    <title>Weighted performance bounds for decoded quantum interferometry with imperfect decoding</title>
+    <updated>2026-09-21T14:09:51Z</updated>
+    <link href="https://arxiv.org/abs/2604.15025v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.15025v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded quantum interferometry (DQI) offers an approach to a class of combinatorial optimization problems by reducing quantum state preparation to a decoding task. However, the existing performance bound for imperfect decoding uses the maximum failure rate over error-weight layers to bound the performance loss uniformly, which may overestimate the effect of decoding failures in layers with low probability. Building on the existing analysis, we combine the failure rate of each layer with its probability weight in the chosen state to derive tighter performance lower bounds. For binary linear constraint problems with uniformly random target values, we obtain a finite-size lower bound on the average satisfaction ratio for fixed state parameters and a fixed decoder, and establish its improvement over the existing bound. In part of the parameter region where the existing bound falls to the random-assignment baseline, the weighted bound still provides a guarantee above that baseline. We further extend the analysis to general finite fields under a model of uniformly random translations of allowed sets of equal size. Trials in individual layers using a fixed belief propagation decoder illustrate the size of the improvement and provide confidence guarantees after accounting for sampling uncertainty. These results reveal the role of retaining the correspondence between the failure distribution and the state probabilities, and suggest directions for more refined performance analyses of other DQI constructions.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-16T13:54:29Z</published>
+    <arxiv:comment>24 pages, 2 figures, 1 table</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Maoxin Gao</name>
+    </author>
+    <author>
+      <name>Yan Chang</name>
+    </author>
+    <author>
+      <name>Wei Huang</name>
+    </author>
+    <author>
+      <name>Lili Yan</name>
+    </author>
+    <author>
+      <name>Zhijian Gou</name>
+    </author>
+    <author>
+      <name>Bingjie Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04843v1</id>
+    <title>Decoded Quantum Interferometry Beyond Hamming: Rank-Metric and Translation Association Schemes</title>
+    <updated>2026-06-03T13:12:15Z</updated>
+    <link href="https://arxiv.org/abs/2606.04843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) uses coherent decoding and a quantum Fourier transform to find high-quality solutions of structured optimisation problems. Existing analyses are closely tied to Hamming space, which underlies the optimisation objective, Dicke state preparation and the decoding step of the algorithm. Here we extend the core DQI mechanism beyond Hamming space to finite geometries with translation symmetry, where points are grouped into shells by their distance from a basepoint. Mathematically, these geometries are translation association schemes. In this setting the algorithm can be analysed by tracking one amplitude per shell, and biasing the prepared state towards high-quality solutions becomes a finite tridiagonal eigenvalue problem. As a non-Hamming example, we develop an efficient DQI protocol for finding an m x n finite-field matrix with smallest rank difference to a target matrix. Initial states are uniform superpositions over fixed-rank matrices, and Gabidulin codes provide candidates for efficient low-rank decoding up to a cutoff l. For this objective, this finds solutions with an effective-rank proxy near min(m,n)-l, and the corresponding expected score can be converted into a constant-probability bound on the residual rank of a sample. For Gabidulin nearest-codeword instances, a covering-radius obstruction shows that this bound does not imply an additive guarantee for the true optimum, and we do not claim a quantum advantage for the rank-metric construction. The results instead identify the geometric and coding ingredients for DQI beyond Hamming space.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T13:12:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexandre Krajenbrink</name>
+    </author>
+    <author>
+      <name>Colin Krawchuk</name>
+    </author>
+    <author>
+      <name>Ansis Rosmanis</name>
+    </author>
+    <author>
+      <name>Matthias Rosenkranz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.20016v3</id>
+    <title>Kernelized Decoded Quantum Interferometry</title>
+    <updated>2025-12-09T11:05:35Z</updated>
+    <link href="https://arxiv.org/abs/2511.20016v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.20016v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) promises superpolynomial speedups for structured optimization; however, its practical realization is often hindered by significant sensitivity to hardware noise and spectral dispersion. To bridge this gap, we introduce Kernelized Decoded Quantum Interferometry (k-DQI), a unified framework that integrates spectral engineering directly into the quantum circuit architecture. By inserting a unitary kernel prior to the interference step, k-DQI actively reshapes the problem's energy landscape, concentrating the solution mass into a ``decoder-friendly'' low-frequency head. We formalize this advantage through a novel robustness metric, the noise-weighted head mass $Σ_K$, and prove a Monotonic Improvement Theorem, which establishes that maximizing $Σ_K$ guarantees higher decoding success rates under local depolarizing noise. We substantiate these theoretical gains in Optimal Polynomial Interpolation (OPI) and LDPC-like problems, demonstrating that kernel tuning functions as a ``spectral lens'' to recover signal otherwise lost to isotropic noise. Crucially, we provide explicit, efficient circuit realizations using Chirp and Linear Canonical Transform (LCT) kernels that achieve significant boosts in effective signal-to-noise ratio with negligible depth overhead ($\tilde{O}(n)$ to $\tilde{O}(n^2)$). Collectively, these results reframe DQI from a static algorithm into a tunable, noise-aware protocol suited for near-term error-corrected environments.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-25T07:35:03Z</published>
+    <arxiv:comment>36 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Fumin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.28120v1</id>
+    <title>Approximate sampling from decoded quantum interferometry via Markov chain Monte Carlo methods</title>
+    <updated>2026-07-30T12:29:15Z</updated>
+    <link href="https://arxiv.org/abs/2607.28120v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.28120v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optimization problems are among the leading candidates for industrially relevant quantum advantage. Decoded quantum interferometry (DQI) has been proposed to tackle approximate optimization, establishing a connection to classical decoding problems. While previous work has primarily focused on the theoretical complexity of DQI, comparatively little is known about its empirical performance relative to classical algorithms. In this work, we shed further light on the complexity of DQI and investigate numerically whether classical sampling methods can emulate the optimization capabilities of DQI. We first present a simplified analytical characterization of DQI that connects its expected performance to binomial statistics, and we identify concrete obstacles in further studying the complexity of DQI. Exploiting the fact that DQI output probabilities are efficiently computable, we apply Markov chain Monte Carlo (MCMC) techniques, particularly block-Gibbs sampling, to sample from the induced distribution. We study the runtime scaling of these methods for two optimization problems called max-XORSAT, where we reach beyond $1000$ effective qubits; and OPI, where we reach beyond $150$ effective qubits. Our results show that MCMC algorithms can reliably attain the approximation ratios expected from DQI across a broad range of problem sizes. In OPI, in the regime where a super-polynomial advantage is claimed for DQI, we observe an empirical runtime for MCMC that scales approximately as $1.1^{n}$, indicating exponential growth with a comparatively small base. Our findings do not refute existing quantum advantage claims but provide new empirical evidence that classical sampling algorithms can closely match DQI's optimization performance, offering a more nuanced perspective on the practical advantage of DQI.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T12:29:15Z</published>
+    <arxiv:comment>24 pages (12+12), 9 figures (5+4), comments welcome</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Elies Gil-Fuster</name>
+    </author>
+    <author>
+      <name>Matan Ninio</name>
+    </author>
+    <author>
+      <name>Lennart Bittel</name>
+    </author>
+    <author>
+      <name>Yishai Shimoni</name>
+    </author>
+    <author>
+      <name>Jens Eisert</name>
+    </author>
+    <author>
+      <name>Stefan Woerner</name>
+    </author>
+    <author>
+      <name>Almudena Carrera Vázquez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.14509v2</id>
+    <title>Spin Glass Transitions Obstruct Decoded Quantum Interferometry</title>
+    <updated>2026-08-05T18:59:18Z</updated>
+    <link href="https://arxiv.org/abs/2509.14509v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.14509v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum algorithms are believed to offer advantages in solving certain hard discrete optimization problems, yet identifying when such advantages persist in explicit distributions of problem instances remains a foundational challenge. Recently, a new quantum algorithm known as Decoded Quantum Interferometry (DQI) has been proposed to solve optimization problems by decoding a corresponding LDPC error-correcting code. Although DQI exhibits quantum advantage on certain structured problem instances, the possibility for advantage on random, unstructured problem instances is less well-understood. Here we prove that, assuming decoding threshold upper bounds satisfied by state-of-the-art decoders, DQI is asymptotically obstructed by a spin glass phase transition in random local combinatorial optimization problems. This phase transition is heralded by the onset of the overlap gap property (OGP), a topological fragmentation of the near-optimal solution space widely conjectured to exactly characterize the asymptotic performance of optimal efficient classical algorithms. Our results therefore indicate that DQI, applied on the best known efficient decoders, is unlikely to exhibit quantum advantage on unstructured problem instances. We support this result by proving that approximate message passing, a classical optimization algorithm, outperforms DQI on certain problem distributions.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-18T00:51:36Z</published>
+    <arxiv:comment>53 pages, 6 figures, added new results on belief propagation decoders, tightened bounds, and fixed minor bugs</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Eric R. Anschuetz</name>
+    </author>
+    <author>
+      <name>David Gamarnik</name>
+    </author>
+    <author>
+      <name>Jonathan Z. Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.13570v1</id>
+    <title>Approximability limits for bounded-degree max-LINSAT and implications for decoded quantum interferometry</title>
+    <updated>2026-06-11T16:59:12Z</updated>
+    <link href="https://arxiv.org/abs/2606.13570v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.13570v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For general max-k-XORSAT with $k \geq 3$, no polynomial-time algorithm can do substantially better than random guessing on worst-case instances unless $\mathsf{P} = \mathsf{NP}$: approximating beyond the random-assignment value of $1/2$ is $\mathsf{NP}$-hard. The picture changes when each variable appears in at most $D$ constraints. In that bounded-degree setting, polynomial-time algorithms can provably beat the random baseline by an additive amount of order $1/\sqrt{D}$. For Boolean instances, this scaling is known to be optimal: the matching hardness result is due to Trevisan, while the corresponding algorithmic guarantee was established by Barak et al. Whether the same holds over general finite fields, and what it implies for quantum algorithms, has not been established. We make this connection explicit and extend the hardness to max-E$k$-LINSAT$(q,r)$ with bounded degree $D$ and over arbitrary finite fields $\mathbb{F}_q$, proving that it is $\mathsf{NP}$-hard to exceed $r/q + \mathcal{O}_{q,r}(1/\sqrt{D})$. These results provide the complexity-theoretic benchmark for the bounded-degree instances targeted by decoded quantum interferometry (DQI), QAOA, and classical heuristics. Any quantum advantage on bounded-degree instances is therefore confined to the constant prefactor. We further show that in the context of DQI and on $(k,D)$-regular instances, this prefactor is sensitive to the nature of the decoder: DQI with classical decoders faces an information-theoretic $1/\sqrt{D \log D}$ barrier that prevents it from matching the hardness scaling, while DQI with quantum decoders is compatible with the $1/\sqrt{D}$ scaling -- identifying quantum decoding as the key ingredient for matching the complexity-theoretic scaling with DQI.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-11T16:59:12Z</published>
+    <arxiv:comment>18 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Maximilian J. Kramer</name>
+    </author>
+    <author>
+      <name>Carsten Schubert</name>
+    </author>
+    <author>
+      <name>Jens Eisert</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.19966v2</id>
+    <title>No Quantum Advantage in Decoded Quantum Interferometry for MaxCut</title>
+    <updated>2025-09-30T00:00:05Z</updated>
+    <link href="https://arxiv.org/abs/2509.19966v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.19966v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) is a framework for approximating special kinds of discrete optimization problems that relies on problem structure in a way that sets it apart from other classical or quantum approaches. We show that the instances of MaxCut on which DQI attains a nontrivial asymptotic approximation guarantee are solvable exactly in classical polynomial time. We include a streamlined exposition of DQI tailored for MaxCut that relies on elementary graph theory instead of coding theory to motivate and explain the algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-24T10:21:31Z</published>
+    <arxiv:comment>v2: 13 pages, included a technical correction and discussion of recent related work</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ojas Parekh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.12553v2</id>
+    <title>Quantum advantage from soft decoders</title>
+    <updated>2026-03-09T12:13:45Z</updated>
+    <link href="https://arxiv.org/abs/2411.12553v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.12553v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the last years, Regev's reduction has been used as a quantum algorithmic tool for providing a quantum advantage for variants of the decoding problem. Following this line of work, the authors of [JSW+24] have recently come up with a quantum algorithm called Decoded Quantum Interferometry that is able to solve in polynomial time several optimization problems. They study in particular the Optimal Polynomial Interpolation (OPI) problem, which can be seen as a decoding problem on Reed-Solomon codes. In this work, we provide strong improvements for some instantiations of the OPI problem. The most notable improvements are for the $ISIS_{\infty}$ problem (originating from lattice-based cryptography) on Reed-Solomon codes but we also study different constraints for OPI. Our results provide natural and convincing decoding problems for which we believe to have a quantum advantage. Our proof techniques involve the use of a soft decoder for Reed-Solomon codes, namely the decoding algorithm from Koetter and Vardy [KV03]. In order to be able to use this decoder in the setting of Regev's reduction, we provide a novel generic reduction from a syndrome decoding problem to a coset sampling problem, providing a powerful and simple to use theorem, which generalizes previous work and is of independent interest. We also provide an extensive study of OPI using the Koetter and Vardy algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-19T15:12:03Z</published>
+    <arxiv:comment>v2, 33 pages, acknowledgments added</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>André Chailloux</name>
+    </author>
+    <author>
+      <name>Jean-Pierre Tillich</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.04540v2</id>
+    <title>Tight inapproximability of max-LINSAT and implications for decoded quantum interferometry</title>
+    <updated>2026-03-22T14:16:25Z</updated>
+    <link href="https://arxiv.org/abs/2603.04540v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.04540v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We establish tight inapproximability bounds for max-LINSAT, the problem of maximizing the number of satisfied linear constraints over the finite field $\mathbb{F}_q$, where each constraint accepts $r$ values. Specifically, we prove by a direct reduction from Håstad's theorem that no polynomial-time algorithm can exceed the random-assignment ratio $r/q$ by any constant, assuming $\mathsf{P} \neq \mathsf{NP}$. This threshold coincides with the $\ell/m \to 0$ limit of the semicircle law governing decoded quantum interferometry (DQI), where $\ell$ is the decoding radius of the underlying code. Together, these observations delineate the boundary between worst-case hardness and potential quantum advantage, showing that any algorithm surpassing $r/q$ must exploit instance structure beyond what is present in the hard instances produced by PCP reductions.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-04T19:26:26Z</published>
+    <arxiv:comment>11 pages, 1 figure, minor changes</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Maximilian J. Kramer</name>
+    </author>
+    <author>
+      <name>Carsten Schubert</name>
+    </author>
+    <author>
+      <name>Jens Eisert</name>
+    </author>
+  </entry>
+</feed>

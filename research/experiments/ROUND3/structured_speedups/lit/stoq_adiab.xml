@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/h6T6cuiDHmMkSj0iAwPvSv9FMy4</id>
+  <title>arXiv Query: search_query=abs:stoquastic AND abs:adiabatic AND abs:exponential&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:26:36Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:stoquastic+AND+(abs:adiabatic+AND+abs:exponential)&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>11</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2602.23183v1</id>
+    <title>Dequantization Barriers for Guided Stoquastic Hamiltonians</title>
+    <updated>2026-02-26T16:40:32Z</updated>
+    <link href="https://arxiv.org/abs/2602.23183v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.23183v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We construct a probability distribution, induced by the Perron--Frobenius eigenvector of an exponentially large graph, which cannot be efficiently sampled by any classical algorithm, even when provided with the best-possible warm-start distribution. In the quantum setting, this problem can be viewed as preparing the ground state of a stoquastic Hamiltonian given a guiding state as input, and is known to be efficiently solvable on a quantum computer. Our result suggests that no efficient classical algorithm can solve a broad class of stoquastic ground-state problems.
+  Our graph is constructed from a class of high-degree, high-girth spectral expanders to which self-similar trees are attached. This builds on and extends prior work of Gilyén, Hastings, and Vazirani [Quantum 2021, STOC 2021], which ruled out dequantization for a specific stoquastic adiabatic path algorithm. We strengthen their result by ruling out any classical algorithm for guided ground-state preparation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-26T16:40:32Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yassine Hamoudi</name>
+    </author>
+    <author>
+      <name>Yvan Le Borgne</name>
+    </author>
+    <author>
+      <name>Shrinidhi Teganahally Sridhara</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.17686v1</id>
+    <title>Exponential Quantum Speedup on Structured Hard Instances of Maximum Independent Set</title>
+    <updated>2026-01-25T04:18:35Z</updated>
+    <link href="https://arxiv.org/abs/2601.17686v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.17686v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Establishing quantum speedup for computationally hard problems of practical relevance, particularly combinatorial optimization problems, remains a central challenge in quantum computation. In this work, we identify a structurally defined family of classically hard maximum independent set (MIS) instances, and design and analyze a non-stoquastic adiabatic quantum optimization algorithm that exploits this structure. The algorithm runs in polynomial time and achieves an exponential speedup over both transverse-field quantum annealing and state-of-the-art classical solvers on these instances, under assumptions supported by analytical and numerical evidence. We identify the essential quantum mechanism enabling the speedup as the use of a non-stoquastic XX-driver to access a larger sign-structured admissible subspace beyond the stoquastic regime, which allows sign-generating quantum interference to create smooth evolution paths that bypass tunneling. This identifies a distinctive quantum mechanism underlying the speedup and explains why no efficient classical analogue is likely to exist. In addition, our analysis produces scalable small-scale models, derived from our structural reduction, that capture the essential dynamics of the algorithm. These models provide a concrete opportunity for verification of the quantum advantage mechanism on currently available universal quantum computers.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-25T04:18:35Z</published>
+    <arxiv:comment>18 pages, 8 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vicky Choi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.16350v1</id>
+    <title>Enhancing the Energy Gap of Random Graph Problems via XX-catalysts in Quantum Annealing</title>
+    <updated>2024-09-24T18:00:01Z</updated>
+    <link href="https://arxiv.org/abs/2409.16350v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.16350v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One of the bottlenecks in solving combinatorial optimisation problems using quantum annealers is the emergence of exponentially-closing energy gaps between the ground state and the first excited state during the annealing, which indicates that a first-order phase transition is taking place. The minimum energy gap scales inversely with the exponential of the system size, ultimately resulting in an exponentially large time required to ensure the adiabatic evolution. In this paper we demonstrate that employing multiple XX-catalysts on all the edges of a graph upon which a MWIS (Maximum Weighted Independent Set) problem is defined significantly enhances the minimum energy gap. Remarkably, our analysis shows that the more severe the first-order phase transition, the more effective the catalyst is in opening the gap. This result is based on a detailed statistical analysis performed on a large number of randomly generated MWIS problem instances on both Erdős-Rényi and Barabási-Albert graphs. We also observe that similar performance cannot be achieved by the non-stoquastic version of the same catalyst, with the stoquastic catalyst being the preferred choice in this context.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-24T18:00:01Z</published>
+    <arxiv:comment>11 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Luca A. Nutricati</name>
+    </author>
+    <author>
+      <name>Roopayan Ghosh</name>
+    </author>
+    <author>
+      <name>Natasha Feinstein</name>
+    </author>
+    <author>
+      <name>Sougato Bose</name>
+    </author>
+    <author>
+      <name>Paul A. Warburton</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.06779v2</id>
+    <title>Effects of XX-catalysts on quantum annealing spectra with perturbative crossings</title>
+    <updated>2023-11-13T13:56:03Z</updated>
+    <link href="https://arxiv.org/abs/2203.06779v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.06779v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In adiabatic quantum annealing the required run-time to reach a given ground-state fidelity is dictated by the size of the minimum gap that appears between the ground and first excited state in the annealing spectrum. In general the presence of avoided level crossings demands an exponential increase in the annealing time with the system size which has consequences both for the efficiency of the algorithm and the required qubit coherence times. One promising avenue being explored to produce more favourable gap scaling is the introduction of non-stoquastic XX-couplings in the form of a catalyst - of particular interest are catalysts which utilise accessible information about the optimisation problem in their construction. Here we show extreme sensitivity of the effect of an XX-catalyst to subtle changes in the encoding of the optimisation problem. In particular, we observe that a targeted catalyst containing a single coupling at constant strength can significantly reduce the gap closing with system size at an avoided level crossing. For slightly different encodings of the same problems however, these same catalysts result in closing gaps in the annealing spectrum. To understand the origin of these closing gaps, we study how the evolution of the ground-state vector is altered by the presence of the catalyst and find that the negative components of the ground-state vector are key to understanding the response of the gap spectrum. We also consider how and when these closing gaps could be utilised in diabatic quantum annealing protocols - a promising alternative to adiabatic quantum annealing in which transitions to higher energy levels are exploited to reduce the run time of the algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-13T22:28:52Z</published>
+    <arxiv:comment>19 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Natasha Feinstein</name>
+    </author>
+    <author>
+      <name>Louis Fry-Bouriaux</name>
+    </author>
+    <author>
+      <name>Sougato Bose</name>
+    </author>
+    <author>
+      <name>P. A. Warburton</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2105.11163v3</id>
+    <title>Locally Suppressed Transverse-Field Protocol for Diabatic Quantum Annealing</title>
+    <updated>2021-10-22T16:45:56Z</updated>
+    <link href="https://arxiv.org/abs/2105.11163v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.11163v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diabatic quantum annealing (DQA) is an alternative algorithm to adiabatic quantum annealing (AQA) that can be used to circumvent the exponential slowdown caused by small minima in the annealing energy spectrum. We present the locally suppressed transverse-field (LSTF) protocol, a heuristic method for making stoquastic optimization problems compatible with DQA. We show that, provided an optimization problem intrinsically has magnetic frustration due to inhomogeneous local fields, a target qubit in the problem can always be manipulated to create a double minimum in the energy gap between the ground and first excited states during the evolution of the algorithm. Such a double energy minimum can be exploited to induce diabatic transitions to the first excited state and back to the ground state. In addition to its relevance to classical and quantum algorithmic speed-ups, the LSTF protocol enables DQA proof-of-principle and physics experiments to be performed on existing hardware, provided independent controls exist for the transverse qubit magnetization fields. We discuss the implications on the coherence requirements of the quantum annealing hardware when using the LSTF protocol, considering specifically the cases of relaxation and dephasing. We show that the relaxation rate of a large system can be made to depend only on the target qubit presenting new opportunities for the characterization of the decohering environment in a quantum annealing processor.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-24T09:09:27Z</published>
+    <arxiv:comment>18 pages, 16 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Louis Fry-Bouriaux</name>
+    </author>
+    <author>
+      <name>Daniel O'Connor</name>
+    </author>
+    <author>
+      <name>Natasha Feinstein</name>
+    </author>
+    <author>
+      <name>Paul A. Warburton</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.104.052616</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.104.052616" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2004.08681v3</id>
+    <title>Effective gaps are not effective: quasipolynomial classical simulation of obstructed stoquastic Hamiltonians</title>
+    <updated>2020-10-21T20:11:24Z</updated>
+    <link href="https://arxiv.org/abs/2004.08681v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.08681v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>All known examples confirming the possibility of an exponential separation between classical simulation algorithms and stoquastic adiabatic quantum computing (AQC) exploit symmetries that constrain adiabatic dynamics to effective, symmetric subspaces. The symmetries produce large effective eigenvalue gaps, which in turn make adiabatic computation efficient. We present a classical algorithm to efficiently sample from the effective subspace of a $k$-local stoquastic Hamiltonian $H$, without a priori knowledge of its symmetries (or near-symmetries). Our algorithm maps any $k$-local Hamiltonian to a graph $G=(V,E)$ with $\lvert V \rvert = O\left(\mathrm{poly}(n)\right)$ where $n$ is the number of qubits. Given the well-known result of Babai, we exploit graph isomorphism to study the automorphisms of $G$ and arrive at an algorithm quasi-polynomial in $\lvert V\rvert$ for producing samples from the effective subspace eigenstates of $H$. Our results rule out exponential separations between stoquastic AQC and classical computation that arise from hidden symmetries in $k$-local Hamiltonians. Furthermore, our graph representation of $H$ is not limited to stoquastic Hamiltonians and may rule out corresponding obstructions in non-stoquastic cases, or be useful in studying additional properties of $k$-local Hamiltonians.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-18T18:25:04Z</published>
+    <arxiv:comment>12 pages, 6 figures, added footnotes (v2), updated following peer review (v3)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 125, 170504 (2020)</arxiv:journal_ref>
+    <author>
+      <name>Jacob Bringewatt</name>
+    </author>
+    <author>
+      <name>Michael Jarret</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.125.170504</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.125.170504" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.09980v3</id>
+    <title>Role of Non-stoquastic Catalysts in Quantum Adiabatic Optimization</title>
+    <updated>2019-04-26T15:07:03Z</updated>
+    <link href="https://arxiv.org/abs/1811.09980v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.09980v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The viability of non-stoquastic catalyst Hamiltonians to deliver consistent quantum speedups in quantum adiabatic optimization remains an open question. The infinite-range ferromagnetic $p$-spin model is a rare example exhibiting an exponential advantage for non-stoquastic catalysts over its stoquastic counterpart. We revisit this model and note how the incremental changes in the ground state wavefunction give an indication of how the non-stoquastic catalyst provides an advantage. We then construct two new examples that exhibit an advantage for non-stoquastic catalysts over stoquastic catalysts. The first is another infinite range model that is only 2-local but also exhibits an exponential advantage, and the second is a geometrically local Ising example that exhibits a growing advantage up to the maximum system size we study.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-25T10:06:52Z</published>
+    <arxiv:comment>v1: 8 pages, 10 figures. v2. Expanded presentation, including a new example. 12 pages, 20 figures. v3: Updated to published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 99, 042334 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Tameem Albash</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.99.042334</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.99.042334" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1803.09954v1</id>
+    <title>Quantum speedup in stoquastic adiabatic quantum computation</title>
+    <updated>2018-03-27T08:28:03Z</updated>
+    <link href="https://arxiv.org/abs/1803.09954v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1803.09954v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computation provides exponential speedup for solving certain mathematical problems against classical computers. Motivated by current rapid experimental progress on quantum computing devices, various models of quantum computation have been investigated to show quantum computational supremacy. At a commercial side, quantum annealing machine realizes the quantum Ising model with a transverse field and heuristically solves combinatorial optimization problems. The computational power of this machine is closely related to adiabatic quantum computation (AQC) with a restricted type of Hamiltonians, namely stoquastic Hamiltonians, and has been thought to be relatively less powerful compared to universal quantum computers. Little is known about computational quantum speedup nor advantage in AQC with stoquastic Hamiltonians. Here we characterize computational capability of AQC with stoquastic Hamiltonians, which we call stoqAQC. We construct a concrete stoqAQC model, whose lowest energy gap is lower bounded polynomially, and hence the final state can be obtained in polynomial time. Then we show that it can simulate universal quantum computation if adaptive single-qubit measurements in non-standard bases are allowed on the final state. Even if the measurements are restricted to non-adaptive measurements to respect the robustness of AQC, the proposed model exhibits quantum computational supremacy; classical simulation is impossible under complexity theoretical conjectures. Moreover, it is found that such a stoqAQC model can simulate Shor's algorithm and solve the factoring problem in polynomial time. We also propose how to overcome the measurement imperfections via quantum error correction within the stoqAQC model and also an experimentally feasible verification scheme to test whether or not stoqAQC is done faithfully.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-03-27T08:28:03Z</published>
+    <arxiv:comment>9 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Keisuke Fujii</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1801.02005v1</id>
+    <title>Exponential Speedup of Quantum Annealing by Inhomogeneous Driving of the Transverse Field</title>
+    <updated>2018-01-06T11:59:39Z</updated>
+    <link href="https://arxiv.org/abs/1801.02005v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1801.02005v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show, for quantum annealing, that a certain type of inhomogeneous driving of the transverse field erases first-order quantum phase transitions in the p-body interacting mean-field-type model with and without longitudinal random field. Since a first-order phase transition poses a serious difficulty for quantum annealing (adiabatic quantum computing) due to the exponentially small energy gap, the removal of first-order transitions means an exponential speedup of the annealing process. The present method may serve as a simple protocol for the performance enhancement of quantum annealing, complementary to non-stoquastic Hamiltonians.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-01-06T11:59:39Z</published>
+    <arxiv:comment>4 pages, 5 figures. To be published in J. Phys. Soc. Jpn</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>J. Phys. Soc. Jpn. 87, 023002 (2018)</arxiv:journal_ref>
+    <author>
+      <name>Yuki Susa</name>
+    </author>
+    <author>
+      <name>Yu Yamashiro</name>
+    </author>
+    <author>
+      <name>Masayuki Yamamoto</name>
+    </author>
+    <author>
+      <name>Hidetoshi Nishimori</name>
+    </author>
+    <arxiv:doi>10.7566/JPSJ.87.023002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.7566/JPSJ.87.023002" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1707.07370v1</id>
+    <title>Exact expression of the energy gap at first-order quantum phase transitions of a non-stoquastic Hamiltonian</title>
+    <updated>2017-07-24T01:00:43Z</updated>
+    <link href="https://arxiv.org/abs/1707.07370v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1707.07370v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the energy gap between the ground state and the first excited state of a mean-field-type non-stoquastic Hamiltonian by a semi-classical analysis. The fully connected mean-field model with $p$-body ferromagnetic interactions under a transverse field has a first-order quantum phase transition for $p\ge 3$. This first-order transition is known to be reduced to second order for $p\ge 5$ by an introduction of antiferromagnetic transverse interactions, which makes the Hamiltonian non-stoquastic. This reduction of the order of transition means an exponential speedup of quantum annealing by adiabatic processes because the first-order transition is shown to have an exponentially small energy gap whereas the second order case does not. We apply a semi-classical method to analytically derive the explicit expression of the rate of the exponential decay of the energy gap at first-order transitions. The result reveals how the property of first-order transition changes as a function of the system parameters. We also derive the exact closed-form expression for the critical point where the first-order transition line disappears within the ferromagnetic phase. These results help us understand how the antiferromagnetic transverse interactions affect the performance of quantum annealing by controlling the effects of non-stoquasticity in the Hamiltonian.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-07-24T01:00:43Z</published>
+    <arxiv:comment>14 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>J. Phys. Soc. Jpn. 86, 114004 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Masaki Ohkuwa</name>
+    </author>
+    <author>
+      <name>Hidetoshi Nishimori</name>
+    </author>
+    <arxiv:doi>10.7566/JPSJ.86.114004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.7566/JPSJ.86.114004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1609.03785v3</id>
+    <title>Exponential Enhancement of the Efficiency of Quantum Annealing by Non-Stochastic Hamiltonians</title>
+    <updated>2017-02-18T14:32:57Z</updated>
+    <link href="https://arxiv.org/abs/1609.03785v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1609.03785v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Non-stoquastic Hamiltonians have both positive and negative signs in off-diagonal elements in their matrix representation in the standard computational basis and thus cannot be simulated efficiently by the standard quantum Monte Carlo method due to the sign problem. We describe our analytical studies of this type of Hamiltonians with infinite-range non-random as well as random interactions from the perspective of possible enhancement of the efficiency of quantum annealing or adiabatic quantum computing. It is shown that multi-body transverse interactions like $XX$ and $XXXXX$ with positive coefficients appended to a stoquastic transverse-field Ising model render the Hamiltonian non-stoquastic and reduce a first-order quantum phase transition in the simple transverse-field case to a second-order transition. This implies that the efficiency of quantum annealing is exponentially enhanced, because a first-order transition has an exponentially small energy gap (and therefore exponentially long computation time) whereas a second-order transition has a polynomially decaying gap (polynomial computation time). The examples presented here represent rare instances where strong quantum effects, in the sense that they cannot be efficiently simulated in the standard quantum Monte Carlo, have analytically been shown to exponentially enhance the efficiency of quantum annealing for combinatorial optimization problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-09-13T11:51:32Z</published>
+    <arxiv:comment>14 pages, 8 figures. v2: additional section; v3: minor revision</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Frontiers in ICT 4, 2 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Hidetoshi Nishimori</name>
+    </author>
+    <author>
+      <name>Kabuki Takada</name>
+    </author>
+    <arxiv:doi>10.3389/fict.2017.00002</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3389/fict.2017.00002" title="doi"/>
+  </entry>
+</feed>

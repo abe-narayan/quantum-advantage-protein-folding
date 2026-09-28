@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/1fc7zthiliBqh+tjafjDw6Jp8T8</id>
+  <title>arXiv Query: search_query=abs:"guided local Hamiltonian"&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:38Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22guided+local+Hamiltonian%22&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>8</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.19651v1</id>
+    <title>Heisenberg-Limited Quantum Eigenvalue Estimation for Non-normal Matrices</title>
+    <updated>2025-10-22T14:55:44Z</updated>
+    <link href="https://arxiv.org/abs/2510.19651v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.19651v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Estimating the eigenvalues of non-normal matrices is a foundational problem with far-reaching implications, from modeling non-Hermitian quantum systems to analyzing complex fluid dynamics. Yet, this task remains beyond the reach of standard quantum algorithms, which are predominantly tailored for Hermitian matrices. Here we introduce a new class of quantum algorithms that directly address this challenge. The central idea is to construct eigenvalue signals through customized quantum simulation protocols and extract them using advanced classical signal-processing techniques, thereby enabling accurate and efficient eigenvalue estimation for general non-normal matrices. Crucially, when supplied with purified quantum state inputs, our algorithms attain Heisenberg-limited precision--achieving optimal performance. These results extend the powerful guided local Hamiltonian framework into the non-Hermitian regime, significantly broadening the frontier of quantum computational advantage. Our work lays the foundation for a rigorous and scalable quantum computing approach to one of the most demanding problems in linear algebra.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-22T14:55:44Z</published>
+    <arxiv:comment>36 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yukun Zhang</name>
+    </author>
+    <author>
+      <name>Yusen Wu</name>
+    </author>
+    <author>
+      <name>Xiao Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.25829v2</id>
+    <title>The Guided Local Hamiltonian Problem for Stoquastic Hamiltonians</title>
+    <updated>2026-05-07T01:29:30Z</updated>
+    <link href="https://arxiv.org/abs/2509.25829v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.25829v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show that the Guided Local Hamiltonian problem for stoquastic Hamiltonians is (promise) BPP-hard. The Guided Local Hamiltonian problem extends the Local Hamiltonian problem by incorporating an additional input known as a guiding state, which is promised to overlap with the ground state. For a range of local Hamiltonian families, prior work shows this problem is (promise) BQP-hard, though for stoquastic Hamiltonians, the complexity was previously unknown. We obtain our results by first reducing from quantum-inspired BPP circuits to 6-local stoquastic Hamiltonians. We prove particular classes of quantum states, known as semi-classical encoded subset states, can guide the estimation of the ground-state energy. Our analysis shows that this BPP-hardness does not depend on locality, i.e., the result holds for 2-local stoquastic Hamiltonians. Additional arguments extend this BPP-hardness to Hamiltonians restricted to a square lattice. We further show that for stoquastic Hamiltonians with a fixed local constraint on a subset of the system qubits, the Guided Local Hamiltonian problem is BQP-hard. In addition to these hardness results, we present a deterministic classical approximation algorithm for the problem under the conditions of constant promise gap, constant overlap, and constant spectral gap, when the guiding state is preparable in constant depth by a geometrically local circuit.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T06:11:26Z</published>
+    <arxiv:comment>12 + 7 pages; 1 figure; 1 table; v2: added a deterministic classical approximation algorithm, minor grammatical edits;</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Gabriel Waite</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.25815v2</id>
+    <title>Physically-Motivated Guiding States for Local Hamiltonians</title>
+    <updated>2026-03-17T22:13:22Z</updated>
+    <link href="https://arxiv.org/abs/2509.25815v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.25815v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the computational complexity of the Guided Local Hamiltonian problem: given a local Hamiltonian $H$ together with a classical description of a guiding state that has non-negligible overlap with the ground state of $H$, estimate the ground-state energy within inverse-polynomial precision. This setting captures real-world scenarios in quantum chemistry and many-body physics, where trial states derived from classical heuristics can be used to guide quantum algorithms. We identify families of physically-motivated guiding states for which the computational hardness of ground-state energy estimation persists in the guided setting. Extending prior results for semi-classical subset states, we prove BQP-hardness for classes including fixed-weight states, matrix product states, Gaussian states, and Fendley states. Our hardness results are obtained via refined Feynman-Kitaev circuit-to-Hamiltonian constructions that explicitly expose the structural role of the guiding state in the reduction. Complementing these results, we give a constructive proof of BQP containment when the guiding state admits a polynomial-size classical description, establishing BQP-completeness for the canonical formulation of the problem. Our results show that quantum advantage persists for the newly introduced state classes, and classical methods also remain viable when said guiding states admit appropriate descriptions. Together, our results identify a Goldilocks zone of guiding states that are efficiently preparable, succinctly described, and sample-query accessible, within which quantum advantage for ground-state estimation can be meaningfully assessed. We additionally formalise the Guided Fermi-Hubbard Hamiltonian problem and prove BQP-completeness on 2D square and triangular lattices, both with and without magnetic fields, when provided with an appropriate fermionic guiding state.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T05:47:13Z</published>
+    <arxiv:comment>24 + 20 pages, 7 + 5 figures v2 - restructured and updated manuscript; new section on the guided fermi-hubbard problem; minor grammatical edits;</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Gabriel Waite</name>
+    </author>
+    <author>
+      <name>Karl Lin</name>
+    </author>
+    <author>
+      <name>Samuel J Elman</name>
+    </author>
+    <author>
+      <name>Michael J Bremner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.16163v2</id>
+    <title>A Dequantized Algorithm for the Guided Local Hamiltonian Problem</title>
+    <updated>2024-11-26T02:33:20Z</updated>
+    <link href="https://arxiv.org/abs/2411.16163v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.16163v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The local Hamiltonian (LH) problem, the quantum analog of the classical constraint satisfaction problem, is a cornerstone of quantum computation and complexity theory. It is known to be QMA-complete, indicating that it is challenging even for quantum computers. Interestingly, the guided local Hamiltonian (GLH) problem -- an LH problem with a guiding state that has a non-trivial overlap with the ground state -- can be efficiently solved on a quantum computer and is proved to be BQP-complete. This makes the GLH problem a valuable framework for exploring the fundamental separation between classical and quantum computation. Remarkably, the quantum algorithm for solving the GLH problem can be `dequantized' (i.e., made classically simulatable) under certain conditions, such as when only constant accuracy is required and when the Hamiltonian satisfies an unrealistic constant operator norm constraint. In this work, we relieve these restrictions by introducing a dequantized classical algorithm for a randomized quantum imaginary-time evolution quantum algorithm. We demonstrate that it achieves either limited or arbitrary constant accuracy, depending on whether the guiding state's overlap is general or exceeds a certain threshold. Crucially, our approach eliminates the constant operator norm constraint on the Hamiltonian, opening its applicability to realistic problems. Our results advance the classical solution of the GLH problem in practical settings and provide new insights into the boundary between classical and quantum computational power.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-25T07:38:16Z</published>
+    <arxiv:comment>25 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yukun Zhang</name>
+    </author>
+    <author>
+      <name>Yusen Wu</name>
+    </author>
+    <author>
+      <name>Xiao Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.04161v4</id>
+    <title>Classical Algorithms for Hamiltonian Dynamics Mean Value and Guided Local Hamiltonian Problem</title>
+    <updated>2025-09-19T05:10:49Z</updated>
+    <link href="https://arxiv.org/abs/2409.04161v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.04161v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The efficient simulation of quantum dynamics and ground states is a central challenge in physics and a key frontier for quantum advantage. While short-time evolution in one-dimensional systems can often be simulated classically, extending this to higher dimensions remains difficult. Here, we introduce an efficient classical algorithm for simulating the short-time dynamics of arbitrary local quantum systems. For any local Hamiltonian $H$ and constant evolution time $t$, our method estimates expectation values of the form $\langleψ|e^{iHt}Oe^{-iHt}|ψ\rangle$ for global Pauli observables $O$ and stabilizer states $|ψ\rangle$, with high precision and exponentially small failure probability. Furthermore, we present a classical dequantization of a tailored quantum algorithm that efficiently solves the guided local Hamiltonian (GLH) problem to constant additive error - previously considered classically hard and hence a promising candidate for quantum computational advantage. These results reveal unexpected classical tractability in constant-time quantum dynamics and fundamental connections between Hamiltonian dynamics mean value and the GLH problem. Our work refines the boundary between classical and quantum computational power, identifying sharper criteria for regimes where quantum advantage may genuinely emerge.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-06T09:59:12Z</published>
+    <arxiv:comment>Improve the classical simulation algorithm and rewrite the manuscript</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yusen Wu</name>
+    </author>
+    <author>
+      <name>Yukun Zhang</name>
+    </author>
+    <author>
+      <name>Chuan Wang</name>
+    </author>
+    <author>
+      <name>Xiao Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.11578v3</id>
+    <title>Guidable Local Hamiltonian Problems with Implications to Heuristic Ansätze State Preparation and the Quantum PCP Conjecture</title>
+    <updated>2024-06-10T09:47:53Z</updated>
+    <link href="https://arxiv.org/abs/2302.11578v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.11578v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study 'Merlinized' versions of the recently defined Guided Local Hamiltonian problem, which we call 'Guidable Local Hamiltonian' problems. Unlike their guided counterparts, these problems do not have a guiding state provided as a part of the input, but merely come with the promise that one exists. We consider in particular two classes of guiding states: those that can be prepared efficiently by a quantum circuit; and those belonging to a class of quantum states we call classically evaluatable, for which it is possible to efficiently compute expectation values of local observables classically. We show that guidable local Hamiltonian problems for both classes of guiding states are $\mathsf{QCMA}$-complete in the inverse-polynomial precision setting, but lie within $\mathsf{NP}$ (or $\mathsf{NqP}$) in the constant precision regime when the guiding state is classically evaluatable.
+  Our completeness results show that, from a complexity-theoretic perspective, classical Ansätze selected by classical heuristics are just as powerful as quantum Ansätze prepared by quantum heuristics, as long as one has access to quantum phase estimation. In relation to the quantum PCP conjecture, we (i) define a complexity class capturing quantum-classical probabilistically checkable proof systems and show that it is contained in $\mathsf{BQP}^{\mathsf{NP}[1]}$ for constant proof queries; (ii) give a no-go result on 'dequantizing' the known quantum reduction which maps a $\mathsf{QPCP}$-verification circuit to a local Hamiltonian with constant promise gap; (iii) give several no-go results for the existence of quantum gap amplification procedures that preserve certain ground state properties; and (iv) propose two conjectures that can be viewed as stronger versions of the NLTS theorem. Finally, we show that many of our results can be directly modified to obtain similar results for the class $\mathsf{MA}$.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-22T19:00:00Z</published>
+    <arxiv:comment>66 pages, 6 figures. Fixed some errors, new proof of Theorem 4.1 that does not rely on the claim that UQCMA1 is QCMA-hard under randomized reductions (which is removed)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jordi Weggemans</name>
+    </author>
+    <author>
+      <name>Marten Folkertsma</name>
+    </author>
+    <author>
+      <name>Chris Cade</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2207.10250v3</id>
+    <title>Improved Hardness Results for the Guided Local Hamiltonian Problem</title>
+    <updated>2024-02-04T04:29:11Z</updated>
+    <link href="https://arxiv.org/abs/2207.10250v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2207.10250v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Estimating the ground state energy of a local Hamiltonian is a central problem in quantum chemistry. In order to further investigate its complexity and the potential of quantum algorithms for quantum chemistry, Gharibian and Le Gall (STOC 2022) recently introduced the guided local Hamiltonian problem (GLH), which is a variant of the local Hamiltonian problem where an approximation of a ground state (which is called a guiding state) is given as an additional input. Gharibian and Le Gall showed quantum advantage (more precisely, BQP-completeness) for GLH with $6$-local Hamiltonians when the guiding state has fidelity (inverse-polynomially) close to $1/2$ with a ground state.
+  In this paper, we optimally improve both the locality and the fidelity parameter: we show that the BQP-completeness persists even with 2-local Hamiltonians, and even when the guiding state has fidelity (inverse-polynomially) close to 1 with a ground state. Moreover, we show that the BQP-completeness also holds for 2-local physically motivated Hamiltonians on a 2D square lattice or a 2D triangular lattice. Beyond the hardness of estimating the ground state energy, we also show BQP-hardness persists when considering estimating energies of excited states of these Hamiltonians instead. Those make further steps towards establishing practical quantum advantage in quantum chemistry.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-07-21T01:13:32Z</published>
+    <arxiv:comment>20 pages; v3: This article merges and supersedes arXiv:2207.10097 and the previous version of arXiv:2207.10250</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Proceedings of the 50th EATCS International Colloquium on Automata, Languages and Programming (ICALP 2023), pp. 32:1-32.19, 2023</arxiv:journal_ref>
+    <author>
+      <name>Chris Cade</name>
+    </author>
+    <author>
+      <name>Marten Folkertsma</name>
+    </author>
+    <author>
+      <name>Sevag Gharibian</name>
+    </author>
+    <author>
+      <name>Ryu Hayakawa</name>
+    </author>
+    <author>
+      <name>François Le Gall</name>
+    </author>
+    <author>
+      <name>Tomoyuki Morimae</name>
+    </author>
+    <author>
+      <name>Jordi Weggemans</name>
+    </author>
+    <arxiv:doi>10.4230/LIPIcs.ICALP.2023.32</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.4230/LIPIcs.ICALP.2023.32" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2207.10097v3</id>
+    <title>Complexity of the Guided Local Hamiltonian Problem: Improved Parameters and Extension to Excited States</title>
+    <updated>2024-02-07T11:51:33Z</updated>
+    <link href="https://arxiv.org/abs/2207.10097v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2207.10097v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently it was shown that the so-called guided local Hamiltonian problem -- estimating the smallest eigenvalue of a $k$-local Hamiltonian when provided with a description of a quantum state ('guiding state') that is guaranteed to have substantial overlap with the true groundstate -- is BQP-complete for $k \geq 6$ when the required precision is inverse polynomial in the system size $n$, and remains hard even when the overlap of the guiding state with the groundstate is close to a constant $\left(\frac12 - Ω\left(\frac{1}{\mathop{poly}(n)}\right)\right)$. We improve upon this result in three ways: by showing that it remains BQP-complete when i) the Hamiltonian is 2-local, ii) the overlap between the guiding state and target eigenstate is as large as $1 - Ω\left(\frac{1}{\mathop{poly}(n)}\right)$, and iii) when one is interested in estimating energies of excited states, rather than just the groundstate. Interestingly, iii) is only made possible by first showing that ii) holds.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-07-20T18:00:02Z</published>
+    <arxiv:comment>22 pages, 3 figures. This article was merged with and is superseded by arXiv:2207.10250</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Chris Cade</name>
+    </author>
+    <author>
+      <name>Marten Folkertsma</name>
+    </author>
+    <author>
+      <name>Jordi Weggemans</name>
+    </author>
+  </entry>
+</feed>

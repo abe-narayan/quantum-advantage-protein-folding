@@ -160,3 +160,21 @@ This is a physics-simulation question (category-3 candidate), not a protein-stru
 - **INCONCLUSIVE otherwise** (needs N ≥ 22).
 - **Follow-up only if SUPPORT:** the hybrid adversary (exact quantum core N_c = 10–12 + classical-spin bath, Starkov–Fine type) against the N = 20 reference. KILL if its error stays < σ over 80–320 µs.
 - 2026-09-27 (R1-SIM, logged before hybrid production output): the hybrid adversary (`research/experiments/ADVERSARIAL/R1SIM_hybrid/hybrid_echo.py`) is run in parallel with T-A rather than after it, to save wall time. Its decision rule is unchanged: KILL R1-SIM if the hybrid's error at the instrument sites stays < σ over 80–320 µs against the converged / largest reference. A smoke test was run before production and is disclosed here: core 10 + 2 classical spins vs exact N = 12 (p19, M = 40) gave max error 0.014, against 0.03 for the isolated core.
+- 2026-09-28 (R1-SIM extension, before output): the cone-convergence ladder is replicated on 1PGA probe 390 and 1UBQ probe 487 (N = 12–20). N = 22 is added for probes 19/245. The same Δ_N statistic and thresholds apply. The runs use `scripts/nmr_cone.py`, which checkpoints each time point and is validated bit-identical to the original script.
+
+## Round 4 (2026-09-28 ~11:25, before any output of these tests; follows ROUND3/SYNTHESIS.md and ROUND3/CRITIC.md)
+
+- **H-2: the R1-SIM step rule is replaced.** Under a 1/N drift, Δ_N-based convergence can pass while the true finite-size error is still 10–20 σ (ROUND3 C10 / CRITIC C1). From now on, convergence claims need an explicit estimate F̂_∞ and a cross-family check. The earlier R1-SIM KILL ("converged by N ≤ 20") is recorded as excluded (p245 at 160 µs; p19 at 320 µs).
+- **Compute reallocation.** The four slow `nmr_cone.py` N = 20/22 jobs serve only the late window (13–40 T2, below physical noise). They were stopped at ~3 h and their checkpoints are kept (`typicality_cone/*.ckpt.json`). The replication cones (1PGA p390, 1UBQ p487, N ≤ 18) continue.
+- **T-X-early (CRITIC A-1).** For t = 40, 80, 120 µs on 1UBQ p19 and p245 at sites b ∈ {1, 7, 8, 9}:
+  - compute exact H and floor at N = 20 and 22, and X_N = F_N − H_N − floor_N at N = 18, 20, 22 (fastecho, checkpointed);
+  - H_∞ comes from classical spin dynamics (N_c = 80–160) plus the exact-minus-CSD offset at the largest exact N.
+  - **KILL** "the converged echo inside T3 is beyond σ-level classical reach" if |X₂₂ − X₂₀| ≤ 0.005 on ≥ 6/8 series AND √(se_H² + offset² + ΔX²) ≤ σ on those series.
+  - **KEEP OPEN** otherwise.
+- **spinDMFT adversary (CRITIC A-2).** Implement (nl-)spinDMFT for the dense ¹H network (Gräßer–Uhrig–Ernst style) for the autocorrelation and H_∞.
+  - Where an echo extension exists, apply it to F_∞ at t ≤ 120 µs.
+  - **KILL** R1-SIM(-X) at those times if it agrees with the exact + CSD hybrid within σ where both are defined.
+- **All-atom physics regime (CRITIC D1).** A super-quadratic quantum algorithm for sampling or dynamics of a classical force field would meet a regime that is classically hard and structure-bearing. Survey and precondition checks: Carleman/KvN/Liouville, quantum Langevin, and whatever else the literature offers. Also bound the enhanced-sampling classical twin (REST2 / metadynamics / MSM) from the literature.
+  - **SUPPORT** only if a family's preconditions hold for protein force fields and T*_Q,s ≤ 1 day at a stated t_T.
+- **Pro-quantum red team (CRITIC A-4).** The target is false kills among K-105, K-109, K-111 and the FeMoco WEAK residue.
+  - Any kill whose load-bearing arm fails is reopened, with a revival template.

@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/bMu1iv9hR52MOKlYAG+FTiQeuIw</id>
+  <title>arXiv Query: search_query=abs:superpolynomial AND abs:quantum AND abs:optimization&amp;id_list=&amp;start=0&amp;max_results=40</title>
+  <updated>2026-09-28T15:26:04Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:superpolynomial+AND+(abs:quantum+AND+abs:optimization)&amp;start=0&amp;max_results=40&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>40</opensearch:itemsPerPage>
+  <opensearch:totalResults>17</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.09033v1</id>
+    <title>Semidefinite extension complexity of the separable set, with applications to approximate disentanglers</title>
+    <updated>2026-09-08T17:00:11Z</updated>
+    <link href="https://arxiv.org/abs/2609.09033v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.09033v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove quantitative lower bounds on the semidefinite extension complexity of the set of separable quantum states on $\mathbb{C}^d\otimes\mathbb{C}^d$. We consider semidefinite programs (SDPs) that approximate the maximum acceptance probability of a measurement over separable states, the optimization problem underlying QMA(2). In the extended-formulation model of Harrow, Natarajan, and Wu (HNW), all measurements share a common feasible region and an objective-independent embedding of product states that exactly reproduces their acceptance probabilities. For every $0&lt;θ&lt;2/7$, there are constants $c_θ,a_θ&gt;0$ such that, for sufficiently large $d$, any such SDP with uniform additive error $0&lt;a\le a_θ$ has size at least $d^{c_θ\min\{a^{-1/3},d^θ\}}$. The bound applies at sufficiently small constant error, is superpolynomial in $d$ whenever $a=o(1)$, and becomes $d^{Ω(d^θ)}$ when $a\le d^{-3θ}$, improving HNW's quasipolynomial bound at inverse- square error. The same bound holds for any SDP-representable convex set of states that contains all separable states and lies within trace distance $a$ of them, giving a quantitative counterpart to Fawzi's theorem that the separable set has no exact semidefinite representation. Our proof combines the quantitative pseudo-density theorem of Lee, Raghavendra, and Steurer with explicit block-positive operators and Chebyshev amplification. Our main results are supported by Lean proofs.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-08T17:00:11Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Sevag Gharibian</name>
+    </author>
+    <author>
+      <name>Carsten Hecht</name>
+    </author>
+    <author>
+      <name>Dorian Rudolph</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.15576v1</id>
+    <title>Local observable errors from truncating interaction tails in gapped quantum lattice systems</title>
+    <updated>2026-08-16T06:50:23Z</updated>
+    <link href="https://arxiv.org/abs/2608.15576v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.15576v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We bound the error in ground-state expectations of local observables caused by truncating the spatial tails of a gapped quantum lattice Hamiltonian. We show that the error is controlled by the interaction strength discarded near each site, rather than by the extensive norm of the omitted Hamiltonian. If the gap remains open along a path that removes the interaction tail, the resulting bounds are uniform in system size and extend, under suitable assumptions, to thermodynamic-limit ground states. The convergence rate reflects the decay of the interaction tail: it is algebraic for power-law interactions, superpolynomial for superpolynomial interactions, and exponential at any strictly smaller rate for exponentially decaying interactions. For superpolynomial interactions, we also derive a direct infinite-volume estimate using automorphic equivalence. The results extend to isolated low-energy sectors and parity-even fermionic systems. For two-body interactions decaying as $r^{-p}$ in $d$ dimensions, we prove an error bound $O(R^{-(p-d)})$ for $p&gt;2d$, where $R$ is the truncation range. We construct a gapped non-translation-invariant example that saturates this scaling, showing that the bound is optimal for the general class considered. Our results quantify when finite-range truncations faithfully reproduce the local physics of gapped long-range systems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-16T06:50:23Z</published>
+    <arxiv:comment>22 pages main text and 13 pages appendix, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kangle Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.00312v1</id>
+    <title>Quantum Decoding Algorithms: Quantum Speedups in Optimization</title>
+    <updated>2026-05-01T00:47:15Z</updated>
+    <link href="https://arxiv.org/abs/2605.00312v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.00312v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Attaining a quantum speedup in solving practically useful optimization problems has been one of the holy grails in the field of quantum computing. While prior approaches have demonstrated speedups for certain structured problem classes, establishing a clear and scalable advantage on broadly useful practical optimization problems remains challenging. Recently, a new approach to solving the max-LINSAT class of optimization problems has emerged, called Decoded Quantum Interferometry (DQI). In DQI, a combination of techniques rooted in (classical) coding theory and interferometry are used to obtain the solution of max-LINSAT. In the special problem instance of the optimal polynomial intersection (OPI) problem, strong evidence exists to show that an superpolynomial speedup exists over the best classical methods in obtaining an approximate solution. In this review, we give a self-contained description of DQI and the necessary background to understand the algorithm. Specifically, we give the essentials of Galois fields, optimization problems such as max-LINSAT and OPI, and coding theory, followed by a step-by-step walkthrough of the quantum algorithm and its operating principle.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-01T00:47:15Z</published>
+    <arxiv:comment>24 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jan Ljubas</name>
+    </author>
+    <author>
+      <name>Tim Byrnes</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.20016v3</id>
+    <title>Kernelized Decoded Quantum Interferometry</title>
+    <updated>2025-12-09T11:05:35Z</updated>
+    <link href="https://arxiv.org/abs/2511.20016v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.20016v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) promises superpolynomial speedups for structured optimization; however, its practical realization is often hindered by significant sensitivity to hardware noise and spectral dispersion. To bridge this gap, we introduce Kernelized Decoded Quantum Interferometry (k-DQI), a unified framework that integrates spectral engineering directly into the quantum circuit architecture. By inserting a unitary kernel prior to the interference step, k-DQI actively reshapes the problem's energy landscape, concentrating the solution mass into a ``decoder-friendly'' low-frequency head. We formalize this advantage through a novel robustness metric, the noise-weighted head mass $Σ_K$, and prove a Monotonic Improvement Theorem, which establishes that maximizing $Σ_K$ guarantees higher decoding success rates under local depolarizing noise. We substantiate these theoretical gains in Optimal Polynomial Interpolation (OPI) and LDPC-like problems, demonstrating that kernel tuning functions as a ``spectral lens'' to recover signal otherwise lost to isotropic noise. Crucially, we provide explicit, efficient circuit realizations using Chirp and Linear Canonical Transform (LCT) kernels that achieve significant boosts in effective signal-to-noise ratio with negligible depth overhead ($\tilde{O}(n)$ to $\tilde{O}(n^2)$). Collectively, these results reframe DQI from a static algorithm into a tunable, noise-aware protocol suited for near-term error-corrected environments.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-25T07:35:03Z</published>
+    <arxiv:comment>36 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Fumin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.10967v1</id>
+    <title>Verifiable Quantum Advantage via Optimized DQI Circuits</title>
+    <updated>2025-10-13T03:19:28Z</updated>
+    <link href="https://arxiv.org/abs/2510.10967v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.10967v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decoded Quantum Interferometry (DQI) provides a framework for superpolynomial quantum speedups by reducing certain optimization problems to reversible decoding tasks. We apply DQI to the Optimal Polynomial Intersection (OPI) problem, whose dual code is Reed-Solomon (RS). We establish that DQI for OPI is the first known candidate for verifiable quantum advantage with optimal asymptotic speedup: solving instances with classical hardness $O(2^N)$ requires only $\widetilde{O}(N)$ quantum gates, matching the theoretical lower bound. Realizing this speedup requires highly efficient reversible RS decoders. We introduce novel quantum circuits for the Extended Euclidean Algorithm, the decoder's bottleneck. Our techniques, including a new representation for implicit Bézout coefficient access, and optimized in-place architectures, reduce the leading-order space complexity to the theoretical minimum of $2nb$ qubits while significantly lowering gate counts. These improvements are broadly applicable, including to Shor's algorithm for the discrete logarithm. We analyze OPI over binary extension fields $GF(2^b)$, assess hardness against new classical attacks, and identify resilient instances. Our resource estimates show that classically intractable OPI instances (requiring $&gt;10^{23}$ classical trials) can be solved with approximately 5.72 million Toffoli gates. This is substantially less than the count required for breaking RSA-2048, positioning DQI as a compelling candidate for practical, verifiable quantum advantage.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-13T03:19:28Z</published>
+    <arxiv:comment>52 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Tanuj Khattar</name>
+    </author>
+    <author>
+      <name>Noah Shutty</name>
+    </author>
+    <author>
+      <name>Craig Gidney</name>
+    </author>
+    <author>
+      <name>Adam Zalcman</name>
+    </author>
+    <author>
+      <name>Noureldin Yosri</name>
+    </author>
+    <author>
+      <name>Dmitri Maslov</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <author>
+      <name>Stephen P. Jordan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08494v1</id>
+    <title>Quartic quantum speedups for community detection</title>
+    <updated>2025-10-09T17:35:17Z</updated>
+    <link href="https://arxiv.org/abs/2510.08494v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08494v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Community detection is a foundational problem in data science. Its natural extension to hypergraphs captures higher-order correlations beyond pairwise interactions. In this work, we develop a quantum algorithm for hypergraph community detection that achieves a quartic quantum speedup over the best known classical algorithm, along with superpolynomial savings in space. Our algorithm is based on the Kikuchi method, which we extend beyond previously considered problems such as Tensor PCA and $p$XORSAT to a broad family of generalized stochastic block models. To demonstrate (near) optimality of this method, we prove matching lower bounds (up to logarithmic factors) in the low-degree framework, showing that the algorithm saturates a smooth statistical-computational tradeoff. The quantum speedup arises from a quantized version of the Kikuchi method and is based on the efficient preparation of a guiding state correlated with the underlying community structure. Our work suggests that prior quantum speedups using the Kikuchi method are sufficiently robust to encompass a broader set of problems than previously believed; we conjecture that a quantity known as marginal order characterizes the existence of these quantum speedups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T17:35:17Z</published>
+    <arxiv:comment>40 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Alexander Zlokapa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08210v4</id>
+    <title>Hyper-optimized Quantum Lego Contraction Schedules</title>
+    <updated>2026-04-23T02:35:41Z</updated>
+    <link href="https://arxiv.org/abs/2510.08210v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08210v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Calculating the quantum weight enumerator polynomial (WEP) is a valuable tool for characterizing quantum error-correcting (QEC) codes, but it is computationally hard for large or complex codes. The Quantum LEGO (QL) framework provides a tensor network approach for WEP calculation, in some cases offering superpolynomial speedups over brute-force methods, provided the code exhibits area law entanglement, that a good QL layout is used, and an efficient tensor network contraction schedule is found. We analyze the performance of a hyper-optimized contraction schedule framework across QL layouts for diverse stabilizer code families. We find that the intermediate tensors in the QL networks for stabilizer WEPs are often highly sparse, invalidating the dense-tensor assumption of standard cost functions. To address this, we introduce an exact, polynomial-time Sparse Stabilizer Tensor (SST) cost function based on the rank of the parity check matrices for intermediate tensors. The SST cost function correlates perfectly with the true contraction cost, providing a significant advantage over the default cost function, which exhibits large uncertainty. Optimizing contraction schedules using the SST cost function yields substantial performance gains, achieving up to orders of magnitude improvement in actual contraction cost compared to using the dense tensor cost function. Furthermore, the precise cost estimation from the SST function offers an efficient metric to decide whether the QL-based WEP calculation is computationally superior to brute force for a given QL layout. These results, enabled by PlanqTN, a new open-source QL implementation, validate hyper-optimized contraction as a crucial technique for leveraging the QL framework to explore the QEC code design space.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T13:34:28Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 10, 2092 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Balint Pato</name>
+    </author>
+    <author>
+      <name>June Vanlerberghe</name>
+    </author>
+    <author>
+      <name>Kenneth R. Brown</name>
+    </author>
+    <arxiv:doi>10.22331/q-2026-05-05-2092</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2026-05-05-2092" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.08214v1</id>
+    <title>Average Contraction Coefficients of Quantum Channels</title>
+    <updated>2025-08-11T17:35:15Z</updated>
+    <link href="https://arxiv.org/abs/2508.08214v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.08214v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The data-processing inequality ensures quantum channels reduce state distinguishability, with contraction coefficients quantifying optimal bounds. However, these can be overly optimistic and not representative of the usual behavior. We study how noise contracts distinguishability of `typical' states, beyond the worst-case. To that end, we introduce and study a family of moments of contraction for quantum divergences, which interpolate between the worst-case contraction coefficient of a channel and its average behavior under a chosen ensemble of input states. We establish general properties of these moments, relate moments for different divergences, and derive bounds in terms of channel parameters like the entropy or purity of its Choi state.
+  Focusing on the trace distance, we obtain upper and lower bounds on its average contraction under tensor-product noise channels, and prove that, depending on the local noise strength, there is a phase transition in the limit of many channel uses: below a critical error rate the average contraction remains near unity, whereas above it decays exponentially with system size. We extend these phase-transition phenomena to random quantum circuits with unital noise, showing that constant-depth noisy circuits do not shrink the trace distance on average, even when given highly entangled states as input. In contrast, even at $\log\log n$ depth, the average trace distance can become superpolynomially small.
+  Finally, we explore moments of contraction for f-divergences and discuss applications to local differential privacy, demonstrating that noise regimes ensuring privacy can render outputs essentially indistinguishable on average. Thus, our results provide a fine-grained framework to quantify typical channel noise in quantum information and computation and unveil new phenomena in contraction coefficients, such as phase transitions for average contraction.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T17:35:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ruben Ibarrondo</name>
+    </author>
+    <author>
+      <name>Daniel Stilck França</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.03312v1</id>
+    <title>Quantum Algorithm For Testing Convexity of Function</title>
+    <updated>2024-09-05T07:38:38Z</updated>
+    <link href="https://arxiv.org/abs/2409.03312v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.03312v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Functions are a fundamental object in mathematics, with countless applications to different fields, and are usually classified based on certain properties, given their domains and images. An important property of a real-valued function is its convexity, which plays a very crucial role in many areas, such as thermodynamics and geometry. Motivated by recent advances in quantum computation as well as the quest for quantum advantage, we give a quantum algorithm for testing convexity of polynomial functions, which appears frequently in multiple contexts, such as optimization, machine learning, physics, etc. We show that quantum computers can reveal the convexity property superpolynomially faster than classical computers with respect to number of variables. As a corollary, we provide a significant improvement and extension on quantum Newton's method constructed in earlier work of Rebentrost et al [New J. Phys. \textbf{21} 073023 (2019)]. We further discuss our algorithm in a broader context, such as potential application in the study of geometric structure of manifold, testing training landscape of variational quantum algorithm and also gradient descent/Newton's method for optimization.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-05T07:38:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Nhat A. Nghiem</name>
+    </author>
+    <author>
+      <name>Tzu-Chieh Wei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.08292v5</id>
+    <title>Optimization by Decoded Quantum Interferometry</title>
+    <updated>2025-10-22T22:42:14Z</updated>
+    <link href="https://arxiv.org/abs/2408.08292v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.08292v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Achieving superpolynomial speedups for optimization has long been a central goal for quantum algorithms. Here we introduce Decoded Quantum Interferometry (DQI), a quantum algorithm that uses the quantum Fourier transform to reduce optimization problems to decoding problems. For approximating optimal polynomial fits over finite fields, DQI achieves a superpolynomial speedup over known classical algorithms. The speedup arises because the problem's algebraic structure is reflected in the decoding problem, which can be solved efficiently. We then investigate whether this approach can achieve speedup for optimization problems that lack algebraic structure but have sparse clauses. These problems reduce to decoding LDPC codes, for which powerful decoders are known. To test this, we construct a max-XORSAT instance where DQI finds an approximate optimum significantly faster than general-purpose classical heuristics, such as simulated annealing. While a tailored classical solver can outperform DQI on this instance, our results establish that combining quantum Fourier transforms with powerful decoding primitives provides a promising new path toward quantum speedups for hard optimization problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-15T17:47:42Z</published>
+    <arxiv:comment>80 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nature 646:831-836, 2025</arxiv:journal_ref>
+    <author>
+      <name>Stephen P. Jordan</name>
+    </author>
+    <author>
+      <name>Noah Shutty</name>
+    </author>
+    <author>
+      <name>Mary Wootters</name>
+    </author>
+    <author>
+      <name>Adam Zalcman</name>
+    </author>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Robbie King</name>
+    </author>
+    <author>
+      <name>Sergei V. Isakov</name>
+    </author>
+    <author>
+      <name>Tanuj Khattar</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <arxiv:doi>10.1038/s41586-025-09527-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41586-025-09527-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.03073v1</id>
+    <title>Benchmarking Variational Quantum Algorithms for Combinatorial Optimization in Practice</title>
+    <updated>2024-08-06T09:57:34Z</updated>
+    <link href="https://arxiv.org/abs/2408.03073v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.03073v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Variational quantum algorithms and, in particular, variants of the varational quantum eigensolver have been proposed to address combinatorial optimization (CO) problems. Using only shallow ansatz circuits, these approaches are deemed suitable for current noisy intermediate-scale quantum hardware. However, the resources required for training shallow variational quantum circuits often scale superpolynomially in problem size. In this study we numerically investigate what this scaling result means in practice for solving CO problems using Max-Cut as a benchmark. For fixed resources, we compare the average performance of training a shallow variational quantum circuit, sampling with replacement, and a greedy algorithm starting from the same initial point as the quantum algorithm. We identify a minimum problem size for which the quantum algorithm can consistently outperform sampling and, for each problem size, characterize the separation between the quantum algorithm and the greedy algorithm. Furthermore, we extend the average case analysis by investigating the correlation between the performance of the algorithms by instance. Our results provide a step towards meaningful benchmarks of variational quantum algorithms for CO problems for a realistic set of resources.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-06T09:57:34Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Mach. Intell. 8, 26 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Tim Schwägerl</name>
+    </author>
+    <author>
+      <name>Yahui Chai</name>
+    </author>
+    <author>
+      <name>Tobias Hartung</name>
+    </author>
+    <author>
+      <name>Karl Jansen</name>
+    </author>
+    <author>
+      <name>Stefan Kühn</name>
+    </author>
+    <arxiv:doi>10.1007/s42484-026-00355-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s42484-026-00355-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.17649v5</id>
+    <title>Quantum Algorithms for Representation-Theoretic Multiplicities</title>
+    <updated>2025-03-25T18:51:14Z</updated>
+    <link href="https://arxiv.org/abs/2407.17649v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.17649v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Kostka, Littlewood-Richardson, Plethysm and Kronecker coefficients are the multiplicities of irreducible representations in the decomposition of representations of the symmetric group that play an important role in representation theory, geometric complexity and algebraic combinatorics. We give quantum algorithms for computing these coefficients whenever the ratio of dimensions of the representations is polynomial and study the computational complexity of this problem. We show that there is an efficient classical algorithm for computing the Kostka numbers under this restriction and conjecture the existence of an analogous algorithm for the Littlewood-Richardson coefficients. We argue why such classical algorithm does not straightforwardly work for the Plethysm and Kronecker coefficients and conjecture that our quantum algorithms lead to superpolynomial speedups for these problems. The conjecture about Kronecker coefficients was disproved by Greta Panova in [arXiv:2502.20253] with a classical solution which, if optimal, points to a $\OC(n^{4+2k})$ vs $\tildeΩ(n^{4k^2+1})$ polynomial gap in quantum vs classical computational complexity for an integer parameter $k$.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-24T21:34:05Z</published>
+    <arxiv:comment>v5 - substantial overhaul reflecting following results from [arXiv:2502.20253]. Added more detailed complexity analysis, explicit construction of inputs on which the Kronecker coefficient algorithm is efficient, detailed analysis of the sampling and corrected mistakes in the Sn-QFT appendix</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Martin Larocca</name>
+    </author>
+    <author>
+      <name>Vojtech Havlicek</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.07754v2</id>
+    <title>Random unitaries in extremely low depth</title>
+    <updated>2025-01-04T09:19:23Z</updated>
+    <link href="https://arxiv.org/abs/2407.07754v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.07754v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove that random quantum circuits on any geometry, including a 1D line, can form approximate unitary designs over $n$ qubits in $\log n$ depth. In a similar manner, we construct pseudorandom unitaries (PRUs) in 1D circuits in $\text{poly}(\log n)$ depth, and in all-to-all-connected circuits in $\text{poly}(\log \log n)$ depth. In all three cases, the $n$ dependence is optimal and improves exponentially over known results. These shallow quantum circuits have low complexity and create only short-range entanglement, yet are indistinguishable from unitaries with exponential complexity. Our construction glues local random unitaries on $\log n$-sized or $\text{poly}(\log n)$-sized patches of qubits to form a global random unitary on all $n$ qubits. In the case of designs, the local unitaries are drawn from existing constructions of approximate unitary $k$-designs, and hence also inherit an optimal scaling in $k$. In the case of PRUs, the local unitaries are drawn from existing PRU constructions. Applications of our results include proving that classical shadows with 1D log-depth Clifford circuits are as powerful as those with deep circuits, demonstrating superpolynomial quantum advantage in learning low-complexity physical systems, and establishing quantum hardness for recognizing phases of matter with topological order.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-10T15:27:48Z</published>
+    <arxiv:comment>12 pages, 6 figures + 48-page appendix; v2: simplified proofs, added new results and updated refs</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Thomas Schuster</name>
+    </author>
+    <author>
+      <name>Jonas Haferkamp</name>
+    </author>
+    <author>
+      <name>Hsin-Yuan Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.10188v2</id>
+    <title>Trainability Barriers in Low-Depth QAOA Landscapes</title>
+    <updated>2024-10-09T14:51:54Z</updated>
+    <link href="https://arxiv.org/abs/2402.10188v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.10188v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Quantum Alternating Operator Ansatz (QAOA) is a prominent variational quantum algorithm for solving combinatorial optimization problems. Its effectiveness depends on identifying input parameters that yield high-quality solutions. However, understanding the complexity of training QAOA remains an under-explored area. Previous results have given analytical performance guarantees for a small, fixed number of parameters. At the opposite end of the spectrum, barren plateaus are likely to emerge at $Ω(n)$ parameters for $n$ qubits. In this work, we study the difficulty of training in the intermediate regime, which is the focus of most current numerical studies and near-term hardware implementations. Through extensive numerical analysis of the quality and quantity of local minima, we argue that QAOA landscapes can exhibit a superpolynomial growth in the number of low-quality local minima even when the number of parameters scales logarithmically with $n$. This means that the common technique of gradient descent from randomly initialized parameters is doomed to fail beyond small $n$, and emphasizes the need for good initial guesses of the optimal parameters.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-15T18:45:30Z</published>
+    <arxiv:comment>minor updates</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>21st ACM International Conference on Computing Frontiers CF'24, pages 199-206, May 2024</arxiv:journal_ref>
+    <author>
+      <name>Joel Rajakumar</name>
+    </author>
+    <author>
+      <name>John Golden</name>
+    </author>
+    <author>
+      <name>Andreas Bärtschi</name>
+    </author>
+    <author>
+      <name>Stephan Eidenbenz</name>
+    </author>
+    <arxiv:doi>10.1145/3649153.3649204</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3649153.3649204" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.05786v2</id>
+    <title>Beyond Barren Plateaus: Quantum Variational Algorithms Are Swamped With Traps</title>
+    <updated>2022-09-28T14:48:18Z</updated>
+    <link href="https://arxiv.org/abs/2205.05786v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.05786v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One of the most important properties of classical neural networks is how surprisingly trainable they are, though their training algorithms typically rely on optimizing complicated, nonconvex loss functions. Previous results have shown that unlike the case in classical neural networks, variational quantum models are often not trainable. The most studied phenomenon is the onset of barren plateaus in the training landscape of these quantum models, typically when the models are very deep. This focus on barren plateaus has made the phenomenon almost synonymous with the trainability of quantum models. Here, we show that barren plateaus are only a part of the story. We prove that a wide class of variational quantum models -- which are shallow, and exhibit no barren plateaus -- have only a superpolynomially small fraction of local minima within any constant energy from the global minimum, rendering these models untrainable if no good initial guess of the optimal parameters is known. We also study the trainability of variational quantum algorithms from a statistical query framework, and show that noisy optimization of a wide variety of quantum models is impossible with a sub-exponential number of queries. Finally, we numerically confirm our results on a variety of problem instances. Though we exclude a wide variety of quantum algorithms here, we give reason for optimism for certain classes of variational algorithms and discuss potential ways forward in showing the practical utility of such algorithms.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-11T21:55:42Z</published>
+    <arxiv:comment>46 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nat. Commun. 13, 7760 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Eric R. Anschuetz</name>
+    </author>
+    <author>
+      <name>Bobak T. Kiani</name>
+    </author>
+    <arxiv:doi>10.1038/s41467-022-35364-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41467-022-35364-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2105.01114v3</id>
+    <title>Progress toward favorable landscapes in quantum combinatorial optimization</title>
+    <updated>2021-09-02T18:32:24Z</updated>
+    <link href="https://arxiv.org/abs/2105.01114v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.01114v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of variational quantum algorithms relies on the success of using quantum and classical computing resources in tandem. Here, we study how these quantum and classical components interrelate. In particular, we focus on algorithms for solving the combinatorial optimization problem MaxCut, and study how the structure of the classical optimization landscape relates to the quantum circuit used to evaluate the MaxCut objective function. In order to analytically characterize the impact of quantum features on the critical points of the landscape, we consider a family of quantum circuit ansätze composed of mutually commuting elements. We identify multiqubit operations as a key resource and show that overparameterization allows for obtaining favorable landscapes. Namely, we prove that an ansatz from this family containing exponentially many variational parameters yields a landscape free of local optima for generic graphs. However, we further prove that these ansätze do not offer superpolynomial advantages over purely classical MaxCut algorithms. We then present a series of numerical experiments illustrating that noncommutativity and entanglement are important features for improving algorithm performance.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-03T18:38:53Z</published>
+    <arxiv:comment>arXiv admin note: text overlap with arXiv:2105.05365</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. A 104, 032401 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Juneseo Lee</name>
+    </author>
+    <author>
+      <name>Alicia B. Magann</name>
+    </author>
+    <author>
+      <name>Herschel A. Rabitz</name>
+    </author>
+    <author>
+      <name>Christian Arenz</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.104.032401</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.104.032401" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2010.02930v2</id>
+    <title>Optimal State Transfer and Entanglement Generation in Power-law Interacting Systems</title>
+    <updated>2021-02-01T17:34:42Z</updated>
+    <link href="https://arxiv.org/abs/2010.02930v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.02930v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present an optimal protocol for encoding an unknown qubit state into a multiqubit Greenberger-Horne-Zeilinger-like state and, consequently, transferring quantum information in large systems exhibiting power-law ($1/r^α$) interactions. For all power-law exponents $α$ between $d$ and $2d+1$, where $d$ is the dimension of the system, the protocol yields a polynomial speedup for $α&gt;2d$ and a superpolynomial speedup for $α\leq 2d$, compared to the state of the art. For all $α&gt;d$, the protocol saturates the Lieb-Robinson bounds (up to subpolynomial corrections), thereby establishing the optimality of the protocol and the tightness of the bounds in this regime. The protocol has a wide range of applications, including in quantum sensing, quantum computing, and preparation of topologically ordered states. In addition, the protocol provides a lower bound on the gate count in digital simulations of power-law interacting systems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.quant-gas" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.atom-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-06T18:00:02Z</published>
+    <arxiv:comment>Updated Table I, Additional discussion on a lower bound for the gate count in digital quantum simulation</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. X 11, 031016 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Minh C. Tran</name>
+    </author>
+    <author>
+      <name>Abhinav Deshpande</name>
+    </author>
+    <author>
+      <name>Andrew Y. Guo</name>
+    </author>
+    <author>
+      <name>Andrew Lucas</name>
+    </author>
+    <author>
+      <name>Alexey V. Gorshkov</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevX.11.031016</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevX.11.031016" title="doi"/>
+  </entry>
+</feed>

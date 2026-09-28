@@ -1,0 +1,88 @@
+{
+ "runs": {
+  "2AB0A_30|t0=10": {
+   "crop": "2AB0A_30",
+   "L": 30,
+   "t0": 10,
+   "s": 6,
+   "k": 6,
+   "N": 46656,
+   "E_range": [
+    1611.6435113523498,
+    3065.6101463089744
+   ],
+   "E_at_xstar": 1611.6435113523498,
+   "global_min_is_xstar": true,
+   "cells_bare_entrance": 84,
+   "cells_energy_res1e-06": 46656,
+   "cells_energy_res1": 46656,
+   "cells_energy_res5": 46656,
+   "cells_energy_res20": 46656,
+   "krylov_from_entrance": {
+    "0.0": {
+     "dim": 25,
+     "terminated": true,
+     "beta_last": 4.351869331068844e-13
+    },
+    "0.1": {
+     "dim": 1000,
+     "terminated": false,
+     "beta_last": 30.830317548888054
+    },
+    "1.0": {
+     "dim": 1000,
+     "terminated": false,
+     "beta_last": 301.92758303029154
+    }
+   },
+   "n_discrete_local_minima": 1157,
+   "steepest_descent_p_hit_global": 0.0075,
+   "metropolis_T1_hit_steps_median": 200000.0,
+   "metropolis_T1_hit_steps_mean": 198014.72,
+   "metropolis_T1_censored_frac": 0.99,
+   "cpu_s": 275.671875
+  },
+  "8AXJA_30|t0=10": {
+   "crop": "8AXJA_30",
+   "L": 30,
+   "t0": 10,
+   "s": 6,
+   "k": 6,
+   "N": 46656,
+   "E_range": [
+    1577.1878943144113,
+    3276.9995816141604
+   ],
+   "E_at_xstar": 1577.1878943144113,
+   "global_min_is_xstar": true,
+   "cells_bare_entrance": 84,
+   "cells_energy_res1e-06": 46656,
+   "cells_energy_res1": 46656,
+   "cells_energy_res5": 46656,
+   "cells_energy_res20": 46656,
+   "krylov_from_entrance": {
+    "0.0": {
+     "dim": 25,
+     "terminated": true,
+     "beta_last": 8.148619772934134e-13
+    },
+    "0.1": {
+     "dim": 1000,
+     "terminated": false,
+     "beta_last": 30.8428437943803
+    },
+    "1.0": {
+     "dim": 1000,
+     "terminated": false,
+     "beta_last": 312.17834653982277
+    }
+   },
+   "n_discrete_local_minima": 665,
+   "steepest_descent_p_hit_global": 0.0075,
+   "metropolis_T1_hit_steps_median": 200000.0,
+   "metropolis_T1_hit_steps_mean": 199000.195,
+   "metropolis_T1_censored_frac": 0.995,
+   "cpu_s": 555.65625
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "X_sector_vs_expm_maxerr": 1.6653552781254827e-15,
+ "pauli_transform_maxerr": 4.996003610813204e-16,
+ "pauli_imag_max": 2.7755575615628914e-17,
+ "QFI_exact_p0.3": 0.006772902027318249,
+ "QFI_formula_p0.3": 0.006772902027318249,
+ "QFI_exact_p1.0": 0.07525446697020279,
+ "QFI_formula_p1.0": 0.07525446697020277,
+ "bell_prob_maxerr": 3.469446951953614e-18,
+ "bell_prob_sum": 1.0,
+ "local_basis_prob_maxerr": 4.163336342344337e-17
+}

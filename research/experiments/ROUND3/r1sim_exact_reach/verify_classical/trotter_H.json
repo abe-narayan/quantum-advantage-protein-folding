@@ -1,0 +1,38 @@
+{
+ "note": "PARTIAL: trotter_H.py was stopped by its 800 s wall timeout after completing p19 N=12 (N=14 per-time outer products too slow); values transcribed from its stdout",
+ "times_us": [
+  40,
+  80,
+  120,
+  160,
+  200,
+  240,
+  280,
+  320
+ ],
+ "p19_N12": {
+  "H_trotter": [
+   0.3994,
+   0.2264,
+   0.1853,
+   0.1755,
+   0.1663,
+   0.158,
+   0.1523,
+   0.1488
+  ],
+  "H_cont": [
+   0.3998,
+   0.2274,
+   0.1861,
+   0.1761,
+   0.1669,
+   0.1586,
+   0.1528,
+   0.1492
+  ],
+  "maxdiff_H": 0.001,
+  "maxdiff_G": 0.0031
+ },
+ "cpu_min_spent_approx": 13.3
+}

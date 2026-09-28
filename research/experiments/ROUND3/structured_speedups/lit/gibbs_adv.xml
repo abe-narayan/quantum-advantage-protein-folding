@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/0ZyPtPh6QgP8S0jphmHpmzNI1nU</id>
+  <title>arXiv Query: search_query=abs:"Gibbs sampling" AND abs:"quantum advantage"&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:26:28Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22Gibbs+sampling%22+AND+abs:%22quantum+advantage%22&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.28120v1</id>
+    <title>Approximate sampling from decoded quantum interferometry via Markov chain Monte Carlo methods</title>
+    <updated>2026-07-30T12:29:15Z</updated>
+    <link href="https://arxiv.org/abs/2607.28120v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.28120v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optimization problems are among the leading candidates for industrially relevant quantum advantage. Decoded quantum interferometry (DQI) has been proposed to tackle approximate optimization, establishing a connection to classical decoding problems. While previous work has primarily focused on the theoretical complexity of DQI, comparatively little is known about its empirical performance relative to classical algorithms. In this work, we shed further light on the complexity of DQI and investigate numerically whether classical sampling methods can emulate the optimization capabilities of DQI. We first present a simplified analytical characterization of DQI that connects its expected performance to binomial statistics, and we identify concrete obstacles in further studying the complexity of DQI. Exploiting the fact that DQI output probabilities are efficiently computable, we apply Markov chain Monte Carlo (MCMC) techniques, particularly block-Gibbs sampling, to sample from the induced distribution. We study the runtime scaling of these methods for two optimization problems called max-XORSAT, where we reach beyond $1000$ effective qubits; and OPI, where we reach beyond $150$ effective qubits. Our results show that MCMC algorithms can reliably attain the approximation ratios expected from DQI across a broad range of problem sizes. In OPI, in the regime where a super-polynomial advantage is claimed for DQI, we observe an empirical runtime for MCMC that scales approximately as $1.1^{n}$, indicating exponential growth with a comparatively small base. Our findings do not refute existing quantum advantage claims but provide new empirical evidence that classical sampling algorithms can closely match DQI's optimization performance, offering a more nuanced perspective on the practical advantage of DQI.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T12:29:15Z</published>
+    <arxiv:comment>24 pages (12+12), 9 figures (5+4), comments welcome</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Elies Gil-Fuster</name>
+    </author>
+    <author>
+      <name>Matan Ninio</name>
+    </author>
+    <author>
+      <name>Lennart Bittel</name>
+    </author>
+    <author>
+      <name>Yishai Shimoni</name>
+    </author>
+    <author>
+      <name>Jens Eisert</name>
+    </author>
+    <author>
+      <name>Stefan Woerner</name>
+    </author>
+    <author>
+      <name>Almudena Carrera Vázquez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.06077v1</id>
+    <title>Simulating Thermal Properties of Bose-Hubbard Models on a Quantum Computer</title>
+    <updated>2026-04-07T16:56:56Z</updated>
+    <link href="https://arxiv.org/abs/2604.06077v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.06077v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While recent advances have established efficient quantum algorithms for preparing Gibbs states of finite-dimensional systems, comparable complexity results for bosonic and other infinite-dimensional models remain unexplored. We introduce the first general rigorous Gibbs sampling framework for bosonic many-body systems, showing that physically relevant bosonic models admit gapped dissipative generators, enabling efficient preparation of thermal states. Although our results hold for broad classes of models, we illustrate them using Bose-Hubbard Hamiltonians, both within and beyond the mean-field regime. In both cases, we show that the associated dissipative generators maintain a positive spectral gap, thereby implying exponential convergence to the thermal state. Our argument in the multi-mode case is based on a finite-rank reduction of the dissipative dynamics, which allows us to control the generator via compact perturbations and deduce the discreteness of the spectrum and the stability of the gap. We apply our results to provide efficient preparation of the corresponding Gibbs state on qubit hardware, and by that a quantum algorithm to compute thermal properties of the associated model. This provides the first mathematically controlled route to Gibbs sampling in infinite-dimensional systems, with implications for quantum simulation, thermalization, and many-body complexity, where quantum advantages may arise.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-07T16:56:56Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Simon Becker</name>
+    </author>
+    <author>
+      <name>Cambyse Rouzé</name>
+    </author>
+    <author>
+      <name>Robert Salzmann</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.07973v2</id>
+    <title>Stochastic Security as a Performance Metric for Quantum-enhanced Generative AI</title>
+    <updated>2025-02-19T07:11:03Z</updated>
+    <link href="https://arxiv.org/abs/2305.07973v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.07973v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Motivated by applications of quantum computers in Gibbs sampling from continuous real-valued functions, we ask whether such algorithms can provide practical advantages for machine learning models trained on classical data and seek measures for quantifying such impacts. In this study, we focus on deep energy-based models (EBM), as they require continuous-domain Gibbs sampling both during training and inference. In lieu of fault-tolerant quantum computers that can execute quantum Gibbs sampling algorithms, we use the Monte Carlo simulation of diffusion processes as a classical alternative. More specifically, we investigate whether long-run persistent chain Monte Carlo simulation of Langevin dynamics improves the quality of the representations achieved by EBMs. We consider a scheme in which the Monte Carlo simulation of a diffusion, whose drift is given by the gradient of the energy function, is used to improve the adversarial robustness and calibration score of an independent classifier network. Our results show that increasing the computational budget of Gibbs sampling in persistent contrastive divergence improves both the calibration and adversarial robustness of the model, suggesting a prospective avenue of quantum advantage for generative AI using future large-scale quantum computers.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-13T17:33:01Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Noah A. Crum</name>
+    </author>
+    <author>
+      <name>Leanto Sunny</name>
+    </author>
+    <author>
+      <name>Pooya Ronagh</name>
+    </author>
+    <author>
+      <name>Raymond Laflamme</name>
+    </author>
+    <author>
+      <name>Radhakrishnan Balu</name>
+    </author>
+    <author>
+      <name>George Siopsis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.18224v2</id>
+    <title>Quantum Thermal State Preparation</title>
+    <updated>2023-11-15T18:57:44Z</updated>
+    <link href="https://arxiv.org/abs/2303.18224v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.18224v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Preparing ground states and thermal states is essential for simulating quantum systems on quantum computers. Despite the hope for practical quantum advantage in quantum simulation, popular state preparation approaches have been challenged. Monte Carlo-style quantum Gibbs samplers have emerged as an alternative, but prior proposals have been unsatisfactory due to technical obstacles rooted in energy-time uncertainty. We introduce simple continuous-time quantum Gibbs samplers that overcome these obstacles by efficiently simulating Nature-inspired quantum master equations (Lindbladians). In addition, we construct the first provably accurate and efficient algorithm for preparing certain purified Gibbs states (called thermal field double states in high-energy physics) of rapidly thermalizing systems; this algorithm also benefits from a quantum walk speedup. Our algorithms' costs have a provable dependence on temperature, accuracy, and the mixing time (or spectral gap) of the relevant Lindbladian. We complete the first rigorous proof of finite-time thermalization for physically derived Lindbladians by developing a general analytic framework for nonasymptotic secular approximation and approximate detailed balance. Given the success of classical Markov chain Monte Carlo (MCMC) algorithms and the ubiquity of thermodynamics, we anticipate that quantum Gibbs sampling will become indispensable in quantum computing.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-31T17:29:56Z</published>
+    <arxiv:comment>79 pages, 12 figures; v2 modified table 1 and improved presentation and bounds</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Chi-Fang Chen</name>
+    </author>
+    <author>
+      <name>Michael J. Kastoryano</name>
+    </author>
+    <author>
+      <name>Fernando G. S. L. Brandão</name>
+    </author>
+    <author>
+      <name>András Gilyén</name>
+    </author>
+  </entry>
+</feed>

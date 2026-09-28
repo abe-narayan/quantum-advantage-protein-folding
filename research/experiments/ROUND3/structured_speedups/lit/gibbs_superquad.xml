@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/cvELHq29njsH6eNWJ77BBn02AYQ</id>
+  <title>arXiv Query: search_query=abs:"super-quadratic" AND abs:quantum AND (abs:sampling OR abs:Monte)&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:26:32Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22super-quadratic%22+AND+(abs:quantum+AND+(abs:sampling+OR+abs:Monte))&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2509.06549v1</id>
+    <title>Super-Quadratic Quantum Speed-ups and Guessing Many Likely Keys</title>
+    <updated>2025-09-08T11:03:49Z</updated>
+    <link href="https://arxiv.org/abs/2509.06549v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.06549v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the fundamental problem of guessing cryptographic keys, drawn from some non-uniform probability distribution $D$, as e.g. in LPN, LWE or for passwords. The optimal classical algorithm enumerates keys in decreasing order of likelihood. The optimal quantum algorithm, due to Montanaro (2011), is a sophisticated Grover search.
+  We give the first tight analysis for Montanaro's algorithm, showing that its runtime is $2^{H_{2/3}(D)/2}$, where $H_α(\cdot)$ denotes Renyi entropy with parameter $α$. Interestingly, this is a direct consequence of an information theoretic result called Arikan's Inequality (1996) -- which has so far been missed in the cryptographic community -- that tightly bounds the runtime of classical key guessing by $2^{H_{1/2}(D)}$. Since $H_{2/3}(D) &lt; H_{1/2}(D)$ for every non-uniform distribution $D$, we thus obtain a super-quadratic quantum speed-up $s&gt;2$ over classical key guessing.
+  As another main result, we provide the first thorough analysis of guessing in a multi-key setting. Specifically, we consider the task of attacking many keys sampled independently from some distribution $D$, and aim to guess a fraction of them. For product distributions $D = χ^n$, we show that any constant fraction of keys can be guessed within $2^{H(D)}$ classically and $2 ^{H(D)/2}$ quantumly per key, where $H(χ)$ denotes Shannon entropy. In contrast, Arikan's Inequality implies that guessing a single key costs $2^{H_{1/2}(D)}$ classically and $2^{H_{2/3}(D)/2}$ quantumly. Since $H(D) &lt; H_{2/3}(D) &lt; H_{1/2}(D)$, this shows that in a multi-key setting the guessing cost per key is substantially smaller than in a single-key setting, both classically and quantumly.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-08T11:03:49Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Timo Glaser</name>
+    </author>
+    <author>
+      <name>Alexander May</name>
+    </author>
+    <author>
+      <name>Julian Nowakowski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.19538v1</id>
+    <title>Dynamics of discrete spacetimes with Quantum-enhanced Markov Chain Monte Carlo</title>
+    <updated>2025-06-24T11:47:02Z</updated>
+    <link href="https://arxiv.org/abs/2506.19538v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.19538v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum algorithms offer the potential for significant computational advantages; however, in many cases, it remains unclear how these advantages can be practically realized. Causal Set Theory is a discrete, Lorentz-invariant approach to quantum gravity which may be well positioned to benefit from quantum computing. In this work, we introduce a quantum algorithm that investigates the dynamics of causal sets by sampling the space of causal sets, improving on classical methods. Our approach builds on the quantum-enhanced Markov chain Monte Carlo technique developed by Layden et al. [Nature 619, 282 (2023)], adapting it to sample from the constrained spaces required for application. This is done by adding a constraint term to the Hamiltonian of the system. A qubit Hamiltonian representing the Benincasa-Dowker action (the causal set equivalent of the Einstein-Hilbert action) is also derived and used in the algorithm as the problem Hamiltonian. We achieve a super-quadratic quantum scaling advantage and, under some conditions, demonstrate a greater potential compared to classical approaches than previously observed in unconstrained QeMCMC implementations.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-24T11:47:02Z</published>
+    <arxiv:comment>11 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Stuart Ferguson</name>
+    </author>
+    <author>
+      <name>Arad Nasiri</name>
+    </author>
+    <author>
+      <name>Petros Wallden</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.23270v2</id>
+    <title>Generalized Short Path Algorithms: Towards Super-Quadratic Speedup over Markov Chain Search for Combinatorial Optimization</title>
+    <updated>2025-12-01T16:19:12Z</updated>
+    <link href="https://arxiv.org/abs/2410.23270v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.23270v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We analyze generalizations of quantum algorithms based on the short path framework first proposed by Hastings~[\textit{Quantum} 2, 78 (2018)], which has been extended and shown by Dalzell~et~al.~[STOC~'23] to achieve super-Grover speedups for certain binary optimization problems. We demonstrate that, under some commonly satisfied technical conditions, an appropriate generalization can achieve super-quadratic speedups not only over unstructured search but also over a classical optimization algorithm that searches for the optimum by drawing samples from the stationary distribution of a Markov chain. We employ this framework to obtain algorithms for problems including variants of Max Bisection, Max Independent Set, and finding the ground states of the Antiferromagnetic Ising Model and the Sherrington-Kirkpatrick Model, whose runtimes are asymptotically faster than those obtainable with previous short path techniques. In certain cases, our algorithms achieve super-quadratic speedups compared to the best known classical algorithms with rigorously established runtimes.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-30T17:52:56Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+    <author>
+      <name>Dylan Herman</name>
+    </author>
+    <author>
+      <name>Guneykan Ozgul</name>
+    </author>
+    <author>
+      <name>Shuchen Zhu</name>
+    </author>
+    <author>
+      <name>Brandon Augustino</name>
+    </author>
+    <author>
+      <name>Tianyi Hao</name>
+    </author>
+    <author>
+      <name>Zichang He</name>
+    </author>
+    <author>
+      <name>Ruslan Shaydulin</name>
+    </author>
+    <author>
+      <name>Marco Pistoia</name>
+    </author>
+  </entry>
+</feed>

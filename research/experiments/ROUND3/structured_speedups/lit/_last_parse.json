@@ -1,0 +1,113 @@
+[
+ {
+  "id": "2203.12497v1",
+  "date": "2022-03-23",
+  "title": "Quantum-enhanced Markov chain Monte Carlo",
+  "authors": [
+   "David Layden",
+   "Guglielmo Mazzola",
+   "Ryan V. Mishmash",
+   "Mario Motta",
+   "Pawel Wocjan",
+   "Jin-Sung Kim",
+   "Sarah Sheldon"
+  ],
+  "abstract": "Sampling from complicated probability distributions is a hard computational problem arising in many fields, including statistical physics, optimization, and machine learning. Quantum computers have recently been used to sample from complicated distributions that are hard to sample from classically, but which seldom arise in applications. Here we introduce a quantum algorithm to sample from distributions that pose a bottleneck in several applications, which we implement on a superconducting quantum processor. The algorithm performs Markov chain Monte Carlo (MCMC), a popular iterative sampling technique, to sample from the Boltzmann distribution of classical Ising models. In each step, the quantum processor explores the model in superposition to propose a random move, which is then accepted or rejected by a classical computer and returned to the quantum processor, ensuring convergence to the desired Boltzmann distribution. We find that this quantum algorithm converges in fewer iterations than common classical MCMC alternatives on relevant problem instances, both in simulations and experiments. It therefore opens a new path for quantum computers to solve useful--not merely difficult--problems in the near term.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2005.03791v2",
+  "date": "2020-05-07",
+  "title": "The Power of Adiabatic Quantum Computation with No Sign Problem",
+  "authors": [
+   "M. B. Hastings"
+  ],
+  "abstract": "We show a superpolynomial oracle separation between the power of adiabatic quantum computation with no sign problem and the power of classical computation.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "1802.10124v3",
+  "date": "2018-02-27",
+  "title": "A Short Path Quantum Algorithm for Exact Optimization",
+  "authors": [
+   "M. B. Hastings"
+  ],
+  "abstract": "We give a quantum algorithm to exactly solve certain problems in combinatorial optimization, including weighted MAX-2-SAT as well as problems where the objective function is a weighted sum of products of Ising variables, all terms of the same degree $D$; this problem is called weighted MAX-E$D$-LIN2. We require that the optimal solution be unique for odd $D$ and doubly degenerate for even $D$; however, we expect that the algorithm still works without this condition and we show how to reduce to the case without this assumption at the cost of an additional overhead. While the time required is still exponential, the algorithm provably outperforms Grover's algorithm assuming a mild condition on the number of low energy states of the target Hamiltonian. The detailed analysis of the runtime dependence on a tradeoff between the number of such states and algorithm speed: fewer such states allows a greater speedup. This leads to a natural hybrid algorithm that finds either an exact or approximate solution.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2602.23183v1",
+  "date": "2026-02-26",
+  "title": "Dequantization Barriers for Guided Stoquastic Hamiltonians",
+  "authors": [
+   "Yassine Hamoudi",
+   "Yvan Le Borgne",
+   "Shrinidhi Teganahally Sridhara"
+  ],
+  "abstract": "We construct a probability distribution, induced by the Perron--Frobenius eigenvector of an exponentially large graph, which cannot be efficiently sampled by any classical algorithm, even when provided with the best-possible warm-start distribution. In the quantum setting, this problem can be viewed as preparing the ground state of a stoquastic Hamiltonian given a guiding state as input, and is known to be efficiently solvable on a quantum computer. Our result suggests that no efficient classical algorithm can solve a broad class of stoquastic ground-state problems. Our graph is constructed from a class of high-degree, high-girth spectral expanders to which self-similar trees are attached. This builds on and extends prior work of Gily\u00e9n, Hastings, and Vazirani [Quantum 2021, STOC 2021], which ruled out dequantization for a specific stoquastic adiabatic path algorithm. We strengthen their result by ruling out any classical algorithm for guided ground-state preparation.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2204.02063v3",
+  "date": "2022-04-05",
+  "title": "Verifiable Quantum Advantage without Structure",
+  "authors": [
+   "Takashi Yamakawa",
+   "Mark Zhandry"
+  ],
+  "abstract": "We show the following hold, unconditionally unless otherwise stated, relative to a random oracle: - There are NP search problems solvable by quantum polynomial-time machines but not classical probabilistic polynomial-time machines. - There exist functions that are one-way, and even collision resistant, against classical adversaries but are easily inverted quantumly. Similar separations hold for digital signatures and CPA-secure public key encryption (the latter requiring the assumption of a classically CPA-secure encryption scheme). Interestingly, the separation does not necessarily extend to the case of other cryptographic objects such as PRGs. - There are unconditional publicly verifiable proofs of quantumness with the minimal rounds of interaction: for uniform adversaries, the proofs are non-interactive, whereas for non-uniform adversaries the proofs are two message public coin. - Our results do not appear to contradict the Aaronson-Ambanis conjecture. Assuming this conjecture, there exist publicly verifiable certifiable randomness, again with the minimal rounds of interaction. By replacing the random oracle with a concrete cryptographic hash function such as SHA2, we obtain plausible Minicrypt instantiations of the above results. Previous analogous results all required substantial structure, either in terms of highly structured oracles and/or algebraic assumptions in Cryptomania and beyond.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2404.14639v2",
+  "date": "2024-04-23",
+  "title": "Quantum computational advantage with constant-temperature Gibbs sampling",
+  "authors": [
+   "Thiago Bergamaschi",
+   "Chi-Fang Chen",
+   "Yunchao Liu"
+  ],
+  "abstract": "A quantum system coupled to a bath at some fixed, finite temperature converges to its Gibbs state. This thermalization process defines a natural, physically-motivated model of quantum computation. However, whether quantum computational advantage can be achieved within this realistic physical setup has remained open, due to the challenge of finding systems that thermalize quickly, but are classically intractable. Here we consider sampling from the measurement outcome distribution of quantum Gibbs states at constant temperatures, and prove that this task demonstrates quantum computational advantage. We design a family of commuting local Hamiltonians (parent Hamiltonians of shallow quantum circuits) and prove that they rapidly converge to their Gibbs states under the standard physical model of thermalization (as a continuous-time quantum Markov chain). On the other hand, we show that no polynomial time classical algorithm can sample from the measurement outcome distribution by reducing to the classical hardness of sampling from noiseless shallow quantum circuits. The key step in the reduction is constructing a fault-tolerance scheme for shallow IQP circuits against input noise.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2408.01516v4",
+  "date": "2024-08-02",
+  "title": "Gibbs Sampling gives Quantum Advantage at Constant Temperatures with O(1)-Local Hamiltonians",
+  "authors": [
+   "Joel Rajakumar",
+   "James D. Watson"
+  ],
+  "abstract": "Sampling from Gibbs states -- states corresponding to system in thermal equilibrium -- has recently been shown to be a task for which quantum computers are expected to achieve super-polynomial speed-up compared to classical computers, provided the locality of the Hamiltonian increases with the system size (Bergamaschi et al., arXiv: 2404.14639). We extend these results to show that this quantum advantage still occurs for Gibbs states of Hamiltonians with O(1)-local interactions at constant temperature by showing classical hardness-of-sampling and demonstrating such Gibbs states can be prepared efficiently using a quantum computer. In particular, we show hardness-of-sampling is maintained even for 5-local Hamiltonians on a 3D lattice. We additionally show that the hardness-of-sampling is robust when we are only able to make imperfect measurements.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2309.16596v1",
+  "date": "2023-09-28",
+  "title": "Local minima in quantum systems",
+  "authors": [
+   "Chi-Fang Chen",
+   "Hsin-Yuan Huang",
+   "John Preskill",
+   "Leo Zhou"
+  ],
+  "abstract": "Finding ground states of quantum many-body systems is known to be hard for both classical and quantum computers. As a result, when Nature cools a quantum system in a low-temperature thermal bath, the ground state cannot always be found efficiently. Instead, Nature finds a local minimum of the energy. In this work, we study the problem of finding local minima in quantum systems under thermal perturbations. While local minima are much easier to find than ground states, we show that finding a local minimum is computationally hard for classical computers, even when the task is to output a single-qubit observable at any local minimum. In contrast, we prove that a quantum computer can always find a local minimum efficiently using a thermal gradient descent algorithm that mimics the cooling process in Nature. To establish the classical hardness of finding local minima, we consider a family of two-dimensional Hamiltonians such that any problem solvable by polynomial-time quantum algorithms can be reduced to finding ground states of these Hamiltonians. We prove that for such Hamiltonians, all local minima are global minima. Therefore, assuming quantum computation is more powerful than classical computation, finding local minima is classically hard and quantumly easy.",
+  "src": "ids1.xml"
+ },
+ {
+  "id": "2609.28058v1",
+  "date": "2026-09-23",
+  "title": "Quantum Advantage in Topological Data Analysis via Mayer Homology",
+  "authors": [
+   "Nhat A. Nghiem",
+   "Ryan Babbush",
+   "Adam Zalcman",
+   "Dominic W. Berry",
+   "Trung V. Phan",
+   "Guo-Wei Wei",
+   "Ryu Hayakawa"
+  ],
+  "abstract": "Prior work has explored quantum algorithms for topological data analysis (TDA), revealing the possibility of exponential quantum speedups in estimating the ratios of Betti numbers to the dimension of the combinatorial Laplacian. However, this quantity is only non-vanishing and efficient-to-quantumly-estimate when Betti numbers are exponentially large, a case for which concrete examples are rarely known. Furthermore, certain randomized classical algorithms are sometimes efficient in this regime. Thus, the prospect of achieving quantum advantage in conventional TDA appears fairly narrow. Here, we address these challenges to the quantum advantage in TDA by developing quantum algorithms for Mayer homology, which generalize simplicial homology to $N$-nilpotent boundary operators ($\\partial^N =0$) and have recently been successfully applied to real-world TDA contexts. We introduce an efficient quantum algorithm for estimating Mayer Betti numbers and their persistent counterparts. We then prove that for high-order simplices, Mayer Betti numbers are often exponentially large in the dense regime, which ameliorates the normalization bottleneck of conventional quantum TDA. In the same regime, we argue that existing dequantization algorithms developed for conventional TDA, when applied to Mayer homology, generally lose theoretical guaranties, facing certain structural barriers that prevent their practical utilities. We also provide logical resource estimates revealing that a quantum computer with roughly a few hundred qubits and sixty million Toffoli gates could solve Mayer homology problems beyond the capabilities of known classical approaches. Finally, we discuss real-world applications of Mayer homology in genomics, supersymmetry, drug discovery, and neuroscience, revealing the potential of our quantum algorithm to deliver real-world impacts via Mayer homology.",
+  "src": "ids1.xml"
+ }
+]

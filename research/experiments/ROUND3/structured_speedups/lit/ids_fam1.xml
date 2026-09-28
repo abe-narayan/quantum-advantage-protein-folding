@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/MF1THb8iKy9vl0VGv7L8Wa8AdSU</id>
+  <title>arXiv Query: search_query=&amp;id_list=2504.14841,2602.23183,2212.01513,1802.10124,2410.23270,2406.19378,2607.29672,2508.09422,2510.08494,2510.07273,2510.03061,2509.25829,2411.16163,2203.12497,2403.03087,2408.07881,2602.06171&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:27:39Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=30&amp;id_list=2504.14841,2602.23183,2212.01513,1802.10124,2410.23270,2406.19378,2607.29672,2508.09422,2510.08494,2510.07273,2510.03061,2509.25829,2411.16163,2203.12497,2403.03087,2408.07881,2602.06171" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>17</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2203.12497v1</id>
+    <title>Quantum-enhanced Markov chain Monte Carlo</title>
+    <updated>2022-03-23T15:50:12Z</updated>
+    <link href="https://arxiv.org/abs/2203.12497v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.12497v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling from complicated probability distributions is a hard computational problem arising in many fields, including statistical physics, optimization, and machine learning. Quantum computers have recently been used to sample from complicated distributions that are hard to sample from classically, but which seldom arise in applications. Here we introduce a quantum algorithm to sample from distributions that pose a bottleneck in several applications, which we implement on a superconducting quantum processor. The algorithm performs Markov chain Monte Carlo (MCMC), a popular iterative sampling technique, to sample from the Boltzmann distribution of classical Ising models. In each step, the quantum processor explores the model in superposition to propose a random move, which is then accepted or rejected by a classical computer and returned to the quantum processor, ensuring convergence to the desired Boltzmann distribution. We find that this quantum algorithm converges in fewer iterations than common classical MCMC alternatives on relevant problem instances, both in simulations and experiments. It therefore opens a new path for quantum computers to solve useful--not merely difficult--problems in the near term.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-23T15:50:12Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nature 619, 282-287 (2023)</arxiv:journal_ref>
+    <author>
+      <name>David Layden</name>
+    </author>
+    <author>
+      <name>Guglielmo Mazzola</name>
+    </author>
+    <author>
+      <name>Ryan V. Mishmash</name>
+    </author>
+    <author>
+      <name>Mario Motta</name>
+    </author>
+    <author>
+      <name>Pawel Wocjan</name>
+    </author>
+    <author>
+      <name>Jin-Sung Kim</name>
+    </author>
+    <author>
+      <name>Sarah Sheldon</name>
+    </author>
+    <arxiv:doi>10.1038/s41586-023-06095-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41586-023-06095-4" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1802.10124v3</id>
+    <title>A Short Path Quantum Algorithm for Exact Optimization</title>
+    <updated>2018-07-19T17:04:56Z</updated>
+    <link href="https://arxiv.org/abs/1802.10124v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1802.10124v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give a quantum algorithm to exactly solve certain problems in combinatorial optimization, including weighted MAX-2-SAT as well as problems where the objective function is a weighted sum of products of Ising variables, all terms of the same degree $D$; this problem is called weighted MAX-E$D$-LIN2. We require that the optimal solution be unique for odd $D$ and doubly degenerate for even $D$; however, we expect that the algorithm still works without this condition and we show how to reduce to the case without this assumption at the cost of an additional overhead. While the time required is still exponential, the algorithm provably outperforms Grover's algorithm assuming a mild condition on the number of low energy states of the target Hamiltonian. The detailed analysis of the runtime dependence on a tradeoff between the number of such states and algorithm speed: fewer such states allows a greater speedup. This leads to a natural hybrid algorithm that finds either an exact or approximate solution.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-02-27T19:18:48Z</published>
+    <arxiv:comment>20 pages, 1 figure; v2 minor corrections and clarifications. v3 version published in Quantum</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>M. B. Hastings</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.07273v1</id>
+    <title>End-to-end quantum algorithms for tensor problems</title>
+    <updated>2025-10-08T17:37:48Z</updated>
+    <link href="https://arxiv.org/abs/2510.07273v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.07273v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a comprehensive end-to-end quantum algorithm for tensor problems, including tensor PCA and planted kXOR, that achieves potential superquadratic quantum speedups over classical methods. We build upon prior works by Hastings~(\textit{Quantum}, 2020) and Schmidhuber~\textit{et al.}~(\textit{Phys.~Rev.~X.}, 2025), we address key limitations by introducing a native qubit-based encoding for the Kikuchi method, enabling explicit quantum circuit constructions and non-asymptotic resource estimation. Our approach substantially reduces constant overheads through a novel guiding state preparation technique as well as circuit optimizations, reducing the threshold for a quantum advantage. We further extend the algorithmic framework to support recovery in sparse tensor PCA and tensor completion, and generalize detection to asymmetric tensors, demonstrating that the quantum advantage persists in these broader settings. Detailed resource estimates show that 900 logical qubits, $\sim 10^{15}$ gates and $\sim 10^{12}$ gate depth suffice for a problem that classically requires $\sim 10^{23}$ FLOPs. The gate count and depth for the same problem without the improvements presented in this paper would be at least $10^{19}$ and $10^{18}$ respectively. These advances position tensor problems as a candidate for quantum advantage whose resource requirements benefit significantly from algorithmic and compilation improvements; the magnitude of the improvements suggest that further enhancements are possible, which would make the algorithm viable for upcoming fault-tolerant quantum hardware.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-08T17:37:48Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Enrico Fontana</name>
+    </author>
+    <author>
+      <name>Sivaprasad Omanakuttan</name>
+    </author>
+    <author>
+      <name>Junhyung Lyle Kim</name>
+    </author>
+    <author>
+      <name>Joseph Sullivan</name>
+    </author>
+    <author>
+      <name>Michael Perlin</name>
+    </author>
+    <author>
+      <name>Ruslan Shaydulin</name>
+    </author>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03061v1</id>
+    <title>Smooth Trade-off for Tensor PCA via Sharp Bounds for Kikuchi Matrices</title>
+    <updated>2025-10-03T14:43:19Z</updated>
+    <link href="https://arxiv.org/abs/2510.03061v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03061v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we revisit algorithms for Tensor PCA: given an order-$r$ tensor of the form $T = G+λ\cdot v^{\otimes r}$ where $G$ is a random symmetric Gaussian tensor with unit variance entries and $v$ is an unknown boolean vector in $\{\pm 1\}^n$, what's the minimum $λ$ at which one can distinguish $T$ from a random Gaussian tensor and more generally, recover $v$? As a result of a long line of work, we know that for any $\ell \in \N$, there is a $n^{O(\ell)}$ time algorithm that succeeds when the signal strength $λ\gtrsim \sqrt{\log n} \cdot n^{-r/4} \cdot \ell^{1/2-r/4}$. The question of whether the logarithmic factor is necessary turns out to be crucial to understanding whether larger polynomial time allows recovering the signal at a lower signal strength. Such a smooth trade-off is necessary for tensor PCA being a candidate problem for quantum speedups[SOKB25]. It was first conjectured by [WAM19] and then, more recently, with an eye on smooth trade-offs, reiterated in a blogpost of Bandeira.
+  In this work, we resolve these conjectures and show that spectral algorithms based on the Kikuchi hierarchy \cite{WAM19} succeed whenever $λ\geq Θ_r(1) \cdot n^{-r/4} \cdot \ell^{1/2-r/4}$ where $Θ_r(1)$ only hides an absolute constant independent of $n$ and $\ell$. A sharp bound such as this was previously known only for $\ell \leq 3r/4$ via non-asymptotic techniques in random matrix theory inspired by free probability.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-03T14:43:19Z</published>
+    <arxiv:comment>SODA'26</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Pravesh K. Kothari</name>
+    </author>
+    <author>
+      <name>Jeff Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.19378v2</id>
+    <title>Quartic quantum speedups for planted inference</title>
+    <updated>2025-06-03T13:46:41Z</updated>
+    <link href="https://arxiv.org/abs/2406.19378v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.19378v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a quantum algorithm for the Planted Noisy $k$XOR problem (also known as sparse Learning Parity with Noise) that achieves a nearly quartic ($4$th power) speedup over the best known classical algorithm while also only using logarithmically many qubits. Our work generalizes and simplifies prior work of Hastings, by building on his quantum algorithm for the Tensor Principal Component Analysis (PCA) problem. We achieve our quantum speedup using a general framework based on the Kikuchi Method (recovering the quartic speedup for Tensor PCA), and we anticipate it will yield similar speedups for further planted inference problems. These speedups rely on the fact that planted inference problems naturally instantiate the Guided Sparse Hamiltonian problem. Since the Planted Noisy $k$XOR problem has been used as a component of certain cryptographic constructions, our work suggests that some of these are susceptible to super-quadratic quantum attacks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-27T17:54:28Z</published>
+    <arxiv:comment>Short version appeared in SODA 2025 and QIP 2025. Full version published in Phys. Rev. X</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. X 15, 021077 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Ryan O'Donnell</name>
+    </author>
+    <author>
+      <name>Robin Kothari</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevX.15.021077</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevX.15.021077" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.23183v1</id>
+    <title>Dequantization Barriers for Guided Stoquastic Hamiltonians</title>
+    <updated>2026-02-26T16:40:32Z</updated>
+    <link href="https://arxiv.org/abs/2602.23183v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.23183v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We construct a probability distribution, induced by the Perron--Frobenius eigenvector of an exponentially large graph, which cannot be efficiently sampled by any classical algorithm, even when provided with the best-possible warm-start distribution. In the quantum setting, this problem can be viewed as preparing the ground state of a stoquastic Hamiltonian given a guiding state as input, and is known to be efficiently solvable on a quantum computer. Our result suggests that no efficient classical algorithm can solve a broad class of stoquastic ground-state problems.
+  Our graph is constructed from a class of high-degree, high-girth spectral expanders to which self-similar trees are attached. This builds on and extends prior work of Gilyén, Hastings, and Vazirani [Quantum 2021, STOC 2021], which ruled out dequantization for a specific stoquastic adiabatic path algorithm. We strengthen their result by ruling out any classical algorithm for guided ground-state preparation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-26T16:40:32Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yassine Hamoudi</name>
+    </author>
+    <author>
+      <name>Yvan Le Borgne</name>
+    </author>
+    <author>
+      <name>Shrinidhi Teganahally Sridhara</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.07881v1</id>
+    <title>Quantum enhanced Markov chains require fine-tuned quenches</title>
+    <updated>2024-08-15T01:40:07Z</updated>
+    <link href="https://arxiv.org/abs/2408.07881v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.07881v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum-enhanced Markov chain Monte Carlo, an algorithm in which configurations are proposed through a measured quantum quench and accepted or rejected by a classical algorithm, has been proposed as a possible method for robust quantum speedup on imperfect quantum devices. While this procedure is resilient to noise and control imperfections, the potential for quantum advantage is unclear. By upper-bounding the gap of the Markov chain, we identify competing factors that limit the algorithm's performance. One needs the quantum dynamics to efficiently delocalize the system over a range of classical states, however, it is also detrimental to introduce too much entropy through the quench. Specifically, we show that in the long-time limit, the gap of the Markov chain is bounded by the inverse participation ratio of the classical states in the eigenstate basis, showing there is no advantage when quenching to an ergodic system. For the paradigmatic Sherrington-Kirkpatrick and 3-spin model, we identify the regime of optimal spectral gap scaling and link it to the system's eigenstate properties.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-15T01:40:07Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.23270v2</id>
+    <title>Generalized Short Path Algorithms: Towards Super-Quadratic Speedup over Markov Chain Search for Combinatorial Optimization</title>
+    <updated>2025-12-01T16:19:12Z</updated>
+    <link href="https://arxiv.org/abs/2410.23270v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.23270v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We analyze generalizations of quantum algorithms based on the short path framework first proposed by Hastings~[\textit{Quantum} 2, 78 (2018)], which has been extended and shown by Dalzell~et~al.~[STOC~'23] to achieve super-Grover speedups for certain binary optimization problems. We demonstrate that, under some commonly satisfied technical conditions, an appropriate generalization can achieve super-quadratic speedups not only over unstructured search but also over a classical optimization algorithm that searches for the optimum by drawing samples from the stationary distribution of a Markov chain. We employ this framework to obtain algorithms for problems including variants of Max Bisection, Max Independent Set, and finding the ground states of the Antiferromagnetic Ising Model and the Sherrington-Kirkpatrick Model, whose runtimes are asymptotically faster than those obtainable with previous short path techniques. In certain cases, our algorithms achieve super-quadratic speedups compared to the best known classical algorithms with rigorously established runtimes.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-30T17:52:56Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+    <author>
+      <name>Dylan Herman</name>
+    </author>
+    <author>
+      <name>Guneykan Ozgul</name>
+    </author>
+    <author>
+      <name>Shuchen Zhu</name>
+    </author>
+    <author>
+      <name>Brandon Augustino</name>
+    </author>
+    <author>
+      <name>Tianyi Hao</name>
+    </author>
+    <author>
+      <name>Zichang He</name>
+    </author>
+    <author>
+      <name>Ruslan Shaydulin</name>
+    </author>
+    <author>
+      <name>Marco Pistoia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.09422v1</id>
+    <title>A Classical Quadratic Speedup for Planted $k$XOR</title>
+    <updated>2025-08-13T01:45:47Z</updated>
+    <link href="https://arxiv.org/abs/2508.09422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.09422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A recent work of Schmidhuber et al (QIP, SODA, &amp; Phys. Rev. X 2025) exhibited a quantum algorithm for the noisy planted $k$XOR problem running quartically faster than all known classical algorithms. In this work, we design a new classical algorithm that is quadratically faster than the best previous one, in the case of large constant $k$. Thus for such $k$, the quantum speedup of Schmidhuber et al. becomes only quadratic (though it retains a space advantage). Our algorithm, which also works in the semirandom case, combines tools from sublinear-time algorithms (essentially, the birthday paradox) and polynomial anticoncentration.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-13T01:45:47Z</published>
+    <arxiv:comment>22 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Meghal Gupta</name>
+    </author>
+    <author>
+      <name>William He</name>
+    </author>
+    <author>
+      <name>Ryan O'Donnell</name>
+    </author>
+    <author>
+      <name>Noah G. Singer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.14841v1</id>
+    <title>(Sub)Exponential Quantum Speedup for Optimization</title>
+    <updated>2025-04-21T03:44:46Z</updated>
+    <link href="https://arxiv.org/abs/2504.14841v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.14841v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate provable (sub)exponential quantum speedups in both discrete and continuous optimization, achieved through simple and natural quantum optimization algorithms, namely the quantum adiabatic algorithm for discrete optimization and quantum Hamiltonian descent for continuous optimization. Our result builds on the Gilyén--Hastings--Vazirani (sub)exponential oracle separation for adiabatic quantum computing. With a sequence of perturbative reductions, we compile their construction into two standalone objective functions, whose oracles can be directly leveraged by the plain adiabatic evolution and Schrödinger operator evolution for discrete and continuous optimization, respectively.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-21T03:44:46Z</published>
+    <arxiv:comment>69 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Kewen Wu</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.16163v2</id>
+    <title>A Dequantized Algorithm for the Guided Local Hamiltonian Problem</title>
+    <updated>2024-11-26T02:33:20Z</updated>
+    <link href="https://arxiv.org/abs/2411.16163v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.16163v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The local Hamiltonian (LH) problem, the quantum analog of the classical constraint satisfaction problem, is a cornerstone of quantum computation and complexity theory. It is known to be QMA-complete, indicating that it is challenging even for quantum computers. Interestingly, the guided local Hamiltonian (GLH) problem -- an LH problem with a guiding state that has a non-trivial overlap with the ground state -- can be efficiently solved on a quantum computer and is proved to be BQP-complete. This makes the GLH problem a valuable framework for exploring the fundamental separation between classical and quantum computation. Remarkably, the quantum algorithm for solving the GLH problem can be `dequantized' (i.e., made classically simulatable) under certain conditions, such as when only constant accuracy is required and when the Hamiltonian satisfies an unrealistic constant operator norm constraint. In this work, we relieve these restrictions by introducing a dequantized classical algorithm for a randomized quantum imaginary-time evolution quantum algorithm. We demonstrate that it achieves either limited or arbitrary constant accuracy, depending on whether the guiding state's overlap is general or exceeds a certain threshold. Crucially, our approach eliminates the constant operator norm constraint on the Hamiltonian, opening its applicability to realistic problems. Our results advance the classical solution of the GLH problem in practical settings and provide new insights into the boundary between classical and quantum computational power.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-25T07:38:16Z</published>
+    <arxiv:comment>25 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yukun Zhang</name>
+    </author>
+    <author>
+      <name>Yusen Wu</name>
+    </author>
+    <author>
+      <name>Xiao Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.03087v1</id>
+    <title>Bounding speedup of quantum-enhanced Markov chain Monte Carlo</title>
+    <updated>2024-03-05T16:20:01Z</updated>
+    <link href="https://arxiv.org/abs/2403.03087v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.03087v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling tasks are a natural class of problems for quantum computers due to the probabilistic nature of the Born rule. Sampling from useful distributions on noisy quantum hardware remains a challenging problem. A recent paper [Layden, D. et al. Nature 619, 282-287 (2023)] proposed a quantum-enhanced Markov chain Monte Carlo algorithm where moves are generated by a quantum device and accepted or rejected by a classical algorithm. While this procedure is robust to noise and control imperfections, its potential for quantum advantage is unclear. Here we show that there is no speedup over classical sampling on a worst-case unstructured sampling problem. We present an upper bound to the Markov gap that rules out a speedup for any unital quantum proposal.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-05T16:20:01Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08494v1</id>
+    <title>Quartic quantum speedups for community detection</title>
+    <updated>2025-10-09T17:35:17Z</updated>
+    <link href="https://arxiv.org/abs/2510.08494v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08494v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Community detection is a foundational problem in data science. Its natural extension to hypergraphs captures higher-order correlations beyond pairwise interactions. In this work, we develop a quantum algorithm for hypergraph community detection that achieves a quartic quantum speedup over the best known classical algorithm, along with superpolynomial savings in space. Our algorithm is based on the Kikuchi method, which we extend beyond previously considered problems such as Tensor PCA and $p$XORSAT to a broad family of generalized stochastic block models. To demonstrate (near) optimality of this method, we prove matching lower bounds (up to logarithmic factors) in the low-degree framework, showing that the algorithm saturates a smooth statistical-computational tradeoff. The quantum speedup arises from a quantized version of the Kikuchi method and is based on the efficient preparation of a guiding state correlated with the underlying community structure. Our work suggests that prior quantum speedups using the Kikuchi method are sufficiently robust to encompass a broader set of problems than previously believed; we conjecture that a quantity known as marginal order characterizes the existence of these quantum speedups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T17:35:17Z</published>
+    <arxiv:comment>40 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Alexander Zlokapa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.01513v2</id>
+    <title>Mind the gap: Achieving a super-Grover quantum speedup by jumping to the end</title>
+    <updated>2026-02-21T00:22:28Z</updated>
+    <link href="https://arxiv.org/abs/2212.01513v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.01513v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a quantum algorithm that has rigorous runtime guarantees for several families of binary optimization problems, including Quadratic Unconstrained Binary Optimization (QUBO), Ising spin glasses ($p$-spin model), and $k$-local constraint satisfaction problems ($k$-CSP). We show that either (a) the algorithm finds the optimal solution in time $O^*(2^{(0.5-c)n})$ for an $n$-independent constant $c$, a $2^{cn}$ advantage over Grover's algorithm; or (b) there are sufficiently many low-cost solutions such that classical random guessing produces a $(1-η)$ approximation to the optimal cost value in sub-exponential time for arbitrarily small choice of $η$. Additionally, we show that for a large fraction of random instances from the $k$-spin model and for any sufficiently close-to-regular, fully satisfiable (or slightly frustrated) $k$-CSP formula, statement (a) is the case. The algorithm and its analysis is largely inspired by Hastings' short-path algorithm [$\textit{Quantum}$ $\textbf{2}$ (2018) 78].</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-03T02:45:23Z</published>
+    <arxiv:comment>54 pages, 3 figures. v2: updated to fix error in part of Theorem 7 regarding its scope of applicability, see Footnote 2</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander M. Dalzell</name>
+    </author>
+    <author>
+      <name>Nicola Pancotti</name>
+    </author>
+    <author>
+      <name>Earl T. Campbell</name>
+    </author>
+    <author>
+      <name>Fernando G. S. L. Brandão</name>
+    </author>
+    <arxiv:doi>10.1145/3564246.3585203</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3564246.3585203" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.06171v2</id>
+    <title>Quantum-enhanced Markov Chain Monte Carlo for Combinatorial Optimization</title>
+    <updated>2026-03-27T11:57:21Z</updated>
+    <link href="https://arxiv.org/abs/2602.06171v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.06171v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computing offers an alternative paradigm for addressing combinatorial optimization problems compared to classical computing. Despite recent hardware improvements, the execution of empirical quantum optimization experiments at scales known to be hard for state-of-the-art classical solvers is not yet in reach. In this work, we offer a different way to approach combinatorial optimization with near-term quantum computing. Motivated by the promising results observed in using quantum-enhanced Markov chain Monte Carlo (QeMCMC) for approximating complicated probability distributions, we combine ideas of sampling from the device with QeMCMC together with warm-starting and parallel tempering, in the context of combinatorial optimization. We demonstrate empirically that our algorithm recovers the global optima for instances of the Maximum Independent Set problem (MIS) up to 117 decision variables using 117 qubits on IBM quantum hardware. We show early evidence of a scaling advantage of our algorithm compared to similar classical methods for the chosen instances of MIS. MIS is practically relevant across domains like financial services and molecular biology, and, in some cases, already difficult to solve to optimality classically with only a few hundred decision variables.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-05T20:20:54Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Kate V. Marshall</name>
+    </author>
+    <author>
+      <name>Daniel J. Egger</name>
+    </author>
+    <author>
+      <name>Michael Garn</name>
+    </author>
+    <author>
+      <name>Francesca Schiavello</name>
+    </author>
+    <author>
+      <name>Sebastian Brandhofer</name>
+    </author>
+    <author>
+      <name>Christa Zoufal</name>
+    </author>
+    <author>
+      <name>Stefan Woerner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.25829v2</id>
+    <title>The Guided Local Hamiltonian Problem for Stoquastic Hamiltonians</title>
+    <updated>2026-05-07T01:29:30Z</updated>
+    <link href="https://arxiv.org/abs/2509.25829v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.25829v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show that the Guided Local Hamiltonian problem for stoquastic Hamiltonians is (promise) BPP-hard. The Guided Local Hamiltonian problem extends the Local Hamiltonian problem by incorporating an additional input known as a guiding state, which is promised to overlap with the ground state. For a range of local Hamiltonian families, prior work shows this problem is (promise) BQP-hard, though for stoquastic Hamiltonians, the complexity was previously unknown. We obtain our results by first reducing from quantum-inspired BPP circuits to 6-local stoquastic Hamiltonians. We prove particular classes of quantum states, known as semi-classical encoded subset states, can guide the estimation of the ground-state energy. Our analysis shows that this BPP-hardness does not depend on locality, i.e., the result holds for 2-local stoquastic Hamiltonians. Additional arguments extend this BPP-hardness to Hamiltonians restricted to a square lattice. We further show that for stoquastic Hamiltonians with a fixed local constraint on a subset of the system qubits, the Guided Local Hamiltonian problem is BQP-hard. In addition to these hardness results, we present a deterministic classical approximation algorithm for the problem under the conditions of constant promise gap, constant overlap, and constant spectral gap, when the guiding state is preparable in constant depth by a geometrically local circuit.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T06:11:26Z</published>
+    <arxiv:comment>12 + 7 pages; 1 figure; 1 table; v2: added a deterministic classical approximation algorithm, minor grammatical edits;</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Gabriel Waite</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29672v1</id>
+    <title>The Kikuchi Hierarchy is Sharp for $k$XOR</title>
+    <updated>2026-07-31T17:54:11Z</updated>
+    <link href="https://arxiv.org/abs/2607.29672v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29672v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Planted noisy $k$XOR and the strong refutation of random $k$XOR are governed by a conjectured trade-off between signal strength and time: Level $\ell$ of the Kikuchi hierarchy should achieve the smooth curve \begin{equation*}
+  m\ \gtrsim\ ρ^{-2}n^{k/2}/\ell^{k/2-1}\ \text{clauses}
+  \quad\Longleftrightarrow\quad
+  \text{solvable in time }n^{O(\ell)}, \end{equation*} where $ρ$ is the bias of the planted signal or, for refutation, the target advantage. However, every spectral analysis of sparse $k$XOR to date loses polylogarithmic factors against this curve, a loss that enters the exponent of the running time.
+  We show that a normalized variant of the Kikuchi hierarchy achieves the sharp conjectured trade-off, with no logarithmic loss, at every arity $k\ge3$. At the scale above, our algorithms achieve strong detection, weak recovery, and strong refutation; an additional cleanup step boosts weak recovery to exact recovery, and the refutation certificates yield sum-of-squares proofs of degree $O_k(\ell)$. We also prove matching lower bounds in the same model. The inference and refutation upper bounds transfer to more general planting laws and predicates. Finally, we give a quantum algorithm that achieves a quartic speedup over the classical spectral algorithms for detection and weak recovery.
+  The proofs rest on two key ingredients: a normalization of the sparse Kikuchi matrix, and a sharp count of the closed walks in its trace expansion. We use a closely related trace-walk count to prove Feige's 2008 hypergraph Moore bound conjecture in a companion paper.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T17:54:11Z</published>
+    <arxiv:comment>Companion paper to arXiv:2607.26028</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Matthew B. Hastings</name>
+    </author>
+  </entry>
+</feed>

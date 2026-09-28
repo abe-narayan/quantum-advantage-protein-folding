@@ -1,0 +1,46 @@
+{
+  "lane": "new_mechanisms_A",
+  "written": "2026-09-28T09:25-07:00, BEFORE any test was run",
+  "note": "Pre-registration of the three falsification tests (T1-T3) for the candidate mechanisms NA-1..NA-3. Mechanisms NA-4..NA-9 are assessed by derivation only (no run). Tags: MEASURED / DERIVED / THEORETICAL / LITERATURE-SUPPORTED / INFERENCE / UNPROVEN.",
+  "compute_rules": "single-threaded (OMP/MKL/OPENBLAS=1), each run <= 15 CPU-min and <= 2 GB, lane total <= 45 CPU-min; checkpoint any run > 5 min with atomic tmp+replace.",
+  "T1": {
+    "mechanism": "NA-1 programmable Gaussian boson sampling (GBS) whose kernel B = c*W encodes the native-free ESM-prior long-range contact odds W_ij = p_ij/(1-p_ij) (|i-j|>=6). Collision-free, fixed photon number 2k: P(S) proportional to Haf(W_S)^2 (Hamilton et al. PRL 119,170501). S = 2k residues; structural hypothesis = max-weight perfect matching M*(S) inside S (k contact pairs: beta-ladder / pairing / contact cluster seeds).",
+    "hypothesis_for_quantum": "The squared-hafnian (beta=2) distribution is a privileged proposal distribution: it gives contact-pair proposals that no classically efficient sampler matches on both precision and coverage.",
+    "comparators_classically_efficient_at_any_k": [
+      "beta=0 uniform subsets",
+      "beta=1: S ~ Haf(W_S) = k-matching (monomer-dimer) Gibbs measure, FPRAS-samplable (Jerrum-Sinclair; LITERATURE, not re-verified this session)",
+      "beta=inf proxy: greedy max-weight k-matching (deterministic) and perturb-and-MAP (Gumbel-perturbed greedy, temperature tau tuned on the same crops' native-free statistics only - tau grid reported in full, no native-based selection)",
+      "edge sampler: k disjoint edges drawn sequentially with prob ~ w^gamma, gamma in {1,2}"
+    ],
+    "also_reported_not_counted_as_efficient": "beta in {0.5,1.5,3,4,8} via exact-hafnian Metropolis (classically trivial at these k).",
+    "data": "16 ladder chains, crops L=60 and L=100 (contact_prob = esmprior_v1, native-free, DEP). k in {3,5}. N=200 proposals per (crop, sampler).",
+    "metrics_ORACLE_evaluation_only": {
+      "prec": "mean over proposals of fraction of the k pairs in M*(S) that are native contacts (CA-CA < 8 A, |i-j|>=6)",
+      "allc": "fraction of proposals whose k pairs are all native",
+      "cov": "number of distinct native contacts in the union of the N proposals' pairs"
+    },
+    "analysis": "Per crop, compute metrics for every sampler. beta=2 is 'privileged' on a crop if it is strictly better than EVERY classically efficient comparator on at least one of (prec, cov) without being worse on the other by more than the paired bootstrap 95% CI. Pooled: paired Wilcoxon signed-rank of beta=2 vs the best efficient comparator per metric.",
+    "kill": "KILL NA-1 if beta=2 is privileged on < 75% of (crop,k,L) cells, i.e. some classically efficient sampler Pareto-matches or dominates it (within CI) on >= 25% of cells; OR if the metrics vary monotonically/smoothly in beta so that beta=2 is an interior point of a classical tempering family whose classically efficient endpoints (beta=1, beta=inf, perturb-and-MAP) cover the same Pareto front.",
+    "second_kill_route_classical_emulation": "Double-dimer Metropolis sampler (state (S,M1,M2), weight w(M1)w(M2), vertex-swap + 2-pair rematch moves; marginal over S is exactly Haf(W_S)^2 for nonnegative W). KILL the sampling-advantage premise for this kernel class if (a) at L=30,k=3 its vertex marginals match the EXACT enumerated Haf^2 distribution to within MC error (TV of vertex marginals < 0.05) and (b) at k=10..30 (20..60 photons) two independent chains agree (max |marginal difference| < 0.05, R-hat of log-weight < 1.1) within <= 2 CPU-min per chain.",
+    "support": "SUPPORT only if beta=2 is privileged on >= 75% of cells AND the double-dimer emulator fails its mixing criterion at k>=10."
+  },
+  "T2": {
+    "mechanism": "NA-2 low-temperature methyl-rotor tunnelling network as a quantum forward model of core packing. Methyls are 3-fold quantum rotors (B ~ 0.655 meV); tunnelling splittings depend exponentially on barriers V3 set by packing; rotor-rotor (gearing) couplings make the lowest band a 3^N-state many-body problem.",
+    "hypothesis_for_quantum": "The coupled-rotor tunnelling spectrum of a protein core is (a) observable (splittings above ~0.1-1 ueV INS resolution), (b) carries structural information in the many-body (non-additive) part, and (c) that part is beyond low-order classical cluster expansion.",
+    "classical_competitors": "Per-rotor C3 symmetry makes H block-diagonal in Z3^N labels (DERIVED, exact); single-rotor Mathieu problem; Hartree mean-field; pair cluster expansion (exact 2-rotor sectors); instanton/WKB.",
+    "data": "1UBQ_H.pdb (OpenMM-protonated; ORACLE-free here because the task is a physics forward model on a given structure, not structure selection). All methyls of Ala/Val/Leu/Ile/Thr/Met; inter-methyl H...H/H...C interactions from AMBER-type LJ; intrinsic barrier V3 scanned 10-150 meV.",
+    "measurements": [
+      "single-rotor splitting Delta(V3) (exact, plane-wave basis, convergence checked)",
+      "for every methyl pair with closest H..H < 3.5 A: exact 2-rotor symmetry-sector energies, non-additivity J = max |E(s1,s2)-E(s1,0)-E(0,s2)+E(0,0)| and Hartree mean-field error, at V3 in {30, 60, 100} meV",
+      "one 3-rotor cluster (tightest triangle) at V3=30 meV: 3-body residual after pair cluster expansion"
+    ],
+    "kill": "KILL NA-2 if (i) at protein-typical barriers (>= 80 meV, LITERATURE-typical, unverified) Delta < 0.1 ueV (unobservable), AND/OR (ii) max |J| and the mean-field error are < 1% of Delta or < 0.1 ueV for all pairs, and the 3-body residual < 1% of Delta (quantum many-body part negligible and classically captured).",
+    "support": "SUPPORT only if some pair has |J| >= 10% of Delta with Delta >= 1 ueV at a physically plausible barrier AND the 3-body residual >= 10%."
+  },
+  "T3": {
+    "mechanism": "NA-3 quantum SDP solvers (van Apeldoorn-Gilyen ICALP 2019: O~((sqrt(m)+sqrt(n) gamma) s gamma^4), gamma = R r / eps; arXiv 1804.05058, verified) applied to Gram/EDM SDP relaxations of restraint-based structure determination.",
+    "classical_competitors": "Burer-Monteiro rank-3 stress minimisation (L-BFGS) from native-free ESM expected distances; dense projected-gradient SDP.",
+    "measurements": "classical wall-clock on ladder crops L=30..150 (DEP inputs), achieved restraint residual; gamma required for a 1 A-RMS-meaningful solution; quantum query lower bound with all polylogs and oracle costs set to 1 (quantum-favourable).",
+    "kill": "KILL NA-3 if the quantum query lower bound (in oracle calls, each >= 1 logical op at 1 us) exceeds the measured classical wall-clock at every L <= 150 and the extrapolated break-even n exceeds 1e6 residues."
+  }
+}

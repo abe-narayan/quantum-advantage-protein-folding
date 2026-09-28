@@ -1,0 +1,620 @@
+{
+ "C1_early_window": {
+  "times_us_checked": [
+   40,
+   80,
+   120
+  ],
+  "sigma": 0.01,
+  "rows": [
+   {
+    "probe": "p19",
+    "t_us": 40,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.6005,
+    "step_F_last": 0.0012,
+    "floor_last": 0.0294,
+    "H_last": 0.3836,
+    "H_inf": 0.3508,
+    "F_last_minus_Finf_hybrid": 0.0622,
+    "in_sigma": 6.2,
+    "dX_last": -0.0013,
+    "dX_prev": -0.0028,
+    "X_two_consecutive_steps_le_0p005": true,
+    "verifier_flag_X_flat": true,
+    "hybrid_H_error_budget": 0.01
+   },
+   {
+    "probe": "p19",
+    "t_us": 40,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.8712,
+    "step_F_last": 0.0005,
+    "floor_last": 0.0294,
+    "H_last": 0.3836,
+    "H_inf": 0.3508,
+    "F_last_minus_Finf_hybrid": 0.0622,
+    "in_sigma": 6.2,
+    "dX_last": -0.003,
+    "dX_prev": 0.0062,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": true,
+    "hybrid_H_error_budget": 0.01
+   },
+   {
+    "probe": "p19",
+    "t_us": 40,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.9527,
+    "step_F_last": 0.0057,
+    "floor_last": 0.0294,
+    "H_last": 0.3836,
+    "H_inf": 0.3508,
+    "F_last_minus_Finf_hybrid": 0.0622,
+    "in_sigma": 6.2,
+    "dX_last": 0.0032,
+    "dX_prev": 0.0075,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": true,
+    "hybrid_H_error_budget": 0.01
+   },
+   {
+    "probe": "p19",
+    "t_us": 40,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.9538,
+    "step_F_last": 0.0004,
+    "floor_last": 0.0294,
+    "H_last": 0.3836,
+    "H_inf": 0.3508,
+    "F_last_minus_Finf_hybrid": 0.0622,
+    "in_sigma": 6.2,
+    "dX_last": -0.0021,
+    "dX_prev": 0.005,
+    "X_two_consecutive_steps_le_0p005": true,
+    "verifier_flag_X_flat": true,
+    "hybrid_H_error_budget": 0.01
+   },
+   {
+    "probe": "p19",
+    "t_us": 80,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.375,
+    "step_F_last": 0.0026,
+    "floor_last": 0.0399,
+    "H_last": 0.1761,
+    "H_inf": 0.1434,
+    "F_last_minus_Finf_hybrid": 0.0725,
+    "in_sigma": 7.3,
+    "dX_last": -0.0008,
+    "dX_prev": -0.0846,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0073
+   },
+   {
+    "probe": "p19",
+    "t_us": 80,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.5227,
+    "step_F_last": 0.0057,
+    "floor_last": 0.0399,
+    "H_last": 0.1761,
+    "H_inf": 0.1434,
+    "F_last_minus_Finf_hybrid": 0.0725,
+    "in_sigma": 7.3,
+    "dX_last": -0.0039,
+    "dX_prev": 0.0064,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": true,
+    "hybrid_H_error_budget": 0.0073
+   },
+   {
+    "probe": "p19",
+    "t_us": 80,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.811,
+    "step_F_last": 0.0115,
+    "floor_last": 0.0399,
+    "H_last": 0.1761,
+    "H_inf": 0.1434,
+    "F_last_minus_Finf_hybrid": 0.0725,
+    "in_sigma": 7.3,
+    "dX_last": -0.0097,
+    "dX_prev": 0.0044,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0073
+   },
+   {
+    "probe": "p19",
+    "t_us": 80,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.7608,
+    "step_F_last": 0.001,
+    "floor_last": 0.0399,
+    "H_last": 0.1761,
+    "H_inf": 0.1434,
+    "F_last_minus_Finf_hybrid": 0.0725,
+    "in_sigma": 7.3,
+    "dX_last": 0.0008,
+    "dX_prev": -0.0235,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0073
+   },
+   {
+    "probe": "p19",
+    "t_us": 120,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.2787,
+    "step_F_last": 0.0055,
+    "floor_last": 0.0424,
+    "H_last": 0.1215,
+    "H_inf": 0.0823,
+    "F_last_minus_Finf_hybrid": 0.0816,
+    "in_sigma": 8.2,
+    "dX_last": 0.001,
+    "dX_prev": -0.0628,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0063
+   },
+   {
+    "probe": "p19",
+    "t_us": 120,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.4922,
+    "step_F_last": 0.0145,
+    "floor_last": 0.0424,
+    "H_last": 0.1215,
+    "H_inf": 0.0823,
+    "F_last_minus_Finf_hybrid": 0.0816,
+    "in_sigma": 8.2,
+    "dX_last": -0.0079,
+    "dX_prev": 0.0053,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0063
+   },
+   {
+    "probe": "p19",
+    "t_us": 120,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.6513,
+    "step_F_last": 0.0372,
+    "floor_last": 0.0424,
+    "H_last": 0.1215,
+    "H_inf": 0.0823,
+    "F_last_minus_Finf_hybrid": 0.0816,
+    "in_sigma": 8.2,
+    "dX_last": -0.0307,
+    "dX_prev": -0.0282,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0063
+   },
+   {
+    "probe": "p19",
+    "t_us": 120,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.5654,
+    "step_F_last": 0.0017,
+    "floor_last": 0.0424,
+    "H_last": 0.1215,
+    "H_inf": 0.0823,
+    "F_last_minus_Finf_hybrid": 0.0816,
+    "in_sigma": 8.2,
+    "dX_last": 0.0048,
+    "dX_prev": -0.0582,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0063
+   },
+   {
+    "probe": "p245",
+    "t_us": 40,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.979,
+    "step_F_last": 0.0,
+    "floor_last": 0.0314,
+    "H_last": 0.3655,
+    "H_inf": 0.3662,
+    "F_last_minus_Finf_hybrid": 0.0307,
+    "in_sigma": 3.1,
+    "dX_last": 0.0076,
+    "dX_prev": -0.0023,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0159
+   },
+   {
+    "probe": "p245",
+    "t_us": 40,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.6988,
+    "step_F_last": 0.0026,
+    "floor_last": 0.0314,
+    "H_last": 0.3655,
+    "H_inf": 0.3662,
+    "F_last_minus_Finf_hybrid": 0.0308,
+    "in_sigma": 3.1,
+    "dX_last": 0.0102,
+    "dX_prev": 0.0005,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0159
+   },
+   {
+    "probe": "p245",
+    "t_us": 40,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.9551,
+    "step_F_last": 0.0,
+    "floor_last": 0.0314,
+    "H_last": 0.3655,
+    "H_inf": 0.3662,
+    "F_last_minus_Finf_hybrid": 0.0308,
+    "in_sigma": 3.1,
+    "dX_last": 0.0075,
+    "dX_prev": 0.0005,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0159
+   },
+   {
+    "probe": "p245",
+    "t_us": 40,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.9746,
+    "step_F_last": 0.0004,
+    "floor_last": 0.0314,
+    "H_last": 0.3655,
+    "H_inf": 0.3662,
+    "F_last_minus_Finf_hybrid": 0.0307,
+    "in_sigma": 3.1,
+    "dX_last": 0.0073,
+    "dX_prev": -0.0021,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0159
+   },
+   {
+    "probe": "p245",
+    "t_us": 80,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.7627,
+    "step_F_last": 0.0063,
+    "floor_last": 0.043,
+    "H_last": 0.1296,
+    "H_inf": 0.1285,
+    "F_last_minus_Finf_hybrid": 0.0441,
+    "in_sigma": 4.4,
+    "dX_last": 0.0159,
+    "dX_prev": 0.0088,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0091
+   },
+   {
+    "probe": "p245",
+    "t_us": 80,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.4206,
+    "step_F_last": 0.0027,
+    "floor_last": 0.043,
+    "H_last": 0.1296,
+    "H_inf": 0.1285,
+    "F_last_minus_Finf_hybrid": 0.0442,
+    "in_sigma": 4.4,
+    "dX_last": 0.0123,
+    "dX_prev": -0.0053,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0091
+   },
+   {
+    "probe": "p245",
+    "t_us": 80,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.7737,
+    "step_F_last": 0.0038,
+    "floor_last": 0.043,
+    "H_last": 0.1296,
+    "H_inf": 0.1285,
+    "F_last_minus_Finf_hybrid": 0.0442,
+    "in_sigma": 4.4,
+    "dX_last": 0.0058,
+    "dX_prev": 0.0656,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0091
+   },
+   {
+    "probe": "p245",
+    "t_us": 80,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.9374,
+    "step_F_last": 0.0003,
+    "floor_last": 0.043,
+    "H_last": 0.1296,
+    "H_inf": 0.1285,
+    "F_last_minus_Finf_hybrid": 0.0442,
+    "in_sigma": 4.4,
+    "dX_last": 0.0093,
+    "dX_prev": 0.0089,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0091
+   },
+   {
+    "probe": "p245",
+    "t_us": 120,
+    "site": 1,
+    "N_last": 18,
+    "F_last": 0.4936,
+    "step_F_last": 0.0202,
+    "floor_last": 0.0448,
+    "H_last": 0.0917,
+    "H_inf": 0.0579,
+    "F_last_minus_Finf_hybrid": 0.0786,
+    "in_sigma": 7.9,
+    "dX_last": 0.0318,
+    "dX_prev": 0.0077,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0107
+   },
+   {
+    "probe": "p245",
+    "t_us": 120,
+    "site": 7,
+    "N_last": 18,
+    "F_last": 0.2674,
+    "step_F_last": 0.0025,
+    "floor_last": 0.0448,
+    "H_last": 0.0917,
+    "H_inf": 0.0579,
+    "F_last_minus_Finf_hybrid": 0.0787,
+    "in_sigma": 7.9,
+    "dX_last": 0.0141,
+    "dX_prev": -0.0151,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0107
+   },
+   {
+    "probe": "p245",
+    "t_us": 120,
+    "site": 8,
+    "N_last": 18,
+    "F_last": 0.6116,
+    "step_F_last": 0.0207,
+    "floor_last": 0.0448,
+    "H_last": 0.0917,
+    "H_inf": 0.0579,
+    "F_last_minus_Finf_hybrid": 0.0787,
+    "in_sigma": 7.9,
+    "dX_last": -0.0092,
+    "dX_prev": 0.1464,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0107
+   },
+   {
+    "probe": "p245",
+    "t_us": 120,
+    "site": 9,
+    "N_last": 18,
+    "F_last": 0.8957,
+    "step_F_last": 0.0016,
+    "floor_last": 0.0448,
+    "H_last": 0.0917,
+    "H_inf": 0.0579,
+    "F_last_minus_Finf_hybrid": 0.0786,
+    "in_sigma": 7.9,
+    "dX_last": 0.01,
+    "dX_prev": 0.0085,
+    "X_two_consecutive_steps_le_0p005": false,
+    "verifier_flag_X_flat": false,
+    "hybrid_H_error_budget": 0.0107
+   }
+  ],
+  "notes": [
+   "F_inf_hybrid = H_inf(CSD N_c>=80 + exact-CSD offset at N=20) + X_last (floor -> 0); this is the verification lane's own estimator, not a new one. The floor term is exact and b-independent."
+  ],
+  "summary": {
+   "n_series": 24,
+   "step_statistic_passes_sigma": 19,
+   "finite_N_F_more_than_3sigma_from_hybrid_Finf": 24,
+   "range_F_last_minus_Finf": [
+    0.0307,
+    0.0816
+   ],
+   "floor_range": [
+    0.0294,
+    0.0448
+   ],
+   "X_two_step_flat": 2,
+   "verifier_X_flat": 5,
+   "hybrid_H_error_budget_range": [
+    0.0063,
+    0.0159
+   ],
+   "t40_only": {
+    "step_passes": 8,
+    "gt3sigma_from_Finf": 8,
+    "X_two_step_flat": 2
+   }
+  },
+  "p245_t40_dX_last_by_site": [
+   0.0076,
+   0.0102,
+   0.0075,
+   0.0073
+  ]
+ },
+ "C2_methyl_rotor": {
+  "single_rotor": {
+   "20.0": {
+    "Delta_ueV": 38.51843080384754,
+    "Delta_Hz": 9313715132.650139
+   },
+   "30.0": {
+    "Delta_ueV": 10.31106131463666,
+    "Delta_Hz": 2493203533.8838935
+   },
+   "40.0": {
+    "Delta_ueV": 3.2237438858633283,
+    "Delta_Hz": 779497803.6995863
+   },
+   "50.0": {
+    "Delta_ueV": 1.1266258907394189,
+    "Delta_Hz": 272416928.42708
+   },
+   "60.0": {
+    "Delta_ueV": 0.4282935572259561,
+    "Delta_Hz": 103560921.40579857
+   },
+   "80.0": {
+    "Delta_ueV": 0.07460782864754378,
+    "Delta_Hz": 18040092.708537523
+   },
+   "100.0": {
+    "Delta_ueV": 0.015604229258059377,
+    "Delta_Hz": 3773085.8485442917
+   },
+   "120.0": {
+    "Delta_ueV": 0.0037325736759186157,
+    "Delta_Hz": 902532.2995676718
+   },
+   "150.0": {
+    "Delta_ueV": 0.0005272938246037029,
+    "Delta_Hz": 127499.0795594383
+   }
+  },
+  "dlnDelta_dV3_per_meV": {
+   "30.0": 0.124,
+   "40.0": 0.1107,
+   "50.0": 0.1009,
+   "60.0": 0.0905,
+   "80.0": 0.0828,
+   "100.0": 0.0749,
+   "120.0": 0.0678
+  },
+  "per_V3": {
+   "30": {
+    "dressed_Delta_Hz_range": [
+     330207.1841964749,
+     18971910531.466415
+    ],
+    "max_abs_J_Hz": 15416160.503403444,
+    "median_rel_mf_err": 0.4017048510264833,
+    "equivalent_barrier_shift_meV_of_median_mf_err": 2.72
+   },
+   "60": {
+    "dressed_Delta_Hz_range": [
+     1000.0902265794888,
+     528000755.48056847
+    ],
+    "max_abs_J_Hz": 30371.497112583085,
+    "median_rel_mf_err": 0.2051242368413665,
+    "equivalent_barrier_shift_meV_of_median_mf_err": 2.06
+   },
+   "100": {
+    "dressed_Delta_Hz_range": [
+     2.4190632456225782,
+     13277551.23060098
+    ],
+    "max_abs_J_Hz": 48.752371205814114,
+    "median_rel_mf_err": 0.1339176151163251,
+    "equivalent_barrier_shift_meV_of_median_mf_err": 1.68
+   }
+  },
+  "notes": [
+   "Kill clause (i) used backscattering-INS resolution (~0.1-1 ueV = 24-240 MHz) as the observability limit.",
+   "Dressed splittings at V3 = 100 meV reach ~13 MHz; NMR-based tunnelling spectroscopy works in the kHz-MHz range at cryogenic temperature [LITERATURE, recalled; one supporting arXiv abstract: cond-mat/0701201].",
+   "The many-body correction that matters (mean-field error) is 13-40% of Delta, i.e. an equivalent barrier shift of only a few meV; compare with force-field barrier uncertainty and glass disorder [INFERENCE]."
+  ]
+ },
+ "D1_allatom_floor": {
+  "assumptions": "t_T = 1 us; MO overheads (K=10, n_b=1, A=rho=1) as in hardness_what_it_takes. All-atom G is an order-of-magnitude INFERENCE (3e4 atoms x ~300 cutoff neighbours x 1e2-1e3 Toffolis per pair term, PME ignored); c ~ 0.2 ms per MD step for ~3e4 atoms on one modern GPU (INFERENCE).",
+  "classical_md_reference": "fast folders ~1e9 steps per folding event; ms folders ~1e11-1e12 steps (2-4 fs steps) [INFERENCE, order of magnitude]",
+  "rows": {
+   "A80_L100_MO (lane check)": {
+    "X": 581250.0,
+    "s2": {
+     "B_star_steps": 337851562500.0,
+     "T_Q_star_s": 540562500.0,
+     "T_Q_star_yr": 17.128089353612168
+    },
+    "s3": {
+     "B_star_steps": 443143566.69495386,
+     "T_Q_star_s": 709029.7067119261,
+     "T_Q_star_yr": 0.02246608703142985
+    },
+    "s4": {
+     "B_star_steps": 48508437.726174995,
+     "T_Q_star_s": 77613.50036188005,
+     "T_Q_star_yr": 0.0024592363866248433
+    }
+   },
+   "allatom_explicit_30k_atoms_GPU_optimistic": {
+    "X": 50000000.0,
+    "s2": {
+     "B_star_steps": 2500000000000000.0,
+     "T_Q_star_s": 500000000000.0,
+     "T_Q_star_yr": 15842.839036755386
+    },
+    "s3": {
+     "B_star_steps": 353553390593.27374,
+     "T_Q_star_s": 70710678.11865476,
+     "T_Q_star_yr": 2.240515783227337
+    },
+    "s4": {
+     "B_star_steps": 18420157493.20191,
+     "T_Q_star_s": 3684031.4986403855,
+     "T_Q_star_yr": 0.1167310360785927
+    }
+   },
+   "allatom_explicit_30k_atoms_GPU_central": {
+    "X": 500000000.0,
+    "s2": {
+     "B_star_steps": 2.5e+17,
+     "T_Q_star_s": 50000000000000.0,
+     "T_Q_star_yr": 1584283.9036755387
+    },
+    "s3": {
+     "B_star_steps": 11180339887498.95,
+     "T_Q_star_s": 2236067977.4997897,
+     "T_Q_star_yr": 70.85133008554467
+    },
+    "s4": {
+     "B_star_steps": 396850262992.04926,
+     "T_Q_star_s": 79370052.59840995,
+     "T_Q_star_yr": 2.514893935310835
+    }
+   }
+  }
+ }
+}

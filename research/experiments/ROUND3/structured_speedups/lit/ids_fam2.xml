@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/PjiE4kFpPCKovY17lq3eOLxC0oE</id>
+  <title>arXiv Query: search_query=&amp;id_list=2603.28076,2404.14639,2408.01516,2309.16596,2601.17686,2509.16263,2510.03385,2311.00811,2609.26712,2609.20651,2307.12492,2311.07372,2307.15062,2011.09495,2005.03791,2204.02063,2209.06930,2609.28058,2510.07913,2509.06549&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:27:43Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=30&amp;id_list=2603.28076,2404.14639,2408.01516,2309.16596,2601.17686,2509.16263,2510.03385,2311.00811,2609.26712,2609.20651,2307.12492,2311.07372,2307.15062,2011.09495,2005.03791,2204.02063,2209.06930,2609.28058,2510.07913,2509.06549" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>20</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2011.09495v1</id>
+    <title>(Sub)Exponential advantage of adiabatic quantum computation with no sign problem</title>
+    <updated>2020-11-18T19:04:51Z</updated>
+    <link href="https://arxiv.org/abs/2011.09495v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.09495v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate the possibility of (sub)exponential quantum speedup via a quantum algorithm that follows an adiabatic path of a gapped Hamiltonian with no sign problem. This strengthens the superpolynomial separation recently proved by Hastings. The Hamiltonian that exhibits this speed-up comes from the adjacency matrix of an undirected graph, and we can view the adiabatic evolution as an efficient $\mathcal{O}(\mathrm{poly}(n))$-time quantum algorithm for finding a specific "EXIT" vertex in the graph given the "ENTRANCE" vertex. On the other hand we show that if the graph is given via an adjacency-list oracle, there is no classical algorithm that finds the "EXIT" with probability greater than $\exp(-n^δ)$ using at most $\exp(n^δ)$ queries for $δ= \frac15 - o(1)$. Our construction of the graph is somewhat similar to the "welded-trees" construction of Childs et al., but uses additional ideas of Hastings for achieving a spectral gap and a short adiabatic path.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-18T19:04:51Z</published>
+    <arxiv:comment>18 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>András Gilyén</name>
+    </author>
+    <author>
+      <name>Umesh Vazirani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.03791v2</id>
+    <title>The Power of Adiabatic Quantum Computation with No Sign Problem</title>
+    <updated>2021-11-30T04:52:25Z</updated>
+    <link href="https://arxiv.org/abs/2005.03791v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.03791v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show a superpolynomial oracle separation between the power of adiabatic quantum computation with no sign problem and the power of classical computation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-07T22:37:53Z</published>
+    <arxiv:comment>22 pages, 2 figures; v2 final version in Quantum</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 5, 597 (2021)</arxiv:journal_ref>
+    <author>
+      <name>M. B. Hastings</name>
+    </author>
+    <arxiv:doi>10.22331/q-2021-12-06-597</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2021-12-06-597" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03385v1</id>
+    <title>Mechanisms for Quantum Advantage in Global Optimization of Nonconvex Functions</title>
+    <updated>2025-10-03T17:40:31Z</updated>
+    <link href="https://arxiv.org/abs/2510.03385v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03385v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present new theoretical mechanisms for quantum speedup in the global optimization of nonconvex functions, expanding the scope of quantum advantage beyond traditional tunneling-based explanations. As our main building-block, we demonstrate a rigorous correspondence between the spectral properties of Schrödinger operators and the mixing times of classical Langevin diffusion. This correspondence motivates a mechanism for separation on functions with unique global minimum: while quantum algorithms operate on the original potential, classical diffusions correspond to a Schrödinger operators with a WKB potential having nearly degenerate global minima. We formalize these ideas by proving that a real-space adiabatic quantum algorithm (RsAA) achieves provably polynomial-time optimization for broad families of nonconvex functions. First, for block-separable functions, we show that RsAA maintains polynomial runtime while known off-the-shelf algorithms require exponential time and structure-aware algorithms exhibit arbitrarily large polynomial runtimes. These results leverage novel non-asymptotic results in semiclassical analysis. Second, we use recent advances in the theory of intrinsic hypercontractivity to demonstrate polynomial runtimes for RsAA on appropriately perturbed strongly convex functions that lack global structure, while off-the-shelf algorithms remain exponentially bottlenecked. In contrast to prior works based on quantum tunneling, these separations do not depend on the geometry of barriers between local minima. Our theoretical claims about classical algorithm runtimes are supported by rigorous analysis and comprehensive numerical benchmarking. These findings establish a rigorous theoretical foundation for quantum advantage in continuous optimization and open new research directions connecting quantum algorithms, stochastic processes, and semiclassical analysis.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-03T17:40:31Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Dylan Herman</name>
+    </author>
+    <author>
+      <name>Guneykan Ozgul</name>
+    </author>
+    <author>
+      <name>Anuj Apte</name>
+    </author>
+    <author>
+      <name>Junhyung Lyle Kim</name>
+    </author>
+    <author>
+      <name>Anupam Prakash</name>
+    </author>
+    <author>
+      <name>Jiayu Shen</name>
+    </author>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.17686v1</id>
+    <title>Exponential Quantum Speedup on Structured Hard Instances of Maximum Independent Set</title>
+    <updated>2026-01-25T04:18:35Z</updated>
+    <link href="https://arxiv.org/abs/2601.17686v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.17686v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Establishing quantum speedup for computationally hard problems of practical relevance, particularly combinatorial optimization problems, remains a central challenge in quantum computation. In this work, we identify a structurally defined family of classically hard maximum independent set (MIS) instances, and design and analyze a non-stoquastic adiabatic quantum optimization algorithm that exploits this structure. The algorithm runs in polynomial time and achieves an exponential speedup over both transverse-field quantum annealing and state-of-the-art classical solvers on these instances, under assumptions supported by analytical and numerical evidence. We identify the essential quantum mechanism enabling the speedup as the use of a non-stoquastic XX-driver to access a larger sign-structured admissible subspace beyond the stoquastic regime, which allows sign-generating quantum interference to create smooth evolution paths that bypass tunneling. This identifies a distinctive quantum mechanism underlying the speedup and explains why no efficient classical analogue is likely to exist. In addition, our analysis produces scalable small-scale models, derived from our structural reduction, that capture the essential dynamics of the algorithm. These models provide a concrete opportunity for verification of the quantum advantage mechanism on currently available universal quantum computers.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-25T04:18:35Z</published>
+    <arxiv:comment>18 pages, 8 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vicky Choi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.26712v1</id>
+    <title>A quantum lower bound for path finding in welded trees</title>
+    <updated>2026-09-22T17:03:38Z</updated>
+    <link href="https://arxiv.org/abs/2609.26712v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.26712v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the welded tree problem, an algorithm is tasked with navigating a graph formed from two binary trees joined at the leaves through a ``weld'' of connecting edges. A quantum walk can navigate from root to root exponentially faster than any classical algorithm. However, known efficient quantum algorithms cannot find a path between the roots, as recording the path destroys constructive interference and thus the speedup. We prove that this is inherent: any quantum algorithm needs exponentially many queries to find a path between the roots of an independently matched welded tree graph. This provides an example of a problem that a quantum computer can solve exponentially faster than any classical algorithm by exploring exponentially many paths in superposition, but where it is provably intractable to find any such path. The proof uses compressed permutation oracles to record the progress of a quantum algorithm as it queries the graph. We show that the compressed database remains path-free up to a small error. By controlling such errors and bounding the progress of the algorithm with each compressed oracle query, we show that $Ω(2^{n/12})$ queries are required to find a path in a height-$n$ tree with constant success probability.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-22T17:03:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Joseph Carolan</name>
+    </author>
+    <author>
+      <name>Andrew M. Childs</name>
+    </author>
+    <author>
+      <name>Matthew Coudron</name>
+    </author>
+    <author>
+      <name>Amin Shiraz Gilani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.00811v1</id>
+    <title>A quantum-classical performance separation in nonconvex optimization</title>
+    <updated>2023-11-01T19:51:00Z</updated>
+    <link href="https://arxiv.org/abs/2311.00811v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.00811v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we identify a family of nonconvex continuous optimization instances, each $d$-dimensional instance with $2^d$ local minima, to demonstrate a quantum-classical performance separation. Specifically, we prove that the recently proposed Quantum Hamiltonian Descent (QHD) algorithm [Leng et al., arXiv:2303.01471] is able to solve any $d$-dimensional instance from this family using $\widetilde{\mathcal{O}}(d^3)$ quantum queries to the function value and $\widetilde{\mathcal{O}}(d^4)$ additional 1-qubit and 2-qubit elementary quantum gates. On the other side, a comprehensive empirical study suggests that representative state-of-the-art classical optimization algorithms/solvers (including Gurobi) would require a super-polynomial time to solve such optimization instances.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-01T19:51:00Z</published>
+    <arxiv:comment>32 pages, 7 figures. More details of the original Quantum Hamiltonian Descent (QHD) algorithm can be found at arXiv:2303.01471</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.02063v3</id>
+    <title>Verifiable Quantum Advantage without Structure</title>
+    <updated>2024-11-11T05:57:41Z</updated>
+    <link href="https://arxiv.org/abs/2204.02063v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.02063v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show the following hold, unconditionally unless otherwise stated, relative to a random oracle:
+  - There are NP search problems solvable by quantum polynomial-time machines but not classical probabilistic polynomial-time machines.
+  - There exist functions that are one-way, and even collision resistant, against classical adversaries but are easily inverted quantumly. Similar separations hold for digital signatures and CPA-secure public key encryption (the latter requiring the assumption of a classically CPA-secure encryption scheme). Interestingly, the separation does not necessarily extend to the case of other cryptographic objects such as PRGs.
+  - There are unconditional publicly verifiable proofs of quantumness with the minimal rounds of interaction: for uniform adversaries, the proofs are non-interactive, whereas for non-uniform adversaries the proofs are two message public coin.
+  - Our results do not appear to contradict the Aaronson-Ambanis conjecture. Assuming this conjecture, there exist publicly verifiable certifiable randomness, again with the minimal rounds of interaction.
+  By replacing the random oracle with a concrete cryptographic hash function such as SHA2, we obtain plausible Minicrypt instantiations of the above results. Previous analogous results all required substantial structure, either in terms of highly structured oracles and/or algebraic assumptions in Cryptomania and beyond.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-05T08:58:24Z</published>
+    <arxiv:comment>56 pages, fixed the proof of Theorem 3.11 etc</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>J. ACM 71(3): 20 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Takashi Yamakawa</name>
+    </author>
+    <author>
+      <name>Mark Zhandry</name>
+    </author>
+    <arxiv:doi>10.1145/3658665</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3658665" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.06930v1</id>
+    <title>How Much Structure Is Needed for Huge Quantum Speedups?</title>
+    <updated>2022-09-14T21:09:32Z</updated>
+    <link href="https://arxiv.org/abs/2209.06930v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.06930v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I survey, for a general scientific audience, three decades of research into which sorts of problems admit exponential speedups via quantum computers -- from the classics (like the algorithms of Simon and Shor), to the breakthrough of Yamakawa and Zhandry from April 2022. I discuss both the quantum circuit model, which is what we ultimately care about in practice but where our knowledge is radically incomplete, and the so-called oracle or black-box or query complexity model, where we've managed to achieve a much more thorough understanding that then informs our conjectures about the circuit model. I discuss the strengths and weaknesses of switching attention to sampling tasks, as was done in the recent quantum supremacy experiments. I make some skeptical remarks about widely-repeated claims of exponential quantum speedups for practical machine learning and optimization problems. Through many examples, I try to convey the "law of conservation of weirdness," according to which every problem admitting an exponential quantum speedup must have some unusual property to allow the amplitude to be concentrated on the unknown right answer(s).</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-14T21:09:32Z</published>
+    <arxiv:comment>16 pages, 6 figures. Edited transcript of a rapporteur talk delivered at the 28th Solvay Physics Conference in Brussels on May 21, 2022</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Scott Aaronson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.12492v3</id>
+    <title>Exponential speedup of quantum algorithms for the pathfinding problem</title>
+    <updated>2024-12-23T18:05:32Z</updated>
+    <link href="https://arxiv.org/abs/2307.12492v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.12492v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Given $x, y$ on an unweighted undirected graph $G$, the goal of the pathfinding problem is to find an $x$-$y$ path. In this work, we first construct a graph $G$ based on welded trees and define a pathfinding problem in the adjacency list oracle $O$. Then we provide an efficient quantum algorithm to find an $x$-$y$ path in the graph $G$. Finally, we prove that no classical algorithm can find an $x$-$y$ path in subexponential time with high probability. The pathfinding problem is one of the fundamental graph-related problems. Our findings suggest that quantum algorithms could potentially offer advantages in more types of graphs to solve the pathfinding problem.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-24T02:50:34Z</published>
+    <arxiv:comment>11 pages,1 figure, minor update</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jianqiang Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.07372v7</id>
+    <title>Multidimensional Electrical Networks and their Application to Exponential Speedups for Graph Problems</title>
+    <updated>2025-05-25T04:31:21Z</updated>
+    <link href="https://arxiv.org/abs/2311.07372v7" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.07372v7" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, Apers and Piddock [TQC '23] strengthened the connection between quantum walks and electrical networks via Kirchhoff's Law and Ohm's Law. In this work, we develop a new multidimensional electrical network by defining Alternative Kirchhoff's Law and Alternative Ohm's Law based on the multidimensional quantum walk framework by Jeffery and Zur [STOC '23]. In analogy to the connection between the incidence matrix of a graph and Kirchhoff's Law and Ohm's Law in an electrical network, we rebuild the connection between the alternative incidence matrix and Alternative Kirchhoff's Law and Alternative Ohm's Law. This new framework enables generating an alternative electrical flow over the edges on graphs, which has the potential to be applied to a broader range of graph problems, benefiting both quantum and classical algorithm design.
+  We first use this framework to generate quantum alternative electrical flow states and use it to find a marked vertex in one-dimensional random hierarchical graphs as defined by Balasubramanian, Li, and Harrow [arXiv '23]. In this work, they generalised the exponential quantum-classical separation of the welded tree graph by Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman [STOC '03] to random hierarchical graphs. Our result partially recovers their results with an arguably simpler analysis.
+  Furthermore, this framework also allows us to demonstrate an exponential quantum speedup for the pathfinding problem in a type of regular graph, which we name the welded tree circuit graph. The exponential quantum advantage is obtained by efficiently generating quantum alternative electrical flow states and then sampling from them to find an s-t path in the welded tree circuit graph. By comparison, Li [arXiv '23] constructed a non-regular graph based on welded trees and used the degree information to achieve a similar speedup.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-13T14:39:55Z</published>
+    <arxiv:comment>minor update</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1733 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Jianqiang Li</name>
+    </author>
+    <author>
+      <name>Sebastian Zur</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-05-06-1733</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-05-06-1733" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.15062v2</id>
+    <title>Exponential speedups for quantum walks in random hierarchical graphs</title>
+    <updated>2024-08-02T17:27:42Z</updated>
+    <link href="https://arxiv.org/abs/2307.15062v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.15062v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There are few known exponential speedups for quantum algorithms and these tend to fall into even fewer families. One speedup that has mostly resisted generalization is the use of quantum walks to traverse the welded-tree graph, due to Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman. We show how to generalize this to a large class of hierarchical graphs in which the vertices are grouped into "supervertices" which are arranged according to a $d$-dimensional lattice. Supervertices can have different sizes, and edges between supervertices correspond to random connections between their constituent vertices.
+  The hitting times of quantum walks on these graphs are related to the localization properties of zero modes in certain disordered tight binding Hamiltonians. The speedups range from superpolynomial to exponential, depending on the underlying dimension and the random graph model. We also provide concrete realizations of these hierarchical graphs, and introduce a general method for constructing graphs with efficient quantum traversal times using graph sparsification.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-27T17:59:58Z</published>
+    <arxiv:comment>69 pages, 7 figures, v2: minor fixes and improved discussion of Section 6</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Commun. Math. Phys. 406, 209 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Shankar Balasubramanian</name>
+    </author>
+    <author>
+      <name>Tongyang Li</name>
+    </author>
+    <author>
+      <name>Aram Harrow</name>
+    </author>
+    <arxiv:doi>10.1007/s00220-025-05370-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00220-025-05370-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.20651v1</id>
+    <title>Hardness of Pathfinding in a Welded Tree</title>
+    <updated>2026-09-17T16:29:09Z</updated>
+    <link href="https://arxiv.org/abs/2609.20651v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.20651v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Starting from the entrance of a welded tree, a quantum walk algorithm can find its exit vertex exponentially faster than any classical algorithm. However, it has been an open question whether any quantum algorithm is able to efficiently find a path from the entrance to the exit. We answer this by proving an exponential quantum query lower bound for finding such path. Specifically, for trees of height $n$, any quantum query algorithm requires at least $Ω(2^{n/24})$ queries in order to succeed with constant probability.
+  Our proof uses the compressed permutation oracle technique in order to construct databases which track the graph information an algorithm has learned and forgotten, and show that no efficient quantum algorithm can build an entrance-to-exit path in these records.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-17T16:29:09Z</published>
+    <arxiv:comment>55 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>David Miloschewsky</name>
+    </author>
+    <author>
+      <name>Supartha Podder</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.14639v2</id>
+    <title>Quantum computational advantage with constant-temperature Gibbs sampling</title>
+    <updated>2024-09-18T17:51:02Z</updated>
+    <link href="https://arxiv.org/abs/2404.14639v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.14639v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A quantum system coupled to a bath at some fixed, finite temperature converges to its Gibbs state. This thermalization process defines a natural, physically-motivated model of quantum computation. However, whether quantum computational advantage can be achieved within this realistic physical setup has remained open, due to the challenge of finding systems that thermalize quickly, but are classically intractable. Here we consider sampling from the measurement outcome distribution of quantum Gibbs states at constant temperatures, and prove that this task demonstrates quantum computational advantage. We design a family of commuting local Hamiltonians (parent Hamiltonians of shallow quantum circuits) and prove that they rapidly converge to their Gibbs states under the standard physical model of thermalization (as a continuous-time quantum Markov chain). On the other hand, we show that no polynomial time classical algorithm can sample from the measurement outcome distribution by reducing to the classical hardness of sampling from noiseless shallow quantum circuits. The key step in the reduction is constructing a fault-tolerance scheme for shallow IQP circuits against input noise.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-23T00:29:21Z</published>
+    <arxiv:comment>To appear in FOCS 2024. v2: Improved main result to constant locality</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS)</arxiv:journal_ref>
+    <author>
+      <name>Thiago Bergamaschi</name>
+    </author>
+    <author>
+      <name>Chi-Fang Chen</name>
+    </author>
+    <author>
+      <name>Yunchao Liu</name>
+    </author>
+    <arxiv:doi>10.1109/FOCS61266.2024.00071</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/FOCS61266.2024.00071" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.01516v4</id>
+    <title>Gibbs Sampling gives Quantum Advantage at Constant Temperatures with O(1)-Local Hamiltonians</title>
+    <updated>2026-01-19T23:37:54Z</updated>
+    <link href="https://arxiv.org/abs/2408.01516v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.01516v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sampling from Gibbs states -- states corresponding to system in thermal equilibrium -- has recently been shown to be a task for which quantum computers are expected to achieve super-polynomial speed-up compared to classical computers, provided the locality of the Hamiltonian increases with the system size (Bergamaschi et al., arXiv: 2404.14639). We extend these results to show that this quantum advantage still occurs for Gibbs states of Hamiltonians with O(1)-local interactions at constant temperature by showing classical hardness-of-sampling and demonstrating such Gibbs states can be prepared efficiently using a quantum computer. In particular, we show hardness-of-sampling is maintained even for 5-local Hamiltonians on a 3D lattice. We additionally show that the hardness-of-sampling is robust when we are only able to make imperfect measurements.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.other" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-02T18:18:49Z</published>
+    <arxiv:comment>14 pages, 6 page appendix, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 10, 1981 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Joel Rajakumar</name>
+    </author>
+    <author>
+      <name>James D. Watson</name>
+    </author>
+    <arxiv:doi>10.22331/q-2026-01-22-1981</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2026-01-22-1981" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.16596v1</id>
+    <title>Local minima in quantum systems</title>
+    <updated>2023-09-28T16:59:05Z</updated>
+    <link href="https://arxiv.org/abs/2309.16596v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.16596v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Finding ground states of quantum many-body systems is known to be hard for both classical and quantum computers. As a result, when Nature cools a quantum system in a low-temperature thermal bath, the ground state cannot always be found efficiently. Instead, Nature finds a local minimum of the energy. In this work, we study the problem of finding local minima in quantum systems under thermal perturbations. While local minima are much easier to find than ground states, we show that finding a local minimum is computationally hard for classical computers, even when the task is to output a single-qubit observable at any local minimum. In contrast, we prove that a quantum computer can always find a local minimum efficiently using a thermal gradient descent algorithm that mimics the cooling process in Nature. To establish the classical hardness of finding local minima, we consider a family of two-dimensional Hamiltonians such that any problem solvable by polynomial-time quantum algorithms can be reduced to finding ground states of these Hamiltonians. We prove that for such Hamiltonians, all local minima are global minima. Therefore, assuming quantum computation is more powerful than classical computation, finding local minima is classically hard and quantumly easy.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-28T16:59:05Z</published>
+    <arxiv:comment>9+80 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Nature Physics 21, 654--660 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Chi-Fang Chen</name>
+    </author>
+    <author>
+      <name>Hsin-Yuan Huang</name>
+    </author>
+    <author>
+      <name>John Preskill</name>
+    </author>
+    <author>
+      <name>Leo Zhou</name>
+    </author>
+    <arxiv:doi>10.1038/s41567-025-02781-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41567-025-02781-4" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28058v1</id>
+    <title>Quantum Advantage in Topological Data Analysis via Mayer Homology</title>
+    <updated>2026-09-23T13:10:15Z</updated>
+    <link href="https://arxiv.org/abs/2609.28058v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28058v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prior work has explored quantum algorithms for topological data analysis (TDA), revealing the possibility of exponential quantum speedups in estimating the ratios of Betti numbers to the dimension of the combinatorial Laplacian. However, this quantity is only non-vanishing and efficient-to-quantumly-estimate when Betti numbers are exponentially large, a case for which concrete examples are rarely known. Furthermore, certain randomized classical algorithms are sometimes efficient in this regime. Thus, the prospect of achieving quantum advantage in conventional TDA appears fairly narrow. Here, we address these challenges to the quantum advantage in TDA by developing quantum algorithms for Mayer homology, which generalize simplicial homology to $N$-nilpotent boundary operators ($\partial^N =0$) and have recently been successfully applied to real-world TDA contexts. We introduce an efficient quantum algorithm for estimating Mayer Betti numbers and their persistent counterparts. We then prove that for high-order simplices, Mayer Betti numbers are often exponentially large in the dense regime, which ameliorates the normalization bottleneck of conventional quantum TDA. In the same regime, we argue that existing dequantization algorithms developed for conventional TDA, when applied to Mayer homology, generally lose theoretical guaranties, facing certain structural barriers that prevent their practical utilities. We also provide logical resource estimates revealing that a quantum computer with roughly a few hundred qubits and sixty million Toffoli gates could solve Mayer homology problems beyond the capabilities of known classical approaches. Finally, we discuss real-world applications of Mayer homology in genomics, supersymmetry, drug discovery, and neuroscience, revealing the potential of our quantum algorithm to deliver real-world impacts via Mayer homology.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T13:10:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Nhat A. Nghiem</name>
+    </author>
+    <author>
+      <name>Ryan Babbush</name>
+    </author>
+    <author>
+      <name>Adam Zalcman</name>
+    </author>
+    <author>
+      <name>Dominic W. Berry</name>
+    </author>
+    <author>
+      <name>Trung V. Phan</name>
+    </author>
+    <author>
+      <name>Guo-Wei Wei</name>
+    </author>
+    <author>
+      <name>Ryu Hayakawa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.07913v1</id>
+    <title>Hamiltonian Decoded Quantum Interferometry</title>
+    <updated>2025-10-09T08:06:15Z</updated>
+    <link href="https://arxiv.org/abs/2510.07913v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.07913v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce Hamiltonian Decoded Quantum Interferometry (HDQI), a quantum algorithm that utilizes coherent Bell measurements and the symplectic representation of the Pauli group to reduce Gibbs sampling and Hamiltonian optimization to classical decoding. For a signed Pauli Hamiltonian $H$ and any degree-$\ell$ polynomial ${P}$, HDQI prepares a purification of the density matrix $ρ_{P}(H) \propto {P}^2(H)$ by solving a combination of two tasks: decoding $\ell$ errors on a classical code defined by $H$, and preparing a pilot state that encodes the anti-commutation structure of $H$. Choosing $P(x)$ to approximate $\exp(-βx/2)$ yields Gibbs states at inverse temperature $β$; other choices prepare approximate ground states, microcanonical ensembles, and other spectral filters.
+  For local Hamiltonians, the corresponding decoding problem is that of LDPC codes. Preparing the pilot state is always efficient for commuting Hamiltonians, but highly non-trivial for non-commuting Hamiltonians. Nevertheless, we prove that this state admits an efficient matrix product state representation for Hamiltonians whose anti-commutation graph decomposes into connected components of logarithmic size.
+  We show that HDQI efficiently prepares Gibbs states at arbitrary temperatures for a class of physically motivated commuting Hamiltonians -- including the toric code and Haah's cubic code -- but we also develop a matching efficient classical algorithm for this task. For a non-commuting semiclassical spin glass and commuting stabilizer Hamiltonians with quantum defects, HDQI prepares Gibbs states up to a constant inverse-temperature threshold using polynomial quantum resources and quasi-polynomial classical pre-processing. These results position HDQI as a versatile algorithmic primitive and the first extension of Regev's reduction to non-abelian groups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-09T08:06:15Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Alexander Schmidhuber</name>
+    </author>
+    <author>
+      <name>Jonathan Z. Lu</name>
+    </author>
+    <author>
+      <name>Noah Shutty</name>
+    </author>
+    <author>
+      <name>Stephen Jordan</name>
+    </author>
+    <author>
+      <name>Alexander Poremba</name>
+    </author>
+    <author>
+      <name>Yihui Quek</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.06549v1</id>
+    <title>Super-Quadratic Quantum Speed-ups and Guessing Many Likely Keys</title>
+    <updated>2025-09-08T11:03:49Z</updated>
+    <link href="https://arxiv.org/abs/2509.06549v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.06549v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the fundamental problem of guessing cryptographic keys, drawn from some non-uniform probability distribution $D$, as e.g. in LPN, LWE or for passwords. The optimal classical algorithm enumerates keys in decreasing order of likelihood. The optimal quantum algorithm, due to Montanaro (2011), is a sophisticated Grover search.
+  We give the first tight analysis for Montanaro's algorithm, showing that its runtime is $2^{H_{2/3}(D)/2}$, where $H_α(\cdot)$ denotes Renyi entropy with parameter $α$. Interestingly, this is a direct consequence of an information theoretic result called Arikan's Inequality (1996) -- which has so far been missed in the cryptographic community -- that tightly bounds the runtime of classical key guessing by $2^{H_{1/2}(D)}$. Since $H_{2/3}(D) &lt; H_{1/2}(D)$ for every non-uniform distribution $D$, we thus obtain a super-quadratic quantum speed-up $s&gt;2$ over classical key guessing.
+  As another main result, we provide the first thorough analysis of guessing in a multi-key setting. Specifically, we consider the task of attacking many keys sampled independently from some distribution $D$, and aim to guess a fraction of them. For product distributions $D = χ^n$, we show that any constant fraction of keys can be guessed within $2^{H(D)}$ classically and $2 ^{H(D)/2}$ quantumly per key, where $H(χ)$ denotes Shannon entropy. In contrast, Arikan's Inequality implies that guessing a single key costs $2^{H_{1/2}(D)}$ classically and $2^{H_{2/3}(D)/2}$ quantumly. Since $H(D) &lt; H_{2/3}(D) &lt; H_{1/2}(D)$, this shows that in a multi-key setting the guessing cost per key is substantially smaller than in a single-key setting, both classically and quantumly.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-08T11:03:49Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Timo Glaser</name>
+    </author>
+    <author>
+      <name>Alexander May</name>
+    </author>
+    <author>
+      <name>Julian Nowakowski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.16263v1</id>
+    <title>Beyond Stoquasticity: Structural Steering and Interference in Quantum Optimization</title>
+    <updated>2025-09-18T04:27:42Z</updated>
+    <link href="https://arxiv.org/abs/2509.16263v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.16263v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a theoretical analysis of the DIC-DAC-DOA algorithm, a non-stoquastic quantum algorithm for solving the Maximum Independent Set (MIS) problem. The algorithm runs in polynomial time and achieves exponential speedup over both transverse-field quantum annealing (TFQA) and classical algorithms on a structured family of NP-hard MIS instances, under assumptions supported by analytical and numerical evidence. The core of this speedup lies in the ability of the evolving ground state to develop both positive and negative amplitudes, enabled by the non-stoquastic XX-driver. This sign structure permits quantum interference that produces negative amplitudes in the computational basis, allowing efficient evolution paths beyond the reach of stoquastic algorithms, whose ground states remain strictly non-negative. In our analysis, the efficiency of the algorithm is measured by the presence or absence of an anti-crossing, rather than by spectral gap estimation as in traditional approaches. The key idea is to infer it from the crossing behavior of bare energy levels of relevant subsystems associated with the degenerate local minima (LM) and the global minimum (GM). The cliques of the critical LM, responsible for the anti-crossing in TFQA, can be efficiently identified to form the XX-driver graph. The resulting speedup can be attributed to two mechanisms: in the first stage, energy-guided localization within the same-sign block steers the ground state smoothly into the GM-supporting region, while in the second stage, the opposite-sign blocks are invoked and sign-generating quantum interference drives the evolution along an opposite-sign path. Finally, we derive scalable reduced models that provide a concrete opportunity for verification of the quantum advantage mechanism on currently available universal quantum computers.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-18T04:27:42Z</published>
+    <arxiv:comment>75 pages, 29 figures, companion paper to "Limitation of Stoquastic Quantum Annealing: A Structural Perspective"</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vicky Choi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.28076v1</id>
+    <title>Adiabatic dressing of quantum enhanced Markov chains</title>
+    <updated>2026-03-30T06:26:48Z</updated>
+    <link href="https://arxiv.org/abs/2603.28076v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.28076v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum-enhanced Markov chain Monte Carlo, a hybrid quantum-classical algorithm in which configurations are proposed by a quantum proposer and accepted or rejected by a classical algorithm, has been introduced as a possible method for robust quantum speedup. Previous work has identified competing factors that limit the algorithm's performance: the quantum dynamics should delocalize the system across a range of classical states to propose configurations beyond the reach of simple classical updates, whereas excessive delocalization produces configurations unlikely to be accepted, slowing the chain's convergence. Here, we show that controlling the degree of delocalization by adiabatically dressing the quench protocol can significantly enhance the Markov gap in paradigmatic spin-glass models.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-30T06:26:48Z</published>
+    <arxiv:comment>12 pages, 9 figures (3 in main text, 6 in appendix)</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Wen Ting Hsieh</name>
+    </author>
+    <author>
+      <name>Alev Orfi</name>
+    </author>
+    <author>
+      <name>Dries Sels</name>
+    </author>
+  </entry>
+</feed>

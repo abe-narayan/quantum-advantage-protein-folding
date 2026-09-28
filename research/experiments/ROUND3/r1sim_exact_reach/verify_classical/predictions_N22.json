@@ -1,0 +1,137 @@
+{
+ "note": "Falsifiable predictions for the pending exact N = 22 cone runs (governor, scripts/nmr_cone.py; same probe family,\nsame circuit), made BEFORE those runs finish (2026-09-28).  Ingredients (all MEASURED here):\n  H_22  = CSD H at N_c = 22 + (exact - CSD) offset measured at N = 20\n  floor_22 = kappa (1 - H_22) / 22,  kappa = floor_20 * 20 / (1 - H_20)   (kappa measured at N = 20)\n  X_22  = X_20 (the 'remainder is flat' hypothesis; shell-event series flagged)\n  F_22  = H_22 + floor_22 + X_22.\nAlso recorded: the naive 1/N-law prediction F_22 = F_20 * 20/22 used by the lane.",
+ "predictions": {
+  "p19": {
+   "H22_pred": [
+    0.3623,
+    0.1714,
+    0.1043,
+    0.0808,
+    0.0758,
+    0.0705,
+    0.0706,
+    0.0645
+   ],
+   "floor22_pred": [
+    0.0254,
+    0.0335,
+    0.0362,
+    0.0371,
+    0.0374,
+    0.0376,
+    0.0377,
+    0.0379
+   ],
+   "series": {
+    "t160_b1": {
+     "F20": 0.2274,
+     "F22_pred_decomp": 0.2081,
+     "F22_pred_1overN": 0.2067,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b7": {
+     "F20": 0.3972,
+     "F22_pred_decomp": 0.378,
+     "F22_pred_1overN": 0.3611,
+     "X_flat_at_20": true,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b8": {
+     "F20": 0.5108,
+     "F22_pred_decomp": 0.4916,
+     "F22_pred_1overN": 0.4644,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b9": {
+     "F20": 0.4393,
+     "F22_pred_decomp": 0.42,
+     "F22_pred_1overN": 0.3994,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t320_b1": {
+     "F20": 0.1563,
+     "F22_pred_decomp": 0.1475,
+     "F22_pred_1overN": 0.1421,
+     "X_flat_at_20": true,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t320_b7": {
+     "F20": 0.2389,
+     "F22_pred_decomp": 0.2302,
+     "F22_pred_1overN": 0.2172,
+     "X_flat_at_20": true,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t320_b8": {
+     "F20": 0.2451,
+     "F22_pred_decomp": 0.2364,
+     "F22_pred_1overN": 0.2228,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t320_b9": {
+     "F20": 0.2476,
+     "F22_pred_decomp": 0.2388,
+     "F22_pred_1overN": 0.2251,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    }
+   }
+  },
+  "p245": {
+   "H22_pred": [
+    0.3686,
+    0.1339,
+    0.0812,
+    0.067,
+    0.0655,
+    0.0573,
+    0.0563,
+    0.0563
+   ],
+   "floor22_pred": [
+    0.026,
+    0.0357,
+    0.0377,
+    0.0382,
+    0.0382,
+    0.0386,
+    0.0386,
+    0.0386
+   ],
+   "series": {
+    "t160_b1": {
+     "F20": 0.3622,
+     "F22_pred_decomp": 0.3516,
+     "F22_pred_1overN": 0.3293,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b7": {
+     "F20": 0.2197,
+     "F22_pred_decomp": 0.2092,
+     "F22_pred_1overN": 0.1997,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b8": {
+     "F20": 0.4688,
+     "F22_pred_decomp": 0.4582,
+     "F22_pred_1overN": 0.4262,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    },
+    "t160_b9": {
+     "F20": 0.8186,
+     "F22_pred_decomp": 0.8081,
+     "F22_pred_1overN": 0.7442,
+     "X_flat_at_20": false,
+     "unc_note": "+-0.005 (H: CSD SE + offset) +-|dX_last| if X not flat"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "sigma": 0.01,
+ "window_us": [
+  80.0,
+  320.0
+ ],
+ "rows": {
+  "p19_N14": {
+   "lane_best_polynomial": {
+    "max_err": 0.036,
+    "method": "kls10/none/F_tdh/sizes[10, 4]",
+    "max_se": 0.0078,
+    "secs": 71.2,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": null,
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.1857,
+    "at_b": "1",
+    "at_t_us": 80,
+    "in_sigma": 18.6,
+    "typicality_err_N": 0.0078125,
+    "typicality_err_Nm2": 0.0078125
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 0.19,
+   "lane_err_below_min_physical_model_error": true,
+   "lane_err_below_max_physical_model_error": true
+  },
+  "p19_N16": {
+   "lane_best_polynomial": {
+    "max_err": 0.0289,
+    "method": "kls10_lam0.86/none/F_tdh/sizes[10, 6]",
+    "max_se": 0.0106,
+    "secs": 72.3,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": {
+    "max_err": 0.0673,
+    "method": "Z3 core-size linear extrapolation Nc10,12 -> Ntot"
+   },
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.1394,
+    "at_b": "8",
+    "at_t_us": 240,
+    "in_sigma": 13.9,
+    "typicality_err_N": 0.00390625,
+    "typicality_err_Nm2": 0.0078125
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 0.21,
+   "lane_err_below_min_physical_model_error": true,
+   "lane_err_below_max_physical_model_error": true
+  },
+  "p19_N18": {
+   "lane_best_polynomial": {
+    "max_err": 0.2754,
+    "method": "kl8/none/F_tdh/sizes[8, 7, 3]",
+    "max_se": 0.0152,
+    "secs": 14.0,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": {
+    "max_err": 0.0372,
+    "method": "Z4a exact(N-2) as predictor"
+   },
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.0372,
+    "at_b": "8",
+    "at_t_us": 120,
+    "in_sigma": 3.7,
+    "typicality_err_N": 0.001953125,
+    "typicality_err_Nm2": 0.00390625
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 7.4,
+   "lane_err_below_min_physical_model_error": false,
+   "lane_err_below_max_physical_model_error": true
+  },
+  "p245_N14": {
+   "lane_best_polynomial": {
+    "max_err": 0.3426,
+    "method": "kls10/none/F_tdh/sizes[10, 4]",
+    "max_se": 0.0179,
+    "secs": 70.5,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": null,
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.1199,
+    "at_b": "1",
+    "at_t_us": 120,
+    "in_sigma": 12.0,
+    "typicality_err_N": 0.0078125,
+    "typicality_err_Nm2": 0.015625
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 2.86,
+   "lane_err_below_min_physical_model_error": false,
+   "lane_err_below_max_physical_model_error": true
+  },
+  "p245_N16": {
+   "lane_best_polynomial": {
+    "max_err": 0.0907,
+    "method": "kl10/none/F_tdh/sizes[10, 6]",
+    "max_se": 0.0175,
+    "secs": 73.3,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": {
+    "max_err": 0.043,
+    "method": "Z2 hybrid + exact(N-2)-hybrid(N-2)"
+   },
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.1316,
+    "at_b": "8",
+    "at_t_us": 120,
+    "in_sigma": 13.2,
+    "typicality_err_N": 0.00390625,
+    "typicality_err_Nm2": 0.0078125
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 0.69,
+   "lane_err_below_min_physical_model_error": false,
+   "lane_err_below_max_physical_model_error": true
+  },
+  "p245_N18": {
+   "lane_best_polynomial": {
+    "max_err": 0.0806,
+    "method": "kl10/none/F_tdh/sizes[10, 8]",
+    "max_se": 0.0222,
+    "secs": 83.8,
+    "note": "includes lambda calibrated on same-probe exact N-2 where present"
+   },
+   "lane_best_zero_compute": {
+    "max_err": 0.0567,
+    "method": "Z4a exact(N-2) as predictor"
+   },
+   "reference_truncation_vs_Nm2": {
+    "max_abs_dF": 0.0567,
+    "at_b": "8",
+    "at_t_us": 280,
+    "in_sigma": 5.7,
+    "typicality_err_N": 0.001953125,
+    "typicality_err_Nm2": 0.00390625
+   },
+   "physical_model_error_scale": [
+    0.05,
+    0.66
+   ],
+   "ratio_lane_err_to_truncation": 1.42,
+   "lane_err_below_min_physical_model_error": false,
+   "lane_err_below_max_physical_model_error": true
+  }
+ },
+ "n20_checkpoint": {
+  "times_done_us": [
+   0.0,
+   40.0
+  ],
+  "abs_dF_N20_vs_N18": {
+   "0.0": {
+    "1": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "9": 0.0
+   },
+   "40.0": {
+    "1": 0.00058,
+    "7": 5e-05,
+    "8": 3e-05,
+    "9": 0.00137
+   }
+  },
+  "note": "checkpoint in progress; no point inside the 80-320 us window yet"
+ }
+}

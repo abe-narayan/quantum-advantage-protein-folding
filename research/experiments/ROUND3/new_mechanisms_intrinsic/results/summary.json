@@ -1,0 +1,466 @@
+{
+ "lane": "new_mechanisms_intrinsic",
+ "date": "2026-09-28",
+ "verdict": "WEAK",
+ "claim": "An exact (QPE) electronic-structure solver for protein metal/proton active sites does not decide any examined active-site structural question beyond what the best classical solvers (DMRG/CC composites, AFQMC, PIMD) decide, once the model-error floor is included; any quantum gain is category-3 (resource), constant-factor/polynomial, at the chemistry level (single FeMoco-class energies), not at the protein-structure level.",
+ "levers_measured": {
+  "mb_fe_oop_deoxy_oxy": [
+   0.36377592816619403,
+   0.023471247635451362
+  ],
+  "mb_his93_CA_shift": 0.24900606571047576,
+  "mb_Fhelix_CA_shift_mean": 0.14856731235060375,
+  "mb_far_helix_baseline": 0.08412323204681414,
+  "pcluster": {
+   "3MIN_PN_reduced": [
+    [
+     2.804198994365414,
+     3.297051713273542,
+     12
+    ],
+    [
+     2.841136040389481,
+     3.4035115689534536,
+     12
+    ]
+   ],
+   "2MIN_POX_oxidized": [
+    [
+     1.896028480798746,
+     2.1456288122599396,
+     9
+    ],
+    [
+     2.0662277222029535,
+     2.188510680805557,
+     9
+    ]
+   ]
+  },
+  "femoco": {
+   "3U7Q": [
+    [
+     true,
+     2.576330918185782,
+     []
+    ],
+    [
+     true,
+     2.5796470688836473,
+     []
+    ]
+   ],
+   "4TKV": [
+    [
+     false,
+     2.486460536586092,
+     [
+      "CMO504A:C"
+     ]
+    ],
+    [
+     false,
+     null,
+     []
+    ],
+    [
+     false,
+     2.4951933792794505,
+     [
+      "CMO504C:C"
+     ]
+    ],
+    [
+     false,
+     null,
+     []
+    ]
+   ]
+  },
+  "hemocyanin_cu_cu": {
+   "1LLA": [
+    4.614297237933422
+   ],
+   "1OXY": [
+    3.5939635501768787
+   ]
+  },
+  "oec_mn_mn": {
+   "3WU2": [
+    {
+     "MN1-MN2": 2.869,
+     "MN1-MN3": 3.282,
+     "MN1-MN4": 4.986,
+     "MN2-MN3": 2.878,
+     "MN2-MN4": 5.438,
+     "MN3-MN4": 2.974
+    },
+    {
+     "MN1-MN2": 2.761,
+     "MN1-MN3": 3.287,
+     "MN1-MN4": 4.924,
+     "MN2-MN3": 2.92,
+     "MN2-MN4": 5.384,
+     "MN3-MN4": 2.888
+    }
+   ],
+   "6JLJ": [
+    {
+     "MN1-MN2": 2.578,
+     "MN1-MN3": 3.191,
+     "MN1-MN4": 4.982,
+     "MN2-MN3": 2.715,
+     "MN2-MN4": 5.29,
+     "MN3-MN4": 2.917
+    },
+    {
+     "MN1-MN2": 2.607,
+     "MN1-MN3": 3.132,
+     "MN1-MN4": 4.947,
+     "MN2-MN3": 2.724,
+     "MN2-MN4": 5.24,
+     "MN3-MN4": 2.862
+    }
+   ],
+   "6JLL": [
+    {
+     "MN1-MN2": 2.688,
+     "MN1-MN3": 3.244,
+     "MN1-MN4": 4.919,
+     "MN2-MN3": 2.758,
+     "MN2-MN4": 5.223,
+     "MN3-MN4": 2.752
+    },
+    {
+     "MN1-MN2": 2.666,
+     "MN1-MN3": 3.166,
+     "MN1-MN4": 4.872,
+     "MN2-MN3": 2.729,
+     "MN2-MN4": 5.17,
+     "MN3-MN4": 2.76
+    }
+   ]
+  }
+ },
+ "census_max_open_shell_TM": 8,
+ "census_max_AS_dp": 70,
+ "closed_form_max_dP": {
+  "s_s/s_m=0.25": 0.007334130273182082,
+  "s_s/s_m=0.5": 0.02696913552186575,
+  "s_s/s_m=1.0": 0.08303203749175636,
+  "s_s/s_m=2.0": 0.18489646274514404,
+  "s_s/s_m=5.0": 0.3262203320678062
+ },
+ "scenarios": {
+  "S1_heme_spin_state_Mb": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.04084649086757323,
+    "err_best": 0.09102499301899514,
+    "err_exact": 0.05017850215142191,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 3.0,
+     "sigma_model": 1.5,
+     "sigma_dft": 10.0,
+     "tau": 3.0,
+     "dq": 0.34
+    }
+   },
+   "central": {
+    "VOI_A": 0.0172725937562922,
+    "err_best": 0.07272619235958289,
+    "err_exact": 0.05545359860329069,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 2.25,
+     "sigma_model": 2.25,
+     "sigma_dft": 7.5,
+     "tau": 4.0,
+     "dq": 0.34
+    }
+   }
+  },
+  "S2_P450_CpdI_doublet_quartet": {
+   "favourable_to_quantum": {
+    "VOI_A": 7.036747343897032e-05,
+    "err_best": 0.009943060533860843,
+    "err_exact": 0.009872693060421872,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 2.0,
+     "sigma_model": 1.0,
+     "sigma_dft": 5.0,
+     "tau": 0.02,
+     "dq": 0.02
+    }
+   },
+   "central": {
+    "VOI_A": 0.00015419002687731744,
+    "err_best": 0.004359437417072894,
+    "err_exact": 0.004205247390195577,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 1.5,
+     "sigma_model": 2.0,
+     "sigma_dft": 4.0,
+     "tau": 0.51,
+     "dq": 0.01
+    }
+   }
+  },
+  "S3_FeMoco_resting_spin_isomers": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.011270409659368192,
+    "err_best": 0.020160802372102618,
+    "err_exact": 0.008890392712734426,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 5.0,
+     "sigma_model": 1.0,
+     "sigma_dft": 15.0,
+     "tau": 1.6,
+     "dq": 0.05
+    }
+   },
+   "central": {
+    "VOI_A": 0.004150447340638129,
+    "err_best": 0.012541193750107755,
+    "err_exact": 0.008390746409469626,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 3.0,
+     "sigma_model": 1.5,
+     "sigma_dft": 10.0,
+     "tau": 1.6,
+     "dq": 0.035
+    }
+   }
+  },
+  "S4_FeMoco_E4_hydride_protonation_isomers": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.22656955329442124,
+    "err_best": 0.507320354743418,
+    "err_exact": 0.2807508014489967,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 5.0,
+     "sigma_model": 2.0,
+     "sigma_dft": 30.0,
+     "tau": 3.0,
+     "dq": 1.5
+    }
+   },
+   "central": {
+    "VOI_A": 0.05339764661557994,
+    "err_best": 0.2116835312906307,
+    "err_exact": 0.15828588467505075,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 3.0,
+     "sigma_model": 3.0,
+     "sigma_dft": 20.0,
+     "tau": 6.5,
+     "dq": 1.15
+    }
+   }
+  },
+  "S5_Pcluster_redox_ligand_switch": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.1103184037687292,
+    "err_best": 0.33491904492792657,
+    "err_exact": 0.22460064115919737,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 3.0,
+     "sigma_model": 2.0,
+     "sigma_dft": 15.0,
+     "tau": 3.0,
+     "dq": 1.2
+    }
+   },
+   "central": {
+    "VOI_A": 0.02356662836642226,
+    "err_best": 0.16120652808385771,
+    "err_exact": 0.13763989971743545,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 2.0,
+     "sigma_model": 3.0,
+     "sigma_dft": 10.0,
+     "tau": 6.5,
+     "dq": 1.0
+    }
+   }
+  },
+  "S6_OEC_S2_open_closed_cubane": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.11392340592441808,
+    "err_best": 0.4893230406338757,
+    "err_exact": 0.37539963470945764,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 3.0,
+     "sigma_model": 1.5,
+     "sigma_dft": 8.0,
+     "tau": 1.0,
+     "dq": 1.2
+    }
+   },
+   "central": {
+    "VOI_A": 0.044638385075263354,
+    "err_best": 0.31334103863060453,
+    "err_exact": 0.2687026535553412,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 2.0,
+     "sigma_model": 2.25,
+     "sigma_dft": 5.5,
+     "tau": 2.0,
+     "dq": 1.0
+    }
+   }
+  },
+  "S7_Cu2O2_peroxo_vs_bisoxo": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.05884668727245175,
+    "err_best": 0.17691375115815036,
+    "err_exact": 0.11806706388569861,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 2.0,
+     "sigma_model": 1.5,
+     "sigma_dft": 15.0,
+     "tau": 3.0,
+     "dq": 0.8
+    }
+   },
+   "central": {
+    "VOI_A": 0.015533500093668634,
+    "err_best": 0.10039370975696185,
+    "err_exact": 0.08486020966329322,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 1.5,
+     "sigma_model": 2.25,
+     "sigma_dft": 10.0,
+     "tau": 6.5,
+     "dq": 0.8
+    }
+   }
+  },
+  "S8_LBHB_proton_position": {
+   "favourable_to_quantum": {
+    "VOI_A": 0.02163467716310001,
+    "err_best": 0.12163471960442958,
+    "err_exact": 0.10000004244132957,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 1.0,
+     "sigma_model": 1.0,
+     "sigma_dft": 3.0,
+     "tau": 1.0,
+     "dq": 0.4
+    }
+   },
+   "central": {
+    "VOI_A": 0.003322626548535053,
+    "err_best": 0.05453085309109486,
+    "err_exact": 0.051208226542559805,
+    "solver_limited": false,
+    "inputs": {
+     "sigma_best": 0.65,
+     "sigma_model": 1.5,
+     "sigma_dft": 2.0,
+     "tau": 2.0,
+     "dq": 0.25
+    }
+   }
+  }
+ },
+ "ft": {
+  "alpha": 2.347338462463235,
+  "hours_per_energy": {
+   "Cu2O2 (AS_dp 16)": [
+    0.20294216607283905,
+    0.20294216607283905
+   ],
+   "[2Fe-2S] (20)": [
+    0.34265170121929184,
+    0.34265170121929184
+   ],
+   "[4Fe-4S] (32-36)": [
+    1.3616448945130513,
+    1.3616448945130513
+   ],
+   "OEC Mn4CaO5 (35-44)": [
+    2.1808953247678855,
+    2.1808953247678855
+   ],
+   "P450 Cpd I (58)": [
+    4.171166230390965,
+    4.171166230390965
+   ],
+   "H-cluster 6Fe (54)": [
+    3.527034008801252,
+    3.527034008801252
+   ],
+   "P-cluster (67-73)": [
+    7.157223187801291,
+    7.157223187801291
+   ],
+   "FeMoco (70-76)": [
+    7.8668565068334,
+    7.8668565068334
+   ],
+   "FeMoco + dynamic corr. (404o, as in 2601.04621)": [
+    474.09033972823005,
+    782.5848530841428
+   ]
+  },
+  "E4": {
+   "energies": [
+    30,
+    5000
+   ],
+   "QPU_days_76o_SA_perfect_overlap": [
+    9.83357063354175,
+    1638.9284389236252
+   ],
+   "QPU_days_76o_with_state_prep_x2.3": [
+    22.617212457146024,
+    3769.535409524338
+   ],
+   "QPU_days_404o_SA": [
+    592.6129246602876,
+    163038.5110591964
+   ]
+  },
+  "rho_star": {
+   "UCCSDTQ_composite_core_h": 5084.623059446265,
+   "UDMRG_D18k_core_h": 351982.2685967088
+  }
+ },
+ "nqe": {
+  "H": {
+   "lambda_th_A": 1.0040225843353041,
+   "exchange_factor": {
+    "1.5A": 8.117173450826644e-07,
+    "2.0A": 1.4868776953036095e-11,
+    "2.5A": 1.2069244152944746e-17
+   }
+  },
+  "D": {
+   "lambda_th_A": 0.7102295907762672,
+   "exchange_factor": {
+    "1.5A": 6.735315349195455e-13,
+    "2.0A": 2.298927188624012e-22,
+    "2.5A": 1.5483999580222064e-34
+   }
+  }
+ },
+ "compute": {
+  "cpu_min_total": "< 2",
+  "peak_ram_GB": "< 0.5",
+  "threads": 1
+ }
+}

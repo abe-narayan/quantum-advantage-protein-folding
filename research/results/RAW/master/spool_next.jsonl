@@ -1,2 +1,14 @@
 {"name": "cone2_1UBQ_p19_N20", "cmd": "python scripts/nmr_cone.py --probe 19 --N 20", "ram_gb": 1.2, "threads": 1}
 {"name": "cone2_1UBQ_p245_N20", "cmd": "python scripts/nmr_cone.py --probe 245 --N 20", "ram_gb": 1.2, "threads": 1}
+{"name": "cone2_1UBQ_p19_N22", "cmd": "python scripts/nmr_cone.py --probe 19 --N 22", "ram_gb": 2.0, "threads": 1}
+{"name": "cone2_1UBQ_p245_N22", "cmd": "python scripts/nmr_cone.py --probe 245 --N 22", "ram_gb": 2.0, "threads": 1}
+{"name": "cone2_1PGA_p390_N12", "cmd": "python scripts/nmr_cone.py --pdb 1PGA --probe 390 --N 12", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1UBQ_p487_N12", "cmd": "python scripts/nmr_cone.py --pdb 1UBQ --probe 487 --N 12", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1PGA_p390_N14", "cmd": "python scripts/nmr_cone.py --pdb 1PGA --probe 390 --N 14", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1UBQ_p487_N14", "cmd": "python scripts/nmr_cone.py --pdb 1UBQ --probe 487 --N 14", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1PGA_p390_N16", "cmd": "python scripts/nmr_cone.py --pdb 1PGA --probe 390 --N 16", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1UBQ_p487_N16", "cmd": "python scripts/nmr_cone.py --pdb 1UBQ --probe 487 --N 16", "ram_gb": 0.5, "threads": 1}
+{"name": "cone2_1PGA_p390_N18", "cmd": "python scripts/nmr_cone.py --pdb 1PGA --probe 390 --N 18", "ram_gb": 1.2, "threads": 1}
+{"name": "cone2_1UBQ_p487_N18", "cmd": "python scripts/nmr_cone.py --pdb 1UBQ --probe 487 --N 18", "ram_gb": 1.2, "threads": 1}
+{"name": "cone2_1PGA_p390_N20", "cmd": "python scripts/nmr_cone.py --pdb 1PGA --probe 390 --N 20", "ram_gb": 1.2, "threads": 1}
+{"name": "cone2_1UBQ_p487_N20", "cmd": "python scripts/nmr_cone.py --pdb 1UBQ --probe 487 --N 20", "ram_gb": 1.2, "threads": 1}

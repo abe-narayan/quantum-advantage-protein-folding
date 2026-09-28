@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/xvyLA2xMDFlUykamXXKkO6/4X4E</id>
+  <title>arXiv Query: search_query=abs:"local minima" AND abs:quantum AND abs:"exponential" AND abs:advantage&amp;id_list=&amp;start=0&amp;max_results=20</title>
+  <updated>2026-09-28T15:26:40Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22local+minima%22+AND+(abs:quantum+AND+(abs:%22exponential%22+AND+abs:advantage))&amp;start=0&amp;max_results=20&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03385v1</id>
+    <title>Mechanisms for Quantum Advantage in Global Optimization of Nonconvex Functions</title>
+    <updated>2025-10-03T17:40:31Z</updated>
+    <link href="https://arxiv.org/abs/2510.03385v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03385v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present new theoretical mechanisms for quantum speedup in the global optimization of nonconvex functions, expanding the scope of quantum advantage beyond traditional tunneling-based explanations. As our main building-block, we demonstrate a rigorous correspondence between the spectral properties of Schrödinger operators and the mixing times of classical Langevin diffusion. This correspondence motivates a mechanism for separation on functions with unique global minimum: while quantum algorithms operate on the original potential, classical diffusions correspond to a Schrödinger operators with a WKB potential having nearly degenerate global minima. We formalize these ideas by proving that a real-space adiabatic quantum algorithm (RsAA) achieves provably polynomial-time optimization for broad families of nonconvex functions. First, for block-separable functions, we show that RsAA maintains polynomial runtime while known off-the-shelf algorithms require exponential time and structure-aware algorithms exhibit arbitrarily large polynomial runtimes. These results leverage novel non-asymptotic results in semiclassical analysis. Second, we use recent advances in the theory of intrinsic hypercontractivity to demonstrate polynomial runtimes for RsAA on appropriately perturbed strongly convex functions that lack global structure, while off-the-shelf algorithms remain exponentially bottlenecked. In contrast to prior works based on quantum tunneling, these separations do not depend on the geometry of barriers between local minima. Our theoretical claims about classical algorithm runtimes are supported by rigorous analysis and comprehensive numerical benchmarking. These findings establish a rigorous theoretical foundation for quantum advantage in continuous optimization and open new research directions connecting quantum algorithms, stochastic processes, and semiclassical analysis.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-03T17:40:31Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Dylan Herman</name>
+    </author>
+    <author>
+      <name>Guneykan Ozgul</name>
+    </author>
+    <author>
+      <name>Anuj Apte</name>
+    </author>
+    <author>
+      <name>Junhyung Lyle Kim</name>
+    </author>
+    <author>
+      <name>Anupam Prakash</name>
+    </author>
+    <author>
+      <name>Jiayu Shen</name>
+    </author>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.16263v1</id>
+    <title>Beyond Stoquasticity: Structural Steering and Interference in Quantum Optimization</title>
+    <updated>2025-09-18T04:27:42Z</updated>
+    <link href="https://arxiv.org/abs/2509.16263v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.16263v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a theoretical analysis of the DIC-DAC-DOA algorithm, a non-stoquastic quantum algorithm for solving the Maximum Independent Set (MIS) problem. The algorithm runs in polynomial time and achieves exponential speedup over both transverse-field quantum annealing (TFQA) and classical algorithms on a structured family of NP-hard MIS instances, under assumptions supported by analytical and numerical evidence. The core of this speedup lies in the ability of the evolving ground state to develop both positive and negative amplitudes, enabled by the non-stoquastic XX-driver. This sign structure permits quantum interference that produces negative amplitudes in the computational basis, allowing efficient evolution paths beyond the reach of stoquastic algorithms, whose ground states remain strictly non-negative. In our analysis, the efficiency of the algorithm is measured by the presence or absence of an anti-crossing, rather than by spectral gap estimation as in traditional approaches. The key idea is to infer it from the crossing behavior of bare energy levels of relevant subsystems associated with the degenerate local minima (LM) and the global minimum (GM). The cliques of the critical LM, responsible for the anti-crossing in TFQA, can be efficiently identified to form the XX-driver graph. The resulting speedup can be attributed to two mechanisms: in the first stage, energy-guided localization within the same-sign block steers the ground state smoothly into the GM-supporting region, while in the second stage, the opposite-sign blocks are invoked and sign-generating quantum interference drives the evolution along an opposite-sign path. Finally, we derive scalable reduced models that provide a concrete opportunity for verification of the quantum advantage mechanism on currently available universal quantum computers.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-18T04:27:42Z</published>
+    <arxiv:comment>75 pages, 29 figures, companion paper to "Limitation of Stoquastic Quantum Annealing: A Structural Perspective"</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vicky Choi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.18309v2</id>
+    <title>Simple Quantum Gradient Descent Without Coherent Oracle Access</title>
+    <updated>2025-02-24T09:40:17Z</updated>
+    <link href="https://arxiv.org/abs/2412.18309v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.18309v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The gradient descent method aims at finding local minima of a given multivariate function by moving along the direction of its gradient, and hence, the algorithm typically involves computing all partial derivatives of a given function, before updating the solution iteratively. In the work of Rebentrost et al. [New Journal of Physics, 21(7):073023, 2019], the authors translated the iterative optimization algorithm into a quantum setting, with some assumptions regarding certain structure of the given function, with oracle or black-box access to some matrix that specifies the structure. Here, we develop an alternative quantum framework for the gradient descent problem, based on the seminal quantum singular value transformation framework. We show that given only classical information of function of interest, it is possible to construct a quantum gradient descent algorithm with a running time logarithmical in the number of variables. In particular, our framework consumes exponentially less qubits than the prior quantum gradient descent algorithm and removes the need for any coherent oracle access to classical information. Thus, our work provides another example demonstrating the power of quantum singular value transformation framework, and in particular, it adds another instance revealing that quantum coherent access is not necessary for quantum computational advantage.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-24T09:48:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Nhat A. Nghiem</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.17659v2</id>
+    <title>Discretized Quantum Exhaustive Search for Variational Quantum Algorithms</title>
+    <updated>2026-01-19T07:59:44Z</updated>
+    <link href="https://arxiv.org/abs/2407.17659v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.17659v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computers promise a great computational advantage over classical computers, yet currently available quantum devices have only a limited amount of qubits and a high level of noise, limiting the size of problems that can be solved accurately with those devices. Variational Quantum Algorithms (VQAs) have emerged as a leading strategy to address these limitations by optimizing cost functions based on measurement results of shallow-depth circuits. However, the optimization process usually suffers from severe trainability issues as a result of the exponentially large search space, mainly local minima and barren plateaus. Here we propose a novel method that can improve variational quantum algorithms -- ``discretized quantum exhaustive search''. On classical computers, exhaustive search, also named brute force, solves small-size NP complete and NP hard problems. Exhaustive search and efficient partial exhaustive search help designing heuristics and exact algorithms for solving larger-size problems by finding easy subcases or good approximations. We adopt this method to the quantum domain, by relying on mutually unbiased bases for the $2^n$-dimensional Hilbert space. We define a discretized quantum exhaustive search that works well for small size problems. We provide an example of an efficient partial discretized quantum exhaustive search for larger-size problems, in order to extend classical tools to the quantum computing domain, for near future and far future goals. Our method enables obtaining intuition on NP-complete and NP-hard problems as well as on Quantum Merlin Arthur (QMA)-complete and QMA-hard problems. We demonstrate our ideas in many simple cases, providing the energy landscape for various problems and presenting two types of energy curves via VQAs.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-24T22:06:05Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ittay Alfassi</name>
+    </author>
+    <author>
+      <name>Dekel Meirom</name>
+    </author>
+    <author>
+      <name>Tal Mor</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.05227v4</id>
+    <title>Batched Line Search Strategy for Navigating through Barren Plateaus in Quantum Circuit Training</title>
+    <updated>2025-08-25T10:09:46Z</updated>
+    <link href="https://arxiv.org/abs/2402.05227v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.05227v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Variational quantum algorithms are viewed as promising candidates for demonstrating quantum advantage on near-term devices. These approaches typically involve the training of parameterized quantum circuits through a classical optimization loop. However, they often encounter challenges attributed to the exponentially diminishing gradient components, known as the barren plateau (BP) problem. This work introduces a novel optimization approach designed to alleviate the adverse effects of BPs during circuit training. In contrast to conventional gradient descent methods with a small learning parameter, our approach relies on making a finite hops along the search direction determined on a randomly chosen subsets of the free parameters. The optimization search direction, together with the range of the search, is determined by the distant features of the cost-function landscape. This enables the optimization path to navigate around barren plateaus without the need for external control mechanisms. We have successfully applied our optimization strategy to quantum circuits comprising 21 qubits and 15000 entangling gates, demonstrating robust resistance against BPs. Additionally, we have extended our optimization strategy by incorporating an evolutionary selection framework, enhancing its ability to avoid local minima in the landscape. The modified algorithm has been successfully utilized in quantum gate synthesis applications, showcasing a significantly improved efficiency in generating highly compressed quantum circuits compared to traditional gradient-based optimization approaches.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-07T20:06:29Z</published>
+    <arxiv:comment>33 pages</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 9, 1841 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Jakab Nádori</name>
+    </author>
+    <author>
+      <name>Gregory Morse</name>
+    </author>
+    <author>
+      <name>Barna Fülöp Villám</name>
+    </author>
+    <author>
+      <name>Zita Majnay-Takács</name>
+    </author>
+    <author>
+      <name>Zoltán Zimborás</name>
+    </author>
+    <author>
+      <name>Péter Rakyta</name>
+    </author>
+    <arxiv:doi>10.22331/q-2025-08-29-1841</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2025-08-29-1841" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.14980v1</id>
+    <title>Statistical Analysis of Quantum State Learning Process in Quantum Neural Networks</title>
+    <updated>2023-09-26T14:54:50Z</updated>
+    <link href="https://arxiv.org/abs/2309.14980v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.14980v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum neural networks (QNNs) have been a promising framework in pursuing near-term quantum advantage in various fields, where many applications can be viewed as learning a quantum state that encodes useful data. As a quantum analog of probability distribution learning, quantum state learning is theoretically and practically essential in quantum machine learning. In this paper, we develop a no-go theorem for learning an unknown quantum state with QNNs even starting from a high-fidelity initial state. We prove that when the loss value is lower than a critical threshold, the probability of avoiding local minima vanishes exponentially with the qubit count, while only grows polynomially with the circuit depth. The curvature of local minima is concentrated to the quantum Fisher information times a loss-dependent constant, which characterizes the sensibility of the output state with respect to parameters in QNNs. These results hold for any circuit structures, initialization strategies, and work for both fixed ansatzes and adaptive methods. Extensive numerical simulations are performed to validate our theoretical results. Our findings place generic limits on good initial guesses and adaptive methods for improving the learnability and scalability of QNNs, and deepen the understanding of prior information's role in QNNs.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-26T14:54:50Z</published>
+    <arxiv:comment>28 pages including appendix. To appear at NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Hao-kai Zhang</name>
+    </author>
+    <author>
+      <name>Chenghong Zhu</name>
+    </author>
+    <author>
+      <name>Mingrui Jing</name>
+    </author>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.06858v3</id>
+    <title>Trainability Enhancement of Parameterized Quantum Circuits via Reduced-Domain Parameter Initialization</title>
+    <updated>2024-11-05T03:38:51Z</updated>
+    <link href="https://arxiv.org/abs/2302.06858v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.06858v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parameterized quantum circuits (PQCs) have been widely used as a machine learning model to explore the potential of achieving quantum advantages for various tasks. However, training PQCs is notoriously challenging owing to the phenomenon of plateaus and/or the existence of (exponentially) many spurious local minima. To enhance trainability, in this work we propose an efficient parameter initialization strategy with theoretical guarantees. We prove that by reducing the initial domain of each parameter inversely proportional to the square root of circuit depth, the magnitude of the cost gradient decays at most polynomially with respect to qubit count and circuit depth. Our theoretical results are substantiated through numerical simulations of variational quantum eigensolver tasks. Moreover, we demonstrate that the reduced-domain initialization strategy can protect specific quantum neural networks from exponentially many spurious local minima. Our results highlight the significance of an appropriate parameter initialization strategy, offering insights to enhance the trainability and convergence of variational quantum algorithms.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-14T06:41:37Z</published>
+    <arxiv:comment>7 figures; Numerical simulations added</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Applied 22, 054005 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Yabo Wang</name>
+    </author>
+    <author>
+      <name>Bo Qi</name>
+    </author>
+    <author>
+      <name>Chris Ferrie</name>
+    </author>
+    <author>
+      <name>Daoyi Dong</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevApplied.22.054005</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevApplied.22.054005" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.08566v2</id>
+    <title>Theory for Equivariant Quantum Neural Networks</title>
+    <updated>2024-05-11T01:14:17Z</updated>
+    <link href="https://arxiv.org/abs/2210.08566v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.08566v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum neural network architectures that have little-to-no inductive biases are known to face trainability and generalization issues. Inspired by a similar problem, recent breakthroughs in machine learning address this challenge by creating models encoding the symmetries of the learning task. This is materialized through the usage of equivariant neural networks whose action commutes with that of the symmetry. In this work, we import these ideas to the quantum realm by presenting a comprehensive theoretical framework to design equivariant quantum neural networks (EQNN) for essentially any relevant symmetry group. We develop multiple methods to construct equivariant layers for EQNNs and analyze their advantages and drawbacks. Our methods can find unitary or general equivariant quantum channels efficiently even when the symmetry group is exponentially large or continuous. As a special implementation, we show how standard quantum convolutional neural networks (QCNN) can be generalized to group-equivariant QCNNs where both the convolution and pooling layers are equivariant to the symmetry group. We then numerically demonstrate the effectiveness of a SU(2)-equivariant QCNN over symmetry-agnostic QCNN on a classification task of phases of matter in the bond-alternating Heisenberg model. Our framework can be readily applied to virtually all areas of quantum machine learning. Lastly, we discuss about how symmetry-informed models such as EQNNs provide hopes to alleviate central challenges such as barren plateaus, poor local minima, and sample complexity.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-16T15:42:21Z</published>
+    <arxiv:comment>26+21 pages, 12 + 2 figures; journal version with new numerics section</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>PRX Quantum 5, 020328 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Quynh T. Nguyen</name>
+    </author>
+    <author>
+      <name>Louis Schatzki</name>
+    </author>
+    <author>
+      <name>Paolo Braccia</name>
+    </author>
+    <author>
+      <name>Michael Ragone</name>
+    </author>
+    <author>
+      <name>Patrick J. Coles</name>
+    </author>
+    <author>
+      <name>Frederic Sauvage</name>
+    </author>
+    <author>
+      <name>Martin Larocca</name>
+    </author>
+    <author>
+      <name>M. Cerezo</name>
+    </author>
+    <arxiv:doi>10.1103/PRXQuantum.5.020328</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PRXQuantum.5.020328" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2101.03037v2</id>
+    <title>Learning quantum data with the quantum Earth Mover's distance</title>
+    <updated>2022-05-16T13:14:46Z</updated>
+    <link href="https://arxiv.org/abs/2101.03037v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2101.03037v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantifying how far the output of a learning algorithm is from its target is an essential task in machine learning. However, in quantum settings, the loss landscapes of commonly used distance metrics often produce undesirable outcomes such as poor local minima and exponentially decaying gradients. To overcome these obstacles, we consider here the recently proposed quantum earth mover's (EM) or Wasserstein-1 distance as a quantum analog to the classical EM distance. We show that the quantum EM distance possesses unique properties, not found in other commonly used quantum distance metrics, that make quantum learning more stable and efficient. We propose a quantum Wasserstein generative adversarial network (qWGAN) which takes advantage of the quantum EM distance and provides an efficient means of performing learning on quantum data. We provide examples where our qWGAN is capable of learning a diverse set of quantum data with only resources polynomial in the number of qubits.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-01-08T14:33:19Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Science and Technology 7(4), 045002 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Bobak Toussi Kiani</name>
+    </author>
+    <author>
+      <name>Giacomo De Palma</name>
+    </author>
+    <author>
+      <name>Milad Marvian</name>
+    </author>
+    <author>
+      <name>Zi-Wen Liu</name>
+    </author>
+    <author>
+      <name>Seth Lloyd</name>
+    </author>
+    <arxiv:doi>10.1088/2058-9565/ac79c9</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/2058-9565/ac79c9" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.08763v3</id>
+    <title>Non-trivial symmetries in quantum landscapes and their resilience to quantum noise</title>
+    <updated>2022-09-01T15:46:31Z</updated>
+    <link href="https://arxiv.org/abs/2011.08763v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.08763v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Very little is known about the cost landscape for parametrized Quantum Circuits (PQCs). Nevertheless, PQCs are employed in Quantum Neural Networks and Variational Quantum Algorithms, which may allow for near-term quantum advantage. Such applications require good optimizers to train PQCs. Recent works have focused on quantum-aware optimizers specifically tailored for PQCs. However, ignorance of the cost landscape could hinder progress towards such optimizers. In this work, we analytically prove two results for PQCs: (1) We find an exponentially large symmetry in PQCs, yielding an exponentially large degeneracy of the minima in the cost landscape. Alternatively, this can be cast as an exponential reduction in the volume of relevant hyperparameter space. (2) We study the resilience of the symmetries under noise, and show that while it is conserved under unital noise, non-unital channels can break these symmetries and lift the degeneracy of minima, leading to multiple new local minima. Based on these results, we introduce an optimization method called Symmetry-based Minima Hopping (SYMH), which exploits the underlying symmetries in PQCs. Our numerical simulations show that SYMH improves the overall optimizer performance in the presence of non-unital noise at a level comparable to current hardware. Overall, this work derives large-scale circuit symmetries from local gate transformations, and uses them to construct a noise-aware optimization method.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-17T16:43:05Z</published>
+    <arxiv:comment>13 + 7 pages, 10 figures, updated title and article to published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 6, 804 (2022)</arxiv:journal_ref>
+    <author>
+      <name>Enrico Fontana</name>
+    </author>
+    <author>
+      <name>M. Cerezo</name>
+    </author>
+    <author>
+      <name>Andrew Arrasmith</name>
+    </author>
+    <author>
+      <name>Ivan Rungger</name>
+    </author>
+    <author>
+      <name>Patrick J. Coles</name>
+    </author>
+    <arxiv:doi>10.22331/q-2022-09-15-804</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2022-09-15-804" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1812.02746v2</id>
+    <title>Bang-bang control as a design principle for classical and quantum optimization algorithms</title>
+    <updated>2019-08-02T03:57:48Z</updated>
+    <link href="https://arxiv.org/abs/1812.02746v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1812.02746v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Physically motivated classical heuristic optimization algorithms such as simulated annealing (SA) treat the objective function as an energy landscape, and allow walkers to escape local minima. It has been argued that quantum properties such as tunneling may give quantum algorithms advantage in finding ground states of vast, rugged cost landscapes. Indeed, the Quantum Adiabatic Algorithm (QAO) and the recent Quantum Approximate Optimization Algorithm (QAOA) have shown promising results on various problem instances that are considered classically hard. Here, we argue that the type of control strategy used by the optimization algorithm may be crucial to its success. Along with SA, QAO and QAOA, we define a new, bang-bang version of simulated annealing, BBSA, and study the performance of these algorithms on two well-studied problem instances from the literature. Both classically and quantumly, the successful control strategy is found to be bang-bang, exponentially outperforming the quasistatic analogues on the same instances. Lastly, we construct O(1)-depth QAOA protocols for a class of symmetric cost functions, and provide an accompanying physical picture.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-12-06T19:00:01Z</published>
+    <arxiv:comment>23 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Information &amp; Computation 19(5&amp;6): 424-446 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Aniruddha Bapat</name>
+    </author>
+    <author>
+      <name>Stephen Jordan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1703.09277v1</id>
+    <title>Can quantum Monte Carlo simulate quantum annealing?</title>
+    <updated>2017-03-27T19:35:22Z</updated>
+    <link href="https://arxiv.org/abs/1703.09277v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1703.09277v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent theoretical and experimental studies have suggested that quantum Monte Carlo (QMC) simulation can behave similarly to quantum annealing (QA). The theoretical analysis was based on calculating transition rates between local minima, in the large spin limit using WentzelKramers-Brillouin (WKB) approximation, for highly symmetric systems of ferromagnetically coupled qubits. The rate of transition was observed to scale the same in QMC and incoherent quantum tunneling, implying that there might be no quantum advantage of QA compared to QMC other than a prefactor. Quantum annealing is believed to provide quantum advantage through large scale superposition and entanglement and not just incoherent tunneling. Even for incoherent tunneling, the scaling similarity with QMC observed above does not hold in general. Here, we compare incoherent tunneling and QMC escape using perturbation theory, which has much wider validity than WKB approximation. We show that the two do not scale the same way when there are multiple homotopy-inequivalent paths for tunneling. We demonstrate through examples that frustration can generate an exponential number of tunneling paths, which under certain conditions can lead to an exponential advantage for incoherent tunneling over classical QMC escape. We provide analytical and numerical evidence for such an advantage and show that it holds beyond perturbation theory.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-03-27T19:35:22Z</published>
+    <arxiv:comment>12 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Evgeny Andriyash</name>
+    </author>
+    <author>
+      <name>Mohammad H. Amin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0709.0528v2</id>
+    <title>Effect of Local Minima on Adiabatic Quantum Optimization</title>
+    <updated>2008-04-04T23:55:43Z</updated>
+    <link href="https://arxiv.org/abs/0709.0528v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0709.0528v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We present a perturbative method to estimate the spectral gap for adiabatic quantum optimization, based on the structure of the energy levels in the problem Hamiltonian. We show that for problems that have exponentially large number of local minima close to the global minimum, the gap becomes exponentially small making the computation time exponentially long. The quantum advantage of adiabatic quantum computation may then be accessed only via the local adiabatic evolution, which requires phase coherence throughout the evolution and knowledge of the spectrum. Such problems, therefore, are not suitable for adiabatic quantum computation.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-09-05T18:33:39Z</published>
+    <arxiv:comment>4 pages, published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 100, 130503 (2008)</arxiv:journal_ref>
+    <author>
+      <name>M. H. S. Amin</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.100.130503</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.100.130503" title="doi"/>
+  </entry>
+</feed>

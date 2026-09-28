@@ -1,0 +1,46 @@
+A frontier:
+  lane_workstation_1day: N_max 26 (15.4 h); next N: 2.97 d, mem 9.63e-07 PB
+  lane_1gpu_1day: N_max 32 (5.94 h); next N: 1.11 d, mem 5.6e-05 PB
+  lane_8gpu_node_1day: N_max 34 (10 h); next N: 1.87 d, mem 0.000218 PB
+  lane_4096gpu_1week: N_max 46 (6.07 d); next N: infeasible, mem 0.774 PB
+  lane_exascale_37888x64GB_1month: N_max 48 (2.85 d); next N: infeasible, mem 3.03 PB
+  workstation_optimised_kernel_1day (c_pe 2 ns, INFERENCE): N_max 28 (16.2 h); next N: 3.09 d, mem 3.72e-06 PB
+  workstation_optimised_kernel_1week: N_max 30 (3.09 d); next N: infeasible, mem 1.44e-05 PB
+  frontier_class_75264GCD_x64GB_1.6TBps_1month (4.8 PB HBM): N_max 50 (14.2 d); next N: infeasible, mem 11.9 PB
+  frontier_class_2vec_1month: N_max 50 (15.6 d); next N: infeasible, mem 7.93 PB
+  aurora_class_63744x128GB_3.2TBps_2vec_1month (8.2 PB HBM): N_max 50 (9.19 d); next N: 39.7 d, mem 7.93 PB
+  aurora_class_2vec_3months: N_max 52 (39.7 d); next N: infeasible, mem 31.2 PB
+B quantum per curve (p19 couplings):
+  N= 20 dense pairs 190 (>30Hz 183) T 3.35e+11 Tdepth 3.35e+10 wall {'1us': '9.29 h', '10us': '3.87 d', '170us': '65.8 d'} dt0.5 1.64 d AE 1.17 h CNOT/circ 1.82e+05 | cut30Hz T 3.22e+11 wall {'1us': '9.28 h', '10us': '3.87 d', '170us': '65.7 d'} | qubitiz Toff 4.15e+10 (lambda t 392)
+  N= 26 dense pairs 325 (>30Hz 310) T 5.85e+11 Tdepth 4.50e+10 wall {'1us': '12.5 h', '10us': '5.21 d', '170us': '88.5 d'} dt0.5 2.2 d AE 1.57 h CNOT/circ 3.12e+05 | cut30Hz T 5.57e+11 wall {'1us': '12.4 h', '10us': '5.16 d', '170us': '87.8 d'} | qubitiz Toff 1.04e+11 (lambda t 579)
+  N= 34 dense pairs 561 (>30Hz 529) T 1.03e+12 Tdepth 6.07e+10 wall {'1us': '16.9 h', '10us': '7.02 d', '170us': '119 d'} dt0.5 2.96 d AE 2.12 h CNOT/circ 5.39e+05 | cut30Hz T 9.70e+11 wall {'1us': '16.4 h', '10us': '6.82 d', '170us': '116 d'} | qubitiz Toff 2.81e+11 (lambda t 916)
+  N= 40 dense pairs 780 (>30Hz None) T 1.45e+12 Tdepth 7.26e+10 wall {'1us': '20.2 h', '10us': '8.4 d', '170us': '143 d'} dt0.5 3.54 d AE 2.53 h CNOT/circ 7.49e+05
+  N= 46 dense pairs 1035 (>30Hz None) T 1.95e+12 Tdepth 8.47e+10 wall {'1us': '23.5 h', '10us': '9.8 d', '170us': '167 d'} dt0.5 4.13 d AE 2.96 h CNOT/circ 9.94e+05
+  N= 50 dense pairs 1225 (>30Hz 1110) T 2.32e+12 Tdepth 9.28e+10 wall {'1us': '1.07 d', '10us': '10.7 d', '170us': '183 d'} dt0.5 4.52 d AE 3.24 h CNOT/circ 1.18e+06 | cut30Hz T 2.09e+12 wall {'1us': '23.8 h', '10us': '9.92 d', '170us': '169 d'} | qubitiz Toff 1.02e+12 (lambda t 1.53e+03)
+  N= 58 dense pairs 1653 (>30Hz 1461) T 3.17e+12 Tdepth 1.09e+11 wall {'1us': '1.26 d', '10us': '12.6 d', '170us': '215 d'} dt0.5 5.32 d AE 3.81 h CNOT/circ 1.59e+06 | cut30Hz T 2.79e+12 wall {'1us': '1.13 d', '10us': '11.3 d', '170us': '193 d'} | qubitiz Toff 1.58e+12 (lambda t 1.75e+03)
+  N= 82 dense pairs 3321 (>30Hz 2701) T 6.53e+12 Tdepth 1.59e+11 wall {'1us': '1.84 d', '10us': '18.4 d', '170us': '313 d'} dt0.5 7.74 d AE 5.56 h CNOT/circ 3.19e+06 | cut30Hz T 5.27e+12 wall {'1us': '1.51 d', '10us': '15.1 d', '170us': '257 d'} | qubitiz Toff 5.09e+12 (lambda t 2.82e+03)
+  N=150 dense pairs 11175 (>30Hz 7469) T 2.29e+13 Tdepth 3.06e+11 wall {'1us': '3.54 d', '10us': '35.4 d', '170us': '1.65 yr'} dt0.5 14.8 d AE 10.7 h CNOT/circ 1.07e+07 | cut30Hz T 1.51e+13 wall {'1us': '2.36 d', '10us': '23.6 d', '170us': '1.1 yr'} | qubitiz Toff 3.71e+13 (lambda t 6.13e+03)
+  N=300 dense pairs 44850 (>30Hz 21334) T 9.65e+13 Tdepth 6.44e+11 wall {'1us': '7.45 d', '10us': '74.5 d', '170us': '3.47 yr'} dt0.5 31.2 d AE 22.5 h CNOT/circ 4.31e+07 | cut30Hz T 4.48e+13 wall {'1us': '3.48 d', '10us': '34.8 d', '170us': '1.62 yr'} | qubitiz Toff 3.54e+14 (lambda t 1.46e+04)
+  N=550 dense pairs 150975 (>30Hz 48518) T 3.38e+14 Tdepth 1.23e+12 wall {'1us': '14.2 d', '10us': '142 d', '170us': '6.62 yr'} dt0.5 59.4 d AE 1.79 d CNOT/circ 1.45e+08 | cut30Hz T 1.05e+14 wall {'1us': '4.43 d', '10us': '44.3 d', '170us': '2.06 yr'} | qubitiz Toff 2.37e+15 (lambda t 2.9e+04)
+  N=629 dense pairs 197506 (>30Hz 55666) T 4.46e+14 Tdepth 1.42e+12 wall {'1us': '16.4 d', '10us': '164 d', '170us': '7.64 yr'} dt0.5 68.6 d AE 2.06 d CNOT/circ 1.90e+08 | cut30Hz T 1.21e+14 wall {'1us': '4.47 d', '10us': '44.7 d', '170us': '2.08 yr'} | qubitiz Toff 3.56e+15 (lambda t 3.33e+04)
+C break-even:
+  1us | workstation (lane c_pe 16 ns, 8 cores): N* 26 (Q 12.5 h vs C 1.17 d)
+  1us | workstation optimised (2 ns): N* 28 (Q 13.6 h vs C 16.2 h)
+  1us | 1 GPU 80 GB: N* 34 (Q 16.9 h vs C 2.03 d)
+  1us | 4096 GPUs: N* 44 (Q 22.4 h vs C 2.53 d)
+  1us | exascale (Frontier-class, 4.8 PB): N* 48 (Q 1.03 d vs C 3.59 d)
+  10us | workstation (lane c_pe 16 ns, 8 cores): N* 30 (Q 6.11 d vs C 24.7 d)
+  10us | workstation optimised (2 ns): N* 32 (Q 6.56 d vs C infeasible)
+  10us | 1 GPU 80 GB: N* 36 (Q 7.48 d vs C infeasible)
+  10us | 4096 GPUs: N* 46 (Q 9.8 d vs C 11 d)
+  10us | exascale (Frontier-class, 4.8 PB): N* 50 (Q 10.7 d vs C 15.6 d)
+  170us | workstation (lane c_pe 16 ns, 8 cores): N* 32 (Q 112 d vs C infeasible)
+  170us | workstation optimised (2 ns): N* 32 (Q 112 d vs C infeasible)
+  170us | 1 GPU 80 GB: N* 36 (Q 127 d vs C infeasible)
+  170us | 4096 GPUs: N* 48 (Q 175 d vs C infeasible)
+  170us | exascale (Frontier-class, 4.8 PB): N* 52 (Q 191 d vs C infeasible)
+D robustness:
+  p19_t320_site8 {"exp_all_N_sigma": 82.03218523163666, "exp_all_rms_over_sigma": 2.505188893979594, "exp_loo_N_sigma": [18.1, 23.5, 1241.5, 91.2, 1267.6], "exp_loo_rms_over_sigma": [0.69, 0.43, 1.99, 2.79, 2.66], "invN_N_sigma": {"all": 547, "last3": 328, "last2": 471, "drop12": 738}, "invN_Finf": {"all": -0.03, "last3": 0.084, "last2": 0.01, "drop12": -0.139}, "invN2_last3_N_sigma": 53.75055838323856, "last_steps": {"d_prev": -0.015440177205320649, "d_last": -0.02615396747147522, "ratio": 1.6938903695005925, "accelerating": true}, "Finf_spread": [-4.904419970060562, 0.24930561155336195]}
+  p19_t320_site9 {"exp_all_N_sigma": 57.63441078530211, "exp_all_rms_over_sigma": 2.4296653285078795, "exp_loo_N_sigma": [17.8, 21.8, 1243.9, 60.0, 1273.9], "exp_loo_rms_over_sigma": [0.65, 0.42, 1.8, 2.71, 2.55], "invN_N_sigma": {"all": 557, "last3": 301, "last2": 433, "drop12": 721}, "invN_Finf": {"all": -0.035, "last3": 0.1, "last2": 0.031, "drop12": -0.128}, "invN2_last3_N_sigma": 51.43758145095495, "last_steps": {"d_prev": -0.014047451173125391, "d_last": -0.02405481544403726, "ratio": 1.7123971564362694, "accelerating": true}, "Finf_spread": [-5.0727828392569005, 0.2526330996450489]}
+F {"sector_dim": 184756, "pairs": 190, "sec_per_step_min": 0.10496479994617403, "sec_per_step_all": [0.112805699929595, 0.10496479994617403, 0.1299272000323981, 0.16440250002779067], "ns_per_pair_elem": 5.980280104637242, "build_cpu_s": 0.984375, "total_cpu_s": 1.71875, "norm_err": 0.0}
+cpu_s 3.5 peak_rss_GB 0.202440704

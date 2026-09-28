@@ -1,0 +1,98 @@
+[
+ {
+  "probe": 19,
+  "N": 16,
+  "method": "Z4a exact(N-2)",
+  "max_err": 0.1394
+ },
+ {
+  "probe": 19,
+  "N": 16,
+  "method": "exact(N-2) * M_N/M_(N-2)",
+  "max_err": 0.0961
+ },
+ {
+  "probe": 19,
+  "N": 16,
+  "method": "exact(N-2) + M_N - M_(N-2)",
+  "max_err": 0.1079
+ },
+ {
+  "probe": 19,
+  "N": 16,
+  "method": "M_N alone (add1 mult base10)",
+  "max_err": 0.0504
+ },
+ {
+  "probe": 19,
+  "N": 18,
+  "method": "Z4a exact(N-2)",
+  "max_err": 0.0372
+ },
+ {
+  "probe": 19,
+  "N": 18,
+  "method": "exact(N-2) * M_N/M_(N-2)",
+  "max_err": 0.096
+ },
+ {
+  "probe": 19,
+  "N": 18,
+  "method": "exact(N-2) + M_N - M_(N-2)",
+  "max_err": 0.0892
+ },
+ {
+  "probe": 19,
+  "N": 18,
+  "method": "M_N alone (add1 mult base10)",
+  "max_err": 0.0659
+ },
+ {
+  "probe": 245,
+  "N": 16,
+  "method": "Z4a exact(N-2)",
+  "max_err": 0.1316
+ },
+ {
+  "probe": 245,
+  "N": 16,
+  "method": "exact(N-2) * M_N/M_(N-2)",
+  "max_err": 0.0771
+ },
+ {
+  "probe": 245,
+  "N": 16,
+  "method": "exact(N-2) + M_N - M_(N-2)",
+  "max_err": 0.0641
+ },
+ {
+  "probe": 245,
+  "N": 16,
+  "method": "M_N alone (add1 mult base10)",
+  "max_err": 0.0641
+ },
+ {
+  "probe": 245,
+  "N": 18,
+  "method": "Z4a exact(N-2)",
+  "max_err": 0.0567
+ },
+ {
+  "probe": 245,
+  "N": 18,
+  "method": "exact(N-2) * M_N/M_(N-2)",
+  "max_err": 0.0222
+ },
+ {
+  "probe": 245,
+  "N": 18,
+  "method": "exact(N-2) + M_N - M_(N-2)",
+  "max_err": 0.0222
+ },
+ {
+  "probe": 245,
+  "N": 18,
+  "method": "M_N alone (add1 mult base10)",
+  "max_err": 0.0623
+ }
+]

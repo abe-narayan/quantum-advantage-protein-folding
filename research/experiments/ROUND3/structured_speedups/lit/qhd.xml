@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/l3X1V87nUWzfVGGMqEtQ4EYQipQ</id>
+  <title>arXiv Query: search_query=abs:"quantum Hamiltonian descent"&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-28T15:25:47Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22quantum+Hamiltonian+descent%22&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.16996v1</id>
+    <title>Encoding Choices and Fault-Tolerant Resource Estimates for Digital Quantum Hamiltonian Descent</title>
+    <updated>2026-07-18T23:08:06Z</updated>
+    <link href="https://arxiv.org/abs/2607.16996v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.16996v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum Hamiltonian descent (QHD) formulates continuous optimization as time-dependent quantum dynamics, where a kinetic term drives exploration and a potential term encodes the objective function. Digital implementations of QHD require encoding the search space into qubits, and this choice can shift the dominant cost among logical qubits, circuit depth, non-Clifford rotations, and potential synthesis. In this work, we present an encoding-aware resource analysis comparing one-hot and binary amplitude encodings for QHD. We derive gate-count scalings, construct and validate circuits against classical \Sch-equation solvers, and estimate Clifford+$R_z$ and fault-tolerant Clifford+$T$ resources on benchmark optimization problems. Binary encoding reduces the data register from $O(dN)$ to $O(d\log N)$ qubits and gives comparable asymptotic scaling for both kinetic and potential evolutions. Across all benchmark problems studied, binary encoding also uses fewer $R_z$ rotations than one-hot encoding, making it the preferred option for fault-tolerant implementations where arbitrary rotations dominate the cost. Kinetic approximations based on low-momentum spectra and approximate QFTs can further reduce the binary kinetic cost to polylogarithmic scaling. However, for targets such as Ackley, potential synthesis can dominate the total cost and reduce the benefit of kinetic approximations. These results suggest that exploiting the analytic structure of the target function to compile the potential evolution in QHD more efficiently is needed for further resource reductions.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-18T23:08:06Z</published>
+    <arxiv:comment>28 pages, 14 figures, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Chenxu Liu</name>
+    </author>
+    <author>
+      <name>Meng Wang</name>
+    </author>
+    <author>
+      <name>Mingze Li</name>
+    </author>
+    <author>
+      <name>Muqing Zheng</name>
+    </author>
+    <author>
+      <name>Samuel Stein</name>
+    </author>
+    <author>
+      <name>Yousu Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12066v1</id>
+    <title>Benchmarking and Resource Analysis for Augmented-Lagrangian Quantum Hamiltonian Descent</title>
+    <updated>2026-05-12T12:54:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.12066v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12066v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum Hamiltonian Descent (QHD) is a continuous optimization algorithm based on simulating a time-dependent quantum Hamiltonian whose potential energy encodes the objective function and whose kinetic energy promotes exploration through quantum interference and tunneling. While QHD is formulated for unconstrained optimization, many real-world optimization problems are constrained and highly nonconvex. In this paper, we benchmark AL-QHD, a hybrid framework that embeds QHD within the Augmented Lagrangian Method (ALM), thereby solving a sequence of unconstrained subproblems while using ALM to enforce constraints. We evaluate AL-QHD on standard nonconvex test functions and use iterative refinement to improve solution accuracy at fixed per-run qubit cost. We also perform a gate-based resource analysis on ACOPF-derived power system subproblems constructed from power-network data to estimate the quantum-computer scale required for practical applications. Resource estimates on Texas7k-derived ACOPF instances show steep hard-gate scaling, reaching $\sim 4.46 \times 10^7$ entangling gates in a NISQ-oriented model and $\sim 9.42 \times 10^8$ T gates in a fault-tolerant model at $\sim 5.3 \times 10^2$ active variables. These results suggest that AL-QHD is a useful framework for studying constrained nonconvex optimization with QHD, but that practical ACOPF-scale applications would likely require large-scale fault-tolerant quantum hardware.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T12:54:59Z</published>
+    <arxiv:comment>18 pages, 4 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Zeguan Wu</name>
+    </author>
+    <author>
+      <name>Mingze Li</name>
+    </author>
+    <author>
+      <name>Muqing Zheng</name>
+    </author>
+    <author>
+      <name>Meng Wang</name>
+    </author>
+    <author>
+      <name>Junyu Liu</name>
+    </author>
+    <author>
+      <name>Samuel Stein</name>
+    </author>
+    <author>
+      <name>Ang Li</name>
+    </author>
+    <author>
+      <name>Yousu Chen</name>
+    </author>
+    <author>
+      <name>Chenxu Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.28624v1</id>
+    <title>Quantum Riemannian Hamiltonian Descent</title>
+    <updated>2026-03-30T16:08:26Z</updated>
+    <link href="https://arxiv.org/abs/2603.28624v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.28624v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose Quantum Riemannian Hamiltonian Descent (QRHD), a quantum algorithm for continuous optimization on Riemannian manifolds that extends Quantum Hamiltonian Descent (QHD) by incorporating geometric structure of the parameter space via a position-dependent metric in the kinetic term. We formulate QRHD at both operator and path integral formalisms and derive the corresponding quantum equations of motion, showing that quantum corrections appear in the action integral but they are suppressed at late times by the time-dependent dissipation factor. This implies that convergence near optimal points is controlled by the classical potential while quantum effects influence early-time dynamics. By analyzing the semiclassical equation, we estimate a lower bound on the convergence time and numerically demonstrate whether QRHD work as a quantum optimization algorithm in some examples. A quantum circuit implementation based on time-dependent Hamiltonian simulation is also discussed and the query complexity is estimated.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-30T16:08:26Z</published>
+    <arxiv:comment>33 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yoshihiko Abe</name>
+    </author>
+    <author>
+      <name>Ryo Nagai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.02969v1</id>
+    <title>Quantum Hamiltonian Descent based Augmented Lagrangian Method for Constrained Nonconvex Nonlinear Optimization</title>
+    <updated>2025-08-05T00:15:54Z</updated>
+    <link href="https://arxiv.org/abs/2508.02969v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.02969v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Nonlinear programming (NLP) plays a critical role in domains such as power energy systems, chemical engineering, communication networks, and financial engineering. However, solving large-scale, nonconvex NLP problems remains a significant challenge due to the complexity of the solution landscape and the presence of nonlinear nonconvex constraints. In this paper, we develop a Quantum Hamiltonian Descent based Augmented Lagrange Method (QHD-ALM) framework to address largescale, constrained nonconvex NLP problems. The augmented Lagrange method (ALM) can convert a constrained NLP to an unconstrained NLP, which can be solved by using Quantum Hamiltonian Descent (QHD). To run the QHD on a classical machine, we propose to use the Simulated Bifurcation algorithm as the engine to simulate the dynamic process. We apply our algorithm to a Power-to-Hydrogen System, and the simulation results verify the effectiveness of our algorithm.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-05T00:15:54Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Mingze Li</name>
+    </author>
+    <author>
+      <name>Lei Fan</name>
+    </author>
+    <author>
+      <name>Zhu Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.15424v1</id>
+    <title>Stochastic Quantum Hamiltonian Descent</title>
+    <updated>2025-07-21T09:24:49Z</updated>
+    <link href="https://arxiv.org/abs/2507.15424v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.15424v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Stochastic Gradient Descent (SGD) and its variants underpin modern machine learning by enabling efficient optimization of large-scale models. However, their local search nature limits exploration in complex landscapes. In this paper, we introduce Stochastic Quantum Hamiltonian Descent (SQHD), a quantum optimization algorithm that integrates the computational efficiency of stochastic gradient methods with the global exploration power of quantum dynamics. We propose a Lindbladian dynamics as the quantum analogue of continuous-time SGD. We further propose a discrete-time gate-based algorithm that approximates these dynamics while avoiding direct Lindbladian simulation, enabling practical implementation on near-term quantum devices. We rigorously prove the convergence of SQHD for convex and smooth objectives. Numerical experiments demonstrate that SQHD also exhibits advantages in non-convex optimization. All these results highlight its potential for quantum-enhanced machine learning.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-21T09:24:49Z</published>
+    <arxiv:comment>24 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Sirui Peng</name>
+    </author>
+    <author>
+      <name>Shengminjie Chen</name>
+    </author>
+    <author>
+      <name>Xiaoming Sun</name>
+    </author>
+    <author>
+      <name>Hongyi Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14670v1</id>
+    <title>Quantum Optimization via Gradient-Based Hamiltonian Descent</title>
+    <updated>2025-05-20T17:55:52Z</updated>
+    <link href="https://arxiv.org/abs/2505.14670v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.14670v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With rapid advancements in machine learning, first-order algorithms have emerged as the backbone of modern optimization techniques, owing to their computational efficiency and low memory requirements. Recently, the connection between accelerated gradient methods and damped heavy-ball motion, particularly within the framework of Hamiltonian dynamics, has inspired the development of innovative quantum algorithms for continuous optimization. One such algorithm, Quantum Hamiltonian Descent (QHD), leverages quantum tunneling to escape saddle points and local minima, facilitating the discovery of global solutions in complex optimization landscapes. However, QHD faces several challenges, including slower convergence rates compared to classical gradient methods and limited robustness in highly non-convex problems due to the non-local nature of quantum states. Furthermore, the original QHD formulation primarily relies on function value information, which limits its effectiveness. Inspired by insights from high-resolution differential equations that have elucidated the acceleration mechanisms in classical methods, we propose an enhancement to QHD by incorporating gradient information, leading to what we call gradient-based QHD. Gradient-based QHD achieves faster convergence and significantly increases the likelihood of identifying global solutions. Numerical simulations on challenging problem instances demonstrate that gradient-based QHD outperforms existing quantum and classical methods by at least an order of magnitude.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-20T17:55:52Z</published>
+    <arxiv:comment>19 pages, 6 figures. To appear in the proceedings of ICML 2025</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Bin Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.14841v1</id>
+    <title>(Sub)Exponential Quantum Speedup for Optimization</title>
+    <updated>2025-04-21T03:44:46Z</updated>
+    <link href="https://arxiv.org/abs/2504.14841v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.14841v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate provable (sub)exponential quantum speedups in both discrete and continuous optimization, achieved through simple and natural quantum optimization algorithms, namely the quantum adiabatic algorithm for discrete optimization and quantum Hamiltonian descent for continuous optimization. Our result builds on the Gilyén--Hastings--Vazirani (sub)exponential oracle separation for adiabatic quantum computing. With a sequence of perturbative reductions, we compile their construction into two standalone objective functions, whose oracles can be directly leveraged by the plain adiabatic evolution and Schrödinger operator evolution for discrete and continuous optimization, respectively.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-21T03:44:46Z</published>
+    <arxiv:comment>69 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Kewen Wu</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.24332v2</id>
+    <title>On Speedups for Convex Optimization via Quantum Dynamics</title>
+    <updated>2025-10-02T15:28:22Z</updated>
+    <link href="https://arxiv.org/abs/2503.24332v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.24332v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We explore the potential for quantum speedups in convex optimization using discrete simulations of the Quantum Hamiltonian Descent (QHD) framework, as proposed by Leng et al., and establish the first rigorous query complexity bounds. We develop enhanced analyses for quantum simulation of Schrödinger operators with black-box potential via the pseudo-spectral method, providing explicit resource estimates independent of wavefunction assumptions. These bounds are applied to assess the complexity of optimization through QHD. Our findings pertain to unconstrained convex optimization in $d$ dimensions. In continuous time, we demonstrate that QHD, with suitable parameters, can achieve arbitrarily fast convergence rates. The optimization speed limit arises solely from the discretization of the dynamics, mirroring a property of the classical dynamics underlying QHD. Considering this cost, we show that a $G$-Lipschitz convex function can be optimized to an error of $ε$ with $\widetilde{\mathcal{O}}(d^{1.5}G^2 R^2/ε^2)$ queries. Moreover, under reasonable assumptions on the complexity of Hamiltonian simulation, $\widetildeΩ(d/ε^2)$ queries are necessary. Thus, QHD does not offer a speedup over classical zeroth order methods with exact oracles. However, we demonstrate that the QHD algorithm tolerates $\widetilde{\mathcal{O}}(ε^3/d^{1.5}G^2 R^2)$ noise in function evaluation. We show that QHD offers a super-quadratic query advantage over all known classical algorithms tolerating this level of evaluation noise in the high-dimension regime. Additionally, we design a quantum algorithm for stochastic convex optimization that provides a super-quadratic speedup over all known classical algorithms in the high-dimension regime. To our knowledge, these results represent the first rigorous quantum speedups for convex optimization achieved through a dynamical algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-31T17:21:12Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+    <author>
+      <name>Dylan Herman</name>
+    </author>
+    <author>
+      <name>Jacob Watkins</name>
+    </author>
+    <author>
+      <name>Enrico Fontana</name>
+    </author>
+    <author>
+      <name>Brandon Augustino</name>
+    </author>
+    <author>
+      <name>Junhyung Lyle Kim</name>
+    </author>
+    <author>
+      <name>Marco Pistoia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15878v1</id>
+    <title>Quantum Hamiltonian Descent for Non-smooth Optimization</title>
+    <updated>2025-03-20T06:02:33Z</updated>
+    <link href="https://arxiv.org/abs/2503.15878v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.15878v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Non-smooth optimization models play a fundamental role in various disciplines, including engineering, science, management, and finance. However, classical algorithms for solving such models often struggle with convergence speed, scalability, and parameter tuning, particularly in high-dimensional and non-convex settings. In this paper, we explore how quantum mechanics can be leveraged to overcome these limitations. Specifically, we investigate the theoretical properties of the Quantum Hamiltonian Descent (QHD) algorithm for non-smooth optimization in both continuous and discrete time. First, we propose continuous-time variants of the general QHD algorithm and establish their global convergence and convergence rate for non-smooth convex and strongly convex problems through a novel Lyapunov function design. Furthermore, we prove the finite-time global convergence of continuous-time QHD for non-smooth non-convex problems under mild conditions (i.e., locally Lipschitz). In addition, we propose discrete-time QHD, a fully digitized implementation of QHD via operator splitting (i.e., product formula). We find that discrete-time QHD exhibits similar convergence properties even with large time steps. Finally, numerical experiments validate our theoretical findings and demonstrate the computational advantages of QHD over classical non-smooth non-convex optimization algorithms.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-20T06:02:33Z</published>
+    <arxiv:comment>48 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+    <author>
+      <name>Zhiyuan Jia</name>
+    </author>
+    <author>
+      <name>Lei Fan</name>
+    </author>
+    <author>
+      <name>Chaoyue Zhao</name>
+    </author>
+    <author>
+      <name>Yuxiang Peng</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.14696v3</id>
+    <title>Scalable Community Detection Using Quantum Hamiltonian Descent and QUBO Formulation</title>
+    <updated>2025-11-15T21:08:56Z</updated>
+    <link href="https://arxiv.org/abs/2411.14696v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.14696v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a quantum-inspired algorithm that utilizes Quantum Hamiltonian Descent (QHD) for efficient community detection. Our approach reformulates the community detection task as a Quadratic Unconstrained Binary Optimization (QUBO) problem, and QHD is deployed to identify optimal community structures. We implement a multi-level algorithm that iteratively refines community assignments by alternating between QUBO problem setup and QHD-based optimization. Benchmarking shows our method achieves up to 5.49\% better modularity scores while requiring less computational time compared to classical optimization approaches. This work demonstrates the potential of hybrid quantum-inspired solutions for advancing community detection in large-scale graph data.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-22T03:08:24Z</published>
+    <arxiv:comment>DAC 2025</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>2025 62nd ACM/IEEE Design Automation Conference (DAC), San Francisco, CA, USA, 2025, pp. 1-7</arxiv:journal_ref>
+    <author>
+      <name>Jinglei Cheng</name>
+    </author>
+    <author>
+      <name>Ruilin Zhou</name>
+    </author>
+    <author>
+      <name>Yuhang Gan</name>
+    </author>
+    <author>
+      <name>Chen Qian</name>
+    </author>
+    <author>
+      <name>Junyu Liu</name>
+    </author>
+    <arxiv:doi>10.1109/DAC63849.2025.11133263</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/DAC63849.2025.11133263" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.03121v1</id>
+    <title>QHDOPT: A Software for Nonlinear Optimization with Quantum Hamiltonian Descent</title>
+    <updated>2024-09-04T23:11:25Z</updated>
+    <link href="https://arxiv.org/abs/2409.03121v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.03121v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We develop an open-source, end-to-end software (named QHDOPT), which can solve nonlinear optimization problems using the quantum Hamiltonian descent (QHD) algorithm. QHDOPT offers an accessible interface and automatically maps tasks to various supported quantum backends (i.e., quantum hardware machines). These features enable users, even those without prior knowledge or experience in quantum computing, to utilize the power of existing quantum devices for nonlinear and nonconvex optimization tasks. In its intermediate compilation layer, QHDOPT employs SimuQ, an efficient interface for Hamiltonian-oriented programming, to facilitate multiple algorithmic specifications and ensure compatible cross-hardware deployment. The detailed documentation of QHDOPT is available at https://github.com/jiaqileng/QHDOPT.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-04T23:11:25Z</published>
+    <arxiv:comment>23 pages, 7 figures. The full repository is available at https://github.com/jiaqileng/QHDOPT</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Samuel Kushnir</name>
+    </author>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Yuxiang Peng</name>
+    </author>
+    <author>
+      <name>Lei Fan</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.00811v1</id>
+    <title>A quantum-classical performance separation in nonconvex optimization</title>
+    <updated>2023-11-01T19:51:00Z</updated>
+    <link href="https://arxiv.org/abs/2311.00811v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.00811v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we identify a family of nonconvex continuous optimization instances, each $d$-dimensional instance with $2^d$ local minima, to demonstrate a quantum-classical performance separation. Specifically, we prove that the recently proposed Quantum Hamiltonian Descent (QHD) algorithm [Leng et al., arXiv:2303.01471] is able to solve any $d$-dimensional instance from this family using $\widetilde{\mathcal{O}}(d^3)$ quantum queries to the function value and $\widetilde{\mathcal{O}}(d^4)$ additional 1-qubit and 2-qubit elementary quantum gates. On the other side, a comprehensive empirical study suggests that representative state-of-the-art classical optimization algorithms/solvers (including Gurobi) would require a super-polynomial time to solve such optimization instances.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-01T19:51:00Z</published>
+    <arxiv:comment>32 pages, 7 figures. More details of the original Quantum Hamiltonian Descent (QHD) algorithm can be found at arXiv:2303.01471</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.01471v1</id>
+    <title>Quantum Hamiltonian Descent</title>
+    <updated>2023-03-02T18:34:38Z</updated>
+    <link href="https://arxiv.org/abs/2303.01471v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.01471v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Gradient descent is a fundamental algorithm in both theory and practice for continuous optimization. Identifying its quantum counterpart would be appealing to both theoretical and practical quantum applications. A conventional approach to quantum speedups in optimization relies on the quantum acceleration of intermediate steps of classical algorithms, while keeping the overall algorithmic trajectory and solution quality unchanged. We propose Quantum Hamiltonian Descent (QHD), which is derived from the path integral of dynamical systems referring to the continuous-time limit of classical gradient descent algorithms, as a truly quantum counterpart of classical gradient methods where the contribution from classically-prohibited trajectories can significantly boost QHD's performance for non-convex optimization. Moreover, QHD is described as a Hamiltonian evolution efficiently simulatable on both digital and analog quantum computers. By embedding the dynamics of QHD into the evolution of the so-called Quantum Ising Machine (including D-Wave and others), we empirically observe that the D-Wave-implemented QHD outperforms a selection of state-of-the-art gradient-based classical solvers and the standard quantum adiabatic algorithm, based on the time-to-solution metric, on non-convex constrained quadratic programming instances up to 75 dimensions. Finally, we propose a "three-phase picture" to explain the behavior of QHD, especially its difference from the quantum adiabatic algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-02T18:34:38Z</published>
+    <arxiv:comment>71 pages, 13 figures, an accompanying website is at https://jiaqileng.github.io/quantum-hamiltonian-descent/</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Ethan Hickman</name>
+    </author>
+    <author>
+      <name>Joseph Li</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+  </entry>
+</feed>

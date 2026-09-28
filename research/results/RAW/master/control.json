@@ -1,1 +1,1 @@
-{"max_workers": 5, "cpu_launch_max": 0.78, "cpu_suspend": 0.92, "cpu_resume": 0.84, "ram_launch_cap": 0.82, "ram_suspend": 0.88, "ram_resume": 0.84, "ram_kill": 0.92}
+{"max_workers": 6, "cpu_launch_max": 0.85, "cpu_suspend": 0.95, "cpu_resume": 0.88, "ram_launch_cap": 0.88, "ram_suspend": 0.92, "ram_resume": 0.88, "ram_kill": 0.95, "ram_hard": 0.985}

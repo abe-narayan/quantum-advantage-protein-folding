@@ -1,0 +1,100 @@
+CCE (hybrid base):
+  p19  N16 base=pin   order0 M48 err 0.392 se 0.050 bias +0.099 subruns 27 pairs 15 max_core 7 cpu 185.0s by_t {80: 0.3919, 160: 0.3363, 240: 0.2832, 320: 0.2289}
+  p19  N16 base=pin   order1 M48 err 0.615 se 0.333 bias -0.015 subruns 27 pairs 15 max_core 7 cpu 185.0s by_t {80: 0.0537, 160: 0.6153, 240: 0.144, 320: 0.5127}
+  p19  N16 base=pin   order2 M48 err 0.571 se 0.282 bias -0.145 subruns 27 pairs 15 max_core 7 cpu 185.0s by_t {80: 0.1268, 160: 0.5706, 240: 0.269, 320: 0.2711}
+  p19  N16 base=pin   mult1  M48 err 1.162 se 0.000 bias +0.051 subruns 27 pairs 15 max_core 7 cpu 185.0s by_t {80: 0.0527, 160: 1.1616, 240: 0.1082, 320: 0.2456}
+  p19  N16 base=pin   mult2  M48 err 0.308 se 0.000 bias -0.095 subruns 27 pairs 15 max_core 7 cpu 185.0s by_t {80: 0.1151, 160: 0.3081, 240: 0.1657, 320: 0.1671}
+zero-compute adversaries (max |err| over b and t in [80,320] us; sigma = 0.01):
+  p 19 N16  0.147  Z1 hybrid Nc10 (existing)
+  p 19 N16  0.077  Z2 hybrid + exact(N-2)-hybrid(N-2)
+  p 19 N16  0.067  Z3 core-size linear extrapolation Nc10,12 -> Ntot
+  p 19 N16  0.139  Z4a exact(N-2) as predictor
+  p 19 N16  0.281  Z4b linear-in-N extrapolation exact(N-4,N-2)
+  p 19 N18  0.184  Z1 hybrid Nc10 (existing)
+  p 19 N18  0.053  Z2 hybrid + exact(N-2)-hybrid(N-2)
+  p 19 N18  0.037  Z4a exact(N-2) as predictor
+  p 19 N18  0.133  Z4b linear-in-N extrapolation exact(N-4,N-2)
+  p245 N16  0.198  Z1 hybrid Nc10 (existing)
+  p245 N16  0.043  Z2 hybrid + exact(N-2)-hybrid(N-2)
+  p245 N16  0.309  Z3 core-size linear extrapolation Nc10,12 -> Ntot
+  p245 N16  0.132  Z4a exact(N-2) as predictor
+  p245 N16  0.159  Z4b linear-in-N extrapolation exact(N-4,N-2)
+  p245 N18  0.224  Z1 hybrid Nc10 (existing)
+  p245 N18  0.065  Z2 hybrid + exact(N-2)-hybrid(N-2)
+  p245 N18  0.057  Z4a exact(N-2) as predictor
+  p245 N18  0.152  Z4b linear-in-N extrapolation exact(N-4,N-2)
+runs (err = max |F - F_exact| over b, t in [80,320] us; bias = mean signed F - F_exact in window):
+  p19  N14 x       kls10 none  F_core M48  err 0.036 se 0.008 bias -0.008 cpu   71.2s sizes [10, 4]
+  p19  N14 x       kls10 none  F_tdh  M48  err 0.036 se 0.008 bias -0.008 cpu   71.2s sizes [10, 4]
+  p19  N14 x       kls10_lam0 none  F_core M48  err 0.106 se 0.004 bias +0.049 cpu   70.2s sizes [10, 4]
+  p19  N14 x       kls10_lam0 none  F_tdh  M48  err 0.106 se 0.004 bias +0.049 cpu   70.2s sizes [10, 4]
+  p245 N14 x       kls10 none  F_core M48  err 0.343 se 0.018 bias +0.067 cpu   70.5s sizes [10, 4]
+  p245 N14 x       kls10 none  F_tdh  M48  err 0.343 se 0.018 bias +0.067 cpu   70.5s sizes [10, 4]
+  p245 N14 x       kls10_lam0 none  F_core M48  err 0.462 se 0.013 bias +0.192 cpu   73.5s sizes [10, 4]
+  p245 N14 x       kls10_lam0 none  F_tdh  M48  err 0.462 se 0.013 bias +0.192 cpu   73.5s sizes [10, 4]
+  p19  N16 near10  m1    none  F_core M48  err 0.108 se 0.015 bias -0.051 cpu   68.0s sizes [10, 1, 1, 1, 1, 1, 1]
+  p19  N16 near10  m1    none  F_tdh  M48  err 0.108 se 0.015 bias -0.051 cpu   68.0s sizes [10, 1, 1, 1, 1, 1, 1]
+  p19  N16 near10  m1    sf    F_core M48  err 0.553 se 0.032 bias -0.346 cpu   70.9s sizes [10, 1, 1, 1, 1, 1, 1]
+  p19  N16 near10  m1    sf    F_tdh  M48  err 0.709 se 0.020 bias -0.385 cpu   70.9s sizes [10, 1, 1, 1, 1, 1, 1]
+  p19  N16 x       kl10  none  F_core M48  err 0.062 se 0.011 bias -0.026 cpu   69.7s sizes [10, 6]
+  p19  N16 x       kl10  none  F_tdh  M48  err 0.062 se 0.011 bias -0.026 cpu   69.7s sizes [10, 6]
+  p19  N16 x       kl10  unamp F_core M48  err 0.079 se 0.011 bias -0.031 cpu   71.3s sizes [10, 6]
+  p19  N16 x       kl10  unamp F_tdh  M48  err 0.084 se 0.011 bias -0.034 cpu   71.3s sizes [10, 6]
+  p19  N16 x       kl10_zz none  F_core M48  err 0.247 se 0.006 bias +0.115 cpu   74.4s sizes [10, 6]
+  p19  N16 x       kl10_zz none  F_tdh  M48  err 0.247 se 0.006 bias +0.115 cpu   74.4s sizes [10, 6]
+  p19  N16 x       kl4   none  F_core M48  err 0.538 se 0.044 bias -0.226 cpu    3.6s sizes [4, 4, 4, 4]
+  p19  N16 x       kl4   none  F_tdh  M48  err 0.580 se 0.039 bias -0.244 cpu    3.6s sizes [4, 4, 4, 4]
+  p19  N16 x       kl4   sf    F_core M48  err 0.550 se 0.040 bias -0.356 cpu    3.8s sizes [4, 4, 4, 4]
+  p19  N16 x       kl4   sf    F_tdh  M48  err 0.665 se 0.030 bias -0.374 cpu    3.8s sizes [4, 4, 4, 4]
+  p19  N16 x       kl4   unamp F_core M48  err 0.529 se 0.045 bias -0.299 cpu    4.5s sizes [4, 4, 4, 4]
+  p19  N16 x       kl4   unamp F_tdh  M48  err 0.581 se 0.039 bias -0.323 cpu    4.5s sizes [4, 4, 4, 4]
+  p19  N16 x       kl6   none  F_core M48  err 0.239 se 0.024 bias -0.036 cpu    4.3s sizes [6, 6, 4]
+  p19  N16 x       kl6   none  F_tdh  M48  err 0.239 se 0.024 bias -0.036 cpu    4.3s sizes [6, 6, 4]
+  p19  N16 x       kl6   sf    F_core M48  err 0.540 se 0.035 bias -0.349 cpu    5.3s sizes [6, 6, 4]
+  p19  N16 x       kl6   sf    F_tdh  M48  err 0.686 se 0.025 bias -0.383 cpu    5.3s sizes [6, 6, 4]
+  p19  N16 x       kl6   unamp F_core M48  err 0.299 se 0.025 bias -0.145 cpu    4.6s sizes [6, 6, 4]
+  p19  N16 x       kl6   unamp F_tdh  M48  err 0.303 se 0.023 bias -0.162 cpu    4.6s sizes [6, 6, 4]
+  p19  N16 x       kl8   none  F_core M48  err 0.237 se 0.015 bias +0.000 cpu   18.0s sizes [8, 8]
+  p19  N16 x       kl8   none  F_tdh  M48  err 0.237 se 0.015 bias +0.000 cpu   18.0s sizes [8, 8]
+  p19  N16 x       kl8   sf    F_core M48  err 0.552 se 0.037 bias -0.325 cpu   19.2s sizes [8, 8]
+  p19  N16 x       kl8   sf    F_tdh  M48  err 0.630 se 0.027 bias -0.363 cpu   19.2s sizes [8, 8]
+  p19  N16 x       kl8   unamp F_core M48  err 0.211 se 0.017 bias -0.041 cpu   19.8s sizes [8, 8]
+  p19  N16 x       kl8   unamp F_tdh  M48  err 0.203 se 0.018 bias -0.049 cpu   19.8s sizes [8, 8]
+  p19  N16 x       kls10_lam0.86 none  F_core M48  err 0.029 se 0.011 bias -0.002 cpu   72.3s sizes [10, 6]
+  p19  N16 x       kls10_lam0.86 none  F_tdh  M48  err 0.029 se 0.011 bias -0.002 cpu   72.3s sizes [10, 6]
+  p19  N16 x       kls12 none  F_core M48  err 0.035 se 0.005 bias -0.005 cpu  441.7s sizes [12, 4]
+  p19  N16 x       kls12 none  F_tdh  M48  err 0.035 se 0.005 bias -0.005 cpu  441.7s sizes [12, 4]
+  p245 N16 x       kl10  none  F_core M48  err 0.091 se 0.018 bias -0.024 cpu   73.3s sizes [10, 6]
+  p245 N16 x       kl10  none  F_tdh  M48  err 0.091 se 0.018 bias -0.024 cpu   73.3s sizes [10, 6]
+  p245 N16 x       kl10  unamp F_core M48  err 0.100 se 0.018 bias -0.030 cpu   71.6s sizes [10, 6]
+  p245 N16 x       kl10  unamp F_tdh  M48  err 0.102 se 0.018 bias -0.031 cpu   71.6s sizes [10, 6]
+  p245 N16 x       kl4   none  F_core M48  err 0.571 se 0.042 bias -0.179 cpu    4.1s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl4   none  F_tdh  M48  err 0.571 se 0.042 bias -0.179 cpu    4.1s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl4   sf    F_core M48  err 0.832 se 0.038 bias -0.386 cpu    3.2s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl4   sf    F_tdh  M48  err 0.858 se 0.029 bias -0.432 cpu    3.2s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl4   unamp F_core M48  err 0.751 se 0.039 bias -0.263 cpu    3.3s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl4   unamp F_tdh  M48  err 0.759 se 0.039 bias -0.291 cpu    3.3s sizes [4, 2, 4, 3, 3]
+  p245 N16 x       kl6   none  F_core M48  err 0.282 se 0.041 bias +0.058 cpu    5.5s sizes [6, 6, 4]
+  p245 N16 x       kl6   none  F_tdh  M48  err 0.282 se 0.041 bias +0.058 cpu    5.5s sizes [6, 6, 4]
+  p245 N16 x       kl6   sf    F_core M48  err 0.840 se 0.041 bias -0.378 cpu    4.1s sizes [6, 6, 4]
+  p245 N16 x       kl6   sf    F_tdh  M48  err 0.860 se 0.034 bias -0.433 cpu    4.1s sizes [6, 6, 4]
+  p245 N16 x       kl6   unamp F_core M48  err 0.422 se 0.041 bias -0.071 cpu    5.4s sizes [6, 6, 4]
+  p245 N16 x       kl6   unamp F_tdh  M48  err 0.469 se 0.040 bias -0.090 cpu    5.4s sizes [6, 6, 4]
+  p245 N16 x       kl8   none  F_core M48  err 0.292 se 0.028 bias +0.004 cpu   20.8s sizes [8, 8]
+  p245 N16 x       kl8   none  F_tdh  M48  err 0.292 se 0.028 bias +0.004 cpu   20.8s sizes [8, 8]
+  p245 N16 x       kl8   sf    F_core M48  err 0.808 se 0.035 bias -0.370 cpu   18.2s sizes [8, 8]
+  p245 N16 x       kl8   sf    F_tdh  M48  err 0.853 se 0.031 bias -0.423 cpu   18.2s sizes [8, 8]
+  p245 N16 x       kl8   unamp F_core M48  err 0.266 se 0.024 bias -0.033 cpu   18.4s sizes [8, 8]
+  p245 N16 x       kl8   unamp F_tdh  M48  err 0.257 se 0.024 bias -0.040 cpu   18.4s sizes [8, 8]
+  p245 N16 x       kls10_lam1.54 none  F_core M48  err 0.135 se 0.017 bias -0.067 cpu   75.0s sizes [10, 6]
+  p245 N16 x       kls10_lam1.54 none  F_tdh  M48  err 0.135 se 0.017 bias -0.067 cpu   75.0s sizes [10, 6]
+  p19  N18 x       kl10  none  F_core M48  err 0.312 se 0.014 bias +0.026 cpu   50.5s sizes [9, 9]
+  p19  N18 x       kl10  none  F_tdh  M48  err 0.312 se 0.014 bias +0.026 cpu   50.5s sizes [9, 9]
+  p19  N18 x       kl8   none  F_core M48  err 0.275 se 0.015 bias +0.016 cpu   14.0s sizes [8, 7, 3]
+  p19  N18 x       kl8   none  F_tdh  M48  err 0.275 se 0.015 bias +0.016 cpu   14.0s sizes [8, 7, 3]
+  p19  N18 x       kls10 none  F_core M48  err 0.277 se 0.009 bias +0.021 cpu   85.5s sizes [10, 8]
+  p19  N18 x       kls10 none  F_tdh  M48  err 0.277 se 0.009 bias +0.021 cpu   85.5s sizes [10, 8]
+  p245 N18 x       kl10  none  F_core M48  err 0.081 se 0.022 bias -0.017 cpu   83.8s sizes [10, 8]
+  p245 N18 x       kl10  none  F_tdh  M48  err 0.081 se 0.022 bias -0.017 cpu   83.8s sizes [10, 8]
+  p245 N18 x       kl8   none  F_core M48  err 0.310 se 0.026 bias +0.018 cpu   12.4s sizes [8, 7, 3]
+  p245 N18 x       kl8   none  F_tdh  M48  err 0.310 se 0.026 bias +0.018 cpu   12.4s sizes [8, 7, 3]

@@ -1,0 +1,97 @@
+{
+ "single_rotor_splitting_ueV_B0.655": {
+  "20": 38.51843080384754,
+  "30": 10.31106131463666,
+  "40": 3.2237438858633283,
+  "50": 1.1266258907394189,
+  "60": 0.4282935572259561,
+  "80": 0.07460782864754378,
+  "100": 0.015604229258059377,
+  "120": 0.0037325736759186157,
+  "150": 0.0005272938246037029
+ },
+ "V3_30": {
+  "n": 32,
+  "Delta_exact_ueV_min_max": [
+   0.001365627184668483,
+   78.46151751638786
+  ],
+  "n_Delta_ge_0.1ueV": 26,
+  "max_abs_J_ueV": 0.06375611699027672,
+  "max_rel_J": 1.3312687794637934,
+  "median_rel_mf_err": 0.4017048510264833,
+  "max_rel_mf_err": 0.9999992611929548,
+  "n_supportlike_relJ_ge_0.1_and_Delta_ge_1ueV": 0
+ },
+ "V3_60": {
+  "n": 32,
+  "Delta_exact_ueV_min_max": [
+   4.136040843150113e-06,
+   2.183635667904582
+  ],
+  "n_Delta_ge_0.1ueV": 20,
+  "max_abs_J_ueV": 0.00012560641948766715,
+  "max_rel_J": 1.3560374920975233,
+  "median_rel_mf_err": 0.2051242368413665,
+  "max_rel_mf_err": 0.9999342814491692,
+  "n_supportlike_relJ_ge_0.1_and_Delta_ge_1ueV": 0
+ },
+ "V3_100": {
+  "n": 32,
+  "Delta_exact_ueV_min_max": [
+   1.000444171950221e-08,
+   0.05491153970638152
+  ],
+  "n_Delta_ge_0.1ueV": 0,
+  "max_abs_J_ueV": 2.0162360669928603e-07,
+  "max_rel_J": 1.0539772727272727,
+  "median_rel_mf_err": 0.1339176151163251,
+  "max_rel_mf_err": 1.021978021978022,
+  "n_supportlike_relJ_ge_0.1_and_Delta_ge_1ueV": 0
+ },
+ "triangles_V3_30": {
+  "ILE61:CG2|ILE61:CD1|LEU67:CD2": {
+   "ILE61:CG2": {
+    "exact": 0.704591914171715,
+    "pair_mult": 0.4943580221880073,
+    "rel_err_mult": 0.2983768160763649,
+    "rel_err_add": 8.369262035135373
+   },
+   "ILE61:CD1": {
+    "exact": 0.282222260842957,
+    "pair_mult": 0.4201660627883711,
+    "rel_err_mult": 0.48877718410091386,
+    "rel_err_add": 177.15926962621978
+   },
+   "LEU67:CD2": {
+    "exact": 0.0009095094384292679,
+    "pair_mult": 0.12514388585749028,
+    "rel_err_mult": 136.59492817756245,
+    "rel_err_add": 1371.7077520829857
+   }
+  },
+  "ILE36:CG2|ILE36:CD1|LEU71:CD1": {
+   "ILE36:CG2": {
+    "exact": 3.3886732555501453,
+    "pair_mult": 9.882080276644432,
+    "rel_err_mult": 1.916209245154884,
+    "rel_err_add": 2.567461649864624
+   },
+   "ILE36:CD1": {
+    "exact": 13.909993439430224,
+    "pair_mult": 14.603005876421166,
+    "rel_err_mult": 0.04982119078694045,
+    "rel_err_add": 0.022628256022085787
+   },
+   "LEU71:CD1": {
+    "exact": 2.5831722802891477,
+    "pair_mult": 1.3656099773350472,
+    "rel_err_mult": 0.47134382489495147,
+    "rel_err_add": 0.07391333404728298
+   }
+  }
+ },
+ "kill_i_fired": true,
+ "support_fired": false,
+ "notes": "kill (i): at protein-typical barriers (>=80 meV) all splittings < 0.1 ueV. Support requires relJ>=0.1 with Delta>=1 ueV: 0 pairs. Residue: Hartree MF fails (median rel err quoted) and the pair cluster expansion fails for jammed triangles at V3=30 meV (model-level many-body correlation)."
+}

@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/9Mzbx2GXf6WrQB3b7mLQzzyXZto</id>
+  <title>arXiv Query: search_query=abs:"exponential quantum speedup" AND abs:optimization&amp;id_list=&amp;start=0&amp;max_results=40</title>
+  <updated>2026-09-28T15:26:00Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22exponential+quantum+speedup%22+AND+abs:optimization&amp;start=0&amp;max_results=40&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>40</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2511.12379v1</id>
+    <title>Quantum Optimization Algorithms</title>
+    <updated>2025-11-15T22:53:57Z</updated>
+    <link href="https://arxiv.org/abs/2511.12379v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.12379v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum optimization allows for up to exponential quantum speedups for specific, possibly industrially relevant problems. As the key algorithm in this field, we motivate and discuss the Quantum Approximate Optimization Algorithm (QAOA), which can be understood as a slightly generalized version of Quantum Annealing for gate-based quantum computers. We delve into the quantum circuit implementation of the QAOA, including Hamiltonian simulation techniques for higher-order Ising models, and discuss parameter training using the parameter shift rule. An example implementation with Pennylane source code demonstrates practical application for the Maximum Cut problem. Further, we show how constraints can be incorporated into the QAOA using Grover mixers, allowing to restrict the search space to strictly valid solutions for specific problems. Finally, we outline the Variational Quantum Eigensolver (VQE) as a generalization of the QAOA, highlighting its potential in the NISQ era and addressing challenges such as barren plateaus and ansatz design.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-15T22:53:57Z</published>
+    <arxiv:comment>Preprint submitted to appear in a Springer Nature Book on Combinatorial Optimization using Quantum Computing</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jonas Stein</name>
+    </author>
+    <author>
+      <name>Maximilian Zorn</name>
+    </author>
+    <author>
+      <name>Leo Sünkel</name>
+    </author>
+    <author>
+      <name>Thomas Gabor</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.01563v3</id>
+    <title>Analytic and Stochastic Approach to Quantum Advantages in Ground State and Quantum State Preparation Problems</title>
+    <updated>2025-11-29T07:11:01Z</updated>
+    <link href="https://arxiv.org/abs/2510.01563v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.01563v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the problems of state preparation, ground state preparation and quantum state preparation. We propose an analytic approach to a stochastic quantum algorithm which prepares the ground state for $n$-qubit Hamiltonian that is represented by $\text{poly}(n)$ Pauli operators and has an inverse-polynomial gap, requiring only $\text{poly}(n)$ Pauli rotations, measurements, and classical time complexity when $n$ exceeds a threshold, to inverse-polynomial precision given the initial overlap being lower bounded by $\frac{1}{2^n}$. Extending this result, we prove that any $n$-qubit quantum state can be prepared in two regimes: (1) with a constant number of Pauli rotations to constant precision, or (2) with a polynomial number of rotations to inverse-polynomial precision. Our results improve over previous approaches to quantum state preparation in terms of gate complexity, thereby yielding quantum space advantage. As an application, we identify a practical condition under which quadratic unconstrained binary optimization (QUBO) problems can be solved with exponential quantum speedups.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-02T01:17:22Z</published>
+    <arxiv:comment>We found a mistake in the analysis. For example, eq (72) is not true in the appendix A.3</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Taehee Ko</name>
+    </author>
+    <author>
+      <name>Sungbin Lim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.14841v1</id>
+    <title>(Sub)Exponential Quantum Speedup for Optimization</title>
+    <updated>2025-04-21T03:44:46Z</updated>
+    <link href="https://arxiv.org/abs/2504.14841v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.14841v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate provable (sub)exponential quantum speedups in both discrete and continuous optimization, achieved through simple and natural quantum optimization algorithms, namely the quantum adiabatic algorithm for discrete optimization and quantum Hamiltonian descent for continuous optimization. Our result builds on the Gilyén--Hastings--Vazirani (sub)exponential oracle separation for adiabatic quantum computing. With a sequence of perturbative reductions, we compile their construction into two standalone objective functions, whose oracles can be directly leveraged by the plain adiabatic evolution and Schrödinger operator evolution for discrete and continuous optimization, respectively.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-21T03:44:46Z</published>
+    <arxiv:comment>69 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jiaqi Leng</name>
+    </author>
+    <author>
+      <name>Kewen Wu</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+    <author>
+      <name>Yufan Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.04979v2</id>
+    <title>Quantum speedups in solving near-symmetric optimization problems by low-depth QAOA</title>
+    <updated>2025-02-24T10:25:45Z</updated>
+    <link href="https://arxiv.org/abs/2411.04979v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.04979v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present new advances towards achieving exponential quantum speedups for solving optimization problems by low-depth quantum algorithms. Specifically, we focus on families of combinatorial optimization problems that exhibit symmetry and contain planted solutions. We rigorously prove that the 1-step Quantum Approximate Optimization Algorithm (QAOA) can achieve a success probability of $Ω(1/\sqrt{n})$, and sometimes $Ω(1)$, for finding the exact solution in many cases. This allows us to prove a separation of $O(1)$ quantum queries and $Ω(n/\log n)$ classical queries required to find the planted solution in the latter setting. Furthermore, we construct near-symmetric optimization problems by randomly sampling the individual clauses of symmetric problems, and prove that the QAOA maintains a strong success probability in this setting even when the symmetry is broken. Finally, we construct various families of near-symmetric Max-SAT problems and benchmark state-of-the-art classical solvers, discovering instances where all known general-purpose classical algorithms require exponential time. Therefore, our results indicate that low-depth QAOA may achieve an exponential quantum speedup for optimization problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-07T18:51:44Z</published>
+    <arxiv:comment>25 pages, 4 figures. Minor fixes, and clarifications about speedups</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ashley Montanaro</name>
+    </author>
+    <author>
+      <name>Leo Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.08482v3</id>
+    <title>Exponential Quantum Speedup for Simulation-Based Optimization Applications</title>
+    <updated>2024-09-15T20:54:00Z</updated>
+    <link href="https://arxiv.org/abs/2305.08482v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.08482v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The simulation of many industrially relevant physical processes can be executed up to exponentially faster using quantum algorithms. However, this speedup can only be leveraged if the data input and output of the simulation can be implemented efficiently. While we show that recent advancements for optimal state preparation can effectively solve the problem of data input at a moderate cost of ancillary qubits in many cases, the output problem can provably not be solved efficiently in general. By acknowledging that many simulation problems arise only as a subproblem of a larger optimization problem in many practical applications however, we identify and define a class of practically relevant problems that does not suffer from the output problem: Quantum Simulation-based Optimization (QuSO). QuSO represents optimization problems whose objective function and/or constraints depend on summary statistic information on the result of a simulation, i.e., information that can be efficiently extracted from a quantum state vector. In this article, we focus on the LinQuSO subclass of QuSO, which is characterized by the linearity of the simulation problem, i.e., the simulation problem can be formulated as a system of linear equations. By cleverly combining the quantum singular value transformation (QSVT) with the quantum approximate optimization algorithm (QAOA), we prove that a large subgroup of LinQuSO problems can be solved with up to exponential quantum speedups with regards to their simulation component. Finally, we present two practically relevant use cases that fall within this subgroup of QuSO problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-15T09:32:51Z</published>
+    <arxiv:comment>24 pages, 12 figure, completely refactored and formalized version with key new isights</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Jonas Stein</name>
+    </author>
+    <author>
+      <name>Lukas Müller</name>
+    </author>
+    <author>
+      <name>Leonhard Hölscher</name>
+    </author>
+    <author>
+      <name>Georgios Chnitidis</name>
+    </author>
+    <author>
+      <name>Jezer Jojo</name>
+    </author>
+    <author>
+      <name>Afrah Farea</name>
+    </author>
+    <author>
+      <name>Mustafa Serdar Çelebi</name>
+    </author>
+    <author>
+      <name>David Bucher</name>
+    </author>
+    <author>
+      <name>Jonathan Wulf</name>
+    </author>
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <author>
+      <name>Philipp Altmann</name>
+    </author>
+    <author>
+      <name>Claudia Linnhoff-Popien</name>
+    </author>
+    <author>
+      <name>Sebastian Feld</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.00653v6</id>
+    <title>A Polynomial Time Quantum Algorithm for Exponentially Large Scale Nonlinear Differential Equations via Hamiltonian Simulation</title>
+    <updated>2025-04-04T06:57:55Z</updated>
+    <link href="https://arxiv.org/abs/2305.00653v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.00653v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computers have the potential to efficiently solve a system of nonlinear ordinary differential equations (ODEs), which play a crucial role in various industries and scientific fields. However, it remains unclear which system of nonlinear ODEs, and under what assumptions, can achieve exponential speedup using quantum computers. In this work, we introduce a class of systems of nonlinear ODEs that can be efficiently solved on quantum computers, where the efficiency is defined as solving the system with computational complexity of $O(T {\rm log}(N) {\rm polylog}(1/ε))$, where $T$ is the evolution time, $ε$ is the allowed error, and $N$ is the number of variables in the system. Specifically, we employ the Koopman-von Neumann linearization to map the system of nonlinear ODEs to Hamiltonian dynamics and find conditions where the norm of the mapped Hamiltonian is preserved and the Hamiltonian is sparse. This allows us to use the optimal Hamiltonian simulation technique for solving the nonlinear ODEs with $O({\rm log}(N))$ overhead. Furthermore, we show that the nonlinear ODEs include a wide range of systems of nonlinear ODEs, such as the nonlinear harmonic oscillators and the short-range Kuramoto model. This is the first concrete example of solving systems of nonlinear ODEs with exponential quantum speedup by the Koopman-von Neumann linearization, although it is noted that this assumes efficient preparation of the initial state and computation of the output. These findings contribute significantly to the application of quantum computers in solving nonlinear problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-01T04:22:56Z</published>
+    <arxiv:comment>15 pages with 1 figure</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Yu Tanaka</name>
+    </author>
+    <author>
+      <name>Keisuke Fujii</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.05728v1</id>
+    <title>Quantum Power Flows: From Theory to Practice</title>
+    <updated>2022-11-10T17:52:43Z</updated>
+    <link href="https://arxiv.org/abs/2211.05728v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.05728v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Climate change is becoming one of the greatest challenges to the sustainable development of modern society. Renewable energies with low density greatly complicate the online optimization and control processes, where modern advanced computational technologies, specifically quantum computing, have significant potential to help. In this paper, we discuss applications of quantum computing algorithms toward state-of-the-art smart grid problems. We suggest potential, exponential quantum speedup by the use of the Harrow-Hassidim-Lloyd (HHL) algorithms for sparse matrix inversions in power-flow problems. However, practical implementations of the algorithm are limited by the noise of quantum circuits, the hardness of realizations of quantum random access memories (QRAM), and the depth of the required quantum circuits. We benchmark the hardware and software requirements from the state-of-the-art power-flow algorithms, including QRAM requirements from hybrid phonon-transmon systems, and explicit gate counting used in HHL for explicit realizations. We also develop near-term algorithms of power flow by variational quantum circuits and implement real experiments for 6 qubits with a truncated version of power flows.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-10T17:52:43Z</published>
+    <arxiv:comment>30 pages, many figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum Mach. Intell. 6, 55 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Junyu Liu</name>
+    </author>
+    <author>
+      <name>Han Zheng</name>
+    </author>
+    <author>
+      <name>Masanori Hanada</name>
+    </author>
+    <author>
+      <name>Kanav Setia</name>
+    </author>
+    <author>
+      <name>Dan Wu</name>
+    </author>
+    <arxiv:doi>10.1007/s42484-024-00182-z</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s42484-024-00182-z" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.01601v2</id>
+    <title>Quantum communication complexity of linear regression</title>
+    <updated>2023-05-14T11:08:39Z</updated>
+    <link href="https://arxiv.org/abs/2210.01601v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.01601v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum computers may achieve speedups over their classical counterparts for solving linear algebra problems. However, in some cases -- such as for low-rank matrices -- dequantized algorithms demonstrate that there cannot be an exponential quantum speedup. In this work, we show that quantum computers have provable polynomial and exponential speedups in terms of communication complexity for some fundamental linear algebra problems \update{if there is no restriction on the rank}. We mainly focus on solving linear regression and Hamiltonian simulation. In the quantum case, the task is to prepare the quantum state of the result. To allow for a fair comparison, in the classical case, the task is to sample from the result. We investigate these two problems in two-party and multiparty models, propose near-optimal quantum protocols and prove quantum/classical lower bounds. In this process, we propose an efficient quantum protocol for quantum singular value transformation, which is a powerful technique for designing quantum algorithms. This will be helpful in developing efficient quantum protocols for many other problems.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-04T13:27:01Z</published>
+    <arxiv:comment>34 pages, updated some minor typos, and added one new section on the connection between dequantized algorithms and communication complexity</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Ashley Montanaro</name>
+    </author>
+    <author>
+      <name>Changpeng Shao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.06930v1</id>
+    <title>How Much Structure Is Needed for Huge Quantum Speedups?</title>
+    <updated>2022-09-14T21:09:32Z</updated>
+    <link href="https://arxiv.org/abs/2209.06930v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.06930v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>I survey, for a general scientific audience, three decades of research into which sorts of problems admit exponential speedups via quantum computers -- from the classics (like the algorithms of Simon and Shor), to the breakthrough of Yamakawa and Zhandry from April 2022. I discuss both the quantum circuit model, which is what we ultimately care about in practice but where our knowledge is radically incomplete, and the so-called oracle or black-box or query complexity model, where we've managed to achieve a much more thorough understanding that then informs our conjectures about the circuit model. I discuss the strengths and weaknesses of switching attention to sampling tasks, as was done in the recent quantum supremacy experiments. I make some skeptical remarks about widely-repeated claims of exponential quantum speedups for practical machine learning and optimization problems. Through many examples, I try to convey the "law of conservation of weirdness," according to which every problem admitting an exponential quantum speedup must have some unusual property to allow the amplitude to be concentrated on the unknown right answer(s).</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-14T21:09:32Z</published>
+    <arxiv:comment>16 pages, 6 figures. Edited transcript of a rapporteur talk delivered at the 28th Solvay Physics Conference in Brussels on May 21, 2022</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Scott Aaronson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.14623v2</id>
+    <title>Extracting a function encoded in amplitudes of a quantum state by tensor network and orthogonal function expansion</title>
+    <updated>2023-06-01T09:05:39Z</updated>
+    <link href="https://arxiv.org/abs/2208.14623v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.14623v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There are quantum algorithms for finding a function $f$ satisfying a set of conditions, such as solving partial differential equations, and these achieve exponential quantum speedup compared to existing classical methods, especially when the number $d$ of the variables of $f$ is large. In general, however, these algorithms output the quantum state which encodes $f$ in the amplitudes, and reading out the values of $f$ as classical data from such a state can be so time-consuming that the quantum speedup is ruined. In this study, we propose a general method for this function readout task. Based on the function approximation by a combination of tensor network and orthogonal function expansion, we present a quantum circuit and its optimization procedure to obtain an approximating function of $f$ that has a polynomial number of degrees of freedom with respect to $d$ and is efficiently evaluable on a classical computer. We also conducted a numerical experiment to approximate a finance-motivated function to demonstrate that our method works.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-31T04:10:24Z</published>
+    <arxiv:comment>16 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Koichi Miyamoto</name>
+    </author>
+    <author>
+      <name>Hiroshi Ueda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1908.03903v3</id>
+    <title>Quantum algorithm for estimating volumes of convex bodies</title>
+    <updated>2021-11-01T15:27:03Z</updated>
+    <link href="https://arxiv.org/abs/1908.03903v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1908.03903v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Estimating the volume of a convex body is a central problem in convex geometry and can be viewed as a continuous version of counting. We present a quantum algorithm that estimates the volume of an $n$-dimensional convex body within multiplicative error $ε$ using $\tilde{O}(n^{3}+n^{2.5}/ε)$ queries to a membership oracle and $\tilde{O}(n^{5}+n^{4.5}/ε)$ additional arithmetic operations. For comparison, the best known classical algorithm uses $\tilde{O}(n^{4}+n^{3}/ε^{2})$ queries and $\tilde{O}(n^{6}+n^{5}/ε^{2})$ additional arithmetic operations. To the best of our knowledge, this is the first quantum speedup for volume estimation. Our algorithm is based on a refined framework for speeding up simulated annealing algorithms that might be of independent interest. This framework applies in the setting of "Chebyshev cooling", where the solution is expressed as a telescoping product of ratios, each having bounded variance. We develop several novel techniques when implementing our framework, including a theory of continuous-space quantum walks with rigorous bounds on discretization error. To complement our quantum algorithms, we also prove that volume estimation requires $Ω(\sqrt n+1/ε)$ quantum membership queries, which rules out the possibility of exponential quantum speedup in $n$ and shows optimality of our algorithm in $1/ε$ up to poly-logarithmic factors.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-08-11T13:13:47Z</published>
+    <arxiv:comment>61 pages, 8 figures. v2: Quantum query complexity improved to $\tilde{O}(n^{3}+n^{2.5}/ε)$ and number of additional arithmetic operations improved to $\tilde{O}(n^{5}+n^{4.5}/ε)$. v3: Improved Section 4.3.3 on nondestructive mean estimation and Section 6 on quantum lower bounds; various minor changes</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>ACM Transactions on Quantum Computing, Vol. 4, No. 3, Article 20 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Shouvanik Chakrabarti</name>
+    </author>
+    <author>
+      <name>Andrew M. Childs</name>
+    </author>
+    <author>
+      <name>Shih-Han Hung</name>
+    </author>
+    <author>
+      <name>Tongyang Li</name>
+    </author>
+    <author>
+      <name>Chunhao Wang</name>
+    </author>
+    <author>
+      <name>Xiaodi Wu</name>
+    </author>
+    <arxiv:doi>10.1145/3588579</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3588579" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1808.09058v1</id>
+    <title>Quantum enhanced cross-validation for near-optimal neural networks architecture selection</title>
+    <updated>2018-08-27T23:04:22Z</updated>
+    <link href="https://arxiv.org/abs/1808.09058v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1808.09058v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper proposes a quantum-classical algorithm to evaluate and select classical artificial neural networks architectures. The proposed algorithm is based on a probabilistic quantum memory and the possibility to train artificial neural networks in superposition. We obtain an exponential quantum speedup in the evaluation of neural networks. We also verify experimentally through a reduced experimental analysis that the proposed algorithm can be used to select near-optimal neural networks.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-08-27T23:04:22Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>International Journal of Quantum Information, Volume 16, No. 06, 1840005 (2018)</arxiv:journal_ref>
+    <author>
+      <name>Priscila G. M. dos Santos</name>
+    </author>
+    <author>
+      <name>Rodrigo S. Sousa</name>
+    </author>
+    <author>
+      <name>Ismael C. S. Araujo</name>
+    </author>
+    <author>
+      <name>Adenilton J. da Silva</name>
+    </author>
+    <arxiv:doi>10.1142/S0219749918400051</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1142/S0219749918400051" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1805.10549v2</id>
+    <title>Quantum algorithms for systems of linear equations inspired by adiabatic quantum computing</title>
+    <updated>2018-11-29T13:39:54Z</updated>
+    <link href="https://arxiv.org/abs/1805.10549v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1805.10549v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present two quantum algorithms based on evolution randomization, a simple variant of adiabatic quantum computing, to prepare a quantum state $\vert x \rangle$ that is proportional to the solution of the system of linear equations $A \vec{x}=\vec{b}$. The time complexities of our algorithms are $O(κ^2 \log(κ)/ε)$ and $O(κ\log(κ)/ε)$, where $κ$ is the condition number of $A$ and $ε$ is the precision. Both algorithms are constructed using families of Hamiltonians that are linear combinations of products of $A$, the projector onto the initial state $\vert b \rangle$, and single-qubit Pauli operators. The algorithms are conceptually simple and easy to implement. They are not obtained from equivalences between the gate model and adiabatic quantum computing. They do not use phase estimation or variable-time amplitude amplification, and do not require large ancillary systems. We discuss a gate-based implementation via Hamiltonian simulation and prove that our second algorithm is almost optimal in terms of $κ$. Like previous methods, our techniques yield an exponential quantum speedup under some assumptions. Our results emphasize the role of Hamiltonian-based models of quantum computing for the discovery of important algorithms.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-05-26T22:34:02Z</published>
+    <arxiv:comment>9 pages, 2 figures. Changes in version 2: - Includes a simpler algorithm for the special case of positive matrices. - Added pseudocode for the algorithms - Overall improved presentation</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 122, 060504 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Yigit Subasi</name>
+    </author>
+    <author>
+      <name>Rolando D. Somma</name>
+    </author>
+    <author>
+      <name>Davide Orsucci</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.122.060504</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.122.060504" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1612.01652v1</id>
+    <title>Experimental Study of Forrelation in Nuclear Spins</title>
+    <updated>2016-12-06T03:32:30Z</updated>
+    <link href="https://arxiv.org/abs/1612.01652v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1612.01652v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Correlation functions are often employed to quantify the relationships among interdependent variables or sets of data. Recently, a new class of correlation functions, called Forrelation, has been introduced by Aaronson and Ambainis for studying the query complexity of quantum devices. It was found that there exists a quantum query algorithm solving 2-fold Forrelation problems with an exponential quantum speedup over all possible classical means, which represents essentially the largest possible separation between quantum and classical query complexities. Here we report an experimental study probing the 2-fold and 3-fold Forrelations encoded in nuclear spins. The major experimental challenge is to control the spin fluctuation to within a threshold value, which is achieved by developing a set of optimized GRAPE pulse sequences. Overall, our small-scale implementation indicates that the quantum query algorithm is capable of determine the values of Forrelations within an acceptable accuracy required for demonstrating quantum supremacy, given the current technology and in the presence of experimental noise.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-12-06T03:32:30Z</published>
+    <arxiv:comment>11 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Hang Li</name>
+    </author>
+    <author>
+      <name>Xun Gao</name>
+    </author>
+    <author>
+      <name>Tao Xin</name>
+    </author>
+    <author>
+      <name>Man-Hong Yung</name>
+    </author>
+    <author>
+      <name>Guilu Long</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/0204065v2</id>
+    <title>Efficient Classical Simulation of Optical Quantum Circuits</title>
+    <updated>2002-10-30T00:17:53Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/0204065v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/0204065v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We identify a broad class of physical processes in an optical quantum circuit that can be efficiently simulated on a classical computer: this class includes unitary transformations, amplification, noise, and measurements. This simulatability result places powerful constraints on the capability to realize exponential quantum speedups as well as on inducing an optical nonlinear transformation via linear optics, photodetection-based measurement and classical feedforward of measurement results, optimal cloning, and a wide range of other processes.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-04-11T23:45:39Z</published>
+    <arxiv:comment>4 pages, published version</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 89, 207903 (2002)</arxiv:journal_ref>
+    <author>
+      <name>Stephen D. Bartlett</name>
+    </author>
+    <author>
+      <name>Barry C. Sanders</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.89.207903</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.89.207903" title="doi"/>
+  </entry>
+</feed>

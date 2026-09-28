@@ -1,0 +1,1 @@
+{"exact_one_group_max_err": 0.0014570406094879806, "typ_se": 0.0014820297978088602, "reversibility_max_amp_err": 5.176800599981467e-13, "one_spin_len_min": 0.8660254037844383, "one_spin_len_max": 0.8660254037844388, "groups_near6_m2": [[0, 1, 2, 3, 4, 5], [6, 8], [7, 9]]}

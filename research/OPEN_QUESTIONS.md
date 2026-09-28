@@ -60,3 +60,17 @@ _Updated 2026-09-26 after the S29–S33 reconstruction; updated again 2026-09-26
   - Mi et al. 2021 report both an efficient classical model of operator *spreading* and exponential cost of operator *entanglement*.
 - **Transmission (R2-T).** Does posterior averaging over modes beat the argmin for the A80 learned energy at L = 60/100? Running.
 - **Is the measured classical difficulty of the λ-path (0 NRPT round trips) a barrier or ill-conditioning?** Relevant only as classical science; the quantum route is killed regardless (K-101).
+
+## Added after round 3 (2026-09-28)
+
+Parked residues, none a protein-structure lead:
+- **R1-SIM-X.** The four-point echo remainder X = F − H − floor. Only the t ≤ T3 branch (40–120 µs) touches a measurable signal. Tested in round 4 by T-X-early and spinDMFT.
+- **R1-SIM-DQ.**
+- **R-ROTOR.** Coupled methyl tunnelling. Now an identifiability question.
+- **FeMoco E-state isomer identity.** Chemistry level, WEAK; capped by the model floor.
+- **T = 1 sub-basin posterior sampling of the learned energy.** Worth 0.1–0.5 Å.
+- **DG-residual crops.**
+- **QeMCMC small-n exponent.**
+
+Newly scoped, examined in round 4:
+- **Physics-based all-atom sampling** of folding kinetics and ensembles. It is classically hard and structure-bearing. Every quadratic route is dead (B*₂ ≥ 2.5e15). An s = 4 algorithm would break even in principle at T*_Q ≈ 0.1–2.5 yr per sample, but no super-quadratic algorithm for classical force fields is known.
