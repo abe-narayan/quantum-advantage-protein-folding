@@ -1,0 +1,15 @@
+tune 0: Lambda=7.77 max_rej=0.98 eps[-1]=0.0017
+tune 1: Lambda=14.31 max_rej=1.00 eps[-1]=0.0006
+tune 2: Lambda=14.24 max_rej=1.00 eps[-1]=0.0007
+pilot Lambda=14.24 -> rungs N=38
+tune 0: Lambda=13.96 max_rej=0.95 eps[-1]=0.0017
+tune 1: Lambda=23.35 max_rej=0.84 eps[-1]=0.0009
+tune 0: Lambda=7.77 max_rej=0.98 eps[-1]=0.0017
+tune 1: Lambda=14.31 max_rej=1.00 eps[-1]=0.0006
+tune 2: Lambda=14.24 max_rej=1.00 eps[-1]=0.0007
+pilot Lambda=14.24 -> rungs N=38
+tune 0: Lambda=13.96 max_rej=0.95 eps[-1]=0.0017
+tune 1: Lambda=23.35 max_rej=0.84 eps[-1]=0.0009
+tune 2: Lambda=24.86 max_rej=0.99 eps[-1]=0.0008
+{"crop": "5O37A_100", "rungs": 38, "Lambda": 24.824106034027366, "round_trips": 0, "scans": 1277, "cost_per_trip": null, "secs": 1617.720133304596}
+{"post_expected_rmsd": 5.634798976445073, "post_rmsd_sd": 0.15921156509758808, "post_best_rmsd": 5.18214313762311, "medoid_rmsd": 5.683968812793176, "lowestE_rmsd": 5.739964685119334, "lowestE_polished_rmsd": 5.4422242515633155, "lowestE": 20976.6397946922, "polishedE": 20790.3730387792, "pairwise_rmsd_mean": 1.5326776267999291, "n_samples_eval": 205}

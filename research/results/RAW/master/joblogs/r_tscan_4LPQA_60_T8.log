@@ -1,0 +1,9 @@
+tune 0: Lambda=8.72 max_rej=0.76 eps[-1]=0.0119
+tune 1: Lambda=8.70 max_rej=0.82 eps[-1]=0.0101
+tune 2: Lambda=8.65 max_rej=0.73 eps[-1]=0.0080
+pilot Lambda=8.65 -> rungs N=24
+tune 0: Lambda=9.32 max_rej=0.60 eps[-1]=0.0140
+tune 1: Lambda=9.12 max_rej=0.57 eps[-1]=0.0090
+tune 2: Lambda=9.36 max_rej=0.58 eps[-1]=0.0105
+{"crop": "4LPQA_60", "rungs": 24, "Lambda": 9.276193792698962, "round_trips": 17, "scans": 4180, "cost_per_trip": 79420.0, "secs": 1579.001912355423}
+{"post_expected_rmsd": 12.180364280031629, "post_rmsd_sd": 1.1755662954901147, "post_best_rmsd": 9.719222240950382, "medoid_rmsd": 13.283046626838779, "lowestE_rmsd": 12.674317806025918, "lowestE_polished_rmsd": 12.646225566222837, "lowestE": 7938.780227585552, "polishedE": 7716.634099039646, "pairwise_rmsd_mean": 8.555274934462616, "n_samples_eval": 669}

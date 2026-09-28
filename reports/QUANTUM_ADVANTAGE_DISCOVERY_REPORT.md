@@ -127,9 +127,32 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 - Unmitigated echo circuits fail immediately (20 µs) at every noise level ≥ 1e-3 per qubit per Trotter step.
 - With echo-normalisation mitigation, a window beyond the (then) classical-approximation failure time exists only at ≤ 1e-3 (≈ 1e-4 per two-qubit gate) and closes at 3e-3.
 
-**N6. Transmission (R2-T).** ⟦R2T⟧
+**N6. Transmission (R2-T).** Classical result, pre-registered (R2-T v2 weightings; 16 chains per length; T* chosen native-free as the smallest temperature with ESS ≥ 3). MEASURED:
+- **L = 60.** Energy-weighted soft readout beats the argmin by a median of +0.54 Å (mean +0.67), 1.01 MDE, improving 88% of crops. Hit-weighted: +0.33 Å, 0.61 MDE.
+- **L = 100.** The median gain is ≈ 0.00 Å (mean +0.09), 0.00 MDE.
+- **Pre-registered kill** (median gain < 1.0 MDE at both lengths): **does not fire**, by a hair at L = 60. The transmission clause of H-006 therefore holds weakly at 60 aa and fails at 100 aa.
+- This is classical information about the value of posterior averaging. It cannot rescue the quantum route (K-101 is landscape- and transmission-independent).
 
-**N7. G1 production (pre-registered confirmations).** ⟦G1PROD⟧
+**N7. G1 production (pre-registered confirmations).** MEASURED (governed production; pre-registered in PREREG G1/Q4):
+- **λ-path NRPT T-scan** (5 crops, T ∈ {1, 2, 4, 8}, HMC + pivots, 1500 s):
+  - Round trips appear only at L = 45–60 (1–2 at T ≤ 2; 16–17 at T = 8), which also validates the counter.
+  - At L = 80–120 there are **0 round trips at every T**. Λ falls with T (L = 100: 24.8 → 15.4) but stays high.
+  - K-G1c (hardness only at T = 1) does not fire at L ≥ 80.
+- **Mode census** (256 restarts, 16 chains, L = 30–150):
+  - Geometric-mean p_hit(best mode) falls 0.10 → 0.0039 and reaches the 1/256 censoring floor at L = 150.
+  - exp(−0.028 L) fits better than a power law (ΔBIC = 10.6; tail censored).
+  - The 2048-restart census (8 crops) is unsaturated at L = 150 (p_hit ≈ 1/2048).
+  - ρ(E, RMSD) over modes is 0.03–0.34.
+- **Pre-registered G1 survival requires all criteria**, and it **fails**:
+  - super-polynomial p_hit: met descriptively, with a censoring caveat;
+  - no bypass: contradicted by the exploratory distance-geometry seeding (61/64);
+  - transmission: weak at L = 60, absent at L = 100;
+  - extrapolated classical cost > B* at some L ≤ 500: **fails**. p_hit ≈ 2×10⁻⁷ at L = 500 gives ~10⁹ evaluations, below B* ≥ 10¹⁰–10¹¹.
+- **The quantum sampling route is killed** by both the pre-registered G1 rule and the landscape-independent floor (K-101).
+- **Temperature exchange (Q4)**, 24 crops L = 30–120: 0 round trips everywhere.
+  - The heat-capacity maxima sit at the lowest rung (T = 1), a non-equilibrium artefact.
+  - Histogram "barriers" are 0.02–4.5, far below 2 ln R ≈ 32–46.
+  - **K-Q4c fires: QM-04 killed at this instrument.**
 
 ## 11. Positive results
 

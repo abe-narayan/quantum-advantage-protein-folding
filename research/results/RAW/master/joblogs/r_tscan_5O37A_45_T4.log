@@ -1,0 +1,9 @@
+tune 0: Lambda=8.11 max_rej=0.85 eps[-1]=0.0065
+tune 1: Lambda=9.21 max_rej=0.81 eps[-1]=0.0053
+tune 2: Lambda=9.24 max_rej=0.88 eps[-1]=0.0060
+pilot Lambda=9.24 -> rungs N=26
+tune 0: Lambda=8.70 max_rej=0.65 eps[-1]=0.0080
+tune 1: Lambda=9.76 max_rej=0.50 eps[-1]=0.0071
+tune 2: Lambda=9.75 max_rej=0.55 eps[-1]=0.0058
+{"crop": "5O37A_45", "rungs": 26, "Lambda": 10.273235316071077, "round_trips": 0, "scans": 6853, "cost_per_trip": null, "secs": 1826.1447079181671}
+{"post_expected_rmsd": 3.2456145998814088, "post_rmsd_sd": 0.3537701318192704, "post_best_rmsd": 2.6264163982609117, "medoid_rmsd": 2.9030951405090395, "lowestE_rmsd": 3.046702245396425, "lowestE_polished_rmsd": 2.5582914836512587, "lowestE": 3940.492554750652, "polishedE": 3795.994936404788, "pairwise_rmsd_mean": 2.4746676327249526, "n_samples_eval": 1097}

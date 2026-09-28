@@ -1,0 +1,9 @@
+tune 0: Lambda=8.38 max_rej=1.00 eps[-1]=0.0025
+tune 1: Lambda=12.62 max_rej=1.00 eps[-1]=0.0008
+tune 2: Lambda=12.93 max_rej=0.99 eps[-1]=0.0010
+pilot Lambda=12.93 -> rungs N=35
+tune 0: Lambda=12.01 max_rej=0.84 eps[-1]=0.0029
+tune 1: Lambda=16.41 max_rej=0.81 eps[-1]=0.0009
+tune 2: Lambda=16.86 max_rej=0.74 eps[-1]=0.0010
+{"crop": "3GAHA_80", "rungs": 35, "Lambda": 17.64969382223903, "round_trips": 0, "scans": 1884, "cost_per_trip": null, "secs": 1628.5243248939514}
+{"post_expected_rmsd": 11.837360469373397, "post_rmsd_sd": 0.21971996643722128, "post_best_rmsd": 11.567640674538023, "medoid_rmsd": 11.772266637624933, "lowestE_rmsd": 11.888022521153609, "lowestE_polished_rmsd": 11.804713166332558, "lowestE": 14343.333620229781, "polishedE": 14275.69845335208, "pairwise_rmsd_mean": 1.4683730539638846, "n_samples_eval": 302}
