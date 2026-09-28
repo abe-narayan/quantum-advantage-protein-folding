@@ -1,0 +1,789 @@
+{
+ "key": "nonlinear_ode_qalg",
+ "url": "https://export.arxiv.org/api/query?max_results=60&sortBy=relevance&search_query=%28ti%3Aquantum+AND+ti%3Anonlinear+AND+%28ti%3A%22differential+equations%22+OR+ti%3Adynamics%29+AND+abs%3Aalgorithm%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:06",
+ "records": [
+  {
+   "id": "2011.06571v2",
+   "title": "Quantum algorithm for nonlinear differential equations",
+   "published": "2020-11-12",
+   "updated": "2020-12-21",
+   "authors": [
+    "Seth Lloyd",
+    "Giacomo De Palma",
+    "Can Gokler",
+    "Bobak Kiani",
+    "Zi-Wen Liu",
+    "Milad Marvian",
+    "Felix Tennie",
+    "Tim Palmer"
+   ],
+   "abstract": "Quantum computers are known to provide an exponential advantage over classical computers for the solution of linear differential equations in high-dimensional spaces. Here, we present a quantum algorithm for the solution of nonlinear differential equations. The quantum algorithm provides an exponential advantage over classical algorithms for solving nonlinear differential equations. Potential applications include the Navier-Stokes equation, plasma hydrodynamics, epidemiology, and more.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.08349v1",
+   "title": "Quantum algorithms for stochastic nonlinear differential equations",
+   "published": "2026-06-06",
+   "updated": "2026-06-06",
+   "authors": [
+    "Sergey Bravyi",
+    "Adam Byrne",
+    "Mykhaylo Zayats",
+    "Sergiy Zhuk"
+   ],
+   "abstract": "Stochastic nonlinear dynamics underlie many models in engineering and computational physics, yet accurate high-dimensional simulation remains challenging. We present a quantum algorithm for a broad class of $N$-dimensional stochastic differential equations with dissipation and quadratic drift. The algorithm applies to strongly nonlinear systems with all-to-all interactions, thereby extending the scope of previously known quantum algorithms that were limited to weak nonlinearity and sparse systems. For norm-preserving drifts, a condition satisfied by key fluid dynamics discretizations, our method approximates expectation values of low-order correlation functions with rigorous error bounds at a cost polynomial in $\\log{(N)}$ and linear in the evolution time. Our main technical advance is a subroutine for simulating an auxiliary system of $N$ interacting quantum harmonic oscillators with cost polylogarithmic in $N$. Finally, we formulate turbulence models, including Navier-Stokes and damped Euler equations, within this framework, opening a route to quantum simulation of strongly nonlinear SDEs governing turbulence and nonlinear wave dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.03185v4",
+   "title": "Efficient quantum algorithm for dissipative nonlinear differential equations",
+   "published": "2020-11-06",
+   "updated": "2026-07-07",
+   "authors": [
+    "Jin-Peng Liu",
+    "Herman \u00d8ie Kolden",
+    "Hari K. Krovi",
+    "Nuno F. Loureiro",
+    "Konstantina Trivisa",
+    "Andrew M. Childs"
+   ],
+   "abstract": "Nonlinear differential equations model diverse phenomena but are notoriously difficult to solve. While there has been extensive previous work on efficient quantum algorithms for linear differential equations, the linearity of quantum mechanics has limited analogous progress for the nonlinear case. Despite this obstacle, we develop a quantum algorithm for dissipative quadratic $n$-dimensional ordinary differential equations. Assuming $R < 1$, where $R$ is a parameter characterizing the ratio of the nonlinearity and forcing to the linear dissipation, this algorithm has complexity $T^2 q~\\mathrm{poly}(\\log T, \\log n, \\log 1/\u03b5)/\u03b5$, where $T$ is the evolution time, $\u03b5$ is the allowed error, and $q$ measures decay of the solution. This is an exponential improvement over the best previous quantum algorithms, whose complexity is exponential in $T$. While exponential decay precludes efficiency, driven equations can avoid this issue despite the presence of dissipation. Our algorithm uses the method of Carleman linearization, for which we give a novel convergence theorem. This method maps a system of nonlinear differential equations to an infinite-dimensional system of linear differential equations, which we discretize, truncate, and solve using the forward Euler method and the quantum linear system algorithm. We also provide a lower bound on the worst-case complexity of quantum algorithms for general quadratic differential equations, showing that the problem is intractable for $R \\ge \\sqrt{2}$. Finally, we discuss potential applications, showing that the $R < 1$ condition can be satisfied in realistic epidemiological models and giving numerical evidence that the method may describe a model of fluid dynamics even for larger values of $R$.",
+   "journal_ref": "Proceedings of the National Academy of Sciences 118, e2026805118 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2406.04826v1",
+   "title": "Quantum Computing for nonlinear differential equations and turbulence",
+   "published": "2024-06-07",
+   "updated": "2024-06-07",
+   "authors": [
+    "Felix Tennie",
+    "Sylvain Laizet",
+    "Seth Lloyd",
+    "Luca Magri"
+   ],
+   "abstract": "A large spectrum of problems in classical physics and engineering, such as turbulence, is governed by nonlinear differential equations, which typically require high-performance computing to be solved. Over the past decade, however, the growth of classical computing power has slowed down because the miniaturisation of chips has been approaching the atomic scale. This is marking an end to Moore's law, which calls for a new computing paradigm: Quantum computing is a prime candidate. In this paper, we offer a perspective on the current challenges that need to be overcome in order to use quantum computing for the simulation of nonlinear dynamics. We review and discuss progress in the development of both quantum algorithms for nonlinear equations and quantum hardware. We propose pairings between quantum algorithms for nonlinear equations and quantum hardware concepts. These avenues open new opportunities for the simulation of nonlinear systems and turbulence.",
+   "journal_ref": "",
+   "primary": "physics.flu-dyn"
+  },
+  {
+   "id": "2202.01054v5",
+   "title": "Improved quantum algorithms for linear and nonlinear differential equations",
+   "published": "2022-02-02",
+   "updated": "2025-12-12",
+   "authors": [
+    "Hari Krovi"
+   ],
+   "abstract": "We present substantially generalized and improved quantum algorithms over prior work for inhomogeneous linear and nonlinear ordinary differential equations (ODE). Specifically, we show how the norm of the matrix exponential characterizes the run time of quantum algorithms for linear ODEs opening the door to an application to a wider class of linear and nonlinear ODEs. In Berry et al., (2017), a quantum algorithm for a certain class of linear ODEs is given, where the matrix involved needs to be diagonalizable. The quantum algorithm for linear ODEs presented here extends to many classes of non-diagonalizable matrices. The algorithm here is also exponentially faster than the bounds derived in Berry et al., (2017) for certain classes of diagonalizable matrices. Our linear ODE algorithm is then applied to nonlinear differential equations using Carleman linearization (an approach taken recently by us in Liu et al., (2021)). The improvement over that result is two-fold. First, we obtain an exponentially better dependence on error. This kind of logarithmic dependence on error has also been achieved by Xue et al., (2021), but only for homogeneous nonlinear equations. Second, the present algorithm can handle any sparse, invertible matrix (that models dissipation) if it has a negative log-norm (including non-diagonalizable matrices), whereas Liu et al., (2021) and Xue et al., (2021) additionally require normality.",
+   "journal_ref": "Quantum 7, 913 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2603.12398v1",
+   "title": "Efficient Quantum Simulation for Nonlinear Stochastic Differential Equations",
+   "published": "2026-03-12",
+   "updated": "2026-03-12",
+   "authors": [
+    "Xiangyu Li",
+    "Ahmet Burak Catli",
+    "Ho Kiat Lim",
+    "Matthew Pocrnic",
+    "Dong An",
+    "Jin-Peng Liu",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (NSDEs) are a pillar of mathematical modeling for scientific and engineering applications. Accurate and efficient simulation of large-scale NSDEs is prohibitive on classical computers due to the large number of degrees of freedom, and it is challenging on quantum computers due to the linear and unitary nature of quantum mechanics. We develop a quantum algorithm to tackle nonlinear differential equations driven by the Ornstein-Uhlenbeck (OU) stochastic process. The query complexity of our algorithm scales logarithmically with the error tolerance and nearly quadratically with the simulation time. Our algorithmic framework comprises probabilistic Carleman linearization (PCL) to tackle nonlinearity coupled with stochasticity, and stochastic linear combination of Hamiltonian simulations (SLCHS) to simulate stochastic non-unitary dynamics. We obtain probabilistic exponential convergence for the Carleman linearization of Liu et al. [1], provided the NSDE is stable and reaches a steady state. We extend deterministic LCHS to stochastic linear differential equations, retaining near-optimal parameter scaling from An et al. [2] except for the nearly quadratic time scaling. This is achieved by using Monte Carlo integration for time discretization of both the stochastic inhomogeneous term in LCHS and the truncated Dyson series for each Hamiltonian simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.10395v2",
+   "title": "Solving nonlinear differential equations with differentiable quantum circuits",
+   "published": "2020-11-20",
+   "updated": "2021-05-18",
+   "authors": [
+    "Oleksandr Kyriienko",
+    "Annie E. Paine",
+    "Vincent E. Elfving"
+   ],
+   "abstract": "We propose a quantum algorithm to solve systems of nonlinear differential equations. Using a quantum feature map encoding, we define functions as expectation values of parametrized quantum circuits. We use automatic differentiation to represent function derivatives in an analytical form as differentiable quantum circuits (DQCs), thus avoiding inaccurate finite difference procedures for calculating gradients. We describe a hybrid quantum-classical workflow where DQCs are trained to satisfy differential equations and specified boundary conditions. As a particular example setting, we show how this approach can implement a spectral method for solving differential equations in a high-dimensional feature space. From a technical perspective, we design a Chebyshev quantum feature map that offers a powerful basis set of fitting polynomials and possesses rich expressivity. We simulate the algorithm to solve an instance of Navier-Stokes equations, and compute density, temperature and velocity profiles for the fluid flow in a convergent-divergent nozzle.",
+   "journal_ref": "Phys. Rev. A 103, 052416 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2111.07486v2",
+   "title": "Quantum homotopy perturbation method for nonlinear dissipative ordinary differential equations",
+   "published": "2021-11-15",
+   "updated": "2021-12-21",
+   "authors": [
+    "Cheng Xue",
+    "Yu-Chun Wu",
+    "Guo-Ping Guo"
+   ],
+   "abstract": "While quantum computing provides an exponential advantage in solving linear differential equations, there are relatively few quantum algorithms for solving nonlinear differential equations. In our work, based on the homotopy perturbation method, we propose a quantum algorithm for solving $n$-dimensional nonlinear dissipative ordinary differential equations (ODEs). Our algorithm first converts the original nonlinear ODEs into the other nonlinear ODEs which can be embedded into finite-dimensional linear ODEs. Then we solve the embedded linear ODEs with quantum linear ODEs algorithm and obtain a state $\u03b5$-close to the normalized exact solution of the original nonlinear ODEs with success probability $\u03a9(1)$. The complexity of our algorithm is $O(g\u03b7T{\\rm poly}(\\log(nT/\u03b5)))$, where $\u03b7$, $g$ measure the decay of the solution. Our algorithm provides exponential improvement over the best classical algorithms or previous quantum algorithms in $n$ or $\u03b5$.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.07834v1",
+   "title": "Quantum algorithms for computing observables of nonlinear partial differential equations",
+   "published": "2022-02-16",
+   "updated": "2022-02-16",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu"
+   ],
+   "abstract": "We construct quantum algorithms to compute physical observables of nonlinear PDEs with M initial data. Based on an exact mapping between nonlinear and linear PDEs using the level set method, these new quantum algorithms for nonlinear Hamilton-Jacobi and scalar hyperbolic PDEs can be performed with a computational cost that is independent of M, for arbitrary nonlinearity. Depending on the details of the initial data, it can also display up to exponential advantage in both the dimension of the PDE and the error in computing its observables. For general nonlinear PDEs, quantum advantage with respect to M is possible in the large M limit.",
+   "journal_ref": "Bulletin des Sciences Mathematiques, Vol 194, 103457, 2024",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.11825v1",
+   "title": "Quantum algorithms for Young measures: applications to nonlinear partial differential equations",
+   "published": "2026-04-11",
+   "updated": "2026-04-11",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Maria Lukacova-Medvidova",
+    "Yuhuan Yuan"
+   ],
+   "abstract": "Many nonlinear PDEs have singular or oscillatory solutions or may exhibit physical instabilities or uncertainties. This requires a suitable concept of physically relevant generalized solutions. Dissipative measure-valued solutions have been an effective analytical tool to characterize PDE behavior in such singular regimes. They have also been used to characterize limits of standard numerical schemes on classical computers. The measure-valued formulation of a nonlinear PDE yields an optimization problem with a linear cost functional and linear constraints, which can be formulated as a linear programming problem. However, this linear programming problem can suffer from the curse of dimensionality. In this article, we propose solving it using quantum linear programming (QLP) algorithms and discuss whether this approach can reduce costs compared to classical algorithms. We show that some QLP algorithms, such as the quantum central path algorithm, have up to polynomial advantage over the classical interior point method. For problems where one is interested in the dissipative weak solution, namely the expected values of the Young measure, we show that the QLP algorithms offer no advantage over direct classical solvers. Moreover, for random PDEs, there can be up to polynomial advantage in obtaining the Young measure over direct classical PDE solvers. This is a significant advantage over standard PDE solvers, since the Young measure provides a more detailed description of the solution. We also propose some open questions for future development in this direction.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2401.13500v1",
+   "title": "Solving nonlinear differential equations on Quantum Computers: A Fokker-Planck approach",
+   "published": "2024-01-24",
+   "updated": "2024-01-24",
+   "authors": [
+    "Felix Tennie",
+    "Luca Magri"
+   ],
+   "abstract": "For quantum computers to become useful tools to physicists, engineers and computational scientists, quantum algorithms for solving nonlinear differential equations need to be developed. Despite recent advances, the quest for a solver that can integrate nonlinear dynamical systems with a quantum advantage, whilst being realisable on available (or near-term) quantum hardware, is an open challenge. In this paper, we propose to transform a nonlinear dynamical system into a linear system, which we integrate with quantum algorithms. Key to the method is the Fokker-Planck equation, which is a non-normal partial differential equation. Three integration strategies are proposed: (i) Forward-Euler stepping by unitary block encoding; (ii) Schroedingerisation, and (iii) Forward-Euler stepping by linear addition of unitaries. We emulate the integration of prototypical nonlinear systems with the proposed quantum solvers, and compare the output with the benchmark solutions of classical integrators. We find that classical and quantum outputs are in good agreement. This paper opens opportunities for solving nonlinear differential equations with quantum algorithms.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2311.01531v2",
+   "title": "Quantum Variational Solving of Nonlinear and Multi-Dimensional Partial Differential Equations",
+   "published": "2023-11-02",
+   "updated": "2024-06-24",
+   "authors": [
+    "Abhijat Sarma",
+    "Thomas W. Watts",
+    "Mudassir Moosa",
+    "Yilian Liu",
+    "Peter L. McMahon"
+   ],
+   "abstract": "A variational quantum algorithm for numerically solving partial differential equations (PDEs) on a quantum computer was proposed by Lubasch et al. In this paper, we generalize the method introduced by Lubasch et al. to cover a broader class of nonlinear PDEs as well as multidimensional PDEs, and study the performance of the variational quantum algorithm on several example equations. Specifically, we show via numerical simulations that the algorithm can solve instances of the Single-Asset Black-Scholes equation with a nontrivial nonlinear volatility model, the Double-Asset Black-Scholes equation, the Buckmaster equation, and the deterministic Kardar-Parisi-Zhang equation. Our simulations used up to $n=12$ ansatz qubits, computing PDE solutions with $2^n$ grid points. We also performed proof-of-concept experiments with a trapped-ion quantum processor from IonQ, showing accurate computation of two representative expectation values needed for the calculation of a single timestep of the nonlinear Black--Scholes equation. Through our classical simulations and experiments on quantum hardware, we have identified -- and we discuss -- several open challenges for using quantum variational methods to solve PDEs in a regime with a large number ($\\gg 2^{20}$) of grid points, but also a practical number of gates per circuit and circuit shots.",
+   "journal_ref": "Phys. Rev. A 109, 062616 (2024)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.16233v1",
+   "title": "Divergence-free algorithms for solving nonlinear differential equations on quantum computers",
+   "published": "2024-11-25",
+   "updated": "2024-11-25",
+   "authors": [
+    "Katsuhiro Endo",
+    "Kazuaki Z. Takahashi"
+   ],
+   "abstract": "From weather to neural networks, modeling is not only useful for understanding various phenomena, but also has a wide range of potential applications. Although nonlinear differential equations are extremely useful tools in modeling, their solutions are difficult to obtain. Based on the expectation of quantum transcendence, quantum algorithms for efficiently solving nonlinear differential equations continue to be developed. However, even the latest promising algorithms have been pointed out to have an evolution time limit. This limit is the theoretically predestined divergence of solutions. We propose algorithms of divergence-free simulation for nonlinear differential equations in quantum computers. For Hamiltonian simulations, a pivot state $\\bf{s}$ in the neighborhood of state $\\bf{x}$ is introduced. Divergence of the solutions is prevented by moving $\\bf{s}$ to a neighborhood of $\\bf{x}$ whenever $\\bf{x}$ leaves the neighborhood of $\\bf{s}$. Since updating $\\bf{s}$ is directly related to computational cost, to minimize the number of updates, the nonlinear differential equations are approximated by nonlinear polynomials around $\\bf{s}$, which are then Carleman linearized. Hamiltonian simulations of nonlinear differential equations based on several representative models are performed to show that the proposed method breaks through the theoretical evolution time limit. The solution of nonlinear differential equations free from evolution time constraints opens the door to practical applications of quantum computers.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2601.04439v2",
+   "title": "Solving nonlinear differential equations on noisy $156$-qubit quantum computers",
+   "published": "2026-01-07",
+   "updated": "2026-02-10",
+   "authors": [
+    "Karla Baumann",
+    "Youcef Modheb",
+    "Roman Randrianarisoa",
+    "Roland Katz",
+    "Aoife Boyle",
+    "Fr\u00e9d\u00e9ric Holweck"
+   ],
+   "abstract": "In this paper, we report on the resolution of nonlinear differential equations using IBM's quantum platform. More specifically, we demonstrate that the hybrid classical-quantum algorithm H-DES successfully solves a one-dimensional material deformation problem and the inviscid Burgers' equation on IBM's 156-qubit quantum computers. These results constitute a step toward performing physically relevant simulations on present-day Noisy Intermediate-Scale Quantum (NISQ) devices.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.25822v1",
+   "title": "Fast-forwarding quantum algorithms for weakly nonlinear dissipative differential equations and beyond",
+   "published": "2026-08-26",
+   "updated": "2026-08-26",
+   "authors": [
+    "Yixiang Li",
+    "Dong An"
+   ],
+   "abstract": "We study a fast-forwarded quantum algorithm for solving weakly nonlinear dissipative ordinary differential equations. Our approach is a combination of the Carleman embedding technique and the linear combination of Hamiltonian simulation algorithm for linearized systems with fast-forwarded scaling. The complexity of our algorithm does not explicitly depend on the evolution time $T$, thus greatly improving the previous state-of-the-art $\\widetilde{\\mathcal{O}}(\\sqrt{T})$ to $\\mathcal{O}(1)$, and any remaining time dependence enters through the output norm and forcing parameters. We rigorously analyze the performance of this approach by convergence guarantees of the Carleman embedding for time-dependent coefficient matrices and detailed complexity estimates, and improve the realization of the Carleman-embedding-based algorithms by simplifying the post-selection step. In addition, we perform a numerical study on differential equations beyond the weakly nonlinear case, and identify possibility of achieving fast-forwarding scaling for systems with stronger nonlinearity or linear non-resonant effect.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2605.20071v1",
+   "title": "Quantum Algorithms for Nonlinear Differential Equations via Pivot-Shifted Carleman Linearization",
+   "published": "2026-05-19",
+   "updated": "2026-05-19",
+   "authors": [
+    "Ke Wang",
+    "Zikang Jia",
+    "Shravan Veerapaneni",
+    "Zhiyan Ding"
+   ],
+   "abstract": "We develop a pivot-shifted Carleman linearization framework for quantum algorithms solving quadratic nonlinear ordinary differential equations. By shifting the dynamics by a pivot state prior to Carleman lifting, and combining this with a Lyapunov transform and rescaling, we enlarge the class of nonlinear systems that can be efficiently simulated on quantum computers. For systems that exhibit stability in the shifted coordinates, we establish long time convergence of the truncated Carleman embedding. We prove that the truncation order scales only logarithmically with the simulation time and target precision, and we derive end-to-end quantum query complexity bounds for preparing a state proportional to the final solution. By introducing a modified nonlinearity condition, this framework entirely removes the conventional lower bound requirement on the initial condition. For more general systems that remain unstable after shifting, we provide short time convergence guarantees that are similarly free from the initial condition constraints. Numerical experiments on the logistic and the Lotka-Volterra equations demonstrate that an appropriate pivot choice improves stability and accuracy, and yields exponential error decay with truncation order. These results show that pivot shifting provides a practical and theoretically justified route for extending Carleman-based quantum algorithms to a broader class of nonlinear dynamical systems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.06488v2",
+   "title": "Efficient quantum algorithm for solving differential equations with Fourier nonlinearity via Koopman linearization",
+   "published": "2025-12-06",
+   "updated": "2026-08-26",
+   "authors": [
+    "Judd Katz",
+    "Gopikrishnan Muraleedharan",
+    "Abhijeet Alase"
+   ],
+   "abstract": "Quantum algorithms offer an exponential advantage with respect to the number of dependent variables for solving certain nonlinear ordinary differential equations (ODEs). These algorithms typically begin by transforming the original nonlinear ODE into a higher-dimensional linear ODE using a linearization technique, most commonly Carleman linearization. Existing works restrict their analysis to ODEs where the nonlinearities are polynomial functions of the dependent variables, significantly limiting their applicability. In this work we construct an efficient quantum algorithm for solving ODEs with `Fourier' nonlinear terms expressible as $d{\\bf u}/dt = G_0 + G_1 e^{i{\\bf u}}$, where ${\\bf u}$ denotes a vector of $n$ complex variables evolving with $t$, $G_0$ is an $n$-dimensional complex vector, $G_1$ is an $n \\times n$ complex matrix and $e^{i{\\bf u}}$ denotes the vector with entries $\\{e^{iu_j}\\}$. To tackle the Fourier nonlinear term, which is not expressible as a finite sum of polynomials of ${\\bf u}$, our algorithm employs a generalization of the Carleman linearization technique known as Koopman linearization. We also make other methodological advances towards relaxing the stringent dissipativity condition required for efficient solution extraction and towards integrated readout of classical quantities from the solution state. Our results open avenues to the development of efficient quantum algorithms for a significantly wider class of high-dimensional nonlinear ODEs, thereby broadening the scope of their applications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2504.13174v1",
+   "title": "Quantum algorithm for solving nonlinear differential equations based on physics-informed effective Hamiltonians",
+   "published": "2025-04-17",
+   "updated": "2025-04-17",
+   "authors": [
+    "Hsin-Yu Wu",
+    "Annie E. Paine",
+    "Evan Philip",
+    "Antonio A. Gentile",
+    "Oleksandr Kyriienko"
+   ],
+   "abstract": "We propose a distinct approach to solving linear and nonlinear differential equations (DEs) on quantum computers by encoding the problem into ground states of effective Hamiltonian operators. Our algorithm relies on constructing such operators in the Chebyshev space, where an effective Hamiltonian is a sum of global differential and data constraints. Once the effective Hamiltonian is formed, solutions of differential equations can be obtained using the ground state preparation techniques (e.g. imaginary-time evolution and quantum singular value transformation), bypassing variational search. Unlike approaches based on discrete grids, the algorithm enables evaluation of solutions beyond fixed grid points and implements constraints in the physics-informed way. Our proposal inherits the best traits from quantum machine learning-based DE solving (compact basis representation, automatic differentiation, nonlinearity) and quantum linear algebra-based approaches (fine-grid encoding, provable speed-up for state preparation), offering a robust strategy for quantum scientific computing in the early fault-tolerant era.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.13457v1",
+   "title": "Reduced basis algorithm for solving nonlinear differential equations on quantum computers",
+   "published": "2026-06-11",
+   "updated": "2026-06-11",
+   "authors": [
+    "Monica L\u0103c\u0103tu\u015f",
+    "Matthias M\u00f6ller",
+    "Sauro Succi"
+   ],
+   "abstract": "As quantum computing moves toward scientific computing applications, nonlinear differential equations remain a central challenge since quantum evolution is intrinsically linear. In this work, we introduce a reduced basis algorithm (RBA) for polynomial nonlinear ordinary differential equations (ODEs) and spatially discretized partial differential equations (PDEs). After time discretization, the method composes the resulting polynomial update map over $m$ timesteps, identifies the reduced monomial basis appearing in this composed map, and constructs a linear RBA operator whose action recovers the exact $m$-timestep nonlinear dynamics. Thus, at the level of the chosen discrete update rule, the method introduces no additional approximation error beyond the time discretization error. The qubit number requirement is governed by the size of the reduced monomial basis. For an $n$-dimensional polynomial ODE system of degree $p>1$, the lifted register requires at most $q_m^{\\mathrm{ODE}} = O(nm\\log p)$ qubits in the full basis scenario. For PDEs discretized on $N^D$ grid points, a locality-based construction requires at most $q_m^{\\mathrm{PDE}} = O(D\\log N + n m^{D+1}\\log p)$ qubits. Hence, the dependence on the grid size remains logarithmic, while the nonlinear overhead is controlled by local reduced basis size. The main computational burden is moved from the quantum computer to a classical preprocessing step, where the reduced monomial basis and RBA operator are constructed for the chosen timestep window. Through numerical tests on the Lorenz system and the one-dimensional Burgers equation, we verify that the RBA reproduces the corresponding discrete time nonlinear dynamics exactly, while exposing the trade-off between timestep composition, reduced basis growth, and locality.",
+   "journal_ref": "",
+   "primary": "math.NA"
+  },
+  {
+   "id": "2305.02019v2",
+   "title": "Deep learning-based quantum algorithms for solving nonlinear partial differential equations",
+   "published": "2023-05-03",
+   "updated": "2023-05-27",
+   "authors": [
+    "Lukas Mouton",
+    "Florentin Reiter",
+    "Ying Chen",
+    "Patrick Rebentrost"
+   ],
+   "abstract": "Partial differential equations frequently appear in the natural sciences and related disciplines. Solving them is often challenging, particularly in high dimensions, due to the \"curse of dimensionality\". In this work, we explore the potential for enhancing a classical deep learning-based method for solving high-dimensional nonlinear partial differential equations with suitable quantum subroutines. First, with near-term noisy intermediate-scale quantum computers in mind, we construct architectures employing variational quantum circuits and classical neural networks in conjunction. While the hybrid architectures show equal or worse performance than their fully classical counterparts in simulations, they may still be of use in very high-dimensional cases or if the problem is of a quantum mechanical nature. Next, we identify the bottlenecks imposed by Monte Carlo sampling and the training of the neural networks. We find that quantum-accelerated Monte Carlo methods offer the potential to speed up the estimation of the loss function. In addition, we identify and analyse the trade-offs when using quantum-accelerated Monte Carlo methods to estimate the gradients with different methods, including a recently developed backpropagation-free forward gradient method. Finally, we discuss the usage of a suitable quantum algorithm for accelerating the training of feed-forward neural networks. Hence, this work provides different avenues with the potential for polynomial speedups for deep learning-based methods for nonlinear partial differential equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.06759v2",
+   "title": "Quantum homotopy analysis method with quantum-compatible linearization for nonlinear partial differential equations",
+   "published": "2024-11-11",
+   "updated": "2025-12-25",
+   "authors": [
+    "Cheng Xue",
+    "Xiao-Fan Xu",
+    "Xi-Ning Zhuang",
+    "Tai-Ping Sun",
+    "Yun-Jie Wang",
+    "Ming-Yang Tan",
+    "Chuang-Chao Ye",
+    "Huan-Yu Liu",
+    "Yu-Chun Wu",
+    "Zhao-Yun Chen",
+    "Guo-Ping Guo"
+   ],
+   "abstract": "Nonlinear partial differential equations (PDEs) are crucial for modeling complex fluid dynamics and are foundational to many computational fluid dynamics (CFD) applications. However, solving these nonlinear PDEs is challenging due to the vast computational resources they demand, highlighting the pressing need for more efficient computational methods. Quantum computing offers a promising but technically challenging approach to solving nonlinear PDEs. Recently, Liao proposed a framework that leverages quantum computing to accelerate the solution of nonlinear PDEs based on the homotopy analysis method (HAM), a semi-analytical technique that transforms nonlinear PDEs into a series of linear PDEs. However, the no-cloning theorem in quantum computing poses a major limitation, where directly applying quantum simulation to each HAM step results in exponential complexity growth with the HAM truncation order. This study introduces a ``quantum-compatible linearization'' approach that maps the whole HAM process into a system of linear PDEs, allowing for a one-time solution using established quantum PDE solvers. Our method preserves the exponential speedup of quantum linear PDE solvers while ensuring that computational complexity increases only polynomially with the HAM truncation order. We demonstrate the efficacy of our approach by applying it to the Burgers' equation and the Korteweg-de Vries (KdV) equation. Our approach provides a novel pathway for transforming nonlinear PDEs into linear PDEs, with potential applications to fluid dynamics. This work thus lays the foundation for developing quantum algorithms capable of solving the Navier-Stokes equations, ultimately offering a promising route to accelerate their solutions using quantum computing.",
+   "journal_ref": "Science China Physics, Mechanics & Astronomy, 2025, 68(10): 104702",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2504.10218v1",
+   "title": "A Novel Quantum Fourier Ordinary Differential Equation Solver for Solving Linear and Nonlinear Partial Differential Equations",
+   "published": "2025-04-14",
+   "updated": "2025-04-14",
+   "authors": [
+    "Yang Xiao",
+    "Liming Yang",
+    "Chang Shu",
+    "Yinjie Du",
+    "Yuxin Song"
+   ],
+   "abstract": "In this work, a novel quantum Fourier ordinary differential equation (ODE) solver is proposed to solve both linear and nonlinear partial differential equations (PDEs). Traditional quantum ODE solvers transform a PDE into an ODE system via spatial discretization and then integrate it, thereby converting the task of solving the PDE into computing the integral for the driving function $f(x)$. These solvers rely on the quantum amplitude estimation algorithm, which requires the driving function $f(x)$ to be within the range of [0, 1] and necessitates the construction of a quantum circuit for the oracle R that encodes $f(x)$. This construction can be highly complex, even for simple functions like $f(x) = x$. An important exception arises for the specific case of $f(x) = sin^2(mx+c)$, which can be encoded more efficiently using a set of $Ry$ rotation gates. To address these challenges, we expand the driving function $f(x)$ as a Fourier series and propose the Quantum Fourier ODE Solver. This approach not only simplifies the construction of the oracle R but also removes the restriction that $f(x)$ must lie within [0,1]. The proposed method was evaluated by solving several representative linear and nonlinear PDEs, including the Navier-Stokes (N-S) equations. The results show that the quantum Fourier ODE solver produces results that closely match both analytical and reference solutions.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.09903v1",
+   "title": "From Nonlinear Stochastic Differential Equations to Quantum Channels: The Kolmogorov--Lindblad Mapping",
+   "published": "2026-08-10",
+   "updated": "2026-08-10",
+   "authors": [
+    "Hsuan-Cheng Wu",
+    "Xiantao Li"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (SDEs) underlie molecular modeling and drug discovery, quantitative finance, stochastic learning, and uncertainty quantification. Their expectations, event probabilities, and time correlations are therefore natural targets for quantum computation, but nonlinear drift and averaging over noise realizations obstruct a direct quantum representation. We develop an exact \\emph{Kolmogorov--Lindblad mapping} (KLM) at the level of the probability law, encoded natively as a trace-one quantum density operator. For each Brownian realization, the pathwise density admits a half-density whose evolution is a stochastic Schr\u00f6dinger equation. Averaging the associated pure states yields a Lindblad equation for $\u0393(t)$ whose diagonal kernel is exactly the Fokker--Planck density, $p(t,x)=\u0393(t;x,x)$, with classical diffusion represented by decoherence through Hermitian jump operators. Statistical observables become quantum expectations without the unknown time-dependent normalization introduced by direct amplitude encoding of the density, and classical two-time correlations admit an exact quantum regression formula. A structure-preserving Galerkin projection retains the Lindblad form at finite dimension, placing classical SDEs and open quantum dynamics on the same quantum-native computational footing. Numerical experiments for double-well Langevin dynamics and noisy Lorenz--63 exhibit rapid convergence of statistical observables. KLM thus provides a mathematically controlled path from general nonlinear stochastic dynamics to quantum channels, while isolating function approximation and coherent operator access as the remaining determinants of algorithmic efficiency.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2603.23258v1",
+   "title": "Solving Nonlinear Partial Differential Equations via a Hybrid Newton Method Using Quantum Linear System Solver",
+   "published": "2026-03-24",
+   "updated": "2026-03-24",
+   "authors": [
+    "Maximilian Mandelt Buxad\u00e9",
+    "Stefan Langer",
+    "Philipp Bekemeyer"
+   ],
+   "abstract": "To approximate solutions of complex nonlinear partial differential equations remains a computational challenge, especially for sets of equations relevant in industry, such as Euler or Navier-Stokes equations. Even the most sophisticated computational fluid dynamic algorithms coupled with powerful supercomputers can not find approximate solutions for several design challenges in both adequate time and scale-resolving accuracy. One difficulty arises from solving high dimensional, strongly nonlinear partial differential equations, such as the Navier-Stokes equations, which capture the underlying physics. For nearly all classical algorithms, methods closely related to Newton's method are used to approximate a solution to the problem. Approximately solving the large-scale linear systems of equations occurring in this iterative scheme is generally a main contributor to the total computational complexity. In this paper a new quantum linear system solver supporting Newton's classical method to solve nonlinear partial differential equations is introduced. We present a new variant of the HHL algorithm, requiring less apriori information regarding the eigenvalues of the corresponding matrix. We apply this quantum linear system solver in a hybrid quantum-classical fashion to solve nonlinear partial differential equations. Moreover, a resource estimation for advanced use-cases of practical relevance is provided. Our results demonstrate how quantum computation may improve existing classical methodologies for solving nonlinear partial differential equations. This approach provides another promising application of quantum computers and presents a possible way forward for handling nonlinearities on inherently linear quantum systems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2209.08478v2",
+   "title": "Time complexity analysis of quantum algorithms via linear representations for nonlinear ordinary and partial differential equations",
+   "published": "2022-09-18",
+   "updated": "2023-06-12",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Yue Yu"
+   ],
+   "abstract": "We construct quantum algorithms to compute the solution and/or physical observables of nonlinear ordinary differential equations (ODEs) and nonlinear Hamilton-Jacobi equations (HJE) via linear representations or exact mappings between nonlinear ODEs/HJE and linear partial differential equations (the Liouville equation and the Koopman-von Neumann equation). The connection between the linear representations and the original nonlinear system is established through the Dirac delta function or the level set mechanism. We compare the quantum linear systems algorithms based methods and the quantum simulation methods arising from different numerical approximations, including the finite difference discretisations and the Fourier spectral discretisations for the two different linear representations, with the result showing that the quantum simulation methods usually give the best performance in time complexity. We also propose the Schr\u00f6dinger framework to solve the Liouville equation for the HJE with the Hamiltonian formulation of classical mechanics, since it can be recast as the semiclassical limit of the Wigner transform of the Schr\u00f6dinger equation. Comparsion between the Schr\u00f6dinger and the Liouville framework will also be made.",
+   "journal_ref": "Journal of Computational Physics, 487:112149, 2023",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2312.09518v1",
+   "title": "Further improving quantum algorithms for nonlinear differential equations via higher-order methods and rescaling",
+   "published": "2023-12-15",
+   "updated": "2023-12-15",
+   "authors": [
+    "Pedro C. S. Costa",
+    "Philipp Schleich",
+    "Mauro E. S. Morales",
+    "Dominic W. Berry"
+   ],
+   "abstract": "The solution of large systems of nonlinear differential equations is needed for many applications in science and engineering. In this study, we present three main improvements to existing quantum algorithms based on the Carleman linearisation technique. First, by using a high-precision technique for the solution of the linearised differential equations, we achieve logarithmic dependence of the complexity on the error and near-linear dependence on time. Second, we demonstrate that a rescaling technique can considerably reduce the cost, which would otherwise be exponential in the Carleman order for a system of ODEs, preventing a quantum speedup for PDEs. Third, we provide improved, tighter bounds on the error of Carleman linearisation. We apply our results to a class of discretised reaction-diffusion equations using higher-order finite differences for spatial resolution. We show that providing a stability criterion independent of the discretisation can conflict with the use of the rescaling due to the difference between the max-norm and 2-norm. An efficient solution may still be provided if the number of discretisation points is limited, as is possible when using higher-order discretisations.",
+   "journal_ref": "npj Quantum Information 11, 141 (2025)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2407.07685v2",
+   "title": "Quantum and classical algorithms for nonlinear unitary dynamics",
+   "published": "2024-07-10",
+   "updated": "2025-04-28",
+   "authors": [
+    "Noah Br\u00fcstle",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Quantum algorithms for Hamiltonian simulation and linear differential equations more generally have provided promising exponential speed-ups over classical computers on a set of problems with high real-world interest. However, extending this to a nonlinear problem has proven challenging, with exponential lower bounds having been demonstrated for the time scaling. We provide a quantum algorithm matching these bounds. Specifically, we find that for a non-linear differential equation of the form $\\frac{d|u\\rangle}{dt} = A|u\\rangle + B|u\\rangle^{\\otimes2}$ for evolution of time $T$, error tolerance $\u03b5$ and $c$ dependent on the strength of the nonlinearity, the number of queries to the differential operators that approaches the scaling of the quantum lower bound of $e^{o(T\\|B\\|)}$ queries in the limit of strong non-linearity. Finally, we introduce a classical algorithm based on the Euler method allowing comparably scaling to the quantum algorithm in a restricted case, as well as a randomized classical algorithm based on path integration that acts as a true analogue to the quantum algorithm in that it scales comparably to the quantum algorithm in cases where sign problems are absent.",
+   "journal_ref": "Quantum 9, 1741 (2025)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.14079v1",
+   "title": "Hybrid quantum-classical algorithms for complex nonlinear partial differential equations with Ginzburg-Landau potential and vortex motion laws",
+   "published": "2026-04-15",
+   "updated": "2026-04-15",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Chuwen Ma"
+   ],
+   "abstract": "We propose quantum algorithms for complex-valued nonlinear partial differential equations in the strongly nonlinear regime, where the dynamics is governed by vortex cores, phase singularities, and nonlinear vortex interactions. Examples include the complex-valued nonlinear Schr\u00f6dinger equation, as well as nonlinear heat and wave equations with Ginzburg--Landau-type nonlinearity. In the strongly nonlinear regime, the solutions to these equations are asymptotically governed by, in leading order, linear elliptic equations, coupled with low-dimensional vortex dynamics, where the vortex cores correspond to topological defects in superconductors. Our hybrid quantum-classical algorithms utilize this asymptotic property, in which the vortex dynamic is advanced classically while the boundary-value problem of linear elliptic equation is handled by quantum algorithms. For the two-dimensional nonlinear Schr\u00f6dinger equation, we also combine quantum BPX preconditioning with Schr\u00f6dingerization to estimate physically relevant observables in the small-output regime. This yields, already in two dimensions, an {\\it exponential} improvement in the dependence on the spatial problem size, while the dependence on the target accuracy remains essentially linear up to polylogarithmic factors. We further show that the same principle extends to dissipative Ginzburg--Landau vortex dynamics and to vortex filaments in three-dimensional superconductivity. Numerical results support the validity of this PDE reduction and the effectiveness of the proposed approach.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2511.09939v1",
+   "title": "Provably Efficient Quantum Algorithms for Solving Nonlinear Differential Equations Using Multiple Bosonic Modes Coupled with Qubits",
+   "published": "2025-11-13",
+   "updated": "2025-11-13",
+   "authors": [
+    "Yu Gan",
+    "Hirad Alipanah",
+    "Jinglei Cheng",
+    "Zeguan Wu",
+    "Guangyi Li",
+    "Juan Jos\u00e9 Mendoza-Arenas",
+    "Peyman Givi",
+    "Mujeeb R. Malik",
+    "Brian J. McDermott",
+    "Junyu Liu"
+   ],
+   "abstract": "Quantum computers have long been expected to efficiently solve complex classical differential equations. Most digital, fault-tolerant approaches use Carleman linearization to map nonlinear systems to linear ones and then apply quantum linear-system solvers. However, provable speedups typically require digital truncation and full fault tolerance, rendering such linearization approaches challenging to implement on current hardware. Here we present an analog, continuous-variable algorithm based on coupled bosonic modes with qubit-based adaptive measurements that avoids Hilbert-space digitization. This method encodes classical fields as coherent states and, via Kraus-channel composition derived from the Koopman-von Neumann (KvN) formalism, maps nonlinear evolution to linear dynamics. Unlike many analog schemes, the algorithm is provably efficient: advancing a first-order, $L$-grid point, $d$-dimensional, order-$K$ spatial-derivative, degree-$r$ polynomial-nonlinearity, strongly dissipative partial differential equations (PDEs) for $T$ time steps costs $\\mathcal{O}\\left(T(\\log L + d r \\log K)\\right)$. The capability of the scheme is demonstrated by using it to simulate the one-dimensional Burgers' equation and two-dimensional Fisher-KPP equation. The resilience of the method to photon loss is shown under strong-dissipation conditions and an analytic counterterm is derived that systematically cancels the dominant, experimentally calibrated noise. This work establishes a continuous-variable framework for simulating nonlinear systems and identifies a viable pathway toward practical quantum speedup on near-term analog hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2507.06198v2",
+   "title": "Quantum simulation of a noisy classical nonlinear dynamics",
+   "published": "2025-07-08",
+   "updated": "2025-10-03",
+   "authors": [
+    "Sergey Bravyi",
+    "Robert Manson-Sawko",
+    "Mykhaylo Zayats",
+    "Sergiy Zhuk"
+   ],
+   "abstract": "We present an end-to-end quantum algorithm for simulating nonlinear dynamics described by a system of stochastic dissipative differential equations with a quadratic nonlinearity. The stochastic part of the system is modeled by a Gaussian noise in the equation of motion and in the initial conditions. Our algorithm can approximate the expected value of any correlation function that depends on $O(1)$ variables with rigorous bounds on the approximation error. The runtime scales polynomially with $\\log{N}$, $t$, $J$, and $\u03bb_1^{-1}$, where $N$ is the total number of variables, $t$ is the evolution time, $J$ is the nonlinearity strength, and $\u03bb_1$ is the smallest dissipation rate. However, the runtime scales exponentially with a parameter quantifying inverse relative error in the initial conditions. To the best of our knowledge, this is the first rigorous quantum algorithm capable of simulating strongly nonlinear systems with $J\\gg \u03bb_1$ at the cost poly-logarithmic in $N$ and polynomial in $t$. The considered simulation problem is shown to be BQP-complete, providing a strong evidence for a quantum advantage. We benchmark the quantum algorithm via numerical experiments by simulating a vortex flow in the 2D Navier Stokes equation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.06165v2",
+   "title": "Young Measure Based Quantum Linear Programming Algorithms for Nonlinear/Stochastic Multiscale Partial Differential Equations and Homogenization",
+   "published": "2026-06-04",
+   "updated": "2026-06-05",
+   "authors": [
+    "Siqi Chen",
+    "Shi Jin",
+    "Lei Zhang"
+   ],
+   "abstract": "We study quantum algorithms for nonlinear and stochastic homogenization via a Young-measure based linear programming (LP) formulation, which lifts the nonlinear problem to a linear one in higher dimensions by treating the microscale, the gradient, and possible random variables as independent variables, thereby capturing effective macroscopic quantities without directly resolving fine-scale oscillations. The resulting LP is large but structured, and its high-dimensional nature creates regimes in which quantum LP solvers outperform direct classical solvers: in the deterministic setting, polynomial quantum speedup arises when moderate homogenized accuracy suffices; in the stochastic setting, encoding all random realizations simultaneously in a single LP yields a quantum square-root reduction in stochastic sampling cost that grows with the number of random variables. Regularity or sparsity of the Young measure may further extend these advantages to fine-scale accuracy. Numerical experiments on one- and two-dimensional benchmarks confirm the correctness of the Young-measure LP formulation.",
+   "journal_ref": "",
+   "primary": "math.NA"
+  },
+  {
+   "id": "2608.03029v1",
+   "title": "Physics-Informed Quantum Machine Learning with Hard Constraint Embedding for Nonlinear Differential Equations of the First Order",
+   "published": "2026-08-04",
+   "updated": "2026-08-04",
+   "authors": [
+    "Mengke Xu",
+    "Xi Li",
+    "Xiao Chen",
+    "Xunan Wang",
+    "Wanli Huo",
+    "Long Ma",
+    "Weiqi Yan"
+   ],
+   "abstract": "Quantum algorithms based on linear-system approaches for solving differential equations demand qubit and precision resources beyond near-term capabilities. To address these challenges, this work proposes a physics-informed quantum machine learning (PIQML) framework with hard constraint embedding, specifically designed for NISQ era. Within this framework, parameterized quantum circuits serve as machine learning models, where the input variable is encoded into a high-dimensional feature space via a Fourier feature map. Subsequently, to eliminate approximation errors in critical physical conditions, the solution is constructed through a rigorously designed function mapper that analytically enforces initial conditions as hard constraints. Crucially, we compute derivatives with respect to the input variable using the parameter-shift rule---a quantum native gradient evaluation technique that avoids classical discretization. Unlike generic loss functions that target abstract data patterns, our loss function focuses on the differential equation residual and reference data. This design ensures that the trained model not only approximates the data but also intrinsically satisfies the physical constraint expressed by the DE itself. Our method is validated on several differential equations, including highly oscillatory ones, demonstrating its capability to tackle challenging nonlinear dynamics. Results demonstrate that our quantum model successfully learns the solution, showing close agreement with a high-precision classical numerical benchmark.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2303.02463v3",
+   "title": "Efficient Quantum Algorithms for Nonlinear Stochastic Dynamical Systems",
+   "published": "2023-03-04",
+   "updated": "2023-07-29",
+   "authors": [
+    "Abeynaya Gnanasekaran",
+    "Amit Surana",
+    "Tuhin Sahai"
+   ],
+   "abstract": "In this paper, we propose efficient quantum algorithms for solving nonlinear stochastic differential equations (SDE) via the associated Fokker-Planck equation (FPE). We discretize the FPE in space and time using two well-known numerical schemes, namely Chang-Cooper and implicit finite difference. We then compute the solution of the resulting system of linear equations using the quantum linear systems algorithm. We present detailed error and complexity analyses for both these schemes and demonstrate that our proposed algorithms, under certain conditions, provably compute the solution to the FPE within prescribed $\u03b5$ error bounds with polynomial dependence on state dimension $d$. Classical numerical methods scale exponentially with dimension, thus, our approach, under the aforementioned conditions, provides an \\emph{exponential speed-up} over traditional approaches.",
+   "journal_ref": "",
+   "primary": "math.DS"
+  },
+  {
+   "id": "2406.06323v3",
+   "title": "Detailed assessment of calculating drag force with quantum computers: Explicit time-evolution precludes exponential advantage for nonlinear differential equations",
+   "published": "2024-06-10",
+   "updated": "2025-12-08",
+   "authors": [
+    "John Penuel",
+    "Amara Katabarwa",
+    "Peter D. Johnson",
+    "Parker Kuklinski",
+    "Benjamin Rempfer",
+    "Collin Farquhar",
+    "Yudong Cao",
+    "Michael C. Garrett"
+   ],
+   "abstract": "This study examines the potential for fault-tolerant quantum computers to provide utility in fluid dynamics simulations, with a focus on drag force calculations for ship hull design. We assess whether quantum algorithms can surpass classical computational limits by generating detailed quantum resource estimates (QREs) in terms of logical qubits and $T$-gate counts. Our analysis is based on a quantum algorithm leveraging Carleman linearization of the lattice Boltzmann method (LBM), which has been suggested to offer exponential speedup. We develop efficient block encodings for LBM matrices and a method for amplitude-encoding drag force. We apply the method to the simple case of fluid flow past a sphere across a range of Reynolds numbers ($\\mathrm{Re}$). We estimate the required (logical qubits)$\\times$($T$-gates), finding them to be prohibitively large, ranging from $10^{21}$ to $10^{39}$. While classical simulations scale as $O(\\mathrm{Re}^3)$, our QREs exhibit a modest polynomial scaling of $O(\\mathrm{Re}^{2.68})$, indicating no exponential quantum advantage. We attribute this limitation to an intrinsic power-law relationship between spatial grid resolution and time-stepping requirements that is a fundamental characteristic of explicit methods for evolving nonlinear differential equations. Thus, quantum computers are unlikely to provide utility in applications that require time-evolving fluids and other systems of nonlinear differential equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2308.01827v1",
+   "title": "Physics-Informed Quantum Machine Learning: Solving nonlinear differential equations in latent spaces without costly grid evaluations",
+   "published": "2023-08-03",
+   "updated": "2023-08-03",
+   "authors": [
+    "Annie E. Paine",
+    "Vincent E. Elfving",
+    "Oleksandr Kyriienko"
+   ],
+   "abstract": "We propose a physics-informed quantum algorithm to solve nonlinear and multidimensional differential equations (DEs) in a quantum latent space. We suggest a strategy for building quantum models as state overlaps, where exponentially large sets of independent basis functions are used for implicitly representing solutions. By measuring the overlaps between states which are representations of DE terms, we construct a loss that does not require independent sequential function evaluations on grid points. In this sense, the solver evaluates the loss in an intrinsically parallel way, utilizing a global type of the model. When the loss is trained variationally, our approach can be related to the differentiable quantum circuit protocol, which does not scale with the training grid size. Specifically, using the proposed model definition and feature map encoding, we represent function- and derivative-based terms of a differential equation as corresponding quantum states. Importantly, we propose an efficient way for encoding nonlinearity, for some bases requiring only an additive linear increase of the system size $\\mathcal{O}(N + p)$ in the degree of nonlinearity $p$. By utilizing basis mapping, we show how the proposed model can be evaluated explicitly. This allows to implement arbitrary functions of independent variables, treat problems with various initial and boundary conditions, and include data and regularization terms in the physics-informed machine learning setting. On the technical side, we present toolboxes for exponential Chebyshev and Fourier basis sets, developing tools for automatic differentiation and multiplication, implementing nonlinearity, and describing multivariate extensions. The approach is compatible with, and tested on, a range of problems including linear, nonlinear and multidimensional differential equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.03758v2",
+   "title": "An end-to-end quantum algorithm for nonlinear fluid dynamics with bounded quantum advantage",
+   "published": "2025-12-03",
+   "updated": "2026-09-25",
+   "authors": [
+    "David Jennings",
+    "Kamil Korzekwa",
+    "Matteo Lostaglio",
+    "Richard Ashworth",
+    "Emanuele Marsili",
+    "Stephen Rolston"
+   ],
+   "abstract": "Computational fluid dynamics (CFD) is a cornerstone of classical scientific computing, and there is growing interest in whether quantum computers can accelerate such simulations. The existing proposals for fault-tolerant quantum algorithms for CFD have almost exclusively been based on the Carleman embedding method, used to encode nonlinearities on a quantum computer. Here, we first identify several key challenges that must be addressed in order to establish quantum advantage using this method, including Carleman convergence, time-stepping requirements, condition-number scaling, and data extraction. Building on this analysis, we develop a novel algorithm for the incompressible lattice Boltzmann equation that addresses them, and provide its detailed analysis, including all potential sources of algorithmic complexity, as well as gate count estimates. We find that for an end-to-end problem, a modest quantum advantage may be preserved for selected observables in the high-error-tolerance regime. We establish a lower bound for the Reynolds number scaling of our quantum algorithm in dimension $D$ at Kolmogorov microscale resolution with $O(\\mathrm{Re}^{\\frac{3}{4}(1+\\frac{D}{2})} \\times q_M)$, where $q_M$ is a multiplicative overhead for data extraction with $q_M = O(\\mathrm{Re}^{\\frac{3}{8}})$ for the drag force. This upper bounds the scaling improvement over classical algorithms by $O(\\mathrm{Re}^{\\frac{3D}{8}})$. However, our numerical investigations suggest a lower speedup, with a scaling estimate of $O(\\mathrm{Re}^{1.936} \\times q_M)$ for $D=2$. Our results give robust evidence that small, but nontrivial, quantum advantages can be achieved in the context of CFD, and motivate the need for additional rigorous end-to-end quantum algorithm development.",
+   "journal_ref": "PRX Quantum 7, 033060 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.21354v1",
+   "title": "A time-marching quantum algorithm for simulation of the nonlinear Lorenz dynamics",
+   "published": "2025-06-26",
+   "updated": "2025-06-26",
+   "authors": [
+    "Efstratios Koukoutsis",
+    "George Vahala",
+    "Min Soe",
+    "Kyriakos Hizanidis",
+    "Linda Vahala",
+    "Abhay K. Ram"
+   ],
+   "abstract": "Simulating nonlinear classical dynamics on a quantum computer is an inherently challenging task due to the linear operator formulation of quantum mechanics. In this work, we provide a systematic approach to alleviate this difficulty by developing a quantum algorithm that implements the time evolution of a second order time-discretized version of the Lorenz model. The Lorenz model is a celebrated system of nonlinear ordinary differential equations that has been extensively studied in the contexts of climate science, fluid dynamics, and chaos theory. Our algorithm possesses a recursive structure and requires only a linear number of copies of the initial state with respect to the number of integration time-steps. This provides a significant improvement over previous approaches, while preserving the characteristic quantum speed-up in terms of the dimensionality of the underlying differential equations system, that similar time-marching quantum algorithms have previously demonstrated. Notably, by classically implementing the proposed algorithm, we showcase that it accurately captures the structural characteristics of the Lorenz system, reproducing both regular attractors--limit cycles--and the chaotic attractor within the chosen parameter regime.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.23057v1",
+   "title": "Quantum Carleman linearisation efficiency in nonlinear fluid dynamics",
+   "published": "2024-10-30",
+   "updated": "2024-10-30",
+   "authors": [
+    "Javier Gonzalez-Conde",
+    "Dylan Lewis",
+    "Sachin S. Bharadwaj",
+    "Mikel Sanz"
+   ],
+   "abstract": "Computational fluid dynamics (CFD) is a specialised branch of fluid mechanics that utilises numerical methods and algorithms to solve and analyze fluid-flow problems. One promising avenue to enhance CFD is the use of quantum computing, which has the potential to resolve nonlinear differential equations more efficiently than classical computers. Here, we try to answer the question of which regimes of nonlinear partial differential equations (PDEs) for fluid dynamics can have an efficient quantum algorithm. We propose a connection between the numerical parameter, $R$, that guarantees efficiency in the truncation of the Carleman linearisation, and the physical parameters that describe the fluid flow. This link can be made thanks to the Kolmogorov scale, which determines the minimum size of the grid needed to properly resolve the energy cascade induced by the nonlinear term. Additionally, we introduce the formalism for vector field simulation in different spatial dimensions, providing the discretisation of the operators and the boundary conditions.",
+   "journal_ref": "Phys. Rev. Research 7, 023254 (2025)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2502.16568v1",
+   "title": "Quantum lattice Boltzmann method for simulating nonlinear fluid dynamics",
+   "published": "2025-02-23",
+   "updated": "2025-02-23",
+   "authors": [
+    "Boyuan Wang",
+    "Zhaoyuan Meng",
+    "Yaomin Zhao",
+    "Yue Yang"
+   ],
+   "abstract": "Quantum computing holds great promise to accelerate scientific computations in fluid dynamics and other classical physical systems. While various quantum algorithms have been proposed for linear flows, developing quantum algorithms for nonlinear problems remains a significant challenge. We introduce a novel node-level ensemble description of lattice gas for simulating nonlinear fluid dynamics on a quantum computer. This approach combines the advantages of the lattice Boltzmann method, which offers low-dimensional representation, and lattice gas cellular automata, which provide linear collision treatment. Building on this framework, we propose a quantum lattice Boltzmann method that relies on linear operations with medium dimensionality. We validated the algorithm through comprehensive simulations of benchmark cases, including vortex-pair merging and decaying turbulence on $2048^2$ computational grid points. The results demonstrate remarkable agreement with direct numerical simulation, effectively capturing the essential nonlinear mechanisms of fluid dynamics. This work offers valuable insights into developing quantum algorithms for other nonlinear problems, and potentially advances the application of quantum computing across various transport phenomena in engineering.",
+   "journal_ref": "",
+   "primary": "physics.flu-dyn"
+  },
+  {
+   "id": "2609.28999v1",
+   "title": "On the numerical limitations of dual Koopman von Neumann embeddings for solving conservative nonlinear ordinary differential equations on quantum computers",
+   "published": "2026-09-24",
+   "updated": "2026-09-24",
+   "authors": [
+    "Thibault Fredon",
+    "Abhay K. Ram",
+    "Fabrice Debbasch",
+    "Julien Zylberman",
+    "Nuno F. Loureiro"
+   ],
+   "abstract": "The simulation of nonlinear ordinary differential equations on quantum computers is inherently challenging, as quantum gates are linear operators on qubit states. In this paper, we put forth a Koopman-von Neumann (KvN) operator based algorithm for solving nonlinear ordinary differential equations on a quantum computer which overcomes the innate limitations of quantum operations. In this approach, a Liouville probability density is embedded into a wavefunction, the evolution of which is governed by an operator dual to the Koopman operator. The trajectories corresponding to the nonlinear differential equations are reconstructed from the average value of Koopman observables evaluated through quantum measurements. We specifically evaluate the computational limitations of solving nonlinear equations within this Liouville embedding framework. An Ehrenfest-type estimate is derived that relates the reconstruction error to the covariance of the transported density, highlighting the competition between linear stretching and Hessian-induced folding.This leads to a key stability criterion, which depends on the local Ehrenfest-Reynolds number. We discuss the effects of measurement-induced errors including those due to Hadamard-test sampling, amplitude estimation, and bias due to covariance in probabilistic Grover-type inference on the evaluation of trajectories. The limiting bounds on the accuracy of quantum computations are numerically verified for the Lotka-Volterra system and for the quartic oscillator. We observe a rapid growth in computational errors when the Ehrenfest-Reynolds number approaches the predicted threshold. The bounds resulting from our analysis provide key guidelines for selecting the width of the initial Gaussian probability distribution associated with a system of nonlinear ordinary differential equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.13041v1",
+   "title": "Time evolution of nonlinear dynamics on a quantum processor",
+   "published": "2026-08-13",
+   "updated": "2026-08-13",
+   "authors": [
+    "Jos\u00e9 Diogo da Costa Jesus",
+    "Abhishek Setty",
+    "Tommaso Calarco",
+    "Dieter Jaksch",
+    "Francisco C\u00e1rdenas L\u00f3pez",
+    "Felix Motzoi"
+   ],
+   "abstract": "From fluid flow and transport to collective dynamics, numerical simulation of nonlinear partial differential equations underpins modern scientific computing. Extending this capability to quantum computers remains a longstanding challenge because nonlinear and non-Hermitian evolution is fundamentally incompatible with conventional Hamiltonian-based quantum simulation. Here we experimentally realize the time evolution of nonlinear fluid dynamics on a quantum processor using a hybrid variational framework for the viscous and inviscid Burgers equations. Our approach directly encodes the nonlinear dynamics into a variational optimization procedure, avoiding the enlarged linear embeddings and truncation overhead associated with Carleman linearization-based quantum algorithms. We further demonstrate convection-dominated dynamics corresponding to Reynolds numbers of order $10^2$. We encode the governing evolution into parametrized quantum circuits and iteratively reconstruct the time-dependent field through quantum-classical optimization. By introducing a zero-noise extrapolation method without additional circuit-folding overhead, we accurately execute deep error-circuits with entangling-gate counts beyond those typical of Hadamard test circuits. We accurately reconstruct the time evolution across multiple timesteps despite hardware noise and finite device coherence. Our results constitute, to our knowledge, the first experimental realization of nonlinear time propagation on a quantum processor, extending quantum simulation beyond predominantly linear settings and establishing a route toward quantum computation for nonlinear continuum dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2403.16791v2",
+   "title": "Nonlinear dynamics as a ground-state solution on quantum computers",
+   "published": "2024-03-25",
+   "updated": "2024-09-27",
+   "authors": [
+    "Albert J. Pool",
+    "Alejandro D. Somoza",
+    "Conor Mc Keever",
+    "Michael Lubasch",
+    "Birger Horstmann"
+   ],
+   "abstract": "For the solution of time-dependent nonlinear differential equations, we present variational quantum algorithms (VQAs) that encode both space and time in qubit registers. The spacetime encoding enables us to obtain the entire time evolution from a single ground-state computation. We describe a general procedure to construct efficient quantum circuits for the cost function evaluation required by VQAs. To mitigate the barren plateau problem during the optimization, we propose an adaptive multigrid strategy. The approach is illustrated for the nonlinear Burgers equation. We classically optimize quantum circuits to represent the desired ground-state solutions, run them on IBM Q System One and Quantinuum System Model H1, and demonstrate that current quantum computers are capable of accurately reproducing the exact results.",
+   "journal_ref": "Phys. Rev. Research 6 (2024) 033257",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2509.07155v1",
+   "title": "Quantum algorithms for general nonlinear dynamics based on the Carleman embedding",
+   "published": "2025-09-08",
+   "updated": "2025-09-08",
+   "authors": [
+    "David Jennings",
+    "Kamil Korzekwa",
+    "Matteo Lostaglio",
+    "Andrew T Sornborger",
+    "Yigit Subasi",
+    "Guoming Wang"
+   ],
+   "abstract": "Important nonlinear dynamics, such as those found in plasma and fluid systems, are typically hard to simulate on classical computers. Thus, if fault-tolerant quantum computers could efficiently solve such nonlinear problems, it would be a transformative change for many industries. In a recent breakthrough [Liu et al., PNAS 2021], the first efficient quantum algorithm for solving nonlinear differential equations was constructed, based on a single condition $R<1$, where $R$ characterizes the ratio of nonlinearity to dissipation. This result, however, is limited to the class of purely dissipative systems with negative log-norm, which excludes application to many important problems. In this work, we correct technical issues with this and other prior analysis, and substantially extend the scope of nonlinear dynamical systems that can be efficiently simulated on a quantum computer in a number of ways. Firstly, we extend the existing results from purely dissipative systems to a much broader class of stable systems, and show that every quadratic Lyapunov function for the linearized system corresponds to an independent $R$-number criterion for the convergence of the Carlemen scheme. Secondly, we extend our stable system results to physically relevant settings where conserved polynomial quantities exist. Finally, we provide extensive results for the class of non-resonant systems. With this, we are able to show that efficient quantum algorithms exist for a much wider class of nonlinear systems than previously known, and prove the BQP-completeness of nonlinear oscillator problems of exponential size. In our analysis, we also obtain several results related to the Poincar\u00e9-Dulac theorem and diagonalization of the Carleman matrix, which could be of independent interest.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.03838v1",
+   "title": "Quantum Simulation of Nonlinear Dynamical Systems Using Repeated Measurement",
+   "published": "2024-10-04",
+   "updated": "2024-10-04",
+   "authors": [
+    "Joseph Andress",
+    "Alexander Engel",
+    "Yuan Shi",
+    "Scott Parker"
+   ],
+   "abstract": "We present a quantum algorithm based on repeated measurement to solve initial-value problems for nonlinear ordinary differential equations (ODEs), which may be generated from partial differential equations in plasma physics. We map a dynamical system to a Hamiltonian form, where the Hamiltonian matrix is a function of dynamical variables. To advance in time, we measure expectation values from the previous time step, and evaluate the Hamiltonian function classically, which introduces stochasticity into the dynamics. We then perform standard quantum Hamiltonian simulation over a short time, using the evaluated constant Hamiltonian matrix. This approach requires evolving an ensemble of quantum states, which are consumed each step to measure required observables. We apply this approach to the classic logistic and Lorenz systems, in both integrable and chaotic regimes. Out analysis shows that solutions' accuracy is influenced by both the stochastic sampling rate and the nature of the dynamical system.",
+   "journal_ref": "J. Plasma Phys. 91 (2025) E55",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2509.22503v2",
+   "title": "A Quantum Algorithm for Nonlinear Electromagnetic Fluid Dynamics via Koopman-von Neumann Linearization",
+   "published": "2025-09-26",
+   "updated": "2025-11-14",
+   "authors": [
+    "Hayato Higuchi",
+    "Yuki Ito",
+    "Kazuki Sakamoto",
+    "Keisuke Fujii",
+    "Akimasa Yoshikawa"
+   ],
+   "abstract": "To simulate plasma phenomena, large-scale computational resources have been employed in developing high-precision and high-resolution plasma simulations. One of the main obstacles in plasma simulations is the requirement of computational resources that scale polynomially with the number of spatial grids, which poses a significant challenge for large-scale modeling. To address this issue, this study presents a quantum algorithm for simulating the nonlinear electromagnetic fluid dynamics that govern space plasmas. We map it, by applying Koopman-von Neumann linearization, to the Schr\u00f6dinger equation and evolve the system using Hamiltonian simulation via quantum singular value transformation. Our algorithm scales $O \\left(s N_x \\, \\mathrm{polylog} \\left( N_x \\right) T \\right)$ in time complexity with $s$, $N_x$, and $T$ being the spatial dimension, the number of spatial grid points per dimension, and the evolution time, respectively. Comparing the scaling $O \\left( s N_x^s \\left(T^{5/4}+T N_x\\right) \\right)$ for the classical method with the finite volume scheme, this algorithm achieves polynomial speedup in $N_x$. The space complexity of this algorithm is exponentially reduced from $O\\left( s N_x^s \\right)$ to $O\\left( s \\, \\mathrm{polylog} \\left( N_x \\right) \\right)$. Numerical experiments validate that accurate solutions are attainable with smaller $m$ than theoretically anticipated and with practical values of $m$ and $R$, underscoring the feasibility of the approach. As a practical demonstration, the method accurately reproduces the Kelvin-Helmholtz instability, underscoring its capability to tackle more intricate nonlinear dynamics. These results suggest that quantum computing can offer a viable pathway to overcome the computational barriers of multiscale plasma modeling.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2507.21890v1",
+   "title": "Data-driven quantum Koopman method for simulating nonlinear dynamics",
+   "published": "2025-07-29",
+   "updated": "2025-07-29",
+   "authors": [
+    "Baoyang Zhang",
+    "Zhen Lu",
+    "Yaomin Zhao",
+    "Yue Yang"
+   ],
+   "abstract": "Quantum computation offers potential exponential speedups for simulating certain physical systems, but its application to nonlinear dynamics is inherently constrained by the requirement of unitary evolution. We propose the quantum Koopman method (QKM), a data-driven framework that bridges this gap through transforming nonlinear dynamics into linear unitary evolution in higher-dimensional observable spaces. Leveraging the Koopman operator theory to achieve a global linearization, our approach maps system states into a hierarchy of Hilbert spaces using a deep autoencoder. Within the linearized embedding spaces, the state representation is decomposed into modulus and phase components, and the evolution is governed by a set of unitary Koopman operators that act exclusively on the phase. These operators are constructed from diagonal Hamiltonians with coefficients learned from data, a structure designed for efficient implementation on quantum hardware. This architecture enables direct multi-step prediction, and the operator's computational complexity scales logarithmically with the observable space dimension. The QKM is validated across diverse nonlinear systems. Its predictions maintain relative errors below 6% for reaction-diffusion systems and shear flows, and capture key statistics in 2D turbulence. This work establishes a practical pathway for quantum-accelerated simulation of nonlinear phenomena, exploring a framework built on the synergy between deep learning for global linearization and quantum algorithms for unitary dynamics evolution.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2003.09980v4",
+   "title": "Koopman-von Neumann Approach to Quantum Simulation of Nonlinear Classical Dynamics",
+   "published": "2020-03-22",
+   "updated": "2020-09-18",
+   "authors": [
+    "Ilon Joseph"
+   ],
+   "abstract": "Quantum computers can be used to simulate nonlinear non-Hamiltonian classical dynamics on phase space by using the generalized Koopman-von Neumann formulation of classical mechanics. The Koopman-von Neumann formulation implies that the conservation of the probability distribution function on phase space, as expressed by the Liouville equation, can be recast as an equivalent Schr\u00f6dinger equation on Hilbert space with a Hermitian Hamiltonian operator and a unitary propagator. This Schr\u00f6dinger equation is linear in the momenta because it derives from a constrained Hamiltonian system with twice the classical phase space dimension. A quantum computer with finite resources can be used to simulate a finite-dimensional approximation of this unitary evolution operator. Quantum simulation of classical dynamics is exponentially more efficient than a deterministic Eulerian discretization of the Liouville equation if the Koopman-von Neumann Hamiltonian is sparse. Utilizing quantum walk techniques for state preparation and amplitude estimation for the calculation of observables leads to a quadratic improvement over classical probabilistic Monte Carlo algorithms.",
+   "journal_ref": "Phys. Rev. Research 2, 043102 (2020)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.03985v2",
+   "title": "Quantum algorithm for the advection-diffusion equation and the Koopman-von Neumann approach to nonlinear dynamical systems",
+   "published": "2024-10-04",
+   "updated": "2025-01-18",
+   "authors": [
+    "Ivan Novikau",
+    "Ilon Joseph"
+   ],
+   "abstract": "We propose an explicit algorithm based on the Linear Combination of Hamiltonian Simulations technique to simulate both the advection-diffusion equation and a nonunitary discretized version of the Koopman-von Neumann formulation of nonlinear dynamics. By including dissipation into the model, through an upwind discretization of the advection operator, we avoid spurious parasitic oscillations which usually accompany standard finite difference discretizations of the advection equation. In contrast to prior works on quantum simulation of nonlinear problems, we explain in detail how different components of the algorithm can be implemented by using the Quantum Signal Processing (QSP) and Quantum Singular Value Transformation (QSVT) methods. In addition, we discuss the general method for implementing the block-encoding (BE) required for QSP and QSVT circuits and provide explicit implementations of the BE oracles tailored to our specific test cases. We simulate the resulting circuit on a digital emulator of quantum fault-tolerant computers and investigate its complexity and success probability. The proposed algorithm is universal and can be used for modeling a broad class of linear and nonlinear differential equations including the KvN and Carleman embeddings of nonlinear systems, the semiclassical Koopman-van Hove (KvH) equation, as well as the advection and Liouville equations.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2507.19250v2",
+   "title": "Resource-Efficient Hadamard Test Tailored Variational Framework for Nonlinear Dynamics on Quantum Computers",
+   "published": "2025-07-25",
+   "updated": "2026-02-17",
+   "authors": [
+    "Eleftherios Mastorakis",
+    "Muhammad Umer",
+    "Milena Guevara-Bertsch",
+    "Juris Ulmanis",
+    "Felix Rohde",
+    "Dimitris G. Angelakis"
+   ],
+   "abstract": "Resource-efficient, low-depth implementations of quantum circuits remain a promising strategy for achieving reliable and scalable computation on quantum hardware, as they reduce gate resources and limit the accumulation of noisy operations. Here, we propose a low-depth implementation of a class of Hadamard test circuits, complemented by the development of a parameterized quantum ansatz specifically tailored for variational algorithms that exploit the underlying Hadamard test framework. Our findings demonstrate a significant reduction in single- and two-qubit gate counts, suggesting a reliable circuit architecture for noisy intermediate-scale quantum (NISQ) devices. Building on this foundation, we tested our low-depth scheme to investigate the expressive capacity of the proposed parameterized ansatz in simulating nonlinear Burgers' dynamics. The resulting variational quantum states faithfully capture the shockwave feature of the turbulent regime and maintain high overlaps with classical benchmarks, underscoring the practical effectiveness of our framework. Furthermore, we evaluate the effect of hardware noise by modeling the error properties of real quantum processors and by executing the variational algorithm on a trapped-ion-based IBEX Q1 device. The outcomes of our demonstrations highlight the resilience of our low-depth scheme in the turbulent regime, consistently preparing high-fidelity variational states that exhibit strong agreement with classical benchmarks. Our work contributes to the advancement of resource-efficient strategies for quantum computation, offering a robust framework for tackling a range of computationally intensive problems across numerous applications.",
+   "journal_ref": "Quantum Sci. Technol. 11 015061 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2607.28541v2",
+   "title": "A Provable Oracle-Free Quantum Algorithm for Nonlinear Dynamics on Hybrid Oscillator-Qubit Processors",
+   "published": "2026-07-30",
+   "updated": "2026-08-19",
+   "authors": [
+    "Kausthubh Chandramouli",
+    "Yan Li",
+    "Yuan Liu"
+   ],
+   "abstract": "We develop a hybrid qubit--qumode algorithm for nonlinear ordinary differential equations of the form $\\dot{\\mathbf{x}}=\\mathbf{f}(\\mathbf{x})$ with drift of polynomial degree~$L$. Following the Fokker--Planck route of Tennie and Magri, the algorithm propagates the state density and returns the deterministic trajectory as the peak of that density in the small-noise limit. The discretised generator is carried into a parametrised family of Schr\u00f6dinger equations by the warped-phase transformation of Jin, Liu, and Yu, and the Fourier-mode parameter of that family is placed on a single continuous-variable qumode. Our central structural result is that the Hermitian parts $H_{1}$ and $H_{2}$ of the discretised generator admit a bipartite Pauli decomposition that sorts the non-zero Pauli strings into $\\mathcal{O}(\\log N)$ mutually commuting families and factorises each family into a diagonal of degree at most $L$ tensored with a fixed rank-two bond operator. The factorisation renders each family exponential an exact product of $\\mathcal{O}(n^{L})$ monomial-controlled momentum displacements, with no intra-family Trotter error. On a $d$-dimensional grid of $N=2^{n}$ points per axis the circuit costs $\\mathcal{O}(d^{L+1}n^{L+2})$ gates per Trotter step. No sparse-access oracle and no block encoding is invoked: every gate is fixed in closed form by the polynomial coefficients of the drift. We also prove a bound on the numerical abscissa $\u03bb_{\\max}(H_{1})$ that fixes the recovery domain of the warped-phase transform and the post-selection cost. A classical simulation on two nonlinear benchmarks confirms the structural theorems, the shifted recovery, and the accuracy-per-resource advantage of the continuous-variable coupling over a discretised mode register.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2409.06036v1",
+   "title": "Steady-State Statistics of Classical Nonlinear Dynamical Systems from Noisy Intermediate-Scale Quantum Devices",
+   "published": "2024-09-09",
+   "updated": "2024-09-09",
+   "authors": [
+    "Yash M. Lokare",
+    "Dingding Wei",
+    "Lucas Chan",
+    "Brenda M. Rubenstein",
+    "J. B. Marston"
+   ],
+   "abstract": "Classical nonlinear dynamical systems are often characterized by their steady-state probability distribution functions (PDFs). Typically, PDFs are accumulated from numerical simulations that involve solving the underlying dynamical equations of motion using integration techniques. An alternative procedure, direct statistical simulation (DSS), solves for the statistics directly. One approach to DSS is the Fokker-Planck Equation (FPE), which can be used to find the PDF of classical dynamical systems. Here, we investigate the utility of Noisy Intermediate-Scale Quantum (NISQ) computers to find steady-state solutions to the FPE. We employ the Quantum Phase Estimation (QPE) and the Variational Quantum Eigensolver (VQE) algorithms to find the zero-mode of the FPE for one-dimensional Ornstein-Uhlenbeck problems enabling comparison with exact solutions. The quantum computed steady-state probability distribution functions (PDFs) are demonstrated to be in reasonable agreement with the classically computed PDFs. We conclude with a discussion of potential extensions to higher-dimensional dynamical systems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

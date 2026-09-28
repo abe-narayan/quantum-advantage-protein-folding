@@ -1,0 +1,447 @@
+{
+ "key": "linear_ode_nonunitary",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28%28abs%3A%22non-unitary%22+OR+abs%3A%22linear+combination+of+Hamiltonian+simulation%22%29+AND+abs%3Aquantum+AND+abs%3A%22differential+equations%22%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:41",
+ "records": [
+  {
+   "id": "2312.03916v2",
+   "title": "Quantum algorithm for linear non-unitary dynamics with near-optimal dependence on all parameters",
+   "published": "2023-12-06",
+   "updated": "2025-12-14",
+   "authors": [
+    "Dong An",
+    "Andrew M. Childs",
+    "Lin Lin"
+   ],
+   "abstract": "We introduce a family of identities that express general linear non-unitary evolution operators as a linear combination of unitary evolution operators, each solving a Hamiltonian simulation problem. This formulation can exponentially enhance the accuracy of the recently introduced linear combination of Hamiltonian simulation (LCHS) method [An, Liu, and Lin, Physical Review Letters, 2023]. For the first time, this approach enables quantum algorithms to solve linear differential equations with both optimal state preparation cost and near-optimal scaling in matrix queries on all parameters.",
+   "journal_ref": "Communications in Mathematical Physics 407 (1), 19 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2508.19596v1",
+   "title": "Fourier transform-based linear combination of Hamiltonian simulation",
+   "published": "2025-08-27",
+   "updated": "2025-08-27",
+   "authors": [
+    "Xi Huang",
+    "Dong An"
+   ],
+   "abstract": "Linear combination of Hamiltonian simulation (LCHS) connects the general linear non-unitary dynamics with unitary operators and serves as the mathematical backbone of designing near-optimal quantum linear differential equation algorithms. However, the existing LCHS formalism needs to find a kernel function subject to complicated technical conditions on a half complex plane. In this work, we establish an alternative formalism of LCHS based on the Fourier transform. Our new formalism completely removes the technical requirements beyond the real axis, providing a simple and flexible way of constructing LCHS kernel functions. Specifically, we construct a different family of the LCHS kernel function, providing a $1.81$ times reduction in the quantum differential equation algorithms based on LCHS, and an $8.27$ times reduction in its quantum circuit depth at a truncation error of $\u03b5\\le 10^{-8}$. Additionally, we extend the scope of the LCHS formula to the scenario of simulating linear unstable dynamics for a short or intermediate time period.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2603.12398v1",
+   "title": "Efficient Quantum Simulation for Nonlinear Stochastic Differential Equations",
+   "published": "2026-03-12",
+   "updated": "2026-03-12",
+   "authors": [
+    "Xiangyu Li",
+    "Ahmet Burak Catli",
+    "Ho Kiat Lim",
+    "Matthew Pocrnic",
+    "Dong An",
+    "Jin-Peng Liu",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (NSDEs) are a pillar of mathematical modeling for scientific and engineering applications. Accurate and efficient simulation of large-scale NSDEs is prohibitive on classical computers due to the large number of degrees of freedom, and it is challenging on quantum computers due to the linear and unitary nature of quantum mechanics. We develop a quantum algorithm to tackle nonlinear differential equations driven by the Ornstein-Uhlenbeck (OU) stochastic process. The query complexity of our algorithm scales logarithmically with the error tolerance and nearly quadratically with the simulation time. Our algorithmic framework comprises probabilistic Carleman linearization (PCL) to tackle nonlinearity coupled with stochasticity, and stochastic linear combination of Hamiltonian simulations (SLCHS) to simulate stochastic non-unitary dynamics. We obtain probabilistic exponential convergence for the Carleman linearization of Liu et al. [1], provided the NSDE is stable and reaches a steady state. We extend deterministic LCHS to stochastic linear differential equations, retaining near-optimal parameter scaling from An et al. [2] except for the nearly quadratic time scaling. This is achieved by using Monte Carlo integration for time discretization of both the stochastic inhomogeneous term in LCHS and the truncated Dyson series for each Hamiltonian simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2508.13510v2",
+   "title": "Schr\u00f6dingerization for quantum linear systems problems with near-optimal dependence on matrix queries",
+   "published": "2025-08-19",
+   "updated": "2026-04-11",
+   "authors": [
+    "Yin Yang",
+    "Yue Yu",
+    "Long Zhang"
+   ],
+   "abstract": "We develop a quantum algorithm for linear algebraic equations $ A\\bb{x} = \\bb{b} $ from the perspective of Schr\u00f6dingerization-form problems, which are characterized by a system of linear convection equations in one higher dimension. When $ A $ is positive definite, the solution $ \\bb{x} $ can be interpreted as the steady-state solution to a system of linear ordinary differential equations (ODEs). This ODE system can be solved by using the linear combination of Hamiltonian simulation (LCHS) method in \\cite{ACL2023LCH2}, which serves as the continuous implementation of the Fourier transform in the Schr\u00f6dingerization method from \\cite{JLY22SchrShort, JLY22SchrLong}. Schr\u00f6dingerization transforms linear partial differential equations (PDEs) and ODEs with non-unitary dynamics into Schr\u00f6dinger-type systems via the so-called warped phase transformation that maps the equation into one higher dimension. When $ A $ is a general Hermitian matrix, the inverse matrix can still be represented in the LCHS form in \\cite{ACL2023LCH2}, but with a kernel function based on the Fourier approach in \\cite{Childs2017QLSA}. Although this LCHS form provides the steady-state solution to a system of linear ODEs associated with the least-squares equation, applying Schr\u00f6dingerization to this least-squares system is not appropriate, as it results in a much larger condition number. We demonstrate that in both cases, the solution $ \\bb{x} $ can be expressed as the LCHS of Schr\u00f6dingerization-form problems. We provide a detailed implementation and error analysis. Furthermore, we incorporate a block preconditioning technique to achieve nearly linear scaling in the condition number, thereby attaining near-optimal query complexity.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.25822v1",
+   "title": "Fast-forwarding quantum algorithms for weakly nonlinear dissipative differential equations and beyond",
+   "published": "2026-08-26",
+   "updated": "2026-08-26",
+   "authors": [
+    "Yixiang Li",
+    "Dong An"
+   ],
+   "abstract": "We study a fast-forwarded quantum algorithm for solving weakly nonlinear dissipative ordinary differential equations. Our approach is a combination of the Carleman embedding technique and the linear combination of Hamiltonian simulation algorithm for linearized systems with fast-forwarded scaling. The complexity of our algorithm does not explicitly depend on the evolution time $T$, thus greatly improving the previous state-of-the-art $\\widetilde{\\mathcal{O}}(\\sqrt{T})$ to $\\mathcal{O}(1)$, and any remaining time dependence enters through the output norm and forcing parameters. We rigorously analyze the performance of this approach by convergence guarantees of the Carleman embedding for time-dependent coefficient matrices and detailed complexity estimates, and improve the realization of the Carleman-embedding-based algorithms by simplifying the post-selection step. In addition, we perform a numerical study on differential equations beyond the weakly nonlinear case, and identify possibility of achieving fast-forwarding scaling for systems with stronger nonlinearity or linear non-resonant effect.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.04010v1",
+   "title": "Laplace transform based quantum eigenvalue transformation via linear combination of Hamiltonian simulation",
+   "published": "2024-11-06",
+   "updated": "2024-11-06",
+   "authors": [
+    "Dong An",
+    "Andrew M. Childs",
+    "Lin Lin",
+    "Lexing Ying"
+   ],
+   "abstract": "Eigenvalue transformations, which include solving time-dependent differential equations as a special case, have a wide range of applications in scientific and engineering computation. While quantum algorithms for singular value transformations are well studied, eigenvalue transformations are distinct, especially for non-normal matrices. We propose an efficient quantum algorithm for performing a class of eigenvalue transformations that can be expressed as a certain type of matrix Laplace transformation. This allows us to significantly extend the recently developed linear combination of Hamiltonian simulation (LCHS) method [An, Liu, Lin, Phys. Rev. Lett. 131, 150603, 2023; An, Childs, Lin, arXiv:2312.03916] to represent a wider class of eigenvalue transformations, such as powers of the matrix inverse, $A^{-k}$, and the exponential of the matrix inverse, $e^{-A^{-1}}$. The latter can be interpreted as the solution of a mass-matrix differential equation of the form $A u'(t)=-u(t)$. We demonstrate that our eigenvalue transformation approach can solve this problem without explicitly inverting $A$, reducing the computational complexity.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2502.19688v2",
+   "title": "Infinite-dimensional Extension of the Linear Combination of Hamiltonian Simulation: Theorems and Applications",
+   "published": "2025-02-27",
+   "updated": "2025-03-11",
+   "authors": [
+    "Rundi Lu",
+    "Hao-En Li",
+    "Zhengwei Liu",
+    "Jin-Peng Liu"
+   ],
+   "abstract": "We generalize the Linear Combination of Hamiltonian Simulation (LCHS) formula [An, Liu, Lin, Phys. Rev. Lett. 2023] to simulate time-evolution operators in infinite-dimensional spaces, including scenarios involving unbounded operators. This extension, named Inf-LCHS for short, bridges the gap between finite-dimensional quantum simulations and the broader class of infinite-dimensional quantum dynamics governed by partial differential equations (PDEs). Furthermore, we propose two sampling methods by integrating the infinite-dimensional LCHS with Gaussian quadrature schemes (Inf-LCHS-Gaussian) or Monte Carlo integration schemes (Inf-LCHS-MC). We demonstrate the applicability of the Inf-LCHS theorem to a wide range of non-Hermitian dynamics, including linear parabolic PDEs, queueing models (birth-or-death processes), Schr\u00f6dinger equations with complex potentials, Lindblad equations, and black hole thermal field equations. Our analysis provides insights into simulating general linear dynamics using a finite number of quantum dynamics and includes cost estimates for the corresponding quantum algorithms.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.20760v2",
+   "title": "Constant-Factor Improvements in Quantum Algorithms for Linear Differential Equations",
+   "published": "2025-06-25",
+   "updated": "2025-11-05",
+   "authors": [
+    "Matthew Pocrnic",
+    "Peter D. Johnson",
+    "Amara Katabarwa",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Finding the solution to linear ordinary differential equations of the form $\\partial_t u(t) = -A(t)u(t)$ has been a promising theoretical avenue for \\textit{asymptotic} quantum speedups. However, despite the improvements to existing quantum differential equation solvers over the years, little is known about \\textit{constant factor} costs of such quantum algorithms. This makes it challenging to assess the prospects for using these algorithms in practice. In this work, we prove constant factor bounds for a promising new quantum differential equation solver, the linear combination of Hamiltonian simulation (LCHS) algorithm. Our bounds are formulated as the number of queries to a unitary $U_A$ that block encodes the generator $A$. In doing so, we make several algorithmic improvements such as tighter truncation and discretization bounds on the LCHS kernel integral, a more efficient quantum compilation scheme for the SELECT operator in LCHS, as well as use of a constant-factor bound for oblivious amplitude amplification, which may be of general interest. To the best of our knowledge, our new formulae improve over previous state of the art by at least two orders of magnitude, where the speedup can be far greater if state preparation has a significant cost. Accordingly, for any previous resource estimates of time-independent linear differential equations for the most general case whereby the dynamics are not \\textit{fast-forwardable}, these findings provide a 100-200x reduction in runtime costs. This analysis contributes towards establishing more promising applications for quantum computing.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.21751v1",
+   "title": "Arbitrary Boundary Conditions and Constraints in Quantum Algorithms for Differential Equations via Penalty Projections",
+   "published": "2025-06-26",
+   "updated": "2025-06-26",
+   "authors": [
+    "Philipp Schleich",
+    "Tyler Kharazi",
+    "Xiangyu Li",
+    "Jin-Peng Liu",
+    "Al\u00e1n Aspuru-Guzik",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Complicated boundary conditions are essential to accurately describe phenomena arising in nature and engineering. Recently, the investigation of a potential speedup through quantum algorithms in simulating the governing ordinary and partial differential equations of such phenomena has gained increasing attention. We design an efficient quantum algorithms for solving differential equations with arbitrary boundary conditions. Specifically, we propose an approach to enforce arbitrary boundary conditions and constraints through adding a penalty projection to the governing equations. Assuming a fast-forwardable representation of the projection to ensure an efficient interaction picture imulation, the cost of to enforce the constraints is at most $O(\\log\u03bb)$ in the strength of the penalty $\u03bb$ in the gate complexity; in the worst case, this goes as $O([\\|v(0)\\|^2\\|A_0\\| + \\|b\\|_{L^1[0;t]}^2)]t^2/\\varepsilon)$, for precision $\\varepsilon$ and a dynamical system $\\frac{\\rm d}{{\\rm d}t} v(t) = A_0(t) v(t) + b(t)$ with negative semidefinite $A_0(t)$ of size $n^d\\times n^d$. E.g., for the heat equation, this leads to a gate complexity overhead of $\\widetilde O(d\\log n + \\log t)$. We show constraint error bounds for the penalty approach and provide validating numerical experiments, and estimate the circuit complexity using the Linear Combination of Hamiltonian Simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2407.05019v2",
+   "title": "Quantum algorithm for partial differential equations of non-conservative systems with spatially varying parameters",
+   "published": "2024-07-06",
+   "updated": "2025-01-30",
+   "authors": [
+    "Yuki Sato",
+    "Hiroyuki Tezuka",
+    "Ruho Kondo",
+    "Naoki Yamamoto"
+   ],
+   "abstract": "Partial differential equations (PDEs) are crucial for modeling various physical phenomena such as heat transfer, fluid flow, and electromagnetic waves. In computer-aided engineering (CAE), the ability to handle fine resolutions and large computational models is essential for improving product performance and reducing development costs. However, solving large-scale PDEs, particularly for systems with spatially varying material properties, poses significant computational challenges. In this paper, we propose a quantum algorithm for solving second-order linear PDEs of non-conservative systems with spatially varying parameters, using the linear combination of Hamiltonian simulation (LCHS) method. Our approach transforms those PDEs into ordinary differential equations represented by qubit operators, through spatial discretization using the finite difference method. Then, we provide an algorithm that efficiently constructs the operator corresponding to the spatially varying parameters of PDEs via a logic minimization technique, which reduces the number of terms and subsequently the circuit depth. We also develop a scalable method for realizing a quantum circuit for LCHS, using a tensor-network-based technique, specifically a matrix product state (MPS). We validate our method with applications to the acoustic equation with spatially varying parameters and the dissipative heat equation. Our approach includes a detailed recipe for constructing quantum circuits for PDEs, leveraging efficient encoding of spatially varying parameters of PDEs and scalable implementation of LCHS, which we believe marks a significant step towards advancing quantum computing's role in solving practical engineering problems.",
+   "journal_ref": "Phys. Rev. Applied 23 (2025), 014063",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2609.20721v1",
+   "title": "Quantum Simulation of Dissipative Non-Markovian Coupled Classical Oscillators",
+   "published": "2026-09-17",
+   "updated": "2026-09-17",
+   "authors": [
+    "Malte Schade",
+    "Sophia Simon",
+    "Nathan Wiebe",
+    "Scott Keating",
+    "Cyrill B\u00f6sch",
+    "Andreas Fichtner"
+   ],
+   "abstract": "We present a quantum algorithm for simulating classical oscillator networks characterized by non-Markovian dissipation and time-varying material properties, extending recent speedups for undamped harmonic systems to viscoacoustic and viscoelastic media. We embed the history-dependent dynamics into a Markovian state space governed by a non-Hermitian operator by approximating memory kernels through a Prony series. We then use linear combination of Hamiltonian simulation to estimate the instantaneous kinetic and potential energy for a subset of oscillators at time $t$ within error $\u03b5$ using a number of queries to the oscillator system that scales as $\\widetilde{\\mathcal{O}}(\u03b1_{\\rm tot} t/\u03b5)$, where $\u03b1_{\\rm tot}$ is polynomial in the strength of the dissipation, spring constants, inverse masses, and sparsity of the connections in the network. We further show that this energy estimation task is in the worst-case classically hard (i.e., a corresponding decision problem is $\\mathsf{BQP}$-complete), even in the presence of strong dissipation. For time-dependent materials, we show that changes in material properties appear as effective dissipation or growth in the energy representation. Additionally, we prove the infeasibility of exponential quantum advantages in locally coupled topologies through a novel form of Lieb-Robinson-like bounds that apply to differential equations. This allows our quantum algorithms to provide quartic speedups for locally coupled damped oscillator systems in three dimensions, raising the possibility of practical quantum speedups for realistically damped oscillator networks and approximated wave equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.19628v3",
+   "title": "Design nearly optimal quantum algorithm for linear differential equations via Lindbladians",
+   "published": "2024-10-25",
+   "updated": "2025-08-27",
+   "authors": [
+    "Zhong-Xia Shang",
+    "Naixu Guo",
+    "Dong An",
+    "Qi Zhao"
+   ],
+   "abstract": "Solving linear ordinary differential equations (ODE) is one of the most promising applications for quantum computers to demonstrate exponential advantages. The challenge of designing a quantum ODE algorithm is how to embed non-unitary dynamics into intrinsically unitary quantum circuits. In this work, we propose a new quantum algorithm for solving ODEs by harnessing open quantum systems. Specifically, we propose a novel technique called non-diagonal density matrix encoding, which leverages the inherent non-unitary dynamics of Lindbladians to encode general linear ODEs into the non-diagonal blocks of density matrices. This framework enables us to design quantum algorithms with both theoretical simplicity and high performance. Combined with the state-of-the-art quantum Lindbladian simulation algorithms, our algorithm can outperform all existing quantum ODE algorithms and achieve near-optimal dependence on all parameters under a plausible input model. We also give applications of our algorithm including the Gibbs state preparations and the partition function estimations.",
+   "journal_ref": "Physical Review Letters 135 (12), 120604, 2025",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2404.02819v4",
+   "title": "Efficient Quantum Circuits for Non-Unitary and Unitary Diagonal Operators with Space-Time-Accuracy trade-offs",
+   "published": "2024-04-03",
+   "updated": "2025-01-21",
+   "authors": [
+    "Julien Zylberman",
+    "Ugo Nzongani",
+    "Andrea Simonetto",
+    "Fabrice Debbasch"
+   ],
+   "abstract": "Unitary and non-unitary diagonal operators are fundamental building blocks in quantum algorithms with applications in the resolution of partial differential equations, Hamiltonian simulations, the loading of classical data on quantum computers (quantum state preparation) and many others. In this paper, we introduce a general approach to implement unitary and non-unitary diagonal operators with efficient-adjustable-depth quantum circuits. The depth, i.e., the number of layers of quantum gates of the quantum circuit, is reducible with respect either to the width, i.e, the number of ancilla qubits, or to the accuracy between the implemented operator and the target one. While exact methods have an optimal exponential scaling either in terms of size, i.e., the total number of primitive quantum gates, or width, approximate methods prove to be efficient for the class of diagonal operators depending on smooth, at least differentiable, functions. Our approach is general enough to allow any method for diagonal operators to become adjustable-depth or approximate, decreasing the depth of the circuit by increasing its width or its approximation level. This feature offers flexibility and can match with the hardware limitations in coherence time or cumulative gate error. We illustrate these methods by performing quantum state preparation and non-unitary-real-space simulation of the diffusion equation. This simulation paves the way to efficient implementations of stochastic models useful in physics, chemistry, biology, image processing and finance.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.03985v2",
+   "title": "Quantum algorithm for the advection-diffusion equation and the Koopman-von Neumann approach to nonlinear dynamical systems",
+   "published": "2024-10-04",
+   "updated": "2025-01-18",
+   "authors": [
+    "Ivan Novikau",
+    "Ilon Joseph"
+   ],
+   "abstract": "We propose an explicit algorithm based on the Linear Combination of Hamiltonian Simulations technique to simulate both the advection-diffusion equation and a nonunitary discretized version of the Koopman-von Neumann formulation of nonlinear dynamics. By including dissipation into the model, through an upwind discretization of the advection operator, we avoid spurious parasitic oscillations which usually accompany standard finite difference discretizations of the advection equation. In contrast to prior works on quantum simulation of nonlinear problems, we explain in detail how different components of the algorithm can be implemented by using the Quantum Signal Processing (QSP) and Quantum Singular Value Transformation (QSVT) methods. In addition, we discuss the general method for implementing the block-encoding (BE) required for QSP and QSVT circuits and provide explicit implementations of the BE oracles tailored to our specific test cases. We simulate the resulting circuit on a digital emulator of quantum fault-tolerant computers and investigate its complexity and success probability. The proposed algorithm is universal and can be used for modeling a broad class of linear and nonlinear differential equations including the KvN and Carleman embeddings of nonlinear systems, the semiclassical Koopman-van Hove (KvH) equation, as well as the advection and Liouville equations.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2507.03714v2",
+   "title": "Efficient Quantum Access Model for Sparse Structured Matrices using Linear Combination of Things",
+   "published": "2025-07-04",
+   "updated": "2025-07-26",
+   "authors": [
+    "Abeynaya Gnanasekaran",
+    "Amit Surana"
+   ],
+   "abstract": "We present a novel framework for Linear Combination of Unitaries (LCU)-style decomposition tailored to structured sparse matrices, which frequently arise in the numerical solution of partial differential equations (PDEs). While LCU is a foundational primitive in both variational and fault-tolerant quantum algorithms, conventional approaches based on the Pauli basis can require a number of terms that scales quadratically with matrix size. We introduce the Sigma basis, a compact set of simple, non-unitary operators that can better capture sparsity and structure, enabling decompositions with only polylogarithmic scaling in the number of terms. We develop both numerical and semi-analytical methods for computing Sigma basis decompositions of arbitrary matrices. Given this new basis is comprised of non-unitary operators, we leverage the concept of unitary completion to design efficient quantum circuits for evaluating observables in variational quantum algorithms and for constructing block encodings in fault-tolerant quantum algorithms. We compare our method to related techniques like unitary dilation, and demonstrate its effectiveness through several PDE examples, showing exponential improvements in decomposition size while retaining circuit efficiency.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2505.04304v1",
+   "title": "Quantum Circuits for the Black-Scholes equations via Schr\u00f6dingerisation",
+   "published": "2025-05-07",
+   "updated": "2025-05-07",
+   "authors": [
+    "Shi Jin",
+    "Zihao Tang",
+    "Xu Yin",
+    "Lei Zhang"
+   ],
+   "abstract": "In this paper, we construct quantum circuits for the Black-Scholes equations, a cornerstone of financial modeling, based on a quantum algorithm that overcome the cure of high dimensionality. Our approach leverages the Schr\u00f6dingerisation technique, which converts linear partial and ordinary differential equations with non-unitary dynamics into a system evolved by unitary dynamics. This is achieved through a warped phase transformation that lifts the problem into a higher-dimensional space, enabling the simulation of the Black-Scholes equation on a quantum computer. We will conduct a thorough complexity analysis to highlight the quantum advantages of our approach compared to existing algorithms. The effectiveness of our quantum circuit is substantiated through extensive numerical experiments.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.02130v1",
+   "title": "Unconditionally successful quantum Time-Marching algorithm via LCU for nonlinear Burgers equation",
+   "published": "2026-08-03",
+   "updated": "2026-08-03",
+   "authors": [
+    "Niccolo Fonio",
+    "Giuseppe Di Molfetta",
+    "Pierre Sagaut"
+   ],
+   "abstract": "Most recently proposed quantum algorithms for solving linear and nonlinear partial differential equations rely on non-unitary operations. These operations are typically implemented probabilistically, requiring postselection and thus increasing the computational cost. We show that quantum lattice gas algorithms enable unconditionally successful quantum simulation of nonlinearities, yielding, to our knowledge, the first quantum algorithm for Burgers equation whose time steps can be concatenated without probabilistic failure. The key idea is to exploit the correspondence between the stochasticity of quantum measurement in the linear combination of unitaries framework and the intrinsic randomness of the classical lattice gas algorithm. In doing so, we identify general properties that characterize probabilistic classical algorithms amenable to this time-marching formulation, and illustrate the approach with an additional application.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2111.00143v1",
+   "title": "On the Control of Flying Qubits",
+   "published": "2021-10-30",
+   "updated": "2021-10-30",
+   "authors": [
+    "Wen-Long Li ang Guofeng Zhang",
+    "Re-Bing Wu"
+   ],
+   "abstract": "The control of flying quantum bits (qubits) carried by traveling quantum fields is crucial for coherent information transmission in quantum networks. In this paper, we develop a general framework for modeling the generation, catching and transformation processes of flying qubits. We introduce the quantum stochastic differential equation (QSDE) to describe the flying-qubit input-output relations actuated by a standing quantum system. Under the continuous time-ordered photon-number basis, the infinite-dimensional QSDE is reduced to a low-dimensional deterministic non-unitary differential equation for the state evolution of the standing system, and the outgoing flying-qubit states can be calculated via randomly occurring quantum jumps. This makes it possible, as demonstrated by examples of flying-qubit generation and transformation, to analyze general cases when the number of excitations is not reserved. The proposed framework lays the foundation for the design of flying-qubit control systems from a control theoretic point of view, within which advanced control techniques can be incorporated for practical applications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.20184v1",
+   "title": "Operator Learning for efficient Quantum Computation",
+   "published": "2026-06-18",
+   "updated": "2026-06-18",
+   "authors": [
+    "Paul Over",
+    "Sergio Bengoechea",
+    "Leonardo Borello Busilacchi",
+    "Martin Kiffner",
+    "Thomas Rung",
+    "Alexios A. Michailidis"
+   ],
+   "abstract": "An efficient implementation of quantum algorithms is often hindered by the lack of efficient primitives for operators and state preparation. This limits both the ability of near-term quantum hardware to simulate complex problems and the potential of fault-tolerant algorithms to achieve practical quantum advantage. To address this, we propose a full-stack variational framework that transforms arbitrary operators to compact quantum circuits. The resulting variational circuits can be tailored to the connectivity and long-range interaction of the target hardware. The learning process employs backpropagation together with a cost function that efficiently optimizes unitary operators and non-unitary -- dense or sparse -- operators using only a single ancilla qubit for block encoding. Additionally, we introduce a regularization term that reduces the approximation error. The approach is validated for both quantum mechanical and engineering applications. In the former case, we learn propagators that arise in native quantum problems -- such as quantum simulation and quantum chemistry -- and achieve improved resource scaling in comparison to standard Suzuki-Trotter expansions. In the latter case, we demonstrate the approach's ability to implement the second-order central finite difference approximation of the Laplace operator -- relevant for solving partial differential equations -- while improving upon current error metrics. The final example deals with learning a dense, non-unitary operator that arises in the analysis of inviscid potential flow around an airfoil. This universality of the framework opens the door for solving general problems beyond prototypical engineering and quantum applications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2407.15895v3",
+   "title": "Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation",
+   "published": "2024-07-22",
+   "updated": "2025-01-11",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Yue Yu"
+   ],
+   "abstract": "This paper explores the explicit design of quantum circuits for quantum simulation of partial differential equations (PDEs) with physical boundary conditions. These equations and/or their discretized forms usually do not evolve via unitary dynamics, thus are not suitable for quantum simulation. Boundary conditions (either time-dependent or independent) make the problem more difficult. To tackle this challenge, the Schrodingerisation method can be employed, which converts linear partial and ordinary differential equations with non-unitary dynamics into systems of Schrodinger-type equations, via the so-called warped phase transformation that maps the equation into one higher dimension. Despite advancements in Schrodingerisation techniques, the explicit implementation of quantum circuits for solving general PDEs, especially with physical boundary conditions, remains underdeveloped. We present two methods for handling the inhomogeneous terms arising from time-dependent physical boundary conditions. One approach utilizes Duhamel's principle to express the solution in integral form and employs linear combination of unitaries (LCU) for coherent state preparation. Another method applies an augmentation to transform the inhomogeneous problem into a homogeneous one. We then apply the quantum simulation technique from [CJL23] to transform the resulting non-autonomous system to an autonomous system in one higher dimension. We provide detailed implementations of these two methods and conduct a comprehensive complexity analysis in terms of queries to the time evolution input oracle.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.19508v1",
+   "title": "Quantum algorithm for differential equations via permutation matrix representation with application to the Burgers equation",
+   "published": "2026-08-19",
+   "updated": "2026-08-19",
+   "authors": [
+    "Hriday Sabharwal",
+    "Amir Kalev",
+    "Itay Hen"
+   ],
+   "abstract": "We develop a quantum algorithm for solving the dynamics of the nonlinear viscous Burgers equation. We apply the Carleman linearization procedure on the spatially discretized equation, followed by a padding scheme that allows implementation on qubit registers. Existing Carleman-based quantum algorithms commonly formulate the lifted linear differential equation in an oracle model. Here we decompose the padded generator into diagonal masks and reversible arithmetic permutations using the Permutation Matrix Representation (PMR), which we show to be naturally compatible with the Linear Combination of Hamiltonian Simulations (LCHS) algorithm. Under the assumptions required by LCHS - most importantly positive semidefiniteness of the Hermitian part of the linear generator, possibly after a stabilizing shift - the algorithm prepares a normalized quantum state proportional to the solution of the truncated lifted system; the stabilizing shift introduces an exponential postselection overhead, which we quantify and mitigate through a rescaling scheme. We show that our algorithm scales with the off-diagonal norm of the Carleman generator instead of the matrix norm, which can be advantageous for other generators that are diagonally dominant. We also extend the PMR scheme to general fluid equations that may contain higher-order derivatives or nonlinear terms, or may involve multiple fluid variables or spatial dimensions. The construction illustrates how PMR can serve as a convenient Hamiltonian-simulation primitive for a broader class of LCU-based algorithms.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2403.12974v1",
+   "title": "Non-separable wave evolution equations in quantum kinetics",
+   "published": "2024-02-01",
+   "updated": "2024-02-01",
+   "authors": [
+    "C Dedes"
+   ],
+   "abstract": "A non-separable wave-like integro-differential equation for the time evolution of the Wigner distribution function in phase space is educed from the corresponding separable kinetic equation. It is shown that it leads to non-local dispersion effects that may involve complex group velocities and also display non-unitary features as entropy production. By employing the quantum hydrodynamical description a non-local evolution wave equation is also derived by synthesizing the Hamilton-Jacobi equation with that of continuity, which predicts the generation of quadrupole quantum effects in the propagation of the spatial probability density. Extension of the formalism for a boson scalar field is also presented along with a brief commentary on the issue of irreversibility.",
+   "journal_ref": "Physics Essays Volume 37: Pages 215-219, 2024",
+   "primary": "physics.gen-ph"
+  },
+  {
+   "id": "2602.07097v1",
+   "title": "Alleviating Post-Linearization Challenges for Solving Nonlinear Systems on a Quantum Computer",
+   "published": "2026-02-06",
+   "updated": "2026-02-06",
+   "authors": [
+    "Tayyab Ali"
+   ],
+   "abstract": "The linearity inherent in quantum mechanics limits current quantum hardware from directly solving nonlinear systems governed by nonlinear differential equations. One can opt for linearization frameworks such as Carleman linearization, which provides a high dimensional infinite linear system corresponding to a finite nonlinear system, as an indirect way of solving nonlinear systems using current quantum computers. We provide an efficient data access model to load this infinite linear representation of the nonlinear system, upto truncation order $N$, on a quantum computer by decomposing the Hamiltonian into the weighted sum of non-unitary operators, namely the Sigma basis. We have shown that the Sigma basis provides an exponential reduction in the number of decomposition terms compared to the traditional decomposition, which is usually done in a linear combination of Pauli operators. Once the Hamiltonian is decomposed, we then use the concept of unitary completion to construct the circuit for the implementation of each weighted tensor product component $\\mathcal{H}_{j}$ of the decomposition.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.10999v1",
+   "title": "Schr\u00f6dingerization based Quantum Circuits for Maxwell's Equation with time-dependent source terms",
+   "published": "2024-11-17",
+   "updated": "2024-11-17",
+   "authors": [
+    "Chuwen Ma",
+    "Shi Jin",
+    "Nana Liu",
+    "Kezhen Wang",
+    "Lei Zhang"
+   ],
+   "abstract": "The Schr\u00f6dingerisation method combined with the autonomozation technique in \\cite{cjL23} converts general non-autonomous linear differential equations with non-unitary dynamics into systems of autonomous Schr\u00f6dinger-type equations, via the so-called warped phase transformation that maps the equation into two higher dimension. Despite the success of Schr\u00f6dingerisation techniques, they typically require the black box of the sparse Hamiltonian simulation, suitable for continuous-variable based analog quantum simulation. For qubit-based general quantum computing one needs to design the quantum circuits for practical implementation. This paper explicitly constructs a quantum circuit for Maxwell's equations with perfect electric conductor (PEC) boundary conditions and time-dependent source terms, based on Schr\u00f6dingerization and autonomozation, with corresponding computational complexity analysis. Through initial value smoothing and high-order approximation to the delta function, the increase in qubits from the extra dimensions only requires minor rise in computational complexity, almost $\\log\\log {1/\\varepsilon}$ where $\\varepsilon$ is the desired precision. Our analysis demonstrates that quantum algorithms constructed using Schr\u00f6dingerisation exhibit polynomial acceleration in computational complexity compared to the classical Finite Difference Time Domain (FDTD) format.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.00603v1",
+   "title": "Quantum algorithms for the fractional Poisson equation via rational approximation",
+   "published": "2026-04-01",
+   "updated": "2026-04-01",
+   "authors": [
+    "Yin Yang",
+    "Yue Yu",
+    "Long Zhang",
+    "Ming Zhou"
+   ],
+   "abstract": "This paper presents a quantum algorithm for solving the fractional Poisson equation \\((-\u0394)^s u = f\\) with \\(s \\in (0,1)\\) on bounded domains. The proposed approach combines rational approximation techniques with quantum linear system solvers to achieve exponential quantum advantage. The rational approximation represents the inverse fractional Laplacian as a weighted sum of standard resolvents, transforming the original nonlocal problem into a collection of shifted integer-order partial differential equations. These equations are consolidated into a single large linear system through a modified right-hand side construction that simplifies the quantum implementation. To enable practical implementation, we develop explicit quantum circuits via the Schr\u00f6dingerization technique, which converts the non-unitary dynamics of the linear system into a higher-dimensional Schr\u00f6dinger-type equation, allowing the use of standard Hamiltonian simulation. The circuit construction leverages the decomposition of shift operators to realize the discrete Laplacian and employs controlled operations to implement the select oracle. Under finite difference discretization, we provide detailed algorithmic procedures utilizing block-encoding techniques for the coefficient matrices. A comprehensive complexity analysis demonstrates that the quantum algorithm achieves a dependence on the inverse mesh size \\(h^{-1}\\) that is independent of the spatial dimension \\(d\\), in stark contrast to classical methods which suffer from exponential growth in high dimensions. This establishes an exponential quantum advantage for high-dimensional fractional problems, effectively overcoming the curse of dimensionality that limits classical approaches.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2607.08976v1",
+   "title": "A Scalable Approach to Solve the Carleman Linearized Burgers' Equation on a Quantum Computer",
+   "published": "2026-07-09",
+   "updated": "2026-07-09",
+   "authors": [
+    "Reuben Demirdjian",
+    "Yvan Quinn",
+    "Vincent P. Su",
+    "Hrant Gharibyan",
+    "Hayk Tepanyan"
+   ],
+   "abstract": "Efficiently solving nonlinear ordinary and partial differential equations using a quantum computer is a major challenge due its inherent linearity. To circumvent this challenge, the Carleman linearization method has been proposed to transform a nonlinear ordinary differential equation into a linear system of equations, the primary advantage being that existing quantum linear systems algorithms may then be applied to obtain a solution. However, this methodology also brings forth several major challenges that must be addressed to attain a quantum advantage. Herein, we address several of these challenges enabling us to solve the Carleman linearized one-dimensional Burgers' equation on real and simulated quantum hardware. All simulations were performed on BlueQubit's platform allowing for quantum circuits to be run on GPU or QPU's seamlessly. We first demonstrate that the Carleman linearized Burgers' equation can be efficiently loaded onto a quantum computer using the linear combination of non-unitaries method, an alternative to the linear combintaiton of unitaries approach. Once loaded, the linear system is then solved using the variational quantum linear solver. Since a naive implementation of this solver is hindered by the barren plateau phenomenon, we introduce a multigridding method to solve the problem in a series of stages with the solution of the previous stage acting as a warm start for the next stage. This approach is found to significantly improve the accuracy of the solution compared with a naive cold start. Finally, circuits with a combined number of spatial and temporal discretization points totaling up to $2^{80} \\approx 10^{24}$ are transpiled onto real quantum hardware demonstrating that the proposed methodology could feasibly produce a quantum advantage on future hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2407.01147v1",
+   "title": "Simulating the non-Hermitian dynamics of financial option pricing with quantum computers",
+   "published": "2024-07-01",
+   "updated": "2024-07-01",
+   "authors": [
+    "Swagat Kumar",
+    "Colin Michael Wilmott"
+   ],
+   "abstract": "The Schrodinger equation describes how quantum states evolve according to the Hamiltonian of the system. For physical systems, we have it that the Hamiltonian must be a Hermitian operator to ensure unitary dynamics. For anti-Hermitian Hamiltonians, the Schrodinger equation instead models the evolution of quantum states in imaginary time. This process of imaginary time evolution has been used successfully to calculate the ground state of a quantum system. Although imaginary time evolution is non-unitary, the normalised dynamics of this evolution can be simulated on a quantum computer using the quantum imaginary time evolution (QITE) algorithm. In this paper, we broaden the scope of QITE by removing its restriction to anti-Hermitian Hamiltonians, which allows us to solve any partial differential equation (PDE) that is equivalent to the Schrodinger equation with an arbitrary, non-Hermitian Hamiltonian. An example of such a PDE is the famous Black-Scholes equation that models the price of financial derivatives. We will demonstrate how our generalised QITE methodology offers a feasible approach for real-world applications by using it to price various European option contracts modelled according to the Black-Scholes equation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2402.14696v3",
+   "title": "On Schr\u00f6dingerization based quantum algorithms for linear dynamical systems with inhomogeneous terms",
+   "published": "2024-02-22",
+   "updated": "2025-04-14",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Chuwen Ma"
+   ],
+   "abstract": "We analyze the Schr\u00f6dingerization method for quantum simulation of a general class of non-unitary dynamics with inhomogeneous source terms. The Schr\u00f6dingerization technique, introduced in [31], transforms any linear ordinary and partial differential equations with non-unitary dynamics into a system under unitary dynamics via a warped phase transition that maps the equations into a higher dimension, making them suitable for quantum simulation. This technique can also be applied to these equations with inhomogeneous terms modeling source or forcing terms, or boundary and interface conditions, and discrete dynamical systems such as iterative methods in numerical linear algebra, through extra equations in the system. Difficulty arises with the presence of inhomogeneous terms since they can change the stability of the original system. In this paper, we systematically study-both theoretically and numerically-the important issue of recovering the original variables from the Schr\u00f6dingerized equations, even when the evolution operator contains unstable modes. We show that, even with unstable modes, one can still construct a stable scheme; however, to recover the original variable, one needs to use suitable data in the extended space. We analyze and compare both the discrete and continuous Fourier transforms used in the extended dimension and derive corresponding error estimates, which allow one to use the more appropriate transform for specific equations. We also provide a smoother initialization for the Schr\u00f6dingerized system to gain higher-order accuracy in the extended space. We homogenize the inhomogeneous terms with a stretch transformation, making it easier to recover the original variable. Our recovery technique also provides a simple and generic framework to solve general ill-posed problems in a computationally stable way.",
+   "journal_ref": "",
+   "primary": "math.NA"
+  },
+  {
+   "id": "2512.17980v2",
+   "title": "A Polylogarithmic-Time Quantum Algorithm for the Laplace Transform",
+   "published": "2025-12-19",
+   "updated": "2026-03-11",
+   "authors": [
+    "Akash Kumar Singh",
+    "Ashish Kumar Patra",
+    "Anurag K. S. V.",
+    "Sai Shankar P.",
+    "Ruchika Bhat",
+    "Jaiganesh G"
+   ],
+   "abstract": "We introduce a quantum algorithm to perform the Laplace transform on quantum computers. Already, the quantum Fourier transform (QFT) is the cornerstone of many quantum algorithms, but the Laplace transform or its discrete version has not seen any efficient implementation on quantum computers due to its dissipative nature and hence non-unitary dynamics. However, a recent work has shown an efficient implementation for certain cases on quantum computers using the Taylor series. Unlike previous work, our work provides a completely different algorithm for doing Laplace Transform using Quantum Eigenvalue Transformation and Lap-LCHS, very efficiently at points which form an arithmetic progression. Our algorithm can implement $N \\times N$ discrete Laplace transform in gate complexity that grows as $O((log\\,N)^3)$, ignoring the state preparation cost, where $N=2^n$ and $n$ is the number of qubits, which is a superpolynomial speedup in number of gates over the best classical counterpart that has complexity $O(N\\cdot log\\,N)$ for the same cases. Also, the circuit width grows as $O(log\\,N)$. Quantum Laplace Transform (QLT) may enable new Quantum algorithms for cases like solving differential equations in the Laplace domain, developing an inverse Laplace transform algorithm on quantum computers, imaginary time evolution in the resolvent domain for calculating ground state energy, and spectral estimation of non-Hermitian matrices.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.02874v2",
+   "title": "A Unified Poisson Summation Framework for Generalized Quantum Matrix Transformations",
+   "published": "2026-04-03",
+   "updated": "2026-04-19",
+   "authors": [
+    "Chao Wang",
+    "Xi-Ning Zhuang",
+    "Menghan Dou",
+    "Zhao-Yun Chen",
+    "Guo-Ping Guo"
+   ],
+   "abstract": "We present a unified algorithmic framework for quantum simulation of non-unitary dynamics and matrix functions, governed by the principle of spectral aliasing derived from the Poisson Summation Formula (PSF). By reinterpreting discretization errors as spectral folding in dual domains, we synthesize two distinct algorithmic paths: (i) the Fourier-PSF path, generalizing transmutation methods for time-domain filtering, which is optimal for singular and fractional dynamics $e^{-tH^\u03b1}$, here $H\\succeq 0$; and (ii) the contour-PSF path, a novel discrete contour transform based on the resolvent formalism, which achieves exponential convergence for holomorphic matrix functions via radius optimization. This dual framework resolves the smoothness-sparsity trade-off: it utilizes the Fourier basis to handle branch-point singularities where analyticity fails, and the Resolvent basis to exploit complex-plane regularity where it exists. We demonstrate the versatility of this framework by efficiently simulating diverse phenomena, from fractional anomalous diffusion to high-precision solutions of stiff differential equations, outperforming existing methods in their respective optimal regimes.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

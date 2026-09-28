@@ -1,0 +1,217 @@
+{
+ "key": "carleman_nodiss",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28abs%3ACarleman+AND+abs%3Aquantum+AND+%28abs%3Adissipative+OR+abs%3Aconservative+OR+abs%3A%22non-dissipative%22%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:02",
+ "records": [
+  {
+   "id": "2605.03381v1",
+   "title": "Nonlinear semigroups with unbounded generators under Carleman linearization",
+   "published": "2026-05-05",
+   "updated": "2026-05-05",
+   "authors": [
+    "Sitanshu Gakkhar",
+    "Ala Shayeghi",
+    "David C. Del Rey Fern\u00e1ndez"
+   ],
+   "abstract": "We treat the convergence of Carleman linearization of nonlinear evolutionary equations through the approximation theory of strongly continuous semigroups, by Carleman embedding the underlying nonlinear semigroups as linear semigroups. Linear semigroup theory then lets one replace the norm constraint on the convergence of Carleman linearization in the form used by quantum algorithms for a class of semi-discretized evolution equations by a dissipativity constraint, simplifying arguments for convergence. Applying Trotter-Kato approximation theorem to the linearized semigroup realizes the semigroup as a limit finite dimensional operator exponentials, reducing the question of convergence rate of Carleman linearization to that of the Trotter-Kato approximation. We then examine convergence of the Carleman linearization as the operators become unbounded, treating the hyperviscuous Burger's equation as an example. Next we consider the perturbation theory of the Carleman semigroup and obtain conditions when polynomial nonlinearities correspond to the Carleman linearized semigroup being a $1$-integrated semigroup, so convergence is implied by variants of Trotter-Kato approximation for integrated semigroups.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2405.12714v2",
+   "title": "Quantum Algorithms for Nonlinear Dynamics: Revisiting Carleman Linearization with No Dissipative Conditions",
+   "published": "2024-05-21",
+   "updated": "2025-01-31",
+   "authors": [
+    "Hsuan-Cheng Wu",
+    "Jingyao Wang",
+    "Xiantao Li"
+   ],
+   "abstract": "In this paper, we explore the embedding of nonlinear dynamical systems into linear ordinary differential equations (ODEs) via the Carleman linearization method. Under dissipative conditions, numerous previous works have established rigorous error bounds and linear convergence for Carleman linearization, which have facilitated the identification of quantum advantages in simulating large-scale dynamical systems. Our analysis extends these findings by exploring error bounds beyond the traditional dissipative condition, thereby broadening the scope of quantum computational benefits to a new class of dynamical regimes. This novel regime is defined by a resonance condition, and we prove how this resonance condition leads to a linear convergence with respect to the truncation level $N$ in Carleman linearization. We support our theoretical advancements with numerical experiments on a variety of models, including the Burgers' equation, Fermi-Pasta-Ulam (FPU) chains, and the Korteweg-de Vries (KdV) equations, to validate our analysis and demonstrate the practical implications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.11113v1",
+   "title": "Schr\u00f6dinger-Navier-Stokes Equation for the Quantum Simulation of Navier-Stokes Flows",
+   "published": "2026-04-13",
+   "updated": "2026-04-13",
+   "authors": [
+    "Luca Cappelli",
+    "Sauro Succi",
+    "Monica Lacatus",
+    "Alessandro Zecchi",
+    "Alessandro Roggero"
+   ],
+   "abstract": "The search for quantum-like wave formulations of the Navier-Stokes (Schr\u00f6dinger-Navier-Stokes, SNS for short) equations describing classical dissipative fluids has met with increasing attention in the recent years, due to the large portfolio of potential applications in science and engineering. A SNS formulation of classical fluids was first presented in a largely un-noticed paper by Dietrich and Vautherin back in 1985(Journal de Physique). In this paper, we revisit this specific SNS approach and assess its viability for quantum implementations based on Carleman embedding/linearization techniques. Specifically, we i) Clarify in full mathematical detail why the SNS dissipator presents a steep challenge for quantum computers and propose a way out strategy based on the Hamilton-Jacobi (HJ) formulation of fluid dynamics; ii) Develop a corresponding quantum algorithm using a new technique based on a tensor-network representation of Carleman embedding of the HJ equations (CHJ) which permits substantial memory savings; iii) Emulate the CHJ quantum algorithm on a classical computer and analyse its convergence and accuracy for the specific case of Kolmogorov-like flows at moderate Reynolds numbers. To the best of our knowledge, this is the first quantum algorithm based on a quantum-like wave formulation of the genuine Navier-Stokes equations, including pressure, dissipation and vorticity.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.19310v3",
+   "title": "Solving the Nonlinear Vlasov Equation on a Quantum Computer",
+   "published": "2024-11-28",
+   "updated": "2026-09-03",
+   "authors": [
+    "Tam\u00e1s Vaszary",
+    "Animesh Datta",
+    "Tom Goffrey",
+    "Brian Appelbe"
+   ],
+   "abstract": "The practical applicability of a recent Carleman-linearization-based quantum algorithm for solving ordinary differential equations (ODEs) with quadratic nonlinearities is investigated for the nonlinear electrostatic Vlasov equation with Krook-type collision operators. The equation is discretized on a (1+1)-dimensional phase-space grid and mapped onto the input of the quantum algorithm. Upper bounds for the query and gate complexities are derived in the limit of large grid sizes and found to be polynomially larger than the time complexity of the corresponding classical algorithms, primarily due to the dimension, sparsity, and norm of the Carleman-linearized evolution matrix. The convergence criteria are shown to impose severe restrictions on physically relevant plasma applications, requiring dissipation levels far exceeding those provided by the Krook operator.",
+   "journal_ref": "Quantum 10, 2206 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.25822v1",
+   "title": "Fast-forwarding quantum algorithms for weakly nonlinear dissipative differential equations and beyond",
+   "published": "2026-08-26",
+   "updated": "2026-08-26",
+   "authors": [
+    "Yixiang Li",
+    "Dong An"
+   ],
+   "abstract": "We study a fast-forwarded quantum algorithm for solving weakly nonlinear dissipative ordinary differential equations. Our approach is a combination of the Carleman embedding technique and the linear combination of Hamiltonian simulation algorithm for linearized systems with fast-forwarded scaling. The complexity of our algorithm does not explicitly depend on the evolution time $T$, thus greatly improving the previous state-of-the-art $\\widetilde{\\mathcal{O}}(\\sqrt{T})$ to $\\mathcal{O}(1)$, and any remaining time dependence enters through the output norm and forcing parameters. We rigorously analyze the performance of this approach by convergence guarantees of the Carleman embedding for time-dependent coefficient matrices and detailed complexity estimates, and improve the realization of the Carleman-embedding-based algorithms by simplifying the post-selection step. In addition, we perform a numerical study on differential equations beyond the weakly nonlinear case, and identify possibility of achieving fast-forwarding scaling for systems with stronger nonlinearity or linear non-resonant effect.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2509.07155v1",
+   "title": "Quantum algorithms for general nonlinear dynamics based on the Carleman embedding",
+   "published": "2025-09-08",
+   "updated": "2025-09-08",
+   "authors": [
+    "David Jennings",
+    "Kamil Korzekwa",
+    "Matteo Lostaglio",
+    "Andrew T Sornborger",
+    "Yigit Subasi",
+    "Guoming Wang"
+   ],
+   "abstract": "Important nonlinear dynamics, such as those found in plasma and fluid systems, are typically hard to simulate on classical computers. Thus, if fault-tolerant quantum computers could efficiently solve such nonlinear problems, it would be a transformative change for many industries. In a recent breakthrough [Liu et al., PNAS 2021], the first efficient quantum algorithm for solving nonlinear differential equations was constructed, based on a single condition $R<1$, where $R$ characterizes the ratio of nonlinearity to dissipation. This result, however, is limited to the class of purely dissipative systems with negative log-norm, which excludes application to many important problems. In this work, we correct technical issues with this and other prior analysis, and substantially extend the scope of nonlinear dynamical systems that can be efficiently simulated on a quantum computer in a number of ways. Firstly, we extend the existing results from purely dissipative systems to a much broader class of stable systems, and show that every quadratic Lyapunov function for the linearized system corresponds to an independent $R$-number criterion for the convergence of the Carlemen scheme. Secondly, we extend our stable system results to physically relevant settings where conserved polynomial quantities exist. Finally, we provide extensive results for the class of non-resonant systems. With this, we are able to show that efficient quantum algorithms exist for a much wider class of nonlinear systems than previously known, and prove the BQP-completeness of nonlinear oscillator problems of exponential size. In our analysis, we also obtain several results related to the Poincar\u00e9-Dulac theorem and diagonalization of the Carleman matrix, which could be of independent interest.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2501.11146v3",
+   "title": "An efficient explicit implementation of a near-optimal quantum algorithm for simulating linear dissipative differential equations",
+   "published": "2025-01-19",
+   "updated": "2026-04-16",
+   "authors": [
+    "Ivan Novikau",
+    "Ilon Joseph"
+   ],
+   "abstract": "We propose an efficient block-encoding technique for the implementation of the Linear Combination of Hamiltonian Simulations (LCHS) for simulating dissipative initial-value problems. This algorithm approximates a target nonunitary operator as a weighted sum of Hamiltonian evolutions, thereby emulating a dissipative problem by mixing various time scales. We introduce an efficient encoding of the LCHS into a quantum circuit based on a simple coordinate transformation that turns the dependence on the summation index into a trigonometric function. Classically, this method is equivalent to the use of a highly accurate Fej\u00e9r-Clenshaw-Curtis quadrature formula. Quantumly, this significantly simplifies block-encoding of a dissipative problem and allows one to perform an exponential number of Hamiltonian simulations by a single Quantum Signal Processing (QSP) circuit. The resulting LCHS circuit has high success probability and the selector scales logarithmically with the number of terms in the LCHS sum and linearly with time. Careful analysis of error convergence proves that this method is more efficient than other LCHS circuits that have recently appeared in the literature. We verify the quantum circuit and its scaling by simulating it on a digital emulator of fault-tolerant quantum computers and, as a test problem, solve the advection-diffusion equation. The proposed algorithm can be used for modeling a wide class of nonunitary initial-value problems including the Liouville equation with added dissipation and linear embeddings of nonlinear systems, such as the Koopman-von Neumann and Carleman embeddings.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2205.01141v2",
+   "title": "Efficient quantum algorithm for nonlinear reaction-diffusion equations and energy estimation",
+   "published": "2022-05-02",
+   "updated": "2023-11-06",
+   "authors": [
+    "Dong An",
+    "Di Fang",
+    "Stephen Jordan",
+    "Jin-Peng Liu",
+    "Guang Hao Low",
+    "Jiasu Wang"
+   ],
+   "abstract": "Nonlinear differential equations exhibit rich phenomena in many fields but are notoriously challenging to solve. Recently, Liu et al. [1] demonstrated the first efficient quantum algorithm for dissipative quadratic differential equations under the condition $R < 1$, where $R$ measures the ratio of nonlinearity to dissipation using the $\\ell_2$ norm. Here we develop an efficient quantum algorithm based on [1] for reaction-diffusion equations, a class of nonlinear partial differential equations (PDEs). To achieve this, we improve upon the Carleman linearization approach introduced in [1] to obtain a faster convergence rate under the condition $R_D < 1$, where $R_D$ measures the ratio of nonlinearity to dissipation using the $\\ell_{\\infty}$ norm. Since $R_D$ is independent of the number of spatial grid points $n$ while $R$ increases with $n$, the criterion $R_D<1$ is significantly milder than $R<1$ for high-dimensional systems and can stay convergent under grid refinement for approximating PDEs. As applications of our quantum algorithm we consider the Fisher-KPP and Allen-Cahn equations, which have interpretations in classical physics. In particular, we show how to estimate the mean square kinetic energy in the solution by postprocessing the quantum state that encodes it to extract derivative information.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.06488v2",
+   "title": "Efficient quantum algorithm for solving differential equations with Fourier nonlinearity via Koopman linearization",
+   "published": "2025-12-06",
+   "updated": "2026-08-26",
+   "authors": [
+    "Judd Katz",
+    "Gopikrishnan Muraleedharan",
+    "Abhijeet Alase"
+   ],
+   "abstract": "Quantum algorithms offer an exponential advantage with respect to the number of dependent variables for solving certain nonlinear ordinary differential equations (ODEs). These algorithms typically begin by transforming the original nonlinear ODE into a higher-dimensional linear ODE using a linearization technique, most commonly Carleman linearization. Existing works restrict their analysis to ODEs where the nonlinearities are polynomial functions of the dependent variables, significantly limiting their applicability. In this work we construct an efficient quantum algorithm for solving ODEs with `Fourier' nonlinear terms expressible as $d{\\bf u}/dt = G_0 + G_1 e^{i{\\bf u}}$, where ${\\bf u}$ denotes a vector of $n$ complex variables evolving with $t$, $G_0$ is an $n$-dimensional complex vector, $G_1$ is an $n \\times n$ complex matrix and $e^{i{\\bf u}}$ denotes the vector with entries $\\{e^{iu_j}\\}$. To tackle the Fourier nonlinear term, which is not expressible as a finite sum of polynomials of ${\\bf u}$, our algorithm employs a generalization of the Carleman linearization technique known as Koopman linearization. We also make other methodological advances towards relaxing the stringent dissipativity condition required for efficient solution extraction and towards integrated readout of classical quantities from the solution state. Our results open avenues to the development of efficient quantum algorithms for a significantly wider class of high-dimensional nonlinear ODEs, thereby broadening the scope of their applications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.03185v4",
+   "title": "Efficient quantum algorithm for dissipative nonlinear differential equations",
+   "published": "2020-11-06",
+   "updated": "2026-07-07",
+   "authors": [
+    "Jin-Peng Liu",
+    "Herman \u00d8ie Kolden",
+    "Hari K. Krovi",
+    "Nuno F. Loureiro",
+    "Konstantina Trivisa",
+    "Andrew M. Childs"
+   ],
+   "abstract": "Nonlinear differential equations model diverse phenomena but are notoriously difficult to solve. While there has been extensive previous work on efficient quantum algorithms for linear differential equations, the linearity of quantum mechanics has limited analogous progress for the nonlinear case. Despite this obstacle, we develop a quantum algorithm for dissipative quadratic $n$-dimensional ordinary differential equations. Assuming $R < 1$, where $R$ is a parameter characterizing the ratio of the nonlinearity and forcing to the linear dissipation, this algorithm has complexity $T^2 q~\\mathrm{poly}(\\log T, \\log n, \\log 1/\u03b5)/\u03b5$, where $T$ is the evolution time, $\u03b5$ is the allowed error, and $q$ measures decay of the solution. This is an exponential improvement over the best previous quantum algorithms, whose complexity is exponential in $T$. While exponential decay precludes efficiency, driven equations can avoid this issue despite the presence of dissipation. Our algorithm uses the method of Carleman linearization, for which we give a novel convergence theorem. This method maps a system of nonlinear differential equations to an infinite-dimensional system of linear differential equations, which we discretize, truncate, and solve using the forward Euler method and the quantum linear system algorithm. We also provide a lower bound on the worst-case complexity of quantum algorithms for general quadratic differential equations, showing that the problem is intractable for $R \\ge \\sqrt{2}$. Finally, we discuss potential applications, showing that the $R < 1$ condition can be satisfied in realistic epidemiological models and giving numerical evidence that the method may describe a model of fluid dynamics even for larger values of $R$.",
+   "journal_ref": "Proceedings of the National Academy of Sciences 118, e2026805118 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.25429v1",
+   "title": "Deterministic Realization of Classical Dissipation on Quantum Computers",
+   "published": "2026-04-28",
+   "updated": "2026-04-28",
+   "authors": [
+    "Muhammad Idrees Khan",
+    "Sauro Succi",
+    "Hua-Dong Yao"
+   ],
+   "abstract": "Lattice Boltzmann (LB) on quantum devices must reconcile unitary gate evolution with the dissipative \\emph{collision} step. In the multiple-relaxation-time (MRT) class, we work in the common setting of \\emph{modewise diagonal} moment relaxation, $\u03b4m_r'=\u03bb_r\\,\u03b4m_r$ with $\u03bb_r\\in[-1,1]$ (overrelaxation if $\u03bb_r<0$). Embedding that contraction in a unitary by block encoding or a linear combination of unitaries (LCU) typically yields subunitary success probability that decays multiplicatively across modes, sites, and time, a key bottleneck for quantum LB. \\emph{For the dissipative MRT block alone} we give a \\emph{block-encoding-free} construction: a signed \\emph{two-rail} population encoding, then a completely positive trace-preserving (CPTP) map (per-rail amplitude damping with survival $|\u03bb_r|$ and, if $\u03bb_r<0$, a rail SWAP) so that, after the decode, the map agrees with classical MRT relaxation exactly (expectations of the rail number operators, common encoding--decode scale). Trace preservation gives success probability $1$ for that substage. The main result is the dissipative MRT block; construction of the equilibrium moment vector~$m^{\\mathrm{eq}}=Mf^{\\mathrm{eq}}$ (prescribed~$f^{\\mathrm{eq}}$, host moment matrix~$M$; notation as in Section~\\ref{subsec:generic-mrt}), moment transforms, streaming, and boundaries are composed with it as in a standard host pipeline and lie outside the scope of the formal theorem. Hybrid and fully coherent encodings, adaptive scales, Carleman-based context, and a one-rail no-go in the same nonnegative population framework are in the main text. Audits of the open-channel map on a long LBM collide-stream simulation and on stencil-free inputs both match the target to machine precision.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2511.09939v1",
+   "title": "Provably Efficient Quantum Algorithms for Solving Nonlinear Differential Equations Using Multiple Bosonic Modes Coupled with Qubits",
+   "published": "2025-11-13",
+   "updated": "2025-11-13",
+   "authors": [
+    "Yu Gan",
+    "Hirad Alipanah",
+    "Jinglei Cheng",
+    "Zeguan Wu",
+    "Guangyi Li",
+    "Juan Jos\u00e9 Mendoza-Arenas",
+    "Peyman Givi",
+    "Mujeeb R. Malik",
+    "Brian J. McDermott",
+    "Junyu Liu"
+   ],
+   "abstract": "Quantum computers have long been expected to efficiently solve complex classical differential equations. Most digital, fault-tolerant approaches use Carleman linearization to map nonlinear systems to linear ones and then apply quantum linear-system solvers. However, provable speedups typically require digital truncation and full fault tolerance, rendering such linearization approaches challenging to implement on current hardware. Here we present an analog, continuous-variable algorithm based on coupled bosonic modes with qubit-based adaptive measurements that avoids Hilbert-space digitization. This method encodes classical fields as coherent states and, via Kraus-channel composition derived from the Koopman-von Neumann (KvN) formalism, maps nonlinear evolution to linear dynamics. Unlike many analog schemes, the algorithm is provably efficient: advancing a first-order, $L$-grid point, $d$-dimensional, order-$K$ spatial-derivative, degree-$r$ polynomial-nonlinearity, strongly dissipative partial differential equations (PDEs) for $T$ time steps costs $\\mathcal{O}\\left(T(\\log L + d r \\log K)\\right)$. The capability of the scheme is demonstrated by using it to simulate the one-dimensional Burgers' equation and two-dimensional Fisher-KPP equation. The resilience of the method to photon loss is shown under strong-dissipation conditions and an analytic counterterm is derived that systematically cancels the dominant, experimentally calibrated noise. This work establishes a continuous-variable framework for simulating nonlinear systems and identifies a viable pathway toward practical quantum speedup on near-term analog hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.03985v2",
+   "title": "Quantum algorithm for the advection-diffusion equation and the Koopman-von Neumann approach to nonlinear dynamical systems",
+   "published": "2024-10-04",
+   "updated": "2025-01-18",
+   "authors": [
+    "Ivan Novikau",
+    "Ilon Joseph"
+   ],
+   "abstract": "We propose an explicit algorithm based on the Linear Combination of Hamiltonian Simulations technique to simulate both the advection-diffusion equation and a nonunitary discretized version of the Koopman-von Neumann formulation of nonlinear dynamics. By including dissipation into the model, through an upwind discretization of the advection operator, we avoid spurious parasitic oscillations which usually accompany standard finite difference discretizations of the advection equation. In contrast to prior works on quantum simulation of nonlinear problems, we explain in detail how different components of the algorithm can be implemented by using the Quantum Signal Processing (QSP) and Quantum Singular Value Transformation (QSVT) methods. In addition, we discuss the general method for implementing the block-encoding (BE) required for QSP and QSVT circuits and provide explicit implementations of the BE oracles tailored to our specific test cases. We simulate the resulting circuit on a digital emulator of quantum fault-tolerant computers and investigate its complexity and success probability. The proposed algorithm is universal and can be used for modeling a broad class of linear and nonlinear differential equations including the KvN and Carleman embeddings of nonlinear systems, the semiclassical Koopman-van Hove (KvH) equation, as well as the advection and Liouville equations.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2202.01054v5",
+   "title": "Improved quantum algorithms for linear and nonlinear differential equations",
+   "published": "2022-02-02",
+   "updated": "2025-12-12",
+   "authors": [
+    "Hari Krovi"
+   ],
+   "abstract": "We present substantially generalized and improved quantum algorithms over prior work for inhomogeneous linear and nonlinear ordinary differential equations (ODE). Specifically, we show how the norm of the matrix exponential characterizes the run time of quantum algorithms for linear ODEs opening the door to an application to a wider class of linear and nonlinear ODEs. In Berry et al., (2017), a quantum algorithm for a certain class of linear ODEs is given, where the matrix involved needs to be diagonalizable. The quantum algorithm for linear ODEs presented here extends to many classes of non-diagonalizable matrices. The algorithm here is also exponentially faster than the bounds derived in Berry et al., (2017) for certain classes of diagonalizable matrices. Our linear ODE algorithm is then applied to nonlinear differential equations using Carleman linearization (an approach taken recently by us in Liu et al., (2021)). The improvement over that result is two-fold. First, we obtain an exponentially better dependence on error. This kind of logarithmic dependence on error has also been achieved by Xue et al., (2021), but only for homogeneous nonlinear equations. Second, the present algorithm can handle any sparse, invertible matrix (that models dissipation) if it has a negative log-norm (including non-diagonalizable matrices), whereas Liu et al., (2021) and Xue et al., (2021) additionally require normality.",
+   "journal_ref": "Quantum 7, 913 (2023)",
+   "primary": "quant-ph"
+  }
+ ]
+}

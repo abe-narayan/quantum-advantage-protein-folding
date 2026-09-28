@@ -1,0 +1,144 @@
+{
+ "key": "md_quantum_comp",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28ti%3A%22molecular+dynamics%22+AND+%28ti%3A%22quantum+computer%22+OR+ti%3A%22quantum+computing%22+OR+ti%3A%22quantum+computers%22%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:57",
+ "records": [
+  {
+   "id": "2008.06562v3",
+   "title": "Ab Initio Molecular Dynamics on Quantum Computers",
+   "published": "2020-08-14",
+   "updated": "2021-04-07",
+   "authors": [
+    "Dmitry A. Fedorov",
+    "Matthew J. Otten",
+    "Stephen K. Gray",
+    "Yuri Alexeev"
+   ],
+   "abstract": "Ab initio molecular dynamics (AIMD) is a valuable technique for studying molecules and materials at finite temperatures where the nuclei evolve on potential energy surfaces obtained from accurate electronic structure calculations. In this work, a quantum computer-based AIMD method is presented. The electronic energies are calculated on a quantum computer using the variational quantum eigensolver (VQE) method. We compute the energy gradients numerically using the Hellmann-Feynman theorem, finite differences, and a correlated sampling technique. Our method only requires additional classical calculations of electron integrals for each degree of freedom, without any additional computations on a quantum computer beyond the initial VQE run. To achieve comparable accuracy, our gradient calculation method requires three to five orders of magnitude fewer measurements than other brute force methods without correlated sampling. As a proof of concept, AIMD dynamics simulations are demonstrated for the H2 molecule on IBM quantum devices. To the best of our knowledge, it is the first successful attempt to run AIMD on quantum devices for a chemical system. In addition, we demonstrate the validity of the method for larger molecules using full configuration interaction (FCI) wave functions. As quantum hardware and noise mitigation techniques continue to improve, the method can be utilized for studying larger molecular and material systems.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2407.17819v2",
+   "title": "Simulating open-system molecular dynamics on analog quantum computers",
+   "published": "2024-07-25",
+   "updated": "2025-06-02",
+   "authors": [
+    "V. C. Olaya-Agudelo",
+    "B. Stewart",
+    "C. H. Valahu",
+    "R. J. MacDonell",
+    "M. J. Millican",
+    "V. G. Matsos",
+    "F. Scuccimarra",
+    "T. R. Tan",
+    "I. Kassal"
+   ],
+   "abstract": "Interactions of molecules with their environment influence the course and outcome of almost all chemical reactions. However, classical computers struggle to accurately simulate complicated molecule-environment interactions because of the steep growth of computational resources with both molecule size and environment complexity. Therefore, many quantum-chemical simulations are restricted to isolated molecules, whose dynamics can dramatically differ from what happens in an environment. Here, we show that analog quantum simulators can simulate open molecular systems by using the native dissipation of the simulator and injecting additional controllable dissipation. By exploiting the native dissipation to simulate the molecular dissipation -- rather than seeing it as a limitation -- our approach enables longer simulations of open systems than are possible for closed systems. In particular, we show that trapped-ion simulators using a mixed qudit-boson (MQB) encoding could simulate molecules in a wide range of condensed phases by implementing widely used dissipative processes within the Lindblad formalism, including pure dephasing and both electronic and vibrational relaxation. The MQB open-system simulations require significantly fewer additional quantum resources compared to both classical and digital quantum approaches.",
+   "journal_ref": "Phys. Rev. Research 7, 023215 (2025)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2607.28548v1",
+   "title": "Quantum Computing Enabled ab initio Molecular Dynamics Simulations",
+   "published": "2026-07-30",
+   "updated": "2026-07-30",
+   "authors": [
+    "Susanta Das",
+    "Subhamoy Bhowmik",
+    "Zhen Li",
+    "Milana Bazayeva",
+    "Danil Kaliakin",
+    "Akhil Shajan",
+    "Kenneth M. Merz"
+   ],
+   "abstract": "We demonstrate a quantum-classical workflow for ab initio molecular dynamics (AIMD) in which quantum measurements from a chemistry-inspired LUCJ ansatz are post-processed using Sample-based Quantum Diagonalization (SQD) to recover determinant subspaces and deliver energies and analytical nuclear gradients for dynamics. As an exact benchmark, we use full configuration interaction (FCI) in the STO-3G basis, enabling a direct assessment of the accuracy of SQD. In gas-phase benchmarks, SQD reproduces FCI energies and gradients to within 1 kcal mol$^{-1}$ of the FCI reference and yields stable AIMD trajectories. In explicit-solvent QM/MM simulations, SQD retains this agreement, matching FCI energy fluctuations and RMS gradient profiles and reproducing solute-solvent structure as quantified by radial distribution functions. Overall, these benchmarks establish LUCJ+SQD as a practical route for integrating current quantum hardware into QM/MM molecular dynamics and provide an early demonstration of condensed-phase QM/MM dynamics driven by a quantum electronic-structure engine.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2008.08144v1",
+   "title": "Microcanonical and finite temperature ab initio molecular dynamics simulations on quantum computers",
+   "published": "2020-08-18",
+   "updated": "2020-08-18",
+   "authors": [
+    "Igor O. Sokolov",
+    "Panagiotis Kl. Barkoutsos",
+    "Lukas Moeller",
+    "Philippe Suchsland",
+    "Guglielmo Mazzola",
+    "Ivano Tavernelli"
+   ],
+   "abstract": "Ab initio molecular dynamics (AIMD) is a powerful tool to predict properties of molecular and condensed matter systems. The quality of this procedure is based on accurate electronic structure calculations. The development of quantum processors has shown great potential for the efficient evaluation of accurate ground and excited state energies of molecular systems, opening up new avenues for molecular dynamics simulations. In this work we address the use of variational quantum algorithms for the calculation of accurate atomic forces to be used in AIMD. In particular, we provide solutions for the alleviation of the statistical noise associated to the measurements of the expectation values of energies and forces, as well as schemes for the mitigation of the hardware noise sources (in particular, gate infidelities, qubit decoherence and readout errors). Despite the relative large error in the calculation of the potential energy, our results show that the proposed algorithms can provide reliable MD trajectories in the microcanonical (constant energy) ensemble. Further, exploiting the intrinsic noise arising from the quantum measurement process, we also propose a Langevin dynamics algorithm for the simulation of canonical, i.e., constant temperature, dynamics. Both algorithms (microcanonical and canonical) are applied to the simulation of simple molecular systems such as H2 and H3+. Finally, we also provide results for the dynamics of H2 obtained with IBM quantum computer ibmq_athens.",
+   "journal_ref": "Phys. Rev. Research 3, 013125 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2505.16796v2",
+   "title": "Extending Quantum Computing through Subspace, Embedding and Classical Molecular Dynamics Techniques",
+   "published": "2025-05-22",
+   "updated": "2025-11-10",
+   "authors": [
+    "Thomas M. Bickley",
+    "Angus Mingare",
+    "Tim Weaving",
+    "Michael Williams de la Bastida",
+    "Shunzhou Wan",
+    "Martina Nibbi",
+    "Philipp Seitz",
+    "Alexis Ralli",
+    "Peter J. Love",
+    "Minh Chung",
+    "Mario Hern\u00e1ndez Vera",
+    "Laura Schulz",
+    "Peter V. Coveney"
+   ],
+   "abstract": "The advent of hybrid computing platforms consisting of quantum processing units integrated with conventional high-performance computing brings new opportunities for algorithm design. By strategically offloading select portions of the workload to classical hardware where tractable, we may broaden the applicability of quantum computation in the near term. In this perspective, we review techniques that facilitate the study of subdomains of chemical systems with quantum computers and present a proof-of-concept demonstration of quantum-selected configuration interaction deployed within a multiscale/multiphysics simulation workflow leveraging classical molecular dynamics, projection-based embedding and qubit subspace tools. This allows the technology to be utilised for simulating systems of real scientific and industrial interest, which not only brings true quantum utility closer to realisation but is also relevant as we look forward to the fault-tolerant regime.",
+   "journal_ref": "Digital Discovery, 2025, 4, 3427-3444",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2404.10001v3",
+   "title": "Feasibility of first principles molecular dynamics in fault-tolerant quantum computer by quantum phase estimation",
+   "published": "2024-03-31",
+   "updated": "2025-04-21",
+   "authors": [
+    "Ichio Kikuchi",
+    "Akihito Kikuchi"
+   ],
+   "abstract": "This article shows a proof of concept regarding the feasibility of ab initio molecular simulation, wherein the wavefunctions and the positions of nuclei are simultaneously determined by the quantum algorithm, as is realized by the so-called Car-Parrinello method by classical computing. The approach used in this article is of a hybrid style, which shall be realized by future fault-tolerant quantum computer. First, the basic equations are approximated by polynomials. Second, those polynomials are transformed to a specific form, wherein all variables (representing the wavefunctions and the atomic coordinates) are given by the transformations acting on a linear space of monomials with finite dimension, and the unknown variables could be determined as the eigenvalues of those transformation matrices. Third, the eigenvalues are determined by quantum phase estimation. Following these three steps, namely, symbolic, numeric, and quantum steps, we can determine the optimized electronic and atomic structures of molecules.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2503.23750v2",
+   "title": "Float Lattice Gas Automata: A connection between Molecular Dynamics and Lattice Boltzmann Method for quantum computers",
+   "published": "2025-03-31",
+   "updated": "2025-06-27",
+   "authors": [
+    "Antonio David Bastida Zamora",
+    "Ljubomir Budinski",
+    "Valtteri Lahtinen",
+    "Pierre Sagaut"
+   ],
+   "abstract": "Building upon the Integer Lattice Gas Automata framework of Blommel \\textit{et al.} \\cite{PhysRevE.97.023310}, we introduce a simplified, fluctuation-free variant. This approach relies on floating-point numbers and closely mirrors the Lattice Boltzmann Method (LBM), with the key distinction being a novel collision operator. This operator, derived from the ensemble average of transition probabilities, generates nonlinear terms. We propose this new Float Lattice Gas Automata (FLGA) collision as a computationally efficient alternative to traditional and quantum LBM implementations.",
+   "journal_ref": "Phys. Rev. E 112, 015305 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2212.11921v1",
+   "title": "Quantum Car-Parrinello Molecular Dynamics: A Cost-Efficient Molecular Simulation Method on Near-Term Quantum Computers",
+   "published": "2022-12-22",
+   "updated": "2022-12-22",
+   "authors": [
+    "Kohdai Kuroiwa",
+    "Takahiro Ohkuma",
+    "Hirokazu Sato",
+    "Ryosuke Imai"
+   ],
+   "abstract": "In this paper, we propose a cost-reduced method for finite-temperature molecular dynamics on a near-term quantum computer, Quantum Car-Parrinello molecular dynamics (QCPMD). One of the most promising applications of near-term quantum computers is quantum chemistry. It has been expected that simulations of molecules via molecular dynamics can be also efficiently performed on near-term quantum computers by applying a promising near-term quantum algorithm of the variational quantum eigensolver (VQE). However, this method may demand considerable computational costs to achieve a sufficient accuracy, and otherwise, statistical noise can significantly affect the results. To resolve these problems, we invent an efficient method for molecular time evolution inspired by Car-Parrinello method. In our method, parameters characterizing the quantum state evolve based on equations of motion instead of being optimized. Furthermore, by considering Langevin dynamics, we can make use of the intrinsic statistical noise. As an application of QCPMD, we propose an efficient method for vibrational frequency analysis of molecules in which we can use the results of the molecular dynamics calculated by QCPMD. Numerical experiments show that our method can precisely simulate the Langevin dynamics at the equilibrium state, and we can successfully predict a given molecule's eigen frequencies. Furthermore, in the numerical simulation, our method achieves a substantial cost reduction compared with molecular dynamics using the VQE. Our method achieves an efficient computation without using widely employed method of the VQE. In this sense, we open up a new possibility of molecular dynamics on near-term quantum computers. We expect our results inspire further invention of efficient near-term quantum algorithms for simulation of molecules.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "pdb": "1L2Y",
+ "platform": "CPU",
+ "threads": 1,
+ "dt_fs": 2.0,
+ "implicit_gbn2_s_per_step": 0.014951987500535325,
+ "implicit_ns_per_day_1core": 11.556992004829677,
+ "explicit_pme_n_atoms": 4826,
+ "explicit_pme_s_per_step": 0.01858650249778293,
+ "explicit_ns_per_day_1core": 9.297069204957321,
+ "machine_cpu_percent_during": 66.3
+}

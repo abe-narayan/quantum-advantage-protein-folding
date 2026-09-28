@@ -178,3 +178,8 @@ This is a physics-simulation question (category-3 candidate), not a protein-stru
   - **SUPPORT** only if a family's preconditions hold for protein force fields and T*_Q,s ≤ 1 day at a stated t_T.
 - **Pro-quantum red team (CRITIC A-4).** The target is false kills among K-105, K-109, K-111 and the FeMoco WEAK residue.
   - Any kill whose load-bearing arm fails is reopened, with a revival template.
+
+- **2026-09-28 (round 4 outcomes, D-R4-1 to D-R4-3):**
+  - **D-R4-1.** T-X-early was not executable under the per-agent cap (the minimum complete test is 161 CPU-min against 90). Recorded outcome: KEEP OPEN by default. The X-based criterion is retired as ill-posed (K-120).
+  - **D-R4-2.** The literal spinDMFT rule could not fire because its comparator (the CSD + exact-X hybrid) was refuted by MEASURED data. K-119 (40 µs) is closed **post hoc** under H-2, with pre-registered Addendum B as corroboration. It is provisional pending R-1 (replication on 1PGA p390, 1UBQ p487 and further orientations).
+  - **D-R4-3.** H-2 is extended. Cross-family means ≥ 2 cluster rules, each containing b's dominant partners (M2_b coverage reported), plus a thermodynamic estimator. Single-family step or plateau statistics never establish convergence. Every new rule must be costed against the compute cap before it is registered.

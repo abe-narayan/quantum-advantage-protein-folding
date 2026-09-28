@@ -1,0 +1,6 @@
+{
+ "key": "msm_quantum",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28%28abs%3A%22Markov+state+model%22+OR+abs%3A%22Markov+state+models%22%29+AND+abs%3Aquantum+AND+%28abs%3Awalk+OR+abs%3Acomputer+OR+abs%3Aalgorithm+OR+abs%3Aannealer%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:01",
+ "records": []
+}

@@ -1,0 +1,93 @@
+{
+ "key": "level_set_obs",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28abs%3A%22quantum+algorithms%22+AND+abs%3Aobservables+AND+abs%3Anonlinear+AND+abs%3A%22partial+differential%22%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:18",
+ "records": [
+  {
+   "id": "2608.09675v1",
+   "title": "An Efficient Explicit Implementation of a Quantum Algorithm with Quantum Advantage for Nonlinear Scalar Conservation Laws",
+   "published": "2026-08-10",
+   "updated": "2026-08-10",
+   "authors": [
+    "Kezhen Wang",
+    "Junpeng Hu",
+    "Lei Zhang"
+   ],
+   "abstract": "Quantum algorithms for nonlinear partial differential equations remain challenging because nonlinear dynamics are not directly amenable to unitary quantum simulation. Building on the level-set formulation, we construct a quantum algorithm and provide an explicit gate-level implementation for solving scalar conservation laws. The nonlinear equation is first lifted to a linear Liouville equation, discretized by finite differences, and then embedded into a unitary evolution through Schr\u00f6dingerisation. We further develop quantum procedures for estimating relevant observables from the evolved state. Error bounds and gate-complexity estimates are established for the complete algorithm. The resulting complexity comparison demonstrates a quantum advantage for observable estimation in sufficiently high spatial dimensions, under standard assumptions on state preparation and oracle access. Finally, numerical experiments validate the accuracy, multidimensional applicability, and predicted scaling of the proposed method.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.14079v1",
+   "title": "Hybrid quantum-classical algorithms for complex nonlinear partial differential equations with Ginzburg-Landau potential and vortex motion laws",
+   "published": "2026-04-15",
+   "updated": "2026-04-15",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Chuwen Ma"
+   ],
+   "abstract": "We propose quantum algorithms for complex-valued nonlinear partial differential equations in the strongly nonlinear regime, where the dynamics is governed by vortex cores, phase singularities, and nonlinear vortex interactions. Examples include the complex-valued nonlinear Schr\u00f6dinger equation, as well as nonlinear heat and wave equations with Ginzburg--Landau-type nonlinearity. In the strongly nonlinear regime, the solutions to these equations are asymptotically governed by, in leading order, linear elliptic equations, coupled with low-dimensional vortex dynamics, where the vortex cores correspond to topological defects in superconductors. Our hybrid quantum-classical algorithms utilize this asymptotic property, in which the vortex dynamic is advanced classically while the boundary-value problem of linear elliptic equation is handled by quantum algorithms. For the two-dimensional nonlinear Schr\u00f6dinger equation, we also combine quantum BPX preconditioning with Schr\u00f6dingerization to estimate physically relevant observables in the small-output regime. This yields, already in two dimensions, an {\\it exponential} improvement in the dependence on the spatial problem size, while the dependence on the target accuracy remains essentially linear up to polylogarithmic factors. We further show that the same principle extends to dissipative Ginzburg--Landau vortex dynamics and to vortex filaments in three-dimensional superconductivity. Numerical results support the validity of this PDE reduction and the effectiveness of the proposed approach.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2609.09268v1",
+   "title": "Reconstructing fluid velocity fields from sparse sensors using a variational quantum algorithm",
+   "published": "2026-09-08",
+   "updated": "2026-09-08",
+   "authors": [
+    "Nhat-Quang Nguyen",
+    "Mohammad Mehedi Hasan Akash",
+    "Kourosh Shoele",
+    "Yanzhu Chen",
+    "Huixuan Wu"
+   ],
+   "abstract": "Reconstructing fields governed by nonlinear partial differential equations (PDEs) from sparse measurements is a challenging task because the governing equations are strongly nonlinear and observations are available at only a few locations. Fluid velocity fields are a representative case. In this paper, we propose a variational quantum algorithm that reconstructs the solution over the entire spacetime domain at once. Rather than marching in time, the method encodes the full discrete spacetime solution in a single variational quantum state, so that all time points are optimized jointly. The cost function combines a sparse-measurement mismatch term with a physics-informed PDE violation term, letting data and the governing equation constrain the solution simultaneously. We demonstrate the method on the one-dimensional Burgers and Kuramoto--Sivashinsky equations using numerical simulations. The results suggest that variational quantum algorithms with a spacetime encoding scheme offer a compact framework for reconstructing nonlinear PDE dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2209.08478v2",
+   "title": "Time complexity analysis of quantum algorithms via linear representations for nonlinear ordinary and partial differential equations",
+   "published": "2022-09-18",
+   "updated": "2023-06-12",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Yue Yu"
+   ],
+   "abstract": "We construct quantum algorithms to compute the solution and/or physical observables of nonlinear ordinary differential equations (ODEs) and nonlinear Hamilton-Jacobi equations (HJE) via linear representations or exact mappings between nonlinear ODEs/HJE and linear partial differential equations (the Liouville equation and the Koopman-von Neumann equation). The connection between the linear representations and the original nonlinear system is established through the Dirac delta function or the level set mechanism. We compare the quantum linear systems algorithms based methods and the quantum simulation methods arising from different numerical approximations, including the finite difference discretisations and the Fourier spectral discretisations for the two different linear representations, with the result showing that the quantum simulation methods usually give the best performance in time complexity. We also propose the Schr\u00f6dinger framework to solve the Liouville equation for the HJE with the Hamiltonian formulation of classical mechanics, since it can be recast as the semiclassical limit of the Wigner transform of the Schr\u00f6dinger equation. Comparsion between the Schr\u00f6dinger and the Liouville framework will also be made.",
+   "journal_ref": "Journal of Computational Physics, 487:112149, 2023",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.03838v1",
+   "title": "Quantum Simulation of Nonlinear Dynamical Systems Using Repeated Measurement",
+   "published": "2024-10-04",
+   "updated": "2024-10-04",
+   "authors": [
+    "Joseph Andress",
+    "Alexander Engel",
+    "Yuan Shi",
+    "Scott Parker"
+   ],
+   "abstract": "We present a quantum algorithm based on repeated measurement to solve initial-value problems for nonlinear ordinary differential equations (ODEs), which may be generated from partial differential equations in plasma physics. We map a dynamical system to a Hamiltonian form, where the Hamiltonian matrix is a function of dynamical variables. To advance in time, we measure expectation values from the previous time step, and evaluate the Hamiltonian function classically, which introduces stochasticity into the dynamics. We then perform standard quantum Hamiltonian simulation over a short time, using the evaluated constant Hamiltonian matrix. This approach requires evolving an ensemble of quantum states, which are consumed each step to measure required observables. We apply this approach to the classic logistic and Lorenz systems, in both integrable and chaotic regimes. Out analysis shows that solutions' accuracy is influenced by both the stochastic sampling rate and the nature of the dynamical system.",
+   "journal_ref": "J. Plasma Phys. 91 (2025) E55",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2508.13879v1",
+   "title": "Quantum Sampling and Moment Estimation for Transformed Gaussian Random Fields",
+   "published": "2025-08-19",
+   "updated": "2025-08-19",
+   "authors": [
+    "Matthias Deiml",
+    "Daniel Peterseim"
+   ],
+   "abstract": "We present a quantum algorithm for efficiently sampling transformed Gaussian random fields on $d$-dimensional domains, based on an enhanced version of the classical moving average method. Pointwise transformations enforcing boundedness are essential for using Gaussian random fields in quantum computation and arise naturally, for example, in modeling coefficient fields representing microstructures in partial differential equations. Generating this microstructure from its few statistical parameters directly on the quantum device bypasses the input bottleneck. Our method enables an efficient quantum representation of the resulting random field and prepares a quantum state approximating it to accuracy $\\mathtt{tol} > 0$ in time $\\mathcal{O}(\\operatorname{polylog} \\mathtt{tol}^{-1})$. Combined with amplitude estimation and a quantum pseudorandom number generator, this leads to algorithms for estimating linear and nonlinear observables, including mixed and higher-order moments, with total complexity $\\mathcal{O}(\\mathtt{tol}^{-1} \\operatorname{polylog} \\mathtt{tol}^{-1})$. We illustrate the theoretical findings through numerical experiments on simulated quantum hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

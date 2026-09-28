@@ -1,0 +1,12 @@
+{
+ "pdb": "1PGA",
+ "platform": "CPU",
+ "threads": 1,
+ "dt_fs": 2.0,
+ "implicit_gbn2_s_per_step": 0.1304873519996181,
+ "implicit_ns_per_day_1core": 1.3242662783171946,
+ "explicit_pme_n_atoms": 10918,
+ "explicit_pme_s_per_step": 0.04143434999859892,
+ "explicit_ns_per_day_1core": 4.170452776641679,
+ "machine_cpu_percent_during": 85.3
+}

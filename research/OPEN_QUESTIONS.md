@@ -74,3 +74,19 @@ Parked residues, none a protein-structure lead:
 
 Newly scoped, examined in round 4:
 - **Physics-based all-atom sampling** of folding kinetics and ensembles. It is classically hard and structure-bearing. Every quadratic route is dead (B*₂ ≥ 2.5e15). An s = 4 algorithm would break even in principle at T*_Q ≈ 0.1–2.5 yr per sample, but no super-quadratic algorithm for classical force fields is known.
+
+## After round 4 (2026-09-28): what could still change the answer
+
+**Mission-relevant, ranked by plausibility:**
+1. **An s ≥ 3 quantum algorithm for chaotic, multi-basin Langevin dynamics of a protein force field.** It must be super-quadratic against practical MD or weighted ensemble, with a compiled force oracle, and give T*_Q ≤ 1 day. This is the only examined regime that is not resource-dead: a hypothetical s = 4 gives T*_Q,4 = 2.6 h–10 d at 10 ns (K-117).
+2. **A measured site-resolved protein Loschmidt/polarisation-echo T3/T2.** This is experimental. A value ≥ 15, with converged classical reach ≤ 80 µs, gives g ≈ 2–3 (usefulness only). g ≥ 10 needs T3/T2 ≳ 20–50.
+3. **RT-DQ-methyl** (1PGA p390 methyl butterfly; ~20–30 CPU-min; two cluster families).
+4. **FeMoco E4 model floor σ_m ≤ 1.2 kcal/mol** (external HPC). Chemistry level only.
+5. **R-1 replication of K-119** (~1.5–2 CPU-h).
+
+**Spin-off register (outside the mission):**
+- the echo at 80–120 µs, a cluster-family problem (T-F80);
+- the late window at 160–320 µs;
+- R-ROTOR;
+- the multi-parameter memory window;
+- DQI/Kikuchi reopen probes.

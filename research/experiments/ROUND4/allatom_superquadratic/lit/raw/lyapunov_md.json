@@ -1,0 +1,19 @@
+{
+ "key": "lyapunov_md",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28abs%3ALyapunov+AND+abs%3A%22molecular+dynamics%22+AND+%28abs%3Aprotein+OR+abs%3Awater+OR+abs%3Aliquid%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:51",
+ "records": [
+  {
+   "id": "2007.13236v1",
+   "title": "Crossover of dynamical instability and chaos in the supercritical state",
+   "published": "2020-07-26",
+   "updated": "2020-07-26",
+   "authors": [
+    "C. Cockrell"
+   ],
+   "abstract": "We calculate the maximal Lyapunov exponent for a bulk system of 256 Lennard-Jones particles in constant energy molecular dynamics simulations deep into the supercritical state. We find that the maximal Lyapunov exponent undergoes a crossover, and that this crossover coincides with the dynamical crossover at the Frenkel line from liquid physics. We explain this crossover in terms of two different contributions to dynamical instability: diffusion in the liquid-like state below the Frenkel line, and collisions in the gas-like state above. These results provide insight into the phase space dynamics far from the melting line and densities where rare-gas approximation are inapplicable.",
+   "journal_ref": "Phys. Rev. E 102, 062206 (2020)",
+   "primary": "cond-mat.stat-mech"
+  }
+ ]
+}

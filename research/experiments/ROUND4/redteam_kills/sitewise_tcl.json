@@ -1,0 +1,807 @@
+{
+ "pg_dq_k1_1UBQ_p19": {
+  "names_bs": [
+   "HA/GLN2",
+   "HG3/GLN2",
+   "HG22/ILE3",
+   "HA/GLU16"
+  ],
+  "methyl_sites": [
+   "HG22/ILE3"
+  ],
+  "cases": {
+   "DQ_local_7.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.1575808325586767,
+    "g_max": 1.234658022048701
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.157459181358288,
+    "g_max": 1.2277920463271186
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.1571852546551078,
+    "g_max": 1.2248898045580145
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.12866713559521,
+    "g_max": 1.1670661205042108
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.084280168846242,
+    "g_max": 1.2085245462435694
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0840383541411713,
+    "g_max": 1.2019947639638102
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.083338905479534,
+    "g_max": 1.1833707685080745
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0471490530705276,
+    "g_max": 1.1093079043333012
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.0856153496191765,
+    "g_max": 2.042478828145721
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0854265235973395,
+    "g_max": 2.016975740256683
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.0848602110444614,
+    "g_max": 1.9388883021766148
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0801130370656278,
+    "g_max": 1.2833938477153313
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.063255819722246,
+    "g_max": 1.1218957876408027
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0590757859308984,
+    "g_max": 1.1218612453077665
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.0574342460960153,
+    "g_max": 1.1218543767947187
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0504984195247686,
+    "g_max": 1.1210878787618628
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.6183514574246674,
+    "g_max": 2.510670103045646
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.6180819133541273,
+    "g_max": 2.4959118101058575
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.6174693045032724,
+    "g_max": 2.4893030893443253
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5565698659016398,
+    "g_max": 2.306514506130121
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.273671910375628,
+    "g_max": 1.6874524088372418
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.2696688470235964,
+    "g_max": 1.6872230681485736
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.2572848049741987,
+    "g_max": 1.6865565041623407
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.2075228946559236,
+    "g_max": 1.6805693631275653
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.6149300902292203,
+    "g_max": 3.714662174588661
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.6146489619099738,
+    "g_max": 3.6651370458283723
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.6137471474276919,
+    "g_max": 3.5010630326994296
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.604817519930511,
+    "g_max": 1.8656263902345482
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.376698342075657,
+    "g_max": 1.8879669646718158
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.3711943495475467,
+    "g_max": 1.8879065538767874
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.362186934497668,
+    "g_max": 1.8878940615608395
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.3401018249421905,
+    "g_max": 1.8856924735540221
+   },
+   "DQ_LE_19T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.9643872465350931,
+    "g_max": 3.784425345302648
+   },
+   "DQ_LE_19T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.9640452387109737,
+    "g_max": 3.7617621660182863
+   },
+   "DQ_LE_19T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.963292951461848,
+    "g_max": 3.7514302855421118
+   },
+   "DQ_LE_19T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.884016000450926,
+    "g_max": 3.455721726110514
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.5317328289312582,
+    "g_max": 2.1102138452860726
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.5308125650574564,
+    "g_max": 2.109912543397811
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.5278779673865994,
+    "g_max": 2.109019271670982
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5003674681619659,
+    "g_max": 2.100940743163215
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.2091345405843072,
+    "g_max": 4.094917495474835
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.2087716331134586,
+    "g_max": 4.0392119825389745
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.2075942924612537,
+    "g_max": 3.851601422532668
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.8144646181885653,
+    "g_max": 2.727139914096948
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.800257288043694,
+    "g_max": 2.9254678700353947
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.7926834977440935,
+    "g_max": 2.9253743849966716
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.7800872000934036,
+    "g_max": 2.925356123353563
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.7541230211960714,
+    "g_max": 2.9215624132390987
+   },
+   "hyp_50T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.2874370025446646,
+    "g_max": 4.7791638654818716
+   },
+   "hyp_50T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.28659252901857,
+    "g_max": 4.750067380766946
+   },
+   "hyp_50T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.2858469775962735,
+    "g_max": 4.736717138532552
+   },
+   "hyp_50T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.1647952366949603,
+    "g_max": 4.3495689855258926
+   },
+   "hyp_50T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.8154673111583421,
+    "g_max": 2.414466356194594
+   },
+   "hyp_50T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.8143503822280755,
+    "g_max": 2.414109982332029
+   },
+   "hyp_50T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.8107464752949833,
+    "g_max": 2.4130403901538604
+   },
+   "hyp_50T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.7771624888935407,
+    "g_max": 2.4034208089257465
+   },
+   "hyp_50T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.8727871719173548,
+    "g_max": 4.224228593936391
+   },
+   "hyp_50T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.8720756451743688,
+    "g_max": 4.165807038220148
+   },
+   "hyp_50T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.869866415773057,
+    "g_max": 3.9671708286775034
+   },
+   "hyp_50T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.0555680473905205,
+    "g_max": 3.575224677612304
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.412832615742305,
+    "g_max": 4.204134736654415
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.4128100939281625,
+    "g_max": 4.2040003604706575
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.4125083576204607,
+    "g_max": 4.203975401087008
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.3832684904166763,
+    "g_max": 4.198193535262092
+   }
+  }
+ },
+ "pg_dq_k1_1UBQ_p245": {
+  "names_bs": [
+   "HB/ILE30",
+   "HA/LYS27",
+   "HA/LYS29",
+   "HB2/LYS29"
+  ],
+  "methyl_sites": [],
+  "cases": {
+   "DQ_local_7.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.1110642497759822,
+    "g_max": 1.191369444957782
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.1110642497759822,
+    "g_max": 1.191369444957782
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.1110642497759822,
+    "g_max": 1.191369444957782
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.1110642497759822,
+    "g_max": 1.191369444957782
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.0467555209406587,
+    "g_max": 1.0996105862742844
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0467555209406587,
+    "g_max": 1.0996105862742844
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.0467555209406587,
+    "g_max": 1.0996105862742844
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0467555209406587,
+    "g_max": 1.0996105862742844
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.0488509389878342,
+    "g_max": 1.1044958516950143
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0488509389878342,
+    "g_max": 1.1044958516950143
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.0488509389878342,
+    "g_max": 1.1044958516950143
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0488509389878342,
+    "g_max": 1.1044958516950143
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.0601987496106022,
+    "g_max": 1.1031684570537246
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.0601987496106022,
+    "g_max": 1.1031684570537246
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.0601987496106022,
+    "g_max": 1.1031684570537246
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.0601987496106022,
+    "g_max": 1.1031684570537246
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.5507211824663147,
+    "g_max": 1.6314279039160735
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.5507211824663147,
+    "g_max": 1.6314279039160735
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.5507211824663147,
+    "g_max": 1.6314279039160735
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5507211824663147,
+    "g_max": 1.6314279039160735
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.3245538453107941,
+    "g_max": 1.66972908328481
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.3245538453107941,
+    "g_max": 1.66972908328481
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.3245538453107941,
+    "g_max": 1.66972908328481
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.3245538453107941,
+    "g_max": 1.66972908328481
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.3864217544369941,
+    "g_max": 1.6909644185980526
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.3864217544369941,
+    "g_max": 1.6909644185980526
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.3864217544369941,
+    "g_max": 1.6909644185980526
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.3864217544369941,
+    "g_max": 1.6909644185980526
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.44080342504868,
+    "g_max": 1.7029260669803834
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.44080342504868,
+    "g_max": 1.7029260669803834
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.44080342504868,
+    "g_max": 1.7029260669803834
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.44080342504868,
+    "g_max": 1.7029260669803834
+   },
+   "DQ_LE_19T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.7914462894700864,
+    "g_max": 2.9195768168022784
+   },
+   "DQ_LE_19T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.7914462894700864,
+    "g_max": 2.9195768168022784
+   },
+   "DQ_LE_19T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.7914462894700864,
+    "g_max": 2.9195768168022784
+   },
+   "DQ_LE_19T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.7914462894700864,
+    "g_max": 2.9195768168022784
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.6246024803398158,
+    "g_max": 3.1036471212511336
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.6246024803398158,
+    "g_max": 3.1036471212511336
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.6246024803398158,
+    "g_max": 3.1036471212511336
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.6246024803398158,
+    "g_max": 3.1036471212511336
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.861580386134362,
+    "g_max": 3.364257069419788
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.861580386134362,
+    "g_max": 3.364257069419788
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.861580386134362,
+    "g_max": 3.364257069419788
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.861580386134362,
+    "g_max": 3.364257069419788
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.9726785147126478,
+    "g_max": 3.4078666000939064
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.9726785147126478,
+    "g_max": 3.4078666000939064
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.9726785147126478,
+    "g_max": 3.4078666000939064
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.9726785147126478,
+    "g_max": 3.4078666000939064
+   },
+   "hyp_50T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.4060172802646385,
+    "g_max": 6.232079741932559
+   },
+   "hyp_50T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.4060172802646385,
+    "g_max": 6.232079741932559
+   },
+   "hyp_50T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.4060172802646385,
+    "g_max": 6.232079741932559
+   },
+   "hyp_50T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.4060172802646385,
+    "g_max": 6.232079741932559
+   },
+   "hyp_50T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.344915769885824,
+    "g_max": 6.225144144963464
+   },
+   "hyp_50T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.344915769885824,
+    "g_max": 6.225144144963464
+   },
+   "hyp_50T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.344915769885824,
+    "g_max": 6.225144144963464
+   },
+   "hyp_50T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.344915769885824,
+    "g_max": 6.225144144963464
+   },
+   "hyp_50T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.0637884377071316,
+    "g_max": 7.548894681214261
+   },
+   "hyp_50T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 3.0637884377071316,
+    "g_max": 7.548894681214261
+   },
+   "hyp_50T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 3.0637884377071316,
+    "g_max": 7.548894681214261
+   },
+   "hyp_50T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 3.0637884377071316,
+    "g_max": 7.548894681214261
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.9027741716359916,
+    "g_max": 8.419334551259047
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 3.9027741716359916,
+    "g_max": 8.419334551259047
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 3.9027741716359916,
+    "g_max": 8.419334551259047
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 3.9027741716359916,
+    "g_max": 8.419334551259047
+   }
+  }
+ },
+ "pg_dq_k1_1PGA_p390": {
+  "names_bs": [
+   "HA/PHE52",
+   "HE3/TRP43",
+   "HG1/THR44",
+   "HG21/THR53"
+  ],
+  "methyl_sites": [
+   "HG21/THR53"
+  ],
+  "cases": {
+   "DQ_local_7.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.3510340762789181,
+    "g_max": 2.391088114162358
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.3284533350743284,
+    "g_max": 1.839638491955968
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.3010054021953696,
+    "g_max": 1.429859488546577
+   },
+   "DQ_local_7.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.1050020033465753,
+    "g_max": 1.405928426307863
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.2349863884131458,
+    "g_max": 2.368195656290573
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.2258461833251515,
+    "g_max": 2.0721718389019927
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.215599205013855,
+    "g_max": 1.7286482436044894
+   },
+   "DQ_local_7.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.099378143589519,
+    "g_max": 1.3123640871646705
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.2164366816808925,
+    "g_max": 2.5032535734956154
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.2125227821192919,
+    "g_max": 2.2631032066437125
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.2073301297032588,
+    "g_max": 1.9363924514062263
+   },
+   "DQ_local_7.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.141429763936685,
+    "g_max": 1.2870885756921056
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.172450535899118,
+    "g_max": 1.8497144743184137
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.1687360845752204,
+    "g_max": 1.6887973056209304
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.1642403658902674,
+    "g_max": 1.4883288679008848
+   },
+   "DQ_local_7.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.077306670171926,
+    "g_max": 1.244295572988434
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.0207093448529276,
+    "g_max": 3.5668079271152786
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.9920481977157911,
+    "g_max": 2.724023674724951
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.8323207560280586,
+    "g_max": 2.3267639679950713
+   },
+   "DQ_LE_12.5T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5142618002617327,
+    "g_max": 2.2942891671904846
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.970170657270756,
+    "g_max": 2.9758233827268215
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.958480705066762,
+    "g_max": 2.5910447762337947
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.7779625840872688,
+    "g_max": 2.462880040206145
+   },
+   "DQ_LE_12.5T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.3234896329671737,
+    "g_max": 2.4582715580637355
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.20730025860684,
+    "g_max": 3.8416665087380113
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.2002466120311515,
+    "g_max": 3.4571419399142944
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.1903274791735634,
+    "g_max": 2.9120794324367374
+   },
+   "DQ_LE_12.5T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5265345119184826,
+    "g_max": 2.830983756963875
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 1.9313161332377318,
+    "g_max": 2.457102779090327
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 1.8230327097906147,
+    "g_max": 2.451060299388952
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 1.6829652449254078,
+    "g_max": 2.44257409261763
+   },
+   "DQ_LE_12.5T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.384828554921676,
+    "g_max": 2.4228509363127864
+   },
+   "DQ_LE_19T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.6722604137480146,
+    "g_max": 4.633728310014904
+   },
+   "DQ_LE_19T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.637500296968926,
+    "g_max": 3.520217695321599
+   },
+   "DQ_LE_19T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.376670519472223,
+    "g_max": 3.5698910369690093
+   },
+   "DQ_LE_19T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.943549068050138,
+    "g_max": 3.522593060351078
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.4990258880247143,
+    "g_max": 3.566254071923332
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.3811145290214606,
+    "g_max": 3.308299896183023
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.0856118399086343,
+    "g_max": 3.304039535201246
+   },
+   "DQ_LE_19T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.5345737066654956,
+    "g_max": 3.2969489562139906
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.060301504844969,
+    "g_max": 4.4497309204118185
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.9173020149242372,
+    "g_max": 4.264516398615072
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.5896091574217,
+    "g_max": 4.246787164561592
+   },
+   "DQ_LE_19T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.770809451725306,
+    "g_max": 4.2032576364279395
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 2.6184290226896905,
+    "g_max": 4.41787228326188
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.484662832317133,
+    "g_max": 4.406081713200718
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.310537261198388,
+    "g_max": 4.389405993515228
+   },
+   "DQ_LE_19T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.9405240192553863,
+    "g_max": 4.350581322095034
+   },
+   "hyp_50T2|none|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 4.4267178264209015,
+    "g_max": 6.297308679096202
+   },
+   "hyp_50T2|none|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 3.6387470593298534,
+    "g_max": 6.289963519533731
+   },
+   "hyp_50T2|none|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.960654318036294,
+    "g_max": 6.27557193519325
+   },
+   "hyp_50T2|none|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.5630054345873603,
+    "g_max": 6.72899990914188
+   },
+   "hyp_50T2|moderate|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.260538158787176,
+    "g_max": 5.0811040178474185
+   },
+   "hyp_50T2|moderate|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 2.9472705577615343,
+    "g_max": 5.075730926053252
+   },
+   "hyp_50T2|moderate|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 2.569034801126309,
+    "g_max": 5.068707230954125
+   },
+   "hyp_50T2|moderate|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 1.8685058995270882,
+    "g_max": 5.056983797061939
+   },
+   "hyp_50T2|tight|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.93655224500044,
+    "g_max": 5.880995861415282
+   },
+   "hyp_50T2|tight|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 3.644361134403135,
+    "g_max": 5.86411822385623
+   },
+   "hyp_50T2|tight|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 3.225831030494213,
+    "g_max": 5.838957266762579
+   },
+   "hyp_50T2|tight|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.1855507484099284,
+    "g_max": 5.777338889808825
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=0|tcl_nonmethyl=80": {
+    "g_med": 3.981532536664906,
+    "g_max": 7.147782629057124
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=40|tcl_nonmethyl=80": {
+    "g_med": 3.7687012799154687,
+    "g_max": 7.127731049906582
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=50|tcl_nonmethyl=80": {
+    "g_med": 3.490763568653591,
+    "g_max": 7.099288948065306
+   },
+   "hyp_50T2|offsets_known|tcl_methyl=80|tcl_nonmethyl=80": {
+    "g_med": 2.902900538129086,
+    "g_max": 7.033421956476907
+   }
+  }
+ }
+}

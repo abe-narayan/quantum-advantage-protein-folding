@@ -1,0 +1,6 @@
+{
+ "key": "bioemu",
+ "url": "https://export.arxiv.org/api/query?max_results=20&sortBy=relevance&search_query=%28abs%3A%22protein+equilibrium+ensembles%22+AND+abs%3Agenerative%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:36",
+ "records": []
+}

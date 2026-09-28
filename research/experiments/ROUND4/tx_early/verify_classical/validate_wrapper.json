@@ -1,0 +1,6 @@
+{
+ "check": "run_custom.py probe:18 site 8 vs lane tx_echo N=18 c64 (same draws), 40 us",
+ "dF": 0.0,
+ "dH": 0.0,
+ "dfloor": 0.0
+}

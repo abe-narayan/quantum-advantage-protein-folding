@@ -1,0 +1,9 @@
+{
+ "key": "metad_folding_trpcage",
+ "term": "A bias-exchange approach to protein folding[Title]",
+ "pmids": [
+  "17419610"
+ ],
+ "text": "1. J Phys Chem B. 2007 May 3;111(17):4553-9. doi: 10.1021/jp067873l. Epub 2007\nApr  10.\n\nA bias-exchange approach to protein folding.\n\nPiana S(1), Laio A.\n\nAuthor information:\n(1)International School for Advanced Studies (SISSA/ISAS), Via Beirut 2-4, \nTrieste, Italy, and Nanochemistry Research Institute, Curtin University of \nTechnology, GPO Box U1987, Perth 6845, Western Australia. \npiana@power.curtin.edu.au\n\nBy suitably extending a recent approach [Bussi, G.; et al. J. Am. Chem. Soc. \n2006, 128, 13435] we introduce a powerful methodology that allows the parallel \nreconstruction of the free energy of a system in a virtually unlimited number of \nvariables. Multiple metadynamics simulations of the same system at the same \ntemperature are performed, biasing each replica with a time-dependent potential \nconstructed in a different set of collective variables. Exchanges between the \nbias potentials in the different variables are periodically allowed according to \na replica exchange scheme. Due to the efficaciously multidimensional nature of \nthe bias the method allows exploring complex free energy landscapes with high \nefficiency. The usefulness of the method is demonstrated by performing an \natomistic simulation in explicit solvent of the folding of a Triptophane cage \nminiprotein. It is shown that the folding free energy landscape can be fully \ncharacterized starting from an extended conformation with use of only 40 ns of \nsimulation on 8 replicas.\n\nDOI: 10.1021/jp067873l\nPMID: 17419610 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:54"
+}

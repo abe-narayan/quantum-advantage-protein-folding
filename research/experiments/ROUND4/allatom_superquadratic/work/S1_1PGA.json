@@ -1,0 +1,16 @@
+{
+ "pdb": "1PGA",
+ "n_residues": 56,
+ "n_atoms_protein": 855,
+ "implicit_all_pairs": 365085,
+ "explicit_n_atoms": 10918,
+ "explicit_box_nm": [
+  4.89932283993003,
+  4.89932283993003,
+  4.89932283993003
+ ],
+ "explicit_pairs_within_1nm": 2125414,
+ "explicit_pairs_per_atom": 194.6706356475545,
+ "n_waters": 3353,
+ "wall_s": 1.8050787448883057
+}

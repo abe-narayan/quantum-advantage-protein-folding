@@ -1,0 +1,95 @@
+"""ROUND4 / allatom_superquadratic: survey table of quantum algorithm families for classical MD / Liouville /
+Fokker-Planck / Gibbs sampling / free energy / rates, with precondition check against protein force fields.
+Every arXiv id is checked against lit/records.json (verbatim arXiv API records fetched this session); PubMed ids against
+lit/pubmed_records.json.  The script fails if a cited id was not fetched.  Output: families.json
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REC = json.load(open(os.path.join(HERE, "lit", "records.json"), encoding="utf-8"))
+S4 = json.load(open(os.path.join(HERE, "work", "S4_1L2Y.json")))
+Rmin = min(r["R_lower_bound_thermal"] for r in S4["R_rows"] if "R_lower_bound_thermal" in r)
+
+F = [
+    dict(family="Carleman linearisation (dissipative quadratic ODE)", ids=["2011.03185", "2202.01054", "2312.09518", "2405.12714", "2509.07155", "2608.25822", "2607.14308"],
+         claim="exp. in dimension (log n) for R < 1; lower bound: intractable for R >= sqrt(2) (Liu 2021). Extensions: negative log-norm (Krovi), stable/Lyapunov-weighted or non-resonant systems (Wu 2024; Jennings 2025), fast-forwarding for weakly nonlinear dissipative ODEs (Li-An 2026), superquadratic for a certified weakly nonlinear plasma (Berntson 2026)",
+         precondition="all Re(lambda(F1)) < 0 (or quadratic Lyapunov function), R < 1, weak nonlinearity / non-resonance, polynomial drift",
+         protein_ff=f"FAILS. Newtonian/explicit-solvent MD: Re(lambda)=0, R=inf. Langevin: MEASURED R >= {Rmin:.1e} (Trp-cage, amber14/GBn2, gamma=1..91 /ps). Negative curvature on 8/10 thermal snapshots (F1 not Hurwitz off the minimum). Nonlinear rate ~2e3/ps vs median mode spacing 0.29/ps: strongly resonant. Forces are non-polynomial (r^-12, r^-6, 1/r, cos n phi)",
+         s_vs_practical_twin="none (precondition absent)", status="KILLED for protein FF"),
+    dict(family="Chaos limit for state-output nonlinear solvers", ids=["2307.09593", "2407.07685"],
+         claim="any algorithm outputting the normalised solution state costs >= exponential in integration time when a Lyapunov exponent is positive (Lewis 2024); matching quantum algorithm e^{o(T|B|)} (Bruestle-Wiebe 2025)",
+         precondition="(applies as an obstruction)", protein_ff="APPLIES: MEASURED lambda_max ~2.1/ps (double) to 3.2/ps (single precision), all-atom Trp-cage GBn2 NVE; 3-20/ps explicit solvent (Braxenthaler 1997, PMID 9408939, DERIVED from abstract). lambda*tau_f ~ 2e6-2e7 (1 us) to 2e9-2e10 (1 ms) e-folds",
+         s_vs_practical_twin="no-go for trajectory-state routes", status="obstruction"),
+    dict(family="Koopman-von Neumann / Liouville embedding (deterministic phase-space density)", ids=["2003.09980", "2202.02188", "2209.08478", "2202.07834", "2305.00653", "2609.28999", "2605.30142"],
+         claim="exp. vs Eulerian grid discretisation of Liouville; 'quadratic improvement over classical probabilistic Monte Carlo' (Joseph 2020). KvN Green-Kubo readout near N_queries^-1 vs ^-1/2 (Watanabe 2026). Numerical artefacts from finite projection (Lin 2022); Ehrenfest-Reynolds stability limit (Fredon 2026)",
+         precondition="sparse KvN Hamiltonian; smooth density; for exponential claims (Tanaka-Fujii 2023) norm-preserving mapped Hamiltonian",
+         protein_ff="MD already IS the Monte Carlo method for the Liouville/Kramers density, so the relevant twin gives s = 2 (precision only); no gain in evolution time (linear in T, no fast-forwarding of generic dynamics); chaotic filamentation for deterministic Liouville",
+         s_vs_practical_twin="2 (in precision)", status="s=2 only"),
+    dict(family="Fokker-Planck / Kolmogorov / Kramers as linear PDE (LCHS, Schroedingerisation, QLSA)", ids=["2303.02463", "2401.13500", "2412.14868", "2608.09903", "2303.01029", "2312.03916", "2605.30143"],
+         claim="exp. in state dimension vs grid PDE solvers (Gnanasekaran 2023); Lindblad (KLM) encoding of SDE laws (Wu-Li 2026); end-to-end Langevin-thermostat KvN MD demonstrated only for H2 (Watanabe 2026)",
+         precondition="conditions on discretisation/condition number; readout by amplitude estimation",
+         protein_ff="Classical practice is trajectory Monte Carlo (MD), not grid PDE, so the exponential is against the wrong twin; vs MD: s = 2 in precision, no gain in physical time beyond sqrt(t) fast-forwarding of dissipative generators",
+         s_vs_practical_twin="2", status="s=2 only"),
+    dict(family="Reaction-rate estimation in high-dimensional overdamped Fokker-Planck (Gaussian-LCHS)", ids=["2601.15523"],
+         claim="O~((eta^{5/2} sqrt(t beta) alpha_V + eta^{3/2} sqrt(t/beta) N)/eps) gates vs classical worst-case O(t eta^2 e^{Omega(eta)}/eps^4): 'exponential in eta, quartic in eps, quadratic in t'; authors: 'should not be interpreted as a speedup over all classical simulation methods'",
+         precondition="overdamped Langevin; smooth pairwise V (Lipschitz gradient; LJ only via smoothed surrogates); warm start in an m-strongly-convex reactant region; ADDITIVE error eps on nu_RP(t)",
+         protein_ff="PARTLY (pairwise, smoothable; overdamped acceptable for implicit solvent) but: e^{Omega(eta)} and eps^-4 come from worst-case weak-error step-size bounds that MD does not pay (fixed 2 fs step, Metropolised integrators); vs practical MD cost ~ t/eps^2 and quantum ~ sqrt(t)/eps -> s = 2; per-step eta^{5/2} vs MD eta..eta^2 is worse; unfolded reactant basin is not strongly convex; additive eps must be << k t ~ 1e-5 (ms folder, t = 10 ns) -> ~2e9 coherent force evaluations ~ 3e3 yr at t_T = 10 ns vs weighted ensemble 250 GPU-days (DERIVED)",
+         s_vs_practical_twin="2 (vs brute-force MD); < 1 vs weighted ensemble for small rates", status="s=2 only"),
+    dict(family="Nonlinear SDE algorithms (Carleman/probabilistic Carleman, bosonic-mode embeddings)", ids=["2507.06198", "2606.08349", "2603.12398", "2604.24133", "2511.09939", "2607.28541"],
+         claim="poly(log N, t, J, 1/lambda_1) for dissipative quadratic-drift SDEs, BQP-complete (Bravyi 2025; runtime exponential in inverse relative initial-condition error); norm-preserving quadratic drift, all-to-all, low-order correlators (Bravyi 2026); stable NSDEs with OU noise (Li 2026)",
+         precondition="quadratic (polynomial) drift, dissipation on every mode (lambda_1 > 0), norm-preserving drift, O(1)-variable correlators",
+         protein_ff="FAILS: non-polynomial forces; Langevin damps momenta only, effective lambda_1 = omega_min^2/gamma = 0.018/ps (MEASURED, gamma = 91/ps) with nonlinearity ~2e3/ps; folding observables (Q, RMSD) depend on O(L) variables; gain is in N (<= 1e5 atoms: a bounded constant), not in the time horizon",
+         s_vs_practical_twin="none (precondition absent)", status="KILLED for protein FF"),
+    dict(family="Coupled classical oscillators (harmonic; damped; response functions)", ids=["2303.13012", "2405.08694", "2609.20721"],
+         claim="exp. for 2^n oscillators with efficiently queryable masses/springs (BQP-complete); QPE response functions; Lieb-Robinson-type bound: no exponential advantage for local 3-D topologies, QUARTIC speedup for locally coupled damped oscillators in 3-D (Schade 2026)",
+         precondition="linear (harmonic) dynamics; succinct oracle description for exponential size; local observables",
+         protein_ff="FAILS for folding: anharmonic barrier crossing is the process of interest; <= 1e5 explicit atoms (no 2^n); the quartic 3-D result applies to linear damped networks (elastic-network vibrations), whose observables carry no folding information (QM-26, K-103)",
+         s_vs_practical_twin="4 only for linear ENM vibrations (structure-free)", status="KILLED for folding"),
+    dict(family="Continuous-space Gibbs samplers (Witten-Laplacian QSVT, quantum MALA/QSA, QRELD, provable separation)", ids=["2505.05301", "2210.06539", "2310.11445", "2210.08104", "2504.03626", "2608.24527", "2604.00656"],
+         claim="sqrt(beta d C_PI) Langevin, sqrt(1/Gap) replica-exchange Langevin; 'up to quartic' only vs MALA Cheeger bound (quadratic vs Poincare scaling; lit_A P44); provable Omega(alpha) vs O~(sqrt alpha) on hide-and-seek torus potentials (Olivucci 2026); unbiased eps^-1 vs eps^-2 Gibbs expectations (Li-Liu 2026)",
+         precondition="warm start |<phi|sigma>| = Omega(1) or annealing; smooth (Gevrey) potentials; coherent gradient oracle",
+         protein_ff="PLAUSIBLE with smoothed force fields and annealing (warm-start overlap decays with N, so annealing stages are needed); speedup quadratic in gap and precision",
+         s_vs_practical_twin="2", status="s=2 only"),
+    dict(family="Quantum walks / QMCMC / partition-function and free-energy estimation", ids=["1504.06987", "2009.11270", "1907.09965", "2404.02414", "2508.16719", "2506.20587", "2108.11410"],
+         claim="near-quadratic Monte Carlo speedup; quadratic in samples and in gap; Omega(1/eps) lower bound for reflection-based Z estimation; FreeQuantum: QC only for electronic energies of embedded cores; alchemist: quantum TI with Liouvillian on ab-initio PES",
+         precondition="coherent energy/gradient oracle; reversible chains",
+         protein_ff="PLAUSIBLE (same oracle as above); quadratic only; FreeQuantum/alchemist accelerate the electronic-structure step, not force-field sampling",
+         s_vs_practical_twin="2", status="s=2 only"),
+    dict(family="Nonreversible-chain quantum speedups (lifted chains, QFF beyond reversibility)", ids=["2501.05868", "2606.26584"],
+         claim="'up-to-exponential' vs the nonreversible chain's own mixing, O(sqrt(tau_rev tau(eps)) log 1/eps) Szegedy uses; exact Chebyshev QFF does not extend beyond reversibility, sqrt(t) only for |alpha| = O(t^-1/2) (Banerjee 2026)",
+         precondition="'reversibility on pi-average' (authors: no general easy check); amplitude-encoded transitions",
+         protein_ff="UNVERIFIABLE; no MD results in the paper (lit_A P43); underdamped Langevin is strongly nonreversible, outside the perturbative QFF regime",
+         s_vs_practical_twin="unknown (no evidence > 2)", status="open theory, no protein evidence"),
+    dict(family="MSM quantum walks / annealer path sampling", ids=["2201.11781"],
+         claim="D-Wave samples transition paths of a low-resolution (ML + MD) theory; no speedup claimed",
+         precondition="-", protein_ff="MSMs have 1e2-1e4 states (2,000 in Voelz 2010): eigendecomposition takes < 1 s classically; the cost is generating MD data, which the quantum step does not touch",
+         s_vs_practical_twin="none", status="KILLED (DOA)"),
+    dict(family="Quantum-computed forces for MD (ab-initio / Car-Parrinello on QC)", ids=["2008.06562", "2404.10001", "2212.11921"],
+         claim="electronic-structure forces from a QC", precondition="-",
+         protein_ff="Changes the energy model (ab initio), not the sampling; ms folding needs 1e11-1e12 force evaluations, each a QPE-scale computation (hours): out of reach for any machine; classical force fields suffice for folding kinetics (Lindorff-Larsen 2011)",
+         s_vs_practical_twin="n/a", status="outside regime / infeasible"),
+]
+
+
+def main():
+    missing = []
+    for f in F:
+        for i in f["ids"]:
+            if i not in REC:
+                missing.append(i)
+        f["verified_titles"] = {i: REC[i]["title"] for i in f["ids"] if i in REC}
+        f["journal_refs"] = {i: REC[i]["journal_ref"] for i in f["ids"] if i in REC and REC[i]["journal_ref"]}
+    if missing:
+        raise SystemExit(f"cited ids not fetched: {missing}")
+    tmp = os.path.join(HERE, "families.json.tmp")
+    json.dump(dict(R_lower_bound_min=Rmin, families=F), open(tmp, "w", encoding="utf-8"), indent=1)
+    os.replace(tmp, os.path.join(HERE, "families.json"))
+    print(len(F), "families; ids verified:", sum(len(f["ids"]) for f in F))
+
+
+if __name__ == "__main__":
+    main()

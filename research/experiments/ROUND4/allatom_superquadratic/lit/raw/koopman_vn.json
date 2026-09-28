@@ -1,0 +1,695 @@
+{
+ "key": "koopman_vn",
+ "url": "https://export.arxiv.org/api/query?max_results=50&sortBy=relevance&search_query=%28%28abs%3A%22Koopman-von+Neumann%22+OR+abs%3A%22Koopman+von+Neumann%22+OR+ti%3AKoopman%29+AND+abs%3Aquantum+AND+abs%3Aclassical%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:10",
+ "records": [
+  {
+   "id": "2604.08414v2",
+   "title": "Numerical approximation of the Koopman-von Neumann equation: Operator learning and quantum computing",
+   "published": "2026-04-09",
+   "updated": "2026-09-25",
+   "authors": [
+    "Stefan Klus",
+    "Feliks N\u00fcske",
+    "Patrick Gel\u00df"
+   ],
+   "abstract": "The Koopman-von Neumann equation describes the evolution of wavefunctions associated with autonomous ordinary differential equations and can be regarded as a quantum physics-inspired formulation of classical mechanics. The main advantage compared to conventional transfer operators such as Koopman and Perron-Frobenius operators is that the Koopman-von Neumann operator is unitary even if the dynamics are non-Hamiltonian. Projecting this operator onto a finite-dimensional subspace allows us to represent it by a unitary matrix, which in turn can be expressed as a quantum circuit. We will exploit relationships between the Koopman-von Neumann framework and classical transfer operators in order to derive numerical methods to approximate the Koopman-von Neumann operator and its eigenvalues and eigenfunctions from data. Furthermore, we will show that the choice of basis functions and domain are crucial to ensure that the operator is well-defined. We will illustrate the results with the aid of guiding examples, including simple undamped and damped oscillators and the Lotka-Volterra model.",
+   "journal_ref": "",
+   "primary": "math.DS"
+  },
+  {
+   "id": "2003.09980v4",
+   "title": "Koopman-von Neumann Approach to Quantum Simulation of Nonlinear Classical Dynamics",
+   "published": "2020-03-22",
+   "updated": "2020-09-18",
+   "authors": [
+    "Ilon Joseph"
+   ],
+   "abstract": "Quantum computers can be used to simulate nonlinear non-Hamiltonian classical dynamics on phase space by using the generalized Koopman-von Neumann formulation of classical mechanics. The Koopman-von Neumann formulation implies that the conservation of the probability distribution function on phase space, as expressed by the Liouville equation, can be recast as an equivalent Schr\u00f6dinger equation on Hilbert space with a Hermitian Hamiltonian operator and a unitary propagator. This Schr\u00f6dinger equation is linear in the momenta because it derives from a constrained Hamiltonian system with twice the classical phase space dimension. A quantum computer with finite resources can be used to simulate a finite-dimensional approximation of this unitary evolution operator. Quantum simulation of classical dynamics is exponentially more efficient than a deterministic Eulerian discretization of the Liouville equation if the Koopman-von Neumann Hamiltonian is sparse. Utilizing quantum walk techniques for state preparation and amplitude estimation for the calculation of observables leads to a quadratic improvement over classical probabilistic Monte Carlo algorithms.",
+   "journal_ref": "Phys. Rev. Research 2, 043102 (2020)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2306.13504v2",
+   "title": "Existence and Uniqueness of Solutions of the Koopman--von Neumann Equation on Bounded Domains",
+   "published": "2023-06-23",
+   "updated": "2024-10-01",
+   "authors": [
+    "Marian Stengl",
+    "Patrick Gel\u00df",
+    "Stefan Klus",
+    "Sebastian Pokutta"
+   ],
+   "abstract": "The Koopman--von Neumann equation describes the evolution of a complex-valued wavefunction corresponding to the probability distribution given by an associated classical Liouville equation. Typically, it is defined on the whole Euclidean space. The investigation of bounded domains, particularly in practical scenarios involving quantum-based simulations of dynamical systems, has received little attention so far. We consider the Koopman--von Neumann equation associated with an ordinary differential equation on a bounded domain whose trajectories are contained in the set's closure. Our main results are the construction of a strongly continuous semigroup together with the existence and uniqueness of solutions of the associated initial value problem. To this end, a functional-analytic framework connected to Sobolev spaces is proposed and analyzed. Moreover, the connection of the Koopman--von Neumann framework to transport equations is highlighted.",
+   "journal_ref": "",
+   "primary": "math.AP"
+  },
+  {
+   "id": "2105.00294v2",
+   "title": "Koopman wavefunctions and Clebsch variables in Vlasov-Maxwell kinetic theory",
+   "published": "2021-05-01",
+   "updated": "2021-06-09",
+   "authors": [
+    "Cesare Tronci",
+    "Ilon Joseph"
+   ],
+   "abstract": "Motivated by recent discussions on the possible role of quantum computation in plasma simulations, here we present different approaches to Koopman's Hilbert-space formulation of classical mechanics in the context of Vlasov-Maxwell kinetic theory. The celebrated Koopman-von Neumann construction is provided with two different Hamiltonian structures: one is canonical and recovers the usual Clebsch representation of the Vlasov density, the other is noncanonical and appears to overcome certain issues emerging in the canonical formalism. Furthermore, the canonical structure is restored for a variant of the Koopman-von Neumann construction that carries a different phase dynamics. Going back to van Hove's prequantum theory, the corresponding Koopman-van Hove equation provides an alternative Clebsch representation which is then coupled to the electromagnetic fields. Finally, the role of gauge transformations in the new context is discussed in detail.",
+   "journal_ref": "",
+   "primary": "physics.plasm-ph"
+  },
+  {
+   "id": "2311.15628v2",
+   "title": "How to Map Linear Differential Equations to Schr\u00f6dinger Equations via Carleman and Koopman-von Neumann Embeddings for Quantum Algorithms",
+   "published": "2023-11-27",
+   "updated": "2023-12-23",
+   "authors": [
+    "Yuki Ito",
+    "Yu Tanaka",
+    "Keisuke Fujii"
+   ],
+   "abstract": "Solving linear and nonlinear differential equations with large degrees of freedom is an important task for scientific and industrial applications. In order to solve such differential equations on a quantum computer, it is necessary to embed classical variables into a quantum state. While the Carleman and Koopman-von Neumann embeddings have been investigated so far, the class of problems that can be mapped to the Schr\u00f6dinger equation is not well understood even for linear differential equations. In this work, we investigate the conditions for linear differential equations to be mapped to the Schr\u00f6dinger equation and solved on a quantum computer. Interestingly, we find that these conditions are identical for both Carleman and Koopman-von Neumann embeddings. We also compute the computational complexity associated with estimating the expected values of an observable. This is done by assuming a state preparation oracle, block encoding of the mapped Hamiltonian via either Carleman or Koopman-von Neumann embedding, and block encoding of the observable using $O(\\log M)$ qubits with $M$ is the mapped system size. Furthermore, we consider a general classical quadratic Hamiltonian dynamics and find a sufficient condition to map it into the Schr\u00f6dinger equation. As a special case, this includes the coupled harmonic oscillator model [Babbush et al., \\cite{babbush_exponential_2023}]. We also find a concrete example that cannot be described as the coupled harmonic oscillator but can be mapped to the Schr\u00f6dinger equation in our framework. These results are important in the construction of quantum algorithms for solving differential equations of large-degree-of-freedom.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2305.08864v2",
+   "title": "Quantization of a New Canonical, Covariant, and Symplectic Hamiltonian Density",
+   "published": "2023-05-05",
+   "updated": "2023-09-07",
+   "authors": [
+    "David Chester",
+    "Xerxes D. Arsiwalla",
+    "Louis Kauffman",
+    "Michel Planat",
+    "Klee Irwin"
+   ],
+   "abstract": "We generalize Koopman-von Neumann classical mechanics to poly-symplectic fields and recover De Donder-Weyl theory. Comparing with Dirac's Hamiltonian density inspires a new Hamiltonian formulation with a canonical momentum field that is Lorentz covariant with symplectic geometry. We provide commutation relations for the classical and quantum fields that generalize the Koopman-von Neumann and Heisenberg algebras. The classical algebra requires four fields that generalize space-time, energy-momentum, frequency-wavenumber, and the Fourier conjugate of energy-momentum. We clarify how 1st and 2nd quantization can be found by simply mapping between operators in classical and quantum commutator algebras.",
+   "journal_ref": "",
+   "primary": "hep-th"
+  },
+  {
+   "id": "2305.14511v1",
+   "title": "Adiabatic driving and geometric phases in classical systems",
+   "published": "2023-05-23",
+   "updated": "2023-05-23",
+   "authors": [
+    "A. D. Berm\u00fadez Manjarres"
+   ],
+   "abstract": "We study the concepts of adiabatic driving and geometric phases of classical integrable systems under the Koopman-von Neumann formalism. In close relation to what happens to a quantum state, a classical Koopman-von Neumann eigenstate will acquire a geometric phase factor $exp\\left\\{ i\u03a6\\right\\} $ after a closed variation of the parameters $\u03bb$ in its associated Hamiltonian. The explicit form of $\u03a6$ is then derived for integrable systems, and its relation with the Hannay angles is shown. Additionally, we use quantum formulas to write a classical adiabatic gauge potential that generates adiabatic unitary flow between classical eigenstates, and we explicitly show the relationship between the potential and the classical geometric phase.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2112.05619v2",
+   "title": "Introduction to Koopman-von Neumann Mechanics",
+   "published": "2021-12-10",
+   "updated": "2021-12-25",
+   "authors": [
+    "Daniel Piasecki"
+   ],
+   "abstract": "This work is to consolidate current literature on Koopman-von Neumann (KvN) Mechanics into a simple and easy to understand text. KvN Mechanics is a branch of Classical Mechanics that has been recast into the mathematical language of Quantum Mechanics. KvN Mechanics utilizes a Hilbert phase space with operators to calculate the expectation values of observables of interest (expectation values such as position, momentum, etc.) It is an important tool in statistical physics and guide to illuminate the mysterious relationship between Quantum and Classical Physics. A lot of important applications of KvN Mechanics have been developed in the last decade.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2210.00603v1",
+   "title": "Deconjugation of canonical variables and the Koopman-von Neumann theory",
+   "published": "2022-10-02",
+   "updated": "2022-10-02",
+   "authors": [
+    "Mustafa Amin",
+    "Mark A. Walton"
+   ],
+   "abstract": "The Koopman-von Neumann (KvN) theory is one where the dynamical momentum is not canonically conjugate to position, i.e., position and momentum are deconjugated. From this point of view, we show that the KvN theory arises from quantum mechanics, extracting classical equations of motion from quantum ones. However, preserving the canonical structure of the theory requires introducing ``auxiliary'' canonical conjugates to position and momentum. We show that using the KvN formulation to study the interaction between quantum and classical systems forces the auxiliary variables to take on a physical role. While giving rise to classical behaviour, the KvN theory might be more than classical.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2503.02480v2",
+   "title": "Classical and mixed classical-quantum systems from van Hove's unitary representation of contact transformations",
+   "published": "2025-03-04",
+   "updated": "2025-04-01",
+   "authors": [
+    "Marcel Reginatto",
+    "Andr\u00e9s Dar\u00edo Berm\u00fadez Manjarres",
+    "Sebastian Ulbricht"
+   ],
+   "abstract": "Descriptions of classical mechanics in Hilbert space go back to the work of Koopman and von Neumann in the 1930s. Decades later, van Hove derived a unitary representation of the group of contact transformations which recently has been used to develop a novel formulation of classical mechanics in Hilbert space. This formulation differs from the Koopman-von Neumann theory in many ways. Classical observables are represented by van Hove operators, which satisfy a commutation algebra isomorphic to the Poisson algebra of functions in phase space. Moreover, these operators are both observables and generators of transformations, which makes it unnecessary to introduce unobservable auxiliary operators as in the Koopman-von Neumann theory. In addition, for consistency with classical mechanics, a constraint must be imposed that fixes the phase of the wavefunction. The approach can be extended to hybrid mixed classical-quantum systems in Hilbert space. The formalism is applied to the measurement of a quantum two-level system (qubit) by a classical apparatus.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2207.09515v2",
+   "title": "Free to Harmonic Unitary Transformations in Quantum and Koopman Dynamics",
+   "published": "2022-07-19",
+   "updated": "2022-10-04",
+   "authors": [
+    "Gerard McCaul",
+    "Denys I. Bondar"
+   ],
+   "abstract": "It has long been known that there exists a coordinate transformation which exactly maps the quantum free particle to the quantum harmonic oscillator. Here we extend this result by reformulating it as a unitary operation followed by a time coordinate transformation. We demonstrate that an equivalent transformation can be performed for classical systems in the context of Koopman von-Neumann (KvN) dynamics. We further extend this mapping to dissipative evolutions in both the quantum and classical cases, and show that this mapping imparts an identical time-dependent scaling on the dissipation parameters for both types of dynamics. The derived classical procedure presents a number of opportunities to import squeezing dependent quantum procedures (such as Hamiltonian amplification) into the classical regime.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2207.05073v2",
+   "title": "Eisenhart lift of Koopman-von Neumann mechanics",
+   "published": "2022-07-11",
+   "updated": "2022-12-14",
+   "authors": [
+    "Abhijit Sen",
+    "Bikram Keshari Parida",
+    "Shailesh Dhasmana",
+    "Zurab K. Silagadze"
+   ],
+   "abstract": "The Eisenhart lift establishes a fascinating connection between non-relativistic and relativistic physics, providing a space-time geometric understanding of non-relativistic Newtonian mechanics. What is still little known, however, is the fact that there is a Hilbert space representation of classical mechanics (also called Koopman-von Neumann mechanics) that attempts to give classical mechanics the same mathematical structure that quantum mechanics has. In this article, we geometrize the Koopman-von Newmann (KvN) mechanics using the Eisenhart toolkit. We then use a geometric view of KvN mechanics to find transformations that relate the harmonic oscillator, linear potential, and free particle in the context of KvN mechanics.",
+   "journal_ref": "Journal of Geometry and Physics 185 (2023), 104732",
+   "primary": "gr-qc"
+  },
+  {
+   "id": "2105.13882v1",
+   "title": "Unitary representation of the Poincar\u00e9 group for classical relativistic dynamics",
+   "published": "2021-05-28",
+   "updated": "2021-05-28",
+   "authors": [
+    "A. D. Berm\u00fadez Manjarres"
+   ],
+   "abstract": "We give a unitary irreducible representation of the proper Poincar\u00e9 group that leads to an operational version of the classical relativistic dynamics of a massive spinless particle. Unlike quantum mechanics, in this operational theory there is no uncertainty principle between position and momentum. It will be shown that the theory contains the Koopman-von Neumann formalism as a particular case, and a explicit connection with relativistic Hamiltonian mechanics will be given.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1901.00526v5",
+   "title": "An Algebraic Approach to Koopman Classical Mechanics",
+   "published": "2019-01-02",
+   "updated": "2020-01-19",
+   "authors": [
+    "Peter Morgan"
+   ],
+   "abstract": "Classical mechanics is presented here in a unary operator form, constructed using the binary multiplication and Poisson bracket operations that are given in a phase space formalism, then a Gibbs equilibrium state over this unary operator algebra is introduced, which allows the construction of a Hilbert space as a representation space of a Heisenberg algebra, giving a noncommutative operator algebraic variant of the Koopman-von Neumann approach. In this form, the measurement theory for unary classical mechanics can be the same as and inform that for quantum mechanics, expanding classical mechanics to include noncommutative operators so that it is close to quantum mechanics, instead of attempting to squeeze quantum mechanics into a classical mechanics mold. The measurement problem as it appears in unary classical mechanics suggests a classical signal analysis approach that can also be successfully applied to the measurement problem of quantum mechanics. The development offers elementary mathematics that allows a formal reconciliation of \"collapse\" and \"no-collapse\" interpretations of quantum mechanics.",
+   "journal_ref": "Annals of Physics, Volume 414, March 2020, 168090",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2211.01838v2",
+   "title": "On the Operator Origins of Classical and Quantum Wave Functions",
+   "published": "2022-11-03",
+   "updated": "2023-05-21",
+   "authors": [
+    "Xerxes D. Arsiwalla",
+    "David Chester",
+    "Louis H. Kauffman"
+   ],
+   "abstract": "We investigate operator algebraic origins of the classical Koopman-von Neumann wave function $\u03c8_{KvN}$ as well as the quantum mechanical one $\u03c8_{QM}$. We introduce a formalism of Operator Mechanics (OM) based on a noncommutative Poisson, symplectic and noncommutative differential structures. OM serves as a pre-quantum algebra from which algebraic structures relevant to real-world classical and quantum mechanics follow. In particular, $\u03c8_{KvN}$ and $\u03c8_{QM}$ are both consequences of this pre-quantum formalism. No a priori Hilbert space is needed. OM admits an algebraic notion of operator expectation values without invoking states. A phase space bundle ${\\cal E}$ follows from this. $\u03c8_{KvN}$ and $\u03c8_{QM}$ are shown to be sections in ${\\cal E}$. The difference between $\u03c8_{KvN}$ and $\u03c8_{QM}$ originates from a quantization map interpreted as \"twisting\" of sections over ${\\cal E}$. We also show that the Schr\u00f6dinger equation is obtained from the Koopman-von Neumann equation. What this suggests is that neither the Schr\u00f6dinger equation nor the quantum wave function are fundamental structures. Rather, they both originate from a pre-quantum operator algebra. Finally, we comment on how entanglement between these operators suggests emergence of space; and possible extensions of this formalism to field theories.",
+   "journal_ref": "",
+   "primary": "math-ph"
+  },
+  {
+   "id": "2512.13887v1",
+   "title": "Implementing the Koopman-von Neumann approach on continuous-variable photonic quantum computers",
+   "published": "2025-12-15",
+   "updated": "2025-12-15",
+   "authors": [
+    "Xinfeng Gao",
+    "Olivier Pfister",
+    "Stefan Bekiranov"
+   ],
+   "abstract": "The Koopman-von Neumann (KvN) formalism recasts classical mechanics in a Hilbert space framework using complex wavefunctions and linear operators, akin to quantum mechanics. Instead of evolving probability densities in phase space (as in Liouville's equation), KvN uses a Schr\u00f6dinger-like equation for a classical wavefunction, with commuting position and momentum operators. Mapped to quantum computing, KvN offers a promising route to simulate classical dynamical systems using quantum algorithms by leveraging unitary evolution and quantum linear algebra tools, potentially enabling efficient classical-to-quantum mappings without invoking full quantum uncertainty. In this work, we specifically explore the implementation of the KvN approach on continuous-variable photonic quantum computing architectures, with the goals of leveraging quantum simulation for both sampling and computing intractable nonlinear dynamics. We will demonstrate its implementation and feasibility with two problems: the harmonic oscillator and a 1D partial differential equation governing nonlinear dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2107.03623v2",
+   "title": "Projective representation of the Galilei group for classical and quantum-classical systems",
+   "published": "2021-07-08",
+   "updated": "2023-02-23",
+   "authors": [
+    "A. D. Berm\u00fadez Manjarres"
+   ],
+   "abstract": "A physically relevant unitary irreducible non-projective representation of the Galilei group is possible in the Koopman-von Neumann formulation of classical mechanics. This classical representation is characterized by the vanishing of the central charge of the Galilei algebra. This is in contrast to the quantum case where the mass plays the role of the central charge. Here we show, by direct construction, that classical mechanics also allows for a projective representation of the Galilei group where the mass is the central charge of the algebra. We extend the result to certain kind of quantum-classical hybrid systems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.11591v2",
+   "title": "Measure-free Koopman-von Neumann dynamics and noncommutative Geometry",
+   "published": "2026-08-12",
+   "updated": "2026-09-21",
+   "authors": [
+    "Dimitrios Giannakis",
+    "Michael Montgomery"
+   ],
+   "abstract": "The Koopman-von Neumann formulation of classical statistical dynamics maps the isometric evolution of probability densities in $L^1$ under the Liouville equation to a unitary evolution of quantum mechanical wavefunctions in $L^2$ generated by the antisymmetric part of the Liouville operator. This approach enables the use of Hilbert space techniques to model the statistical evolution of observables. However, being an $L^2$ method, it is not suitable for representing pointwise evolution along dynamical trajectories. We propose a Koopman-von Neumann framework that replaces the $L^p$ spaces associated with a volume measure on the state space manifold, $X$, by a reproducing kernel Hilbert space (RKHS), $\\mathcal H$, of continuous functions on $X$ that satisfy joint analyticity conditions with respect to the generator (vector field), $V$, of the dynamics and its RKHS adjoint. Our scheme employs a dilation of the antisymmetric part of $V$ to an essentially skew-adjoint operator, $L$, on the tensor product Hilbert space $\\mathfrak H = \\ell^2(\\mathbb N) \\otimes \\mathcal H$, followed by a dilation of $L$ to an essentially skew-adjoint, free derivation, $\\mathcal D$, acting on a weighted symmetric Fock space $\\mathfrak F$ generated by $\\mathfrak H$. We show that the unitary evolution generated by $\\mathcal D$ consistently recovers the (generally, non-unitary) Koopman evolution of observables in a dense subalgebra of $\\mathcal H$ generated by jointly analytic vectors, over a time interval that is uniformly bounded away from zero. We then build a family of weak spectral triples $(\\mathcal A_n, \\mathfrak F, -i \\mathcal D)$, $n \\in \\mathbb N$, wherein $\\mathcal A_n$ are non-abelian $*$-subalgebras of $B(\\mathfrak F)$ generated by creation and annihilation operators and $-i \\mathcal D$ plays the role of a Dirac operator inducing extended pseudometrics on the state spaces of $\\mathcal A_n$.",
+   "journal_ref": "",
+   "primary": "math.DS"
+  },
+  {
+   "id": "2512.11148v1",
+   "title": "Solutions of Koopman-von Neumann equations, their superpositions, orthogonality and uncertainties",
+   "published": "2025-12-11",
+   "updated": "2025-12-11",
+   "authors": [
+    "Mustafa Amin",
+    "Mark A. Walton"
+   ],
+   "abstract": "The Koopman-von Neumann (KvN) formulation brings classical mechanics to Hilbert space, but many techniques familiar from quantum mechanics remain missing. One would hope to solve eigenvalue problems, obtain orthonormal eigenstates of Hermitian operators and ascribe meaning to a coherent superposition of states, among other things. Here we consider the general KvN equation for a classical probability amplitude and show that its so-called gauge freedom allows the separation of variables. The amenability to Hilbert-space methods of the resulting KvN solutions is investigated. We construct superpositions from differently-gauged Liouvillian eigenstates, and find an orthonormal set among them. We find that some separable solutions describe the canonical ensemble with temperature related to the separation constant. Classical uncertainty relations arise naturally in the KvN formalism. We discuss one between the dynamical time and the Liouvillian in terms of the statistical description of classical systems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2602.10341v1",
+   "title": "Uncertainty and Wigner negativity in Hilbert-space classical mechanics",
+   "published": "2026-02-10",
+   "updated": "2026-02-10",
+   "authors": [
+    "Mustafa Amin"
+   ],
+   "abstract": "Classical mechanics, in the Koopman-von Neumann formulation, is described in Hilbert space. It is shown here that classical canonical transformations are generated by Hermitian operators that are in general noncommutative. This naturally brings about uncertainty relations inherent in classical mechanics, for example between position and the generator of space translations, between momentum and the generator of momentum translations, and between dynamical time and the Liouvillian, to name a few. Further, it is shown that the Wigner representation produces a quasi-probability distribution that can take on negative values. Thus, two of the hallmark features of quantum mechanics are reproduced, and become apparent, in a Hilbert-space formulation of classical mechanics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2510.26856v1",
+   "title": "The Particle in a Box in Koopman--von Neumann Mechanics: A Hilbert Space representation of Classical Mechanics",
+   "published": "2025-10-30",
+   "updated": "2025-10-30",
+   "authors": [
+    "Abhijit Sen",
+    "Lev Kaplan"
+   ],
+   "abstract": "This paper revisits the textbook 'particle in a box', but from the point of view of Koopman-von Neumann (KvN) mechanics. KvN mechanics is a way to describe \\emph{classical} dynamics in a Hilbert space. That simple fact changes the usual expectation: hard walls do \\emph{not} force energy quantization here. We show, in a clear and physical way, why a KvN particle confined between two ideal walls still has a continuous range of energies. With the correct wall condition, one that captures ordinary elastic reflection rather than 'vanishing at the boundary,' the KvN description naturally produces spatial confinement without discrete energy levels. Beyond establishing this result, we also clean up common misunderstandings: for example, treating the KvN wavefunction like a quantum probability amplitude in position alone leads to the wrong boundary picture and, with it, the wrong conclusion about quantization.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2307.13033v2",
+   "title": "Improved precision scaling for simulating coupled quantum-classical dynamics",
+   "published": "2023-07-24",
+   "updated": "2026-03-17",
+   "authors": [
+    "Sophia Simon",
+    "Raffaele Santagati",
+    "Matthias Degroote",
+    "Nikolaj Moll",
+    "Michael Streif",
+    "Nathan Wiebe"
+   ],
+   "abstract": "We present a super-polynomial improvement in the precision scaling of quantum simulations for coupled classical-quantum systems in this paper. Such systems are found, for example, in molecular dynamics simulations within the Born-Oppenheimer approximation. By employing a framework based on the Koopman-von Neumann formulation of classical mechanics, we express the Liouville equation of motion as unitary dynamics and utilize phase kickback from a dynamical quantum simulation to calculate the quantum forces acting on classical particles. This approach allows us to simulate the dynamics of these classical particles without the overheads associated with measuring gradients and solving the equations of motion on a classical computer, resulting in a super-polynomial advantage at the price of increased space complexity. We demonstrate that these simulations can be performed in both microcanonical and canonical ensembles, enabling the estimation of thermodynamic properties from the prepared probability density.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2607.17408v1",
+   "title": "The History of Hilbert-Space Formulations of Classical Physics",
+   "published": "2026-07-19",
+   "updated": "2026-07-19",
+   "authors": [
+    "Jacob A. Barandes"
+   ],
+   "abstract": "Hilbert-space techniques are widely used not only for quantum theory, but also for classical physics. Two important examples are the Koopman-von Neumann (KvN) formulation and the method of ``classical'' wave functions. As this paper explains, these two approaches are conceptually distinct. In particular, the method of classical wave functions was not due to Bernard Koopman and John von Neumann, but was developed independently by a number of later researchers, perhaps first by Mario Sch\u00f6nberg, with key contributions from Angelo Loinger, Giacomo Della Riccia, Norbert Wiener, and E. C. George Sudarshan. The primary goals of this paper are to explain these two approaches, describe the relevant history in detail, and give credit where credit is due.",
+   "journal_ref": "The European Physical Journal H 51, 1 (2026)",
+   "primary": "physics.hist-ph"
+  },
+  {
+   "id": "2603.20102v1",
+   "title": "Koopman and transfer operator techniques from the perspective of quantum theory",
+   "published": "2026-03-20",
+   "updated": "2026-03-20",
+   "authors": [
+    "Dimitrios Giannakis",
+    "Michael Montgomery"
+   ],
+   "abstract": "The study of mathematical connections between operator-theoretic formulations of classical dynamics and quantum mechanics began at least as early as the 1930s in work of Koopman and von Neumann and was developed in later decades by many authors, often independently, into a framework now broadly known as Koopman-von Neumann representation of classical dynamics. This article surveys aspects of this framework for measure-preserving ergodic dynamical systems and connects it with recent approximation techniques for Koopman and transfer operators that are amenable to data-driven numerical implementation. In broad terms, these methods are based on representations of (i) classical observables as elements of an algebra of operators acting on a Hilbert space; and (ii) classical probability measures as elements of the state space of that algebra, with lifted versions of the Koopman and transfer operators inducing dynamical evolution of observables and states, respectively. A common theme underlying the techniques surveyed here is the use of reproducing kernel Hilbert spaces with coalgebra structure (so-called \"reproducing kernel Hilbert algebras'') that aids the quantum representation of classical objects, as well as the use of Fock spaces to build approximation schemes with high expressivity and structure preservation properties (notably, preservation of positivity and multiplicativity of composition operators). Applications to quantum algorithms for approximating the Koopman evolution of observables in systems with pure point spectra are also discussed.",
+   "journal_ref": "",
+   "primary": "math.DS"
+  },
+  {
+   "id": "2510.27170v1",
+   "title": "Quantum, Stochastic, and Classical Dynamics Within A Single Geometric Framework",
+   "published": "2025-10-31",
+   "updated": "2025-10-31",
+   "authors": [
+    "Partha Ghose"
+   ],
+   "abstract": "Nelson's stochastic mechanics links quantum mechanics to an underlying Brownian motion with the identification $\\hbar = m\u03c3$. Ghose's interpolating equation introduces a continuous parameter $\u03bb$ that suppresses the quantum potential $Q[\u03c8]$ and yields a smooth transition between quantum ($\u03bb=0$) and classical ($\u03bb=1$) regimes. In this short note, we show that the Koopman--von Neumann (KvN) Hilbert-space formulation of classical mechanics emerges naturally as the $\u03bb\\to 1$ limit of this stochastic $\u03c3$--$\u03bb$ hierarchy. The KvN phase-space amplitude provides an operator representation of the classical Liouville equation, while the $\u03bb$ parameter acts as a projection flow from the complex projective Hilbert manifold $\\mathbb{C}P^n$ to its classical quotient $\\mathbb{C}P^*/U(1)$, implementing phase superselection. This unified picture links quantum, stochastic, and classical dynamics within a single continuous framework.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2312.01094v1",
+   "title": "On reconstruction of states from evolution induced by quantum dynamical semigroups perturbed by covariant measures",
+   "published": "2023-12-02",
+   "updated": "2023-12-02",
+   "authors": [
+    "Grigori Amosov",
+    "Egor Baitenov",
+    "Alexander Pechen"
+   ],
+   "abstract": "In this work, we show the ability to restore states of quantum systems from evolution induced by quantum dynamical semigroups perturbed by covariant measures. Our procedure describes reconstruction of quantum states transmitted via quantum channels and as a particular example can be applied to reconstruction of photonic states transmitted via optical fibers. For this, the concept of perturbation by covariant operator-valued measure in a Banach space is introduced and integral representation of the perturbed semigroup is explicitly constructed. Various physically meaningful examples are provided. In particular, a model of the perturbed dynamics in the symmetric (boson) Fock space is developed as covariant measure for a semiflow of shifts and its perturbation in the symmetric Fock space, and its properties are investigated. Another example may correspond to the Koopman-von Neumann description of a classical oscillator with bounded phase space.",
+   "journal_ref": "Quantum Information Processing 22, Article 401 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2210.12891v1",
+   "title": "A Transfer Operator Approach to Relativistic Quantum Wavefunction",
+   "published": "2022-10-24",
+   "updated": "2022-10-24",
+   "authors": [
+    "Igor Mezic"
+   ],
+   "abstract": "The original intent of the Koopman-von Neumann formalism was to put classical and quantum mechanics on the same footing by introducing an operator formalism into classical mechanics. Here we pursue their path the opposite way and examine what transfer operators can say about quantum mechanical evolution. To that end, we introduce a physically motivated scalar wavefunction formalism for a velocity field on a 4-dimensional pseudo-Riemannian manifold, and obtain an evolution equation for the associated wavefunction, a generator for an associated weighted transfer operator. The generator of the scalar evolution is of first order in space and time. The probability interpretation of the formalism leads to recovery of the Schr\u007fodinger equation in the non-relativistic limit. In the special relativity limit, we show that the scalar wavefunction of Dirac spinors satisfies the new equation. A connection with string theoretic considerations for mass is provided.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1904.03473v2",
+   "title": "Entropy non-conservation and boundary conditions for Hamiltonian dynamical systems",
+   "published": "2019-04-06",
+   "updated": "2019-06-21",
+   "authors": [
+    "Gerard McCaul",
+    "Alexander Pechen",
+    "Denys I. Bondar"
+   ],
+   "abstract": "Applying the theory of self-adjoint extensions of Hermitian operators to Koopman von Neumann classical mechanics, the most general set of probability distributions is found for which entropy is conserved by Hamiltonian evolution. A new dynamical phase associated with such a construction is identified. By choosing distributions not belonging to this class, we produce explicit examples of both free particles and harmonic systems evolving in a bounded phase-space in such a way that entropy is nonconserved. While these nonconserving states are classically forbidden, they may be interpreted as states of a quantum system tunneling through a potential barrier boundary. In this case, the allowed boundary conditions are the only distinction between classical and quantum systems. We show that the boundary conditions for a tunneling quantum system become the criteria for entropy preservation in the classical limit. These findings highlight how boundary effects drastically change the nature of a system.",
+   "journal_ref": "Phys. Rev. E 99, 062121 (2019)",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2111.07554v1",
+   "title": "Joint quantum-classical Hamilton variation principle in the phase space",
+   "published": "2021-11-15",
+   "updated": "2021-11-15",
+   "authors": [
+    "Dmitry V. Zhdanov",
+    "Denys I. Bondar"
+   ],
+   "abstract": "We show that the dynamics of a closed quantum system obeys the Hamilton variation principle. Even though quantum particles lack well-defined trajectories, their evolution in the Husimi representation can be treated as a flow of multidimensional probability fluid in the phase space. By introducing the classical counterpart of the Husimi representation in a close analogy to the Koopman-von Neumann theory, one can largely unify the formulations of classical and quantum dynamics. We prove that the motions of elementary parcels of both classical and quantum Husimi fluid obey the Hamilton variational principle, and the differences between associated action functionals stem from the differences between classical and quantum pure states. The Husimi action functionals are not unique and defined up to the Skodje flux gauge fixing [R. T. Skodje et al. Phys. Rev. A 40, 2894 (1989)]. We demonstrate that the gauge choice can dramatically alter flux trajectories. Applications of the presented theory for constructing semiclassical approximations and hybrid classical-quantum theories are discussed.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2009.02914v1",
+   "title": "Free fall in KvN mechanics and Einstein's principle of equivalence",
+   "published": "2020-09-07",
+   "updated": "2020-09-07",
+   "authors": [
+    "Abhijit Sen",
+    "Shailesh Dhasmana",
+    "Zurab K. Silagadze"
+   ],
+   "abstract": "The implementation of Einstein's principle of equivalence in Koopman-von Neumann (KvN) mechanics is discussed. The implementation is very similar to the implementation of this principle in quantum mechanics. This is not surprising, because KvN mechanics provides a Hilbert space formulation of classical mechanics that is very similar to the quantum mechanical formalism. Both in KvN mechanics and quantum mechanics, a propagator in a homogeneous gravitational field is simply related with a free propagator. As a result, the wave function in a homogeneous gravitational field in a freely falling reference frame differs from the free wave function only in phase. Fisher information, which quantifies our ability to estimate mass from coordinate measurements, does not depend on the magnitude of the homogeneous gravitational field, and this fact constitutes the formulation of Einstein's principle of equivalence, which is valid both in quantum mechanics and KvN mechanics.",
+   "journal_ref": "Annals Phys. 422 (2020), 168302",
+   "primary": "gr-qc"
+  },
+  {
+   "id": "2407.08006v2",
+   "title": "An application of continuous-variable gate synthesis to quantum simulation of classical dynamics",
+   "published": "2024-07-10",
+   "updated": "2024-07-24",
+   "authors": [
+    "Sam Cochran",
+    "James Stokes",
+    "Paramsothy Jayakumar",
+    "Shravan Veerapaneni"
+   ],
+   "abstract": "Although quantum computing holds promise to accelerate a wide range of computational tasks, the quantum simulation of quantum dynamics as originally envisaged by Feynman remains the most promising candidate for achieving quantum advantage. A less explored possibility with comparably far-reaching technological applicability is the quantum simulation of classical nonlinear dynamics. Attempts to develop digital quantum algorithms based on the Koopman von Neumann formalism have met with challenges because of the necessary projection step from an infinite-dimensional Hilbert space to the finite-dimensional subspace described by a collection of qubits. This finitization produces numerical artifacts that limit solutions to very short time horizons. In this paper we review continuous-variable quantum computing (CVQC), which naturally avoids such obstacles, and a CVQC algorithm for KvN simulation of classical nonlinear dynamics is advocated. In particular, we present explicit gate synthesis for product-formula Hamiltonian simulation of anharmonic vibrational dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1902.09728v3",
+   "title": "On deformations of classical mechanics due to Planck-scale physics",
+   "published": "2019-02-26",
+   "updated": "2020-06-08",
+   "authors": [
+    "O. I. Chashchina",
+    "A. Sen",
+    "Z. K. Silagadze"
+   ],
+   "abstract": "Several quantum gravity and string theory thought experiments indicate that the Heisenberg uncertainty relations get modified at the Planck scale so that a minimal length do arises. This modification may imply a modification of the canonical commutation relations and hence quantum mechanics at the Planck scale. The corresponding modification of classical mechanics is usually considered by replacing modified quantum commutators by Poisson brackets suitably modified in such a way that they retain their main properties (antisymmetry, linearity, Leibniz rule and Jacobi identity). We indicate that there exists an alternative interesting possibility. Koopman-Von Neumann's Hilbert space formulation of classical mechanics allows, as Sudarshan remarked, to consider the classical mechanics as a hidden variable quantum system. Then the Planck scale modification of this quantum system naturally induces the corresponding modification of dynamics in the classical substrate. Interestingly, it seems this induced modification in fact destroys the classicality: classical position and momentum operators cease to be commuting and hidden variables do appear in their evolution equations.",
+   "journal_ref": "Int. J. Mod. Phys. D 29 (2020), 2050070",
+   "primary": "physics.class-ph"
+  },
+  {
+   "id": "2603.16394v2",
+   "title": "Bridging Classical Sensitivity and Quantum Scrambling: A Tutorial on Out-of-Time-Ordered Correlators",
+   "published": "2026-03-17",
+   "updated": "2026-03-21",
+   "authors": [
+    "Stephen Wiggins"
+   ],
+   "abstract": "In classical dynamical systems, chaotic behavior is often associated with exponential sensitivity to initial conditions together with global phase-space structure. Translating this geometric concept to the strictly linear framework of quantum mechanics presents a conceptual puzzle. The out-of-time-ordered correlator (OTOC) is often motivated as the quantum analogue of the classical butterfly effect, but this slogan can hide important mathematical distinctions. This tutorial bridges the gap between applied mathematics and quantum information by detailing the mathematical machinery of the OTOC. We explore how classical sensitivity translates to operator non-commutativity, why standard two-point correlation functions fail to cleanly detect this sensitivity, and how the delocalization of quantum observables relates to classical notions of mixing. Crucially, we outline what the OTOC can and cannot diagnose, distinguishing between local instability and global chaos. Ultimately, we provide a precise and usable conceptual map, exploring how the Koopman-von Neumann formalism offers a framework to view classical and quantum dynamics through a shared linear perspective.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.02188v3",
+   "title": "Challenges for quantum computation of nonlinear dynamical systems using linear representations",
+   "published": "2022-02-04",
+   "updated": "2024-07-08",
+   "authors": [
+    "Yen Ting Lin",
+    "Robert B. Lowrie",
+    "Denis Aslangil",
+    "Yi\u011fit Suba\u015f\u0131",
+    "Andrew T. Sornborger"
+   ],
+   "abstract": "A number of recent studies have proposed that linear representations are appropriate for solving nonlinear dynamical systems with quantum computers, which fundamentally act linearly on a wave function in a Hilbert space. Linear representations, such as the Koopman representation and Koopman von Neumann mechanics, have regained attention from the dynamical-systems research community. Here, we aim to present a unified theoretical framework, currently missing in the literature, with which one can compare and relate existing methods, their conceptual basis, and their representations. We also aim to show that, despite the fact that quantum simulation of nonlinear classical systems may be possible with such linear representations, a necessary projection into a feasible finite-dimensional space will in practice eventually induce numerical artifacts which can be hard to eliminate or even control. As a result, a practical, reliable and accurate way to use quantum computation for solving general nonlinear dynamical systems is still an open problem.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2205.09632v1",
+   "title": "Measurement of a quantum system with a classical apparatus using ensembles on configuration space",
+   "published": "2022-05-19",
+   "updated": "2022-05-19",
+   "authors": [
+    "Marcel Reginatto",
+    "Sebastian Ulbricht"
+   ],
+   "abstract": "Finding a physically consistent approach to modelling interactions between classical and quantum systems is a highly nontrivial task. While many proposals based on various mathematical formalisms have been made, most of these efforts run into difficulties of one sort or another. One of the first detailed descriptions was given by Sudarshan and his collaborators who, motivated by the measurement problem in quantum mechanics, proposed a Hilbert space formulation of classical-quantum interactions which made use of the Koopman-von Neumann description of classical systems. Here we use the approach of ensembles on configurations space to give a detailed account of a classical apparatus measuring the position of a quantum particle that is prepared in a superposition of two localized states. We show that the probability of the pointer of the classical apparatus is left in a state that corresponds to the probability of the quantum particle. A subsequent observation of the pointer leads to an update of its probability density. From this we can obtain information about the position of the quantum particle, leading to an update of its wave function. Since this formalism incorporates uncertainties and finite measurement precision, it is well suited for metrological applications. Furthermore, it resolves fundamental issues that appear in the case of a quantum description of the apparatus.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2209.08478v2",
+   "title": "Time complexity analysis of quantum algorithms via linear representations for nonlinear ordinary and partial differential equations",
+   "published": "2022-09-18",
+   "updated": "2023-06-12",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Yue Yu"
+   ],
+   "abstract": "We construct quantum algorithms to compute the solution and/or physical observables of nonlinear ordinary differential equations (ODEs) and nonlinear Hamilton-Jacobi equations (HJE) via linear representations or exact mappings between nonlinear ODEs/HJE and linear partial differential equations (the Liouville equation and the Koopman-von Neumann equation). The connection between the linear representations and the original nonlinear system is established through the Dirac delta function or the level set mechanism. We compare the quantum linear systems algorithms based methods and the quantum simulation methods arising from different numerical approximations, including the finite difference discretisations and the Fourier spectral discretisations for the two different linear representations, with the result showing that the quantum simulation methods usually give the best performance in time complexity. We also propose the Schr\u00f6dinger framework to solve the Liouville equation for the HJE with the Hamiltonian formulation of classical mechanics, since it can be recast as the semiclassical limit of the Wigner transform of the Schr\u00f6dinger equation. Comparsion between the Schr\u00f6dinger and the Liouville framework will also be made.",
+   "journal_ref": "Journal of Computational Physics, 487:112149, 2023",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2605.30142v1",
+   "title": "Koopman--von Neumann Molecular Dynamics for Green--Kubo Transport Coefficients",
+   "published": "2026-05-28",
+   "updated": "2026-05-28",
+   "authors": [
+    "Masari Watanabe",
+    "Hirofumi Nishi",
+    "Taichi Kosugi",
+    "Shigekazu Hidaka",
+    "Ryo Sakurai",
+    "Yu-ichiro Matsushita"
+   ],
+   "abstract": "We formulate the Green--Kubo transport coefficients of classical molecular dynamics as a readout problem for quantum algorithms using the Koopman--von Neumann (KvN) representation. Both NVE and Nos\u00e9--Hoover-type NVT dynamics are derived as unitary evolutions on Hilbert spaces associated with the corresponding classical phase spaces. Numerical benchmarks on finite grids show that the discretization error in the correlation function decreases as a power law in the number of grid points $N_z$. Equivalently, with $N_z=2^{n_z}$, the error decreases exponentially in the register size $n_z$, so a target accuracy $\u03b5$ requires $n_z=\\mathcal{O}(\\log(1/\u03b5))$ qubits. To read out a transport coefficient, we input a flux-excited state to quantum phase estimation (QPE). The probability $P_0$ of measuring the QPE ancilla register in the all-zero state corresponds to a Bartlett-windowed Green--Kubo integral. With maximum-likelihood amplitude estimation, the statistical estimation of $P_0$ defined by this QPE oracle improves from the $N_{\\rm queries}^{-1/2}$ scaling of direct shot sampling to scaling close to $N_{\\rm queries}^{-1}$. Our circuit-resource analysis shows that one step of the NVE propagator can be built with $\\mathcal{O}(n^2)$ CX gates, where $n=n_x+n_p$ is the total number of position and momentum qubits. For the NVT propagator, the centered-difference Pauli-decomposition implementation of the Nos\u00e9--Hoover friction term scales as $\\mathcal{O}(n_\u03ben_p\\,2^{n_p})$, where $n_p$ and $n_\u03be$ are the numbers of momentum and thermostat qubits, respectively. The proposed framework is a concrete step toward translating the principles of quantum algorithms into the transport-coefficient calculations required in practical molecular simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.01248v3",
+   "title": "Origin of the Covariant Wigner Operator as a Quantum Amplitude in QCD",
+   "published": "2026-03-31",
+   "updated": "2026-06-09",
+   "authors": [
+    "Chueng-Ryong Ji",
+    "Daniel W. Piasecki"
+   ],
+   "abstract": "The Wigner function plays a central role in QCD as a phase space object encoding correlations among quarks, antiquarks, and gluons, yet its interpretation remains subtle due to its quasiprobabilistic nature and possible negativity. Recent work based on the Koopman-von Neumann-Sudarshan (KvNS) Hilbert space formulation of classical mechanics suggests the Wigner function arises as a quantum probability amplitude projected onto classical phase space, rather than a quasiprobability density (Bondar et al., 2013; McCaul et al., 2023). In the classical limit, this amplitude reduces to the classical Koopman wavefunction. In this work, we extend this perspective to relativistic QCD by constructing a Koopman description of the quark Wigner operator. We show that the Wigner operator is naturally isomorphic to a phase space spinor, providing a unified framework in which both classical and quantum dynamics are expressed. Within this formulation, the Wigner function retains its interpretation as an amplitude even in the relativistic regime. This viewpoint clarifies the origin of negativity and other nonclassical features, and provides a more transparent foundation for parton distribution functions in QCD. Remarkably, the relativistic Koopman framework reproduces the classical limit of QCD.",
+   "journal_ref": "Symmetry 2026, 18(6), 1018",
+   "primary": "hep-ph"
+  },
+  {
+   "id": "2305.18644v3",
+   "title": "Classical and semi-classical limits in phase space",
+   "published": "2023-05-29",
+   "updated": "2024-04-28",
+   "authors": [
+    "Clay D. Spence"
+   ],
+   "abstract": "A semiclassical approximation is derived by using a family of wavepackets to map arbitrary wavefunctions into phase space. If the Hamiltonian can be approximated as linear over each individual wavepacket, as often done when presenting Ehrenfest's theorem, the resulting approximation is a linear first-order partial differential equation on phase space, which will be referred to as the Schr\u00f6dinger-Ehrenfest or SE equation. This advectively transports wavefunctions along classical trajectories, so that as a trajectory is followed in time the amplitude remains constant while the phase changes by the action divided by $\\hbar$. The wavefunction's squared-magnitude is a plausible phase space density and obeys Liouville's equation for the classical time evolution. This is a derivation of the Koopman-von~Neumann (KvN) formulation of classical mechanics, which previously was postulated but not derived. With the time-independent SE equation, continuity of the wavefunction requires the change of phase around any closed path in the torus covered by a classical trajectory to be an integer multiple of $2\u03c0$, giving a standing wave picture of old quantum mechanics. While this applies to any system, for separable systems it gives Bohr-Sommerfeld quantization.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.10794v2",
+   "title": "Symplectic perspective to quantum computing for Hamiltonian systems",
+   "published": "2026-04-12",
+   "updated": "2026-04-26",
+   "authors": [
+    "Efstratios Koukoutsis",
+    "Kyriakos Hizanidis",
+    "Lucas I Inigo Gamiz",
+    "Oscar Amaro",
+    "Christos Tsironis",
+    "Abhay K. Ram",
+    "George Vahala"
+   ],
+   "abstract": "This work develops a symplectic framework for quantum computing to be applied to classical Hamiltonian systems, exploiting the intrinsic geometric compatibility between unitary quantum evolution and symplectic phase-space dynamics in a two-fold way. The first part is devoted in establishing an exact correspondence between quantum evolution and classical Hamiltonian flow on a Kahler manifold. This correspondence enables a geometric quantization scheme that identifies a family of classical Hamiltonian systems admitting exponentially compressed quantum representations-appropriate for quantum simulation. In the second part we demonstrate that Liouville-integrable Hamiltonian dynamics induce finite-dimensional unitary evolution through action-angle variables and Koopman-von Neumann encoding. This allows efficient quantum representation and parallel evolution of large phase-space ensembles, where entangled encodings provide exponential compression in ensemble size and enable quantum speed-ups in observable estimation via amplitude estimation techniques. For non-integrable systems, Lie canonical perturbation theory is incorporated to construct near-symplectic transformations that map dynamics to approximately integrable forms, preserving unitary evolution up to a controlled error. We derive the resulting quantum computational complexity of the proposed quantum-symplectic scheme, revealing both an exponential compression in memory requirements and a potential polynomial speed-up with respect to the system size. Finally, the transport evolution equation governing the quantum phase-space observables is obtained.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2609.31209v1",
+   "title": "Bypassing no-go theorems on mixed classical-quantum systems: the (counter)example of hybrid van Hove theory",
+   "published": "2026-09-25",
+   "updated": "2026-09-25",
+   "authors": [
+    "Marcel Reginatto",
+    "Andr\u00e9s Dar\u00edo Berm\u00fadez Manjarres",
+    "Sebastian Ulbricht"
+   ],
+   "abstract": "Motivated by models of mixed quantum-classical hybrid theories, we consider the representation of classical observables as Hilbert-space operators based on van Hove's unitary representation of contact transformations. This leads to a reformulation of classical mechanics where the phase space density satisfies the Liouville equation and, more importantly, classical observables are represented by van Hove operators that satisfy a commutation algebra isomorphic to the classical Poisson algebra of functions in phase space. Thus, this Hilbert space approach captures all the essential features of the phase space formulation of classical mechanics in that it reproduces its algebraic structure -- something that is not achieved by other approaches such as the Koopman-von Neumann theory. As an important feature, the definition of appropriate physical states in this formalism imposes certain natural requirements on the phase of the classical wave function, which ensure correct expectation values for the observables. Furthermore, we discuss how to extend the approach to the hybrid van Hove theory of mixed classical-quantum systems and illustrate its application with the example of interacting classical and quantum oscillators. Finally, we focus on the question of how hybrid van Hove theory evades no-go theorems on mixed classical-quantum systems and point to the various assumptions of the no-go theorems that do not apply to our approach. This demonstrates that these no-go theorems are not universally applicable, contrary to their original claims.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2509.22503v2",
+   "title": "A Quantum Algorithm for Nonlinear Electromagnetic Fluid Dynamics via Koopman-von Neumann Linearization",
+   "published": "2025-09-26",
+   "updated": "2025-11-14",
+   "authors": [
+    "Hayato Higuchi",
+    "Yuki Ito",
+    "Kazuki Sakamoto",
+    "Keisuke Fujii",
+    "Akimasa Yoshikawa"
+   ],
+   "abstract": "To simulate plasma phenomena, large-scale computational resources have been employed in developing high-precision and high-resolution plasma simulations. One of the main obstacles in plasma simulations is the requirement of computational resources that scale polynomially with the number of spatial grids, which poses a significant challenge for large-scale modeling. To address this issue, this study presents a quantum algorithm for simulating the nonlinear electromagnetic fluid dynamics that govern space plasmas. We map it, by applying Koopman-von Neumann linearization, to the Schr\u00f6dinger equation and evolve the system using Hamiltonian simulation via quantum singular value transformation. Our algorithm scales $O \\left(s N_x \\, \\mathrm{polylog} \\left( N_x \\right) T \\right)$ in time complexity with $s$, $N_x$, and $T$ being the spatial dimension, the number of spatial grid points per dimension, and the evolution time, respectively. Comparing the scaling $O \\left( s N_x^s \\left(T^{5/4}+T N_x\\right) \\right)$ for the classical method with the finite volume scheme, this algorithm achieves polynomial speedup in $N_x$. The space complexity of this algorithm is exponentially reduced from $O\\left( s N_x^s \\right)$ to $O\\left( s \\, \\mathrm{polylog} \\left( N_x \\right) \\right)$. Numerical experiments validate that accurate solutions are attainable with smaller $m$ than theoretically anticipated and with practical values of $m$ and $R$, underscoring the feasibility of the approach. As a practical demonstration, the method accurately reproduces the Kelvin-Helmholtz instability, underscoring its capability to tackle more intricate nonlinear dynamics. These results suggest that quantum computing can offer a viable pathway to overcome the computational barriers of multiscale plasma modeling.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2501.01995v3",
+   "title": "Dirac-von Neumann Type Axiomatic Structure for Classical Electromagnetism",
+   "published": "2024-12-31",
+   "updated": "2025-08-07",
+   "authors": [
+    "Daniel W. Piasecki"
+   ],
+   "abstract": "We demonstrate the existence of a complex Hilbert Space with Hermitian operators for calculations in \\textit{classical} electromagnetism that parallels the Hilbert Space of quantum mechanics. The axioms of this classical theory are the so-called Dirac-von Neumann axioms, however, with classical potentials in place of the wavefunction and the indeterministic collapse postulate removed. This approach lets us derive a variety of fundamental expressions for electromagnetism using minimal mathematics and a calculation sequence well-known for traditional quantum mechanics. We also demonstrate the existence of the wave commutation relationship $[\\hat{x},\\hat{k}]=i$, which is a unique classical analogue to the canonical commutator $[\\hat{x},\\hat{p}]=i\\hbar$. The difference between classical and quantum mechanics lies in the presence of $\\hbar$. The noncommutativity of observables for a classical theory simply reflects its wavenature. A classical analogue of the Heisenberg Uncertainty Principle is developed for electromagnetic waves, and its implications discussed. Further comparisons between electromagnetism, Koopman-von Neumann-Sudarshan (KvNS) classical mechanics (for point particles), and quantum mechanics are made. Finally, supplementing the analysis presented, we additionally demonstrate an elegant, completely relativistic version of Feynman's proof of Maxwell's equations \\citep{Dyson}. Unlike what \\citet{Dyson} indicated, there is no need for Galilean relativity for the proof to work. This fits parsimoniously with our usage of classical Lie commutators for electromagnetism.",
+   "journal_ref": "",
+   "primary": "physics.class-ph"
+  },
+  {
+   "id": "2403.07738v2",
+   "title": "Three statistical descriptions of classical systems and their extensions to hybrid quantum-classical systems",
+   "published": "2024-03-12",
+   "updated": "2024-08-11",
+   "authors": [
+    "Andr\u00e9s Dar\u00edo Berm\u00fadez Manjarres",
+    "Marcel Reginatto",
+    "Sebastian Ulbricht"
+   ],
+   "abstract": "We present three statistical descriptions for systems of classical particles and consider their extension to hybrid quantum-classical systems. The classical descriptions are ensembles on configuration space, ensembles on phase space, and a Hilbert space approach using van Hove operators which provides an alternative to the Koopman-von Neumann formulation. In all cases, there is a natural way to define classical observables and a corresponding Lie algebra that is isomorphic to the usual Poisson algebra in phase space. We show that in the case of classical particles, the three descriptions are equivalent and indicate how they are related. We then modify and extend these descriptions to introduce hybrid models where a classical particle interacts with a quantum particle. The approach of ensembles on phase space and the Hilbert space approach, which are novel, lead to equivalent hybrid models, while they are not equivalent to the hybrid model of the approach of ensembles on configuration space. Thus, we end up identifying two inequivalent types of hybrid systems, making different predictions, especially when it comes to entanglement. These results are of interest regarding ``no-go'' theorems about quantum systems interacting via a classical mediator which address the issue of whether gravity must be quantized. Such theorems typically require assumptions that make them model dependent. The hybrid systems that we discuss provide concrete examples of inequivalent models that can be used to compute simple examples to test the assumptions of the ``no-go'' theorems and their applicability.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2511.09939v1",
+   "title": "Provably Efficient Quantum Algorithms for Solving Nonlinear Differential Equations Using Multiple Bosonic Modes Coupled with Qubits",
+   "published": "2025-11-13",
+   "updated": "2025-11-13",
+   "authors": [
+    "Yu Gan",
+    "Hirad Alipanah",
+    "Jinglei Cheng",
+    "Zeguan Wu",
+    "Guangyi Li",
+    "Juan Jos\u00e9 Mendoza-Arenas",
+    "Peyman Givi",
+    "Mujeeb R. Malik",
+    "Brian J. McDermott",
+    "Junyu Liu"
+   ],
+   "abstract": "Quantum computers have long been expected to efficiently solve complex classical differential equations. Most digital, fault-tolerant approaches use Carleman linearization to map nonlinear systems to linear ones and then apply quantum linear-system solvers. However, provable speedups typically require digital truncation and full fault tolerance, rendering such linearization approaches challenging to implement on current hardware. Here we present an analog, continuous-variable algorithm based on coupled bosonic modes with qubit-based adaptive measurements that avoids Hilbert-space digitization. This method encodes classical fields as coherent states and, via Kraus-channel composition derived from the Koopman-von Neumann (KvN) formalism, maps nonlinear evolution to linear dynamics. Unlike many analog schemes, the algorithm is provably efficient: advancing a first-order, $L$-grid point, $d$-dimensional, order-$K$ spatial-derivative, degree-$r$ polynomial-nonlinearity, strongly dissipative partial differential equations (PDEs) for $T$ time steps costs $\\mathcal{O}\\left(T(\\log L + d r \\log K)\\right)$. The capability of the scheme is demonstrated by using it to simulate the one-dimensional Burgers' equation and two-dimensional Fisher-KPP equation. The resilience of the method to photon loss is shown under strong-dissipation conditions and an analytic counterterm is derived that systematically cancels the dominant, experimentally calibrated noise. This work establishes a continuous-variable framework for simulating nonlinear systems and identifies a viable pathway toward practical quantum speedup on near-term analog hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2605.30143v1",
+   "title": "End-to-End Molecular Dynamics with a Langevin Thermostat on Quantum Circuits",
+   "published": "2026-05-28",
+   "updated": "2026-05-28",
+   "authors": [
+    "Masari Watanabe",
+    "Hirofumi Nishi",
+    "Taichi Kosugi",
+    "Shigekazu Hidaka",
+    "Ryo Sakurai",
+    "Yu-ichiro Matsushita"
+   ],
+   "abstract": "We construct a quantum-circuit framework for finite-temperature molecular dynamics in the canonical ensemble (NVT) with a Langevin thermostat, connecting canonical state preparation to subsequent physical-property readouts. The classical nuclear phase-space distribution is encoded as a Koopman--von Neumann (KvN) wave function, and canonical state preparation is formulated as Langevin-type Fokker--Planck relaxation. The Hamiltonian Liouville flow, momentum friction, and momentum diffusion are decomposed into separate circuit blocks. The friction block is represented by a symmetrized momentum-space dilation, whereas the diffusion block is implemented as a cosine filter realized by probabilistic imaginary-time evolution (PITE). We analytically quantify the leading-order temperature bias caused by replacing the Gaussian diffusion kernel with this PITE-realized cosine filter. This analysis yields an internal-temperature correction that targets the desired physical equilibrium distribution. As a proof-of-concept demonstration connecting quantum chemistry to KvN nuclear dynamics, we study the H$_2$ molecule. Numerical simulations show relaxation from a nonequilibrium phase-space distribution to a canonical KvN state. From this canonical state, we demonstrate two complementary readouts: a dynamical quantum-phase-estimation readout of the vibrational density of states associated with the H--H stretch coordinate and a static canonical evaluation of the transition-state-theory (TST) rate constant. This work demonstrates, in a minimal molecular system, a circuit-level protocol that connects Langevin canonical state preparation to physical-property calculations, providing a concrete step toward quantum--classical hybrid molecular dynamics on quantum computers.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2308.16147v1",
+   "title": "Mixed Quantum-Semiclassical Simulation",
+   "published": "2023-08-30",
+   "updated": "2023-08-30",
+   "authors": [
+    "Javier Gonzalez-Conde",
+    "Andrew T. Sornborger"
+   ],
+   "abstract": "We study the quantum simulation of mixed quantum-semiclassical (MQS) systems, of fundamental interest in many areas of physics, such as molecular scattering and gravitational backreaction. A basic question for these systems is whether quantum algorithms of MQS systems would be valuable at all, when one could instead study the full quantum-quantum system. We study MQS simulations in the context where a semiclassical system is encoded in a Koopman-von Neumann (KvN) Hamiltonian and a standard quantum Hamiltonian describes the quantum system. In this case, because KvN and quantum Hamiltonians are constructed with the same operators on a Hilbert space, standard theorems guaranteeing simulation efficiency apply. We show that, in this context, $\\textit{many-body}$ MQS particle simulations give only nominal improvements in qubit resources over quantum-quantum simulations due to logarithmic scaling in the ratio, $S_q/S_c$, of actions between quantum and semiclassical systems. However, $\\textit{field}$ simulations can give improvements proportional to the ratio of quantum to semiclassical actions, $S_q/S_c$. Of particular note, due to the ratio $S_q/S_c \\sim 10^{-18}$ of particle and gravitational fields, this approach could be important for semiclassical gravity. We demonstrate our approach in a model of gravitational interaction, where a harmonic oscillator mediates the interaction between two spins. In particular, we demonstrate a lack of distillable entanglement generation between spins due to classical mediators, a distinct difference in dynamics relative to the fully quantum case.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2501.11146v3",
+   "title": "An efficient explicit implementation of a near-optimal quantum algorithm for simulating linear dissipative differential equations",
+   "published": "2025-01-19",
+   "updated": "2026-04-16",
+   "authors": [
+    "Ivan Novikau",
+    "Ilon Joseph"
+   ],
+   "abstract": "We propose an efficient block-encoding technique for the implementation of the Linear Combination of Hamiltonian Simulations (LCHS) for simulating dissipative initial-value problems. This algorithm approximates a target nonunitary operator as a weighted sum of Hamiltonian evolutions, thereby emulating a dissipative problem by mixing various time scales. We introduce an efficient encoding of the LCHS into a quantum circuit based on a simple coordinate transformation that turns the dependence on the summation index into a trigonometric function. Classically, this method is equivalent to the use of a highly accurate Fej\u00e9r-Clenshaw-Curtis quadrature formula. Quantumly, this significantly simplifies block-encoding of a dissipative problem and allows one to perform an exponential number of Hamiltonian simulations by a single Quantum Signal Processing (QSP) circuit. The resulting LCHS circuit has high success probability and the selector scales logarithmically with the number of terms in the LCHS sum and linearly with time. Careful analysis of error convergence proves that this method is more efficient than other LCHS circuits that have recently appeared in the literature. We verify the quantum circuit and its scaling by simulating it on a digital emulator of fault-tolerant quantum computers and, as a test problem, solve the advection-diffusion equation. The proposed algorithm can be used for modeling a wide class of nonunitary initial-value problems including the Liouville equation with added dissipation and linear embeddings of nonlinear systems, such as the Koopman-von Neumann and Carleman embeddings.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2507.11541v1",
+   "title": "Koopman-von Neumann Field Theory",
+   "published": "2025-07-15",
+   "updated": "2025-07-15",
+   "authors": [
+    "James Stokes"
+   ],
+   "abstract": "The classical many-body problem is reformulated as a bosonic quantum field theory. Quantum field operators evolve unitarily in the Heisenberg picture so that a quantum Vlasov equation is satisfied as an operator identity. The formalism enables the direct transfer of techniques from quantum information and quantum many-body field theory to classical nonequilibrium statistical mechanics. Implications for quantum algorithms are discussed.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2104.13172v1",
+   "title": "From quantum hydrodynamics to Koopman wavefunctions II",
+   "published": "2021-04-27",
+   "updated": "2021-04-27",
+   "authors": [
+    "Cesare Tronci",
+    "Fran\u00e7ois Gay-Balmaz"
+   ],
+   "abstract": "Based on the Koopman-van Hove (KvH) formulation of classical mechanics introduced in Part I, we formulate a Hamiltonian model for hybrid quantum-classical systems. This is obtained by writing the KvH wave equation for two classical particles and applying canonical quantization to one of them. We illustrate several geometric properties of the model regarding the associated quantum, classical, and hybrid densities. After presenting the quantum-classical Madelung transform, the joint quantum-classical distribution is shown to arise as a momentum map for a unitary action naturally induced from the van Hove representation on the hybrid Hilbert space. While the quantum density matrix is positive by construction, no such result is currently available for the classical density. However, here we present a class of hybrid Hamiltonians whose flow preserves the sign of the classical density. Finally, we provide a simple closure model based on momentum map structures.",
+   "journal_ref": "",
+   "primary": "math-ph"
+  }
+ ]
+}

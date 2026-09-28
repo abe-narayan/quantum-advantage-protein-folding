@@ -1,0 +1,9 @@
+{
+ "key": "ll2011_fastfolders",
+ "term": "How fast-folding proteins fold[Title] AND Lindorff-Larsen[Author]",
+ "pmids": [
+  "22034434"
+ ],
+ "text": "1. Science. 2011 Oct 28;334(6055):517-20. doi: 10.1126/science.1208351.\n\nHow fast-folding proteins fold.\n\nLindorff-Larsen K(1), Piana S, Dror RO, Shaw DE.\n\nAuthor information:\n(1)D. E. Shaw Research, New York, NY 10036, USA. \nkresten.lindorff-larsen@DEShawResearch.com\n\nComment in\n    Science. 2011 Oct 28;334(6055):464-5. doi: 10.1126/science.1214018.\n\nAn outstanding challenge in the field of molecular biology has been to \nunderstand the process by which proteins fold into their characteristic \nthree-dimensional structures. Here, we report the results of atomic-level \nmolecular dynamics simulations, over periods ranging between 100 \u03bcs and 1 ms, \nthat reveal a set of common principles underlying the folding of 12 structurally \ndiverse proteins. In simulations conducted with a single physics-based energy \nfunction, the proteins, representing all three major structural classes, \nspontaneously and repeatedly fold to their experimentally determined native \nstructures. Early in the folding process, the protein backbone adopts a \nnativelike topology while certain secondary structure elements and a small \nnumber of nonlocal contacts form. In most cases, folding follows a single \ndominant route in which elements of the native structure appear in an order \nhighly correlated with their propensity to form in the unfolded state.\n\nDOI: 10.1126/science.1208351\nPMID: 22034434 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:26"
+}

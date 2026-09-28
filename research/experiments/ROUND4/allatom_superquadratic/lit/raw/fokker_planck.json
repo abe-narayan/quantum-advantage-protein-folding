@@ -1,0 +1,437 @@
+{
+ "key": "fokker_planck",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28%28ti%3A%22Fokker-Planck%22+OR+ti%3A%22Fokker+Planck%22+OR+ti%3AKolmogorov%29+AND+abs%3Aquantum+AND+%28abs%3Aalgorithm+OR+abs%3Acomputer+OR+abs%3Acomputing%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:26",
+ "records": [
+  {
+   "id": "2401.13500v1",
+   "title": "Solving nonlinear differential equations on Quantum Computers: A Fokker-Planck approach",
+   "published": "2024-01-24",
+   "updated": "2024-01-24",
+   "authors": [
+    "Felix Tennie",
+    "Luca Magri"
+   ],
+   "abstract": "For quantum computers to become useful tools to physicists, engineers and computational scientists, quantum algorithms for solving nonlinear differential equations need to be developed. Despite recent advances, the quest for a solver that can integrate nonlinear dynamical systems with a quantum advantage, whilst being realisable on available (or near-term) quantum hardware, is an open challenge. In this paper, we propose to transform a nonlinear dynamical system into a linear system, which we integrate with quantum algorithms. Key to the method is the Fokker-Planck equation, which is a non-normal partial differential equation. Three integration strategies are proposed: (i) Forward-Euler stepping by unitary block encoding; (ii) Schroedingerisation, and (iii) Forward-Euler stepping by linear addition of unitaries. We emulate the integration of prototypical nonlinear systems with the proposed quantum solvers, and compare the output with the benchmark solutions of classical integrators. We find that classical and quantum outputs are in good agreement. This paper opens opportunities for solving nonlinear differential equations with quantum algorithms.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2601.15523v2",
+   "title": "Provable Quantum Speedups for Reaction-Rate Estimation in High-Dimensional Fokker-Planck Dynamics",
+   "published": "2026-01-21",
+   "updated": "2026-06-18",
+   "authors": [
+    "Tyler Kharazi",
+    "Ahmad M. Alkadri",
+    "Kranthi K. Mandadapu",
+    "K. Birgitta Whaley"
+   ],
+   "abstract": "The Fokker-Planck equation models rare events across sciences, but blue{direct solution of the PDE is intractable for classical computers due to } its high-dimensional nature. Classical stochastic methods circumvent this curse-of-dimensionality, and serve as the de facto standard for practicing computational scientists. Quantum algorithms for such non-unitary dynamics often suffer from exponential decay in success probability. We introduce a quantum algorithm that overcomes this bottleneck for estimating reaction rates {and dynamical correlation functions more generally}. Using a sum-of-squares representation, we develop a Gaussian linear combination of Hamiltonian simulations (Gaussian-LCHS) to represent the non-unitary propagator with $O\\left(\\sqrt{t\\|H\\|\\log(1/\u03b5)}\\right)$ queries to its block encoding. Crucially, we pair this with {a} novel technique to directly estimate matrix elements without exponential decay. For $\u03b7$ pairwise interacting particles discretized with $N$ plane waves per degree of freedom, we estimate reactive flux to error $\u03b5$ using $\\widetilde{O}\\left((\u03b7^{5/2}\\sqrt{t\u03b2}\u03b1_V + \u03b7^{3/2}\\sqrt{t/\u03b2}N)/\u03b5\\right)$ quantum gates, where $\u03b1_V = \\max_{r}|V'(r)/r|$. We further prove that under comparable worst-case analytical guarantees, the sharpest classical bounds for estimating reaction rates via simulation of the associated overdamped Langevin dynamics scale as $O(t\u03b7^2 e^{\u03a9(\u03b7)}/\u03b5^4)$, yielding an exponential improvement in $\u03b7$, a quartic speedup in $\u03b5$, and quadratic speedup in the time horizon $t$. While classical algorithms may outperform these bounds in practice, this work demonstrates a rigorous route toward quantum advantage for high-dimensional dissipative dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2601.19474v2",
+   "title": "The quasi-normal modes of relativistic Fokker-Planck kinetic theory",
+   "published": "2026-01-27",
+   "updated": "2026-07-08",
+   "authors": [
+    "Lorenzo Gavassino"
+   ],
+   "abstract": "Employing the well-known unitary equivalence between Fokker-Planck operators and Schr\u00f6dinger Hamiltonians, we compute the quasi-normal-mode spectrum of ultrarelativistic kinetic theories with momentum-space diffusion. We show that the collision operator reduces to a Dirac-delta Schr\u00f6dinger problem in one spatial dimension, and to a Coulomb Schr\u00f6dinger operator with hydrogenic spectrum in three dimensions. Finite spatial wavenumber appears as a perturbation of the associated quantum potential. The hydrodynamic mode is found to obey exact Fick-type diffusion at all real wavenumbers, whereas relativistic kinematics generically produces a continuous ballistic band in the non-hydrodynamic sector, a feature absent in the Newtonian regime.",
+   "journal_ref": "Phys. Rev. D 114, 014018 (8 July, 2026)",
+   "primary": "nucl-th"
+  },
+  {
+   "id": "2408.01083v3",
+   "title": "Thermodynamic quantum Fokker-Planck equations and their application to thermostatic Stirling engine",
+   "published": "2024-08-02",
+   "updated": "2024-09-20",
+   "authors": [
+    "Shoki Koyanagi",
+    "Yoshitaka Tanimura"
+   ],
+   "abstract": "We developed a computer code for the thermodynamic quantum Fokker-Planck equations (T-QFPE), derived from a thermodynamic system-bath model. This model consists of an anharmonic subsystem coupled to multiple Ohmic baths at different temperatures, which are connected to or disconnected from the subsystem as a function of time. The code numerically integrates the T-QFPE and their classical expression to simulate isothermal, isentropic, thermostatic, and entropic processes in both quantum and classical cases. The accuracy of the results was verified by comparing the analytical solutions of the Brownian oscillator. Additionally, we illustrated a breakdown of the Markovian Lindblad-master equation in the pure quantum regime. As a demonstration, we simulated a thermostatic Stirling engine employed to develop non-equilibrium thermodynamics [S. Koyanagi and Y. Tanimura, J. Chem. Phys 161, 114113 (2024)] under quasi-static conditions. The quasi-static thermodynamic potentials, described as intensive and extensive variables, were depicted as work diagrams. In the classical case, the work done by the external field is independent of the system-bath coupling strength. In contrast, in the quantum case, the work decreases as the coupling strength increases due to quantum entanglement between the subsystem and bath. The codes were developed for multicore processors using Open multiprocessing (OpenMP) and for graphics processing units (GPU) using the Compute United Device Architecture (CUDA). These codes are provided as supplementary materials.",
+   "journal_ref": "J. Chem. Phys. 161, 112501 (2024)",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2510.19914v1",
+   "title": "Fokker-Planck equation governing the distribution of walkers in AFQMC",
+   "published": "2025-10-22",
+   "updated": "2025-10-22",
+   "authors": [
+    "Alfred Li",
+    "Ankit Mahajan",
+    "Sandeep Sharma"
+   ],
+   "abstract": "Auxiliary-field quantum Monte Carlo (AFQMC) is typically formulated as an open-ended random walk in an overcomplete space of Slater determinants, implemented through a Langevin equation. However, the explicit form of the underlying Fokker-Planck equation governing the walker population distribution has remained unknown. In this paper, we derive the Fokker-Planck equation for AFQMC and propose a novel numerical scheme to solve it. The solution of the Fokker-Planck equation reveals the wavefunction actually sampled by the AFQMC algorithm. Interestingly, we find that even when the exact ground state is used as a guiding wavefunction in constrained path AFQMC, contrary to the common assumption, the wavefunction sampled by AFQMC is not exact. Beyond clarifying several fundamental aspects of AFQMC, the availability of a Fokker-Planck equation formulation opens new avenues for systematically improving its accuracy, which we outline in this paper.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2605.16429v1",
+   "title": "QuantFPFlow: Quantum Amplitude Estimation for Fokker--Planck Policy Optimisation in Continuous Reinforcement Learning",
+   "published": "2026-05-14",
+   "updated": "2026-05-14",
+   "authors": [
+    "Abraham Itzhak Weinberg"
+   ],
+   "abstract": "We introduce \\textbf{QuantFPFlow}, a reinforcement learning framework that integrates quantum amplitude estimation into the Fokker--Planck~(FP) formulation of stochastic policy optimisation. Classical continuous-space RL agents must estimate the FP partition function $Z = \\int e^{-V(\\mathbf{x})/D}\\,d\\mathbf{x}$ at cost $\\calO(1/\\varepsilon^{2})$; QuantFPFlow replaces this with a Grover-amplified amplitude estimator achieving $\\calO(1/\\varepsilon)$ -- a provable quadratic speedup. While the full quantum acceleration requires fault-tolerant hardware, the quantum-inspired classical simulation demonstrated here already exhibits the $\\calO(1/\\varepsilon)$ algorithmic structure. The estimated stationary distribution $\\rhostar$ drives a theoretically grounded exploration bonus $\\Raug = \\Renv + \u03b1\\log(1/\\rhostar(s))$. This bonus steers the agent toward globally optimal regions of multimodal reward landscapes while simultaneously constraining policy variance through FP diffusion matching. On a continuous-control task specifically designed to expose local-optima failure, QuantFPFlow achieves mean reward $1{,}295.7 \\pm 423.2$ versus $1{,}284.0 \\pm 474.0$ for Soft Actor-Critic~(SAC), while discovering the global optimum \\textbf{10.4\\,\\% more frequently} (33.9\\,\\% vs.\\ 30.7\\,\\%). Policy entropy remains near $H(\u03c0)\\approx 6.5$\\,nats throughout training, whereas SAC collapses to $1.5$\\,nats, confirming that FP diffusion matching actively prevents premature convergence. Dimensionality experiments further show computational scaling of $\\calO(d^{0.35})$ for QuantFPFlow versus $\\calO(d^{0.76})$ for classical FP estimation.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2106.14280v1",
+   "title": "Algorithmic Randomness and Kolmogorov Complexity for Qubits",
+   "published": "2021-06-27",
+   "updated": "2021-06-27",
+   "authors": [
+    "Tejas Bhojraj"
+   ],
+   "abstract": "Nies and Scholz defined quantum Martin-L\u00f6f randomness (q-MLR) for states (infinite qubitstrings). We define a notion of quantum Solovay randomness and show it to be equivalent to q-MLR using purely linear algebraic methods. Quantum Schnorr randomness is then introduced. A quantum analogue of the law of large numbers is shown to hold for quantum Schnorr random states. We introduce quantum-K, ($QK$) a measure of the descriptive complexity of density matrices using classical prefix-free Turing machines and show that the initial segments of weak Solovay random and quantum Schnorr random states are incompressible in the sense of $QK$. Several connections between Solovay randomness and $K$ carry over to those between weak Solovay randomness and $QK$. We then define $QK_C$, using computable measure machines and connect it to quantum Schnorr randomness. We then explore a notion of `measuring' a state. We formalize how `measurement' of a state induces a probability measure on the space of infinite bitstrings. A state is `measurement random' ($mR$) if the measure induced by it, under any computable basis, assigns probability one to the set of Martin-L\u00f6f randoms. I.e., measuring a $mR$ state produces a Martin-L\u00f6f random bitstring almost surely. While quantum-Martin-L\u00f6f random states are $mR$, the converse fails: there is a $mR$ state, $\u03c1$ which is not quantum-Martin-L\u00f6f random. In fact, something stronger is true. While $\u03c1$ is computable and can be easily constructed, measuring it in any computable basis yields an arithmetically random sequence with probability one. So, classical randomness can be generated from a computable state which is not quantum random. We conclude by studying the asymptotic von Neumann entropy of computable states.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2204.02370v2",
+   "title": "How much classical information is carried by a quantum state? An approach inspired by Kolmogorov complexity",
+   "published": "2022-04-05",
+   "updated": "2022-04-08",
+   "authors": [
+    "Doriano Brogioli"
+   ],
+   "abstract": "In quantum mechanics, a state is an element of a Hilbert space whose dimension exponentially grows with the increase of the number of particles (or qubits, in quantum computing). The vague question \"is this huge Hilbert space really there?\" has been rigorously formalized inside the computational complexity theory; the research suggests a positive answer to the question. Along this line, I give a definition of the (classical) information content of a quantum state, taking inspiration from the Kolmogorov complexity. I show that, for some well-known quantum circuits (having a number of gates polynomial in the number of qubits), the information content of the output state, evaluated according to my definition, is polynomial in the number of qubits. On the other hand, applying known results, it is possible to devise quantum circuits that generate much more complex states, having an exponentially-growing information content. A huge amount of classical information can be really present inside a quantum state, however, I show that this property is not necessarily exploited by quantum computers, not even by quantum algorithms showing an exponential speed-up with respect to classical computation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2305.14252v3",
+   "title": "Quantum Kolmogorov complexity and quantum correlations in deterministic-control quantum Turing machines",
+   "published": "2023-05-23",
+   "updated": "2024-01-15",
+   "authors": [
+    "Mariano Lemus",
+    "Ricardo Faleiro",
+    "Paulo Mateus",
+    "Nikola Paunkovi\u0107",
+    "Andr\u00e9 Souto"
+   ],
+   "abstract": "This work presents a study of Kolmogorov complexity for general quantum states from the perspective of deterministic-control quantum Turing Machines (dcq-TM). We extend the dcq-TM model to incorporate mixed state inputs and outputs, and define dcq-computable states as those that can be approximated by a dcq-TM. Moreover, we introduce (conditional) Kolmogorov complexity of quantum states and use it to study three particular aspects of the algorithmic information contained in a quantum state: a comparison of the information in a quantum state with that of its classical representation as an array of real numbers, an exploration of the limits of quantum state copying in the context of algorithmic complexity, and study of the complexity of correlations in quantum systems, resulting in a correlation-aware definition for algorithmic mutual information that satisfies symmetry of information property.",
+   "journal_ref": "Quantum 8, 1230 (2024)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.04218v1",
+   "title": "Quantum Kolmogorov-Arnold networks by combining quantum signal processing circuits",
+   "published": "2024-10-05",
+   "updated": "2024-10-05",
+   "authors": [
+    "Ammar Daskin"
+   ],
+   "abstract": "In this paper, we show that an equivalent implementation of KAN can be done on quantum computers by simply combining quantum signal processing circuits in layers. This provides a powerful and robust path for the applications of KAN on quantum computers.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.02171v1",
+   "title": "Kolmogorov-Arnold Wavefunctions",
+   "published": "2025-06-02",
+   "updated": "2025-06-02",
+   "authors": [
+    "Paulo F. Bedaque",
+    "Jacob Cigliano",
+    "Hersh Kumar",
+    "Srijit Paul",
+    "Suryansh Rajawat"
+   ],
+   "abstract": "This work investigates Kolmogorov-Arnold network-based wavefunction ansatz as viable representations for quantum Monte Carlo simulations. Through systematic analysis of one-dimensional model systems, we evaluate their computational efficiency and representational power against established methods. Our numerical experiments suggest some efficient training methods and we explore how the computational cost scales with desired precision, particle number, and system parameters. Roughly speaking, KANs seem to be 10 times cheaper computationally than other neural network based ansatz. We also introduce a novel approach for handling strong short-range potentials-a persistent challenge for many numerical techniques-which generalizes efficiently to higher-dimensional, physically relevant systems with short-ranged strong potentials common in atomic and nuclear physics.",
+   "journal_ref": "",
+   "primary": "nucl-th"
+  },
+  {
+   "id": "2110.05937v6",
+   "title": "Kolmogorov complexity of unitary transformations in quantum computing",
+   "published": "2021-10-10",
+   "updated": "2022-01-19",
+   "authors": [
+    "Alexei Kaltchenko"
+   ],
+   "abstract": "We introduce a notion of Kolmogorov complexity of unitary transformation, which can (roughly) be understood as the least possible amount of information required to fully describe and reconstruct a given finite unitary transformation. In the context of quantum computing, it corresponds to the least possible amount of data to define and describe a quantum circuit or quantum computer program. Our Kolmogorov complexity of unitary transformation is built upon Kolmogorov \"qubit complexity\" of Berthiaume, W. Van Dam and S. Laplante via mapping from unitary transformations to positive operators, which are subsequently \"purified\". We discuss the optimality of our notion of Kolmogorov complexity in a broad sense and obtain a simple complexity bound.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.09903v1",
+   "title": "From Nonlinear Stochastic Differential Equations to Quantum Channels: The Kolmogorov--Lindblad Mapping",
+   "published": "2026-08-10",
+   "updated": "2026-08-10",
+   "authors": [
+    "Hsuan-Cheng Wu",
+    "Xiantao Li"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (SDEs) underlie molecular modeling and drug discovery, quantitative finance, stochastic learning, and uncertainty quantification. Their expectations, event probabilities, and time correlations are therefore natural targets for quantum computation, but nonlinear drift and averaging over noise realizations obstruct a direct quantum representation. We develop an exact \\emph{Kolmogorov--Lindblad mapping} (KLM) at the level of the probability law, encoded natively as a trace-one quantum density operator. For each Brownian realization, the pathwise density admits a half-density whose evolution is a stochastic Schr\u00f6dinger equation. Averaging the associated pure states yields a Lindblad equation for $\u0393(t)$ whose diagonal kernel is exactly the Fokker--Planck density, $p(t,x)=\u0393(t;x,x)$, with classical diffusion represented by decoherence through Hermitian jump operators. Statistical observables become quantum expectations without the unknown time-dependent normalization introduced by direct amplitude encoding of the density, and classical two-time correlations admit an exact quantum regression formula. A structure-preserving Galerkin projection retains the Lindblad form at finite dimension, placing classical SDEs and open quantum dynamics on the same quantum-native computational footing. Numerical experiments for double-well Langevin dynamics and noisy Lorenz--63 exhibit rapid convergence of statistical observables. KLM thus provides a mathematically controlled path from general nonlinear stochastic dynamics to quantum channels, while isolating function approximation and coherent operator access as the remaining determinants of algorithmic efficiency.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2511.04942v1",
+   "title": "Quantum Algorithm for Local-Volatility Option Pricing via the Kolmogorov Equation",
+   "published": "2025-11-07",
+   "updated": "2025-11-07",
+   "authors": [
+    "Nikita Guseynov",
+    "Mikel Sanz",
+    "\u00c1ngel Rodr\u00edguez-Rozas",
+    "Nana Liu",
+    "Javier Gonzalez-Conde"
+   ],
+   "abstract": "The solution of option-pricing problems may turn out to be computationally demanding due to non-linear and path-dependent payoffs, the high dimensionality arising from multiple underlying assets, and sophisticated models of price dynamics. In this context, quantum computing has been proposed as a means to address these challenges efficiently. Prevailing approaches either simulate the stochastic differential equations governing the forward dynamics of underlying asset prices or directly solve the backward pricing partial differential equation. Here, we present an end-to-end quantum algorithmic framework that solves the Kolmogorov forward (Fokker-Planck) partial differential equation for local-volatility models by mapping it to a Hamiltonian-simulation problem via the Schr\u00f6dingerisation technique. The algorithm specifies how to prepare the initial quantum state, perform Hamiltonian simulation, and how to efficiently recover the option price via a swap test. In particular, the efficiency of the final solution recovery is an important advantage of solving the forward versus the backward partial differential equation. Thus, our end-to-end framework offers a potential route toward quantum advantage for challenging option-pricing tasks. In particular, we obtain a polynomial advantage in grid size for the discretization of a single dimension. Nevertheless, the true power of our methodology lies in pricing high-dimensional systems, such as baskets of options, because the quantum framework admits an exponential speedup with respect to dimension, overcoming the classical curse of dimensionality.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2509.22752v1",
+   "title": "Proposal of method to solve a Traveling Salesman Problem using Variational Quantum Kolmogorov-Arnold Network",
+   "published": "2025-09-26",
+   "updated": "2025-09-26",
+   "authors": [
+    "Hikaru Wakaura"
+   ],
+   "abstract": "Traveling salesman problems (TSP) are one of the well-known combinatorial optimization problems that many groups tackle to solve. This problem appears in many types of combinational optimization, such as scheduling, route optimization, and circuit optimization. However, this problem is NP-hard, as the number of combinations increases exponentially as the number of sites increases. Quantum Annealers and Adiabatic Quantum Computers are good at solving it, and universal quantum computers are limited by the number of qubits they have. Therefore, we propose a novel approach that solves it using a Variational Quantum Kolmogorov-Arnold network (VQKAN). Our approach requires a smaller number of qubits than the former approaches on quantum computers. We confirmed that our approach can optimize the paths on the graphs whose length of each path is time-dependent, partial.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2101.11686v1",
+   "title": "Prefix-free quantum Kolmogorov complexity",
+   "published": "2021-01-27",
+   "updated": "2021-01-27",
+   "authors": [
+    "Tejas Bhojraj"
+   ],
+   "abstract": "We introduce quantum-K ($QK$), a measure of the descriptive complexity of density matrices using classical prefix-free Turing machines and show that the initial segments of weak Solovay random and quantum Schnorr random states are incompressible in the sense of $QK$. Many properties enjoyed by prefix-free Kolmogorov complexity ($K$) have analogous versions for $QK$; notably a counting condition. Several connections between Solovay randomness and $K$, including the Chaitin type characterization of Solovay randomness, carry over to those between weak Solovay randomness and $QK$. We work towards a Levin-Schnorr type characterization of weak Solovay randomness in terms of $QK$. Schnorr randomness has a Levin-Schnorr characterization using $K_C$; a version of $K$ using a computable measure machine, $C$. We similarly define $QK_C$, a version of $QK$. Quantum Schnorr randomness is shown to have a Levin-Schnorr and a Chaitin type characterization using $QK_C$. The latter implies a Chaitin type characterization of classical Schnorr randomness using $K_C$.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.01891v4",
+   "title": "Probing Quantum Spin Systems with Kolmogorov-Arnold Neural Network Quantum States",
+   "published": "2025-06-02",
+   "updated": "2025-06-27",
+   "authors": [
+    "Mahmud Ashraf Shamim",
+    "Eric A F Reinhardt",
+    "Talal Ahmed Chowdhury",
+    "Sergei Gleyzer",
+    "Paulo T Araujo"
+   ],
+   "abstract": "Neural Quantum States (NQS) are a class of variational wave functions parametrized by neural networks (NNs) to study quantum many-body systems. In this work, we propose \\texttt{SineKAN}, a NQS \\textit{ansatz} based on Kolmogorov-Arnold Networks (KANs), to represent quantum mechanical wave functions as nested univariate functions. We show that \\texttt{SineKAN} wavefunction with learnable sinusoidal activation functions can capture the ground state energies, fidelities and various correlation functions of the one dimensional Transverse-Field Ising model, Anisotropic Heisenberg model, and Antiferromagnetic $J_{1}-J_{2}$ model with different chain lengths. In our study of the $J_1-J_2$ model with $L=100$ sites, we find that the \\texttt{SineKAN} model outperforms several previously explored neural quantum state \\textit{ans\u00e4tze}, including Restricted Boltzmann Machines (RBMs), Long Short-Term Memory models (LSTMs), and Multi-layer Perceptrons (MLP) \\textit{a.k.a.} Feed Forward Neural Networks, when compared to the results obtained from the Density Matrix Renormalization Group (DMRG) algorithm. We find that \\texttt{SineKAN} models can be trained to high precisions and accuracies with minimal computational costs.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2605.04604v1",
+   "title": "Generative Quantum-inspired Kolmogorov-Arnold Eigensolver",
+   "published": "2026-05-06",
+   "updated": "2026-05-06",
+   "authors": [
+    "Yu-Cheng Lin",
+    "Yu-Chao Hsu",
+    "I-Shan Tsai",
+    "Chun-Hua Lin",
+    "Kuo-Chung Peng",
+    "Jiun-Cheng Jiang",
+    "Yun-Yuan Wang",
+    "Tzung-Chi Huang",
+    "Tai-Yue Li",
+    "Kuan-Cheng Chen",
+    "Samuel Yen-Chi Chen",
+    "Nan-Yow Chen"
+   ],
+   "abstract": "High-performance computing (HPC) is increasingly important for scalable quantum chemistry workflows that couple classical generative models, quantum circuit simulation, and selected configuration interaction postprocessing. We present the generative quantum-inspired Kolmogorov-Arnold eigensolver (GQKAE), a parameter-efficient extension of the generative quantum eigensolver (GQE) for quantum chemistry. GQKAE replaces the parameter-heavy feed-forward network components in GPT-style generative eigensolvers with hybrid quantum-inspired Kolmogorov-Arnold network modules, forming a compact HQKANsformer backbone. The method preserves autoregressive operator selection and the quantum-selected configuration interaction evaluation pipeline, while using single-qubit DatA Re-Uploading ActivatioN modules to provide expressive nonlinear mappings. Numerical benchmarks on H4, N2, LiH, C2H6, H2O, and the H2O dimer show that GQKAE achieves chemical accuracy comparable to the GPT-based GQE architecture, while reducing trainable parameters and memory by approximately 66% and improving wall-time performance. For strongly correlated systems such as N2 and LiH, GQKAE also improves convergence behavior and final energy errors. These results indicate that quantum-inspired Kolmogorov-Arnold networks can reduce classical-side overhead while preserving circuit-generation quality, offering a scalable route for HPC-quantum co-design on near-term quantum platforms.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.11014v4",
+   "title": "Generative Adversarial Variational Quantum Kolmogorov-Arnold Network",
+   "published": "2025-12-11",
+   "updated": "2025-12-31",
+   "authors": [
+    "Hikaru Wakaura"
+   ],
+   "abstract": "Kolmogorov Arnold Networks is a novel multilayer neuromorphic network that can exhibit higher accuracy than a neural network. It can learn and predict more accurately than neural networks with a smaller number of parameters, and many research groups worldwide have adopted it. As a result, many types of applications have been proposed. This network can be used as a generator solely or with a Generative Adversarial Network; however, KAN has a slower speed of learning than neural networks for the number of parameters. Hence,it has not been researched as a generator. Therefore, we propose a novel Generative Adversarial Network called Generative Adversarial Variational Quantum KAN that uses Variational Quantum KAN as a generator. This method enables efficient learning with significantly fewer parameters by leveraging the computational advantages of quantum circuits and their output distributions. We performed the training and generation task on MNIST and CIFAR10, and revealed that our method can achieve higher accuracy than neural networks and Quantum Generative Adversarial Network with less data.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2602.02056v4",
+   "title": "Ultrafast On-Chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks",
+   "published": "2026-02-02",
+   "updated": "2026-06-19",
+   "authors": [
+    "Duc Hoang",
+    "Aarush Gupta",
+    "Philip Harris"
+   ],
+   "abstract": "Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Field-Programmable Gate Arrays (FPGAs), a representative platform for on-chip computation, we demonstrate that KAN-based online learners are significantly more efficient and expressive than MLPs across a range of low-latency and resource-constrained tasks. To our knowledge, this work is the first to demonstrate model-free online learning at sub-microsecond latencies.",
+   "journal_ref": "",
+   "primary": "cs.AR"
+  },
+  {
+   "id": "2406.17630v3",
+   "title": "KANQAS: Kolmogorov-Arnold Network for Quantum Architecture Search",
+   "published": "2024-06-25",
+   "updated": "2024-12-11",
+   "authors": [
+    "Akash Kundu",
+    "Aritra Sarkar",
+    "Abhishek Sadhu"
+   ],
+   "abstract": "Quantum architecture Search (QAS) is a promising direction for optimization and automated design of quantum circuits towards quantum advantage. Recent techniques in QAS emphasize Multi-Layer Perceptron (MLP)-based deep Q-networks. However, their interpretability remains challenging due to the large number of learnable parameters and the complexities involved in selecting appropriate activation functions. In this work, to overcome these challenges, we utilize the Kolmogorov-Arnold Network (KAN) in the QAS algorithm, analyzing their efficiency in the task of quantum state preparation and quantum chemistry. In quantum state preparation, our results show that in a noiseless scenario, the probability of success is 2 to 5 times higher than MLPs. In noisy environments, KAN outperforms MLPs in fidelity when approximating these states, showcasing its robustness against noise. In tackling quantum chemistry problems, we enhance the recently proposed QAS algorithm by integrating curriculum reinforcement learning with a KAN structure. This facilitates a more efficient design of parameterized quantum circuits by reducing the number of required 2-qubit gates and circuit depth. Further investigation reveals that KAN requires a significantly smaller number of learnable parameters compared to MLPs; however, the average time of executing each episode for KAN is higher.",
+   "journal_ref": "EPJ Quantum Technology volume 11, Article number: 76 (2024)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.08782v1",
+   "title": "Quantum-Classical Physics-Informed Kolmogorov-Arnold Networks for Solving Fuzzy Differential Equations",
+   "published": "2026-08-09",
+   "updated": "2026-08-09",
+   "authors": [
+    "Xiang Rao",
+    "Yuxuan Shen"
+   ],
+   "abstract": "In this study, we propose a quantum-classical physics-informed Kolmogorov-Arnold network (QCPIKAN) dedicated to the solution of fuzzy differential equations. The network takes the spatiotemporal coordinates and membership level as joint inputs and employs ChebyKAN modules and a parameterized quantum circuit to construct a hybrid function approximator. It simultaneously approximates the lower and upper endpoint functions associated with the \u03b1-cuts and incorporates the governing equations, initial-boundary conditions, and fuzzy-structural constraints into the training objective. Theoretically, a unified error-analysis framework is established for QCPIKAN and PIKAN, in which the endpoint-solution error is decomposed into approximation, sampling, optimization, and fuzzy-structure constraint errors. Under the assumptions of well-posedness and residual stability, it is proved that QCPIKAN has a smaller a priori error bound when the representational gain introduced by quantum entanglement features exceeds the additional computational error. Numerical experiments are conducted for elliptic, parabolic, and hyperbolic equations in an ideal quantum-simulation environment. The results show that QCPIKAN captures the overall contraction of the solution interval as increases. At most tested membership levels, the mean relative L2 error of PIKAN is approximately 1.1-2.7 times that of QCPIKAN. In the fuzzy convection example, the mean wavefront-position error of PIKAN is approximately 1.77 times that of QCPIKAN. Nevertheless, both models still exhibit local fuzzy-structure violations near boundaries, in high-gradient regions, and around the wavefront. These results indicate that QCPIKAN provides a quantum-classical hybrid physics-informed computational framework with comparatively high predictive accuracy for solving fuzzy partial differential equations represented by \u03b1-cuts.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2509.14026v2",
+   "title": "Quantum Variational Activation Functions Empower Kolmogorov-Arnold Networks",
+   "published": "2025-09-17",
+   "updated": "2026-07-06",
+   "authors": [
+    "Jiun-Cheng Jiang",
+    "Morris Yu-Chao Huang",
+    "Tianlong Chen",
+    "Hsi-Sheng Goan"
+   ],
+   "abstract": "Variational quantum circuits (VQCs) are central to quantum machine learning, while recent progress in Kolmogorov-Arnold networks (KANs) highlights the power of learnable activation functions. We unify these directions by introducing the quantum variational activation function (QVAF), a general framework in which parameterized quantum circuits serve as learnable activation functions; in this work we study an efficient single-qubit instantiation called DatA Re-Uploading ActivatioN (DARUAN). We show that DARUAN with trainable data-preprocessing weights can realize an exponentially growing accessible frequency support with the number of re-uploading repetitions; for an explicit geometric choice of these weights, this gives a capacity-level exponential parameter reduction relative to independently parameterized Fourier activations. Embedding DARUAN into KAN yields the quantum-inspired Kolmogorov-Arnold Network (QKAN), which retains the interpretability of the KAN architecture while improving parameter efficiency, expressivity, and generalization. We further introduce layer extension and the hybrid QKAN (HQKAN) architecture to improve scalability and computational efficiency, enabling QKAN modules to act as compact replacements for multi-layer perceptrons (MLPs) in large-scale models. We provide theoretical analysis and extensive experiments on function regression, image classification, and autoregressive generative language modeling, demonstrating the efficiency and scalability of QKANs. Because the single-qubit circuits are efficiently simulable on classical quantum simulators, QKANs have quantum-inspired advantage in parameter efficiency and training stability; DARUANs and QKANs serve as present-day validation of the QVAF concept, and the trained DARUANs are directly executable and feasible on current noisy intermediate-scale quantum (NISQ) hardware for inference validation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2506.22801v1",
+   "title": "Optimization by VarQITE on Adaptive Variational Quantum Kolmogorov-Arnold Network",
+   "published": "2025-06-28",
+   "updated": "2025-06-28",
+   "authors": [
+    "Hikaru Wakaura",
+    "Rahmat Mulyawan",
+    "Andriyan B. Suksmono"
+   ],
+   "abstract": "Quantum imaginary time evolution (QITE) is a powerful method to derive the ground states of the systems. Only the damping of quantum states leads it; hence, reaching the ground state is guaranteed by nature without any external manipulation. Numerous QITE methods by many groups are used to improve speed and accuracy, derive excited states, and solve combined optimization problems. However, the QITE methods have not been used for quantum machine learning to predict the ideal values for multiple input values. Therefore, we propose a method for applying QITE methods for quantum machine learning and demonstrate fitting problems of elementary functions and classification problems on a 2-D plane. As a result, we confirmed that our method was more accurate than a quantum neural network in solving some problems. Our method can be used for other quantum machine learning algorithms; hence, it may be the milestone for applying QITE to quantum machine learning.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2609.03092v1",
+   "title": "Non-Kolmogorov-Arnold-Moser Quantum Sensors for Quantum Parameter Estimation",
+   "published": "2026-09-02",
+   "updated": "2026-09-02",
+   "authors": [
+    "Naga Dileep Varikuti",
+    "Sourav Manna",
+    "Athreya Shankar",
+    "Arul Lakshminarayan",
+    "Vaibhav Madhok"
+   ],
+   "abstract": "Non-KAM (Kolmogorov-Arnold-Moser) systems, when subjected to weak time-dependent perturbations, exhibit an abrupt transition to classical chaos through the breakdown of invariant phase-space tori. We showcase the utilization of non-KAM systems in the quantum regime as quantum sensors, leveraging their sensitivity at \\textit{resonances}. Quantum Fisher information (QFI) is a central quantity in quantum parameter estimation theory that measures how much information a quantum state contains about an unknown parameter that is encoded into it. In other words, it quantifies the sensitivity of a quantum state to small changes in that parameter. In this work, through numerical analysis in conjunction with analytical results, we study the performance of the non-KAM systems for quantum sensing applications by computing the QFI. We find that the growth of the QFI is remarkably enhanced when the resonance condition is satisfied. For frequency estimation under Floquet unitary encodings, we derive a transport bound: if the mean excitation number grows as $\\langle\\hat n(t)\\rangle\\sim t^\u03b1$, the QFI obeys $I(t)\\lesssim t^{2\u03b1+2}$. The quantum kicked harmonic oscillator, a paradigmatic non-KAM system, realizes the full hierarchy: localized dynamics ($\u03b1=0$) yield quadratic growth, delocalized diffusion along stochastic webs ($\u03b1=1$) yields quartic growth, and translationally invariant resonances ($\u03b1=2$) saturate the bound with anomalous hexic growth, $I(t)\\sim t^{6}$, established analytically at resonance $R=2$ and numerically at $R=4$. The enhancement stems from resonance-induced translational symmetry rather than exponential instability, identifying non-KAM resonances as a metrological resource distinct from chaos-assisted and criticality-based sensing.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2410.04435v2",
+   "title": "QKAN: quantum Kolmogorov-Arnold networks with applications in machine learning and multivariate state preparation",
+   "published": "2024-10-06",
+   "updated": "2026-05-13",
+   "authors": [
+    "Petr Ivashkov",
+    "Po-Wei Huang",
+    "Kelvin Koor",
+    "Lirand\u00eb Pira",
+    "Patrick Rebentrost"
+   ],
+   "abstract": "We introduce quantum Kolmogorov-Arnold networks (QKAN), a quantum algorithmic framework inspired by the recently proposed Kolmogorov-Arnold Networks (KAN). QKAN inherits the compositional structure of KAN and is based on block-encodings, constructed recursively from a single layer using quantum singular value transformation. We demonstrate the algorithmic utility of QKAN in two applications. First, we introduce and analyze QKAN as a quantum learning model, treating the eigenvalues of block-encoded matrices as neurons and applying parametrized activation functions on the edges of the network. We show that QKAN is a wide-and-shallow neural architecture, where shallow depth is compensated by exponentially wide layers whenever efficient block-encodings of inputs are available. We further discuss how to parametrize and train QKAN using parametrized quantum circuits and quantum linear algebra subroutines. Second, we demonstrate that QKAN can serve as a multivariate quantum state-preparation protocol for functions with shallow compositional structure. We demonstrate this by efficiently preparing a multivariate Gaussian quantum state using a two-layer QKAN. Looking forward, we anticipate that QKAN's compositional and modular design will enable new applications in quantum machine learning and quantum state preparation.",
+   "journal_ref": "npj Quantum Information 12, 73 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2107.01300v1",
+   "title": "Holographic Kolmogorov-Sinai entropy and the quantum Lyapunov spectrum",
+   "published": "2021-07-02",
+   "updated": "2021-07-02",
+   "authors": [
+    "Georg Maier",
+    "Andreas Sch\u00e4fer",
+    "Sebastian Waeber"
+   ],
+   "abstract": "In classical chaotic systems the entropy, averaged over initial phase space distributions, follows an universal behavior. While approaching thermal equilibrium it passes through a stage where it grows linearly, while the growth rate, the Kolmogorov-Sinai entropy, is given by the sum over all positive Lyapunov exponents. A natural question is whether a similar relation is valid for quantum systems. We argue that the Maldacena-Shenker-Stanford bound on quantum Lyapunov exponents $\u03bb$ implies that the upper bound on the growth rate of the entropy, averaged over states in Hilbert space that evolve towards a thermal state with temperature $T$ and entropy $S_{eq}$, should be given by $S_{eq} \u03c0T =\\sum_{\u03bb>0}2 \u03c0T$. Strongly coupled, large $N$ theories with black hole duals should saturate the bound. By studying a large number of isotropization processes of random, spatially homogeneous, far from equilibrium initial states in large $N$, $\\mathcal{N}=4$ Super Yang Mills theory at strong coupling and computing the ensemble averaged growth rate of the dual black hole's apparent horizon area, we find both an analogous behavior as in classical chaotic systems and numerical evidence that the conjectured bound on averaged entropy growth is saturated granted that the Lyapunov exponents are degenerate $\u03bb= \\pm 2 \u03c0T$. This fits to the behavior of classical systems with plus/minus symmetric Lyapunov spectra, a symmetry which implies the validity of Liouville's theorem.",
+   "journal_ref": "",
+   "primary": "hep-th"
+  },
+  {
+   "id": "2601.22719v1",
+   "title": "Single-Shot Flow Spectroscopy of a Polariton Condensate: Kibble-Zurek and Kolmogorov-Like Scaling",
+   "published": "2026-01-30",
+   "updated": "2026-01-30",
+   "authors": [
+    "Ivan Krasionov",
+    "Anton Putintsev",
+    "Maksim Kolker",
+    "Tamsin Cookson",
+    "Sergey Alyatkin",
+    "Pavlos G. Lagoudakis"
+   ],
+   "abstract": "Quantized vortices are fundamental topological excitations of quantum fluids. We report single-shot interferometric measurements of spontaneous vortex nucleation in a room-temperature organic exciton-polariton condensate. From hundreds of independent realizations we find random vortex-core positions and unbiased circulation, consistent with intrinsically stochastic, unpinned defect formation. The mean vortex number scales with pump power above threshold with an exponent consistent with Kibble-Zurek freeze-out in a driven-dissipative condensate. Using reconstructed phase maps we obtain single-shot flow fields, compute the incompressible component, and extract kinetic-energy spectra. Vortex-containing realizations develop a robust Kolmogorov-like segment with Einc(k) proportional to k^(-5/3) over a finite k range, indicating the onset of turbulent spectral scaling in a quantum fluid of light. These results establish single-shot access to phase and flow as a direct route to quantifying stochastic defect formation and emerging turbulence in polariton condensates.",
+   "journal_ref": "",
+   "primary": "cond-mat.mes-hall"
+  },
+  {
+   "id": "2301.13216v1",
+   "title": "Wave function network description and Kolmogorov complexity of quantum many-body systems",
+   "published": "2023-01-30",
+   "updated": "2023-01-30",
+   "authors": [
+    "T. Mendes-Santos",
+    "M. Schmitt",
+    "A. Angelone",
+    "A. Rodriguez",
+    "P. Scholl",
+    "H. J. Williams",
+    "D. Barredo",
+    "T. Lahaye",
+    "A. Browaeys",
+    "M. Heyl",
+    "M. Dalmonte"
+   ],
+   "abstract": "Programmable quantum devices are now able to probe wave functions at unprecedented levels. This is based on the ability to project the many-body state of atom and qubit arrays onto a measurement basis which produces snapshots of the system wave function. Extracting and processing information from such observations remains, however, an open quest. One often resorts to analyzing low-order correlation functions - i.e., discarding most of the available information content. Here, we introduce wave function networks - a mathematical framework to describe wave function snapshots based on network theory. For many-body systems, these networks can become scale free - a mathematical structure that has found tremendous success in a broad set of fields, ranging from biology to epidemics to internet science. We demonstrate the potential of applying these techniques to quantum science by introducing protocols to extract the Kolmogorov complexity corresponding to the output of a quantum simulator, and implementing tools for fully scalable cross-platform certification based on similarity tests between networks. We demonstrate the emergence of scale-free networks analyzing data from Rydberg quantum simulators manipulating up to 100 atoms. We illustrate how, upon crossing a phase transition, the system complexity decreases while correlation length increases - a direct signature of build up of universal behavior in data space. Comparing experiments with numerical simulations, we achieve cross-certification at the wave-function level up to timescales of 4 $\u03bc$ s with a confidence level of 90%, and determine experimental calibration intervals with unprecedented accuracy. Our framework is generically applicable to the output of quantum computers and simulators with in situ access to the system wave function, and requires probing accuracy and repetition rates accessible to most currently available platforms.",
+   "journal_ref": "Phys. Rev. X 14, 021029 (2024)",
+   "primary": "cond-mat.quant-gas"
+  },
+  {
+   "id": "2603.02818v3",
+   "title": "Merged amplitude encoding for Chebyshev quantum Kolmogorov--Arnold networks: trading qubits for circuit executions",
+   "published": "2026-03-03",
+   "updated": "2026-06-12",
+   "authors": [
+    "Hikaru Wakaura"
+   ],
+   "abstract": "Quantum Kolmogorov--Arnold networks based on Chebyshev polynomials (CCQKAN) evaluate each edge activation function as a quantum inner product, creating a trade-off between qubit count and the number of circuit executions per forward pass. We introduce merged amplitude encoding, a technique that packs the element-wise products of all $n$ input-edge vectors for a given output node into a single amplitude state, reducing circuit executions by a factor of $n$ at a cost of only 1--2 additional qubits relative to the sequential baseline. The merged and original circuits compute the same mathematical quantity exactly; the open question is whether they remain equally trainable within a gradient-based optimization loop. We address this question through numerical experiments on 10 network configurations under ideal, finite-shot, and noisy simulation conditions, comparing original, parameter-transferred, and independently initialized merged circuits over 16 random seeds. Wilcoxon signed-rank tests show no significant difference between the independently initialized merged circuit and the original ($p > 0.05$ in 28 of 30 comparisons), while parameter transfer yields significantly lower loss under ideal conditions ($p < 0.001$ in 9 of 10 configurations). On 10-class digit classification with the $8\\times8$ MNIST dataset using a one-vs-all strategy, original and merged circuits achieve comparable test accuracies of 53--78\\% with no significant difference in any configuration. These results provide empirical evidence that merged amplitude encoding preserves trainability under the simulation conditions tested.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "key": "rest2",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28%28abs%3A%22solute+tempering%22+OR+abs%3AREST2%29+AND+abs%3Aprotein%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:44",
+ "records": [
+  {
+   "id": "2505.08357v2",
+   "title": "Hamiltonian replica exchange augmented with diffusion-based generative models and importance sampling to assess biomolecular conformational basins and barriers",
+   "published": "2025-05-13",
+   "updated": "2025-10-21",
+   "authors": [
+    "Zakarya Benayad",
+    "Guillaume Stirnemann"
+   ],
+   "abstract": "Enhanced sampling techniques are essential for exploring biomolecular conformational dynamics that occur on timescales inaccessible to conventional molecular dynamics (MD) simulations. This study introduces a framework that combines Hamiltonian replica exchange with solute tempering (REST2) with denoising diffusion probabilistic models (DDPMs) and importance sampling to enhance the mapping of conformational free-energy landscapes. Building on previous applications of DDPMs to temperature replica exchange (TREM), we propose two key improvements. First, we adapt the method to REST2 by treating potential energy as a fluctuating variable. This adaptation allows for more efficient sampling in large biomolecular systems. Second, to further improve resolution in high-barrier regions, we develop an iterative scheme combining replica exchange, DDPM, and importance sampling along known collective variables. Benchmarking on the mini-protein CLN025 demonstrates that DDPM-refined REST2 achieves comparable accuracy to TREM while requiring fewer replicas. Application to the enzyme PTP1B reveals a loop transition pathway consistent with prior complex biased simulations, showcasing the approach's ability to uncover high-barrier transitions with minimal computational overhead with respect to conventional replica exchange approaches. Overall, this hybrid strategy enables more efficient exploration of free-energy landscapes, expanding the utility of generative models in enhanced sampling simulations.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2108.13641v1",
+   "title": "Boosting the Conformational Sampling by Combining Replica Exchange with Solute Tempering and Well-Sliced Metadynamics",
+   "published": "2021-08-31",
+   "updated": "2021-08-31",
+   "authors": [
+    "Anji Babu Kapakayala",
+    "Nisanth N. Nair"
+   ],
+   "abstract": "Methods that combine collective variable (CV) based enhanced sampling and global tempering approaches are used in speeding-up the conformational sampling and free energy calculation of large and soft systems with a plethora of energy minima. In this paper, a new method of this kind is proposed in which the well-sliced metadynamics approach (WSMTD) is united with Replica Exchange with Solute Tempering (REST2) method. WSMTD employs a divide-and-conquer strategy wherein high-dimensional slices of a free energy surface are independently sampled and combined. The method enables one to accomplish a controlled exploration of the CV-space with a restraining bias as in umbrella sampling (US), and enhance-sampling of one or more orthogonal CVs using a metadynamics (MTD) like bias. The new hybrid method proposed here enables boosting the sampling of more slow degrees of freedom in WSMTD simulations, without the need to specify associated CVs, through a replica exchange scheme within the framework of REST2. The high-dimensional slices of the probability distributions of CVs computed from the united WSMTD and REST2 simulations are subsequently combined using the weighted histogram analysis method (WHAM) to obtain the free energy surface. We show that the new method proposed here is accurate, improves the conformational sampling, and achieves quick convergence in free energy estimates. We demonstrate this by computing the conformational free energy landscapes of solvated alanine tripeptide and Trp-cage mini protein in explicit water.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2310.12329v1",
+   "title": "Improved prediction of molecular response to pulling by combining force tempering with replica exchange methods",
+   "published": "2023-10-18",
+   "updated": "2023-10-18",
+   "authors": [
+    "Yuvraj Singh",
+    "Glen M. Hocky"
+   ],
+   "abstract": "Small mechanical forces play important functional roles in many crucial cellular processes, including in the dynamical behavior of the cytoskeleton and in the regulation of osmotic pressure through membrane-bound proteins. Molecular simulations offer the promise of being able to design the behavior of proteins that sense and respond to these forces. However, it is difficult to predict and identify the effect of the relevant piconewton (pN) scale forces due to their small magnitude. Previously, we introduced the Infinite Switch Simulated Tempering in Force (FISST) method which allows one to estimate the effect of a range of applied forces from a single molecular dynamics simulation, and also demonstrated that FISST additionally accelerates sampling of a molecule's conformational landscape. For some problems, we find that this acceleration is not sufficient to capture all relevant conformational fluctuations, and hence here we demonstrate that FISST can be combined with either temperature replica exchange or solute tempering approaches to produce a hybrid method that enables more robust prediction of the effect of small forces on molecular systems.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2505.01860v1",
+   "title": "Performing all-atom molecular dynamics simulations of intrinsically disordered proteins with replica exchange solute tempering",
+   "published": "2025-05-03",
+   "updated": "2025-05-03",
+   "authors": [
+    "Jaya Krishna Koneru",
+    "Korey M. Reid",
+    "Paul Robustelli"
+   ],
+   "abstract": "All-atom molecular dynamics (MD) computer simulations are a valuable tool for characterizing the conformational ensembles of intrinsically disordered proteins (IDPs). IDP conformational ensembles are highly heterogeneous and contain structures with many distinct topologies separated by large free-energy barriers. Sampling the vast conformational space of IDPs in explicit solvent all-atom MD simulations is extremely challenging, and enhanced sampling methods are generally required to obtain statistically meaningful descriptions of IDP conformational ensembles. Replica exchange solute tempering (REST) methods, where multiple coupled simulations of a system are performed in parallel with selectively modified potential energy functions, are a powerful approach for efficiently sampling the conformational space of IDPs. In this chapter, we demonstrate how to set-up, perform and analyze all-atom MD simulations of IDPs with REST enhanced sampling methods.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  }
+ ]
+}

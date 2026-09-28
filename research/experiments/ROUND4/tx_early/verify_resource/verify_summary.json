@@ -1,0 +1,76 @@
+{
+ "verdict": "NOT REFUTED (with corrections C-1..C-3)",
+ "ledger": {
+  "cpu_min_lane_run_files": 76.7,
+  "peak_GB": 1.526,
+  "confirmed": true
+ },
+ "cost": {
+  "missing_cells_cpu_min_measured_rate": 149.3,
+  "missing_cells_cpu_min_bench_rate": 126.2,
+  "lane_claim": "~2 CPU-h",
+  "minimal_complete_test_cpu_min": 161.2,
+  "cap": 90,
+  "critic_A1_estimate": "30-45 CPU-min (omits F_22 echo)",
+  "C1": "pre-registered T-X-early infeasible under cap regardless of allocation: KEEP OPEN is a feasibility default, not a scientific outcome"
+ },
+ "recompute": {
+  "pass_40us": "7/8",
+  "maxdF_18_22": 0.0026,
+  "maxdF_16_22": 0.0056,
+  "backtest_rms_flat": [
+   0.0043,
+   0.003,
+   0.0015
+  ],
+  "backtest_rms_hybrid": [
+   0.0147,
+   0.0135,
+   0.0088
+  ],
+  "confirmed": true
+ },
+ "tracking": {
+  "p245_16_22_dH": -0.0106,
+  "se": 0.001,
+  "dfloor": -0.0078,
+  "hybrid_pred_dF": -0.0184,
+  "observed_dF": [
+   -0.0002,
+   0.0006,
+   -0.0001,
+   -0.0022
+  ],
+  "p19_16_22_dH": -0.0002,
+  "VC_H14_minus_multiseed": -0.0096,
+  "conclusion": "F insensitive (<~0.2) to genuine near/intermediate-shell H drift and to floor drift at N<=22 [MEASURED]; beyond rank 22 UNPROVEN"
+ },
+ "Finf_invN": {
+  "range_7of8": [
+   -0.005,
+   0.007
+  ],
+  "p19_b8": 0.025,
+  "p19_b8_chi2": 169,
+  "chi2_gt_dof": "5/8",
+  "note": "no validated functional form; H-2 cross-family check absent"
+ },
+ "csd_Nc": {
+  "p19_H40": {
+   "22": 0.362,
+   "24": 0.357,
+   "40": 0.362,
+   "80": 0.338,
+   "160": 0.363
+  },
+  "note": "N_c systematic ~0.01-0.025 not in se_H"
+ },
+ "breakeven": {
+  "N18_40us_cpu_s_per_probe": "25-27",
+  "N22_40us_cpu_min_per_probe": "16.8-17.1",
+  "flat_F_N18_rms_vs_F22": 0.0015,
+  "quantum": "no break-even possible on cost; open part is accuracy vs N->inf"
+ },
+ "verifier_cpu_min": 8.2,
+ "verifier_peak_GB": 0.39
+}

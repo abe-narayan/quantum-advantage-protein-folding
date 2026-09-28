@@ -1,0 +1,49 @@
+{
+ "key": "liouville_qalg",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28%28ti%3ALiouville+OR+abs%3A%22Liouville+equation%22%29+AND+abs%3A%22quantum+algorithm%22+AND+abs%3Anonlinear%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:14",
+ "records": [
+  {
+   "id": "2209.08478v2",
+   "title": "Time complexity analysis of quantum algorithms via linear representations for nonlinear ordinary and partial differential equations",
+   "published": "2022-09-18",
+   "updated": "2023-06-12",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Yue Yu"
+   ],
+   "abstract": "We construct quantum algorithms to compute the solution and/or physical observables of nonlinear ordinary differential equations (ODEs) and nonlinear Hamilton-Jacobi equations (HJE) via linear representations or exact mappings between nonlinear ODEs/HJE and linear partial differential equations (the Liouville equation and the Koopman-von Neumann equation). The connection between the linear representations and the original nonlinear system is established through the Dirac delta function or the level set mechanism. We compare the quantum linear systems algorithms based methods and the quantum simulation methods arising from different numerical approximations, including the finite difference discretisations and the Fourier spectral discretisations for the two different linear representations, with the result showing that the quantum simulation methods usually give the best performance in time complexity. We also propose the Schr\u00f6dinger framework to solve the Liouville equation for the HJE with the Hamiltonian formulation of classical mechanics, since it can be recast as the semiclassical limit of the Wigner transform of the Schr\u00f6dinger equation. Comparsion between the Schr\u00f6dinger and the Liouville framework will also be made.",
+   "journal_ref": "Journal of Computational Physics, 487:112149, 2023",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.09675v1",
+   "title": "An Efficient Explicit Implementation of a Quantum Algorithm with Quantum Advantage for Nonlinear Scalar Conservation Laws",
+   "published": "2026-08-10",
+   "updated": "2026-08-10",
+   "authors": [
+    "Kezhen Wang",
+    "Junpeng Hu",
+    "Lei Zhang"
+   ],
+   "abstract": "Quantum algorithms for nonlinear partial differential equations remain challenging because nonlinear dynamics are not directly amenable to unitary quantum simulation. Building on the level-set formulation, we construct a quantum algorithm and provide an explicit gate-level implementation for solving scalar conservation laws. The nonlinear equation is first lifted to a linear Liouville equation, discretized by finite differences, and then embedded into a unitary evolution through Schr\u00f6dingerisation. We further develop quantum procedures for estimating relevant observables from the evolved state. Error bounds and gate-complexity estimates are established for the complete algorithm. The resulting complexity comparison demonstrates a quantum advantage for observable estimation in sufficiently high spatial dimensions, under standard assumptions on state preparation and oracle access. Finally, numerical experiments validate the accuracy, multidimensional applicability, and predicted scaling of the proposed method.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.13887v1",
+   "title": "Implementing the Koopman-von Neumann approach on continuous-variable photonic quantum computers",
+   "published": "2025-12-15",
+   "updated": "2025-12-15",
+   "authors": [
+    "Xinfeng Gao",
+    "Olivier Pfister",
+    "Stefan Bekiranov"
+   ],
+   "abstract": "The Koopman-von Neumann (KvN) formalism recasts classical mechanics in a Hilbert space framework using complex wavefunctions and linear operators, akin to quantum mechanics. Instead of evolving probability densities in phase space (as in Liouville's equation), KvN uses a Schr\u00f6dinger-like equation for a classical wavefunction, with commuting position and momentum operators. Mapped to quantum computing, KvN offers a promising route to simulate classical dynamical systems using quantum algorithms by leveraging unitary evolution and quantum linear algebra tools, potentially enabling efficient classical-to-quantum mappings without invoking full quantum uncertainty. In this work, we specifically explore the implementation of the KvN approach on continuous-variable photonic quantum computing architectures, with the goals of leveraging quantum simulation for both sampling and computing intractable nonlinear dynamics. We will demonstrate its implementation and feasibility with two problems: the harmonic oscillator and a 1D partial differential equation governing nonlinear dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

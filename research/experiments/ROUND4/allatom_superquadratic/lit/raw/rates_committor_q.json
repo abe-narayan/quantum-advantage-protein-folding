@@ -1,0 +1,68 @@
+{
+ "key": "rates_committor_q",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28%28abs%3Acommittor+OR+abs%3A%22transition+rate%22+OR+abs%3A%22reaction+rate%22+OR+abs%3A%22first+passage%22%29+AND+abs%3A%22quantum+algorithm%22%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:20",
+ "records": [
+  {
+   "id": "2509.20668v1",
+   "title": "Quantum Algorithm for Subcellular Multiscale Reaction-Diffusion Systems",
+   "published": "2025-09-25",
+   "updated": "2025-09-25",
+   "authors": [
+    "Margot Lockwood",
+    "Nathan Wiebe",
+    "Connah Johnson",
+    "Johannes M\u00fclmenst\u00e4dt",
+    "Jaehun Chun",
+    "Gregory Schenter",
+    "Margaret S. Cheung",
+    "Xiangyu Li"
+   ],
+   "abstract": "Computational modeling of cellular systems, where reactants are governed by biochemical equations and physical representations, requires extensive classical computing resources. These limitations significantly constrain the system size and spatiotemporal scales of simulations. A key challenge lies in the \"curse of dimensionality\", where the number of possible reaction terms grows exponentially with the number of species, and the computation of reaction rates involving many-body interactions becomes intractable in polynomial time on classical computers. In this work, we introduce a quantum algorithmic framework designed to overcome these challenges, leveraging the architecture of quantum computing to simultaneously compute reaction rates and track the spatiotemporal dynamical evolutions of subcellular systems. We generalize the reaction-diffusion equation (RDE) for multiscale systems with arbitrary species count, encompassing higher-order interactions. Our approach achieves two principal quantum advantages: (i) an exponential quantum speedup in reaction-rate computation, contingent on the efficient preparation of polynomially accurate ground states on a quantum computer, and (ii)) a quadratic scaling in spatial grid points and polynomial scaling in the number of species for solving nonlinear RDEs, contrasting sharply with classical methods that scale exponentially with the system's degrees of freedom. To our knowledge, this represents the first efficient quantum algorithm for solving multiscale reaction-diffusion systems. This framework opens the door to simulations of biologically relevant subcellular processes across previously inaccessible spatial and temporal scales, with profound implications for computational biology, soft matter physics, and biophysical modeling.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2601.15523v2",
+   "title": "Provable Quantum Speedups for Reaction-Rate Estimation in High-Dimensional Fokker-Planck Dynamics",
+   "published": "2026-01-21",
+   "updated": "2026-06-18",
+   "authors": [
+    "Tyler Kharazi",
+    "Ahmad M. Alkadri",
+    "Kranthi K. Mandadapu",
+    "K. Birgitta Whaley"
+   ],
+   "abstract": "The Fokker-Planck equation models rare events across sciences, but blue{direct solution of the PDE is intractable for classical computers due to } its high-dimensional nature. Classical stochastic methods circumvent this curse-of-dimensionality, and serve as the de facto standard for practicing computational scientists. Quantum algorithms for such non-unitary dynamics often suffer from exponential decay in success probability. We introduce a quantum algorithm that overcomes this bottleneck for estimating reaction rates {and dynamical correlation functions more generally}. Using a sum-of-squares representation, we develop a Gaussian linear combination of Hamiltonian simulations (Gaussian-LCHS) to represent the non-unitary propagator with $O\\left(\\sqrt{t\\|H\\|\\log(1/\u03b5)}\\right)$ queries to its block encoding. Crucially, we pair this with {a} novel technique to directly estimate matrix elements without exponential decay. For $\u03b7$ pairwise interacting particles discretized with $N$ plane waves per degree of freedom, we estimate reactive flux to error $\u03b5$ using $\\widetilde{O}\\left((\u03b7^{5/2}\\sqrt{t\u03b2}\u03b1_V + \u03b7^{3/2}\\sqrt{t/\u03b2}N)/\u03b5\\right)$ quantum gates, where $\u03b1_V = \\max_{r}|V'(r)/r|$. We further prove that under comparable worst-case analytical guarantees, the sharpest classical bounds for estimating reaction rates via simulation of the associated overdamped Langevin dynamics scale as $O(t\u03b7^2 e^{\u03a9(\u03b7)}/\u03b5^4)$, yielding an exponential improvement in $\u03b7$, a quartic speedup in $\u03b5$, and quadratic speedup in the time horizon $t$. While classical algorithms may outperform these bounds in practice, this work demonstrates a rigorous route toward quantum advantage for high-dimensional dissipative dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2108.11410v1",
+   "title": "Sampling, rates, and reaction currents through reverse stochastic quantization on quantum computers",
+   "published": "2021-08-25",
+   "updated": "2021-08-25",
+   "authors": [
+    "Guglielmo Mazzola"
+   ],
+   "abstract": "The quest for improved sampling methods to solve statistical mechanics problems of physical and chemical interest proceeds with renewed efforts since the invention of the Metropolis algorithm, in 1953. In particular, the understanding of thermally activated rare-event processes between long-lived metastable states, such as protein folding, is still elusive. In this case, one needs both the finite-temperature canonical distribution function and the reaction current between the reactant and product states, to completely characterize the dynamic. Here we show how to tackle this problem using a quantum computer. We use the connection between a classical stochastic dynamics and the Schroedinger equation, also known as stochastic quantization, to variationally prepare quantum states allowing us to unbiasedly sample from a Boltzmann distribution. Similarly, reaction rate constants can be computed as ground state energies of suitably transformed operators, following the supersymmetric extension of the formalism. Finally, we propose a hybrid quantum-classical sampling scheme to escape local minima, and explore the configuration space in both real-space and spin hamiltonians. We indicate how to realize the quantum algorithms constructively, without assuming the existence of oracles, or quantum walk operators. The quantum advantage concerning the above applications is discussed.",
+   "journal_ref": "PRA, 104, 022431 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2404.08770v1",
+   "title": "Modeling Stochastic Chemical Kinetics on Quantum Computers",
+   "published": "2024-04-12",
+   "updated": "2024-04-12",
+   "authors": [
+    "Tilas Kabengele",
+    "Yash M. Lokare",
+    "J. B. Marston",
+    "Brenda M. Rubenstein"
+   ],
+   "abstract": "The Chemical Master Equation (CME) provides a highly accurate, yet extremely resource-intensive representation of a stochastic chemical reaction network and its kinetics due to the exponential scaling of its possible states with the number of reacting species. In this work, we demonstrate how quantum algorithms and hardware can be employed to model stochastic chemical kinetics as described by the CME using the Schl\u00f6gl Model of a trimolecular reaction network as an illustrative example. To ground our study of the performance of our quantum algorithms, we first determine a range of suitable parameters for constructing the stochastic Schl\u00f6gl operator in the mono- and bistable regimes of the model using a classical computer and then discuss the appropriateness of our parameter choices for modeling approximate kinetics on a quantum computer. We then apply the Variational Quantum Deflation (VQD) algorithm to evaluate the smallest-magnitude eigenvalues, $\u03bb_0$ and $\u03bb_1$, which describe the transition rates of both the mono- and bi-stable systems, and the Quantum Phase Estimation (QPE) algorithm combined with the Variational Quantum Singular Value Decomposition (VQSVD) algorithm to estimate the zeromode (ground state) of the bistable case. Our quantum computed results from both noisy and noiseless quantum simulations agree within a few percent with the classically computed eigenvalues and zeromode. Altogether, our work outlines a practical path toward the quantum solution of exponentially complex stochastic chemical kinetics problems and other related stochastic differential equations.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

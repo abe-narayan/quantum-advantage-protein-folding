@@ -1,0 +1,65 @@
+{
+ "key": "gibbs_continuous",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28%28abs%3A%22non-logconcave%22+OR+abs%3A%22non-log-concave%22+OR+abs%3A%22continuous+potentials%22+OR+abs%3A%22Witten+Laplacian%22%29+AND+abs%3Aquantum+AND+abs%3Asampling%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:38",
+ "records": [
+  {
+   "id": "2505.05301v2",
+   "title": "Operator-Level Quantum Acceleration of Non-Logconcave Sampling",
+   "published": "2025-05-08",
+   "updated": "2026-01-07",
+   "authors": [
+    "Jiaqi Leng",
+    "Zhiyan Ding",
+    "Zherui Chen",
+    "Lin Lin"
+   ],
+   "abstract": "Sampling from probability distributions of the form $\u03c3\\propto e^{-\u03b2V}$, where $V$ is a continuous potential, is a fundamental task across physics, chemistry, biology, computer science, and statistics. However, when $V$ is non-convex, the resulting distribution becomes non-logconcave, and classical methods such as Langevin dynamics often exhibit poor performance. We introduce the first quantum algorithm that provably accelerates a broad class of continuous-time sampling dynamics. For Langevin dynamics, our method encodes the target Gibbs measure into the amplitudes of a quantum state, identified as the kernel of a block matrix derived from a factorization of the Witten Laplacian operator. This connection enables Gibbs sampling via singular value thresholding and yields up to a quartic quantum speedup over best-known classical Langevin-based methods in the non-logconcave setting. Building on this framework, we further develop the first quantum algorithm that accelerates replica exchange Langevin diffusion, a widely used method for sampling from complex, rugged energy landscapes.",
+   "journal_ref": "Proceedings of the National Academy of Sciences 123(8), e2512789123 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.00656v1",
+   "title": "Quantum Algorithms for Gibbs Expectation of Non-log-concave and Heavy-tailed Distributions",
+   "published": "2026-04-01",
+   "updated": "2026-04-01",
+   "authors": [
+    "Xinmiao Li",
+    "Jin-Peng Liu"
+   ],
+   "abstract": "We establish a systematic framework of unbiased quantum sampling and estimation protocols for the classical Gibbs expectation. This framework generalizes existing approaches to the partition function estimation and has broader applications in various fields. We consider sampling and estimation for a wide class of non-log-concave distributions, particularly heavy-tailed ones, under relaxed assumptions beyond strong convexity, such as dissipativity. We develop an unbiased extension of quantum-accelerated multilevel Monte Carlo (QA-MLMC) to eliminate all biases from discretization and time truncation, together with introducing a change-of-measure approach and the Girsanov theorem via Radon-Nikodym derivatives. As a result, our approach achieves quantum complexity $\\widetilde{\\mathcal{O}}(\u03b5^{-1})$ within error $\u03b5$, whereas the classical MLMC requires $\\widetilde{\\mathcal{O}}(\u03b5^{-2})$ and existing quantum algorithms yield biased estimators under stronger assumptions. Furthermore, our unified framework enables unbiased quantum sampling and estimation for certain heavy-tailed distributions after transformation. We provide several concrete applications of our approach in statistics, machine learning, and finance, towards more practical scenarios of the quantum acceleration of stochastic processes.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2504.03626v2",
+   "title": "Quantum Speedups for Sampling and Non-convex Optimization with Stochastic Oracles",
+   "published": "2025-04-04",
+   "updated": "2026-09-02",
+   "authors": [
+    "Guneykan Ozgul",
+    "Xiantao Li",
+    "Mehrdad Mahdavi",
+    "Chunhao Wang"
+   ],
+   "abstract": "We present quantum speedups for sampling from distributions of the form $\u03c0\\propto e^{-f}$ on $\\mathbb{R}^d$. We consider two stochastic oracle models: a stochastic gradient oracle, where $f=\\frac{1}{n}\\sum_{i=1}^n f_i $ and component gradients $\\{\\nabla f_i\\}_{i \\in [n]}$ are available, and a stochastic evaluation oracle, where only noisy values of $f$ are available. Our framework accelerates classical stochastic Langevin Monte Carlo (LMC) and Hamiltonian Monte Carlo (HMC) algorithms by replacing stochastic gradient estimators with variance-controlled quantum mean estimation and gradient estimation subroutines. Unlike quantum walk based approaches, our algorithms do not require reversibility or exact gradients, and they preserve the structure of the underlying Markov chain. In the finite-sum setting, quantum mean estimation combined with classical variance-reduction techniques improves the stochastic gradient-query complexity for the approximate sampling task. In the stochastic zeroth-order setting, we develop gradient estimators robust to noisy function evaluations, yielding improved evaluation complexity for LMC and HMC. These results apply to strongly log-concave and/or non-log-concave distributions satisfying a log-Sobolev inequality, with convergence guarantees in Wasserstein distance and Kullback--Leibler divergence. We also show that faster sampling methods lead to quantum speedups for optimization, including for non-smooth and approximately convex objectives.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2310.11445v1",
+   "title": "Stochastic Quantum Sampling for Non-Logconcave Distributions and Estimating Partition Functions",
+   "published": "2023-10-17",
+   "updated": "2023-10-17",
+   "authors": [
+    "Guneykan Ozgul",
+    "Xiantao Li",
+    "Mehrdad Mahdavi",
+    "Chunhao Wang"
+   ],
+   "abstract": "We present quantum algorithms for sampling from non-logconcave probability distributions in the form of $\u03c0(x) \\propto \\exp(-\u03b2f(x))$. Here, $f$ can be written as a finite sum $f(x):= \\frac{1}{N}\\sum_{k=1}^N f_k(x)$. Our approach is based on quantum simulated annealing on slowly varying Markov chains derived from unadjusted Langevin algorithms, removing the necessity for function evaluations which can be computationally expensive for large data sets in mixture modeling and multi-stable systems. We also incorporate a stochastic gradient oracle that implements the quantum walk operators inexactly by only using mini-batch gradients. As a result, our stochastic gradient based algorithm only accesses small subsets of data points in implementing the quantum walk. One challenge of quantizing the resulting Markov chains is that they do not satisfy the detailed balance condition in general. Consequently, the mixing time of the algorithm cannot be expressed in terms of the spectral gap of the transition density, making the quantum algorithms nontrivial to analyze. To overcome these challenges, we first build a hypothetical Markov chain that is reversible, and also converges to the target distribution. Then, we quantified the distance between our algorithm's output and the target distribution by using this hypothetical chain as a bridge to establish the total complexity. Our quantum algorithms exhibit polynomial speedups in terms of both dimension and precision dependencies when compared to the best-known classical algorithms.",
+   "journal_ref": "Proceedings of the 41st International Conference on Machine Learning, Proceedings of Machine Learning Research 235:38953-38982, 2024",
+   "primary": "quant-ph"
+  }
+ ]
+}

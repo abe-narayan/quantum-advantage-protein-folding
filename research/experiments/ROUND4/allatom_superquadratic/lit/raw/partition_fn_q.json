@@ -1,0 +1,233 @@
+{
+ "key": "partition_fn_q",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28ti%3A%22partition+function%22+AND+ti%3Aquantum+AND+abs%3Aalgorithm%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:13",
+ "records": [
+  {
+   "id": "2208.00930v1",
+   "title": "Partition Function Estimation: Quantum and Quantum-Inspired Algorithms",
+   "published": "2022-08-01",
+   "updated": "2022-08-01",
+   "authors": [
+    "Andrew Jackson",
+    "Theodoros Kapourniotis",
+    "Animesh Datta"
+   ],
+   "abstract": "We present two algorithms, one quantum and one classical, for estimating partition functions of quantum spin Hamiltonians. The former is a DQC1 (Deterministic quantum computation with one clean qubit) algorithm, and the first such for complex temperatures. The latter, for real temperatures, achieves performance comparable to a state-of-the-art DQC1 algorithm [Chowdhury et al. Phys. Rev. A 103, 032422 (2021)]. Both our algorithms take as input the Hamiltonian decomposed as a linear combination Pauli operators. We show this decomposition to be DQC1-hard for a given Hamiltonian, providing new insight into the hardness of estimating partition functions.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2110.15466v2",
+   "title": "On the complexity of quantum partition functions",
+   "published": "2021-10-29",
+   "updated": "2023-09-20",
+   "authors": [
+    "Sergey Bravyi",
+    "Anirban Chowdhury",
+    "David Gosset",
+    "Pawel Wocjan"
+   ],
+   "abstract": "The partition function and free energy of a quantum many-body system determine its physical properties in thermal equilibrium. Here we study the computational complexity of approximating these quantities for $n$-qubit local Hamiltonians. First, we report a classical algorithm with $\\mathrm{poly}(n)$ runtime which approximates the free energy of a given $2$-local Hamiltonian provided that it satisfies a certain denseness condition. Our algorithm combines the variational characterization of the free energy and convex relaxation methods. It contributes to a body of work on efficient approximation algorithms for dense instances of optimization problems which are hard in the general case, and can be viewed as simultaneously extending existing algorithms for (a) the ground energy of dense $2$-local Hamiltonians, and (b) the free energy of dense classical Ising models. Secondly, we establish polynomial-time equivalence between the problem of approximating the free energy of local Hamiltonians and three other natural quantum approximate counting problems, including the problem of approximating the number of witness states accepted by a QMA verifier. These results suggest that simulation of quantum many-body systems in thermal equilibrium may precisely capture the complexity of a broad family of computational problems that has yet to be defined or characterized in terms of known complexity classes. Finally, we summarize state-of-the-art classical and quantum algorithms for approximating the free energy and show how to improve their runtime and memory footprint.",
+   "journal_ref": "Nature Physics, 18 (11) 1367-1370 (2022)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2411.17816v1",
+   "title": "Partition function estimation with a quantum coin toss",
+   "published": "2024-11-26",
+   "updated": "2024-11-26",
+   "authors": [
+    "Thais de Lima Silva",
+    "Lucas Borges",
+    "Leandro Aolita"
+   ],
+   "abstract": "Estimating quantum partition functions is a critical task in a variety of fields. However, the problem is classically intractable in general due to the exponential scaling of the Hamiltonian dimension $N$ in the number of particles. This paper introduces a quantum algorithm for estimating the partition function $Z_\u03b2$ of a generic Hamiltonian $H$ up to multiplicative error based on a quantum coin toss. The coin is defined by the probability of applying the quantum imaginary-time evolution propagator $f_\u03b2[H]=e^{-\u03b2H/{2}}$ at inverse temperature $\u03b2$ to the maximally mixed state, realized by a block-encoding of $f_\u03b2[H]$ into a unitary quantum circuit followed by a post-selection measurement. Our algorithm does not use costly subroutines such as quantum phase estimation or amplitude amplification; and the binary nature of the coin allows us to invoke tools from Bernoulli-process analysis to prove a runtime scaling as $\\mathcal{O}(N/{Z_\u03b2})$, quadratically better than previous general-purpose algorithms using similar quantum resources. Moreover, since the coin is defined by a single observable, the method lends itself well to quantum error mitigation. We test this in practice with a proof-of-concept 9-qubit experiment, where we successfully mitigate errors through a simple noise-extrapolation procedure. Our findings offer an interesting alternative for quantum partition function estimation relevant to early-fault quantum hardware.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2004.11568v2",
+   "title": "Efficient Algorithms for Approximating Quantum Partition Functions",
+   "published": "2020-04-24",
+   "updated": "2021-02-01",
+   "authors": [
+    "Ryan L. Mann",
+    "Tyler Helmuth"
+   ],
+   "abstract": "We establish a polynomial-time approximation algorithm for partition functions of quantum spin models at high temperature. Our algorithm is based on the quantum cluster expansion of Neto\u010dn\u00fd and Redig and the cluster expansion approach to designing algorithms due to Helmuth, Perkins, and Regts. Similar results have previously been obtained by related methods, and our main contribution is a simple and slightly sharper analysis for the case of pairwise interactions on bounded-degree graphs.",
+   "journal_ref": "Journal of Mathematical Physics 62, 022201 (2021)",
+   "primary": "cs.DS"
+  },
+  {
+   "id": "2506.09318v1",
+   "title": "Canonical Partition Function on a Quantum Computer through Trotter Interpolation",
+   "published": "2025-06-11",
+   "updated": "2025-06-11",
+   "authors": [
+    "Taozhi Guo",
+    "Gumaro Rendon",
+    "Rutuja Kshirsagar"
+   ],
+   "abstract": "In this work, we present a Gibbs state observable estimation algorithm based on Trotter interpolation, which reaches a state-of-the-art quantum computational cost of $ \\tilde{O}(\u03b2\\log{1/\u03b5})$. Our approach saves $\\log(\u0393)$ ancilla qubits compared with the qubitization-based methods for Hamiltonian with $\u0393$ stages. To provide a robust assessment of our approach, we benchmark our results against state-of-the-art methodology using the SYK model as a testbed. Our method provides an efficient alternative method for Gibbs-state accessing based on Trotterization in the context of quantum state preparation and estimation of thermal observables.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2207.08643v2",
+   "title": "A Sublinear-Time Quantum Algorithm for Approximating Partition Functions",
+   "published": "2022-07-18",
+   "updated": "2023-01-07",
+   "authors": [
+    "Arjan Cornelissen",
+    "Yassine Hamoudi"
+   ],
+   "abstract": "We present a novel quantum algorithm for estimating Gibbs partition functions in sublinear time with respect to the logarithm of the size of the state space. This is the first speed-up of this type to be obtained over the seminal nearly-linear time algorithm of \u0160tefankovi\u010d, Vempala and Vigoda [JACM, 2009]. Our result also preserves the quadratic speed-up in precision and spectral gap achieved in previous work by exploiting the properties of quantum Markov chains. As an application, we obtain new polynomial improvements over the best-known algorithms for computing the partition function of the Ising model, counting the number of $k$-colorings, matchings or independent sets of a graph, and estimating the volume of a convex body. Our approach relies on developing new variants of the quantum phase and amplitude estimation algorithms that return nearly unbiased estimates with low variance and without destroying their initial quantum state. We extend these subroutines into a nearly unbiased quantum mean estimator that reduces the variance quadratically faster than the classical empirical mean. No such estimator was known to exist prior to our work. These properties, which are of general interest, lead to better convergence guarantees within the paradigm of simulated annealing for computing partition functions.",
+   "journal_ref": "Proceedings of the 34th Symposium on Discrete Algorithms (SODA), pages 1245-1264, 2023",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2403.08642v5",
+   "title": "Reweight-annealing method for evaluating the partition function via quantum Monte Carlo calculations",
+   "published": "2024-03-13",
+   "updated": "2024-10-30",
+   "authors": [
+    "Yi-Ming Ding",
+    "Jun-Song Sun",
+    "Nvsen Ma",
+    "Gaopei Pan",
+    "Chen Cheng",
+    "Zheng Yan"
+   ],
+   "abstract": "Efficient and accurate algorithm for partition function, free energy and thermal entropy calculations is of great significance in statistical physics and quantum many-body physics. Here we present an unbiased but low-technical-barrier algorithm within the quantum Monte Carlo framework, which has exceptionally high accuracy and no systemic error. Compared with the conventional specific heat integral method and Wang-Landau sampling algorithm, our method can obtain a much more accurate result of the sub-leading coefficient of the entropy. This method can be widely used in both classical and quantum Monte Carlo simulations and is easy to be parallelized on computer.",
+   "journal_ref": "Phys. Rev. B 110.165152 (2024)",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2009.11270v5",
+   "title": "Simpler (classical) and faster (quantum) algorithms for Gibbs partition functions",
+   "published": "2020-09-23",
+   "updated": "2022-08-31",
+   "authors": [
+    "Srinivasan Arunachalam",
+    "Vojtech Havlicek",
+    "Giacomo Nannicini",
+    "Kristan Temme",
+    "Pawel Wocjan"
+   ],
+   "abstract": "We present classical and quantum algorithms for approximating partition functions of classical Hamiltonians at a given temperature. Our work has two main contributions: first, we modify the classical algorithm of \u0160tefankovi\u010d, Vempala and Vigoda (\\emph{J.~ACM}, 56(3), 2009) to improve its sample complexity; second, we quantize this new algorithm, improving upon the previously fastest quantum algorithm for this problem, due to Harrow and Wei (SODA 2020). The conventional approach to estimating partition functions requires approximating the means of Gibbs distributions at a set of inverse temperatures that form the so-called cooling schedule. The length of the cooling schedule directly affects the complexity of the algorithm. Combining our improved version of the algorithm of \u0160tefankovi\u010d, Vempala and Vigoda with the paired-product estimator of Huber (\\emph{Ann.\\ Appl.\\ Probab.}, 25(2),~2015), our new quantum algorithm uses a shorter cooling schedule than previously known. This length matches the optimal length conjectured by \u0160tefankovi\u010d, Vempala and Vigoda. The quantum algorithm also achieves a quadratic advantage in the number of required quantum samples compared to the number of random samples drawn by the best classical algorithm, and its computational complexity has quadratically better dependence on the spectral gap of the Markov chains used to produce the quantum samples.",
+   "journal_ref": "Quantum 6, 789 (2022)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2201.06533v2",
+   "title": "Efficient Algorithms for Approximating Quantum Partition Functions at Low Temperature",
+   "published": "2022-01-17",
+   "updated": "2023-10-13",
+   "authors": [
+    "Tyler Helmuth",
+    "Ryan L. Mann"
+   ],
+   "abstract": "We establish an efficient approximation algorithm for the partition functions of a class of quantum spin systems at low temperature, which can be viewed as stable quantum perturbations of classical spin systems. Our algorithm is based on combining the contour representation of quantum spin systems of this type due to Borgs, Koteck\u00fd, and Ueltschi with the algorithmic framework developed by Helmuth, Perkins, and Regts, and Borgs et al.",
+   "journal_ref": "Quantum 7, 1155 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1907.09965v2",
+   "title": "Adaptive Quantum Simulated Annealing for Bayesian Inference and Estimating Partition Functions",
+   "published": "2019-07-23",
+   "updated": "2020-02-06",
+   "authors": [
+    "Aram W. Harrow",
+    "Annie Y. Wei"
+   ],
+   "abstract": "Markov chain Monte Carlo algorithms have important applications in counting problems and in machine learning problems, settings that involve estimating quantities that are difficult to compute exactly. How much can quantum computers speed up classical Markov chain algorithms? In this work we consider the problem of speeding up simulated annealing algorithms, where the stationary distributions of the Markov chains are Gibbs distributions at temperatures specified according to an annealing schedule. We construct a quantum algorithm that both adaptively constructs an annealing schedule and quantum samples at each temperature. Our adaptive annealing schedule roughly matches the length of the best classical adaptive annealing schedules and improves on nonadaptive temperature schedules by roughly a quadratic factor. Our dependence on the Markov chain gap matches other quantum algorithms and is quadratically better than what classical Markov chains achieve. Our algorithm is the first to combine both of these quadratic improvements. Like other quantum walk algorithms, it also improves on classical algorithms by producing \"qsamples\" instead of classical samples. This means preparing quantum states whose amplitudes are the square roots of the target probability distribution. In constructing the annealing schedule we make use of amplitude estimation, and we introduce a method for making amplitude estimation nondestructive at almost no additional cost, a result that may have independent interest. Finally we demonstrate how this quantum simulated annealing algorithm can be applied to the problems of estimating partition functions and Bayesian inference.",
+   "journal_ref": "Proc. of SODA 2020",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2310.11445v1",
+   "title": "Stochastic Quantum Sampling for Non-Logconcave Distributions and Estimating Partition Functions",
+   "published": "2023-10-17",
+   "updated": "2023-10-17",
+   "authors": [
+    "Guneykan Ozgul",
+    "Xiantao Li",
+    "Mehrdad Mahdavi",
+    "Chunhao Wang"
+   ],
+   "abstract": "We present quantum algorithms for sampling from non-logconcave probability distributions in the form of $\u03c0(x) \\propto \\exp(-\u03b2f(x))$. Here, $f$ can be written as a finite sum $f(x):= \\frac{1}{N}\\sum_{k=1}^N f_k(x)$. Our approach is based on quantum simulated annealing on slowly varying Markov chains derived from unadjusted Langevin algorithms, removing the necessity for function evaluations which can be computationally expensive for large data sets in mixture modeling and multi-stable systems. We also incorporate a stochastic gradient oracle that implements the quantum walk operators inexactly by only using mini-batch gradients. As a result, our stochastic gradient based algorithm only accesses small subsets of data points in implementing the quantum walk. One challenge of quantizing the resulting Markov chains is that they do not satisfy the detailed balance condition in general. Consequently, the mixing time of the algorithm cannot be expressed in terms of the spectral gap of the transition density, making the quantum algorithms nontrivial to analyze. To overcome these challenges, we first build a hypothetical Markov chain that is reversible, and also converges to the target distribution. Then, we quantified the distance between our algorithm's output and the target distribution by using this hypothetical chain as a bridge to establish the total complexity. Our quantum algorithms exhibit polynomial speedups in terms of both dimension and precision dependencies when compared to the best-known classical algorithms.",
+   "journal_ref": "Proceedings of the 41st International Conference on Machine Learning, Proceedings of Machine Learning Research 235:38953-38982, 2024",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2404.02414v2",
+   "title": "A simple lower bound for the complexity of estimating partition functions on a quantum computer",
+   "published": "2024-04-03",
+   "updated": "2024-04-09",
+   "authors": [
+    "Zherui Chen",
+    "Giacomo Nannicini"
+   ],
+   "abstract": "We study the complexity of estimating the partition function $\\mathsf{Z}(\u03b2)=\\sum_{x\\in\u03c7} e^{-\u03b2H(x)}$ for a Gibbs distribution characterized by the Hamiltonian $H(x)$. We provide a simple and natural lower bound for quantum algorithms that solve this task by relying on reflections through the coherent encoding of Gibbs states. Our primary contribution is a $\\varOmega(1/\u03b5)$ lower bound for the number of reflections needed to estimate the partition function with a quantum algorithm. The proof is based on a reduction from the problem of estimating the Hamming weight of an unknown binary string.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2501.01154v1",
+   "title": "Quantum Computing for Partition Function Estimation of a Markov Random Field in a Radar Anomaly Detection Problem",
+   "published": "2025-01-02",
+   "updated": "2025-01-02",
+   "authors": [
+    "Timothe Presles",
+    "Cyrille Enderli",
+    "Gilles Burel",
+    "El Houssain Baghious"
+   ],
+   "abstract": "In probability theory, the partition function is a factor used to reduce any probability function to a density function with total probability of one. Among other statistical models used to represent joint distribution, Markov random fields (MRF) can be used to efficiently represent statistical dependencies between variables. As the number of terms in the partition function scales exponentially with the number of variables, the potential of each configuration cannot be computed exactly in a reasonable time for large instances. In this paper, we aim to take advantage of the exponential scalability of quantum computing to speed up the estimation of the partition function of a MRF representing the dependencies between operating variables of an airborne radar. For that purpose, we implement a quantum algorithm for partition function estimation in the one clean qubit model. After proposing suitable formulations, we discuss the performances and scalability of our approach in comparison to the theoretical performances of the algorithm.",
+   "journal_ref": "",
+   "primary": "cs.ET"
+  },
+  {
+   "id": "2504.20901v3",
+   "title": "High-temperature partition functions and classical simulatability of long-range quantum systems",
+   "published": "2025-04-29",
+   "updated": "2026-01-07",
+   "authors": [
+    "Jorge S\u00e1nchez-Segovia",
+    "Jan T. Schneider",
+    "\u00c1lvaro M. Alhambra"
+   ],
+   "abstract": "Long-range quantum systems, in which the interactions decay as $1/r^\u03b1$, are of increasing interest due to the variety of experimental set-ups in which they naturally appear. Motivated by this, we study fundamental properties of long-range spin systems in thermal equilibrium, focusing on the weak regime of $ \u03b1>D$. Our main result is a proof of analiticity of their partition functions at high temperatures, which allows us to construct a classical algorithm with sub-exponential runtime $\\exp(\\mathcal{O}(\\log^2(N/\u03b5)))$ that approximates the log-partition function to small additive error $\u03b5$. As by-products, we establish the equivalence of ensembles and the Gaussianity of the density of states, which we verify numerically in both the weak and strong long-range regimes. This also yields constraints on the appearance of various classes of phase transitions, including thermal, dynamical and excited-state ones. Our main technical contribution is the extension to the quantum long-range regime of the convergence criterion for cluster expansions of Koteck\u00fd and Preiss.",
+   "journal_ref": "PRX QUANTUM 6, 2025",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1910.09071v1",
+   "title": "Classical algorithms, correlation decay, and complex zeros of partition functions of quantum many-body systems",
+   "published": "2019-10-20",
+   "updated": "2019-10-20",
+   "authors": [
+    "Aram Harrow",
+    "Saeed Mehraban",
+    "Mehdi Soleimanifar"
+   ],
+   "abstract": "In this paper, we present a quasi-polynomial time classical algorithm that estimates the partition function of quantum many-body systems at temperatures above the thermal phase transition point. It is known that in the worst case, the same problem is NP-hard below this point. Together with our work, this shows that the transition in the phase of a quantum system is also accompanied by a transition in the hardness of approximation. We also show that in a system of n particles above the phase transition point, the correlation between two observables whose distance is at least log(n) decays exponentially. We can improve the factor of log(n) to a constant when the Hamiltonian has commuting terms or is on a 1D chain. The key to our results is a characterization of the phase transition and the critical behavior of the system in terms of the complex zeros of the partition function. Our work extends a seminal work of Dobrushin and Shlosman on the equivalence between the decay of correlations and the analyticity of the free energy in classical spin models. On the algorithmic side, our result extends the scope of a recent approach due to Barvinok for solving classical counting problems to quantum many-body systems.",
+   "journal_ref": "Proc of STOC 2020, pp 378-386",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2510.07495v1",
+   "title": "3-Local Hamiltonian Problem and Constant Relative Error Quantum Partition Function Approximation: $O(2^{\\frac{n}{2}})$ Algorithm Is Nearly Optimal under QSETH",
+   "published": "2025-10-08",
+   "updated": "2025-10-08",
+   "authors": [
+    "Nai-Hui Chia",
+    "Yu-Ching Shen"
+   ],
+   "abstract": "We investigate the computational complexity of the Local Hamiltonian (LH) problem and the approximation of the Quantum Partition Function (QPF), two central problems in quantum many-body physics and quantum complexity theory. Both problems are known to be QMA-hard, and under the widely believed assumption that $\\mathsf{BQP} \\neq \\mathsf{QMA}$, no efficient quantum algorithm exits. The best known quantum algorithm for LH runs in $O\\bigl(2^{\\frac{n}{2}(1 - o(1))}\\bigr)$ time, while for QPF, the state-of-the-art algorithm achieves relative error $\u03b4$ in $O^\\ast\\bigl(\\frac{1}\u03b4\\sqrt{\\frac{2^n}{Z}}\\bigr)$ time, where $Z$ denotes the value of the partition function. A nature open question is whether more efficient algorithms exist for both problems. In this work, we establish tight conditional lower bounds showing that these algorithms are nearly optimal. Under the plausible Quantum Strong Exponential Time Hypothesis (QSETH), we prove that no quantum algorithm can solve either LH or approximate QPF significantly faster than $O(2^{n/2})$, even for 3-local Hamiltonians. In particular, we show: 1) 3-local LH cannot be solved in time $O(2^{\\frac{n}{2}(1-\\varepsilon)})$ for any $\\varepsilon > 0$ under QSETH; 2) 3-local QPF cannot be approximated up to any constant relative error in $O(2^{\\frac{n}{2}(1-\\varepsilon)})$ time for any $\\varepsilon > 0$ under QSETH; and 3) we present a quantum algorithm that approximates QPF up to relative error $1/2 + 1/\\mathrm{poly}(n)$ in $O^\\ast(2^{n/2})$ time, matching our conditional lower bound. Notably, our results provide the first fine-grained lower bounds for both LH and QPF with fixed locality. This stands in sharp contrast to QSETH and the trivial fine-grained lower bounds for LH, where the locality of the SAT instance and the Hamiltonian depends on the parameter $\\varepsilon$ in the $O(2^{\\frac{n}{2}(1-\\varepsilon)})$ running time.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

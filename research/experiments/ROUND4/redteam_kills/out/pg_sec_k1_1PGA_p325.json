@@ -1,0 +1,158 @@
+{
+ "ham": "sec",
+ "pdb": "1PGA",
+ "probe": 325,
+ "kappa": 1.0,
+ "bs": [
+  1,
+  7,
+  8,
+  9
+ ],
+ "names": [
+  "H/THR44",
+  "HA/TRP43",
+  "H/THR53",
+  "HB2/TRP43",
+  "HA/THR44",
+  "HG1/THR53",
+  "HG21/THR44",
+  "HE3/TRP43",
+  "HG1/THR44",
+  "HB3/TRP43"
+ ],
+ "rotor_groups_in_cluster": [
+  [
+   "HG21/THR44",
+   "HG22/THR44",
+   "HG23/THR44"
+  ]
+ ],
+ "cluster_rotor_label": [
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  0,
+  -1,
+  -1,
+  -1
+ ],
+ "params": [
+  {
+   "name": "radial_HB3/TRP43",
+   "r": 3.8383941954937355
+  },
+  {
+   "name": "radial_HG1/THR44",
+   "r": 3.7712117416024227
+  },
+  {
+   "name": "radial_HE3/TRP43",
+   "r": 3.4424476757098312
+  },
+  {
+   "name": "rigid_res43",
+   "r": 3.8383941954937355
+  }
+ ],
+ "columns": [
+  "radial_HB3/TRP43",
+  "radial_HG1/THR44",
+  "radial_HE3/TRP43",
+  "rigid_res43",
+  "Omega_0",
+  "Omega_1",
+  "Omega_2",
+  "Omega_3",
+  "Omega_4",
+  "Omega_5",
+  "Omega_6",
+  "Omega_7",
+  "Omega_8",
+  "Omega_9",
+  "eta",
+  "eps0",
+  "epsg_0"
+ ],
+ "col_kinds": [
+  "struct",
+  "struct",
+  "struct",
+  "struct",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "eta",
+  "eps0",
+  "epsg"
+ ],
+ "sigma": 0.01,
+ "dt": 2e-06,
+ "steps": 160,
+ "rec": 5,
+ "fd": {
+  "h_struct": 0.05,
+  "h_omega": 628.3185307179587,
+  "h_eta": 0.01,
+  "h_eps0": 0.01,
+  "h_epsg": 0.02
+ },
+ "Omega0_hz": [
+  2040.9191213851823,
+  -2555.6650313141818,
+  418.0988467257788,
+  -567.7696061279298,
+  -452.6492921104458,
+  -215.59716308976587,
+  -2019.986129147251,
+  -231.93237764418947,
+  -865.2130762749417,
+  3322.9995166448825
+ ],
+ "cpu_s": 61.46875,
+ "done": [
+  "radial_HB3/TRP43",
+  "radial_HG1/THR44",
+  "radial_HE3/TRP43",
+  "rigid_res43",
+  "Omega_0",
+  "Omega_1",
+  "Omega_2",
+  "Omega_3",
+  "Omega_4",
+  "Omega_5",
+  "Omega_6",
+  "Omega_7",
+  "Omega_8",
+  "Omega_9",
+  "eta",
+  "eps0",
+  "epsg_0"
+ ],
+ "validation_static_vs_amp_lib": {
+  "S": 0.0,
+  "F1": 0.0
+ },
+ "validation_eta_path_vs_fast": 3.531619441332623e-13,
+ "base_vs_static_offsetfree_max_over_sigma": {
+  "S": 3.1432502449728714,
+  "G": 17.910725078963118
+ },
+ "cpu_base_s": 10.8125,
+ "cpu_s_last": 61.46875,
+ "mis_seeds": [
+  100,
+  101
+ ],
+ "complete": true
+}

@@ -1,0 +1,280 @@
+{
+ "key": "fast_folding_ml",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28abs%3A%22fast-folding+proteins%22+OR+abs%3A%22fast+folding+proteins%22%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:40",
+ "records": [
+  {
+   "id": "2410.09667v2",
+   "title": "EquiJump: Protein Dynamics Simulation via SO(3)-Equivariant Stochastic Interpolants",
+   "published": "2024-10-12",
+   "updated": "2024-12-07",
+   "authors": [
+    "Allan dos Santos Costa",
+    "Ilan Mitnikov",
+    "Franco Pellegrini",
+    "Ameya Daigavane",
+    "Mario Geiger",
+    "Zhonglin Cao",
+    "Karsten Kreis",
+    "Tess Smidt",
+    "Emine Kucukbenli",
+    "Joseph Jacobson"
+   ],
+   "abstract": "Mapping the conformational dynamics of proteins is crucial for elucidating their functional mechanisms. While Molecular Dynamics (MD) simulation enables detailed time evolution of protein motion, its computational toll hinders its use in practice. To address this challenge, multiple deep learning models for reproducing and accelerating MD have been proposed drawing on transport-based generative methods. However, existing work focuses on generation through transport of samples from prior distributions, that can often be distant from the data manifold. The recently proposed framework of stochastic interpolants, instead, enables transport between arbitrary distribution endpoints. Building upon this work, we introduce EquiJump, a transferable SO(3)-equivariant model that bridges all-atom protein dynamics simulation time steps directly. Our approach unifies diverse sampling methods and is benchmarked against existing models on trajectory data of fast folding proteins. EquiJump achieves state-of-the-art results on dynamics simulation with a transferable model on all of the fast folding proteins.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2506.18823v1",
+   "title": "Hierarchical friction memory leads to subdiffusive configurational dynamics of fast-folding proteins",
+   "published": "2025-06-23",
+   "updated": "2025-06-23",
+   "authors": [
+    "Anton Klimek",
+    "Benjamin A. Dalton",
+    "Lucas Tepper",
+    "Roland R. Netz"
+   ],
+   "abstract": "Proteins often exhibit subdiffusive configurational dynamics. The origins of this subdiffusion are still unresolved. We investigate the impact of non-Markovian friction and the free energy landscape on the dynamics of fast-folding proteins in terms of the mean squared displacement (MSD) and the mean first-passage-time (MFPT) of the folding reaction coordinate. We find the friction memory kernel from published molecular dynamics (MD) simulations to be well-described by a hierarchical multi-exponential function, which gives rise to subdiffusion in the MSD over a finite range of time. We show that friction memory effects in fast-folding proteins dominate the scaling behavior of the MSD compared to effects due to the folding free energy landscape. As a consequence, Markovian models are insufficient for capturing the folding dynamics, as quantified by the MSD and the MFPT, even when including coordinate-dependent friction. Our results demonstrate the importance of memory effects in protein folding and conformational dynamics and explicitly show that subdiffusion in fast-folding protein dynamics originates from memory effects, not from the free energy landscape and not from coordinate-dependent friction.",
+   "journal_ref": "",
+   "primary": "cond-mat.soft"
+  },
+  {
+   "id": "2507.07390v4",
+   "title": "Learning Collective Variables from BioEmu with Time-Lagged Generation",
+   "published": "2025-07-10",
+   "updated": "2026-02-22",
+   "authors": [
+    "Seonghyun Park",
+    "Kiyoung Seong",
+    "Soojung Yang",
+    "Rafael G\u00f3mez-Bombarelli",
+    "Sungsoo Ahn"
+   ],
+   "abstract": "Molecular dynamics is crucial for understanding molecular systems but its applicability is often limited by the vast timescales of rare events like protein folding. Enhanced sampling techniques overcome this by accelerating the simulation along key reaction pathways, which are defined by collective variables (CVs). However, identifying effective CVs that capture the slow, macroscopic dynamics of a system remains a major bottleneck. This work proposes a novel framework coined BioEmu-CV that learns these essential CVs automatically from BioEmu, a recently proposed foundation model for generating protein equilibrium samples. In particular, we re-purpose BioEmu to learn time-lagged generation conditioned on the learned CV, i.e., predict the distribution of molecular states after a certain amount of time. This training process promotes the CV to encode only the slow, long-term information while disregarding fast, random fluctuations. We validate our learned CV on fast-folding proteins with two key applications: (1) estimating free energy differences using on-the-fly probability enhanced sampling and (2) sampling transition paths with steered molecular dynamics. Our empirical study also serves as a new systematic and comprehensive benchmark for MLCVs on fast-folding proteins larger than Alanine Dipeptide.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2609.06446v1",
+   "title": "Tensor-based Approximation of Molecular Kinetics: Generator Learning, Reaction Coordinates and Incremental Updating",
+   "published": "2026-09-06",
+   "updated": "2026-09-06",
+   "authors": [
+    "Minakshi Verma",
+    "Peter Benner",
+    "Feliks N\u00fcske"
+   ],
+   "abstract": "We present an approach to analyze long-timescale kinetics of molecular dynamics simulations - meta-stable states and transition timescales - by a tensor-based approximation of the infinitesimal generator. We start from the variational approximation of low-lying generator eigenvalues, and discretize the associated eigenvalue problem using a tensor-product basis. We derive analytical expressions for the resulting tensor operators in tensor train (TT) format, and provide efficient algorithms to solve the corresponding linear problems. We also treat the case of a state-dependent diffusion field, which is relevant when working in reaction coordinates. We show how the number of reaction coordinates can be gradually increased without having to solve the variational problem from scratch. Using MD simulations of fast-folding proteins and TICA coordinates as reaction coordinates, we demonstrate the effectiveness of the proposed method at identifying long-timescale transitions and meta-stable states.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2208.13842v2",
+   "title": "Fast protein folding is governed by memory-dependent friction",
+   "published": "2022-08-29",
+   "updated": "2022-10-21",
+   "authors": [
+    "Benjamin A. Dalton",
+    "Cihan Ayaz",
+    "Lucas Tepper",
+    "Roland R. Netz"
+   ],
+   "abstract": "When described by a low-dimensional reaction coordinate, the rates of protein folding are determined by a subtle interplay between free-energy barriers and friction. While it is commonplace to extract free-energy profiles from molecular trajectories, a direct evaluation of friction is far more elusive, and one typically evaluates it indirectly via memoryless reaction rate theories. Here, using memory-kernel extraction methods founded on a generalised Langevin equation (GLE) formalism, we directly calculate the memory-dependent friction for eight fast-folding proteins, taken from a published set of large-scale molecular dynamics protein simulations. Our results reveal that, contrary to common expectation, friction is more important than free energy barriers in determining protein folding rates, particularly for larger proteins. We also show that proteins fold in a regime where the finite decay time of friction significantly reduces the folding times, in some instances by as much as a factor of 10, compared to predictions based on memoryless friction.",
+   "journal_ref": "",
+   "primary": "cond-mat.soft"
+  },
+  {
+   "id": "2604.00580v1",
+   "title": "Representation choice shapes the interpretation of protein conformational dynamics",
+   "published": "2026-04-01",
+   "updated": "2026-04-01",
+   "authors": [
+    "Axel Giottonini",
+    "Thomas Lemmin"
+   ],
+   "abstract": "Molecular dynamics simulations provide detailed trajectories at the atomic level, but extracting interpretable and robust insights from these high-dimensional data remains challenging. In practice, analyses typically rely on a single representation. Here, we show that representation choice is not neutral: it fundamentally shapes the conformational organization, similarity relationships, and apparent transitions inferred from identical simulation data. To complement existing representations, we introduce Orientation features, a geometrically grounded, rotation-aware encoding of protein backbone. We compare it against common descriptions across three dynamical regimes: fast-folding proteins, large-scale domain motions, and protein-protein association. Across these systems, we find that different representations emphasize complementary aspects of conformational space, and that no single representation provides a complete picture of the underlying dynamics. To facilitate systematic comparison, we developed ManiProt, a library for efficient computation and analysis of multiple protein representations. Our results motivate a comparative, representation-aware framework for the interpretation of molecular dynamics simulations.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2403.14088v2",
+   "title": "Protein Conformation Generation via Force-Guided SE(3) Diffusion Models",
+   "published": "2024-03-21",
+   "updated": "2024-09-24",
+   "authors": [
+    "Yan Wang",
+    "Lihao Wang",
+    "Yuning Shen",
+    "Yiqun Wang",
+    "Huizhuo Yuan",
+    "Yue Wu",
+    "Quanquan Gu"
+   ],
+   "abstract": "The conformational landscape of proteins is crucial to understanding their functionality in complex biological processes. Traditional physics-based computational methods, such as molecular dynamics (MD) simulations, suffer from rare event sampling and long equilibration time problems, hindering their applications in general protein systems. Recently, deep generative modeling techniques, especially diffusion models, have been employed to generate novel protein conformations. However, existing score-based diffusion methods cannot properly incorporate important physical prior knowledge to guide the generation process, causing large deviations in the sampled protein conformations from the equilibrium distribution. In this paper, to overcome these limitations, we propose a force-guided SE(3) diffusion model, ConfDiff, for protein conformation generation. By incorporating a force-guided network with a mixture of data-based score models, ConfDiff can generate protein conformations with rich diversity while preserving high fidelity. Experiments on a variety of protein conformation prediction tasks, including 12 fast-folding proteins and the Bovine Pancreatic Trypsin Inhibitor (BPTI), demonstrate that our method surpasses the state-of-the-art method.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2606.01833v1",
+   "title": "Learning Implicit Bias in Generative Spaces for Accelerating Protein Dynamics Emulation",
+   "published": "2026-06-01",
+   "updated": "2026-06-01",
+   "authors": [
+    "Kaihui Cheng",
+    "Zhiqiang Cai",
+    "Wenkai Xiang",
+    "Zhihang Hu",
+    "Siyu Zhu",
+    "Tzuhsiung Yang",
+    "Yuan Qi"
+   ],
+   "abstract": "Generative emulators of protein dynamics produce plausible trajectories at a fraction of the cost of molecular dynamics, but they inherit their training distribution and tend to revisit known states rather than reach rare ones under long-horizon extrapolation. Inspired by classical enhanced sampling, we introduce an implicit, history-dependent bias in the generative space of a pretrained emulator. Specifically, a history-aware score estimator augments the frozen emulator with a distance-weighted bias that steers reverse-time sampling away from previously generated structures, regularized by an environment-support term. To preserve structural validity at long horizons, a score-based refinement step re-projects drifted samples onto the data manifold using the frozen emulator. Our experiments demonstrate that the method (i) raises diversity by $35\\%$ on DynamicPDB-80; (ii) on $12$ zero-shot Fast-Folding proteins, the learned bias alone reaches the unbiased emulator's coverage up to ${\\sim}15\\times$ faster, and pairing it with refinement reaches the coverage up to ${\\sim}37\\times$ faster while covering ${\\sim}3\\times$ as many low-energy states. Code will be released soon.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2606.14737v1",
+   "title": "Learning Topological Representations for Molecular Dynamics",
+   "published": "2026-06-02",
+   "updated": "2026-06-02",
+   "authors": [
+    "Dominik Geng",
+    "Florian Graf",
+    "Martin Uray",
+    "Roland Kwitt"
+   ],
+   "abstract": "Molecular dynamics (MD) simulations generate trajectories in a high-dimensional configuration space whose analysis critically depends on molecular descriptors, typically handcrafted observables or learned kinetic embeddings. Designing descriptors that are both expressive and broadly applicable, however, remains challenging. We study persistent homology (PH) as a general-purpose representation for MD and introduce the masked Flood complex, a protein-tailored modification of a recently introduced simplicial complex construction that emphasizes inter-residue structure at low computational cost. Vectorized persistence diagrams then provide information-rich, geometry-aware summaries of protein conformations, which we evaluate on protein class prediction, frame-level observable regression, and Markov state model (MSM) estimation from learned low-dimensional coordinates in a single shared representation space. Results on the mdCATH dataset show that PH-based descriptors are competitive across tasks, with masked Flood PH yielding the most consistent overall performance. Further, when using topologically-informed MSMs as a drop-in replacement within the recent MarS-FM framework for generative modeling of protein conformations, we obtain consistently better ensemble statistics than MSMs based on physical observables. Finally, we explore the transferability of the generative model to qualitatively different, fast folding, proteins.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2506.17139v3",
+   "title": "Consistent Sampling and Simulation: Molecular Dynamics with Energy-Based Diffusion Models",
+   "published": "2025-06-20",
+   "updated": "2026-01-14",
+   "authors": [
+    "Michael Plainer",
+    "Hao Wu",
+    "Leon Klein",
+    "Stephan G\u00fcnnemann",
+    "Frank No\u00e9"
+   ],
+   "abstract": "In recent years, diffusion models trained on equilibrium molecular distributions have proven effective for sampling biomolecules. Beyond direct sampling, the score of such a model can also be used to derive the forces that act on molecular systems. However, while classical diffusion sampling usually recovers the training distribution, the corresponding energy-based interpretation of the learned score is often inconsistent with this distribution, even for low-dimensional toy systems. We trace this inconsistency to inaccuracies of the learned score at very small diffusion timesteps, where the model must capture the correct evolution of the data distribution. In this regime, diffusion models fail to satisfy the Fokker-Planck equation, which governs the evolution of the score. We interpret this deviation as one source of the observed inconsistencies and propose an energy-based diffusion model with a Fokker-Planck-derived regularization term to enforce consistency. We demonstrate our approach by sampling and simulating multiple biomolecular systems, including fast-folding proteins, and by introducing a state-of-the-art transferable Boltzmann emulator for dipeptides that supports simulation and achieves improved consistency and efficient sampling. Our code, model weights, and self-contained JAX and PyTorch notebooks are available at https://github.com/noegroup/ScoreMD.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2607.20504v1",
+   "title": "Reaction-Coordinate-Dependent Non-Markovian Friction Governs Protein-Folding Dynamics",
+   "published": "2026-06-30",
+   "updated": "2026-06-30",
+   "authors": [
+    "Lucas Tepper",
+    "Benjamin J. A. H\u00e9ry",
+    "Cihan Ayaz",
+    "Florian N. Br\u00fcnig",
+    "Benjamin Dalton",
+    "Anton Klimek",
+    "Roland R. Netz"
+   ],
+   "abstract": "It is common to project the full atomic-resolution representation of a protein onto a one-dimensionalreaction coordinate (RC) to capture the protein-folding kinetics. As a direct consequence ofthis dimensionality reduction, non-Markovian friction emerges in the framework of the general-ized Langevin equation (GLE). All previous applications of GLEs to protein folding employed anRC-independent friction memory function and therefore did not account for the different frictionin the folded and unfolded states. Using a recently derived GLE with RC-dependent mass andfriction memory function, we introduce a novel method to extract memory functions from timeseries data via a conditional Volterra equation. When applied to molecular dynamics (MD) data ofsix fast-folding proteins, we find strongly RC-dependent memory friction in line with the intuitiveexpectation that friction is higher in the folded than in the unfolded state due to internal proteinfriction. Our numerically efficient method to simulate the GLE confirms the accuracy of the GLEparameter extraction by comparison with the MD data. We show that RC-dependent memoryfriction not only adds physical insight into the folding process but also significantly improves thedescription of protein folding kinetics using low-dimensional RCs.",
+   "journal_ref": "",
+   "primary": "physics.bio-ph"
+  },
+  {
+   "id": "2602.11216v2",
+   "title": "Protein Language Model Embeddings Improve Generalization of Implicit Transfer Operators",
+   "published": "2026-02-11",
+   "updated": "2026-05-29",
+   "authors": [
+    "Panagiotis Antoniadis",
+    "Beatrice Pavesi",
+    "Simon Olsson",
+    "Ole Winther"
+   ],
+   "abstract": "Molecular dynamics (MD) is a central computational tool in physics, chemistry, and biology, enabling quantitative prediction of experimental observables as expectations over high-dimensional molecular distributions such as Boltzmann distributions and transition densities. However, conventional MD is fundamentally limited by the high computational cost required to generate independent samples. Generative molecular dynamics (GenMD) has recently emerged as an alternative, learning surrogates of molecular distributions either from data or through interaction with energy models. While these methods enable efficient sampling, their transferability across molecular systems is often limited. In this work, we show that incorporating auxiliary sources of information can improve the data efficiency and generalization of transferable implicit transfer operators (TITO) for molecular dynamics. We find that coarse-grained TITO models are substantially more data-efficient than Boltzmann Emulators, and that incorporating protein language model (pLM) embeddings further improves out-of-distribution generalization. Our approach, PLaTITO, achieves state-of-the-art performance on equilibrium sampling benchmarks for out-of-distribution protein systems, including fast-folding proteins. We further study the impact of additional conditioning signals such as structural embeddings, temperature, and large-language-model-derived embeddings on model performance.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2605.12823v1",
+   "title": "Hessian Matching for Machine-Learned Coarse-Grained Molecular Dynamics",
+   "published": "2026-05-12",
+   "updated": "2026-05-12",
+   "authors": [
+    "Sanya Murdeshwar",
+    "Sanjit Shashi",
+    "Kevin Bachelor",
+    "William Noid",
+    "Ashwin Lokapally",
+    "Razvan Marinescu"
+   ],
+   "abstract": "Coarse-grained (CG) molecular dynamics enables simulations of atomic systems such as biomolecules at timescales inaccessible to all-atom (AA) methods, but existing CG neural potentials trained via force matching capture only the gradient of the free-energy surface, leaving its curvature unconstrained. We introduce a framework that augments force matching with stochastic Hessian-vector product (HVP) matching, instilling second-order curvature information into CG potentials without constructing the full Hessian. We derive a decomposition of the target CG Hessian into a model-independent projected AA Hessian, precomputed once before training, and a model-dependent covariance correction computed online at negligible cost. We construct an unbiased stochastic estimator of the Hessian-matching objective by using random probe vectors. We evaluate our method by comparing against force matching on a benchmark of nine fast-folding proteins unseen during training. HVP matching outperforms plain force matching on 8 of 9 proteins on slow-mode metrics, with reductions of up to 85% in the Kullback--Leibler divergence between the CG and reference distributions along the slowest collective mode of the largest protein. Our results demonstrate that higher-order physical supervision is a practical path to more accurate and transferable CG potentials for biomolecular simulation.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2509.13294v1",
+   "title": "Accelerating Protein Molecular Dynamics Simulation with DeepJump",
+   "published": "2025-09-16",
+   "updated": "2025-09-16",
+   "authors": [
+    "Allan dos Santos Costa",
+    "Manvitha Ponnapati",
+    "Dana Rubin",
+    "Tess Smidt",
+    "Joseph Jacobson"
+   ],
+   "abstract": "Unraveling the dynamical motions of biomolecules is essential for bridging their structure and function, yet it remains a major computational challenge. Molecular dynamics (MD) simulation provides a detailed depiction of biomolecular motion, but its high-resolution temporal evolution comes at significant computational cost, limiting its applicability to timescales of biological relevance. Deep learning approaches have emerged as promising solutions to overcome these computational limitations by learning to predict long-timescale dynamics. However, generalizable kinetics models for proteins remain largely unexplored, and the fundamental limits of achievable acceleration while preserving dynamical accuracy are poorly understood. In this work, we fill this gap with DeepJump, an Euclidean-Equivariant Flow Matching-based model for predicting protein conformational dynamics across multiple temporal scales. We train DeepJump on trajectories of the diverse proteins of mdCATH, systematically studying our model's performance in generalizing to long-term dynamics of fast-folding proteins and characterizing the trade-off between computational acceleration and prediction accuracy. We demonstrate the application of DeepJump to ab initio folding, showcasing prediction of folding pathways and native states. Our results demonstrate that DeepJump achieves significant $\\approx$1000$\\times$ computational acceleration while effectively recovering long-timescale dynamics, providing a stepping stone for enabling routine simulation of proteins.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2405.19961v5",
+   "title": "Transition Path Sampling with Improved Off-Policy Training of Diffusion Path Samplers",
+   "published": "2024-05-30",
+   "updated": "2025-01-25",
+   "authors": [
+    "Kiyoung Seong",
+    "Seonghyun Park",
+    "Seonghwan Kim",
+    "Woo Youn Kim",
+    "Sungsoo Ahn"
+   ],
+   "abstract": "Understanding transition pathways between two meta-stable states of a molecular system is crucial to advance drug discovery and material design. However, unbiased molecular dynamics (MD) simulations are computationally infeasible because of the high energy barriers that separate these states. Although recent machine learning techniques are proposed to sample rare events, they are often limited to simple systems and rely on collective variables (CVs) derived from costly domain expertise. In this paper, we introduce a novel approach that trains diffusion path samplers (DPS) to address the transition path sampling (TPS) problem without requiring CVs. We reformulate the problem as an amortized sampling from the transition path distribution by minimizing the log-variance divergence between the path distribution induced by DPS and the transition path distribution. Based on the log-variance divergence, we propose learnable control variates to reduce the variance of gradient estimators and the off-policy training objective with replay buffers and simulated annealing techniques to improve sample efficiency and diversity. We also propose a scale-based equivariant parameterization of the bias forces to ensure scalability for large systems. We extensively evaluate our approach, termed TPS-DPS, on a synthetic system, small peptide, and challenging fast-folding proteins, demonstrating that it produces more realistic and diverse transition pathways than existing baselines.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2404.00050v2",
+   "title": "Grappa -- A Machine Learned Molecular Mechanics Force Field",
+   "published": "2024-03-25",
+   "updated": "2024-08-01",
+   "authors": [
+    "Leif Seute",
+    "Eric Hartmann",
+    "Jan St\u00fchmer",
+    "Frauke Gr\u00e4ter"
+   ],
+   "abstract": "Simulating large molecular systems over long timescales requires force fields that are both accurate and efficient. In recent years, E(3) equivariant neural networks have lifted the tension between computational efficiency and accuracy of force fields, but they are still several orders of magnitude more expensive than established molecular mechanics (MM) force fields. Here, we propose Grappa, a machine learning framework to predict MM parameters from the molecular graph, employing a graph attentional neural network and a transformer with symmetry-preserving positional encoding. The resulting Grappa force field outperformstabulated and machine-learned MM force fields in terms of accuracy at the same computational efficiency and can be used in existing Molecular Dynamics (MD) engines like GROMACS and OpenMM. It predicts energies and forces of small molecules, peptides, RNA and - showcasing its extensibility to uncharted regions of chemical space - radicals at state-of-the-art MM accuracy. We demonstrate Grappa's transferability to macromolecules in MD simulations from a small fast folding protein up to a whole virus particle. Our force field sets the stage for biomolecular simulations closer to chemical accuracy, but with the same computational cost as established protein force fields.",
+   "journal_ref": "Chem. Sci., 2025, 16, 2907-2930",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2608.13800v1",
+   "title": "Stochastic Control Policies for Robust Molecular Transition Path Sampling",
+   "published": "2026-08-13",
+   "updated": "2026-08-13",
+   "authors": [
+    "Jingqian Liu",
+    "Yu-Hsiang Wang",
+    "Yanru Qu",
+    "Ge Liu"
+   ],
+   "abstract": "Transition path sampling (TPS) aims to efficiently generate rare molecular transition trajectories between metastable states and is essential for understanding biomolecular mechanisms. Beyond traditional molecular dynamics (MD)-based sampling, machine learning has become central to state-of-the-art TPS. One major class of methods learns control forces during explicit MD rollouts. By preserving the underlying molecular dynamics, these methods tend to produce more physically plausible trajectories than endpoint-conditioned generators that construct paths directly. However, rollout-based control methods have been reported to exhibit unstable and strongly seed-dependent performance. We recast rollout-based control as learning a path-space proposal distribution and investigate stochasticity placement as a design choice for improving exploration and optimization robustness. We develop two stochastic policies: FS-TPS, which directly parameterizes a state-dependent Gaussian distribution over the control policy output, and LaS-TPS, which samples a compact latent control variable and decodes it into structured, cross-atom-correlated force variation. We conduct extensive multi-seed experiments on three biomolecular systems of increasing size: alanine dipeptide, chignolin, and BBL, a fast-folding protein. Stochastic policies consistently improve transition success and path quality over deterministic-policy baselines while substantially reducing sensitivity to random initialization.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  }
+ ]
+}

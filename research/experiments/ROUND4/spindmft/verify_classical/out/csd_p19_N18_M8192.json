@@ -1,0 +1,32 @@
+{
+ "tag": "csd_p19_N18_M8192",
+ "world": "18",
+ "probe": 19,
+ "M": 8192,
+ "t0s": [
+  0,
+  10,
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "cpu_s": 9.921875,
+ "norm_drift": 2.5145573860907433e-06,
+ "note": "gz/gp for all sites in <tag>.npz; order = global PDB-H order (protein) or probe rank (closed world)",
+ "g_probe": {
+  "gz": [
+   1.0074,
+   0.6008,
+   0.3733,
+   0.2643
+  ],
+  "gp": [
+   0.9963,
+   0.0575,
+   -0.0051,
+   -0.0039
+  ]
+ }
+}

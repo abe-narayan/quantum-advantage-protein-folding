@@ -1,0 +1,12 @@
+{
+ "pdb": "1UBQ",
+ "platform": "CPU",
+ "threads": 1,
+ "dt_fs": 2.0,
+ "implicit_gbn2_s_per_step": 0.2745610139996279,
+ "implicit_ns_per_day_1core": 0.6293683049999014,
+ "explicit_pme_n_atoms": 17236,
+ "explicit_pme_s_per_step": 0.07538777749869041,
+ "explicit_ns_per_day_1core": 2.2921487505451634,
+ "machine_cpu_percent_during": 82.5
+}

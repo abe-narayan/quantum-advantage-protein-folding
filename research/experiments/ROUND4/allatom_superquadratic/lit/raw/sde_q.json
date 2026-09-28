@@ -1,0 +1,191 @@
+{
+ "key": "sde_q",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28ti%3Astochastic+AND+ti%3A%22differential+equations%22+AND+ti%3Aquantum%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:34",
+ "records": [
+  {
+   "id": "2012.04429v2",
+   "title": "Variational quantum simulations of stochastic differential equations",
+   "published": "2020-12-08",
+   "updated": "2021-03-17",
+   "authors": [
+    "Kenji Kubo",
+    "Yuya O. Nakagawa",
+    "Suguru Endo",
+    "Shota Nagayama"
+   ],
+   "abstract": "Stochastic differential equations (SDEs), which models uncertain phenomena as the time evolution of random variables, are exploited in various fields of natural and social sciences such as finance. Since SDEs rarely admit analytical solutions and must usually be solved numerically with huge classical-computational resources in practical applications, there is strong motivation to use quantum computation to accelerate the calculation. Here, we propose a quantum-classical hybrid algorithm that solves SDEs based on variational quantum simulation (VQS). We first approximate the target SDE by a trinomial tree structure with discretization and then formulate it as the time-evolution of a quantum state embedding the probability distributions of the SDE variables. We embed the probability distribution directly in the amplitudes of the quantum state while the previous studies did the square-root of the probability distribution in the amplitudes. Our embedding enables us to construct simple quantum circuits that simulate the time-evolution of the state for general SDEs. We also develop a scheme to compute the expectation values of the SDE variables and discuss whether our scheme can achieve quantum speed-up for the expectation-value evaluations of the SDE variables. Finally, we numerically validate our algorithm by simulating several types of stochastic processes. Our proposal provides a new direction for simulating SDEs on quantum computers.",
+   "journal_ref": "Phys. Rev. A 103, 052425 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.08349v1",
+   "title": "Quantum algorithms for stochastic nonlinear differential equations",
+   "published": "2026-06-06",
+   "updated": "2026-06-06",
+   "authors": [
+    "Sergey Bravyi",
+    "Adam Byrne",
+    "Mykhaylo Zayats",
+    "Sergiy Zhuk"
+   ],
+   "abstract": "Stochastic nonlinear dynamics underlie many models in engineering and computational physics, yet accurate high-dimensional simulation remains challenging. We present a quantum algorithm for a broad class of $N$-dimensional stochastic differential equations with dissipation and quadratic drift. The algorithm applies to strongly nonlinear systems with all-to-all interactions, thereby extending the scope of previously known quantum algorithms that were limited to weak nonlinearity and sparse systems. For norm-preserving drifts, a condition satisfied by key fluid dynamics discretizations, our method approximates expectation values of low-order correlation functions with rigorous error bounds at a cost polynomial in $\\log{(N)}$ and linear in the evolution time. Our main technical advance is a subroutine for simulating an auxiliary system of $N$ interacting quantum harmonic oscillators with cost polylogarithmic in $N$. Finally, we formulate turbulence models, including Navier-Stokes and damped Euler equations, within this framework, opening a route to quantum simulation of strongly nonlinear SDEs governing turbulence and nonlinear wave dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2603.12398v1",
+   "title": "Efficient Quantum Simulation for Nonlinear Stochastic Differential Equations",
+   "published": "2026-03-12",
+   "updated": "2026-03-12",
+   "authors": [
+    "Xiangyu Li",
+    "Ahmet Burak Catli",
+    "Ho Kiat Lim",
+    "Matthew Pocrnic",
+    "Dong An",
+    "Jin-Peng Liu",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (NSDEs) are a pillar of mathematical modeling for scientific and engineering applications. Accurate and efficient simulation of large-scale NSDEs is prohibitive on classical computers due to the large number of degrees of freedom, and it is challenging on quantum computers due to the linear and unitary nature of quantum mechanics. We develop a quantum algorithm to tackle nonlinear differential equations driven by the Ornstein-Uhlenbeck (OU) stochastic process. The query complexity of our algorithm scales logarithmically with the error tolerance and nearly quadratically with the simulation time. Our algorithmic framework comprises probabilistic Carleman linearization (PCL) to tackle nonlinearity coupled with stochasticity, and stochastic linear combination of Hamiltonian simulations (SLCHS) to simulate stochastic non-unitary dynamics. We obtain probabilistic exponential convergence for the Carleman linearization of Liu et al. [1], provided the NSDE is stable and reaches a steady state. We extend deterministic LCHS to stochastic linear differential equations, retaining near-optimal parameter scaling from An et al. [2] except for the nearly quadratic time scaling. This is achieved by using Monte Carlo integration for time discretization of both the stochastic inhomogeneous term in LCHS and the truncated Dyson series for each Hamiltonian simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2510.23058v2",
+   "title": "POVM generated quantum trajectories without stochastic differential equations",
+   "published": "2025-10-27",
+   "updated": "2025-12-22",
+   "authors": [
+    "Rutvij Bhavsar",
+    "N. D. Hari Dass"
+   ],
+   "abstract": "In this paper we examine the issue of quantum trajectories generated by QND-POVM's on {\\it single} copies of unknown states. After an introduction to various aspects of quantum measurements, we discuss an earlier approach by one of us(NDH) based on Gaussian QND measurement operators that addressed the asymptotic behaviour of such trajectories showing the impossibility of determining the unknown state of a single copy from the statistics of such repeated measurements.The essence of our present work is the so called martingale and super-martingale properties of certain observables, and the consequent martingale convergence theorem. The main result is that asymptotically all trajectories approach either the non-degenerate eigenstates of the system observable, or,density matrices spanned by the degenerate eigenstates of the observable. The proofs given by us are very transparent..A unified treatment of both the degenerate and non-degenerate cases is given with the help of projectors of arbitrary dimensionalities.In the degenerate case we reproduce the L\u00fcders prescription. The distribution of the trajectories is shown to be given exactly by the Born rule.Similar conclusions were reached, earlier to us, by Bauer et al on the one hand, and, by Amini et al on the other. A detailed comparison of the three approaches is given. A distinctive feature of all three approaches is that no use is made of stochastic differential equations and the conclusions follow directly from quantum mechanics. Alter and Yamomoto were the first to investigate repeated QND measurements on single copies in unknown states. We make detailed comparisons with their works too. We end with a brief discussion of i) the robustness of the results against free evolutions of both the system as well as the probe and ii) the anti-Zeno aspects of the results.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2412.14868v3",
+   "title": "Quantum Algorithms for Stochastic Differential Equations: A Schr\u00f6dingerisation Approach",
+   "published": "2024-12-19",
+   "updated": "2025-06-25",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu",
+    "Wei Wei"
+   ],
+   "abstract": "Quantum computers are known for their potential to achieve up-to-exponential speedup compared to classical computers for certain problems. To exploit the advantages of quantum computers, we propose quantum algorithms for linear stochastic differential equations, utilizing the Schr\u00f6dingerisation method for the corresponding approximate equation by treating the noise term as a (discrete-in-time) forcing term. Our algorithms are applicable to stochastic differential equations with both Gaussian noise and $\u03b1$-stable L\u00e9vy noise. The gate complexity of our algorithms exhibits an $\\mathcal{O}(d\\log(Nd))$ dependence on the dimensions $d$ and sample sizes $N$, where its corresponding classical counterpart requires nearly exponentially larger complexity in scenarios involving large sample sizes. In the Gaussian noise case, we show the strong convergence of first order in the mean square norm for the approximate equations. The algorithms are numerically verified for the Ornstein-Uhlenbeck processes, geometric Brownian motions, and one-dimensional L\u00e9vy flights.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2507.10926v2",
+   "title": "Quantum algorithm for solving McKean-Vlasov stochastic differential equations",
+   "published": "2025-07-15",
+   "updated": "2026-01-15",
+   "authors": [
+    "Koichi Miyamoto"
+   ],
+   "abstract": "Quantum Monte Carlo integration, a quantum algorithm for calculating expectations that provides a quadratic speed-up compared to its classical counterpart, is now attracting increasing interest in the context of its industrial and scientific applications. In this paper, we propose the first application of QMCI to solving McKean-Vlasov stochastic differential equations (MVSDEs), a nonlinear class of SDEs whose drift and diffusion coefficients depend on the law $\u03bc_t$ of the solution $X_t$ -- appearing in fields such as finance and fluid mechanics. We focus on the problem setting where the coefficients depend on $\u03bc_t$ through expectations of some functions $\\mathbb{E}[\\varphi_k(X_t)]$, and the goal is to compute the expectation of a function $\\mathbb{E}[\u03c6(X_T)]$ at a terminal time $T$. We devise a quantum algorithm that leverages QMCI to compute these expectations, combined with a high-order time discretization method for SDEs and extrapolation of the expectations in time. The proposed algorithm estimates $\\mathbb{E}[\u03c6(X_T)]$ with accuracy $\u03b5$, making $O(1/\u03b5^{1+2/p})$ queries to the quantum circuit for time evolution over one step, where $p\\in(1,2]$ is the weak order of the SDE discretization method. This demonstrates the speed-up over the well-known classical algorithm called the particle method with complexity of $O(1/\u03b5^3)$. We conduct a numerical demonstration of our quantum algorithm applied to an example of MVSDEs, with some parts emulated classically, and observe that the accuracy and complexity behave as expected.",
+   "journal_ref": "EPJ Quantum Technology 13, 3 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2108.03190v3",
+   "title": "Quantum Quantile Mechanics: Solving Stochastic Differential Equations for Generating Time-Series",
+   "published": "2021-08-06",
+   "updated": "2021-10-03",
+   "authors": [
+    "Annie E. Paine",
+    "Vincent E. Elfving",
+    "Oleksandr Kyriienko"
+   ],
+   "abstract": "We propose a quantum algorithm for sampling from a solution of stochastic differential equations (SDEs). Using differentiable quantum circuits (DQCs) with a feature map encoding of latent variables, we represent the quantile function for an underlying probability distribution and extract samples as DQC expectation values. Using quantile mechanics we propagate the system in time, thereby allowing for time-series generation. We test the method by simulating the Ornstein-Uhlenbeck process and sampling at times different from the initial point, as required in financial analysis and dataset augmentation. Additionally, we analyse continuous quantum generative adversarial networks (qGANs), and show that they represent quantile functions with a modified (reordered) shape that impedes their efficient time-propagation. Our results shed light on the connection between quantum quantile mechanics (QQM) and qGANs for SDE-based distributions, and point the importance of differential constraints for model training, analogously with the recent success of physics informed neural networks.",
+   "journal_ref": "Adv Quantum Technol. 2300065 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.09903v1",
+   "title": "From Nonlinear Stochastic Differential Equations to Quantum Channels: The Kolmogorov--Lindblad Mapping",
+   "published": "2026-08-10",
+   "updated": "2026-08-10",
+   "authors": [
+    "Hsuan-Cheng Wu",
+    "Xiantao Li"
+   ],
+   "abstract": "Nonlinear stochastic differential equations (SDEs) underlie molecular modeling and drug discovery, quantitative finance, stochastic learning, and uncertainty quantification. Their expectations, event probabilities, and time correlations are therefore natural targets for quantum computation, but nonlinear drift and averaging over noise realizations obstruct a direct quantum representation. We develop an exact \\emph{Kolmogorov--Lindblad mapping} (KLM) at the level of the probability law, encoded natively as a trace-one quantum density operator. For each Brownian realization, the pathwise density admits a half-density whose evolution is a stochastic Schr\u00f6dinger equation. Averaging the associated pure states yields a Lindblad equation for $\u0393(t)$ whose diagonal kernel is exactly the Fokker--Planck density, $p(t,x)=\u0393(t;x,x)$, with classical diffusion represented by decoherence through Hermitian jump operators. Statistical observables become quantum expectations without the unknown time-dependent normalization introduced by direct amplitude encoding of the density, and classical two-time correlations admit an exact quantum regression formula. A structure-preserving Galerkin projection retains the Lindblad form at finite dimension, placing classical SDEs and open quantum dynamics on the same quantum-native computational footing. Numerical experiments for double-well Langevin dynamics and noisy Lorenz--63 exhibit rapid convergence of statistical observables. KLM thus provides a mathematically controlled path from general nonlinear stochastic dynamics to quantum channels, while isolating function approximation and coherent operator access as the remaining determinants of algorithmic efficiency.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2405.14283v1",
+   "title": "Diffusion-based Quantum Error Mitigation using Stochastic Differential Equation",
+   "published": "2024-05-23",
+   "updated": "2024-05-23",
+   "authors": [
+    "Joo Yong Shim",
+    "Joongheon Kim"
+   ],
+   "abstract": "Unlike closed systems, where the total energy and information are conserved within the system, open systems interact with the external environment which often leads to complex behaviors not seen in closed systems. The random fluctuations that arise due to the interaction with the external environment cause noise affecting the states of the quantum system, resulting in system errors. To effectively concern quantum error in open quantum systems, this paper introduces a novel approach to mitigate errors using diffusion models. This approach can be realized by noise occurrence formulation during the state evolution as forward-backward stochastic differential equations (FBSDE) and adapting the score-based generative model (SGM) to denoise errors in quantum states.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2012.06283v2",
+   "title": "Quantum-accelerated multilevel Monte Carlo methods for stochastic differential equations in mathematical finance",
+   "published": "2020-12-11",
+   "updated": "2021-06-22",
+   "authors": [
+    "Dong An",
+    "Noah Linden",
+    "Jin-Peng Liu",
+    "Ashley Montanaro",
+    "Changpeng Shao",
+    "Jiasu Wang"
+   ],
+   "abstract": "Inspired by recent progress in quantum algorithms for ordinary and partial differential equations, we study quantum algorithms for stochastic differential equations (SDEs). Firstly we provide a quantum algorithm that gives a quadratic speed-up for multilevel Monte Carlo methods in a general setting. As applications, we apply it to compute expectation values determined by classical solutions of SDEs, with improved dependence on precision. We demonstrate the use of this algorithm in a variety of applications arising in mathematical finance, such as the Black-Scholes and Local Volatility models, and Greeks. We also provide a quantum algorithm based on sublinear binomial sampling for the binomial option pricing model with the same improvement.",
+   "journal_ref": "Quantum 5, 481 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.06165v2",
+   "title": "Young Measure Based Quantum Linear Programming Algorithms for Nonlinear/Stochastic Multiscale Partial Differential Equations and Homogenization",
+   "published": "2026-06-04",
+   "updated": "2026-06-05",
+   "authors": [
+    "Siqi Chen",
+    "Shi Jin",
+    "Lei Zhang"
+   ],
+   "abstract": "We study quantum algorithms for nonlinear and stochastic homogenization via a Young-measure based linear programming (LP) formulation, which lifts the nonlinear problem to a linear one in higher dimensions by treating the microscale, the gradient, and possible random variables as independent variables, thereby capturing effective macroscopic quantities without directly resolving fine-scale oscillations. The resulting LP is large but structured, and its high-dimensional nature creates regimes in which quantum LP solvers outperform direct classical solvers: in the deterministic setting, polynomial quantum speedup arises when moderate homogenized accuracy suffices; in the stochastic setting, encoding all random realizations simultaneously in a single LP yields a quantum square-root reduction in stochastic sampling cost that grows with the number of random variables. Regularity or sparsity of the Young measure may further extend these advantages to fine-scale accuracy. Numerical experiments on one- and two-dimensional benchmarks confirm the correctness of the Young-measure LP formulation.",
+   "journal_ref": "",
+   "primary": "math.NA"
+  },
+  {
+   "id": "2604.24133v1",
+   "title": "Quantum algorithm for solving high-dimensional linear stochastic differential equations via amplitude encoding of the noise term",
+   "published": "2026-04-27",
+   "updated": "2026-04-27",
+   "authors": [
+    "Koichi Miyamoto"
+   ],
+   "abstract": "This work studies quantum algorithms to solve high-dimensional stochastic differential equations (SDEs) $\\mathrm{d} \\mathbf{X}_t = A(t) \\mathbf{X}_t \\mathrm{d} t + B(t) \\mathrm{d} \\mathbf{W}_t$. Aiming for a speed-up in the dimension $N$ of $\\mathbf{X}_t$, we generate quantum states that encode $\\mathbf{X}_t$ in the amplitudes, while most of the existing quantum methods for SDEs employ binary encoding. A key challenge is the amplitude encoding of the noise term, and we address this by utilizing the quantum circuit implementation of a pseudorandom number generator (PRNG). We propose two methods: the Dyson series-based method and the Euler-Maruyama (EM)-based method. In the former, we express the noise term via the Dyson series approximation of the time evolution operator, while in the latter, it is approximated using the EM time discretization. Both methods use the quantum linear systems solver to generate the amplitude-encoding state of $\\mathbf{X}_t$, making only ${\\rm polylog}(N)$ queries to the PRNG circuit and the block-encodings of $A$ and $B$. Additionally, going beyond state preparation, we present methods to estimate expectations of functions of $\\mathbf{X}_t$ using the state.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2103.07800v4",
+   "title": "Stochastic differential equation approach to understanding the population control bias in full configuration interaction quantum Monte Carlo",
+   "published": "2021-03-13",
+   "updated": "2022-06-25",
+   "authors": [
+    "Joachim Brand",
+    "Mingrui Yang",
+    "Elke Pahl"
+   ],
+   "abstract": "We investigate a systematic statistical bias found in full configuration quantum Monte Carlo (FCIQMC) that originates from controlling a walker population with a fluctuating shift parameter. This bias can become the dominant error when the sign problem is absent, e.g. in bosonic systems. FCIQMC is a powerful statistical method for obtaining information about the ground state of a sparse and abstract matrix. We show that, when the sign problem is absent, the shift estimator has the nice property of providing an upper bound for the exact ground state energy and all projected energy estimators, while a variational estimator is still an upper bound to the exact energy with substantially reduced bias. A scalar model of the general FCIQMC population dynamics leads to an exactly solvable It\u00f4 stochastic differential equation. It provides further insights into the nature of the bias and gives accurate analytical predictions for delayed cross-covariance and auto-covariance functions of the shift energy estimator and the walker number. The model provides a toe-hold on finding a cure for the population control bias. We provide evidence for non-universal power-law scaling of the population control bias with walker number in the Bose-Hubbard model for various estimators of the ground state energy based on the shift or on projected energies. For the specific case of the non-interacting Bose-Hubbard Hamiltonian we obtain a full analytical prediction for the bias of the shift energy estimator.",
+   "journal_ref": "Phys. Rev. B 105, 235144 (2022)",
+   "primary": "cond-mat.quant-gas"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "pdb": "1L2Y",
+ "n_residues": 20,
+ "n_atoms_protein": 304,
+ "implicit_all_pairs": 46056,
+ "explicit_n_atoms": 4826,
+ "explicit_box_nm": [
+  3.7497823568420827,
+  3.7497823568420827,
+  3.7497823568420827
+ ],
+ "explicit_pairs_within_1nm": 925248,
+ "explicit_pairs_per_atom": 191.72150849564858,
+ "n_waters": 1507,
+ "wall_s": 1.0261049270629883
+}

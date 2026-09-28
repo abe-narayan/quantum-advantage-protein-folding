@@ -1,0 +1,65 @@
+{
+ "key": "protein_folding_md_q",
+ "url": "https://export.arxiv.org/api/query?max_results=60&sortBy=relevance&search_query=%28abs%3A%22protein+folding%22+AND+abs%3Aquantum+AND+%28abs%3A%22molecular+dynamics%22+OR+abs%3ALangevin+OR+abs%3Akinetics%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:17",
+ "records": [
+  {
+   "id": "2510.15316v1",
+   "title": "Capturing Protein Free Energy Landscape using Efficient Quantum Encoding",
+   "published": "2025-10-17",
+   "updated": "2025-10-17",
+   "authors": [
+    "Ashwini Kannan",
+    "Jaya Vasavi Pamidimukkala",
+    "Avinash Dakshinamoorthy",
+    "Soham Bopardikar",
+    "Kalyan Dasgupta",
+    "Sanjib Senapati"
+   ],
+   "abstract": "Protein folding is one of the age-old biological problems that refers to the mechanism of understanding and predicting how a protein's linear sequence of amino acids folds into its specific three dimensional structure.This structure is critical, as a protein's functionality is inherently linked to its final folded form. Misfolding can lead to severe diseases such as Alzheimer's and cystic fibrosis, highlighting the biological and clinical importance of understanding protein folding mechanisms. This work presents a novel turn based encoding optimization algorithm for predicting the folded structures of peptides and small proteins. Our approach builds upon our previous research, where our objective function focused on hydrophobic collapse, a fundamental phenomenon underlying the protein folding process. In this work, we extend that framework by not only incorporating hydrophobic interactions but also including all non bonded interactions modeled using the Miyazawa Jernigan potential. We constructed a Hamiltonian from the defined objective function that encodes the folding process on a three dimensional face centered cubic lattice, offering superior packing efficiency and a realistic representation of protein conformations. This Hamiltonian is then solved using classical and quantum solvers to explore the vast conformational space of proteins. To identify the lowest-energy folded configurations, we utilize the Variational Quantum Eigensolver implemented on IBM 133 qubit hardware. The predicted structures are validated against experimental data using root mean square deviation as a metric and compared against classical simulated annealing and molecular dynamics simulation results. Our findings highlight the promise of hybrid classical and quantum approaches in advancing protein folding predictions, particularly for sequences with low homology.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2606.03405v1",
+   "title": "Quantum annealing for materials",
+   "published": "2026-06-02",
+   "updated": "2026-06-02",
+   "authors": [
+    "Alfredo Fiorentino",
+    "Nicola Marzari"
+   ],
+   "abstract": "Finding the global minimum of a potential energy surface is a fundamental challenge in materials science, with applications ranging from protein folding to cluster physics and, more broadly, to systems in which the number of (meta)stable configurations grows prohibitively large. In recent decades, quantum annealing (QA) has emerged as a promising global optimization strategy, exploiting quantum fluctuations in contrast to the thermal fluctuations that drive its classical counterpart. Here, we introduce a novel implementation of QA based on path-integral molecular dynamics, an efficient and well-established framework for sampling the quantum nuclear density without the need to manipulate many-body wavefunctions explicitly. While retaining the flexibility and simplicity of molecular dynamics simulations, this quantum-annealing protocol delivers strong performance across a wide range of atomic systems, simulated by either empirical force fields or machine-learning interatomic potentials. The method can be used either as a global optimizer of the potential-energy surface, or as a quantum-informed structure-search strategy in which nuclear quantum effects are included directly in the optimization workflow -- a feature particularly relevant for materials such as high-pressure hydrides.",
+   "journal_ref": "",
+   "primary": "cond-mat.mtrl-sci"
+  },
+  {
+   "id": "2004.00704v1",
+   "title": "Quantum computing using continuous-time evolution",
+   "published": "2020-04-01",
+   "updated": "2020-04-01",
+   "authors": [
+    "Viv Kendon"
+   ],
+   "abstract": "Computational methods are the most effective tools we have besides scientific experiments to explore the properties of complex biological systems. Progress is slowing because digital silicon computers have reached their limits in terms of speed. Other types of computation using radically different architectures, including neuromorphic and quantum, promise breakthroughs in both speed and efficiency. Quantum computing exploits the coherence and superposition properties of quantum systems to explore many possible computational paths in parallel. This provides a fundamentally more efficient route to solving some types of computational problems, including several of relevance to biological simulations. In particular, optimisation problems, both convex and non-convex, feature in many biological models, including protein folding and molecular dynamics. Early quantum computers will be small, reminiscent of the early days of digital silicon computing. Understanding how to exploit the first generation of quantum hardware is crucial for making progress in both biological simulation and the development of the next generations of quantum computers. This review outlines the current state-of-the-art and future prospects for quantum computing, and provides some indications of how and where to apply it to speed up bottlenecks in biological simulation.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.05741v1",
+   "title": "On the role of nuclear quantum effects on the stability of peptides",
+   "published": "2025-12-05",
+   "updated": "2025-12-05",
+   "authors": [
+    "Jing Shen",
+    "Ming-Zheng Du",
+    "Dong H. Zhang",
+    "Venkat Kapil",
+    "Wei Fang"
+   ],
+   "abstract": "Nuclear quantum effects (NQEs) arising from the light mass of hydrogen can influence the structure and stability of hydrogen-bonded biomolecules, yet their role in determining peptide and protein folding remains unclear. Experiments show that substituting H$_2$O with D$_2$O often stabilizes folded states, but the microscopic mechanism associated with this phenomena remains unresolved. Through ab initio-level path-integral molecular dynamics simulations enabled by machine-learning interatomic potentials, we address the fundamental question of the role of NQEs in peptides by investigating both their overall impact and isotope substitution effects. Overall, NQEs systematically destabilize compact three-dimensional structures across peptide systems, independent of secondary structure type or side-chain interactions. Contrary to the conventional picture that places central importance on hydrogen bonds, we find that the dominant destabilization instead arises from the quantum C-H vibrations. In addition, we reveal microscopic insights into the stabilization of folded peptides upon H$_2$O to D$_2$O substitution, showing that the H/D isotope substitution of active peptide hydrogens, previously considered unimportant, produces free-energy changes within the range of experimentally observed shifts. These findings provide a new interpretation of isotope effects in biological systems, indicating that seemingly small H$\\to$D substitutions within peptides can be as important as, or even outweigh, solvent contributions.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  }
+ ]
+}

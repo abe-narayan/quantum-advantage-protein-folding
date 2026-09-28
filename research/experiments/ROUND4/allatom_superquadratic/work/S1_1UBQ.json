@@ -1,0 +1,16 @@
+{
+ "pdb": "1UBQ",
+ "n_residues": 76,
+ "n_atoms_protein": 1231,
+ "implicit_all_pairs": 757065,
+ "explicit_n_atoms": 17236,
+ "explicit_box_nm": [
+  5.676006426428433,
+  5.676006426428433,
+  5.676006426428433
+ ],
+ "explicit_pairs_within_1nm": 3407774,
+ "explicit_pairs_per_atom": 197.71257832443723,
+ "n_waters": 5335,
+ "wall_s": 2.987128973007202
+}

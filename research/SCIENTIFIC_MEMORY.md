@@ -115,3 +115,16 @@ Durable conclusions (L = literature claim with key; I(prog) = program reasoning)
    - dense-spin quantum dynamics that may be classically hard add no usable structural information (forward-model error, reversal horizons);
    - physics-based all-atom sampling is classically hard and structure-bearing, but lacks any known super-quadratic quantum algorithm.
 6. **Process.** A negative program must red-team its own kills; a false kill is the costly error. Verify only SUPPORTS lanes and you miss that.
+
+
+## 2026-09-28: Round 4 lessons (source: `experiments/ROUND4/SYNTHESIS.md` §6, `CRITIC.md`)
+
+1. **A flat ladder in one cluster family is not convergence.** Check that the observed site's own dominant couplings are inside the cluster (M2_b coverage). A single missing partner moved the echo by 7σ.
+2. **Do not build estimators or convergence tests on a bookkeeping component.** X ≡ F − H − floor rises as the floor falls even when F has converged. Test the observable itself, across families.
+3. **Raw forward-model misfit is not a kill arm.** Profile the nuisance families (offsets, reversal scaling, order parameters) and report the residual bias. Also check that the Fisher model is converged in N before quoting gains.
+4. **Name the kill type.**
+   - Learned-energy structure prediction is a classical-ease negative.
+   - Protein ¹H echoes: easy where observable, uninformative beyond the reversal horizon.
+   - Physics-based all-atom sampling is a no-applicable-algorithm negative, and the only examined regime a new algorithm could open.
+5. **Cost every pre-registered test against the compute cap** before registering it.
+6. **Argue classical-ease results from classical cost**, not from a quantum cost ratio at an assumed gate time.

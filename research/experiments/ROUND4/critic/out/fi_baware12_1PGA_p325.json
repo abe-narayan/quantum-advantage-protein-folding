@@ -1,0 +1,163 @@
+{
+ "pdb": "1PGA",
+ "probe": 325,
+ "variant": "baware12",
+ "N": 12,
+ "names": [
+  "H/THR44",
+  "HA/TRP43",
+  "H/THR53",
+  "HB2/TRP43",
+  "HA/THR44",
+  "HG1/THR53",
+  "HG21/THR44",
+  "HE3/TRP43",
+  "HG1/THR44",
+  "HB3/TRP43",
+  "HB/THR44",
+  "H/TRP43"
+ ],
+ "bs": [
+  1,
+  7,
+  8,
+  9
+ ],
+ "rotor_groups_in_cluster": [
+  [
+   "HG21/THR44",
+   "HG22/THR44",
+   "HG23/THR44"
+  ]
+ ],
+ "columns": [
+  "radial_HB3/TRP43",
+  "radial_HG1/THR44",
+  "radial_HE3/TRP43",
+  "rigid_res43",
+  "eps0",
+  "epsg_0"
+ ],
+ "col_kinds": [
+  "struct",
+  "struct",
+  "struct",
+  "struct",
+  "eps0",
+  "epsg"
+ ],
+ "echo_tmax_us": 160.0,
+ "extra": [
+  "HB/THR44",
+  "H/TRP43"
+ ],
+ "M2b_coverage_N10": {
+  "HA/TRP43": 0.7930782791483283,
+  "HE3/TRP43": 0.5352532922162994,
+  "HG1/THR44": 0.15998074280833904,
+  "HB3/TRP43": 0.15631424990115203
+ },
+ "M2b_coverage": {
+  "HA/TRP43": 0.8069961995342817,
+  "HE3/TRP43": 0.53727451381369,
+  "HG1/THR44": 0.780123996437492,
+  "HB3/TRP43": 0.552006335393304
+ },
+ "missing_partners_N10": [
+  {
+   "b": 1,
+   "b_name": "HA/TRP43",
+   "j": 398,
+   "j_name": "HA/VAL54",
+   "share": 0.09309219485531742
+  },
+  {
+   "b": 1,
+   "b_name": "HA/TRP43",
+   "j": 319,
+   "j_name": "HD1/TRP43",
+   "share": 0.035855194202855906
+  },
+  {
+   "b": 1,
+   "b_name": "HA/TRP43",
+   "j": 403,
+   "j_name": "HG21/VAL54",
+   "share": 0.012828507946199828
+  },
+  {
+   "b": 7,
+   "b_name": "HE3/TRP43",
+   "j": 323,
+   "j_name": "HZ3/TRP43",
+   "share": 0.2101642221791224
+  },
+  {
+   "b": 7,
+   "b_name": "HE3/TRP43",
+   "j": 382,
+   "j_name": "HA/PHE52",
+   "share": 0.04652117572639591
+  },
+  {
+   "b": 7,
+   "b_name": "HE3/TRP43",
+   "j": 383,
+   "j_name": "HB2/PHE52",
+   "share": 0.018773854613471863
+  },
+  {
+   "b": 8,
+   "b_name": "HG1/THR44",
+   "j": 327,
+   "j_name": "HB/THR44",
+   "share": 0.6193334985910061
+  },
+  {
+   "b": 8,
+   "b_name": "HG1/THR44",
+   "j": 396,
+   "j_name": "HG23/THR53",
+   "share": 0.08573227415237948
+  },
+  {
+   "b": 8,
+   "b_name": "HG1/THR44",
+   "j": 330,
+   "j_name": "HG22/THR44",
+   "share": 0.031684257404213004
+  },
+  {
+   "b": 9,
+   "b_name": "HB3/TRP43",
+   "j": 315,
+   "j_name": "H/TRP43",
+   "share": 0.39138983924239373
+  },
+  {
+   "b": 9,
+   "b_name": "HB3/TRP43",
+   "j": 319,
+   "j_name": "HD1/TRP43",
+   "share": 0.3102653686333751
+  },
+  {
+   "b": 9,
+   "b_name": "HB3/TRP43",
+   "j": 251,
+   "j_name": "HZ3/LYS31",
+   "share": 0.04782424098250344
+  }
+ ],
+ "cpu_s": 423.15625,
+ "done": [
+  "radial_HB3/TRP43",
+  "radial_HG1/THR44",
+  "radial_HE3/TRP43",
+  "rigid_res43",
+  "eps0",
+  "epsg_0"
+ ],
+ "cpu_base_s": 33.109375,
+ "complete": true
+}

@@ -1,0 +1,122 @@
+{
+ "pdb": "1L2Y",
+ "d": 912,
+ "n_internal": 906,
+ "n_internal_positive_used": 906,
+ "n_negative_curvature_at_min": 0,
+ "omega_min_cm1": 6.7410761053378625,
+ "omega_max_cm1": 3701.692495866027,
+ "omega_rigid_abs_max_cm1": 0.1762780400325251,
+ "F2_lower_bound_dir": "stiff9",
+ "T_vv_norm_max_per_ps2_per_sqrtamu_nm": 284875.6803840274,
+ "T_vv_norm_by_family": {
+  "soft": 11629.579491396222,
+  "stiff": 284875.6803840274,
+  "rand": 140694.44816823245
+ },
+ "R_rows": [
+  {
+   "gamma_per_ps": 1.0,
+   "Re_lambda1_per_ps": -0.5,
+   "n_overdamped_modes": 0,
+   "F2_lower_bound": 738.9463197451295,
+   "u_in_thermal_norm": 2.877077892512317,
+   "R_lower_bound_thermal": 4252.012240584099,
+   "R_lower_bound_single_softest_mode_kT": 1999.7517760894639
+  },
+  {
+   "gamma_per_ps": 5.0,
+   "Re_lambda1_per_ps": -0.34647986863238245,
+   "n_overdamped_modes": 4,
+   "F2_lower_bound": 739.1810617242559,
+   "u_in_thermal_norm": 4.537766814872586,
+   "R_lower_bound_thermal": 9680.883640698547,
+   "R_lower_bound_single_softest_mode_kT": 3080.4333457468924
+  },
+  {
+   "gamma_per_ps": 50.0,
+   "Re_lambda1_per_ps": -0.03226784515250358,
+   "n_overdamped_modes": 87,
+   "F2_lower_bound": 768.5032671864942,
+   "u_in_thermal_norm": 3.103261036668339,
+   "R_lower_bound_thermal": 73908.44459370816,
+   "R_lower_bound_single_softest_mode_kT": 29660.917699018977
+  },
+  {
+   "gamma_per_ps": 91.0,
+   "Re_lambda1_per_ps": -0.01772159449127031,
+   "n_overdamped_modes": 132,
+   "F2_lower_bound": 755.3971405581892,
+   "u_in_thermal_norm": 2.925830531459774,
+   "R_lower_bound_thermal": 124715.86675292063,
+   "R_lower_bound_single_softest_mode_kT": 53038.30593462684
+  },
+  {
+   "gamma_per_ps": 0.0,
+   "Re_lambda1_per_ps": 0.0,
+   "note": "Newtonian / explicit-solvent NVE: Re(lambda)=0 for every internal mode -> R = infinity"
+  }
+ ],
+ "curvature_census_300K": [
+  {
+   "t_ps": 0.1,
+   "n_negative_in_soft60": 1,
+   "most_negative_omega2": -14.775252383101263,
+   "rms_force": 735.347651590731
+  },
+  {
+   "t_ps": 0.2,
+   "n_negative_in_soft60": 2,
+   "most_negative_omega2": -409.7816246379945,
+   "rms_force": 817.022834747834
+  },
+  {
+   "t_ps": 0.3,
+   "n_negative_in_soft60": 2,
+   "most_negative_omega2": -246.86325545884443,
+   "rms_force": 858.5055527253509
+  },
+  {
+   "t_ps": 0.4,
+   "n_negative_in_soft60": 0,
+   "most_negative_omega2": 1.9728908451862444,
+   "rms_force": 869.1422375331978
+  },
+  {
+   "t_ps": 0.5,
+   "n_negative_in_soft60": 2,
+   "most_negative_omega2": -184.48541402127682,
+   "rms_force": 880.2258573681362
+  },
+  {
+   "t_ps": 0.6,
+   "n_negative_in_soft60": 1,
+   "most_negative_omega2": -17.95940932237914,
+   "rms_force": 877.7870446980951
+  },
+  {
+   "t_ps": 0.7000000000000001,
+   "n_negative_in_soft60": 1,
+   "most_negative_omega2": -9.43956715252832,
+   "rms_force": 873.5917920624191
+  },
+  {
+   "t_ps": 0.8,
+   "n_negative_in_soft60": 2,
+   "most_negative_omega2": -169.11511936062453,
+   "rms_force": 884.8807954605513
+  },
+  {
+   "t_ps": 0.9,
+   "n_negative_in_soft60": 1,
+   "most_negative_omega2": -27.500976812651633,
+   "rms_force": 880.6473970151934
+  },
+  {
+   "t_ps": 1.0,
+   "n_negative_in_soft60": 0,
+   "most_negative_omega2": 14.417783438835919,
+   "rms_force": 882.2007664146603
+  }
+ ]
+}

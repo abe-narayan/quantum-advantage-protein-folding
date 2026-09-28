@@ -50,8 +50,8 @@ _"Exploratory" marks measurements that were not pre-registered or not replicated
 | C4 | ρ(E, RMSD) over modes ≈ 0.31 at L=120; the best-RMSD mode ranks ~11th by energy | MEASURED (7 crops) | same |
 | C5 | The A80 energy is piecewise smooth (0.05 Å table interpolation): L-BFGS endpoints keep gradient norms 2–130; Hessians have ~40% non-positive eigenvalues | MEASURED | R2-T deviation log |
 | C6 | Distance-geometry seeding from native-free distogram expected distances reaches or beats the census-best basin on 14/16 crops at L = 150 (round 3, replicated; the earlier "61/64" wording was a mis-transcription) | MEASURED (replicated by two round-3 lanes) | `research/experiments/ROUND3/hardness_what_it_takes/dg_summary.json`, `ROUND3/structured_speedups/s4_planted_level1.json` |
-| C7 | Transmission of posterior averaging (R2-T) | ⟦R2T-CLASS⟧ | `RAW/g1_transmission/`, `PROCESSED/transmission_summary.json` |
-| C8 | λ-path T-scan / temperature exchange / 2048 census | ⟦G1PROD-CLASS⟧ | `RAW/g1_tscan`, `RAW/tpt`, `RAW/g1_modes2k` |
+| C7 | Transmission of posterior averaging (R2-T) | MEASURED (pre-registered, v2 weightings after a logged deviation): +0.54 Å (1.01 MDE) at L = 60, ≈0 at L = 100; the kill does not fire, narrowly | `RAW/g1_transmission/`, `PROCESSED/transmission_summary.json` |
+| C8 | λ-path T-scan / temperature exchange / 2048 census | MEASURED: 0 round trips at L ≥ 80 for T = 1–8. The census p_hit decay is confounded by fixed-depth relaxation and is superseded by the DG portfolio (round 3). No cooperative barrier (K-Q4c fired) | `RAW/g1_tscan`, `RAW/tpt`, `RAW/g1_modes2k` |
 
 ## D. Program C (NMR forward model)
 
@@ -61,10 +61,10 @@ _"Exploratory" marks measurements that were not pre-registered or not replicated
 | D2 | Transfer S_ab: sparse Pauli dynamics (ε=10⁻⁴) reproduces exact to < σ over the full window at N=10: f_hard(best) = 0 (1UBQ, 1PGA; γ = 0, 10³, 5×10³; dilute HN networks) | MEASURED | `RAW/nmr_gate/`, `RAW/nmr_gate_hn/` |
 | D3 | The pre-registered weight-4 statistic gives f_hard ≈ 0.99, a weak adversary | MEASURED | same |
 | D4 | Echo (OTOC) F_ab: every sub-exponential classical truncation tested fails by 20–80 µs (dense) / 200–650 µs (amide-only) at N=10. The families: weight-w and ε ≥ 1e-4 Pauli, CCE to order N−3, operator-spreading/FKPP, stochastic Pauli, MPO χ ≤ 64, classical spins/DTWA. ε = 3e-5 sparse Pauli (≈ full operator space) and exact simulation (seconds) reproduce it. Echo FI is 3.2–183× transfer FI in the ideal isolated model; f_hard 0.49–1.0 vs the ε ≥ 1e-4 panel, median 0.00 vs ε = 3e-5 | MEASURED (2 proteins, several probes; adversarial replication) | `RAW/nmr_gate*`, `RAW/nmr_sparse`, `experiments/ADVERSARIAL/R1_*` |
-| D5 | Scaling of the needed classical resource M*(N) (C2/C3) | ⟦C2C3-CLASS⟧ | `RAW/nmr_sparse/`, `PROCESSED/c2_summary.json` |
-| D6 | Bath embedding (R1-E) | ⟦R1E-CLASS⟧ | `RAW/nmr_embed/` |
+| D5 | Scaling of the needed classical resource M*(N) (C2/C3) | MEASURED: sparse Pauli saturates the operator space (M* ≈ 4^N/4) and is dominated by exact simulation; not a hardness metric (round-3 critique) | `RAW/nmr_sparse/`, `PROCESSED/c2_summary.json` |
+| D6 | Bath embedding (R1-E) | MEASURED: kill rules not fired at N_env ≤ 14 (echo ≤ 12); superseded by round-4 cross-family results | `RAW/nmr_embed/` |
 | D7 | Noiseless shot-based quantum echo circuit tracks the exact echo beyond the classical failure time at N=10 | MEASURED | `RAW/nmr_pop/` |
-| D8 | Hardware-noise attack on the echo circuit | ⟦POP-CLASS⟧ | `RAW/nmr_pop/` |
+| D8 | Hardware-noise attack on the echo circuit | MEASURED (simulator): a window beyond the ε ≥ 1e-4 approximations exists only at ≤ 1e-3 depolarising noise per qubit per step with echo normalisation. Moot after ε = 3e-5 and exact simulation closed the N = 10 window | `RAW/nmr_pop/` |
 | D9 | The protein's echo information would be measurable at σ = 0.01 per point with time-reversed dipolar sequences | UNPROVEN (supported only by the small-molecule precedent [F34]) | — |
 | D10 | A coarse-grained operator-front (FKPP-type) classical model cannot reproduce the echoes | UNPROVEN (untested adversary) | T6 §4 |
 
@@ -74,4 +74,23 @@ _"Exploratory" marks measurements that were not pre-registered or not replicated
 |---|---|---|
 | E1 | 28/28 candidate mechanisms are killed as quantum-advantage claims for protein structure computation | INFERENCE, from DERIVED kills (theorems, break-even) and exploratory MEASURED lens checks |
 | E2 | No claim above practical L0 is supported | INFERENCE |
-| E3 | Final claim level | ⟦E3⟧ |
+| E3 | Final claim level | INFERENCE from MEASURED/DERIVED parts: no quantum advantage in categories 1–6 for protein structure; practical L0 everywhere; theoretical L2–L3 same-chain only |
+
+## F. Rounds 3–4 (2026-09-28)
+
+| # | Statement | Class | Source |
+|---|---|---|---|
+| F1 | Native-free DG seeding reaches or beats the census-best basin on 14/16 crops at L = 150 in a median of ~420 evaluations | MEASURED (2 lanes) | `experiments/ROUND3/hardness_what_it_takes/`, `structured_speedups/` |
+| F2 | Generalised floor T*_Q,s = K n_b G t_T X^{1/(s−1)}; any exponent needs t_T ≲ 3 ns against the DG portfolio | DERIVED (conditional on G, K, n_b) | ROUND3 `hardness_what_it_takes/what_it_takes.json` |
+| F3 | Quantum-enhanced MCMC on discretised A80 instances is at most quadratic vs a tuned classical chain; gap ratio ≤ 12.7 | MEASURED (n ≤ 10; small-n caveat) | ROUND3 `qemcmc_exact/` |
+| F4 | No structured super-quadratic family has its precondition met by the A80 task (girth 3, Fourier-dense, ...) | MEASURED + LITERATURE-SUPPORTED | ROUND3 `structured_speedups/` |
+| F5 | Quantum memory gives gain 1 per structural parameter for selective-polarisation ¹H states | DERIVED (theorem, one state family) | ROUND3 `new_mechanisms_quantum_data/` |
+| F6 | Exact echo decomposition F = H + floor + X; X-based criteria are bookkeeping and were retired | DERIVED + MEASURED | ROUND3 `r1sim_exact_reach/`; ROUND4 K-120 |
+| F7 | The ¹H OTOC(1) at 40 µs is classically computable to σ (two b-aware exact families ≤ 0.0055 on 8/8; thermodynamic estimators ≤ 0.011) | MEASURED agreement; INFERENCE that this is F_∞; provisional pending R-1 | ROUND4 `spindmft/`, `director/cross_family.json` |
+| F8 | The echo at 80–120 µs has no σ-level classical estimate yet (family spread up to 0.075/0.126) | MEASURED | ROUND4 `director/cross_family.json` |
+| F9 | Profiled structural gain of the echo beyond the site-resolved horizon < 2 (PE); ≥ 2 on 2/4 probes under the global LE envelope at N = 12 | MEASURED model (N = 10–12 Fisher, not converged in N) | ROUND4 `redteam_kills/`, `critic/` |
+| F10 | No quantum algorithm with s > 2 against practical MD has preconditions met by a protein force field (Carleman R ≥ 4.3×10³); T*_Q,2 ≥ 2.2 yr at 10 ns | LITERATURE-SUPPORTED + MEASURED preconditions + DERIVED floor (unverified lane) | ROUND4 `allatom_superquadratic/` |
+| F11 | A hypothetical s ≥ 3 all-atom algorithm would break even (T*_Q,4 = 2.6 h–10 d at 10 ns) | DERIVED (hypothetical) | same |
+| F12 | Analog dipolar simulators are 42–100σ (demonstrated) or 1.2–6σ (best undemonstrated) outside the σ budget | MEASURED sensitivities + INFERENCE budget | ROUND4 `analog_simulator/` |
+| F13 | An s ≥ 3 algorithm for chaotic multi-basin force-field Langevin dynamics exists | UNPROVEN (the main falsifier) | — |
+| F14 | Protein site-resolved T3/T2 ≥ 15 | UNPROVEN (no measurement known) | — |

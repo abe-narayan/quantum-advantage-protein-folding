@@ -1,0 +1,36 @@
+{
+ "key": "chaos_limits",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28abs%3Aquantum+AND+abs%3ALyapunov+AND+abs%3Anonlinear+AND+%28abs%3Aalgorithm+OR+abs%3Aalgorithms%29+AND+abs%3Achaotic%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:22",
+ "records": [
+  {
+   "id": "2307.09593v2",
+   "title": "Limitations for Quantum Algorithms to Solve Turbulent and Chaotic Systems",
+   "published": "2023-07-13",
+   "updated": "2024-10-11",
+   "authors": [
+    "Dylan Lewis",
+    "Stephan Eidenbenz",
+    "Balasubramanya Nadiga",
+    "Yi\u011fit Suba\u015f\u0131"
+   ],
+   "abstract": "We investigate the limitations of quantum computers for solving nonlinear dynamical systems. In particular, we tighten the worst-case bounds of the quantum Carleman linearisation (QCL) algorithm [Liu et al., PNAS 118, 2021] answering one of their open questions. We provide a further significant limitation for any quantum algorithm that aims to output a quantum state that approximates the normalized solution vector. Given a natural choice of coordinates for a dynamical system with one or more positive Lyapunov exponents and solutions that grow sub-exponentially, we prove that any such algorithm has complexity scaling at least exponentially in the integration time. As such, an efficient quantum algorithm for simulating chaotic systems or regimes is likely not possible.",
+   "journal_ref": "Quantum 8, 1509 (2024)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2609.13147v1",
+   "title": "Refracted Light Interaction in Turbulent Bubbling Water (RLITBW): A Macroscopic Fluid-Optic Entropy Source",
+   "published": "2026-04-14",
+   "updated": "2026-04-14",
+   "authors": [
+    "Nirjhar Debnath",
+    "Dwaipayan Datta",
+    "Kousik Dasgupta"
+   ],
+   "abstract": "The demand for high quality, unpredictable random numbers is a fundamental requirement in cryptography, stochastic simulation, and optimization. While pseudo-random number generators (PRNGs) are computationally efficient, their deterministic nature limits their suitability for security-critical applications. True random number generators (TRNGs), although physically grounded, often rely on expensive quantum or tightly controlled electronic phenomena. This paper introduces a low-cost, macroscopic TRNG based on Refracted Light Interaction in Turbulent Bubbling Water (RLITBW). The proposed system exploits compound classical chaos arising from multiphase fluid dynamics and time-varying optical refraction. A physical-mathematical model is developed to describe the cascade of non-linear processes from stochastic bubble nucleation and turbulent ascent to chaotic optical path scrambling that collectively amplify microscopic uncertainties into measurable entropy.The raw optical signal is digitized and processed using a provably secure entropy-conditioning pipeline based on Toeplitz universal hashing, followed by deterministic cryptographic expansion. The chaotic nature of the physical source is empirically validated using phase-space reconstruction, Lyapunov exponent estimation, autocorrelation analysis, and entropy metrics. The conditioned output successfully passes the full NIST SP 800-22 statistical test suite and nonlinear dynamical measures including Lyapunov exponents and sample entropy. Beyond statistical validation, the generated randomness is applied to population-based optimization algorithms, demonstrating practical usability as a replacement for conventional PRNGs. Finally, deployment architectures and scalability considerations are discussed, positioning RLITBW as an accessible, reproducible, and economically viable entropy source for real-world systems.",
+   "journal_ref": "",
+   "primary": "cs.ET"
+  }
+ ]
+}

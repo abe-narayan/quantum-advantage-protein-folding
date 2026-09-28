@@ -1,0 +1,96 @@
+{
+ "key": "langevin_q",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28ti%3ALangevin+AND+ti%3Aquantum+AND+%28abs%3Aalgorithm+OR+abs%3Asampling%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:30",
+ "records": [
+  {
+   "id": "2601.01589v1",
+   "title": "Learning Relationship between Quantum Walks and Underdamped Langevin Dynamics",
+   "published": "2026-01-04",
+   "updated": "2026-01-04",
+   "authors": [
+    "Yazhen Wang"
+   ],
+   "abstract": "Fast computational algorithms are in constant demand, and their development has been driven by advances such as quantum speedup and classical acceleration. This paper intends to study search algorithms based on quantum walks in quantum computation and sampling algorithms based on Langevin dynamics in classical computation. On the quantum side, quantum walk-based search algorithms can achieve quadratic speedups over their classical counterparts. In classical computation, a substantial body of work has focused on gradient acceleration, with gradient-adjusted algorithms derived from underdamped Langevin dynamics providing quadratic acceleration over conventional Langevin algorithms. Since both search and sampling algorithms are designed to address learning tasks, we study learning relationship between coined quantum walks and underdamped Langevin dynamics. Specifically, we show that, in terms of the Le Cam deficiency distance, a quantum walk with randomization is asymptotically equivalent to underdamped Langevin dynamics, whereas the quantum walk without randomization is not asymptotically equivalent due to its high-frequency oscillatory behavior. We further discuss the implications of these equivalence and nonequivalence results for the computational and inferential properties of the associated algorithms in machine learning tasks. Our findings offer new insight into the relationship between quantum walks and underdamped Langevin dynamics, as well as the intrinsic mechanisms underlying quantum speedup and classical gradient acceleration.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2311.15587v3",
+   "title": "Quantum Langevin Dynamics for Optimization",
+   "published": "2023-11-27",
+   "updated": "2025-03-09",
+   "authors": [
+    "Zherui Chen",
+    "Yuchen Lu",
+    "Hao Wang",
+    "Yizhou Liu",
+    "Tongyang Li"
+   ],
+   "abstract": "We initiate the study of utilizing Quantum Langevin Dynamics (QLD) to solve optimization problems, particularly those non-convex objective functions that present substantial obstacles for traditional gradient descent algorithms. Specifically, we examine the dynamics of a system coupled with an infinite heat bath. This interaction induces both random quantum noise and a deterministic damping effect to the system, which nudge the system towards a steady state that hovers near the global minimum of objective functions. We theoretically prove the convergence of QLD in convex landscapes, demonstrating that the average energy of the system can approach zero in the low temperature limit with an exponential decay rate correlated with the evolution time. Numerically, we first show the energy dissipation capability of QLD by retracing its origins to spontaneous emission. Furthermore, we conduct detailed discussion of the impact of each parameter. Finally, based on the observations when comparing QLD with classical Fokker-Plank-Smoluchowski equation, we propose a time-dependent QLD by making temperature and $\\hbar$ time-dependent parameters, which can be theoretically proven to converge better than the time-independent case and also outperforms a series of state-of-the-art quantum and classical optimization algorithms in many non-convex landscapes.",
+   "journal_ref": "Communications in Mathematical Physics 406 (2025), 52",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2601.08775v1",
+   "title": "A Langevin sampler for quantum tomography",
+   "published": "2026-01-13",
+   "updated": "2026-01-13",
+   "authors": [
+    "Tameem Adel",
+    "Abhishek Agarwal",
+    "St\u00e9phane Chr\u00e9tien",
+    "Estelle Massart",
+    "Danila Mokeev",
+    "Ivan Rungger",
+    "Andrew Thompson"
+   ],
+   "abstract": "Quantum tomography involves obtaining a full classical description of a prepared quantum state from experimental results. We propose a Langevin sampler for quantum tomography, that relies on a new formulation of Bayesian quantum tomography exploiting the Burer-Monteiro factorization of Hermitian positive-semidefinite matrices. If the rank of the target density matrix is known, this formulation allows us to define a posterior distribution that is only supported on matrices whose rank is upper-bounded by the rank of the target density matrix. Conversely, if the target rank is unknown, any upper bound on the rank can be used by our algorithm, and the rank of the resulting posterior mean estimator is further reduced by the use of a low-rank promoting prior density. This prior density is a complex extension of the one proposed in (Annales de l'Institut Henri Poincare Probability and Statistics, 56(2):1465-1483, 2020). We derive a PAC-Bayesian bound on our proposed estimator that matches the best bounds available in the literature, and we show numerically that it leads to strong scalability improvements compared to existing techniques when the rank of the density matrix is known to be small.",
+   "journal_ref": "",
+   "primary": "math.ST"
+  },
+  {
+   "id": "2011.08107v3",
+   "title": "Complex Langevin Dynamics and Supersymmetric Quantum Mechanics",
+   "published": "2020-11-16",
+   "updated": "2021-11-09",
+   "authors": [
+    "Anosh Joseph",
+    "Arpith Kumar"
+   ],
+   "abstract": "Using complex Langevin method we probe the possibility of dynamical supersymmetry breaking in supersymmetric quantum mechanics models with complex actions. The models we consider are invariant under the combined operation of parity and time reversal, in addition to supersymmetry. When actions are complex traditional Monte Carlo methods based on importance sampling fail. Models with dynamically broken supersymmetry can exhibit sign problem due to the vanishing of the partition function. Complex Langevin method can successfully evade the sign problem. Our simulations suggest that complex Langevin method can reliably predict the absence or presence of dynamical supersymmetry breaking in these one-dimensional models with complex actions.",
+   "journal_ref": "JHEP 10 (2021) 186",
+   "primary": "hep-lat"
+  },
+  {
+   "id": "2409.01978v4",
+   "title": "Application of Langevin Dynamics to Advance the Quantum Natural Gradient Optimization Algorithm",
+   "published": "2024-09-03",
+   "updated": "2025-11-01",
+   "authors": [
+    "Oleksandr Borysenko",
+    "Mykhailo Bratchenko",
+    "Ilya Lukin",
+    "Mykola Luhanko",
+    "Ihor Omelchenko",
+    "Andrii Sotnikov",
+    "Alessandro Lomi"
+   ],
+   "abstract": "A Quantum Natural Gradient (QNG) algorithm for optimization of variational quantum circuits has been proposed recently. In this study, we employ the Langevin equation with a QNG stochastic force to demonstrate that its discrete-time solution gives a generalized form of the above-specified algorithm, which we call Momentum-QNG. Similar to other optimization algorithms with the momentum term, such as the Stochastic Gradient Descent with momentum, RMSProp with momentum and Adam, Momentum-QNG is more effective to escape local minima and plateaus in the variational parameter space and, therefore, demonstrates an improved performance compared to the basic QNG. In this paper we benchmark Momentum-QNG together with the basic QNG, Adam and Momentum optimizers and explore its convergence behaviour. Among the benchmarking problems studied, the best result is obtained for the quantum Sherrington-Kirkpatrick model in the strong spin glass regime. Our open-source code is available at https://github.com/borbysh/Momentum-QNG",
+   "journal_ref": "Physica A 682 (2026) 131158",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2404.04977v2",
+   "title": "Quantum electrodynamics of lossy magnetodielectric samples in vacuum: modified Langevin noise formalism",
+   "published": "2024-04-07",
+   "updated": "2024-07-02",
+   "authors": [
+    "Alessandro Ciattoni"
+   ],
+   "abstract": "Quantum behavior of the electromagnetic field in unbounded macroscopic media displaying absorption is properly described by the Langevin noise formalism (macroscopic quantum electrodynamics) where the field is assumed to be entirely produced by medium fluctuating sources via the dyadic Green's function. On the other hand, such formalism is able to deal with the case of finite-size lossy objects placed in vacuum only as a limiting situation where the permittivity limit ${\\rm Im} ( \\varepsilon) \\rightarrow 0^+$ pertaining the regions filled by vacuum is taken at the end of the calculations. Strictly setting ${\\rm Im} ( \\varepsilon) =0$ is forbidden in the Langevin noise formalism since the field would vanish in the lossless regions and this is physically due to the fact that the contribution of the scattering modes to the field is not separated from the contribution produced by the medium fluctuating sources. Recently, a modified Langevin noise formalism has been proposed to encompass the scattering modes and accordingly it is able to describe the structured lossless situations by strictly setting ${\\rm Im} (\\varepsilon) = 0$. However such modified formalism has been numerically validated only in few specific geometries. In this paper we analytically derive the modified Langevin noise formalism from the established canonical quantization of the electromagnetic field in macroscopic media, thus proving that it models any possible scenario involving linear, inhomegeneous and magnetodielectric samples. The derivation starts from quantum Maxwell equations in the Heisenberg picture together with their formal solution as the superposition of the medium assisted field and the scattering modes. We analytically prove that each of the two field parts can be expressed in term of particular bosonic operators, which in turn diagonalize the electromagnetic Hamiltonian.",
+   "journal_ref": "Phys. Rev. A 110, 013707 (2024)",
+   "primary": "quant-ph"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "key": "oscillators",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28abs%3A%22coupled+classical+oscillators%22+OR+%28abs%3Aoscillators+AND+abs%3A%22exponential+quantum+speedup%22%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:45",
+ "records": [
+  {
+   "id": "2405.08694v2",
+   "title": "Calculating response functions of coupled oscillators using quantum phase estimation",
+   "published": "2024-05-14",
+   "updated": "2025-06-12",
+   "authors": [
+    "Sven Danz",
+    "Mario Berta",
+    "Stefan Schr\u00f6der",
+    "Pascal Kienast",
+    "Frank K. Wilhelm",
+    "Alessandro Ciani"
+   ],
+   "abstract": "We study the problem of estimating frequency response functions of systems of coupled, classical harmonic oscillators using a quantum computer. The functional form of these response functions can be mapped to a corresponding eigenproblem of a Hermitian matrix $H$, thus suggesting the use of quantum phase estimation. Our proposed quantum algorithm operates in the standard $s$-sparse, oracle-based query access model. For a network of $N$ oscillators with maximum norm $\\lVert H \\rVert_{\\mathrm{max}}$, and when the eigenvalue tolerance $\\varepsilon$ is much smaller than the minimum eigenvalue gap, we use $\\mathcal{O}(\\log(N s \\lVert H \\rVert_{\\mathrm{max}}/\\varepsilon)$ algorithmic qubits and obtain a rigorous worst-case query complexity upper bound $\\mathcal{O}(s \\lVert H \\rVert_{\\mathrm{max}}/(\u03b4^2 \\varepsilon) )$ up to logarithmic factors, where $\u03b4$ denotes the desired precision on the coefficients appearing in the response functions. Crucially, our proposal does not suffer from the infamous state preparation bottleneck and can as such potentially achieve large quantum speedups compared to relevant classical methods. As a proof-of-principle of exponential quantum speedup, we show that a simple adaptation of our algorithm solves the random glued-trees problem in polynomial time. We discuss practical limitations as well as potential improvements for quantifying finite size, end-to-end complexities for application to relevant instances.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2412.16767v2",
+   "title": "Fundamental and second-subharmonic Autler-Townes splitting in classical systems",
+   "published": "2024-12-21",
+   "updated": "2025-11-28",
+   "authors": [
+    "Ahmed A. Barakat",
+    "Avishek Chowdhury",
+    "Anh Tuan Le",
+    "Eva M. Weig"
+   ],
+   "abstract": "The dynamic Stark effect and the Autler-Townes splitting (ATS) are hallmarks of driven two-level systems. We establish a direct correspondence between these quantum phenomena and the parametric normal mode splitting in coupled classical oscillators. This gives rise to a second-subharmonic ATS under a two-tone parametric drive. We find excellent agreement between the theory and the vibrations of a nanomechanical two-mode system, capturing both the fundamental and second-subharmonic ATS, and allowing quantitative extraction of the modal coupling irrespective of the degree of modal hybridization.",
+   "journal_ref": "",
+   "primary": "cond-mat.mes-hall"
+  },
+  {
+   "id": "2504.03852v1",
+   "title": "Encoding quantum-like information in classical synchronizing dynamics",
+   "published": "2025-04-04",
+   "updated": "2025-04-04",
+   "authors": [
+    "Graziano Amati",
+    "Gregory D. Scholes"
+   ],
+   "abstract": "In previous work, we introduced a formalism that maps classical networks of nonlinear oscillators onto a quantum-like Hilbert space. We demonstrated that specific network transformations correspond to quantum gates, underscoring the potential of classical many-body systems as platforms for quantum-inspired information processing. In this paper, we extend this framework by systematically identifying the classical dynamics best suited for this purpose. Specifically, we address the question: Can the collective steady state of a classical network encode signatures of quantum information? We prove that the answer is affirmative for a special class of synchronizing many-body systems, namely, a complex-field extension of the Kuramoto model of nonlinearly coupled classical oscillators. Through this approach, we investigate how quantum-like entangled states can emerge from classical synchronization dynamics.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2305.00653v6",
+   "title": "A Polynomial Time Quantum Algorithm for Exponentially Large Scale Nonlinear Differential Equations via Hamiltonian Simulation",
+   "published": "2023-05-01",
+   "updated": "2025-04-04",
+   "authors": [
+    "Yu Tanaka",
+    "Keisuke Fujii"
+   ],
+   "abstract": "Quantum computers have the potential to efficiently solve a system of nonlinear ordinary differential equations (ODEs), which play a crucial role in various industries and scientific fields. However, it remains unclear which system of nonlinear ODEs, and under what assumptions, can achieve exponential speedup using quantum computers. In this work, we introduce a class of systems of nonlinear ODEs that can be efficiently solved on quantum computers, where the efficiency is defined as solving the system with computational complexity of $O(T {\\rm log}(N) {\\rm polylog}(1/\u03b5))$, where $T$ is the evolution time, $\u03b5$ is the allowed error, and $N$ is the number of variables in the system. Specifically, we employ the Koopman-von Neumann linearization to map the system of nonlinear ODEs to Hamiltonian dynamics and find conditions where the norm of the mapped Hamiltonian is preserved and the Hamiltonian is sparse. This allows us to use the optimal Hamiltonian simulation technique for solving the nonlinear ODEs with $O({\\rm log}(N))$ overhead. Furthermore, we show that the nonlinear ODEs include a wide range of systems of nonlinear ODEs, such as the nonlinear harmonic oscillators and the short-range Kuramoto model. This is the first concrete example of solving systems of nonlinear ODEs with exponential quantum speedup by the Koopman-von Neumann linearization, although it is noted that this assumes efficient preparation of the initial state and computation of the output. These findings contribute significantly to the application of quantum computers in solving nonlinear problems.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2512.01851v1",
+   "title": "Classical Reconstruction of the PMNS Matrix Using a Mechanical Neutrino Oscillator",
+   "published": "2025-12-01",
+   "updated": "2025-12-01",
+   "authors": [
+    "Nishil Savla"
+   ],
+   "abstract": "Neutrino oscillations arise from quantum interference between neutrino mass eigenstates and are governed by the PMNS matrix. Although this is an intrinsically quantum phenomenon, its mathematical structure is analogous to systems of coupled classical oscillators. In this work, a three--pendulum system connected by springs is constructed as a classical analog of three--flavor neutrino oscillations. Measurements of amplitude transfer, normal--mode structure, and beat frequencies are used to extract a mechanical mixing matrix, which is compared with the structure of the PMNS matrix under the assumption of zero CP violation. A scaling relation linking mechanical time evolution to the neutrino \\(L/E\\) behavior is derived, clarifying the scope and limitations of the analogy. The experiment demonstrates how abstract concepts of neutrino mixing can be visualized using simple and accessible classical systems, offering both pedagogical value and a qualitative understanding of flavor oscillation dynamics.",
+   "journal_ref": "",
+   "primary": "physics.pop-ph"
+  },
+  {
+   "id": "2211.09357v2",
+   "title": "Elucidating the thermal spike effect by using a coupled classical oscillator model",
+   "published": "2022-11-17",
+   "updated": "2024-12-04",
+   "authors": [
+    "Jiajian Guan",
+    "Yue He",
+    "Bin Liao",
+    "Xu Zhang"
+   ],
+   "abstract": "Atomic heating is a fundamental phenomenon governed by the thermal spike effect during energetic deposition. This work presented another insight into thermal spike using a coupled classical oscillator model instead of a typical heat diffusion model. The temperature profile of deposited atoms was replaced by oscillator amplitude as an energy descriptor. Solving associated partial differential equations (PDEs)suggests the efficiency of energy transfer from the coupled hot to cold oscillators essentially relies on the atomic distance r and the spring constant k. The solution towards the damped wave equation further emphasize that a localized thermal fluctuation during energy propagation.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  }
+ ]
+}

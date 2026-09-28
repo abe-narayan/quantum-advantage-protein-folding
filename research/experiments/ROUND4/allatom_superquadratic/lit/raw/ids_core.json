@@ -1,0 +1,342 @@
+{
+ "key": "ids_core",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&id_list=2011.03185%2C2202.01054%2C2303.13012%2C2307.09593%2C2303.01029%2C1701.03684%2Cquant-ph%2F0508139%2C1504.06987%2C2505.05301%2C2501.05868%2C2608.24527%2C2210.06539%2C2310.11445%2C2210.08104%2C1812.01729%2C2302.01170%2C2202.07834%2C2202.02188%2C2011.06571%2C2312.09518%2C2405.12714%2C2011.04149",
+ "fetched": "2026-09-28T11:31:55",
+ "records": [
+  {
+   "id": "2307.09593v2",
+   "title": "Limitations for Quantum Algorithms to Solve Turbulent and Chaotic Systems",
+   "published": "2023-07-13",
+   "updated": "2024-10-11",
+   "authors": [
+    "Dylan Lewis",
+    "Stephan Eidenbenz",
+    "Balasubramanya Nadiga",
+    "Yi\u011fit Suba\u015f\u0131"
+   ],
+   "abstract": "We investigate the limitations of quantum computers for solving nonlinear dynamical systems. In particular, we tighten the worst-case bounds of the quantum Carleman linearisation (QCL) algorithm [Liu et al., PNAS 118, 2021] answering one of their open questions. We provide a further significant limitation for any quantum algorithm that aims to output a quantum state that approximates the normalized solution vector. Given a natural choice of coordinates for a dynamical system with one or more positive Lyapunov exponents and solutions that grow sub-exponentially, we prove that any such algorithm has complexity scaling at least exponentially in the integration time. As such, an efficient quantum algorithm for simulating chaotic systems or regimes is likely not possible.",
+   "journal_ref": "Quantum 8, 1509 (2024)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1504.06987v3",
+   "title": "Quantum speedup of Monte Carlo methods",
+   "published": "2015-04-27",
+   "updated": "2017-07-11",
+   "authors": [
+    "Ashley Montanaro"
+   ],
+   "abstract": "Monte Carlo methods use random sampling to estimate numerical quantities which are hard to compute deterministically. One important example is the use in statistical physics of rapidly mixing Markov chains to approximately compute partition functions. In this work we describe a quantum algorithm which can accelerate Monte Carlo methods in a very general setting. The algorithm estimates the expected output value of an arbitrary randomised or quantum subroutine with bounded variance, achieving a near-quadratic speedup over the best possible classical algorithm. Combining the algorithm with the use of quantum walks gives a quantum speedup of the fastest known classical algorithms with rigorous performance bounds for computing partition functions, which use multiple-stage Markov chain Monte Carlo techniques. The quantum algorithm can also be used to estimate the total variation distance between probability distributions efficiently.",
+   "journal_ref": "Proc. Roy. Soc. Ser. A, vol. 471 no. 2181, 20150301, 2015",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "1701.03684v2",
+   "title": "Quantum algorithm for linear differential equations with exponentially improved dependence on precision",
+   "published": "2017-01-13",
+   "updated": "2017-02-17",
+   "authors": [
+    "Dominic W. Berry",
+    "Andrew M. Childs",
+    "Aaron Ostrander",
+    "Guoming Wang"
+   ],
+   "abstract": "We present a quantum algorithm for systems of (possibly inhomogeneous) linear ordinary differential equations with constant coefficients. The algorithm produces a quantum state that is proportional to the solution at a desired final time. The complexity of the algorithm is polynomial in the logarithm of the inverse error, an exponential improvement over previous quantum algorithms for this problem. Our result builds upon recent advances in quantum linear systems algorithms by encoding the simulation into a sparse, well-conditioned linear system that approximates evolution according to the propagator using a Taylor series. Unlike with finite difference methods, our approach does not require additional hypotheses to ensure numerical stability.",
+   "journal_ref": "Communications in Mathematical Physics 356, 1057-1081 (2017)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.07834v1",
+   "title": "Quantum algorithms for computing observables of nonlinear partial differential equations",
+   "published": "2022-02-16",
+   "updated": "2022-02-16",
+   "authors": [
+    "Shi Jin",
+    "Nana Liu"
+   ],
+   "abstract": "We construct quantum algorithms to compute physical observables of nonlinear PDEs with M initial data. Based on an exact mapping between nonlinear and linear PDEs using the level set method, these new quantum algorithms for nonlinear Hamilton-Jacobi and scalar hyperbolic PDEs can be performed with a computational cost that is independent of M, for arbitrary nonlinearity. Depending on the details of the initial data, it can also display up to exponential advantage in both the dimension of the PDE and the error in computing its observables. For general nonlinear PDEs, quantum advantage with respect to M is possible in the large M limit.",
+   "journal_ref": "Bulletin des Sciences Mathematiques, Vol 194, 103457, 2024",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.01054v5",
+   "title": "Improved quantum algorithms for linear and nonlinear differential equations",
+   "published": "2022-02-02",
+   "updated": "2025-12-12",
+   "authors": [
+    "Hari Krovi"
+   ],
+   "abstract": "We present substantially generalized and improved quantum algorithms over prior work for inhomogeneous linear and nonlinear ordinary differential equations (ODE). Specifically, we show how the norm of the matrix exponential characterizes the run time of quantum algorithms for linear ODEs opening the door to an application to a wider class of linear and nonlinear ODEs. In Berry et al., (2017), a quantum algorithm for a certain class of linear ODEs is given, where the matrix involved needs to be diagonalizable. The quantum algorithm for linear ODEs presented here extends to many classes of non-diagonalizable matrices. The algorithm here is also exponentially faster than the bounds derived in Berry et al., (2017) for certain classes of diagonalizable matrices. Our linear ODE algorithm is then applied to nonlinear differential equations using Carleman linearization (an approach taken recently by us in Liu et al., (2021)). The improvement over that result is two-fold. First, we obtain an exponentially better dependence on error. This kind of logarithmic dependence on error has also been achieved by Xue et al., (2021), but only for homogeneous nonlinear equations. Second, the present algorithm can handle any sparse, invertible matrix (that models dissipation) if it has a negative log-norm (including non-diagonalizable matrices), whereas Liu et al., (2021) and Xue et al., (2021) additionally require normality.",
+   "journal_ref": "Quantum 7, 913 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.02188v3",
+   "title": "Challenges for quantum computation of nonlinear dynamical systems using linear representations",
+   "published": "2022-02-04",
+   "updated": "2024-07-08",
+   "authors": [
+    "Yen Ting Lin",
+    "Robert B. Lowrie",
+    "Denis Aslangil",
+    "Yi\u011fit Suba\u015f\u0131",
+    "Andrew T. Sornborger"
+   ],
+   "abstract": "A number of recent studies have proposed that linear representations are appropriate for solving nonlinear dynamical systems with quantum computers, which fundamentally act linearly on a wave function in a Hilbert space. Linear representations, such as the Koopman representation and Koopman von Neumann mechanics, have regained attention from the dynamical-systems research community. Here, we aim to present a unified theoretical framework, currently missing in the literature, with which one can compare and relate existing methods, their conceptual basis, and their representations. We also aim to show that, despite the fact that quantum simulation of nonlinear classical systems may be possible with such linear representations, a necessary projection into a feasible finite-dimensional space will in practice eventually induce numerical artifacts which can be hard to eliminate or even control. As a result, a practical, reliable and accurate way to use quantum computation for solving general nonlinear dynamical systems is still an open problem.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "quant-ph/0508139v2",
+   "title": "Efficient quantum algorithms for simulating sparse Hamiltonians",
+   "published": "2005-08-18",
+   "updated": "2006-02-08",
+   "authors": [
+    "Dominic W. Berry",
+    "Graeme Ahokas",
+    "Richard Cleve",
+    "Barry C. Sanders"
+   ],
+   "abstract": "We present an efficient quantum algorithm for simulating the evolution of a sparse Hamiltonian H for a given time t in terms of a procedure for computing the matrix entries of H. In particular, when H acts on n qubits, has at most a constant number of nonzero entries in each row/column, and |H| is bounded by a constant, we may select any positive integer $k$ such that the simulation requires O((\\log^*n)t^{1+1/2k}) accesses to matrix entries of H. We show that the temporal scaling cannot be significantly improved beyond this, because sublinear time scaling is not possible.",
+   "journal_ref": "Communications in Mathematical Physics 270, 359 (2007)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2210.08104v4",
+   "title": "Gibbs Sampling of Continuous Potentials on a Quantum Computer",
+   "published": "2022-10-14",
+   "updated": "2024-07-20",
+   "authors": [
+    "Arsalan Motamedi",
+    "Pooya Ronagh"
+   ],
+   "abstract": "Gibbs sampling from continuous real-valued functions is a challenging problem of interest in machine learning. Here we leverage quantum Fourier transforms to build a quantum algorithm for this task when the function is periodic. We use the quantum algorithms for solving linear ordinary differential equations to solve the Fokker--Planck equation and prepare a quantum state encoding the Gibbs distribution. We show that the efficiency of interpolation and differentiation of these functions on a quantum computer depends on the rate of decay of the Fourier coefficients of the Fourier transform of the function. We view this property as a concentration of measure in the Fourier domain, and also provide functional analytic conditions for it. Our algorithm makes zeroeth order queries to a quantum oracle of the function. Despite suffering from an exponentially long mixing time, this algorithm allows for exponentially improved precision in sampling, and polynomial quantum speedups in mean estimation in the general case, and particularly under geometric conditions we identify for the critical points of the energy function.",
+   "journal_ref": "Proceedings of the 41st International Conference on Machine Learning, PMLR 235:36322-36371, 2024",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2501.05868v2",
+   "title": "Quantum Speedup for Nonreversible Markov Chains",
+   "published": "2025-01-10",
+   "updated": "2025-09-03",
+   "authors": [
+    "Baptiste Claudon",
+    "Jean-Philip Piquemal",
+    "Pierre Monmarch\u00e9"
+   ],
+   "abstract": "Quantum algorithms can potentially solve a handful of problems more efficiently than their classical counterparts. In that context, it has been discussed that Markov chains problems could be solved significantly faster using quantum computing. Indeed, previous work suggests that quantum computers could accelerate sampling from the stationary distribution of reversible Markov chains. However, in practice, certain physical processes of interest are nonreversible in the probabilistic sense and reversible Markov chains can sometimes be replaced by more efficient nonreversible chains targeting the same stationary distribution. This study constructs Markov chain reversibilizations and develops quantum algorithmic techniques to accelerate nonreversible processes. Such an up-to-exponential quantum speedup goes beyond the predicted quadratic quantum acceleration for reversible chains and is likely to have a decisive impact on many applications ranging from statistics and machine learning to computational modeling in physics, chemistry, biology and finance.",
+   "journal_ref": "Nature Communications, 2025, 16, 10732",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.03185v4",
+   "title": "Efficient quantum algorithm for dissipative nonlinear differential equations",
+   "published": "2020-11-06",
+   "updated": "2026-07-07",
+   "authors": [
+    "Jin-Peng Liu",
+    "Herman \u00d8ie Kolden",
+    "Hari K. Krovi",
+    "Nuno F. Loureiro",
+    "Konstantina Trivisa",
+    "Andrew M. Childs"
+   ],
+   "abstract": "Nonlinear differential equations model diverse phenomena but are notoriously difficult to solve. While there has been extensive previous work on efficient quantum algorithms for linear differential equations, the linearity of quantum mechanics has limited analogous progress for the nonlinear case. Despite this obstacle, we develop a quantum algorithm for dissipative quadratic $n$-dimensional ordinary differential equations. Assuming $R < 1$, where $R$ is a parameter characterizing the ratio of the nonlinearity and forcing to the linear dissipation, this algorithm has complexity $T^2 q~\\mathrm{poly}(\\log T, \\log n, \\log 1/\u03b5)/\u03b5$, where $T$ is the evolution time, $\u03b5$ is the allowed error, and $q$ measures decay of the solution. This is an exponential improvement over the best previous quantum algorithms, whose complexity is exponential in $T$. While exponential decay precludes efficiency, driven equations can avoid this issue despite the presence of dissipation. Our algorithm uses the method of Carleman linearization, for which we give a novel convergence theorem. This method maps a system of nonlinear differential equations to an infinite-dimensional system of linear differential equations, which we discretize, truncate, and solve using the forward Euler method and the quantum linear system algorithm. We also provide a lower bound on the worst-case complexity of quantum algorithms for general quadratic differential equations, showing that the problem is intractable for $R \\ge \\sqrt{2}$. Finally, we discuss potential applications, showing that the $R < 1$ condition can be satisfied in realistic epidemiological models and giving numerical evidence that the method may describe a model of fluid dynamics even for larger values of $R$.",
+   "journal_ref": "Proceedings of the National Academy of Sciences 118, e2026805118 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.06571v2",
+   "title": "Quantum algorithm for nonlinear differential equations",
+   "published": "2020-11-12",
+   "updated": "2020-12-21",
+   "authors": [
+    "Seth Lloyd",
+    "Giacomo De Palma",
+    "Can Gokler",
+    "Bobak Kiani",
+    "Zi-Wen Liu",
+    "Milad Marvian",
+    "Felix Tennie",
+    "Tim Palmer"
+   ],
+   "abstract": "Quantum computers are known to provide an exponential advantage over classical computers for the solution of linear differential equations in high-dimensional spaces. Here, we present a quantum algorithm for the solution of nonlinear differential equations. The quantum algorithm provides an exponential advantage over classical algorithms for solving nonlinear differential equations. Potential applications include the Navier-Stokes equation, plasma hydrodynamics, epidemiology, and more.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2011.04149v2",
+   "title": "Focus beyond quadratic speedups for error-corrected quantum advantage",
+   "published": "2020-11-09",
+   "updated": "2021-03-31",
+   "authors": [
+    "Ryan Babbush",
+    "Jarrod McClean",
+    "Michael Newman",
+    "Craig Gidney",
+    "Sergio Boixo",
+    "Hartmut Neven"
+   ],
+   "abstract": "In this perspective, we discuss conditions under which it would be possible for a modest fault-tolerant quantum computer to realize a runtime advantage by executing a quantum algorithm with only a small polynomial speedup over the best classical alternative. The challenge is that the computation must finish within a reasonable amount of time while being difficult enough that the small quantum scaling advantage would compensate for the large constant factor overheads associated with error-correction. We compute several examples of such runtimes using state-of-the-art surface code constructions under a variety of assumptions. We conclude that quadratic speedups will not enable quantum advantage on early generations of such fault-tolerant devices unless there is a significant improvement in how we would realize quantum error-correction. While this conclusion persists even if we were to increase the rate of logical gates in the surface code by more than an order of magnitude, we also repeat this analysis for speedups by other polynomial degrees and find that quartic speedups look significantly more practical.",
+   "journal_ref": "PRX Quantum 2, 010103 (2021)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2405.12714v2",
+   "title": "Quantum Algorithms for Nonlinear Dynamics: Revisiting Carleman Linearization with No Dissipative Conditions",
+   "published": "2024-05-21",
+   "updated": "2025-01-31",
+   "authors": [
+    "Hsuan-Cheng Wu",
+    "Jingyao Wang",
+    "Xiantao Li"
+   ],
+   "abstract": "In this paper, we explore the embedding of nonlinear dynamical systems into linear ordinary differential equations (ODEs) via the Carleman linearization method. Under dissipative conditions, numerous previous works have established rigorous error bounds and linear convergence for Carleman linearization, which have facilitated the identification of quantum advantages in simulating large-scale dynamical systems. Our analysis extends these findings by exploring error bounds beyond the traditional dissipative condition, thereby broadening the scope of quantum computational benefits to a new class of dynamical regimes. This novel regime is defined by a resonance condition, and we prove how this resonance condition leads to a linear convergence with respect to the truncation level $N$ in Carleman linearization. We support our theoretical advancements with numerical experiments on a variety of models, including the Burgers' equation, Fermi-Pasta-Ulam (FPU) chains, and the Korteweg-de Vries (KdV) equations, to validate our analysis and demonstrate the practical implications.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2303.13012v3",
+   "title": "Exponential quantum speedup in simulating coupled classical oscillators",
+   "published": "2023-03-23",
+   "updated": "2023-09-19",
+   "authors": [
+    "Ryan Babbush",
+    "Dominic W. Berry",
+    "Robin Kothari",
+    "Rolando D. Somma",
+    "Nathan Wiebe"
+   ],
+   "abstract": "We present a quantum algorithm for simulating the classical dynamics of $2^n$ coupled oscillators (e.g., $2^n$ masses coupled by springs). Our approach leverages a mapping between the Schr\u00f6dinger equation and Newton's equation for harmonic potentials such that the amplitudes of the evolved quantum state encode the momenta and displacements of the classical oscillators. When individual masses and spring constants can be efficiently queried, and when the initial state can be efficiently prepared, the complexity of our quantum algorithm is polynomial in $n$, almost linear in the evolution time, and sublinear in the sparsity. As an example application, we apply our quantum algorithm to efficiently estimate the kinetic energy of an oscillator at any time. We show that any classical algorithm solving this same problem is inefficient and must make $2^{\u03a9(n)}$ queries to the oracle and, when the oracles are instantiated by efficient quantum circuits, the problem is BQP-complete. Thus, our approach solves a potentially practical application with an exponential speedup over classical computers. Finally, we show that under similar conditions our approach can efficiently simulate more general classical harmonic systems with $2^n$ modes.",
+   "journal_ref": "Phys. Rev. X 13, 041041 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2608.24527v2",
+   "title": "Provable Quantum-Classical Separation for Continuous Gibbs Sampling",
+   "published": "2026-08-25",
+   "updated": "2026-09-25",
+   "authors": [
+    "Enrico Olivucci",
+    "Mariia Sobchuk",
+    "Sehmimul Hoque",
+    "Jeffrey Hnybida",
+    "Kyungho W. Kim",
+    "Ala Shayeghi",
+    "Pooya Ronagh"
+   ],
+   "abstract": "We prove the first quantum-classical separation for a sampling problem over a continuous domain. For a class of Gibbs states $p\\propto e^{-\u03b2E}$ on the torus $\\mathbb{T}^d$ with smooth ($s$-Gevrey) potential and barrier amplitude $\u03b1=e^{\u03b2\u0394}$, where $\u0394= \\max E-\\min E$, every classical algorithm querying the value, gradient, or any higher-order derivatives of the log-density requires $\u03a9(\u03b1)$ queries to sample at constant accuracy in total variation distance, while a quantum algorithm based on quantum singular value thresholding and temperature annealing samples with $\\tilde{O}\\left(\\sqrt\u03b1\\right)$ queries to an oracle for the gradient. The advantage is quadratic in the barrier amplitude, which becomes exponential in the dimension, $e^{\u03a9(d)}$, at low temperature. The classical bound is information-theoretic, holding for every classical algorithm with query access to the Gibbs potential and its derivatives at any order.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2210.06539v1",
+   "title": "Quantum Algorithms for Sampling Log-Concave Distributions and Estimating Normalizing Constants",
+   "published": "2022-10-12",
+   "updated": "2022-10-12",
+   "authors": [
+    "Andrew M. Childs",
+    "Tongyang Li",
+    "Jin-Peng Liu",
+    "Chunhao Wang",
+    "Ruizhe Zhang"
+   ],
+   "abstract": "Given a convex function $f\\colon\\mathbb{R}^{d}\\to\\mathbb{R}$, the problem of sampling from a distribution $\\propto e^{-f(x)}$ is called log-concave sampling. This task has wide applications in machine learning, physics, statistics, etc. In this work, we develop quantum algorithms for sampling log-concave distributions and for estimating their normalizing constants $\\int_{\\mathbb{R}^d}e^{-f(x)}\\mathrm{d} x$. First, we use underdamped Langevin diffusion to develop quantum algorithms that match the query complexity (in terms of the condition number $\u03ba$ and dimension $d$) of analogous classical algorithms that use gradient (first-order) queries, even though the quantum algorithms use only evaluation (zeroth-order) queries. For estimating normalizing constants, these algorithms also achieve quadratic speedup in the multiplicative error $\u03b5$. Second, we develop quantum Metropolis-adjusted Langevin algorithms with query complexity $\\widetilde{O}(\u03ba^{1/2}d)$ and $\\widetilde{O}(\u03ba^{1/2}d^{3/2}/\u03b5)$ for log-concave sampling and normalizing constant estimation, respectively, achieving polynomial speedups in $\u03ba,d,\u03b5$ over the best known classical algorithms by exploiting quantum analogs of the Monte Carlo method and quantum walks. We also prove a $1/\u03b5^{1-o(1)}$ quantum lower bound for estimating normalizing constants, implying near-optimality of our quantum algorithms in $\u03b5$.",
+   "journal_ref": "Advances in Neural Information Processing Systems (NeurIPS 2022) 35, 23205 (2022)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2302.01170v2",
+   "title": "Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+   "published": "2023-02-02",
+   "updated": "2023-12-01",
+   "authors": [
+    "Leon Klein",
+    "Andrew Y. K. Foong",
+    "Tor Erlend Fjelde",
+    "Bruno Mlodozeniec",
+    "Marc Brockschmidt",
+    "Sebastian Nowozin",
+    "Frank No\u00e9",
+    "Ryota Tomioka"
+   ],
+   "abstract": "Molecular dynamics (MD) simulation is a widely used technique to simulate molecular systems, most commonly at the all-atom resolution where equations of motion are integrated with timesteps on the order of femtoseconds ($1\\textrm{fs}=10^{-15}\\textrm{s}$). MD is often used to compute equilibrium properties, which requires sampling from an equilibrium distribution such as the Boltzmann distribution. However, many important processes, such as binding and folding, occur over timescales of milliseconds or beyond, and cannot be efficiently sampled with conventional MD. Furthermore, new MD simulations need to be performed for each molecular system studied. We present Timewarp, an enhanced sampling method which uses a normalising flow as a proposal distribution in a Markov chain Monte Carlo method targeting the Boltzmann distribution. The flow is trained offline on MD trajectories and learns to make large steps in time, simulating the molecular dynamics of $10^{5} - 10^{6}\\:\\textrm{fs}$. Crucially, Timewarp is transferable between molecular systems: once trained, we show that it generalises to unseen small peptides (2-4 amino acids) at all-atom resolution, exploring their metastable states and providing wall-clock acceleration of sampling compared to standard MD. Our method constitutes an important step towards general, transferable algorithms for accelerating MD.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "1812.01729v2",
+   "title": "Boltzmann Generators -- Sampling Equilibrium States of Many-Body Systems with Deep Learning",
+   "published": "2018-12-04",
+   "updated": "2019-07-12",
+   "authors": [
+    "Frank No\u00e9",
+    "Simon Olsson",
+    "Jonas K\u00f6hler",
+    "Hao Wu"
+   ],
+   "abstract": "Computing equilibrium states in condensed-matter many-body systems, such as solvated proteins, is a long-standing challenge. Lacking methods for generating statistically independent equilibrium samples in \"one shot\", vast computational effort is invested for simulating these system in small steps, e.g., using Molecular Dynamics. Combining deep learning and statistical mechanics, we here develop Boltzmann Generators, that are shown to generate unbiased one-shot equilibrium samples of representative condensed matter systems and proteins. Boltzmann Generators use neural networks to learn a coordinate transformation of the complex configurational equilibrium distribution to a distribution that can be easily sampled. Accurate computation of free energy differences and discovery of new configurations are demonstrated, providing a statistical mechanics tool that can avoid rare events during sampling without prior knowledge of reaction coordinates.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2312.09518v1",
+   "title": "Further improving quantum algorithms for nonlinear differential equations via higher-order methods and rescaling",
+   "published": "2023-12-15",
+   "updated": "2023-12-15",
+   "authors": [
+    "Pedro C. S. Costa",
+    "Philipp Schleich",
+    "Mauro E. S. Morales",
+    "Dominic W. Berry"
+   ],
+   "abstract": "The solution of large systems of nonlinear differential equations is needed for many applications in science and engineering. In this study, we present three main improvements to existing quantum algorithms based on the Carleman linearisation technique. First, by using a high-precision technique for the solution of the linearised differential equations, we achieve logarithmic dependence of the complexity on the error and near-linear dependence on time. Second, we demonstrate that a rescaling technique can considerably reduce the cost, which would otherwise be exponential in the Carleman order for a system of ODEs, preventing a quantum speedup for PDEs. Third, we provide improved, tighter bounds on the error of Carleman linearisation. We apply our results to a class of discretised reaction-diffusion equations using higher-order finite differences for spatial resolution. We show that providing a stability criterion independent of the discretisation can conflict with the use of the rescaling due to the difference between the max-norm and 2-norm. An efficient solution may still be provided if the number of discretisation points is limited, as is possible when using higher-order discretisations.",
+   "journal_ref": "npj Quantum Information 11, 141 (2025)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2505.05301v2",
+   "title": "Operator-Level Quantum Acceleration of Non-Logconcave Sampling",
+   "published": "2025-05-08",
+   "updated": "2026-01-07",
+   "authors": [
+    "Jiaqi Leng",
+    "Zhiyan Ding",
+    "Zherui Chen",
+    "Lin Lin"
+   ],
+   "abstract": "Sampling from probability distributions of the form $\u03c3\\propto e^{-\u03b2V}$, where $V$ is a continuous potential, is a fundamental task across physics, chemistry, biology, computer science, and statistics. However, when $V$ is non-convex, the resulting distribution becomes non-logconcave, and classical methods such as Langevin dynamics often exhibit poor performance. We introduce the first quantum algorithm that provably accelerates a broad class of continuous-time sampling dynamics. For Langevin dynamics, our method encodes the target Gibbs measure into the amplitudes of a quantum state, identified as the kernel of a block matrix derived from a factorization of the Witten Laplacian operator. This connection enables Gibbs sampling via singular value thresholding and yields up to a quartic quantum speedup over best-known classical Langevin-based methods in the non-logconcave setting. Building on this framework, we further develop the first quantum algorithm that accelerates replica exchange Langevin diffusion, a widely used method for sampling from complex, rugged energy landscapes.",
+   "journal_ref": "Proceedings of the National Academy of Sciences 123(8), e2512789123 (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2310.11445v1",
+   "title": "Stochastic Quantum Sampling for Non-Logconcave Distributions and Estimating Partition Functions",
+   "published": "2023-10-17",
+   "updated": "2023-10-17",
+   "authors": [
+    "Guneykan Ozgul",
+    "Xiantao Li",
+    "Mehrdad Mahdavi",
+    "Chunhao Wang"
+   ],
+   "abstract": "We present quantum algorithms for sampling from non-logconcave probability distributions in the form of $\u03c0(x) \\propto \\exp(-\u03b2f(x))$. Here, $f$ can be written as a finite sum $f(x):= \\frac{1}{N}\\sum_{k=1}^N f_k(x)$. Our approach is based on quantum simulated annealing on slowly varying Markov chains derived from unadjusted Langevin algorithms, removing the necessity for function evaluations which can be computationally expensive for large data sets in mixture modeling and multi-stable systems. We also incorporate a stochastic gradient oracle that implements the quantum walk operators inexactly by only using mini-batch gradients. As a result, our stochastic gradient based algorithm only accesses small subsets of data points in implementing the quantum walk. One challenge of quantizing the resulting Markov chains is that they do not satisfy the detailed balance condition in general. Consequently, the mixing time of the algorithm cannot be expressed in terms of the spectral gap of the transition density, making the quantum algorithms nontrivial to analyze. To overcome these challenges, we first build a hypothetical Markov chain that is reversible, and also converges to the target distribution. Then, we quantified the distance between our algorithm's output and the target distribution by using this hypothetical chain as a bridge to establish the total complexity. Our quantum algorithms exhibit polynomial speedups in terms of both dimension and precision dependencies when compared to the best-known classical algorithms.",
+   "journal_ref": "Proceedings of the 41st International Conference on Machine Learning, Proceedings of Machine Learning Research 235:38953-38982, 2024",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2303.01029v2",
+   "title": "Linear combination of Hamiltonian simulation for nonunitary dynamics with optimal state preparation cost",
+   "published": "2023-03-02",
+   "updated": "2023-10-23",
+   "authors": [
+    "Dong An",
+    "Jin-Peng Liu",
+    "Lin Lin"
+   ],
+   "abstract": "We propose a simple method for simulating a general class of non-unitary dynamics as a linear combination of Hamiltonian simulation (LCHS) problems. LCHS does not rely on converting the problem into a dilated linear system problem, or on the spectral mapping theorem. The latter is the mathematical foundation of many quantum algorithms for solving a wide variety of tasks involving non-unitary processes, such as the quantum singular value transformation (QSVT). The LCHS method can achieve optimal cost in terms of state preparation. We also demonstrate an application for open quantum dynamics simulation using the complex absorbing potential method with near-optimal dependence on all parameters.",
+   "journal_ref": "Phys. Rev. Lett. 131, 150603 (2023)",
+   "primary": "quant-ph"
+  }
+ ]
+}

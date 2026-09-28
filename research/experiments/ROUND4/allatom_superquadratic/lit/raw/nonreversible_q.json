@@ -1,0 +1,47 @@
+{
+ "key": "nonreversible_q",
+ "url": "https://export.arxiv.org/api/query?max_results=20&sortBy=relevance&search_query=%28abs%3Aquantum+AND+abs%3A%22nonreversible%22+AND+abs%3AMarkov%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:24",
+ "records": [
+  {
+   "id": "2501.05868v2",
+   "title": "Quantum Speedup for Nonreversible Markov Chains",
+   "published": "2025-01-10",
+   "updated": "2025-09-03",
+   "authors": [
+    "Baptiste Claudon",
+    "Jean-Philip Piquemal",
+    "Pierre Monmarch\u00e9"
+   ],
+   "abstract": "Quantum algorithms can potentially solve a handful of problems more efficiently than their classical counterparts. In that context, it has been discussed that Markov chains problems could be solved significantly faster using quantum computing. Indeed, previous work suggests that quantum computers could accelerate sampling from the stationary distribution of reversible Markov chains. However, in practice, certain physical processes of interest are nonreversible in the probabilistic sense and reversible Markov chains can sometimes be replaced by more efficient nonreversible chains targeting the same stationary distribution. This study constructs Markov chain reversibilizations and develops quantum algorithmic techniques to accelerate nonreversible processes. Such an up-to-exponential quantum speedup goes beyond the predicted quadratic quantum acceleration for reversible chains and is likely to have a decisive impact on many applications ranging from statistics and machine learning to computational modeling in physics, chemistry, biology and finance.",
+   "journal_ref": "Nature Communications, 2025, 16, 10732",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2206.13881v2",
+   "title": "Lifted directed-worm algorithm",
+   "published": "2022-06-28",
+   "updated": "2022-11-10",
+   "authors": [
+    "Hidemaro Suwa"
+   ],
+   "abstract": "Nonreversible Markov chains can outperform reversible chains in the Markov chain Monte Carlo method. Lifting is a versatile approach to introducing net stochastic flow in state space and constructing a nonreversible Markov chain. We present here an application of the lifting technique to the directed-worm algorithm. The transition probability of the worm update is optimized using the geometric allocation approach; the worm backscattering probability is minimized, and the stochastic flow breaking the detailed balance is maximized. We demonstrate the performance improvement over the previous worm and cluster algorithms for the four-dimensional hypercubic lattice Ising model. The sampling efficiency of the present algorithm is approximately 80, 5, and 1.7 times as high as those of the standard worm algorithm, the Wolff cluster algorithm, and the previous lifted worm algorithm, respectively. We estimate the dynamic critical exponent of the hypercubic lattice Ising model to be $z \\approx 0$ in the worm and the Wolff cluster updates. The lifted version of the directed-worm algorithm can be applied to a variety of quantum systems as well as classical systems.",
+   "journal_ref": "Phys. Rev. E 106, 055306 (2022)",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2606.26584v2",
+   "title": "Quantum Fast-Forwarding Beyond Reversibility: The $\u03b1$-Perturbed $n$-Cycle",
+   "published": "2026-06-25",
+   "updated": "2026-06-26",
+   "authors": [
+    "Avah Banerjee",
+    "Asim Sharma",
+    "Sooraj Soman"
+   ],
+   "abstract": "Quantum fast-forwarding (QFF) is usually formulated for reversible Markov chains, where the projected quantum walk evolution is exactly governed by Chebyshev polynomials of a Hermitian discriminant matrix. We study whether this framework can be extended to nonreversible dynamics for an $\u03b1$-perturbed $n$-cycle Markov chain, which preserves circulant structure while introducing controlled irreversibility. We show that the nonreversible case has a fundamental obstruction: for $\u03b1\\neq 0$, the eigenvalues of $P_\u03b1$ leave the interval $[-1,1]$, so $T_m(P_\u03b1)$ is not uniformly bounded and cannot arise as an exact unitary compression for all times. Thus, exact Chebyshev-based QFF does not extend directly beyond reversibility. Nevertheless, we obtain a finite-time approximation result using truncated Chebyshev and LCU techniques. The evolution $P_\u03b1^t$ can be approximated with degree $\u03c4=O\\left(|\u03b1|t+\\sqrt{t\\log(t/\u03b7)}\\right),$ which recovers the reversible $O(\\sqrt t)$ behavior only in the perturbative regime $|\u03b1|=O(t^{-1/2})$. This identifies a nearly reversible regime where QFF survives perturbatively and quantifies how irreversibility degrades the speedup.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

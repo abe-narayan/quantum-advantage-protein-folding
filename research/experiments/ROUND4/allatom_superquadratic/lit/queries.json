@@ -1,0 +1,157 @@
+{
+ "carleman": {
+  "q": "abs:Carleman AND abs:quantum AND abs:nonlinear",
+  "ids": null,
+  "n": 60
+ },
+ "carleman_nodiss": {
+  "q": "abs:Carleman AND abs:quantum AND (abs:dissipative OR abs:conservative OR abs:\"non-dissipative\")",
+  "ids": null,
+  "n": 40
+ },
+ "nonlinear_ode_qalg": {
+  "q": "ti:quantum AND ti:nonlinear AND (ti:\"differential equations\" OR ti:dynamics) AND abs:algorithm",
+  "ids": null,
+  "n": 60
+ },
+ "koopman_vn": {
+  "q": "(abs:\"Koopman-von Neumann\" OR abs:\"Koopman von Neumann\" OR ti:Koopman) AND abs:quantum AND abs:classical",
+  "ids": null,
+  "n": 50
+ },
+ "liouville_qalg": {
+  "q": "(ti:Liouville OR abs:\"Liouville equation\") AND abs:\"quantum algorithm\" AND abs:nonlinear",
+  "ids": null,
+  "n": 40
+ },
+ "level_set_obs": {
+  "q": "abs:\"quantum algorithms\" AND abs:observables AND abs:nonlinear AND abs:\"partial differential\"",
+  "ids": null,
+  "n": 30
+ },
+ "chaos_limits": {
+  "q": "abs:quantum AND abs:Lyapunov AND abs:nonlinear AND (abs:algorithm OR abs:algorithms) AND abs:chaotic",
+  "ids": null,
+  "n": 30
+ },
+ "fokker_planck": {
+  "q": "(ti:\"Fokker-Planck\" OR ti:\"Fokker Planck\" OR ti:Kolmogorov) AND abs:quantum AND (abs:algorithm OR abs:computer OR abs:computing)",
+  "ids": null,
+  "n": 40
+ },
+ "langevin_q": {
+  "q": "ti:Langevin AND ti:quantum AND (abs:algorithm OR abs:sampling)",
+  "ids": null,
+  "n": 40
+ },
+ "sde_q": {
+  "q": "ti:stochastic AND ti:\"differential equations\" AND ti:quantum",
+  "ids": null,
+  "n": 30
+ },
+ "gibbs_continuous": {
+  "q": "(abs:\"non-logconcave\" OR abs:\"non-log-concave\" OR abs:\"continuous potentials\" OR abs:\"Witten Laplacian\") AND abs:quantum AND abs:sampling",
+  "ids": null,
+  "n": 40
+ },
+ "linear_ode_nonunitary": {
+  "q": "(abs:\"non-unitary\" OR abs:\"linear combination of Hamiltonian simulation\") AND abs:quantum AND abs:\"differential equations\"",
+  "ids": null,
+  "n": 30
+ },
+ "oscillators": {
+  "q": "abs:\"coupled classical oscillators\" OR (abs:oscillators AND abs:\"exponential quantum speedup\")",
+  "ids": null,
+  "n": 40
+ },
+ "anharmonic": {
+  "q": "abs:anharmonic AND abs:\"classical\" AND abs:oscillators AND abs:quantum AND (abs:algorithm OR abs:speedup)",
+  "ids": null,
+  "n": 40
+ },
+ "md_quantum_alg": {
+  "q": "(ti:\"molecular dynamics\" OR abs:\"classical molecular dynamics\") AND abs:\"quantum algorithm\"",
+  "ids": null,
+  "n": 50
+ },
+ "md_quantum_comp": {
+  "q": "ti:\"molecular dynamics\" AND (ti:\"quantum computer\" OR ti:\"quantum computing\" OR ti:\"quantum computers\")",
+  "ids": null,
+  "n": 40
+ },
+ "msm_quantum": {
+  "q": "(abs:\"Markov state model\" OR abs:\"Markov state models\") AND abs:quantum AND (abs:walk OR abs:computer OR abs:algorithm OR abs:annealer)",
+  "ids": null,
+  "n": 40
+ },
+ "rare_transitions": {
+  "q": "abs:\"rare\" AND abs:transitions AND abs:\"quantum computer\" AND (abs:protein OR abs:conformational OR abs:molecular)",
+  "ids": null,
+  "n": 30
+ },
+ "free_energy_q": {
+  "q": "ti:\"free energy\" AND (ti:quantum) AND (abs:algorithm OR abs:\"amplitude estimation\" OR abs:speedup)",
+  "ids": null,
+  "n": 40
+ },
+ "partition_fn_q": {
+  "q": "ti:\"partition function\" AND ti:quantum AND abs:algorithm",
+  "ids": null,
+  "n": 30
+ },
+ "protein_folding_md_q": {
+  "q": "abs:\"protein folding\" AND abs:quantum AND (abs:\"molecular dynamics\" OR abs:Langevin OR abs:kinetics)",
+  "ids": null,
+  "n": 60
+ },
+ "rates_committor_q": {
+  "q": "(abs:committor OR abs:\"transition rate\" OR abs:\"reaction rate\" OR abs:\"first passage\") AND abs:\"quantum algorithm\"",
+  "ids": null,
+  "n": 30
+ },
+ "nonreversible_q": {
+  "q": "abs:quantum AND abs:\"nonreversible\" AND abs:Markov",
+  "ids": null,
+  "n": 20
+ },
+ "we_folding": {
+  "q": "abs:\"weighted ensemble\" AND (abs:folding OR abs:protein)",
+  "ids": null,
+  "n": 40
+ },
+ "boltzmann_gen": {
+  "q": "ti:\"Boltzmann generators\" OR (abs:\"Boltzmann generator\" AND abs:protein)",
+  "ids": null,
+  "n": 30
+ },
+ "bioemu": {
+  "q": "abs:\"protein equilibrium ensembles\" AND abs:generative",
+  "ids": null,
+  "n": 20
+ },
+ "fast_folding_ml": {
+  "q": "abs:\"fast-folding proteins\" OR abs:\"fast folding proteins\"",
+  "ids": null,
+  "n": 40
+ },
+ "rest2": {
+  "q": "(abs:\"solute tempering\" OR abs:REST2) AND abs:protein",
+  "ids": null,
+  "n": 30
+ },
+ "anton": {
+  "q": "abs:Anton AND abs:\"molecular dynamics\" AND (abs:microseconds OR abs:millisecond OR abs:machine)",
+  "ids": null,
+  "n": 30
+ },
+ "lyapunov_md": {
+  "q": "abs:Lyapunov AND abs:\"molecular dynamics\" AND (abs:protein OR abs:water OR abs:liquid)",
+  "ids": null,
+  "n": 30
+ },
+ "ids_core": {
+  "q": null,
+  "ids": "2011.03185,2202.01054,2303.13012,2307.09593,2303.01029,1701.03684,quant-ph/0508139,1504.06987,2505.05301,2501.05868,2608.24527,2210.06539,2310.11445,2210.08104,1812.01729,2302.01170,2202.07834,2202.02188,2011.06571,2312.09518,2405.12714,2011.04149",
+  "n": 40
+ }
+}

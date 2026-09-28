@@ -1,0 +1,181 @@
+{
+ "key": "free_energy_q",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28ti%3A%22free+energy%22+AND+%28ti%3Aquantum%29+AND+%28abs%3Aalgorithm+OR+abs%3A%22amplitude+estimation%22+OR+abs%3Aspeedup%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:09",
+ "records": [
+  {
+   "id": "2506.20587v1",
+   "title": "How to use quantum computers for biomolecular free energies",
+   "published": "2025-06-25",
+   "updated": "2025-06-25",
+   "authors": [
+    "Jakob G\u00fcnther",
+    "Thomas Weymuth",
+    "Moritz Bensberg",
+    "Freek Witteveen",
+    "Matthew S. Teynor",
+    "F. Emil Thomasen",
+    "Valentina Sora",
+    "William Bro-J\u00f8rgensen",
+    "Raphael T. Husistein",
+    "Mihael Erakovic",
+    "Marek Miller",
+    "Leah Weisburn",
+    "Minsik Cho",
+    "Marco Eckhoff",
+    "Aram W. Harrow",
+    "Anders Krogh",
+    "Troy Van Voorhis",
+    "Kresten Lindorff-Larsen",
+    "Gemma Solomon",
+    "Markus Reiher",
+    "Matthias Christandl"
+   ],
+   "abstract": "Free energy calculations are at the heart of physics-based analyses of biochemical processes. They allow us to quantify molecular recognition mechanisms, which determine a wide range of biological phenomena from how cells send and receive signals to how pharmaceutical compounds can be used to treat diseases. Quantitative and predictive free energy calculations require computational models that accurately capture both the varied and intricate electronic interactions between molecules as well as the entropic contributions from motions of these molecules and their aqueous environment. However, accurate quantum-mechanical energies and forces can only be obtained for small atomistic models, not for large biomacromolecules. Here, we demonstrate how to consistently link accurate quantum-mechanical data obtained for substructures to the overall potential energy of biomolecular complexes by machine learning in an integrated algorithm. We do so using a two-fold quantum embedding strategy where the innermost quantum cores are treated at a very high level of accuracy. We demonstrate the viability of this approach for the molecular recognition of a ruthenium-based anticancer drug by its protein target, applying traditional quantum chemical methods. As such methods scale unfavorable with system size, we analyze requirements for quantum computers to provide highly accurate energies that impact the resulting free energies. Once the requirements are met, our computational pipeline FreeQuantum is able to make efficient use of the quantum computed energies, thereby enabling quantum computing enhanced modeling of biochemical processes. This approach combines the exponential speedups of quantum computers for simulating interacting electrons with modern classical simulation techniques that incorporate machine learning to model large molecules.",
+   "journal_ref": "J. Chem. Theory Comput. (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2202.10908v2",
+   "title": "Quantum walk in a reinforced free-energy landscape: Quantum annealing with reinforcement",
+   "published": "2022-02-22",
+   "updated": "2022-07-14",
+   "authors": [
+    "Abolfazl Ramezanpour"
+   ],
+   "abstract": "Providing an optimal path to a quantum annealing algorithm is key to finding good approximate solutions to computationally hard optimization problems. Reinforcement is one of the strategies that can be used to circumvent the exponentially small energy gaps of the system in the annealing process. Here a time-dependent reinforcement term is added to the Hamiltonian in order to give lower energies to the most probable states of the evolving system. In this study, we take a local entropy in the configuration space for the reinforcement and apply the algorithm to a number of easy and hard optimization problems. The reinforced algorithm performs better than the standard quantum annealing algorithm in the quantum search problem, where the optimal parameters behave very differently depending on the number of solutions. Moreover, the reinforcements can change the discontinuous phase transitions of the mean-field p-spin model ($p>2$) to a continuous transition. The algorithm's performance in the binary perceptron problem is also superior to that of the standard quantum annealing algorithm, which already works better than a classical simulated annealing algorithm.",
+   "journal_ref": "Phys. Rev. A 106, 012418 (2022)",
+   "primary": "cond-mat.dis-nn"
+  },
+  {
+   "id": "2508.16719v2",
+   "title": "Fullqubit alchemist: Quantum algorithm for alchemical free energy calculations",
+   "published": "2025-08-22",
+   "updated": "2026-06-25",
+   "authors": [
+    "Po-Wei Huang",
+    "Gregory Boyd",
+    "Gian-Luca R. Anselmetti",
+    "Matthias Degroote",
+    "Nikolaj Moll",
+    "Raffaele Santagati",
+    "Michael Streif",
+    "Benjamin Ries",
+    "Daniel Marti-Dafcik",
+    "Hamza Jnane",
+    "Sophia Simon",
+    "Nathan Wiebe",
+    "Thomas R. Bromley",
+    "B\u00e1lint Koczor"
+   ],
+   "abstract": "Accurately computing the free energies of biological processes is a cornerstone of computer-aided drug design, but it is a daunting task. The need to sample vast conformational spaces and account for entropic contributions makes the estimation of binding free energies very expensive. While classical methods, such as thermodynamic integration and alchemical free energy calculations, have significantly contributed to reducing computational costs, they still face limitations in terms of efficiency and scalability. We tackle this through a quantum algorithm for the estimation of free energy differences by adapting the existing Liouvillian approach and introducing several key algorithmic improvements. We directly implement the Liouvillian operator and provide an efficient description of electronic forces acting on both nuclear and electronic particles on the quantum ground state potential energy surface. This leads to super-polynomial runtime scaling improvements in the precision of our Liouvillian simulation approach and quadratic improvements in the scaling with the number of particles relative to prior quantum algorithms. Second, our algorithm calculates free energy differences via a fully quantum implementation of thermodynamic integration and alchemy, thereby foregoing expensive entropy estimation subroutines used in prior works. Our results open new avenues towards the application of quantum computers in drug discovery.",
+   "journal_ref": "npj Quantum Information (2026)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2103.09846v2",
+   "title": "Computing Free Energies with Fluctuation Relations on Quantum Computers",
+   "published": "2021-03-17",
+   "updated": "2021-09-03",
+   "authors": [
+    "Lindsay Bassman",
+    "Katherine Klymko",
+    "Diyi Liu",
+    "Norman M. Tubman",
+    "Wibe A. de Jong"
+   ],
+   "abstract": "Fluctuation relations allow for the computation of equilibrium properties, like free energy, from an ensemble of non-equilibrium dynamics simulations. Computing them for quantum systems, however, can be difficult, as performing dynamic simulations of such systems is exponentially hard on classical computers. Quantum computers can alleviate this hurdle, as they can efficiently simulate quantum systems. Here, we present an algorithm utilizing a fluctuation relation known as the Jarzynski equality to approximate free energy differences of quantum systems on a quantum computer. We discuss under which conditions our approximation becomes exact, and under which conditions it serves as a strict upper bound. Furthermore, we successfully demonstrate a proof-of-concept of our algorithm using the transverse field Ising model on a real quantum processor. The free energy is a central thermodynamic property that allows one to compute virtually any equilibrium property of a physical system. Thus, as quantum hardware continues to improve, our algorithm may serve as a valuable tool in a wide range of applications including the construction of phase diagrams, prediction of transport properties and reaction constants, and computer-aided drug design in the future.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2402.19030v1",
+   "title": "A Faster Algorithm for the Free Energy in One-Dimensional Quantum Systems",
+   "published": "2024-02-29",
+   "updated": "2024-02-29",
+   "authors": [
+    "Samuel O. Scalet"
+   ],
+   "abstract": "We consider the problem of approximating the free energy density of a translation-invariant, one-dimensional quantum spin system with finite range. While the complexity of this problem is nontrivial due to its close connection to problems with known hardness results, a classical subpolynomial-time algorithm has recently been proposed [Fawzi et al., 2022]. Combining several algorithmic techniques previously used for related problems, we propose an algorithm outperforming this result asymptotically and give rigorous bounds on its runtime. Our main techniques are the use of Araki expansionals, known from results on the nonexistence of phase transitions, and a matrix product operator construction. We also review a related approach using the Quantum Belief Propagation [Kuwahara et al., 2018], which in combination with our findings yields an equivalent result.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2511.17821v1",
+   "title": "Quantum Algorithm for Estimating Gibbs Free Energy and Entropy via Energy Derivatives",
+   "published": "2025-11-21",
+   "updated": "2025-11-21",
+   "authors": [
+    "Shangjie Guo",
+    "Corneliu Buda",
+    "Nathan Wiebe"
+   ],
+   "abstract": "Estimating vibrational entropy is a significant challenge in thermodynamics and statistical mechanics due to its reliance on quantum mechanical properties. This paper introduces a quantum algorithm designed to estimate vibrational entropy via energy derivatives. Our approach block encodes the exact expression for the second derivative of the energy and uses quantum linear systems algorithms to deal with the reciprocal powers of the gaps that appear in the expression. We further show that if prior knowledge about the values of the second derivative is used then our algorithm can $\u03b5$-approximate the entropy using a number of queries that scales with the condition number $\u03ba$, the temperature $T$, error tolerance $\u03b5$ and an analogue of the partition function $\\mathcal{Z}$, as $\\widetilde{O}\\left(\\frac{\\mathcal{Z}\u03ba^2 }{\u03b5T}\\right)$. We show that if sufficient prior knowledge is given about the second derivative then the query scales quadratically better than these results. This shows that, under reasonable assumptions of the temperature and a quantum computer can be used to compute the vibrational contributions to the entropy faster than analogous classical algorithms would be capable of. Our findings highlight the potential of quantum algorithms to enhance the prediction of thermodynamic properties, paving the way for advancements in fields such as material science, molecular biology, and chemical engineering.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.15263v1",
+   "title": "Computing the free energy of quantum Coulomb gases and molecules via quantum Gibbs sampling",
+   "published": "2026-04-16",
+   "updated": "2026-04-16",
+   "authors": [
+    "Simon Becker",
+    "Cambyse Rouz\u00e9",
+    "Robert Salzmann"
+   ],
+   "abstract": "We develop a quantum algorithm for estimating the free energy as well as the total Gibbs state of interacting quantum Coulomb gases and molecular systems in dimensions $d \\in \\{2,3\\}$ at finite temperature. These systems lie beyond the reach of existing methods due to their singular interactions and infinite-dimensional Hilbert space structure. First, we show that the free energy of the full many-body Hamiltonian can be approximated by that of the same Hamiltonian with a finite-rank low-energy truncation of the interaction, with an explicit error bound polynomial in the particle number. This reduces the problem to a controlled finite-rank perturbation problem. Second, we introduce a quantum Gibbs sampling scheme tailored to this truncated system, based on a class of quantum Markov semigroups. Our main analytical result establishes that the associated generator has a strictly positive spectral gap for every truncation, implying exponential convergence to the target Gibbs state. This provides, to our knowledge, the first rigorous mixing-time guarantee for Gibbs sampling in a Coulomb interacting continuous-variable quantum system. Finally, we give an explicit quantum circuit implementation of the dynamics and derive an end-to-end complexity bound for approximating the free energy and the Gibbs state itself. Our results provide a mathematically rigorous route to quantum algorithms for free energy estimation in interacting quantum systems, without relying on classical approximations such as the Born-Oppenheimer reduction.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2209.14989v3",
+   "title": "A subpolynomial-time algorithm for the free energy of one-dimensional quantum systems in the thermodynamic limit",
+   "published": "2022-09-29",
+   "updated": "2024-07-03",
+   "authors": [
+    "Hamza Fawzi",
+    "Omar Fawzi",
+    "Samuel O. Scalet"
+   ],
+   "abstract": "We introduce a classical algorithm to approximate the free energy of local, translation-invariant, one-dimensional quantum systems in the thermodynamic limit of infinite chain size. While the ground state problem (i.e., the free energy at temperature $T = 0$) for these systems is expected to be computationally hard even for quantum computers, our algorithm runs for any fixed temperature $T > 0$ in subpolynomial time, i.e., in time $O((\\frac{1}{\\varepsilon})^{c})$ for any constant $c > 0$ where $\\varepsilon$ is the additive approximation error. Previously, the best known algorithm had a runtime that is polynomial in $\\frac{1}{\\varepsilon}$. Our algorithm is also particularly simple as it reduces to the computation of the spectral radius of a linear map. This linear map has an interpretation as a noncommutative transfer matrix and has been studied previously to prove results on the analyticity of the free energy and the decay of correlations. We also show that the corresponding eigenvector of this map gives an approximation of the marginal of the Gibbs state and thereby allows for the computation of various thermodynamic properties of the quantum system.",
+   "journal_ref": "Quantum 7, 1011 (2023)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2510.15316v1",
+   "title": "Capturing Protein Free Energy Landscape using Efficient Quantum Encoding",
+   "published": "2025-10-17",
+   "updated": "2025-10-17",
+   "authors": [
+    "Ashwini Kannan",
+    "Jaya Vasavi Pamidimukkala",
+    "Avinash Dakshinamoorthy",
+    "Soham Bopardikar",
+    "Kalyan Dasgupta",
+    "Sanjib Senapati"
+   ],
+   "abstract": "Protein folding is one of the age-old biological problems that refers to the mechanism of understanding and predicting how a protein's linear sequence of amino acids folds into its specific three dimensional structure.This structure is critical, as a protein's functionality is inherently linked to its final folded form. Misfolding can lead to severe diseases such as Alzheimer's and cystic fibrosis, highlighting the biological and clinical importance of understanding protein folding mechanisms. This work presents a novel turn based encoding optimization algorithm for predicting the folded structures of peptides and small proteins. Our approach builds upon our previous research, where our objective function focused on hydrophobic collapse, a fundamental phenomenon underlying the protein folding process. In this work, we extend that framework by not only incorporating hydrophobic interactions but also including all non bonded interactions modeled using the Miyazawa Jernigan potential. We constructed a Hamiltonian from the defined objective function that encodes the folding process on a three dimensional face centered cubic lattice, offering superior packing efficiency and a realistic representation of protein conformations. This Hamiltonian is then solved using classical and quantum solvers to explore the vast conformational space of proteins. To identify the lowest-energy folded configurations, we utilize the Variational Quantum Eigensolver implemented on IBM 133 qubit hardware. The predicted structures are validated against experimental data using root mean square deviation as a metric and compared against classical simulated annealing and molecular dynamics simulation results. Our findings highlight the promise of hybrid classical and quantum approaches in advancing protein folding predictions, particularly for sequences with low homology.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2504.17405v2",
+   "title": "Classical Estimation of the Free Energy and Quantum Gibbs Sampling from the Markov Entropy Decomposition",
+   "published": "2025-04-24",
+   "updated": "2025-12-29",
+   "authors": [
+    "Samuel O. Scalet",
+    "Angela Capel",
+    "Anirban N. Chowdhury",
+    "Hamza Fawzi",
+    "Omar Fawzi",
+    "Isaac H. Kim",
+    "Arkin Tikku"
+   ],
+   "abstract": "We revisit the Markov Entropy Decomposition, a classical convex relaxation algorithm introduced by Poulin and Hastings to approximate the free energy in quantum spin lattices. We identify a sufficient condition for its convergence, namely the decay of the effective interaction. The effective interaction, also known as Hamiltonians of mean force, is a widely established correlation measure, and we show our decay condition in 1D at any temperature as well as in the high-temperature regime under a certain commutativity condition on the Hamiltonian building on existing results. This yields polynomial and quasi-polynomial time approximation algorithms in these settings, respectively. Furthermore, the decay of the effective interaction implies the decay of the conditional mutual information for the Gibbs state of the system. We then use this fact to devise a rounding scheme that maps the solution of the convex relaxation to a global state and show that the scheme can be efficiently implemented on a quantum computer, thus proving efficiency of quantum Gibbs sampling under our assumption of decay of the effective interaction.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  }
+ ]
+}

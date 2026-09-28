@@ -1,0 +1,149 @@
+{
+ "ham": "dq",
+ "pdb": "1UBQ",
+ "probe": 245,
+ "kappa": 1.0,
+ "bs": [
+  1,
+  7,
+  8,
+  9
+ ],
+ "names": [
+  "H/ILE30",
+  "HB/ILE30",
+  "HG12/ILE30",
+  "HB3/LYS29",
+  "H/GLN31",
+  "H/LYS29",
+  "HA/ILE30",
+  "HA/LYS27",
+  "HA/LYS29",
+  "HB2/LYS29"
+ ],
+ "rotor_groups_in_cluster": [],
+ "cluster_rotor_label": [
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1
+ ],
+ "params": [
+  {
+   "name": "radial_HB2/LYS29",
+   "r": 3.706185235521829
+  },
+  {
+   "name": "radial_HA/LYS29",
+   "r": 3.5545780340287934
+  },
+  {
+   "name": "radial_HA/LYS27",
+   "r": 3.341208912953513
+  },
+  {
+   "name": "rigid_res29",
+   "r": 3.706185235521829
+  }
+ ],
+ "columns": [
+  "radial_HB2/LYS29",
+  "radial_HA/LYS29",
+  "radial_HA/LYS27",
+  "rigid_res29",
+  "Omega_0",
+  "Omega_1",
+  "Omega_2",
+  "Omega_3",
+  "Omega_4",
+  "Omega_5",
+  "Omega_6",
+  "Omega_7",
+  "Omega_8",
+  "Omega_9",
+  "eta",
+  "eps0"
+ ],
+ "col_kinds": [
+  "struct",
+  "struct",
+  "struct",
+  "struct",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "Omega",
+  "eta",
+  "eps0"
+ ],
+ "sigma": 0.01,
+ "dt": 2e-06,
+ "steps": 150,
+ "rec": 5,
+ "fd": {
+  "h_struct": 0.05,
+  "h_omega": 628.3185307179587,
+  "h_eta": 0.01,
+  "h_eps0": 0.01,
+  "h_epsg": 0.02
+ },
+ "Omega0_hz": [
+  2040.9191213851823,
+  -2555.6650313141818,
+  418.0988467257788,
+  -567.7696061279298,
+  -452.6492921104458,
+  -215.59716308976587,
+  -2019.986129147251,
+  -231.93237764418947,
+  -865.2130762749417,
+  3322.9995166448825
+ ],
+ "cpu_s": 444.46875,
+ "done": [
+  "radial_HB2/LYS29",
+  "radial_HA/LYS29",
+  "radial_HA/LYS27",
+  "rigid_res29",
+  "Omega_0",
+  "Omega_1",
+  "Omega_2",
+  "Omega_3",
+  "Omega_4",
+  "Omega_5",
+  "Omega_6",
+  "Omega_7",
+  "Omega_8",
+  "Omega_9",
+  "eta",
+  "eps0"
+ ],
+ "validation_static_vs_amp_lib": {
+  "S": 0.0,
+  "F1": 0.0
+ },
+ "validation_eta_path_vs_fast": 4.807265696626928e-13,
+ "base_vs_static_offsetfree_max_over_sigma": {
+  "S": 9.250582698945696,
+  "G": 34.4835758038213
+ },
+ "cpu_base_s": 73.9375,
+ "cpu_s_last": 444.46875,
+ "mis_seeds": [
+  100,
+  101
+ ],
+ "complete": true
+}

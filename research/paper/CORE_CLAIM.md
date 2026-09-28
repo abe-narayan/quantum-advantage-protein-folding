@@ -1,4 +1,9 @@
-# Core claim (discovery sprint, 2026-09-27)
+# Core claim (discovery sprint, 2026-09-27; updated 2026-09-28 after rounds 3–4)
+
+**Update (2026-09-28).** Rounds 3–4 strengthen the main claim:
+- The classical twin for learned energies is now the native-free distance-geometry portfolio (~420 evaluations to the best basin). Every quantum exponent then needs t_T ≲ 3 ns.
+- The NMR secondary claim is sharpened: protein ¹H OTOC(1) echoes are **classically computable to σ at 40 µs** (two b-aware exact cluster families plus spinDMFT; provisional pending R-1), and structurally uninformative beyond the site-resolved reversal horizon.
+- Physics-based all-atom sampling is the only examined regime that is not resource-dead. There the negative is "no applicable super-quadratic algorithm", not classical ease.
 
 ## Main paper: a rigorous, scoped negative (claim categories 3 and 6, negative form)
 

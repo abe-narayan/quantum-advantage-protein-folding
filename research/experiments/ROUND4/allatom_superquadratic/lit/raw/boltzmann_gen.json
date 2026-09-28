@@ -1,0 +1,460 @@
+{
+ "key": "boltzmann_gen",
+ "url": "https://export.arxiv.org/api/query?max_results=30&sortBy=relevance&search_query=%28ti%3A%22Boltzmann+generators%22+OR+%28abs%3A%22Boltzmann+generator%22+AND+abs%3Aprotein%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:32",
+ "records": [
+  {
+   "id": "2211.10771v1",
+   "title": "RL Boltzmann Generators for Conformer Generation in Data-Sparse Environments",
+   "published": "2022-11-19",
+   "updated": "2022-11-19",
+   "authors": [
+    "Yash Patel",
+    "Ambuj Tewari"
+   ],
+   "abstract": "The generation of conformers has been a long-standing interest to structural chemists and biologists alike. A subset of proteins known as intrinsically disordered proteins (IDPs) fail to exhibit a fixed structure and, therefore, must also be studied in this light of conformer generation. Unlike in the small molecule setting, ground truth data are sparse in the IDP setting, undermining many existing conformer generation methods that rely on such data for training. Boltzmann generators, trained solely on the energy function, serve as an alternative but display a mode collapse that similarly preclude their direct application to IDPs. We investigate the potential of training an RL Boltzmann generator against a closely related \"Gibbs score,\" and demonstrate that conformer coverage does not track well with such training. This suggests that the inadequacy of solely training against the energy is independent of the modeling modality",
+   "journal_ref": "",
+   "primary": "q-bio.QM"
+  },
+  {
+   "id": "2401.04246v1",
+   "title": "Scalable Normalizing Flows Enable Boltzmann Generators for Macromolecules",
+   "published": "2024-01-08",
+   "updated": "2024-01-08",
+   "authors": [
+    "Joseph C. Kim",
+    "David Bloore",
+    "Karan Kapoor",
+    "Jun Feng",
+    "Ming-Hong Hao",
+    "Mengdi Wang"
+   ],
+   "abstract": "The Boltzmann distribution of a protein provides a roadmap to all of its functional states. Normalizing flows are a promising tool for modeling this distribution, but current methods are intractable for typical pharmacological targets; they become computationally intractable due to the size of the system, heterogeneity of intra-molecular potential energy, and long-range interactions. To remedy these issues, we present a novel flow architecture that utilizes split channels and gated attention to efficiently learn the conformational distribution of proteins defined by internal coordinates. We show that by utilizing a 2-Wasserstein loss, one can smooth the transition from maximum likelihood training to energy-based training, enabling the training of Boltzmann Generators for macromolecules. We evaluate our model and training strategy on villin headpiece HP35(nle-nle), a 35-residue subdomain, and protein G, a 56-residue protein. We demonstrate that standard architectures and training strategies, such as maximum likelihood alone, fail while our novel architecture and multi-stage training strategy are able to model the conformational distributions of protein G and HP35.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2404.16566v1",
+   "title": "Boltzmann Generators and the New Frontier of Computational Sampling in Many-Body Systems",
+   "published": "2024-04-25",
+   "updated": "2024-04-25",
+   "authors": [
+    "Alessandro Coretti",
+    "Sebastian Falkner",
+    "Jan Weinreich",
+    "Christoph Dellago",
+    "O. Anatole von Lilienfeld"
+   ],
+   "abstract": "The paper by No\u00e9 et al. [F. No\u00e9, S. Olsson, J. K\u00f6hler and H. Wu, Science, 365:6457 (2019)] introduced the concept of Boltzmann Generators (BGs), a deep generative model that can produce unbiased independent samples of many-body systems. They can generate equilibrium configurations from different metastable states, compute relative stabilities between different structures of proteins or other organic molecules, and discover new states. In this commentary, we motivate the necessity for a new generation of sampling methods beyond molecular dynamics, explain the methodology, and give our perspective on the future role of BGs.",
+   "journal_ref": "KIM REVIEW, Volume 2, Article 03, 2024",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2606.27361v1",
+   "title": "Autoregressive Boltzmann Generators",
+   "published": "2026-06-25",
+   "updated": "2026-06-25",
+   "authors": [
+    "Danyal Rehman",
+    "Charlie B. Tan",
+    "Yoshua Bengio",
+    "Avishek Joey Bose",
+    "Alexander Tong"
+   ],
+   "abstract": "Efficient sampling of molecular systems at thermodynamic equilibrium is a hallmark challenge in statistical physics. This challenge has driven the development of Boltzmann Generators (BGs), which allow rapid generation of uncorrelated equilibrium samples by combining a generative model with exact likelihoods and an importance sampling correction. However, modern BGs predominantly rely on normalizing flows (NFs), which either suffer from limited expressivity due to strict invertibility constraints (discrete time) or computationally expensive likelihoods (continuous time). In this paper, we propose Autoregressive Boltzmann Generators (ArBG) -- a novel autoregressive modelling framework -- that overcomes these limitations by departing from the flow-based BG paradigm. ArBG circumvents the topological constraints of flows and enables sequential inference-time interventions, while offering enhanced scalability by leveraging architectures effective in Large Language Models. We empirically demonstrate that ArBG leads to significant improvements over flow-based models across all benchmarks, but particularly in larger peptide systems such as the 10-residue Chignolin. Furthermore, we introduce Robin, a 132 million parameter transferable model trained with the ArBG framework which improves over the previous state-of-the-art, reducing the zero-shot energy error, E-W$_2$, on 8-residue systems by over 60$\\%$. The code can be found at the following link: https://github.com/danyalrehman/autobg.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2406.14426v2",
+   "title": "Transferable Boltzmann Generators",
+   "published": "2024-06-20",
+   "updated": "2025-02-01",
+   "authors": [
+    "Leon Klein",
+    "Frank No\u00e9"
+   ],
+   "abstract": "The generation of equilibrium samples of molecular systems has been a long-standing problem in statistical physics. Boltzmann Generators are a generative machine learning method that addresses this issue by learning a transformation via a normalizing flow from a simple prior distribution to the target Boltzmann distribution of interest. Recently, flow matching has been employed to train Boltzmann Generators for small molecular systems in Cartesian coordinates. We extend this work and propose a first framework for Boltzmann Generators that are transferable across chemical space, such that they predict zero-shot Boltzmann distributions for test molecules without being retrained for these systems. These transferable Boltzmann Generators allow approximate sampling from the target distribution of unseen systems, as well as efficient reweighting to the target Boltzmann distribution. The transferability of the proposed framework is evaluated on dipeptides, where we show that it generalizes efficiently to unseen systems. Furthermore, we demonstrate that our proposed architecture enhances the efficiency of Boltzmann Generators trained on single molecular systems.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2501.19077v2",
+   "title": "Temperature-Annealed Boltzmann Generators",
+   "published": "2025-01-31",
+   "updated": "2025-06-17",
+   "authors": [
+    "Henrik Schopmans",
+    "Pascal Friederich"
+   ],
+   "abstract": "Efficient sampling of unnormalized probability densities such as the Boltzmann distribution of molecular systems is a longstanding challenge. Next to conventional approaches like molecular dynamics or Markov chain Monte Carlo, variational approaches, such as training normalizing flows with the reverse Kullback-Leibler divergence, have been introduced. However, such methods are prone to mode collapse and often do not learn to sample the full configurational space. Here, we present temperature-annealed Boltzmann generators (TA-BG) to address this challenge. First, we demonstrate that training a normalizing flow with the reverse Kullback-Leibler divergence at high temperatures is possible without mode collapse. Furthermore, we introduce a reweighting-based training objective to anneal the distribution to lower target temperatures. We apply this methodology to three molecular systems of increasing complexity and, compared to the baseline, achieve better results in almost all metrics while requiring up to three times fewer target energy evaluations. For the largest system, our approach is the only method that accurately resolves the metastable states of the system.",
+   "journal_ref": "Proceedings of the 42nd International Conference on Machine Learning (ICML), Vancouver, Canada. PMLR 267, 2025",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2602.10637v2",
+   "title": "Coarse-Grained Boltzmann Generators",
+   "published": "2026-02-11",
+   "updated": "2026-05-28",
+   "authors": [
+    "Weilong Chen",
+    "Bojun Zhao",
+    "Jan Eckwert",
+    "Julija Zavadlav"
+   ],
+   "abstract": "Sampling equilibrium molecular configurations from the Boltzmann distribution is a longstanding challenge. Boltzmann Generators (BGs) address this by combining exact-likelihood generative models with importance sampling, but practical scalability is limited. Meanwhile, coarse-grained surrogates enable the modeling of larger systems by reducing effective dimensionality, yet often lack a reweighting procedure required to ensure asymptotically correct statistics. In this work, we propose Coarse-Grained Boltzmann Generators (CG-BGs), a framework for reduced-order generative modeling with importance sampling in coarse-grained coordinate space. CG-BGs generate samples using a flow-based model and reweight them using a learned potential of mean force (PMF). We show that the PMF can be learned from rapidly converged trajectories via enhanced sampling force matching. Experiments demonstrate that CG-BGs capture solvent-mediated interactions in highly reduced representations while substantially reducing computational cost relative to atomistic BGs, providing a practical route toward equilibrium sampling of larger molecular systems.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2302.11430v1",
+   "title": "Differentiable Rotamer Sampling with Molecular Force Fields",
+   "published": "2023-02-22",
+   "updated": "2023-02-22",
+   "authors": [
+    "Congzhou M. Sha",
+    "Jian Wang",
+    "Nikolay V. Dokholyan"
+   ],
+   "abstract": "Molecular dynamics is the primary computational method by which modern structural biology explores macromolecule structure and function. Boltzmann generators have been proposed as an alternative to molecular dynamics, by replacing the integration of molecular systems over time with the training of generative neural networks. This neural network approach to MD samples rare events at a higher rate than traditional MD, however critical gaps in the theory and computational feasibility of Boltzmann generators significantly reduce their usability. Here, we develop a mathematical foundation to overcome these barriers; we demonstrate that the Boltzmann generator approach is sufficiently rapid to replace traditional MD for complex macromolecules, such as proteins in specific applications, and we provide a comprehensive toolkit for the exploration of molecular energy landscapes with neural networks.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2512.16607v3",
+   "title": "Boltzmann generators for amorphous particle systems",
+   "published": "2025-12-18",
+   "updated": "2026-09-18",
+   "authors": [
+    "Louis Grenioux",
+    "Leonardo Galliano",
+    "Ludovic Berthier",
+    "Giulio Biroli",
+    "Marylou Gabri\u00e9"
+   ],
+   "abstract": "Sampling configurations in thermodynamic equilibrium is a long-standing challenge in statistical physics. Boltzmann generators address this problem by employing generative models to propose independent configurations, which are then reweighted via importance sampling using exact likelihood evaluations. Recent Boltzmann Generators based on continuous normalizing flows and flow matching have achieved significant success for particle systems and biomolecules. However, these approaches have not been extended to amorphous materials (glasses), for which equilibrium sampling is notoriously slow. Because of their disordered structure, the invariances and geometrical constraints of amorphous materials differ from those of crystals and biomolecules, preventing the direct use of existing generative models. Here, we develop Boltzmann Generators tailored to amorphous materials by building the required equivariances directly into Riemannian stochastic interpolants. Our framework incorporates periodic boundary conditions and particle symmetries using equivariant graph neural networks. Numerical experiments demonstrate that enforcing physical symmetries significantly improves the accuracy of Boltzmann Generators, but also reveal an intrinsic limitation of the continuous-flow formulation: accumulated numerical errors during likelihood integration break time-reversibility, compromising exact thermodynamic reweighting. These results reveal a fundamental challenge for continuous-flow generative models in statistical mechanics and call for alternative approaches that preserve exact thermodynamic consistency.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2108.01590v2",
+   "title": "Temperature Steerable Flows and Boltzmann Generators",
+   "published": "2021-08-03",
+   "updated": "2022-09-03",
+   "authors": [
+    "Manuel Dibak",
+    "Leon Klein",
+    "Andreas Kr\u00e4mer",
+    "Frank No\u00e9"
+   ],
+   "abstract": "Boltzmann generators approach the sampling problem in many-body physics by combining a normalizing flow and a statistical reweighting method to generate samples in thermodynamic equilibrium. The equilibrium distribution is usually defined by an energy function and a thermodynamic state. Here we propose temperature-steerable flows (TSF) which are able to generate a family of probability densities parametrized by a choosable temperature parameter. TSFs can be embedded in generalized ensemble sampling frameworks to sample a physical system across multiple thermodynamic states.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2502.18462v3",
+   "title": "Scalable Equilibrium Sampling with Sequential Boltzmann Generators",
+   "published": "2025-02-25",
+   "updated": "2026-01-16",
+   "authors": [
+    "Charlie B. Tan",
+    "Avishek Joey Bose",
+    "Chen Lin",
+    "Leon Klein",
+    "Michael M. Bronstein",
+    "Alexander Tong"
+   ],
+   "abstract": "Scalable sampling of molecular states in thermodynamic equilibrium is a long-standing challenge in statistical physics. Boltzmann generators tackle this problem by pairing normalizing flows with importance sampling to obtain uncorrelated samples under the target distribution. In this paper, we extend the Boltzmann generator framework with two key contributions, denoting our framework Sequential Boltzmann generators (SBG). The first is a highly efficient Transformer-based normalizing flow operating directly on all-atom Cartesian coordinates. In contrast to the equivariant continuous flows of prior methods, we leverage exactly invertible non-equivariant architectures which are highly efficient during both sample generation and likelihood evaluation. This efficiency unlocks more sophisticated inference strategies beyond standard importance sampling. In particular, we perform inference-time scaling of flow samples using a continuous-time variant of sequential Monte Carlo, in which flow samples are transported towards the target distribution with annealed Langevin dynamics. SBG achieves state-of-the-art performance w.r.t. all metrics on peptide systems, demonstrating the first equilibrium sampling in Cartesian coordinates of tri-, tetra- and hexa-peptides that were thus far intractable for prior Boltzmann generators.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2510.18460v2",
+   "title": "Learning Boltzmann Generators via Constrained Mass Transport",
+   "published": "2025-10-21",
+   "updated": "2026-03-02",
+   "authors": [
+    "Christopher von Klitzing",
+    "Denis Blessing",
+    "Henrik Schopmans",
+    "Pascal Friederich",
+    "Gerhard Neumann"
+   ],
+   "abstract": "Efficient sampling from high-dimensional and multimodal unnormalized probability distributions is a central challenge in many areas of science and machine learning. We focus on Boltzmann generators (BGs) that aim to sample the Boltzmann distribution of physical systems, such as molecules, at a given temperature. Classical variational approaches that minimize the reverse Kullback-Leibler divergence are prone to mode collapse, while annealing-based methods, commonly using geometric schedules, can suffer from mass teleportation and rely heavily on schedule tuning. We introduce Constrained Mass Transport (CMT), a variational framework that generates intermediate distributions under constraints on both the KL divergence and the entropy decay between successive steps. These constraints enhance distributional overlap, mitigate mass teleportation, and counteract premature convergence. Across standard BG benchmarks and the here introduced ELIL tetrapeptide, the largest system studied to date without access to samples from molecular dynamics, CMT consistently surpasses state-of-the-art variational methods, achieving more than 2.5x higher effective sample size while avoiding mode collapse.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2512.18147v2",
+   "title": "Estimating Solvation Free Energies with Boltzmann Generators",
+   "published": "2025-12-20",
+   "updated": "2026-03-31",
+   "authors": [
+    "Maximilian Schebek",
+    "Nikolas M. Frob\u00f6se",
+    "Bettina G. Keller",
+    "Jutta Rogal"
+   ],
+   "abstract": "Accurate calculations of solvation free energies remain a central challenge in molecular simulations, often requiring extensive sampling and numerous alchemical intermediates to ensure sufficient overlap between phase-space distributions of a solute in the gas phase and in solution. Here, we introduce a computational framework based on normalizing flows that directly maps solvent configurations between solutes of different sizes, and compare the accuracy and efficiency to conventional free energy estimates. For a Lennard-Jones solvent, we demonstrate that this approach yields acceptable accuracy in estimating free energy differences for challenging transformations, such as solute growth or increased solute-solute separation, which typically demand multiple intermediate simulation steps along the transformation. Analysis of radial distribution functions indicates that the flow generates physically meaningful solvent rearrangements, substantially enhancing configurational overlap between states in configuration space. These results suggest flow-based models as a promising alternative to traditional free energy estimation methods.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2604.25244v1",
+   "title": "Learning Structure, Energy, and Dynamics: A Survey of Artificial Intelligence for Protein Dynamics",
+   "published": "2026-04-28",
+   "updated": "2026-04-28",
+   "authors": [
+    "Haocheng Tang",
+    "Liang Shi",
+    "Ya-Shi Zhang",
+    "Xixian Liu",
+    "Jian Tang",
+    "Jiarui Lu"
+   ],
+   "abstract": "Protein dynamics underlie many biological functions, yet remain difficult to characterize due to the high computational cost of molecular dynamics simulations and the scarcity of dynamic structural data. This survey reviews recent advances in artificial intelligence for protein dynamics from three perspectives: learning from structural ensembles and trajectories, learning from physical energy signals, and learning to accelerate molecular simulations. We summarize representative methods for conformation ensemble generation, trajectory generation, Boltzmann generators, physics-aware adaptation, machine learning potentials, coarse-grained modeling, and collective variable discovery. We further discuss available datasets and key open challenges, such as scalability, thermodynamic consistency, kinetic fidelity, and integration with experimental constraints.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2606.29110v1",
+   "title": "Few-Step Boltzmann Generators via Scalable Likelihood Flow Maps",
+   "published": "2026-06-27",
+   "updated": "2026-06-27",
+   "authors": [
+    "RuiKang OuYang",
+    "Hanlin Yu",
+    "Xinyue Ai",
+    "Yutong He",
+    "Nicholas M. Boffi",
+    "Pradeep Ravikumar",
+    "Jose Miguel Hernandez-Lobato",
+    "Max Simchowitz",
+    "Benjamin Kurt Miller",
+    "Omar Chehab"
+   ],
+   "abstract": "Recent progress in flow-based generative modeling has led to models that output high-quality samples while using only a small number of function evaluations. However, at present, there is a lack of similar advances in estimating the model likelihood. In particular, most existing methods either rely on restrictive architectures that enable exact calculations, or use stochastic approximations such as Hutchinson's trace estimator that introduce substantial variance. In this work, we introduce SCAlable LikeLihood distillation of flOw maPs (SCALLOP). SCALLOP builds on the recently proposed F2D2, a likelihood flow map model that can generate samples and their densities in a small number of function evaluations. While F2D2 uses Hutchinson's estimator during training, we introduce an alternative and more scalable likelihood distillation objective that is Hutchinson-free and admits a vectorized formulation. Empirically, we demonstrate the effectiveness of SCALLOP as a Boltzmann generator in molecular science, and further validate its benefit on image datasets. SCALLOP significantly reduces both training variance and training time while consistently improving performance compared to F2D2, and is competitive with the state-of-the-art while achieving up to 10x inference speedup over the fastest baseline.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2602.18482v2",
+   "title": "Boltzmann Generators for Condensed Matter via Riemannian Flow Matching",
+   "published": "2026-02-10",
+   "updated": "2026-03-30",
+   "authors": [
+    "Emil Hoffmann",
+    "Maximilian Schebek",
+    "Leon Klein",
+    "Frank No\u00e9",
+    "Jutta Rogal"
+   ],
+   "abstract": "Sampling equilibrium distributions is fundamental to statistical mechanics. While flow matching has emerged as scalable state-of-the-art paradigm for generative modeling, its potential for equilibrium sampling in condensed-phase systems remains largely unexplored. We address this by incorporating the periodicity inherent to these systems into continuous normalizing flows using Riemannian flow matching. The high computational cost of exact density estimation intrinsic to continuous normalizing flows is mitigated by using Hutchinson's trace estimator, utilizing a crucial bias-correction step based on cumulant expansion to render the stochastic estimates suitable for rigorous thermodynamic reweighting. Our approach is validated on monatomic ice, demonstrating the ability to train on systems of unprecedented size and obtain highly accurate free energy estimates without the need for traditional multistage estimators.",
+   "journal_ref": "",
+   "primary": "physics.comp-ph"
+  },
+  {
+   "id": "2601.21026v2",
+   "title": "Diffusion-based Annealed Boltzmann Generators : benefits, pitfalls and hopes",
+   "published": "2026-01-28",
+   "updated": "2026-07-22",
+   "authors": [
+    "Louis Grenioux",
+    "Maxence Noble"
+   ],
+   "abstract": "Sampling configurations at thermodynamic equilibrium is a central challenge in statistical physics. Boltzmann Generators (BGs) tackle it by combining a generative model with a Monte Carlo (MC) correction step to obtain asymptotically unbiased samples from an unnormalized target. Most current BGs use classic MC mechanisms such as importance sampling, which both require tractable likelihoods from the backbone model and scale poorly in high-dimensional, multi-modal targets. We study BGs built on annealed Monte Carlo (aMC), which is designed to overcome these limitations by bridging a simple reference to the target through a sequence of intermediate densities. Diffusion models (DMs) are powerful generative models and have already been incorporated into aMC-based recalibration schemes via the diffusion-induced density path, making them appealing backbones for aMC-BGs. We provide an empirical meta-analysis of DM-based aMC-BGs on controlled multi-modal Gaussian mixtures (varying mode separation, number of modes, and dimension), explicitly disentangling inference effects from learning effects by comparing (i) a perfectly learned DM and (ii) a DM trained from data. Even with a perfect DM, standard integrations using only first-order stochastic denoising kernels fail systematically, whereas second-order denoising kernels can substantially improve performance when covariance information is available. We further propose a deterministic aMC integration based on first-order transport maps derived from DMs, which outperforms the stochastic first-order variant at higher computational cost. Finally, in the learned-DM setting, all DM-aMC variants struggle to produce accurate BGs; we trace the main bottleneck to inaccurate DM log-density estimation. Code available at https://github.com/h2o64/dabg.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2406.12378v2",
+   "title": "Efficient mapping of phase diagrams with conditional Boltzmann Generators",
+   "published": "2024-06-18",
+   "updated": "2024-08-16",
+   "authors": [
+    "Maximilian Schebek",
+    "Michele Invernizzi",
+    "Frank No\u00e9",
+    "Jutta Rogal"
+   ],
+   "abstract": "The accurate prediction of phase diagrams is of central importance for both the fundamental understanding of materials as well as for technological applications in material sciences. However, the computational prediction of the relative stability between phases based on their free energy is a daunting task, as traditional free energy estimators require a large amount of simulation data to obtain uncorrelated equilibrium samples over a grid of thermodynamic states. In this work, we develop deep generative machine learning models based on the Boltzmann Generator approach for entire phase diagrams, employing normalizing flows conditioned on the thermodynamic states, e.g., temperature and pressure, that they map to. By training a single normalizing flow to transform the equilibrium distribution sampled at only one reference thermodynamic state to a wide range of target temperatures and pressures, we can efficiently generate equilibrium samples across the entire phase diagram. Using a permutation-equivariant architecture allows us, thereby, to treat solid and liquid phases on the same footing. We demonstrate our approach by predicting the solid-liquid coexistence line for a Lennard-Jones system in excellent agreement with state-of-the-art free energy methods while significantly reducing the number of energy evaluations needed.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2603.05109v1",
+   "title": "Sampling the Liquid-Gas Critical Point with Boltzmann Generators",
+   "published": "2026-03-05",
+   "updated": "2026-03-05",
+   "authors": [
+    "Luigi de Santis",
+    "John Russo",
+    "Andrea Ninarello"
+   ],
+   "abstract": "Generative models based on invertible transformations provide a physics-aware route to sample equilibrium configurations directly from the Boltzmann distribution, enabling efficient exploration of complex thermodynamic landscapes. Here, we evaluate their applicability in regions where conventional simulations suffer from severe dynamical bottlenecks, focusing on the liquid-gas critical point of a Lennard-Jones fluid. We show that Boltzmann Generators capture essential signatures of critical behavior, retain reliable performance when trained at or near criticality, and extrapolate across neighboring states of the phase diagram. An intriguing observation is that the model's efficiency metric closely traces the underlying phase boundaries, hinting at a connection between generative performance and thermodynamics. However, the approach remains limited by the small system sizes currently accessible, which suppress the large fluctuations that characterize critical phenomena. Our results delineate the current capabilities and boundaries of Boltzmann Generators in challenging regions of phase space, while pointing toward future applications in problems dominated by slow dynamics, such as glass formation and nucleation.",
+   "journal_ref": "J. Chem. Phys. 164, 094108 (2026)",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2509.25486v2",
+   "title": "Scalable Boltzmann Generators for equilibrium sampling of large-scale materials",
+   "published": "2025-09-29",
+   "updated": "2025-10-22",
+   "authors": [
+    "Maximilian Schebek",
+    "Frank No\u00e9",
+    "Jutta Rogal"
+   ],
+   "abstract": "The use of generative models to sample equilibrium distributions of many-body systems, as first demonstrated by Boltzmann Generators, has attracted substantial interest due to their ability to produce unbiased and uncorrelated samples in `one shot'. Despite their promise and impressive results across the natural sciences, scaling these models to large systems remains a major challenge. In this work, we introduce a Boltzmann Generator architecture that addresses this scalability bottleneck with a focus on applications in materials science. We leverage augmented coupling flows in combination with graph neural networks to base the generation process on local environmental information, while allowing for energy-based training and fast inference. Compared to previous architectures, our model trains significantly faster, requires far less computational resources, and achieves superior sampling efficiencies. Crucially, the architecture is transferable to larger system sizes, which allows for the efficient sampling of materials with simulation cells of unprecedented size. We demonstrate the potential of our approach by applying it to several materials systems, including Lennard-Jones crystals, ice phases of mW water, and the phase diagram of silicon, for system sizes well above one thousand atoms. The trained Boltzmann Generators produce highly accurate equilibrium ensembles for various crystal structures, as well as Helmholtz and Gibbs free energies across a range of system sizes, able to reach scales where finite-size effects become negligible.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2506.01158v2",
+   "title": "Efficient Regression-Based Training of Normalizing Flows for Boltzmann Generators",
+   "published": "2025-06-01",
+   "updated": "2025-10-30",
+   "authors": [
+    "Danyal Rehman",
+    "Oscar Davis",
+    "Jiarui Lu",
+    "Jian Tang",
+    "Michael Bronstein",
+    "Yoshua Bengio",
+    "Alexander Tong",
+    "Avishek Joey Bose"
+   ],
+   "abstract": "Simulation-free training frameworks have been at the forefront of the generative modelling revolution in continuous spaces, leading to large-scale diffusion and flow matching models. However, such modern generative models suffer from expensive inference, inhibiting their use in numerous scientific applications like Boltzmann Generators (BGs) for molecular conformations that require fast likelihood evaluation. In this paper, we revisit classical normalizing flows in the context of BGs that offer efficient sampling and likelihoods, but whose training via maximum likelihood is often unstable and computationally challenging. We propose Regression Training of Normalizing Flows (RegFlow), a novel and scalable regression-based training objective that bypasses the numerical instability and computational challenge of conventional maximum likelihood training in favour of a simple $\\ell_2$-regression objective. Specifically, RegFlow maps prior samples under our flow to targets computed using optimal transport couplings or a pre-trained continuous normalizing flow (CNF). To enhance numerical stability, RegFlow employs effective regularization strategies such as a new forward-backward self-consistency loss that enjoys painless implementation. Empirically, we demonstrate that RegFlow unlocks a broader class of architectures that were previously intractable to train for BGs with maximum likelihood. We also show RegFlow exceeds the performance, computational cost, and stability of maximum likelihood training in equilibrium sampling in Cartesian coordinates of alanine dipeptide, tripeptide, and tetrapeptide, showcasing its potential in molecular systems.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "1910.00753v1",
+   "title": "Equivariant Flows: sampling configurations for multi-body systems with symmetric energies",
+   "published": "2019-10-02",
+   "updated": "2019-10-02",
+   "authors": [
+    "Jonas K\u00f6hler",
+    "Leon Klein",
+    "Frank No\u00e9"
+   ],
+   "abstract": "Flows are exact-likelihood generative neural networks that transform samples from a simple prior distribution to the samples of the probability distribution of interest. Boltzmann Generators (BG) combine flows and statistical mechanics to sample equilibrium states of strongly interacting many-body systems such as proteins with 1000 atoms. In order to scale and generalize these results, it is essential that the natural symmetries of the probability density - in physics defined by the invariances of the energy function - are built into the flow. Here we develop theoretical tools for constructing such equivariant flows and demonstrate that a BG that is equivariant with respect to rotations and particle permutations can generalize to sampling nontrivially new configurations where a nonequivariant BG cannot.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2609.09473v1",
+   "title": "Mode Coverage in Normalizing Flow Boltzmann Generators via Log-Ratio Variation",
+   "published": "2026-09-08",
+   "updated": "2026-09-08",
+   "authors": [
+    "Qi Feng",
+    "Rongjie Lai",
+    "Di Qi",
+    "Xuda Ye"
+   ],
+   "abstract": "Normalizing flow Boltzmann generators retain a tractable pushforward density, but training with forward KL depends on target samples that may be biased or omit modes. As a result, a flow can miss target mass while its observed importance weights give a high effective sample size. We introduce the log-ratio variation $\\X_\u03c9$, the mean absolute pairwise difference of the target-to-pushforward log-density ratio under a weighting measure $\u03c9$, and use it to define KLXX, a new loss function. Two log-ratio variations are added to the forward KL (denoted by the two X's): one weighted by the target to improve accuracy, the other by a mixture of quench and temper samples with pushforward samples to search candidate modes. We derive the Fisher--Rao gradient flow of KLXX, where both variations contribute nonpositive dissipation, and a fixed-surrogate error bound for KLXX. We use KLXX in an adaptive-staging Boltzmann generator, with importance reweighting at every stage. We bound the sampling error of its inference scheme when the stage weights are essentially bounded, and prove it asymptotically unbiased in the sample size. In the numerical tests, KLXX improves mode coverage over forward KL. It also improves the generator's per-stage diagnostics against the loss that built the schedule. The observables the generator recovers are close to independent references. The log-ratio variations thus supply information that the forward KL loss usually omits.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2602.03729v3",
+   "title": "Efficient Training of Boltzmann Generators Using Off-Policy Log-Dispersion Regularization",
+   "published": "2026-02-03",
+   "updated": "2026-08-05",
+   "authors": [
+    "Henrik Schopmans",
+    "Christopher von Klitzing",
+    "Pascal Friederich"
+   ],
+   "abstract": "Sampling from unnormalized probability densities is a central challenge in computational science. Boltzmann generators are generative models that enable independent sampling from the Boltzmann distribution of physical systems at a given temperature. However, their practical success depends on data-efficient training, as both simulation data and target energy evaluations are costly. To this end, we propose off-policy log-dispersion regularization (LDR), a novel regularization framework that builds on a generalization of the log-variance objective. We apply LDR in the off-policy setting in combination with standard data-based training objectives, without requiring additional on-policy samples. LDR acts as a shape regularizer of the energy landscape by leveraging additional information in the form of target energy labels. The proposed regularization framework is broadly applicable, supporting unbiased or biased simulation datasets as well as purely variational training without access to target samples. Across all benchmarks, LDR improves both final performance and data efficiency, with sample efficiency gains of up to one order of magnitude.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2306.15030v2",
+   "title": "Equivariant flow matching",
+   "published": "2023-06-26",
+   "updated": "2023-11-23",
+   "authors": [
+    "Leon Klein",
+    "Andreas Kr\u00e4mer",
+    "Frank No\u00e9"
+   ],
+   "abstract": "Normalizing flows are a class of deep generative models that are especially interesting for modeling probability distributions in physics, where the exact likelihood of flows allows reweighting to known target energy functions and computing unbiased observables. For instance, Boltzmann generators tackle the long-standing sampling problem in statistical physics by training flows to produce equilibrium samples of many-body systems such as small molecules and proteins. To build effective models for such systems, it is crucial to incorporate the symmetries of the target energy into the model, which can be achieved by equivariant continuous normalizing flows (CNFs). However, CNFs can be computationally expensive to train and generate samples from, which has hampered their scalability and practical application. In this paper, we introduce equivariant flow matching, a new training objective for equivariant CNFs that is based on the recently proposed optimal transport flow matching. Equivariant flow matching exploits the physical symmetries of the target energy for efficient, simulation-free training of equivariant CNFs. We demonstrate the effectiveness of flow matching on rotation and permutation invariant many-particle systems and a small molecule, alanine dipeptide, where for the first time we obtain a Boltzmann generator with significant sampling efficiency without relying on tailored internal coordinate featurization. Our results show that the equivariant flow matching objective yields flows with shorter integration paths, improved sampling efficiency, and higher scalability compared to existing methods.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "1912.08480v1",
+   "title": "Quantum-inspired annealers as Boltzmann generators for machine learning and statistical physics",
+   "published": "2019-12-18",
+   "updated": "2019-12-18",
+   "authors": [
+    "Alexander E. Ulanov",
+    "Egor S. Tiunov",
+    "A. I. Lvovsky"
+   ],
+   "abstract": "Quantum simulators and processors are rapidly improving nowadays, but they are still not able to solve complex and multidimensional tasks of practical value. However, certain numerical algorithms inspired by the physics of real quantum devices prove to be efficient in application to specific problems, related, for example, to combinatorial optimization. Here we implement a numerical annealer based on simulating the coherent Ising machine as a tool to sample from a high-dimensional Boltzmann probability distribution with the energy functional defined by the classical Ising Hamiltonian. Samples provided by such a generator are then utilized for the partition function estimation of this distribution and for the training of a general Boltzmann machine. Our study opens up a door to practical application of numerical quantum-inspired annealers.",
+   "journal_ref": "",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2604.05303v1",
+   "title": "Jeffreys Flow: Robust Boltzmann Generators for Rare Event Sampling via Parallel Tempering Distillation",
+   "published": "2026-04-07",
+   "updated": "2026-04-07",
+   "authors": [
+    "Guang Lin",
+    "Christian Moya",
+    "Di Qi",
+    "Xuda Ye"
+   ],
+   "abstract": "Sampling physical systems with rough energy landscapes is hindered by rare events and metastable trapping. While Boltzmann generators already offer a solution, their reliance on the reverse Kullback--Leibler divergence frequently induces catastrophic mode collapse, missing specific modes in multi-modal distributions. Here, we introduce the Jeffreys Flow, a robust generative framework that mitigates this failure by distilling empirical sampling data from Parallel Tempering trajectories using the symmetric Jeffreys divergence. This formulation effectively balances local target-seeking precision with global modes coverage. We show that minimizing Jeffreys divergence suppresses mode collapse and structurally corrects inherent inaccuracies via distillation of the empirical reference data. We demonstrate the framework's scalability and accuracy on highly non-convex multidimensional benchmarks, including the systematic correction of stochastic gradient biases in Replica Exchange Stochastic Gradient Langevin Dynamics and the massive acceleration of exact importance sampling in Path Integral Monte Carlo for quantum thermal states.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2305.08483v1",
+   "title": "A Boltzmann generator for the isobaric-isothermal ensemble",
+   "published": "2023-05-15",
+   "updated": "2023-05-15",
+   "authors": [
+    "Steyn van Leeuwen",
+    "Alberto P\u00e9rez de Alba Ort\u00edz",
+    "Marjolein Dijkstra"
+   ],
+   "abstract": "Boltzmann generators (BGs) are now recognized as forefront generative models for sampling equilibrium states of many-body systems in the canonical ensemble, as well as for calculating the corresponding Helmholtz free energy. Furthermore, BGs can potentially provide a notable improvement in efficiency compared to conventional techniques such as molecular dynamics (MD) and Monte Carlo (MC) methods. By sampling from a clustered latent space, BGs can circumvent free-energy barriers and overcome the rare-event problem. However, one major limitation of BGs is their inability to sample across phase transitions between ordered phases. This is due to the fact that new phases may not be commensurate with the box dimensions, which remain fixed in the canonical ensemble. In this work, we present a novel BG model for the isothermal-isobaric (NPT) ensemble, which can successfully overcome this limitation. This unsupervised machine-learning model can sample equilibrium states at various pressures, as well as pressure-driven phase transitions. We demonstrate that the samples generated by this model are in good agreement with those obtained through MD simulations of two model systems. Additionally, we derive an estimate of the Gibbs free energy using samples generated by the NPT BG.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2110.00351v2",
+   "title": "Smooth Normalizing Flows",
+   "published": "2021-10-01",
+   "updated": "2021-11-30",
+   "authors": [
+    "Jonas K\u00f6hler",
+    "Andreas Kr\u00e4mer",
+    "Frank No\u00e9"
+   ],
+   "abstract": "Normalizing flows are a promising tool for modeling probability distributions in physical systems. While state-of-the-art flows accurately approximate distributions and energies, applications in physics additionally require smooth energies to compute forces and higher-order derivatives. Furthermore, such densities are often defined on non-trivial topologies. A recent example are Boltzmann Generators for generating 3D-structures of peptides and small proteins. These generative models leverage the space of internal coordinates (dihedrals, angles, and bonds), which is a product of hypertori and compact intervals. In this work, we introduce a class of smooth mixture transformations working on both compact intervals and hypertori. Mixture transformations employ root-finding methods to invert them in practice, which has so far prevented bi-directional flow training. To this end, we show that parameter gradients and forces of such inverses can be computed from forward evaluations via the inverse function theorem. We demonstrate two advantages of such smooth flows: they allow training by force matching to simulation data and can be used as potentials in molecular dynamics simulations.",
+   "journal_ref": "",
+   "primary": "stat.ML"
+  },
+  {
+   "id": "2312.13110v3",
+   "title": "Pre-training of Molecular GNNs via Conditional Boltzmann Generator",
+   "published": "2023-12-20",
+   "updated": "2024-01-18",
+   "authors": [
+    "Daiki Koge",
+    "Naoaki Ono",
+    "Shigehiko Kanaya"
+   ],
+   "abstract": "Learning representations of molecular structures using deep learning is a fundamental problem in molecular property prediction tasks. Molecules inherently exist in the real world as three-dimensional structures; furthermore, they are not static but in continuous motion in the 3D Euclidean space, forming a potential energy surface. Therefore, it is desirable to generate multiple conformations in advance and extract molecular representations using a 4D-QSAR model that incorporates multiple conformations. However, this approach is impractical for drug and material discovery tasks because of the computational cost of obtaining multiple conformations. To address this issue, we propose a pre-training method for molecular GNNs using an existing dataset of molecular conformations to generate a latent vector universal to multiple conformations from a 2D molecular graph. Our method, called Boltzmann GNN, is formulated by maximizing the conditional marginal likelihood of a conditional generative model for conformations generation. We show that our model has a better prediction performance for molecular properties than existing pre-training methods using molecular graphs and three-dimensional molecular structures.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  }
+ ]
+}

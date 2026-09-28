@@ -1,0 +1,386 @@
+{
+ "ledger": {
+  "rows": [
+   {
+    "file": "emb_p19_W14_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 90.34375
+   },
+   {
+    "file": "emb_p19_W16_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 83.09375
+   },
+   {
+    "file": "emb_p19_W18_nc10_pairb8_sr_M512_s7.json",
+    "cpu_s": 30.609375
+   },
+   {
+    "file": "emb_p19_W18_nc10_pairb9_sr_M512_s7.json",
+    "cpu_s": 31.0625
+   },
+   {
+    "file": "emb_p19_W18_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 87.203125
+   },
+   {
+    "file": "emb_p19_W18_nc12_probeb_sr_M320_s7.json",
+    "cpu_s": 532.109375
+   },
+   {
+    "file": "emb_p19_W20_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 93.875
+   },
+   {
+    "file": "emb_p19_Wprotein_nc10_pairb8_sr_M512_s7.json",
+    "cpu_s": 25.421875
+   },
+   {
+    "file": "emb_p19_Wprotein_nc10_pairb9_sr_M512_s7.json",
+    "cpu_s": 28.546875
+   },
+   {
+    "file": "emb_p19_Wprotein_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 74.109375
+   },
+   {
+    "file": "emb_p19_Wprotein_nc10_probeb_sr_M64_s101.json",
+    "cpu_s": 10.21875
+   },
+   {
+    "file": "emb_p19_Wprotein_nc12_probeb_sr_M320_s7.json",
+    "cpu_s": 557.5625
+   },
+   {
+    "file": "emb_p245_W14_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 94.90625
+   },
+   {
+    "file": "emb_p245_W16_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 86.9375
+   },
+   {
+    "file": "emb_p245_W18_nc10_pairb7_sr_M512_s7.json",
+    "cpu_s": 29.984375
+   },
+   {
+    "file": "emb_p245_W18_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 79.34375
+   },
+   {
+    "file": "emb_p245_W20_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 99.03125
+   },
+   {
+    "file": "emb_p245_Wprotein_nc10_pairb7_sr_M512_s7.json",
+    "cpu_s": 31.0
+   },
+   {
+    "file": "emb_p245_Wprotein_nc10_probeb_sr_M512_s7.json",
+    "cpu_s": 78.546875
+   },
+   {
+    "file": "emb_p245_Wprotein_nc12_probeb_sr_M320_s7.ckpt.json",
+    "cpu_s": 136.171875
+   },
+   {
+    "file": "exact_pairb_p19_b8_N12.json",
+    "cpu_s": 17.171875
+   },
+   {
+    "file": "exact_pairb_p19_b8_N14.json",
+    "cpu_s": 27.453125
+   },
+   {
+    "file": "exact_pairb_p19_b8_N16.json",
+    "cpu_s": 75.21875
+   },
+   {
+    "file": "exact_pairb_p19_b9_N12.json",
+    "cpu_s": 17.078125
+   },
+   {
+    "file": "exact_pairb_p19_b9_N14.json",
+    "cpu_s": 27.453125
+   },
+   {
+    "file": "exact_pairb_p19_b9_N16.json",
+    "cpu_s": 78.625
+   },
+   {
+    "file": "exact_pairb_p245_b7_N12.json",
+    "cpu_s": 16.671875
+   },
+   {
+    "file": "exact_pairb_p245_b7_N14.json",
+    "cpu_s": 27.484375
+   },
+   {
+    "file": "exact_pairb_p245_b7_N16.json",
+    "cpu_s": 67.59375
+   },
+   {
+    "file": "exact_pipeline_check.json",
+    "cpu_s": 42.8125
+   },
+   {
+    "file": "sr_1UBQ_p19_N14_T120_M4096.json",
+    "cpu_s": 17.828125
+   },
+   {
+    "file": "sr_1UBQ_p19_N16_T120_M4096.json",
+    "cpu_s": 20.375
+   },
+   {
+    "file": "sr_1UBQ_p19_N18_T120_M4096.json",
+    "cpu_s": 24.90625
+   },
+   {
+    "file": "sr_1UBQ_p19_N20_T120_M4096.json",
+    "cpu_s": 30.71875
+   },
+   {
+    "file": "sr_1UBQ_p245_N14_T120_M4096.json",
+    "cpu_s": 17.96875
+   },
+   {
+    "file": "sr_1UBQ_p245_N16_T120_M4096.json",
+    "cpu_s": 25.40625
+   },
+   {
+    "file": "sr_1UBQ_p245_N18_T120_M4096.json",
+    "cpu_s": 23.609375
+   },
+   {
+    "file": "sr_1UBQ_p245_N20_T120_M4096.json",
+    "cpu_s": 31.09375
+   },
+   {
+    "file": "sr_protein_T120_M384.json",
+    "cpu_s": 66.8125
+   },
+   {
+    "file": "test_sdmft.json",
+    "cpu_s": 43.46875
+   }
+  ],
+  "logged_cpu_s": 2979.828125,
+  "logged_cpu_min": 49.66380208333333,
+  "largest": {
+   "file": "emb_p19_Wprotein_nc12_probeb_sr_M320_s7.json",
+   "cpu_s": 557.5625
+  },
+  "by_kind_cpu_min": {
+   "emb": 38.001302083333336,
+   "exact": 6.626041666666667,
+   "sr": 4.311979166666666,
+   "test": 0.7244791666666667
+  },
+  "lane_claim": {
+   "total_cpu_min": 58,
+   "logged_cpu_min": 48.9,
+   "tests_cpu_min": 1.4,
+   "largest_run_cpu_min": 9.3,
+   "unlogged_cpu_min": 7.5
+  },
+  "cost_of_40us_classical_pipeline": {
+   "exact_baware_N16_three_series_cpu_s": 221.4375,
+   "exact_baware_ladder_N12_16_three_series_cpu_s": 354.75,
+   "spinDMFT_sr_protein_cpu_s": 66.8125,
+   "spinDMFT_sr_W18_cpu_s": 48.515625,
+   "spinDMFT_emb_protein_and_W18_nc10_probeb_cpu_s": 319.203125,
+   "spinDMFT_emb_pairb_cpu_s": 84.96875,
+   "note": "Probe-family exact F18/F20 are round-3 artefacts (not re-costed by the lane). The lane's own classical pipeline for all 8 series at 40 us = exact b-aware + spinDMFT; F18 cost from round 3.",
+   "lane_pipeline_total_cpu_min_excl_probe_family": 12.348958333333334
+  }
+ },
+ "reanalysis": {
+  "n_differences": 0,
+  "first_differences": [],
+  "stdout_head": "E-B t=40 corroborated=True (2/2 counting series closer to spinDMFT) [(245, 7, 'N16', 0.7637, 'pred', 0.7638, 'F18', 0.6988, 'hyb', 0.668), (19, 8, 'N16', 0.9776, 'pred', 0.9829, 'F18', 0.9527, 'hyb', 0.8905), (19, 9, 'N16', 0.948, 'pred', 0.9527, 'F18', 0.9538, 'hyb', 0.8916)]\nE-B t=80 corroborated=True (2/2 counting series closer to spinDMFT) [(245, 7, 'N16', 0.4892, 'pred', 0.4955, 'F18', 0.4206, 'hyb', 0.3764), (19, 8, 'N16', 0.9054, 'pred', 0.907, 'F18', 0.811, 'hyb', 0.7385), (19, 9, 'N16', 0.7307, 'pred', 0.7489, 'F18', 0.7608, 'hyb', 0.6883)]\nE-B t=120 corroborated=True (2/3 counting series closer to spinDMFT) [(245, 7, 'N16', 0.3451, 'pred', 0.2901, 'F18', 0.2674, 'hyb', 0.1887), (19, 8, 'N16', 0.8037, 'pred', 0.7746, 'F18', 0.6513, 'hyb', 0.5697), (19, 9, 'N16', 0.5842, 'pred', 0.5396, 'F18', 0.5654, 'hyb', 0.4838)]\nworldladder t=40: n=24 within sigma 23, median|err| 0.00043170972861411583 max 0.013229004959733004, median|dF_exact| 0.0004741968280432829; protein bath corr [(19, 1, 0.0039), (19, 7, 0.0026), (19, 8, 0.0166), (19, 9, 0.0017), (245, 1, 0.0004), (245, 7, 0.0649), (245, 8, 0.0011), (245, 9, -0.0032)]\nworldladder t=80: n=24 within sigma 20, median|err| 0.003219476996308701 max 0.0862896684883746, median|dF_exact| 0.0055171187411579; protein bath corr [(19, 1, -0.0387), (19, 7, -0.0107), (19, 8, 0.0326), (19, 9, -0.0191), (245, 1, 0.0275), (245, 7, 0.0391), (245, 8, 0.0054), (245, 9, -0.0216)]\nworldladder t=120: n=20 within sigma 11, median|err| 0.008259849470895503 max 0.04932248336846967, median|dF_exact| 0.01374659247004234; protein bath corr [(19, 1, -0.0626), (19, 7, -0.1049), (19, 8, 0.0241), (19, 9, -0.0727), (245, 1, 0.0505), (245, 7, 0.0057), (245, 8, -0.0322), (245, 9, -0.0676)]\npairb: {\"p19_b8_Wprotein\": {\"40\": 0.9829, \"80\": 0.907, \"120\": 0.7746}, \"p19_b8_W18\": {\"40\": 0.9555, \"80\": 0.8344, \"120\": 0.7063}, \"p19_b9_Wprotein\": {\"40\": 0.9527, \"80\": 0.7489, \"120\": 0.5396}, \"p19_b9_W18\": {\"40\": 0.9577, \"80\": 0.7794, \"120\": 0.5908}, \"p245_b7_Wprotein\": {\"40\": 0.7638, \"80\": 0.4955, \"120\": 0.2901}, \"p245_b7_W18\": {\"40\": 0.6998, \"80\": 0.4231, \"120\": 0.2554}}\nflatX t=40 pooled slope dF/d(H+floor) = -0.03 +- 0.10 [(19, 1, -0.0073, -0.0099), (19, 7, 0.0005, -0.0099), (19, 8, 0.008, -0.0099), (19, 9, -0.0011, -0.0099), (245, 1, -0.0002, -0.0094), (245, 7, 0.0055, -0.0094), (245, 8, 0.0025, -0.0094), (245, 9, -0.0024, -0.0094)]\nflatX t=80 pooled slope dF/d(H+floor) = 0.56 +- 0.47 [(19, 1, -0.0971, -0.019), (19, 7, -0.0102, -0.019), (19, 8, -0.0179, -0.019), (19, 9, -0.0456, -0.019), (245, 1, 0.0081, -0.0235), (245, 7, -0.0119, -0.0235), (245, 8, 0.0584, -0.0235), (245, 9, -0.0099, -0.0235)]\nflatX t=120 pooled slope dF/d(H+floor) = 0.78 +- 0.66 [(19, 1, -0.0773, -0.0239), (19, 7, -0.024, -0.0239), (19, 8, -0.0803, -0.0239), (19, 9, -0.0743, -0.0239), (245, 1, 0.0131, -0.0264), (245, 7, -0.0274, -0.0264), (245, 8, 0.1108, -0.0264), (245, 9, -0.0079, -0.0264)]\n40 {\"literal_rule_nc\": 10, \"n_agree_within_sigma\": 0, \"n_series\": 8, \"median"
+ },
+ "headline": {
+  "40": {
+   "n_within_sigma_vs_hybrid": 0,
+   "median": 0.05322500000000001,
+   "max": 0.09027,
+   "val_primary": 1,
+   "val_direct": 7
+  },
+  "80": {
+   "n_within_sigma_vs_hybrid": 0,
+   "median": 0.071495,
+   "max": 0.16192,
+   "val_primary": 0,
+   "val_direct": 2
+  },
+  "120": {
+   "n_within_sigma_vs_hybrid": 1,
+   "median": 0.05035,
+   "max": 0.29612,
+   "val_primary": 2,
+   "val_direct": 1
+  },
+  "flatX": {
+   "40": [
+    -0.034336258007056655,
+    0.09834977194685196
+   ],
+   "80": [
+    0.5647990798832144,
+    0.4710910690992974
+   ],
+   "120": [
+    0.7826247269391031,
+    0.6593445765319395
+   ]
+  },
+  "flatX_lever_arm_H_vs_floor": {
+   "40": [
+    {
+     "probe": 19,
+     "dH": 0.0005161657107504158,
+     "dfloor": -0.010395162321430656,
+     "H20": 0.37848815893165816
+    },
+    {
+     "probe": 245,
+     "dH": 0.0020866879551227346,
+     "dfloor": -0.011514187762008847,
+     "H20": 0.3642167665547371
+    }
+   ],
+   "80": [
+    {
+     "probe": 19,
+     "dH": -0.0052343540167005265,
+     "dfloor": -0.013788131601349882,
+     "H20": 0.1720120738382421
+    },
+    {
+     "probe": 245,
+     "dH": -0.009133897933523094,
+     "dfloor": -0.014383044194161719,
+     "H20": 0.1279597514302105
+    }
+   ],
+   "120": [
+    {
+     "probe": 19,
+     "dH": -0.009513793384128943,
+     "dfloor": -0.014389031360918444,
+     "H20": 0.11631137746653883
+    }
+   ]
+  },
+  "EB": [
+   {
+    "t": 40,
+    "probe": 245,
+    "site": 7,
+    "exact16": 0.763673046321382,
+    "hyb": 0.6679999999999999,
+    "diff": 0.09567304632138207,
+    "diff_over_sigma": 9.567304632138207,
+    "hybrid_H_error_budget": 0.0159,
+    "diff_over_combined_se": 5.925987593314928,
+    "exact_minus_spinDMFT": -0.00013192398775629943
+   },
+   {
+    "t": 40,
+    "probe": 19,
+    "site": 8,
+    "exact16": 0.977574712416242,
+    "hyb": 0.8905,
+    "diff": 0.0870747124162421,
+    "diff_over_sigma": 8.707471241624209,
+    "hybrid_H_error_budget": 0.01,
+    "diff_over_combined_se": 8.384981508380086,
+    "exact_minus_spinDMFT": -0.0053347075068473915
+   },
+   {
+    "t": 40,
+    "probe": 19,
+    "site": 9,
+    "exact16": 0.9479887278337258,
+    "hyb": 0.8916,
+    "diff": 0.05638872783372584,
+    "diff_over_sigma": 5.638872783372584,
+    "hybrid_H_error_budget": 0.01,
+    "diff_over_combined_se": 5.43003160213336,
+    "exact_minus_spinDMFT": -0.004691565636895323
+   },
+   {
+    "t": 80,
+    "probe": 245,
+    "site": 7,
+    "exact16": 0.4891601499870778,
+    "hyb": 0.37639999999999996,
+    "diff": 0.11276014998707784,
+    "diff_over_sigma": 11.276014998707783,
+    "hybrid_H_error_budget": 0.0091,
+    "diff_over_combined_se": 11.843273008570073,
+    "exact_minus_spinDMFT": -0.0063431557614929135
+   },
+   {
+    "t": 80,
+    "probe": 19,
+    "site": 8,
+    "exact16": 0.905374039927225,
+    "hyb": 0.7385,
+    "diff": 0.16687403992722494,
+    "diff_over_sigma": 16.687403992722494,
+    "hybrid_H_error_budget": 0.0073,
+    "diff_over_combined_se": 21.34330065692742,
+    "exact_minus_spinDMFT": -0.0015875033254666437
+   },
+   {
+    "t": 80,
+    "probe": 19,
+    "site": 9,
+    "exact16": 0.7307082975761294,
+    "hyb": 0.6883,
+    "diff": 0.042408297576129406,
+    "diff_over_sigma": 4.24082975761294,
+    "hybrid_H_error_budget": 0.0073,
+    "diff_over_combined_se": 5.424049456167729,
+    "exact_minus_spinDMFT": -0.018174258641593166
+   },
+   {
+    "t": 120,
+    "probe": 245,
+    "site": 7,
+    "exact16": 0.34513546984061205,
+    "hyb": 0.18870000000000003,
+    "diff": 0.15643546984061202,
+    "diff_over_sigma": 15.643546984061201,
+    "hybrid_H_error_budget": 0.0107,
+    "diff_over_combined_se": 14.143885861717651,
+    "exact_minus_spinDMFT": 0.05506593085709566
+   },
+   {
+    "t": 120,
+    "probe": 19,
+    "site": 8,
+    "exact16": 0.8036717891360645,
+    "hyb": 0.5697,
+    "diff": 0.23397178913606453,
+    "diff_over_sigma": 23.397178913606453,
+    "hybrid_H_error_budget": 0.0063,
+    "diff_over_combined_se": 33.93747983553641,
+    "exact_minus_spinDMFT": 0.02912087309109168
+   },
+   {
+    "t": 120,
+    "probe": 19,
+    "site": 9,
+    "exact16": 0.5842293481119517,
+    "hyb": 0.4838,
+    "diff": 0.1004293481119517,
+    "diff_over_sigma": 10.04293481119517,
+    "hybrid_H_error_budget": 0.0063,
+    "diff_over_combined_se": 14.567221924619917,
+    "exact_minus_spinDMFT": 0.044658173924365996
+   }
+  ]
+ },
+ "cpu_s": 1.0625
+}

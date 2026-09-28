@@ -1,0 +1,187 @@
+{
+ "key": "we_folding",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28abs%3A%22weighted+ensemble%22+AND+%28abs%3Afolding+OR+abs%3Aprotein%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:31:28",
+ "records": [
+  {
+   "id": "1903.04673v3",
+   "title": "Accelerated estimation of long-timescale kinetics by combining weighted ensemble simulation with Markov model \"microstates\" using non-Markovian theory",
+   "published": "2019-03-12",
+   "updated": "2020-10-01",
+   "authors": [
+    "Jeremy Copperman",
+    "Daniel Zuckerman"
+   ],
+   "abstract": "The weighted ensemble (WE) simulation strategy provides unbiased sampling of non-equilibrium processes, such as molecular folding or binding, but the extraction of rate constants relies on characterizing steady state behavior. Unfortunately, WE simulations of sufficiently complex systems will not relax to steady state on observed simulation times. Here we show that a post-simulation clustering of molecular configurations into \"microbins\" using methods developed in the Markov State Model (MSM) community, can yield unbiased kinetics from WE data before steady-state convergence of the WE simulation itself. Because WE trajectories are directional and not equilibrium-distributed, the history-augmented MSM (haMSM) formulation can be used, which yields the mean first-passage time (MFPT) without bias for arbitrarily small lag times. Accurate kinetics can be obtained while bypassing the often prohibitive convergence requirements of the non-equilibrium weighted ensemble. We validate the method in a simple diffusive process on a 2D random energy landscape, and then analyze atomistic protein folding simulations using WE molecular dynamics. We report significant progress towards the unbiased estimation of protein folding times and pathways, though key challenges remain.",
+   "journal_ref": "",
+   "primary": "cond-mat.stat-mech"
+  },
+  {
+   "id": "2510.17187v1",
+   "title": "A Standardized Benchmark for Machine-Learned Molecular Dynamics using Weighted Ensemble Sampling",
+   "published": "2025-10-20",
+   "updated": "2025-10-20",
+   "authors": [
+    "Alexander Aghili",
+    "Andy Bruce",
+    "Daniel Sabo",
+    "Sanya Murdeshwar",
+    "Kevin Bachelor",
+    "Ionut Mistreanu",
+    "Ashwin Lokapally",
+    "Razvan Marinescu"
+   ],
+   "abstract": "The rapid evolution of molecular dynamics (MD) methods, including machine-learned dynamics, has outpaced the development of standardized tools for method validation. Objective comparison between simulation approaches is often hindered by inconsistent evaluation metrics, insufficient sampling of rare conformational states, and the absence of reproducible benchmarks. To address these challenges, we introduce a modular benchmarking framework that systematically evaluates protein MD methods using enhanced sampling analysis. Our approach uses weighted ensemble (WE) sampling via The Weighted Ensemble Simulation Toolkit with Parallelization and Analysis (WESTPA), based on progress coordinates derived from Time-lagged Independent Component Analysis (TICA), enabling fast and efficient exploration of protein conformational space. The framework includes a flexible, lightweight propagator interface that supports arbitrary simulation engines, allowing both classical force fields and machine learning-based models. Additionally, the framework offers a comprehensive evaluation suite capable of computing more than 19 different metrics and visualizations across a variety of domains. We further contribute a dataset of nine diverse proteins, ranging from 10 to 224 residues, that span a variety of folding complexities and topologies. Each protein has been extensively simulated at 300K for one million MD steps per starting point (4 ns). To demonstrate the utility of our framework, we perform validation tests using classic MD simulations with implicit solvent and compare protein conformational sampling using a fully trained versus under-trained CGSchNet model. By standardizing evaluation protocols and enabling direct, reproducible comparisons across MD approaches, our open-source platform lays the groundwork for consistent, rigorous benchmarking across the molecular simulation community.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2007.09325v2",
+   "title": "Kinetics and Free Energy of Ligand Dissociation Using Weighted Ensemble Milestoning",
+   "published": "2020-07-18",
+   "updated": "2020-09-30",
+   "authors": [
+    "Dhiman Ray",
+    "Trevor Gokey",
+    "David L. Mobley",
+    "Ioan Andricioaei"
+   ],
+   "abstract": "We consider the recently developed weighted ensemble milestoning (WEM) scheme [J. Chem. Phys. 152, 234114 (2020)], and test its capability of simulating ligand-receptor dissociation dynamics. We performed WEM simulations on the following host-guest systems: Na$^+$/Cl$^-$ ion pair and 4-hydroxy-2-butanone (BUT) ligand with FK506 binding protein (FKBP). As proof or principle, we show that the WEM formalism reproduces the Na$^+$/Cl$^-$ ion pair dissociation timescale and the free energy profile obtained from long conventional MD simulation. To increase accuracy of WEM calculations applied to kinetics and thermodynamics in protein-ligand binding, we introduced a modified WEM scheme called weighted ensemble milestoning with restraint release (WEM-RR), which can increase the number of starting points per milestone without adding additional computational cost. WEM-RR calculations obtained a ligand residence time and binding free energy in agreement with experimental and previous computational results. Moreover, using the milestoning framework, the binding time and rate constants, dissociation constant and the committor probabilities could also be calculated at a low computational cost. We also present an analytical approach for estimating the association rate constant ($k_{\\text{on}}$) when binding is primarily diffusion driven. We show that the WEM method can efficiently calculate multiple experimental observables describing ligand-receptor binding/unbinding and is a promising candidate for computer-aided inhibitor design.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2609.05436v1",
+   "title": "Novel hybrid protein scaffold gap filling using weighted machine learning ensemble, beam search, and mass-constrained reranking",
+   "published": "2026-07-16",
+   "updated": "2026-07-16",
+   "authors": [
+    "Tahmid Enam Shrestha",
+    "Md. Manzurul Hasan",
+    "Md. Rafiqul Islam"
+   ],
+   "abstract": "Protein scaffold gap filling is an important computational task in protein sequence reconstruction, where missing amino acid regions must be inferred from incomplete scaffold information. This study proposes a hybrid machine learning and mass constrained reranking framework for protein scaffold gap filling under known-gap-size and known-gapmass settings. Homologous protein sequences from MabCampath, P5A proteoform, and carbonic anhydrase 2 were used to generate masked 11-mer residue-level samples and fullgap evaluation cases. The residue prediction task was formulated as a 20-class amino acid classification problem using first-, middle-, and last-position masking. Multiple classical machine learning models were trained using raw encoded, row-average, and SVD-reduced features, and the strongest models were combined through a validation-accuracy-weighted ensemble. For known-size gap reconstruction, beam search was used to generate complete missing peptide sequences from residue-level probability estimates. For known-mass reconstruction, mass-constrained homologous candidate retrieval was combined with hybrid reranking based on mass validity, homologous frequency, context support, ensemble likelihood, mass error, and length penalty. The proposed framework achieved 95.41% residue-level validation accuracy, 87.50% known-size exact-match accuracy, and 100% top-5 recovery on seven CAH2 known-mass benchmark cases. These results indicate that the proposed framework can effectively reconstruct missing protein regions by integrating local sequence learning, homologous evidence, peptide mass constraints, and biochemical validation.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2405.14968v2",
+   "title": "Compound Mutations in the Abl1 Kinase Cause Inhibitor Resistance by Shifting DFG Flip Mechanisms and Relative State Populations",
+   "published": "2024-05-23",
+   "updated": "2025-08-11",
+   "authors": [
+    "Gabriel Monteiro da Silva",
+    "Kyle Lam",
+    "David C. Dalgarno",
+    "Brenda M. Rubenstein"
+   ],
+   "abstract": "The intrinsic dynamics of most proteins are central to their function. Protein tyrosine kinases such as Abl1 undergo significant conformational changes that modulate their activity in response to different stimuli. These conformational changes constitute a conserved mechanism for self-regulation that dramatically impacts kinases' affinities for inhibitors. Few studies have attempted to extensively sample the pathways and elucidate the mechanisms that underlie kinase inactivation. Seeking to bridge this knowledge gap, we present a thorough analysis of the ``DFG flip'' inactivation pathway in Abl1 kinase. By leveraging the power of the Weighted Ensemble methodology, which accelerates sampling without the use of biasing forces, we have comprehensively simulated DFG flip events in Abl1 and its inhibitor-resistant variants, revealing a rugged landscape punctuated by potentially druggable intermediate states. Through our strategy, we successfully simulated dozens of uncorrelated DFG flip events distributed along two principal pathways, identified the molecular mechanisms that govern them, and measured their relative probabilities. Further, we show that the compound Glu255Lys/Val Thr315Ile Abl1 variants owe their inhibitor resistance phenotype to an increase in the free energy barrier associated with completing the DFG flip. This barrier stabilizes Abl1 variants in conformations that can lead to loss of binding for Type-II inhibitors such as Imatinib or Ponatinib. Finally, we contrast our Abl1 observations with the relative state distributions and propensity for undergoing a DFG flip of evolutionarily-related protein tyrosine kinases with diverging Type-II inhibitor binding affinities. Altogether, we expect that our work will be of significant importance for protein tyrosine kinase inhibitor discovery.",
+   "journal_ref": "eLife14:RP104519 (2025)",
+   "primary": "physics.bio-ph"
+  },
+  {
+   "id": "2504.21663v3",
+   "title": "Reducing Weighted Ensemble Variance With Optimal Trajectory Management",
+   "published": "2025-04-30",
+   "updated": "2026-02-09",
+   "authors": [
+    "Won Hee Ryu",
+    "John D. Russo",
+    "Mats S. Johnson",
+    "Jeremy T. Copperman",
+    "Jeffrey P. Thompson",
+    "David N. LeBard",
+    "Robert J. Webber",
+    "Gideon Simpson",
+    "David Aristoff",
+    "Daniel M. Zuckerman"
+   ],
+   "abstract": "Weighted ensemble (WE) is an enhanced path-sampling method that is conceptually simple, widely applicable, and statistically exact. In a WE simulation, an ensemble of trajectories is periodically pruned or replicated to enhance sampling of rare transitions and improve estimation of mean first passage times (MFPTs). However, poor choices of the parameters governing pruning and replication can lead to high-variance MFPT estimates. Our previous work [J. Chem. Phys. 158, 014108 (2023)] presented an optimal WE parameterization strategy and applied it in low-dimensional example systems. The strategy harnesses estimated local MFPTs from different initial configurations to a single target state. In the present work, we apply the optimal parameterization strategy to more challenging, high-dimensional molecular models, namely, synthetic molecular dynamics (MD) models of Trp-cage folding and unfolding, as well as atomistic MD models of NTL9 folding in high-friction and low-friction continuum solvents. In each system we use WE to estimate the MFPT for folding or unfolding events. We show that the optimal parameterization reduces the variance of MFPT estimates in three of four systems, with dramatic improvement in the most challenging atomistic system. Overall, the parameterization strategy improves the accuracy and reliability of WE estimates for the kinetics of biophysical processes.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2404.00576v1",
+   "title": "Automated Bi-Fold Weighted Ensemble Algorithms and its Application to Brain Tumor Detection and Classification",
+   "published": "2024-03-31",
+   "updated": "2024-03-31",
+   "authors": [
+    "PoTsang B. Huang",
+    "Muhammad Rizwan",
+    "Mehboob Ali"
+   ],
+   "abstract": "The uncontrolled and unstructured growth of brain cells is known as brain tumor, which has one of the highest mortality rates among diseases from all types of cancers. Due to limited diagnostic and treatment capabilities, they pose significant challenges, especially in third-world countries. Early diagnosis plays a vital role in effectively managing brain tumors and reducing mortality rates. However, the availability of diagnostic methods is hindered by various limitations, including high costs and lengthy result acquisition times, impeding early detection of the disease. In this study, we present two cutting-edge bi-fold weighted voting ensemble models that aim to boost the effectiveness of weighted ensemble methods. These two proposed methods combine the classification outcomes from multiple classifiers and determine the optimal result by selecting the one with the highest probability in the first approach, and the highest weighted prediction in the second technique. These approaches significantly improve the overall performance of weighted ensemble techniques. In the first proposed method, we improve the soft voting technique (SVT) by introducing a novel unsupervised weight calculating schema (UWCS) to enhance its weight assigning capability, known as the extended soft voting technique (ESVT). Secondly, we propose a novel weighted method (NWM) by using the proposed UWCS. Both of our approaches incorporate three distinct models: a custom-built CNN, VGG-16, and InceptionResNetV2 which has been trained on publicly available datasets. The effectiveness of our proposed systems is evaluated through blind testing, where exceptional results are achieved. We then establish a comparative analysis of the performance of our proposed methods with that of SVT to show their superiority and effectiveness.",
+   "journal_ref": "",
+   "primary": "cs.LG"
+  },
+  {
+   "id": "2501.08926v1",
+   "title": "WeTICA: A directed search weighted ensemble based enhanced sampling method to estimate rare event kinetics in a reduced dimensional space",
+   "published": "2025-01-15",
+   "updated": "2025-01-15",
+   "authors": [
+    "Sudipta Mitra",
+    "Ranjit Biswas",
+    "Suman Chakrabarty"
+   ],
+   "abstract": "Estimating rare event kinetics from molecular dynamics simulations is a non-trivial task despite the great advances in enhanced sampling methods. Weighted Ensemble (WE) simulation, a special class of enhanced sampling techniques, offers a way to directly calculate kinetic rate constants from biased trajectories without the need to modify the underlying energy landscape using bias potentials. Conventional WE algorithms use different binning schemes to partition the collective variable (CV) space separating the two metastable states of interest. In this work, we have developed a new \"binless\" WE simulation algorithm to bypass the hurdles of optimizing binning procedures. Our proposed protocol (WeTICA) uses a low-dimensional CV space to drive the WE simulation toward the specified target state. We have applied this new algorithm to recover the unfolding kinetics of three proteins: (A) TC5b Trp-cage mutant, (B) TC10b Trp-cage mutant, and (C) Protein G, with unfolding times spanning the range between 3 and 40 \u03bcs using projections along predefined fixed Time-lagged Independent Component Analysis (TICA) eigenvectors as CVs. Calculated unfolding times converge to the reported values with good accuracy with more than one order of magnitude less cumulative WE simulation time than the unfolding time scales with or without a priori knowledge of the CVs that can capture unfolding. Our algorithm can be used with other linear CVs, not limited to TICA. Moreover, the new walker selection criteria for resampling employed in this algorithm can be used on more sophisticated nonlinear CV space for further improvements of binless WE methods.",
+   "journal_ref": "J. Chem. Phys. 162, 034106 (2025)",
+   "primary": "cond-mat.soft"
+  },
+  {
+   "id": "2607.26498v2",
+   "title": "HERMES: A Hybrid Ensemble for Head-and-Neck Tumor Segmentation, TN Staging, and Recurrence-Free Survival on PET/CT",
+   "published": "2026-07-29",
+   "updated": "2026-08-04",
+   "authors": [
+    "Kai Wang",
+    "Meixu Chen",
+    "Elie Nasr",
+    "Ryan Lanning",
+    "Moyed Miften"
+   ],
+   "abstract": "We present HERMES (Hybrid Ensemble for Radiotherapy-target segmentation, Malignancy staging, and Event-free Survival), a single containerized algorithm for the three HECKTOR 2026 subtasks: segmentation of the primary tumor (GTVp) and pathological lymph nodes (GTVn), radiological T/N staging, and recurrence-free survival (RFS), computed from a paired FDG-PET/CT scan and an electronic health record. A 10-fold ensemble of STU-Net Small networks produces the segmentation; the predicted mask then drives two downstream tasks. Rather than pass a generic radiomics vector to the staging models, we derive from the predicted masks a compact set of geometry features aligned with the size and number axes of AJCC/UICC 7th-edition radiological N/T staging. On internal cross-validation these features raise N-stage balanced accuracy from 0.691 to 0.720 (+0.030), our largest single design gain, at lower feature dimensionality. For prognosis we combine complementary deep and clinical risk experts in an equal-weight ensemble, and train one deep expert with a concordance-tracking survival loss of our own, whose value approximates the concordance index during training. Every component was selected on honest out-of-fold predictions under a regularization-oriented protocol, with no tuning on the public validation set, and deployed as two decorrelated submissions. On the HECKTOR 2026 validation leaderboard, HERMES achieved a weighted score of 0.6454 (Mean Dice 0.641, T balanced accuracy 0.580, N balanced accuracy 0.642, RFS C-index 0.679) and qualified for the testing phase. Team: AMC_HNC.",
+   "journal_ref": "",
+   "primary": "cs.CV"
+  },
+  {
+   "id": "2602.24007v3",
+   "title": "Inference-time optimization for experiment-grounded protein ensemble generation",
+   "published": "2026-02-27",
+   "updated": "2026-06-29",
+   "authors": [
+    "Advaith Maddipatla",
+    "Anar Rzayev",
+    "Marco Pegoraro",
+    "Martin Pacesa",
+    "Paul Schanda",
+    "Ailie Marx",
+    "Sanketh Vedula",
+    "Alex M. Bronstein"
+   ],
+   "abstract": "Protein function relies on dynamic conformational ensembles, yet current generative models like AlphaFold3 often fail to produce ensembles that match experimental data. Recent experiment-guided generators attempt to address this by steering the reverse diffusion process. However, these methods are limited by fixed sampling horizons and sensitivity to initialization, often yielding thermodynamically implausible results. We introduce a general inference-time optimization framework to solve these challenges. First, we optimize over latent representations to maximize ensemble log-likelihood, rather than perturbing structures post hoc. This approach eliminates dependence on diffusion length, removes initialization bias, and easily incorporates external constraints. Second, we present novel sampling schemes for drawing Boltzmann-weighted ensembles. By combining structural priors from AlphaFold3 with force-field-based priors, we sample from their product distribution while balancing experimental likelihoods. Our results show that this framework consistently outperforms state-of-the-art guidance, improving diversity, physical energy, and agreement with data in X-ray crystallography and NMR, often fitting the experimental data better than deposited PDB structures. Finally, inference-time optimization experiments maximizing ipTM scores reveal that perturbing AlphaFold3 embeddings can artificially inflate model confidence. This exposes a vulnerability in current design metrics, whose mitigation could offer a pathway to reduce false discovery rates in binder engineering.",
+   "journal_ref": "",
+   "primary": "q-bio.BM"
+  },
+  {
+   "id": "2106.04130v1",
+   "title": "EnMcGAN: Adversarial Ensemble Learning for 3D Complete Renal Structures Segmentation",
+   "published": "2021-06-08",
+   "updated": "2021-06-08",
+   "authors": [
+    "Yuting He",
+    "Rongjun Ge",
+    "Xiaoming Qi",
+    "Guanyu Yang",
+    "Yang Chen",
+    "Youyong Kong",
+    "Huazhong Shu",
+    "Jean-Louis Coatrieux",
+    "Shuo Li"
+   ],
+   "abstract": "3D complete renal structures(CRS) segmentation targets on segmenting the kidneys, tumors, renal arteries and veins in one inference. Once successful, it will provide preoperative plans and intraoperative guidance for laparoscopic partial nephrectomy(LPN), playing a key role in the renal cancer treatment. However, no success has been reported in 3D CRS segmentation due to the complex shapes of renal structures, low contrast and large anatomical variation. In this study, we utilize the adversarial ensemble learning and propose Ensemble Multi-condition GAN(EnMcGAN) for 3D CRS segmentation for the first time. Its contribution is three-fold. 1)Inspired by windowing, we propose the multi-windowing committee which divides CTA image into multiple narrow windows with different window centers and widths enhancing the contrast for salient boundaries and soft tissues. And then, it builds an ensemble segmentation model on these narrow windows to fuse the segmentation superiorities and improve whole segmentation quality. 2)We propose the multi-condition GAN which equips the segmentation model with multiple discriminators to encourage the segmented structures meeting their real shape conditions, thus improving the shape feature extraction ability. 3)We propose the adversarial weighted ensemble module which uses the trained discriminators to evaluate the quality of segmented structures, and normalizes these evaluation scores for the ensemble weights directed at the input image, thus enhancing the ensemble results. 122 patients are enrolled in this study and the mean Dice coefficient of the renal structures achieves 84.6%. Extensive experiments with promising results on renal structures reveal powerful segmentation accuracy and great clinical significance in renal cancer treatment.",
+   "journal_ref": "Information Processing in Medical Imaging (IPMI) 2021",
+   "primary": "eess.IV"
+  }
+ ]
+}

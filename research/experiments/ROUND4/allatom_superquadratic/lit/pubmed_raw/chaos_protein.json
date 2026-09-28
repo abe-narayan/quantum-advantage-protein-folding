@@ -1,0 +1,9 @@
+{
+ "key": "chaos_protein",
+ "term": "Chaos in protein dynamics[Title]",
+ "pmids": [
+  "9408939"
+ ],
+ "text": "1. Proteins. 1997 Dec;29(4):417-25.\n\nChaos in protein dynamics.\n\nBraxenthaler M(1), Unger R, Auerbach D, Given JA, Moult J.\n\nAuthor information:\n(1)Center for Advanced Research in Biotechnology, University of Maryland \nBiotechnology Institute, Rockville, USA.\n\nMD simulations, currently the most detailed description of the dynamic evolution \nof proteins, are based on the repeated solution of a set of differential \nequations implementing Newton's second law. Many such systems are known to \nexhibit chaotic behavior, i.e., very small changes in initial conditions are \namplified exponentially and lead to vastly different, inherently unpredictable \nbehavior. We have investigated the response of a protein fragment in an explicit \nsolvent environment to very small perturbations of the atomic positions \n(10(-3)-10(-9) A). Independent of the starting conformation (native-like, \ncompact, extended), perturbed dynamics trajectories deviated rapidly, leading to \nconformations that differ by approximately 1 A RMSD within 1-2 ps. Furthermore, \nintroducing the perturbation more than 1-2 ps before a significant \nconformational transition leads to a loss of the transition in the perturbed \ntrajectories. We present evidence that the observed chaotic behavior reflects \nphysical properties of the system rather than numerical instabilities of the \ncalculation and discuss the implications for models of protein folding and the \nuse of MD as a tool to analyze protein folding pathways.\n\nPMID: 9408939 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:47"
+}

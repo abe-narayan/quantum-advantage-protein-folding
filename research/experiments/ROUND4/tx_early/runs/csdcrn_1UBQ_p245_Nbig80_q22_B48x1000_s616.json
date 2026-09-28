@@ -1,0 +1,1 @@
+{"probe": 245, "Nbig": 80, "Nq": [22], "sizes": [22, 80], "batch": 1000, "batches_done": 48, "M_done": 48000, "h_us": 1.0, "times_us": [0.0, 40.0, 80.0, 120.0], "seed": 616, "cpu_s": 260.4375, "norm_drift": 0.0018801281645250967, "complete": true, "sums_file": "csdcrn_1UBQ_p245_Nbig80_q22_B48x1000_s616.json.ckpt.json"}

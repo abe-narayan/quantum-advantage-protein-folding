@@ -1,0 +1,163 @@
+{
+ "pdb": "1UBQ",
+ "probe": 19,
+ "variant": "baware12",
+ "N": 12,
+ "names": [
+  "H/ILE3",
+  "HA/GLN2",
+  "H/LEU15",
+  "HG13/ILE3",
+  "HG2/GLN2",
+  "HA/ILE3",
+  "HG12/ILE3",
+  "HG3/GLN2",
+  "HG22/ILE3",
+  "HA/GLU16",
+  "HG23/ILE3",
+  "HG2/GLU16"
+ ],
+ "bs": [
+  1,
+  7,
+  8,
+  9
+ ],
+ "rotor_groups_in_cluster": [
+  [
+   "HG21/ILE3",
+   "HG22/ILE3",
+   "HG23/ILE3"
+  ]
+ ],
+ "columns": [
+  "radial_HA/GLU16",
+  "radial_HG22/ILE3_axis",
+  "radial_HG3/GLN2",
+  "rigid_res2",
+  "eps0",
+  "epsg_0"
+ ],
+ "col_kinds": [
+  "struct",
+  "struct",
+  "struct",
+  "struct",
+  "eps0",
+  "epsg"
+ ],
+ "echo_tmax_us": 160.0,
+ "extra": [
+  "HG23/ILE3",
+  "HG2/GLU16"
+ ],
+ "M2b_coverage_N10": {
+  "HA/GLN2": 0.36348082265552895,
+  "HG3/GLN2": 0.7614196668402085,
+  "HG22/ILE3": 0.03549699873617723,
+  "HA/GLU16": 0.09349560857637781
+ },
+ "M2b_coverage": {
+  "HA/GLN2": 0.37642903266397665,
+  "HG3/GLN2": 0.7626255965058109,
+  "HG22/ILE3": 0.8505674751581237,
+  "HA/GLU16": 0.7370688367462915
+ },
+ "missing_partners_N10": [
+  {
+   "b": 1,
+   "b_name": "HA/GLN2",
+   "j": 13,
+   "j_name": "HB2/GLN2",
+   "share": 0.5238677192684438
+  },
+  {
+   "b": 1,
+   "b_name": "HA/GLN2",
+   "j": 11,
+   "j_name": "H/GLN2",
+   "share": 0.03641981312247304
+  },
+  {
+   "b": 1,
+   "b_name": "HA/GLN2",
+   "j": 142,
+   "j_name": "HG2/GLU16",
+   "share": 0.010054805268701967
+  },
+  {
+   "b": 7,
+   "b_name": "HG3/GLN2",
+   "j": 18,
+   "j_name": "HE22/GLN2",
+   "share": 0.062262299310058666
+  },
+  {
+   "b": 7,
+   "b_name": "HG3/GLN2",
+   "j": 17,
+   "j_name": "HE21/GLN2",
+   "share": 0.04305447509520026
+  },
+  {
+   "b": 7,
+   "b_name": "HG3/GLN2",
+   "j": 14,
+   "j_name": "HB3/GLN2",
+   "share": 0.029357539462762292
+  },
+  {
+   "b": 8,
+   "b_name": "HG22/ILE3",
+   "j": 26,
+   "j_name": "HG23/ILE3",
+   "share": 0.8149625061404573
+  },
+  {
+   "b": 8,
+   "b_name": "HG22/ILE3",
+   "j": 24,
+   "j_name": "HG21/ILE3",
+   "share": 0.1016122094158164
+  },
+  {
+   "b": 8,
+   "b_name": "HG22/ILE3",
+   "j": 151,
+   "j_name": "HG22/VAL17",
+   "share": 0.013426268116775329
+  },
+  {
+   "b": 9,
+   "b_name": "HA/GLU16",
+   "j": 142,
+   "j_name": "HG2/GLU16",
+   "share": 0.6432783469752262
+  },
+  {
+   "b": 9,
+   "b_name": "HA/GLU16",
+   "j": 144,
+   "j_name": "H/VAL17",
+   "share": 0.0984208200903382
+  },
+  {
+   "b": 9,
+   "b_name": "HA/GLU16",
+   "j": 143,
+   "j_name": "HG3/GLU16",
+   "share": 0.03516446796095132
+  }
+ ],
+ "cpu_s": 427.234375,
+ "done": [
+  "radial_HA/GLU16",
+  "radial_HG22/ILE3_axis",
+  "radial_HG3/GLN2",
+  "rigid_res2",
+  "eps0",
+  "epsg_0"
+ ],
+ "cpu_base_s": 32.6875,
+ "complete": true
+}

@@ -1,5 +1,22 @@
 # Current State
 
+_Last updated: 2026-09-28 ~16:00. **Discovery sprint COMPLETE (four rounds).** This supersedes the entries below, which are kept for history._
+
+| Field | Value |
+|---|---|
+| Research question | Is there a real place where quantum computation does something important for protein structure that the best classical approach cannot do as efficiently? |
+| Answer (INFERENCE from MEASURED/DERIVED parts; scoped, falsifiable) | **No, in every regime examined.** No claim in categories 1–6 survives; practical L0 everywhere. See `reports/QUANTUM_ADVANTAGE_DISCOVERY_REPORT.md`. |
+| Three classes (thesis with falsifiers) | (1) Structure-bearing and classically easy: learned-energy prediction via the DG portfolio (~420 evaluations); ¹H echo at 40 µs (K-119). (2) Possibly hard but uninformative: echo beyond the site-resolved reversal horizon (g < 2). (3) Classically expensive and structure-bearing, but no applicable quantum algorithm: all-atom force-field sampling (K-117; a hypothetical s ≥ 3 would break even). |
+| Kills this sprint | K-101 to K-120 (KILLBOOK Section B), each with a reopen condition. The red team found no false kill; the arms of K-105, K-109 and K-111 were re-based. |
+| What could change the answer | (1) An s ≥ 3 algorithm for chaotic force-field Langevin dynamics with a compiled force oracle. (2) A measured protein site-resolved T3/T2 ≥ 15–50. (3) R-1 replication failure of K-119. (4) Sub-ns logical gates. See OPEN_QUESTIONS. |
+| Strongest publishable claims | The resource-normalised negative (landscape-independent floor + T3 costing + DG classical twin + mechanism map). Protein ¹H OTOC(1) echoes are classically computable to σ at observable times and uninformative beyond the reversal horizon. |
+| Running | The governor may still be finishing low-value replication cones (1PGA p390, 1UBQ p487, N = 18/20; checkpointed). Stop it with `touch research/results/RAW/master/STOP`. Recommended next compute, only on the user's go-ahead: R-1, RT-DQ-methyl, T-F80. |
+| Git | See `git log`; the sprint's final commit adds the completed reports. |
+
+---
+
+# Previous entries
+
 _Last updated: 2026-09-28 ~06:30. **WAITING FOR USER GO-AHEAD.** The user is using the machine and said: run the pending jobs "after im finished when I tell you to". Nothing is running. This supersedes the entry below._
 
 ## Pending, to run only when the user says so

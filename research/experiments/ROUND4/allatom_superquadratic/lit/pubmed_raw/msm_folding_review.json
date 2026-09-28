@@ -1,0 +1,9 @@
+{
+ "key": "msm_folding_review",
+ "term": "Markov state models: From an art to a science[Title]",
+ "pmids": [
+  "29323881"
+ ],
+ "text": "1. J Am Chem Soc. 2018 Feb 21;140(7):2386-2396. doi: 10.1021/jacs.7b12191. Epub \n2018 Feb 2.\n\nMarkov State Models: From an Art to a Science.\n\nHusic BE(1), Pande VS(1).\n\nAuthor information:\n(1)Department of Chemistry, Stanford University , Stanford, California 94305, \nUnited States.\n\nMarkov state models (MSMs) are a powerful framework for analyzing dynamical \nsystems, such as molecular dynamics (MD) simulations, that have gained \nwidespread use over the past several decades. This perspective offers an \noverview of the MSM field to date, presented for a general audience as a \ntimeline of key developments in the field. We sequentially address early studies \nthat motivated the method, canonical papers that established the use of MSMs for \nMD analysis, and subsequent advances in software and analysis protocols. The \nderivation of a variational principle for MSMs in 2013 signified a turning point \nfrom expertise-driving MSM building to a systematic, objective protocol. The \nvariational approach, combined with best practices for model selection and \nopen-source software, enabled a wide range of MSM analysis for applications such \nas protein folding and allostery, ligand binding, and protein-protein \nassociation. To conclude, the current frontiers of methods development are \nhighlighted, as well as exciting applications in experimental design and drug \ndiscovery.\n\nDOI: 10.1021/jacs.7b12191\nPMID: 29323881 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:52"
+}

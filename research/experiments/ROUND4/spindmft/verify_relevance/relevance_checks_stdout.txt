@@ -1,0 +1,52 @@
+C1_iso_pairb_p19_b8_N8 [1.0, 0.9787, 0.886, 0.7689] cpu 0.0
+C1_iso_pairb_p19_b8_N10 [1.0, 0.979, 0.8963, 0.7933] cpu 0.3
+C1_iso_pairb_p19_b8_N12 [1.0, 0.9783, 0.9005, 0.8016] cpu 19.6
+C1_iso_pairb_p19_b9_N8 [1.0, 0.9434, 0.6616, 0.5192] cpu 0.0
+C1_iso_pairb_p19_b9_N10 [1.0, 0.9386, 0.6843, 0.5766] cpu 0.3
+C1_iso_pairb_p19_b9_N12 [1.0, 0.9404, 0.6988, 0.5955] cpu 16.8
+C2_iso_probe_p19_N10 {'1': [1.0, 0.5028, 0.2916, 0.2977], '7': [1.0, 0.8795, 0.5676, 0.5932], '8': [1.0, 0.9448, 0.8368, 0.7194], '9': [1.0, 0.9517, 0.7159, 0.5425]}
+C2_iso_probe_p19_N12 {'1': [1.0, 0.5041, 0.2949, 0.2998], '7': [1.0, 0.8792, 0.5647, 0.5877], '8': [1.0, 0.9452, 0.8304, 0.7091], '9': [1.0, 0.9517, 0.7164, 0.5461]}
+C2_iso_probe_p245_N10 {'1': [1.0, 0.9863, 0.8351, 0.6431], '7': [1.0, 0.6746, 0.4753, 0.415], '8': [1.0, 0.9531, 0.7162, 0.5326], '9': [1.0, 0.9767, 0.94, 0.9119]}
+C2_iso_probe_p245_N12 {'1': [1.0, 0.9865, 0.8426, 0.5999], '7': [1.0, 0.6593, 0.4218, 0.3656], '8': [1.0, 0.9531, 0.7195, 0.5083], '9': [1.0, 0.9754, 0.9372, 0.9053]}
+
+C1 (b-remote; F at 40/80/120 us)
+ p245_b7 t=40: iso N8/10/12 = 0.7397 / 0.7565 / 0.7701 | exact typ N12/14/16 = 0.7666 / 0.7608 / 0.7637 | spinDMFT = 0.7638; bath part = +0.0073; iso10-ex16 = -0.0071; iso12(sector)-typ12 = +0.0035
+ p245_b7 t=80: iso N8/10/12 = 0.5354 / 0.5136 / 0.5127 | exact typ N12/14/16 = 0.5113 / 0.4834 / 0.4892 | spinDMFT = 0.4955; bath part = -0.0181; iso10-ex16 = +0.0245; iso12(sector)-typ12 = +0.0014
+ p245_b7 t=120: iso N8/10/12 = 0.4035 / 0.3744 / 0.3518 | exact typ N12/14/16 = 0.3511 / 0.3504 / 0.3451 | spinDMFT = 0.2901; bath part = -0.0843; iso10-ex16 = +0.0293; iso12(sector)-typ12 = +0.0007
+ p19_b8 t=40: iso N8/10/12 = 0.9787 / 0.9790 / 0.9783 | exact typ N12/14/16 = 0.9784 / 0.9773 / 0.9776 | spinDMFT = 0.9829; bath part = +0.0039; iso10-ex16 = +0.0015; iso12(sector)-typ12 = -0.0001
+ p19_b8 t=80: iso N8/10/12 = 0.8860 / 0.8963 / 0.9005 | exact typ N12/14/16 = 0.9002 / 0.9049 / 0.9054 | spinDMFT = 0.9070; bath part = +0.0107; iso10-ex16 = -0.0091; iso12(sector)-typ12 = +0.0003
+ p19_b8 t=120: iso N8/10/12 = 0.7689 / 0.7933 / 0.8016 | exact typ N12/14/16 = 0.7974 / 0.8103 / 0.8037 | spinDMFT = 0.7746; bath part = -0.0187; iso10-ex16 = -0.0104; iso12(sector)-typ12 = +0.0042
+ p19_b9 t=40: iso N8/10/12 = 0.9434 / 0.9386 / 0.9404 | exact typ N12/14/16 = 0.9407 / 0.9453 / 0.9480 | spinDMFT = 0.9527; bath part = +0.0141; iso10-ex16 = -0.0094; iso12(sector)-typ12 = -0.0003
+ p19_b9 t=80: iso N8/10/12 = 0.6616 / 0.6843 / 0.6988 | exact typ N12/14/16 = 0.7003 / 0.7144 / 0.7307 | spinDMFT = 0.7489; bath part = +0.0646; iso10-ex16 = -0.0464; iso12(sector)-typ12 = -0.0014
+ p19_b9 t=120: iso N8/10/12 = 0.5192 / 0.5766 / 0.5955 | exact typ N12/14/16 = 0.5988 / 0.6037 / 0.5842 | spinDMFT = 0.5396; bath part = -0.0370; iso10-ex16 = -0.0077; iso12(sector)-typ12 = -0.0033
+
+C2 (probe family, isolated)
+  p19_b1 {40: {'iso_probe_N10': 0.5028, 'iso_probe_N12': 0.5041}, 80: {'iso_probe_N10': 0.2916, 'iso_probe_N12': 0.2949}, 120: {'iso_probe_N10': 0.2977, 'iso_probe_N12': 0.2998}}
+  p19_b7 {40: {'iso_probe_N10': 0.8795, 'iso_probe_N12': 0.8792}, 80: {'iso_probe_N10': 0.5676, 'iso_probe_N12': 0.5647}, 120: {'iso_probe_N10': 0.5932, 'iso_probe_N12': 0.5877}}
+  p19_b8 {40: {'iso_probe_N10': 0.9448, 'iso_probe_N12': 0.9452}, 80: {'iso_probe_N10': 0.8368, 'iso_probe_N12': 0.8304}, 120: {'iso_probe_N10': 0.7194, 'iso_probe_N12': 0.7091}}
+  p19_b9 {40: {'iso_probe_N10': 0.9517, 'iso_probe_N12': 0.9517}, 80: {'iso_probe_N10': 0.7159, 'iso_probe_N12': 0.7164}, 120: {'iso_probe_N10': 0.5425, 'iso_probe_N12': 0.5461}}
+  p245_b1 {40: {'iso_probe_N10': 0.9863, 'iso_probe_N12': 0.9865}, 80: {'iso_probe_N10': 0.8351, 'iso_probe_N12': 0.8426}, 120: {'iso_probe_N10': 0.6431, 'iso_probe_N12': 0.5999}}
+  p245_b7 {40: {'iso_probe_N10': 0.6746, 'iso_probe_N12': 0.6593}, 80: {'iso_probe_N10': 0.4753, 'iso_probe_N12': 0.4218}, 120: {'iso_probe_N10': 0.415, 'iso_probe_N12': 0.3656}}
+  p245_b8 {40: {'iso_probe_N10': 0.9531, 'iso_probe_N12': 0.9531}, 80: {'iso_probe_N10': 0.7162, 'iso_probe_N12': 0.7195}, 120: {'iso_probe_N10': 0.5326, 'iso_probe_N12': 0.5083}}
+  p245_b9 {40: {'iso_probe_N10': 0.9767, 'iso_probe_N12': 0.9754}, 80: {'iso_probe_N10': 0.94, 'iso_probe_N12': 0.9372}, 120: {'iso_probe_N10': 0.9119, 'iso_probe_N12': 0.9053}}
+
+C3 {"1": {"F20": 0.9791160560114349, "F22": 0.9789677268599917, "dF": -0.00014832915144324943, "dX": 0.004247652901429921}, "7": {"F20": 0.6990350062329185, "F22": 0.7005324316663746, "dF": 0.001497425433456101, "dX": 0.005893407486329216}, "8": {"F20": 0.9550592321969589, "F22": 0.955031255863446, "dF": -2.797633351292461e-05, "dX": 0.004368005719360246}, "9": {"F20": 0.9726095274714339, "F22": 0.9726448047670715, "dF": 3.5277295637570205e-05, "dX": 0.004431259348510741}, "dH": -0.002201581403930619, "dfloor": -0.0021944006489425273, "d_H_plus_floor": -0.0043959820528731465, "p245_b7_F22_minus_exact_pairb16": -0.06314061465500742, "typicality_err_N22_R1": 0.00048828125, "source": "ROUND4/tx_early/runs (partial files: only t = 40 us complete for echo mode)"}
+
+C4 visibility
+  cluster_isolated(non-physical,generous) T2 [14.05, 18.32] T3_LE [94, 123] T3_PE [56, 73]
+   t=40: t/T2 2.2-2.8  A_LE 0.952  A_PE 0.813  max spread 0.007 (median 0.004)  visible spread LE 0.70 sig, PE 0.60 sig; median visible signal LE 90.6 sig, PE 77.5 sig
+   t=80: t/T2 4.4-5.7  A_LE 0.81  A_PE 0.438  max spread 0.039 (median 0.019)  visible spread LE 3.16 sig, PE 1.71 sig; median visible signal LE 61.1 sig, PE 33.0 sig
+   t=120: t/T2 6.5-8.5  A_LE 0.527  A_PE 0.156  max spread 0.106 (median 0.062)  visible spread LE 5.59 sig, PE 1.65 sig; median visible signal LE 28.8 sig, PE 8.5 sig
+  network_static T2 [8.04, 8.09] T3_LE [54, 54] T3_PE [32, 32]
+   t=40: t/T2 4.9-5.0  A_LE 0.748  A_PE 0.347  max spread 0.007 (median 0.004)  visible spread LE 0.55 sig, PE 0.25 sig; median visible signal LE 71.2 sig, PE 33.0 sig
+   t=80: t/T2 9.9-9.9  A_LE 0.133  A_PE 0.0144  max spread 0.039 (median 0.019)  visible spread LE 0.52 sig, PE 0.06 sig; median visible signal LE 10.0 sig, PE 1.1 sig
+   t=120: t/T2 14.8-14.9  A_LE 0.00828  A_PE 7.23e-05  max spread 0.106 (median 0.062)  visible spread LE 0.09 sig, PE 0.00 sig; median visible signal LE 0.5 sig, PE 0.0 sig
+  network_rotoravg T2 [9.77, 9.82] T3_LE [65, 66] T3_PE [39, 39]
+   t=40: t/T2 4.1-4.1  A_LE 0.838  A_PE 0.488  max spread 0.007 (median 0.004)  visible spread LE 0.62 sig, PE 0.36 sig; median visible signal LE 79.8 sig, PE 46.4 sig
+   t=80: t/T2 8.1-8.2  A_LE 0.301  A_PE 0.0565  max spread 0.039 (median 0.019)  visible spread LE 1.18 sig, PE 0.22 sig; median visible signal LE 22.7 sig, PE 4.3 sig
+   t=120: t/T2 12.2-12.3  A_LE 0.0376  A_PE 0.00156  max spread 0.106 (median 0.062)  visible spread LE 0.40 sig, PE 0.02 sig; median visible signal LE 2.0 sig, PE 0.1 sig
+ spread 40 {'p19_b1': 0.0064, 'p19_b7': 0.0028, 'p19_b8': 0.0056, 'p19_b9': 0.0074, 'p245_b1': 0.0005, 'p245_b7': 0.003, 'p245_b8': 0.0011, 'p245_b9': 0.004}
+ spread 80 {'p19_b1': 0.039, 'p19_b7': 0.0107, 'p19_b8': 0.002, 'p19_b9': 0.0344, 'p245_b1': 0.0275, 'p245_b7': 0.0121, 'p245_b8': 0.0054, 'p245_b9': 0.0257}
+ spread 120 {'p19_b1': 0.0627, 'p19_b7': 0.1059, 'p19_b8': 0.0357, 'p19_b9': 0.0641, 'p245_b1': 0.0505, 'p245_b7': 0.0603, 'p245_b8': 0.0322, 'p245_b9': 0.0676}
+ forward-model error {'rotor_max_over_sigma_easy_t_lt_80': 7.107187348486921, 'rotor_max_over_sigma_hard_t_ge_80': 32.59514861656378, 'offsets_1kHz_easy': 5.443133232633068, 'offsets_1kHz_hard': 9.154224148636736, 'first_exceedance_us': 40.0, 'reversal_mismatch_15pct_hard': 22.58547445799827}
+cpu exact runs 216.7

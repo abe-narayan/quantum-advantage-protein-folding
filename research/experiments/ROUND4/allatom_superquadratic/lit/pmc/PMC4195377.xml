@@ -1,0 +1,354 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article article-type="rapid-communication" xml:lang="EN" dtd-version="1.4"><front><journal-meta><journal-id journal-id-type="nlm-ta">J Am Chem Soc</journal-id><journal-id journal-id-type="iso-abbrev">J. Am. Chem. Soc</journal-id><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-id journal-id-type="nlm-id">7503056</journal-id><journal-id journal-id-type="publisher-id">ja</journal-id><journal-title-group><journal-title>Journal of the American Chemical Society</journal-title></journal-title-group><issn pub-type="ppub">0002-7863</issn><issn pub-type="epub">1520-5126</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>ACS AuthorChoice</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC4195377</article-id><article-id pub-id-type="pmcid-ver">PMC4195377.1</article-id><article-id pub-id-type="pmcaid">4195377</article-id><article-id pub-id-type="pmcaiid">4195377</article-id><article-id pub-id-type="pmid">25255057</article-id><article-id pub-id-type="doi">10.1021/ja5032776</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group><subject>Communication</subject></subj-group></article-categories><title-group><article-title>Folding
+Simulations for Proteins with Diverse Topologies
+Are Accessible in Days with a Physics-Based Force Field and Implicit
+Solvent</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name name-style="western"><surname>Nguyen</surname><given-names initials="H">Hai</given-names></name><xref rid="aff1" ref-type="aff">†</xref><xref rid="aff1" ref-type="aff">‡</xref><xref rid="notes-1" ref-type="notes">#</xref></contrib><contrib contrib-type="author" id="ath2"><name name-style="western"><surname>Maier</surname><given-names initials="J">James</given-names></name><xref rid="aff1" ref-type="aff">‡</xref><xref rid="aff1" ref-type="aff">§</xref><xref rid="notes-1" ref-type="notes">#</xref></contrib><contrib contrib-type="author" id="ath3"><name name-style="western"><surname>Huang</surname><given-names initials="H">He</given-names></name><xref rid="aff1" ref-type="aff">†</xref><xref rid="aff1" ref-type="aff">‡</xref></contrib><contrib contrib-type="author" id="ath4"><name name-style="western"><surname>Perrone</surname><given-names initials="V">Victoria</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath5"><name name-style="western"><surname>Simmerling</surname><given-names initials="C">Carlos</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">†</xref><xref rid="aff1" ref-type="aff">‡</xref><xref rid="aff1" ref-type="aff">§</xref></contrib><aff id="aff1"><sup>†</sup>Department of Chemistry, <sup>‡</sup>Laufer Center for
+Physical and Quantitative Biology and <sup>§</sup>Graduate Program
+in Biochemistry and Structural Biology, <institution>Stony Brook University</institution>, Stony
+Brook, New York 11794-5252, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><email>carlos.simmerling@stonybrook.edu</email></corresp></author-notes><pub-date pub-type="epub"><day>16</day><month>09</month><year>2014</year></pub-date><pub-date pub-type="ppub"><day>08</day><month>10</month><year>2014</year></pub-date><volume>136</volume><issue>40</issue><issue-id pub-id-type="pmc-issue-id">243651</issue-id><fpage>13959</fpage><lpage>13962</lpage><history><date date-type="received"><day>01</day><month>04</month><year>2014</year></date></history><pub-history><event event-type="pmc-release"><date><day>16</day><month>09</month><year>2015</year></date></event><event event-type="pmc-live"><date><day>16</day><month>09</month><year>2015</year></date></event><event event-type="pmc-released-under-embargo"><date><day>11</day><month>08</month><year>2015</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-07-04 23:25:19.130"><day>04</day><month>07</month><year>2024</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2014 American Chemical
+Society</copyright-statement><copyright-year>2014</copyright-year><copyright-holder>American Chemical
+Society</copyright-holder><license><license-p><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">Terms of Use</ext-link></license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="ja5032776.pdf"/><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ab-tgr1" position="float" orientation="portrait" xlink:href="ja-2014-032776_0002.jpg"/></p><p>The millisecond time scale needed
+for molecular dynamics simulations
+to approach the quantitative study of protein folding is not yet routine.
+One approach to extend the simulation time scale is to perform long
+simulations on specialized and expensive supercomputers such as Anton.
+Ideally, however, folding simulations would be more economical while
+retaining reasonable accuracy, and provide feedback on structure,
+stability and function rapidly enough if partnered directly with experiment.
+Approaches to this problem typically involve varied compromises between
+accuracy, precision, and cost; the goal here is to address whether
+simple implicit solvent models have become sufficiently accurate for
+their weaknesses to be offset by their ability to rapidly provide
+much more precise conformational data as compared to explicit solvent.
+We demonstrate that our recently developed physics-based model performs
+well on this challenge, enabling accurate all-atom simulated folding
+for 16 of 17 proteins with a variety of sizes, secondary structure,
+and topologies. The simulations were carried out using the Amber software
+on inexpensive GPUs, providing ∼1 μs/day per GPU, and
+&gt;2.5 ms data presented here. We also show that native conformations
+are preferred over misfolded structures for 14 of the 17 proteins.
+For the other 3, misfolded structures are thermodynamically preferred,
+suggesting opportunities for further improvement.</p></abstract><funding-group><funding-statement><funding-source>National Institutes of Health, United States</funding-source></funding-statement></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ja5032776</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ja-2014-032776</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><p id="sec1">Proteins typically function
+properly only after folding into a specific three-dimensional structure.
+Experimental techniques can very accurately determine folded structures,
+as evidenced by greater than 90 000 structures available in
+the protein data bank.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> However, this remains
+a small subset of the number of known sequences.<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> Moreover, folding is a dynamic process, involving transitions
+among many unfolded states.<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref4">4</xref></sup> Insight to the factors
+controlling the folding landscape is crucial to designing proteins
+with new or enhanced functionality, determining the structures of
+proteins not yet characterized experimentally, or understanding detrimental
+effects of protein misfolding and aggregation.</p><p>Atomistic simulation
+models could potentially elucidate folding
+with full spatial, temporal and energetic resolution, but millisecond-scale
+simulation is far from routine.<sup><xref ref-type="bibr" rid="ref5">5</xref></sup> One way
+around the time scale problem is approaches like Rosetta, where a
+combination of empirical and physical rules aids in the prediction
+of the final native coordinates.<sup><xref ref-type="bibr" rid="ref6">6</xref></sup> Limited
+experimental data can also be used to focus the search.<sup><xref ref-type="bibr" rid="ref7">7</xref>,<xref ref-type="bibr" rid="ref8">8</xref></sup> The structural optimization approach, however, does not provide
+physical details about the folding process, and may be less useful
+for misfolded, disordered, or dynamic proteins where physics-based
+approaches may be more successful. Folding@Home uses distributed computing
+to harvest numerous but relatively short simulations, which can be
+assembled into models describing folding.<sup><xref ref-type="bibr" rid="ref9">9</xref></sup> Recently, Shaw and colleagues used the specialized Anton supercomputer<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> to fold 12 proteins.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> This brute-force calculation spanning ∼8 ms remains state
+of the art.</p><p>Is there a way to simulate protein folding dynamics
+in atomic resolution
+using inexpensive computer hardware that would make these protocols
+more widely accessible? Implicit solvent models can dramatically accelerate
+folding due to lower viscosity that facilitates chain diffusion.<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> Pairwise variants of the generalized Born (GB)
+model<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> perform particularly well on inexpensive
+GPUs,<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> leveraging a vast consumer video
+game market to make folding simulations more widely accessible. However,
+many fast GB models are inaccurate,<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> often
+with incorrect secondary structures preferences and ion pair strength,
+thus succeeding in anecdotal cases but lacking broad transferability.
+GBMV2<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> is arguably the most accurate GB
+model, but at a cost of reduced speed. The best performing combination
+of implicit solvent and protein force field can result from fortuitous
+cancellation of error in models that have significant but sometimes
+compensating weaknesses.<sup><xref ref-type="bibr" rid="ref17">17</xref></sup></p><p>Recently,
+we reported development of a new fast pairwise GB model
+that was trained to reproduce more accurate Poisson–Boltzmann
+solvation across a broad range of peptide and protein systems.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Here, we combine it with our widely used ff99SB
+protein force field,<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> along with our recently
+updated protein side chain parameters.<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> The solvent and protein energetics were trained for independent
+accuracy, in an attempt to avoid cancellation of error and improve
+transferability. In this report, we demonstrate that this new physics-based
+combined model is an attractive trade-off, enabling accurate folding
+for all but 1 of a set of 17 proteins ranging from 10 to 92 amino
+acids. </p><p>We address two key issues in detail: the sampling problem
+(whether
+simulations can fold to the correct structure) and the accuracy problem
+(whether the preferred structure in the simulated ensemble is native-like).
+An additional aspect of simulated folding is whether the overall nature
+of the energy landscape is accurately modeled (e.g., can the model
+reproduce experimental measurements of protein stability or folding
+cooperativity). While desirable, such studies are beyond the focus
+of this report.</p><p><italic toggle="yes">Peptides and proteins studied</italic>. A total of 17 systems
+were simulated (<xref rid="notes-3" ref-type="notes">Supporting Information, Table
+S1</xref>), including 12 studied by Shaw and colleagues:<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> CLN025, Trp-cage, BBA, villin HP36, WW domain
+GTT, NTL9<sub>39</sub>, BBL, protein B, homeodomain 2P6J, the NuG2
+variant of protein G, α3D, and λ-repressor. We added a
+second WW domain (Fip35), and several larger systems: NTL9<sub>52</sub>, cold shock protein A (CspA), hypothetical protein 1WHZ, and Top7.
+Unless otherwise noted, RMSD values are for Cα atoms in regions
+well-defined in structures based on experiments, as are fraction of
+native contacts (<italic toggle="yes">Q</italic>).</p><p><italic toggle="yes">Simulation details</italic>. All MD simulations used the
+GPU implementation<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> of pmemd in AMBER14<sup><xref ref-type="bibr" rid="ref21">21</xref></sup> with the combination of GB-Neck2,<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> mbondi3 intrinsic radii,<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> and ff14SBonlysc, which includes ff99SB<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> with new side chain dihedral parameters from ff14SB.<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> We did not use the backbone dihedral modifications
+from ff14SB, since they are empirical adjustments aimed at improving
+agreement between experiment and simulations in explicit water. The
+protocol delivered 0.6 to 1.4 μs/day (<xref rid="notes-3" ref-type="notes">Table
+S2</xref>). Additional details are provided as <xref rid="notes-3" ref-type="notes">Supporting Information</xref>.</p><p>Our goal in this study is to
+investigate feasibility of simulating
+all-atom folding for a variety of proteins with a single force field
+and solvent model combination, using widely available computer hardware
+and software. Systems range from short peptides to proteins of nearly
+100 amino acids, with topologies including all α-helix, all
+β-sheet, and combinations. Experimental folding times vary from
+microseconds to seconds (<xref rid="notes-3" ref-type="notes">Table S2</xref>). </p><p>We first performed a baseline study on native state dynamics of
+2 proteins, <bold>CspA</bold> and <bold>lysozyme</bold>, and compared
+backbone order parameters from the resulting simulations to those
+obtained from experiment as well as from simulation with explicit
+water (<xref rid="notes-3" ref-type="notes">Figure S1</xref>). We obtained excellent
+quantitative agreement (0.05 and 0.02 RMSD to experimental and TIP3P <italic toggle="yes">S</italic><sup>2</sup> for <bold>CspA</bold>, and 0.02 RMSD to both
+experimental and TIP3P <italic toggle="yes">S</italic><sup>2</sup> for <bold>lysozyme</bold>), suggesting that more challenging tests were warranted.</p><p>We
+separate our analysis of protein folding below along two general
+goals. First, we address sampling: despite the limitations of the
+implicit solvent model, can standard MD simulations properly fold
+to the correct experimentally determined structure when starting from
+a fully extended conformation? Second, we address accuracy: is the
+experimental structure also the most favorable in our model? The latter
+goal is significantly more challenging; the physics must be accurate
+enough to reproduce the correct global free energy minimum for a variety
+of topologies and secondary structure combinations, and the populations
+of the minima must be well converged in order to make precise predictions.
+For several of the larger systems studied here, convergence was not
+readily achieved in standard MD, and thus we used replica exchange
+(REMD<sup><xref ref-type="bibr" rid="ref22">22</xref></sup>). The ability to use REMD supports
+our premise that in some cases disadvantages of implicit solvent can
+be offset by significant advantages; although ∼1 μs REMD
+in explicit water for proteins up to ∼40 amino acids has been
+reported (for example, see ref (<xref ref-type="bibr" rid="ref23">23</xref>)), it currently remains computationally intractable for
+proteins of the size studied here, especially with solvent box sizes
+large enough to enclose unfolded conformations.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup></p><p><italic toggle="yes">Can simulations fold to native conformations?</italic> Simulations
+starting in extended conformations were able to locate structures
+in excellent agreement with experiment for 16 of the 17 systems (<xref rid="notes-3" ref-type="notes">Table S2</xref>). All of the proteins smaller than 50
+amino acids fold well in standard MD on this time scale, reaching
+Cα RMSD values below 2 Å, except <bold>BBL</bold> which
+reaches 3.2 Å (all time series data are in the <xref rid="notes-3" ref-type="notes">Supporting Information</xref>). This includes systems with β-sheet
+(the hairpin <bold>CLN025</bold> and the 3-stranded sheets <bold>Fip35</bold> and <bold>GTT</bold>), α-helix (<bold>tc5b</bold>, <bold>HP36</bold>, and <bold>protein B</bold>) and mixed α/β (<bold>BBA</bold> and <bold>NTL9</bold><sub>39</sub>). In REMD, these systems all
+fold to &lt;2.1 Å Cα RMSD and contact fractions <italic toggle="yes">Q</italic> &gt; 0.9, with minimum RMSD values often below 1 Å.
+While it is beyond the scope of this work to fully analyze side chain
+packing accuracy, the heavy atom RMSD of the <bold>Fip35</bold> conformation
+with the lowest Cα RMSD is 1.8 Å, while that of <bold>NTL9</bold><sub>39</sub> is 1.0 Å, suggesting that highly accurate folding
+is achievable with our protocol.</p><p>The larger proteins (50–92
+amino acids) tend to become kinetically
+trapped in standard MD on the microsecond time scale, with only the
+entirely α-helical proteins <bold>homeodomain</bold> (1.9 Å), <bold>α3D</bold> (2.5
+Å), and <bold>λ-repressor</bold> (4.4 Å) finding native-like
+conformations. The enhanced sampling in REMD provides notable benefit,
+with 16 of the 17 proteins now folding to structures with RMSD under
+3 Å (Figure <xref rid="fig1" ref-type="fig">1</xref>). Only the <bold>NuG2</bold> variant was unable to sample the correct conformation; the minimum
+RMSD is 4.8 Å and the maximum <italic toggle="yes">Q</italic> is ∼0.6
+(<xref rid="notes-3" ref-type="notes">Figures S51–S54</xref>). Here, folding
+successfully occurs for the region including the first hairpin and
+helix, but the second hairpin has not yet formed. <bold>NuG2</bold> simulations initiated from the experimental structure underwent
+unfolding to ∼10 Å RMSD, followed by refolding to an accurate
+native state (&lt;1.0 Å RMSD, <xref rid="notes-3" ref-type="notes">Figure S51</xref>).</p><p>One advantage of simulating folding is that it is possible
+to analyze
+folding pathway(s). Direct comparison to kinetics experiments is precluded
+by our use of low viscosity to enhance sampling. Instead, we consider
+the relative flux through folding pathways, presenting one example
+since a comprehensive analysis is beyond the scope of the present
+manuscript. We analyzed which of the 2 hairpins in <bold>Fip35</bold> folded first in 12 folding events seen in MD from the extended structure
+(<xref rid="notes-3" ref-type="notes">Figure S20</xref>). The 4:1 ratio for hairpin
+1 folding first is in excellent agreement with the 4:1 ratio reported
+for explicit solvent simulations of the same system.<sup><xref ref-type="bibr" rid="ref25">25</xref></sup></p><p><italic toggle="yes">Does the model show the correct structure
+preferences?</italic> Next, we address the more challenging issue
+of accuracy, and whether
+our model could predict a qualitatively reasonable structure if it
+were not already known, by comparing the experimental structure to
+the most populated simulation cluster. For 10 of 17 systems, multiple
+(&gt;3) folding and unfolding events were observed in the standard
+MD
+runs; however, the larger proteins remained poorly converged even
+on the microsecond time scale. We therefore use the REMD ensembles
+to obtain qualitative estimates of the preferred conformations for
+each protein. The cluster with the largest population was in good
+agreement with conformations based on experiment for roughly half
+(8 of 17) of the proteins studied (RMSD values are provided in <xref rid="notes-3" ref-type="notes">Table S2</xref>, with structures shown in <xref rid="notes-3" ref-type="notes">Figure S2</xref>). Once again, performance tended to
+be better for proteins under 50 amino acids, with <bold>CLN025</bold>, <bold>Trp-cage</bold>, <bold>Fip35</bold>, <bold>GTT</bold>,<bold> HP36</bold>, and <bold>NTL9</bold><sub>39</sub> all preferring the
+correct structure, with representative structure RMSD values of 0.6–2.3
+Å. For <bold>protein B</bold>, the representative structure has
+an RMSD value of 4.2 Å: properly folded but with a slight rotation
+of the middle helix relative to the core. In the case of <bold>BBA</bold>, the native zinc finger fold is present in the ensemble, but with
+lower population than the preferred alternate structure with RMSD
+of 4.6 Å, in which the hairpin and helix are both still present,
+but with somewhat longer hairpin and shorter helix. Although <bold>NTL9</bold><sub>52</sub> folds properly in the simulations, the 6.0
+Å RMSD for the most populated cluster reflects an otherwise properly
+folded structure with an alternate conformation of the loop connecting
+β-strands 1 and 2. Neglecting this loop, the RMSD of the largest
+cluster becomes a more reasonable 4.2 Å (<xref rid="notes-3" ref-type="notes">Figure S46</xref>). The only protein under 50 amino acids that prefers
+an incorrect fold is <bold>BBL</bold>, which locates the correct fold
+from extended structures, but favors a conformation with 8.3 Å
+RMSD in which the region connecting the N- and C-terminal helices
+becomes disordered. However, the second and third most populated clusters
+have more reasonable RMSD values of 4.3 and 4.8 Å. Lindorff-Larsen
+et al.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> estimated a very low melting temperature
+in <bold>BBL</bold> simulations (270 ± 10 K), suggesting that <bold>BBL</bold> also challenges MD with explicit water. For the other
+seven proteins &gt;50 amino acids, only <bold>homeodomain</bold> and <bold>α3D</bold> have most populated clusters (23% and 33%, respectively)
+that are close to the experimental fold (3.2 and 4.0 Å, respectively).
+The second most populated cluster of <bold>homeodomain</bold> (8%)
+is even closer to experiment (2.3 Å). For both systems, differences
+are predominantly in the surface loops; RMSDs for the 3 helices are
+2.5 Å for <bold>homeodomain</bold> and 2.1 Å for <bold>α3D</bold>.</p><fig id="fig1" position="float" orientation="portrait"><label>Figure 1</label><caption><p>Comparison of structures based (red) on experiment and (blue) lowest
+RMSD in simulations started from extended conformations. Under each
+structure is shown the protein name, chain length, and Cα RMSD
+value (gray regions were poorly defined by experiment and are excluded,
+see text for details).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr1" position="float" orientation="portrait" xlink:href="ja-2014-032776_0001.jpg"/></fig><p>As discussed above, the <bold>NuG2</bold> variant was the
+only
+system that never sampled the native conformation, thus the cluster
+populations cannot report on whether the correct structure would be
+preferred if folding had occurred. To explore this further, we carried
+out an additional ∼40 ns “seeded” REMD simulation
+continuing from the end of the previous one, but adding two equilibrated
+native structures at two new temperatures in the middle of the previous
+temperature ladder (see <xref rid="notes-3" ref-type="notes">Supporting Information</xref>). Our expectation was that the REMD exchanges would sort the more
+favorable structures at the lower temperatures. The simulations showed
+a strong preference for the native fold over the other structures,
+moving both low RMSD structures to low temperatures (<xref rid="notes-3" ref-type="notes">Figure S55</xref>). We next competed six native and six misfolded
+structures from the initial REMD run. The native structures were again
+strongly preferred at low temperature (<xref rid="notes-3" ref-type="notes">Figure
+S56</xref>), suggesting that our model correctly identifies the <bold>NuG2</bold> native fold, and misfolding represents a sampling failure.</p><p>The other four systems for which the largest cluster in REMD was
+non-native (RMSDs of 10–12 Å) were <bold>CspA</bold>, <bold>1WHZ</bold>,<bold> λ-repressor</bold>, and <bold>Top7</bold>. In each case, examination of RMSD history for each of the replicas
+in REMD showed that only a few replicas properly folded, and likewise,
+only a few misfolded. The data suggest that even though the structures
+are reproducibly sampled, REMD remains unreliable for distinguishing
+the relative stability of these alternate conformations. We again
+turned to a seeded REMD approach for gaining additional insight into
+the conformational preferences of our model. In each case, native-like
+structures were alternated in the temperature ladder with representative
+structures from misfolded clusters with large populations (<xref rid="notes-3" ref-type="notes">Figures S61, S68, S77, S86</xref>). The results suggest
+that, among the four proteins with unconverged ensembles, our model
+can accurately identify the native conformation for <bold>CspA</bold> and <bold>Top7</bold>. For <bold>CspA</bold>, only two replicas
+misfolded in REMD, and two others located a near-native fold, suggesting
+poor population convergence even after ∼30 μs of REMD,
+which is perhaps not surprising given the experimental folding rate
+of ∼5 ms.<sup><xref ref-type="bibr" rid="ref26">26</xref></sup> REMD seeded with native,
+near-native, and misfolded structures showed a strong preference for
+the native structure at the lowest temperatures. <bold>Top7</bold> showed similar behavior, with the highest population misfolded structure
+only being sampled by 1 REMD replica. Seeded REMD combining the misfolded
+and correctly folded structures showed a strong preference for the
+correct fold, moving all misfolded structures to higher temperatures.
+Interestingly, two of the <bold>Top7</bold> replicas that were initially
+misfolded underwent spontaneous refolding to the correct structure
+during this run. The results provide additional evidence that that
+our model prefers the native fold and that the variety of kinetic
+traps that the <bold>Top7</bold> simulations encountered was a result
+of the noncooperative, seconds-time scale folding experimentally observed
+for this system.<sup><xref ref-type="bibr" rid="ref27">27</xref></sup></p><p>In contrast to
+the other systems, the seeded REMD results suggest
+that the model fails to accurately recognize the native conformation
+of <bold>λ-repressor</bold> and <bold>1WHZ</bold>, preferring
+misfolded over native structures at low temperature. <bold>λ-repressor</bold> shows transient folding to the native structure in REMD, but prefers
+a misfolded structure with the 5 α-helices largely present,
+but packed against the first helix in a clockwise fashion, rather
+than counterclockwise as seen in the native fold (<xref rid="notes-2" ref-type="notes">SI</xref> Figure S87). <bold>1WHZ</bold> also folds to the correct
+structure with a 3-stranded β-sheet and 3 helices, but the preferred
+structure replaces the first β-strand with a helix and the last
+two helices with two β-strands. Otherwise, the RMSDs of the
+first helix and N-terminus (residues 1 to 18) and the second and third
+β-strands (residues 28 to 44) are both 1.8 Å.</p><p>To
+summarize the analysis of our second goal (conformational preferences),
+all 11 proteins smaller than 55 amino acids were reasonably converged
+and all except BBL preferred the native fold, with some differences
+in loop regions. For the six larger proteins, only α3D appears
+well converged in the REMD runs, with the others all sampling multiple
+clusters and having populations that indicated the model favors non-native
+folds. We used a seeded REMD approach to evaluate the relative populations
+of native vs non-native folds, and found that NuG2, CspA, and Top7
+prefer native conformations, while the model prefers misfolded structures
+for λ-repressor and 1WHZ. Overall, the data suggest correct
+preference for the native fold in 14 of the 17 proteins that we studied
+(<xref rid="notes-3" ref-type="notes">Figure S2</xref>).</p><p>We presented ab initio
+folding for a set of 17 proteins, ranging
+from 10 to 92 amino acids, with different topologies and secondary
+structure content. We used an efficient implicit solvent model<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> combined with an accurate protein force field,
+using the Amber software running on GPUs. This largely solves the
+sampling aspect of folding proteins of this size; we demonstrated
+that folding to the correct structure is achievable for all but 1
+of the systems that we studied, within run times of several days to
+weeks. For the larger proteins where convergence was inadequate, we
+used REMD to evaluate the extent to which our model could correctly
+predict preference of native over misfolded structures; such analysis
+remains highly challenging in explicit water. Despite being able to
+fold to correct structures, some of the systems showed stronger preference
+for alternate, non-native structures, ranging from misfolded loops
+to incorrect topologies. In many of the systems, overall thermal stability
+also seems too weak in our model, which could be improved with more
+accurate treatment of nonpolar solvation contributions. Future detailed
+analysis of possible trends in misfolding, quantitative relative stabilities
+of the alternate basins, along with application to a larger range
+of systems, could provide crucial insight into the limitations in
+accuracy of our models and possible routes for further improvement.</p></body><back><notes id="notes-3" notes-type="si"><title>Supporting Information Available</title><p>Detailed methods, tables with
+system details, additional figures, RMSD values, REMD temperatures,
+cluster populations, plots of RMSD vs time, <italic toggle="yes">Q</italic> vs
+time, RMSD histograms, seeded REMD details, structural analysis, and
+Fip35 folding paths. This material is available free of charge via
+the Internet at <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org">http://pubs.acs.org</uri>.</p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ja5032776_si_001.pdf" position="float" orientation="portrait"><caption><p>ja5032776_si_001.pdf</p></caption></media></supplementary-material></sec><notes id="notes-1"><title>Author Contributions</title><p><sup>#</sup> H.N. and J.M. contributed equally.</p></notes><notes id="notes-2" notes-type="conflict-of-interest"><p>The authors
+declare no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The authors acknowledge funding from the NIH (GM098102 and
+GM107104) ) and support from Henry and Marsha Laufer. This work is
+also supported by an NSF Petascale Computational Resource (PRAC) Award
+from the National Science Foundation (OCI-1036208).</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="computer-program" id="cit1"><source>RCSB Protein Data Bank</source>; <publisher-name>RCSB</publisher-name>: <publisher-loc>Piscataway, NJ</publisher-loc>, <year>2014</year>; Vol. <volume>2014</volume>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name name-style="western"><surname>Pruitt</surname><given-names>K. D.</given-names></name>; <name name-style="western"><surname>Brown</surname><given-names>G. R.</given-names></name>; <name name-style="western"><surname>Hiatt</surname><given-names>S. M.</given-names></name>; <name name-style="western"><surname>Thibaud-Nissen</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Astashyn</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Ermolaeva</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Ostell</surname><given-names>J. M.</given-names></name>
+<source>Nucleic Acids Res.</source>
+<year>2014</year>, <volume>42</volume>, <fpage>D756</fpage>.<pub-id pub-id-type="pmid">24259432</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/nar/gkt1114</pub-id><pub-id pub-id-type="pmcid">PMC3965018</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name name-style="western"><surname>Ensign</surname><given-names>D. L.</given-names></name>; <name name-style="western"><surname>Pande</surname><given-names>V. S.</given-names></name>
+<source>Biophys. J.</source>
+<year>2009</year>, <volume>96</volume>, <fpage>L53</fpage>.<pub-id pub-id-type="pmid">19383445</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.bpj.2009.01.024</pub-id><pub-id pub-id-type="pmcid">PMC2718323</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name name-style="western"><surname>Dill</surname><given-names>K. A.</given-names></name>; <name name-style="western"><surname>MacCallum</surname><given-names>J. L.</given-names></name>
+<source>Science</source>
+<year>2012</year>, <volume>338</volume>, <fpage>1042</fpage>.<pub-id pub-id-type="pmid">23180855</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1219021</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name name-style="western"><surname>Piana</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Lindorff-Larsen</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Shaw</surname><given-names>D. E.</given-names></name>
+<source>Proc. Natl. Acad. Sci.
+U.S.A.</source>
+<year>2013</year>, <volume>110</volume>, <fpage>5915</fpage>.<pub-id pub-id-type="pmid">23503848</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1218321110</pub-id><pub-id pub-id-type="pmcid">PMC3625349</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name name-style="western"><surname>Simons</surname><given-names>K. T.</given-names></name>; <name name-style="western"><surname>Bonneau</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Ruczinski</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Baker</surname><given-names>D.</given-names></name>
+<source>Proteins–Struct.
+Funct.
+and Bioinf.</source>
+<year>1999</year>, <fpage>171</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/(sici)1097-0134(1999)37:3+&lt;171::aid-prot21&gt;3.3.co;2-q</pub-id><pub-id pub-id-type="pmid">10526365</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name name-style="western"><surname>MacCallum</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Perez</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Dill</surname><given-names>K. A.</given-names></name>
+<source>Biophys. J.</source>
+<year>2013</year>, <volume>104</volume>, <fpage>546a</fpage>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name name-style="western"><surname>Marks</surname><given-names>D. S.</given-names></name>; <name name-style="western"><surname>Hopf</surname><given-names>T. A.</given-names></name>; <name name-style="western"><surname>Sander</surname><given-names>C.</given-names></name>
+<source>Nat. Biotechnol.</source>
+<year>2012</year>, <volume>30</volume>, <fpage>1072</fpage>.<pub-id pub-id-type="pmid">23138306</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nbt.2419</pub-id><pub-id pub-id-type="pmcid">PMC4319528</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name name-style="western"><surname>Bonneau</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Tsai</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Ruczinski</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Chivian</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Rohl</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Strauss</surname><given-names>C. E. M.</given-names></name>; <name name-style="western"><surname>Baker</surname><given-names>D.</given-names></name>
+<source>Proteins–Struct. Funct. Genetics</source>
+<year>2001</year>, <fpage>119</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/prot.1170</pub-id><pub-id pub-id-type="pmid">11835488</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name name-style="western"><surname>Shaw</surname><given-names>D. E.</given-names></name>; <name name-style="western"><surname>Deneroff</surname><given-names>M. M.</given-names></name>; <name name-style="western"><surname>Dror</surname><given-names>R. O.</given-names></name>; <name name-style="western"><surname>Kuskin</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Larson</surname><given-names>R. H.</given-names></name>; <name name-style="western"><surname>Salmon</surname><given-names>J. K.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>S. C.</given-names></name>
+<source>Commun. ACM</source>
+<year>2008</year>, <volume>51</volume>, <fpage>91</fpage>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name name-style="western"><surname>Lindorff-Larsen</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Piana</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Dror</surname><given-names>R. O.</given-names></name>; <name name-style="western"><surname>Shaw</surname><given-names>D. E.</given-names></name>
+<source>Science</source>
+<year>2011</year>, <volume>334</volume>, <fpage>517</fpage>.<pub-id pub-id-type="pmid">22034434</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1208351</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name name-style="western"><surname>Zagrovic</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Pande</surname><given-names>V.</given-names></name>
+<source>J.
+Comput. Chem.</source>
+<year>2003</year>, <volume>24</volume>, <fpage>1432</fpage>.<pub-id pub-id-type="pmid">12868108</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jcc.10297</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name name-style="western"><surname>Hawkins</surname><given-names>G. D.</given-names></name>; <name name-style="western"><surname>Cramer</surname><given-names>C. J.</given-names></name>; <name name-style="western"><surname>Truhlar</surname><given-names>D. G.</given-names></name>
+<source>Chem. Phys. Lett.</source>
+<year>1995</year>, <volume>246</volume>, <fpage>122</fpage>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name name-style="western"><surname>Gotz</surname><given-names>A. W.</given-names></name>; <name name-style="western"><surname>Williamson</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Xu</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Poole</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Le Grand</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Walker</surname><given-names>R. C.</given-names></name>
+<source>J. Chem. Theory Comput.</source>
+<year>2012</year>, <volume>8</volume>, <fpage>1542</fpage>.<pub-id pub-id-type="pmid">22582031</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/ct200909j</pub-id><pub-id pub-id-type="pmcid">PMC3348677</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name name-style="western"><surname>Roe</surname><given-names>D. R.</given-names></name>; <name name-style="western"><surname>Okur</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Wickstrom</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Hornak</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Simmerling</surname><given-names>C.</given-names></name>
+<source>J. Phys. Chem. B</source>
+<year>2007</year>, <volume>111</volume>, <fpage>1846</fpage>.<pub-id pub-id-type="pmid">17256983</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/jp066831u</pub-id><pub-id pub-id-type="pmcid">PMC4810457</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name name-style="western"><surname>Lee</surname><given-names>M. S.</given-names></name>; <name name-style="western"><surname>Feig</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Salsbury</surname><given-names>F. R.</given-names></name>; <name name-style="western"><surname>Brooks</surname><given-names>C. L.</given-names></name>
+<source>J. Comput. Chem.</source>
+<year>2003</year>, <volume>24</volume>, <fpage>1348</fpage>.<pub-id pub-id-type="pmid">12827676</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jcc.10272</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name name-style="western"><surname>Shell</surname><given-names>M. S.</given-names></name>; <name name-style="western"><surname>Ritterson</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Dill</surname><given-names>K. A.</given-names></name>
+<source>J. Phys. Chem. B</source>
+<year>2008</year>, <volume>112</volume>, <fpage>6878</fpage>.<pub-id pub-id-type="pmid">18471007</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/jp800282x</pub-id><pub-id pub-id-type="pmcid">PMC2699260</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name name-style="western"><surname>Nguyen</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Roe</surname><given-names>D. R.</given-names></name>; <name name-style="western"><surname>Simmerling</surname><given-names>C.</given-names></name>
+<source>J. Chem. Theory Comput.</source>
+<year>2013</year>, <volume>9</volume>, <fpage>2020</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/ct3010485</pub-id><pub-id pub-id-type="pmcid">PMC4361090</pub-id><pub-id pub-id-type="pmid">25788871</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name name-style="western"><surname>Hornak</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Abel</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Okur</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Strockbine</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Roitberg</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Simmerling</surname><given-names>C.</given-names></name>
+<source>Proteins–Struct. Funct. Bioinf.</source>
+<year>2006</year>, <volume>65</volume>, <fpage>712</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/prot.21123</pub-id><pub-id pub-id-type="pmcid">PMC4805110</pub-id><pub-id pub-id-type="pmid">16981200</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="commun" id="cit20"><person-group person-group-type="allauthors"><name name-style="western"><surname>Maier</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Martinez</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Wickstrom</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Simmerling</surname><given-names>C.</given-names></name></person-group> Unpublished data.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="computer-program" id="cit21"><person-group><name name-style="western"><surname>Case</surname><given-names>D. A.</given-names></name>; <name name-style="western"><surname>Babin</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Berryman</surname><given-names>J. T.</given-names></name>; <name name-style="western"><surname>Betz</surname><given-names>R. M.</given-names></name>; <name name-style="western"><surname>Cai</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Cerutti</surname><given-names>D. S.</given-names></name>; <name name-style="western"><surname>Kollman</surname><given-names>P. A.</given-names></name></person-group>; <etal/><source> Amber14</source>; <publisher-name>University
+of California</publisher-name>: <publisher-loc>San Francisco, CA</publisher-loc>, <year>2014</year>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name name-style="western"><surname>Sugita</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Okamoto</surname><given-names>Y.</given-names></name>
+<source>Chem. Phys. Lett.</source>
+<year>1999</year>, <volume>314</volume>, <fpage>141</fpage>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name name-style="western"><surname>Rosenman</surname><given-names>D. J.</given-names></name>; <name name-style="western"><surname>Connors</surname><given-names>C. R.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>García</surname><given-names>A. E.</given-names></name>
+<source>J. Mol. Biol.</source>
+<year>2013</year>, <volume>425</volume>, <fpage>3338</fpage>.<pub-id pub-id-type="pmid">23811057</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jmb.2013.06.021</pub-id><pub-id pub-id-type="pmcid">PMC3780797</pub-id></mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name name-style="western"><surname>Okur</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Wickstrom</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Layten</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Geney</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Song</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Hornak</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Simmerling</surname><given-names>C.</given-names></name>
+<source>J. Chem. Theory Comput.</source>
+<year>2006</year>, <volume>2</volume>, <fpage>420</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/ct050196z</pub-id><pub-id pub-id-type="pmid">26626529</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name name-style="western"><surname>Lane</surname><given-names>T. J.</given-names></name>; <name name-style="western"><surname>Bowman</surname><given-names>G. R.</given-names></name>; <name name-style="western"><surname>Beauchamp</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Voelz</surname><given-names>V. A.</given-names></name>; <name name-style="western"><surname>Pande</surname><given-names>V. S.</given-names></name>
+<source>J. Am. Chem. Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>18413</fpage>.<pub-id pub-id-type="pmid">21988563</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/ja207470h</pub-id><pub-id pub-id-type="pmcid">PMC3227799</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name name-style="western"><surname>Reid</surname><given-names>K. L.</given-names></name>; <name name-style="western"><surname>Rodriguez</surname><given-names>H. M.</given-names></name>; <name name-style="western"><surname>Hillier</surname><given-names>B. J.</given-names></name>; <name name-style="western"><surname>Gregoret</surname><given-names>L. M.</given-names></name>
+<source>Protein Sci.</source>
+<year>1998</year>, <volume>7</volume>, <fpage>470</fpage>.<pub-id pub-id-type="pmid">9521124</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/pro.5560070228</pub-id><pub-id pub-id-type="pmcid">PMC2143919</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name name-style="western"><surname>Scalley-Kim</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Baker</surname><given-names>D.</given-names></name>
+<source>J.
+Mol. Biol.</source>
+<year>2004</year>, <volume>338</volume>, <fpage>573</fpage>.<pub-id pub-id-type="pmid">15081814</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jmb.2004.02.055</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

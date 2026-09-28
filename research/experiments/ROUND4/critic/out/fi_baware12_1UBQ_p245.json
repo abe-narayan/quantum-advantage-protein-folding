@@ -1,0 +1,163 @@
+{
+ "pdb": "1UBQ",
+ "probe": 245,
+ "variant": "baware12",
+ "N": 12,
+ "names": [
+  "H/ILE30",
+  "HB/ILE30",
+  "HG12/ILE30",
+  "HB3/LYS29",
+  "H/GLN31",
+  "H/LYS29",
+  "HA/ILE30",
+  "HA/LYS27",
+  "HA/LYS29",
+  "HB2/LYS29",
+  "HG3/LYS27",
+  "HG21/ILE30"
+ ],
+ "bs": [
+  1,
+  7,
+  8,
+  9
+ ],
+ "rotor_groups_in_cluster": [
+  [
+   "HG21/ILE30",
+   "HG22/ILE30",
+   "HG23/ILE30"
+  ]
+ ],
+ "columns": [
+  "radial_HB2/LYS29",
+  "radial_HA/LYS29",
+  "radial_HA/LYS27",
+  "rigid_res29",
+  "eps0",
+  "epsg_0"
+ ],
+ "col_kinds": [
+  "struct",
+  "struct",
+  "struct",
+  "struct",
+  "eps0",
+  "epsg"
+ ],
+ "echo_tmax_us": 160.0,
+ "extra": [
+  "HG3/LYS27",
+  "HG21/ILE30"
+ ],
+ "M2b_coverage_N10": {
+  "HB/ILE30": 0.3274969230797456,
+  "HA/LYS27": 0.13455418618162013,
+  "HA/LYS29": 0.5771712940932943,
+  "HB2/LYS29": 0.8910957794957094
+ },
+ "M2b_coverage": {
+  "HB/ILE30": 0.5381664439869734,
+  "HA/LYS27": 0.6222855686217912,
+  "HA/LYS29": 0.5775462865772756,
+  "HB2/LYS29": 0.8911445195160742
+ },
+ "missing_partners_N10": [
+  {
+   "b": 1,
+   "b_name": "HB/ILE30",
+   "j": 250,
+   "j_name": "HG21/ILE30",
+   "share": 0.19833931645530586
+  },
+  {
+   "b": 1,
+   "b_name": "HB/ILE30",
+   "j": 251,
+   "j_name": "HG22/ILE30",
+   "share": 0.1861575062989284
+  },
+  {
+   "b": 1,
+   "b_name": "HB/ILE30",
+   "j": 333,
+   "j_name": "HE21/GLN41",
+   "share": 0.07457670530656878
+  },
+  {
+   "b": 7,
+   "b_name": "HA/LYS27",
+   "j": 219,
+   "j_name": "HG3/LYS27",
+   "share": 0.48742663522669394
+  },
+  {
+   "b": 7,
+   "b_name": "HA/LYS27",
+   "j": 255,
+   "j_name": "HD13/ILE30",
+   "share": 0.06126093812270421
+  },
+  {
+   "b": 7,
+   "b_name": "HA/LYS27",
+   "j": 333,
+   "j_name": "HE21/GLN41",
+   "share": 0.05611615552436456
+  },
+  {
+   "b": 8,
+   "b_name": "HA/LYS29",
+   "j": 236,
+   "j_name": "HG2/LYS29",
+   "share": 0.15514698095318516
+  },
+  {
+   "b": 8,
+   "b_name": "HA/LYS29",
+   "j": 267,
+   "j_name": "HB3/ASP32",
+   "share": 0.09231416572376983
+  },
+  {
+   "b": 8,
+   "b_name": "HA/LYS29",
+   "j": 237,
+   "j_name": "HG3/LYS29",
+   "share": 0.03652913580523111
+  },
+  {
+   "b": 9,
+   "b_name": "HB2/LYS29",
+   "j": 236,
+   "j_name": "HG2/LYS29",
+   "share": 0.044529680210906954
+  },
+  {
+   "b": 9,
+   "b_name": "HB2/LYS29",
+   "j": 238,
+   "j_name": "HD2/LYS29",
+   "share": 0.030905601457899088
+  },
+  {
+   "b": 9,
+   "b_name": "HB2/LYS29",
+   "j": 132,
+   "j_name": "HD11/LEU15",
+   "share": 0.010790258665546951
+  }
+ ],
+ "cpu_s": 426.03125,
+ "done": [
+  "radial_HB2/LYS29",
+  "radial_HA/LYS29",
+  "radial_HA/LYS27",
+  "rigid_res29",
+  "eps0",
+  "epsg_0"
+ ],
+ "cpu_base_s": 31.5625,
+ "complete": true
+}

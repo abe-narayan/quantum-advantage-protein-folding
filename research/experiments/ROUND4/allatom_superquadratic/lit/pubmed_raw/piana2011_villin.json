@@ -1,0 +1,9 @@
+{
+ "key": "piana2011_villin",
+ "term": "How robust are protein folding simulations with respect to force field parameterization[Title]",
+ "pmids": [
+  "21539772"
+ ],
+ "text": "1. Biophys J. 2011 May 4;100(9):L47-9. doi: 10.1016/j.bpj.2011.03.051.\n\nHow robust are protein folding simulations with respect to force field \nparameterization?\n\nPiana S(1), Lindorff-Larsen K, Shaw DE.\n\nAuthor information:\n(1)D. E. Shaw Research, New York, New York, USA.\n\nErratum in\n    Biophys J. 2011 Aug 17;101(4):1015.\n\nMolecular dynamics simulations hold the promise of providing an atomic-level \ndescription of protein folding that cannot easily be obtained from experiments. \nHere, we examine the extent to which the molecular mechanics force field used in \nsuch simulations might influence the observed folding pathways. To that end, we \nperformed equilibrium simulations of a fast-folding variant of the villin \nheadpiece using four different force fields. In each simulation, we observed a \nlarge number of transitions between the unfolded and folded states, and in all \nfour cases, both the rate of folding and the structure of the native state were \nin good agreement with experiments. We found, however, that the folding \nmechanism and the properties of the unfolded state depend substantially on the \nchoice of force field. We thus conclude that although it is important to match a \nsingle, experimentally determined structure and folding rate, this does not \nensure that a given simulation will provide a unique and correct description of \nthe full free-energy surface and the mechanism of folding.\n\nCopyright \u00a9 2011 Biophysical Society. Published by Elsevier Inc. All rights \nreserved.\n\nDOI: 10.1016/j.bpj.2011.03.051\nPMCID: PMC3149239\nPMID: 21539772 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:44"
+}

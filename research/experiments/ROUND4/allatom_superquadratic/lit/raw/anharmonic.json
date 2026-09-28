@@ -1,0 +1,57 @@
+{
+ "key": "anharmonic",
+ "url": "https://export.arxiv.org/api/query?max_results=40&sortBy=relevance&search_query=%28abs%3Aanharmonic+AND+abs%3A%22classical%22+AND+abs%3Aoscillators+AND+abs%3Aquantum+AND+%28abs%3Aalgorithm+OR+abs%3Aspeedup%29%29+AND+submittedDate%3A%5B201901010000+TO+202612312359%5D",
+ "fetched": "2026-09-28T11:30:49",
+ "records": [
+  {
+   "id": "2608.03907v1",
+   "title": "A variational hybrid continuous-variable discrete-variable quantum algorithm for adiabatic nuclear dynamics",
+   "published": "2026-08-04",
+   "updated": "2026-08-04",
+   "authors": [
+    "Rami Gherib",
+    "Roya Radgohar",
+    "Anastasiia Pusenkova",
+    "Seyyed Mehdi Hosseini Jenab",
+    "Sara Turcotte",
+    "Dany Lachance-Quirion",
+    "Nicholas E. Frattini",
+    "Scott N. Genin"
+   ],
+   "abstract": "Gaussian wavepacket (GWP) methods are prevalent means of solving the nuclear time-dependent Schrodinger equation (TDSE) on classical computers. They consist of representing the nuclear wave function as a superposition of Gaussians. Here, we present a variational hybrid continuous-variable discrete-variable (CV-DV) algorithm for simulating adiabatic nuclear dynamics on qubit-oscillator quantum hardware. It encodes a superposition of frozen Gaussians (FGs) onto the qubit-oscillator register and evolves it according to the time-dependent variational principle (VP). We test two variants of the approach, one that evolves a single FG and another that evolves a superposition of FGs, on a set of prototypical 1D harmonic and anharmonic systems. We simulate the photoexcited state dynamics of SO2 using the single FG variant of the algorithm and compute its autocorrelation function on physical quantum hardware. For harmonic and Morse potentials, the variant evolving the superposition of FGs converges to the numerically exact solution as the number of Gaussians increases. In the case of the double-well potential, the algorithm simulates wavepacket bifurcation and recurrence correctly, and the ensuing irregular dynamics moderately well. Overall, this work establishes a pathway for simulating molecular dynamics on noisy intermediate-scale quantum devices.",
+   "journal_ref": "",
+   "primary": "physics.chem-ph"
+  },
+  {
+   "id": "2110.00968v2",
+   "title": "Coarse grained intermolecular interactions on quantum processors",
+   "published": "2021-10-03",
+   "updated": "2022-06-12",
+   "authors": [
+    "Lewis W. Anderson",
+    "Martin Kiffner",
+    "Panagiotis Kl. Barkoutsos",
+    "Ivano Tavernelli",
+    "Jason Crain",
+    "Dieter Jaksch"
+   ],
+   "abstract": "Variational quantum algorithms (VQAs) are increasingly being applied in simulations of strongly-bound (covalently bonded) systems using full molecular orbital basis representations. The application of quantum computers to the weakly-bound intermolecular and non-covalently bonded regime however has remained largely unexplored. In this work, we develop a coarse-grained representation of the electronic response that is ideally suited for determining the ground state of weakly interacting molecules using a VQA. We require qubit numbers that grow linearly with the number of molecules and derive scaling behaviour for the number of circuits and measurements required, which compare favourably to traditional variational quantum eigensolver methods. We demonstrate our method on IBM superconducting quantum processors and show its capability to resolve the dispersion energy as a function of separation for a pair of non-polar molecules - thereby establishing a means by which quantum computers can model Van der Waals interactions directly from zero-point quantum fluctuations. Within this coarse-grained approximation, we conclude that current-generation quantum hardware is capable of probing energies in this weakly bound but nevertheless chemically ubiquitous and biologically important regime. Finally, we perform experiments on simulated and real quantum computers for systems of three, four and five oscillators as well as oscillators with anharmonic onsite binding potentials; the consequences of the latter are unexamined in large systems using classical computational methods but can be incorporated here with low computational overhead.",
+   "journal_ref": "Phys. Rev. A 105, 062409 (2022)",
+   "primary": "quant-ph"
+  },
+  {
+   "id": "2303.04768v2",
+   "title": "R\u00e9nyi entropy of quantum anharmonic chain at non-zero temperature",
+   "published": "2023-03-08",
+   "updated": "2023-12-28",
+   "authors": [
+    "Miha Srdin\u0161ek",
+    "Michele Casula",
+    "Rodolphe Vuilleumier"
+   ],
+   "abstract": "The interplay of quantum and classical fluctuations in the vicinity of a quantum critical point (QCP) gives rise to various regimes or phases with distinct quantum character. In this work, we show that the R\u00e9nyi entropy is a precious tool to characterize the phase diagram of critical systems not only around the QCP but also away from it, thanks to its capability to detect the emergence of local order at finite temperature. For an efficient evaluation of the R\u00e9nyi entropy, we introduce a new algorithm based on a path integral Langevin dynamics combined with a previously proposed thermodynamic integration method built on regularized paths. We apply this framework to study the critical behavior of a linear chain of anharmonic oscillators, a particular realization of the $\u03c6^4$ model. We fully resolved its phase diagram, as a function of both temperature and interaction strength. At finite temperature, we find a sequence of three regimes - para, disordered and quasi long-range ordered -, met as the interaction is increased. The R\u00e9nyi entropy divergence coincides with the crossover between the para and disordered regime, which shows no temperature dependence. The occurrence of quasi long-range order, on the other hand, is temperature dependent. The two crossover lines merge in proximity of the QCP, at zero temperature, where the R\u00e9nyi entropy is sharply peaked. Via its subsystem-size scaling, we confirm that the transition belongs to the two-dimensional Ising universality class. This phenomenology is expected to happen in all $\u03c6^4$-like systems, as well as in the elusive water ice transition across phases VII, VIII and X.",
+   "journal_ref": "Phys. Rev. B 108, 245121 (2023)",
+   "primary": "cond-mat.stat-mech"
+  }
+ ]
+}

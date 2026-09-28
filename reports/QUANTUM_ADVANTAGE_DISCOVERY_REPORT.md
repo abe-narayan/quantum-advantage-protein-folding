@@ -1,12 +1,39 @@
 # Quantum Advantage Discovery Report: protein structure computation
 
-_quantum-advantage-protein-folding, discovery sprint of 2026-09-26/27. Every statement's evidence class is in `reports/QUANTUM_ADVANTAGE_CLAIM_AUDIT.md`. Pre-registrations and deviations are in `research/experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`. The fill-in markers `⟦…⟧` are replaced by final numbers in the last revision._
+_quantum-advantage-protein-folding, discovery sprint of 2026-09-26 to 2026-09-28 (four rounds: discovery attack, R1 attack, round 3, round 4). Every statement's evidence class is in `reports/QUANTUM_ADVANTAGE_CLAIM_AUDIT.md`. Pre-registrations and deviations are in `research/experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`. Round syntheses: `research/discovery/`, `research/experiments/ADVERSARIAL/R1_SYNTHESIS.md`, `research/experiments/ROUND3/SYNTHESIS.md`, `research/experiments/ROUND4/SYNTHESIS.md` (each with a completeness critic)._
 
 ---
 
 ## 1. Executive summary
 
-⟦EXEC-SUMMARY⟧
+**No quantum advantage for protein-structure computation survives in any regime this program examined** (claim categories 1–6; practical level L0 everywhere). The statement is scoped and falsifiable, not a theorem.
+
+**Scale of the search.**
+- Rounds and workflows:
+  - 28 discovery mechanisms, attacked from 3 independent lenses each;
+  - a 7-lens attack on the only lead with a measured classical failure (NMR echoes);
+  - round 3, with 9 lanes and ~30 new mechanisms;
+  - round 4, with 5 lanes, including a pro-quantum red team against the program's own kills.
+- Evidence types: exact simulations, pre-registered experiments on a leakage-screened 30–150-residue ladder, and derived fault-tolerant resource models.
+- Record: 20 new kills (K-101 to K-120), each with a reopen condition.
+
+**Why it fails: three classes, none leaving room for a quantum advantage** (INFERENCE from MEASURED and DERIVED parts):
+1. **Structure-bearing and classically easy.**
+   - Learned-energy structure prediction: native-free distance-geometry seeding reaches the best basins in a median of ~420 energy evaluations. Against that baseline, any quantum speedup exponent would need logical gates of ~3 ns or faster.
+   - Protein ¹H dipolar echoes inside the physical reversal window: computed classically to σ = 0.01 at 40 µs in minutes of CPU.
+2. **Possibly classically hard, but structurally uninformative.** Dense-spin echo dynamics beyond ~80 µs lies beyond the site-resolved reversal horizon. The profiled structural gain there stays below 2 even if the whole echo were quantum-only.
+3. **Classically expensive and structure-bearing, but no applicable quantum algorithm.** This is physics-based all-atom folding kinetics and ensembles.
+   - No super-quadratic algorithm has its preconditions met by a protein force field (Carleman R ≥ 4.3×10³, where R < 1 is needed).
+   - Quadratic routes cost ≥ 2.2 years per estimate even at 10 ns logical Toffolis.
+   - This is the only examined regime that a *new* s ≥ 3 algorithm could open. A hypothetical s = 4 would take 2.6 h–10 d at 10 ns.
+
+**Two orthogonal closures.**
+- **Quantum memory / quantum data** gives exactly 1× per structural parameter. This is a theorem for selective-polarisation ¹H states.
+- **Exact electronic structure** hits the QM/MM model floor before the solver floor (FeMoco E4 isomers stay WEAK, chemistry level only).
+
+**Strongest publishable claims:**
+- (a) the resource-normalised negative for learned-energy sampling and optimisation: a landscape-independent runtime floor, T3 costing, and the distance-geometry classical twin;
+- (b) protein ¹H OTOC(1) echoes are classically computable to σ where they are observable (40 µs; b-aware cluster families + spinDMFT; provisional pending replication) and not useful where they might be hard.
 
 ---
 
@@ -91,7 +118,9 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 | R1-E | bath embedding (exact N_env = 12/14; Gaussian-bath dephasing) | 2 probes |
 | Q-PoP | shot-based quantum echo circuit, depolarising noise, echo-normalisation mitigation | N = 10, 12 |
 | B-SYN | exact mechanism lab | 5 landscape families, n = 6–16 |
-| Theory checks | T1–T5 companion scripts | — |
+| Theory checks | T1–T6 companion scripts | — |
+| Round 3 | 9 lanes: QeMCMC exact gaps, DG classical twin, structured-speedup preconditions, exact echo reach, polynomial echo adversaries, DQ echo, 3 new-mechanism lenses; 6 verifiers + critic | `research/experiments/ROUND3/` |
+| Round 4 | T-X-early, spinDMFT, all-atom regime, pro-quantum red team, analog simulators; 6 verifiers + critic | `research/experiments/ROUND4/` |
 
 ## 10. Negative results
 
@@ -132,6 +161,22 @@ Ledger: `research/experiments/README.md`. All heavy jobs ran under the CPU/RAM g
 - **L = 100.** The median gain is ≈ 0.00 Å (mean +0.09), 0.00 MDE.
 - **Pre-registered kill** (median gain < 1.0 MDE at both lengths): **does not fire**, by a hair at L = 60. The transmission clause of H-006 therefore holds weakly at 60 aa and fails at 100 aa.
 - This is classical information about the value of posterior averaging. It cannot rescue the quantum route (K-101 is landscape- and transmission-independent).
+
+**N8. Round 3 (K-106 to K-116; `research/experiments/ROUND3/SYNTHESIS.md`).**
+- Quantum-enhanced MCMC: at most quadratic; gap ratio ≤ 12.7 vs ≥ 784 needed.
+- Any-exponent speedups on the learned energy: the DG portfolio makes it classically easy.
+- Structured super-quadratic families: preconditions absent (e.g. the DQI dual distance is 3).
+- Double-quantum echo; GBS contact sampling; methyl-rotor tunnelling; quantum SDP; six derivation-level mechanisms.
+- Quantum-memory learning: the gain is exactly 1 per parameter (theorem).
+- Active-site FT-QPE for structure: model-floor cap.
+- R1-SIM as a resource claim against exact F_N.
+
+**N9. Round 4 (K-117 to K-120; `research/experiments/ROUND4/SYNTHESIS.md`).**
+- All-atom force-field sampling: no applicable super-quadratic algorithm; T*_Q,2 ≥ 2.2 yr at 10 ns.
+- Analog dipolar simulators: 42–100σ outside the budget.
+- R1-SIM-early: the 40 µs echo is classically computable to σ (provisional).
+- The hybrid comparator was retired.
+- The red team found no false kill, but re-based K-105 (reversal horizon), K-109 (value vs measured reach) and K-111 (resolvability).
 
 **N7. G1 production (pre-registered confirmations).** MEASURED (governed production; pre-registered in PREREG G1/Q4):
 - **λ-path NRPT T-scan** (5 crops, T ∈ {1, 2, 4, 8}, HMC + pivots, 1500 s):
@@ -179,7 +224,16 @@ Only representations holding essentially the full operator space succeed, and ex
 - ρ(E, RMSD) over modes ≈ 0.31 at L = 120;
 - the A80 energy is piecewise smooth (0.05 Å table), which invalidates Laplace basin masses.
 
-**P4. R1-SIM (physics-simulation residue).** ⟦R1SIM⟧
+**P4. R1-SIM (physics-simulation residue).** R1-SIM (the physics residue: can the protein ¹H echo be computed classically?) was settled in rounds 3–4, in three parts.
+- **At 40 µs: classically computable to σ = 0.01 (K-119, provisional).**
+  - Two exact cluster families containing the butterfly site's partners (≤ 22 spins; 5 implementations, 3 code paths) agree to ≤ 0.0055 on 8/8 series.
+  - Thermodynamic estimators (spinDMFT-embedded, classical-spin-embedded) agree to ≤ 0.011.
+  - Cost: minutes of CPU.
+- **At 80–120 µs: open**, as a cluster-family problem (spin-off register).
+- **The round-3 hybrid comparator and all X-based criteria were retired (K-120).**
+- The earlier "N_σ = 16–20 spins" and "finite-cluster floor 3–8σ" claims were step-statistic artefacts and were withdrawn.
+
+Nothing here is a quantum advantage, and it never revives K-105.
 
 ## 12. Theoretical results
 
@@ -204,7 +258,19 @@ Only representations holding essentially the full operator space succeed, and ex
 
 ## 13. Scaling results
 
-⟦SCALING⟧
+- **Learned energy (MEASURED).**
+  - Random-multistart p_hit(best mode) falls 0.10 → 0.004 over L = 30 → 150, and NRPT makes 0 round trips at L ≥ 80.
+  - This is **not** classical hardness. It reflects a weak baseline plus fixed-depth relaxation: distance-geometry seeding reaches or beats the census-best basin on 14/16 crops at L = 150 in ~420 evaluations (replicated by two lanes).
+  - Generalised floor (DERIVED): T*_Q,s = K n_b G t_T · X^{1/(s−1)}. Against the DG portfolio, every exponent needs t_T ≲ 3 ns at L = 100–500.
+- **Quantum-enhanced MCMC on discretised learned-energy instances (MEASURED, n = 6–10).**
+  - The exponent ratio k_q/k_c is sub-quadratic to quadratic.
+  - The quantum/classical gap ratio is ≤ 12.7, against 784–2.3×10⁵ needed to break even.
+- **NMR echoes.**
+  - Sparse Pauli dynamics saturates the operator space (M* ≈ 4^N/4). The Pauli-string count is not a hardness metric at N ≤ 12, and exact simulation dominates it (MEASURED).
+  - The echo light cone: converged in cluster families that contain b's partners at 40 µs (≤ 22 spins). At 80–120 µs no classical family pair agrees within σ yet, a cluster-family problem (MEASURED).
+- **All-atom physics.**
+  - B*₂ ≥ 4×10¹¹ MD steps exceeds every enhanced-sampling twin cost (weighted ensemble NTL9 ~1.3×10¹¹ steps).
+  - A hypothetical s ≥ 3 would break even (DERIVED + LITERATURE-SUPPORTED).
 
 ## 14. Resource estimates
 
@@ -259,7 +325,7 @@ Only representations holding essentially the full operator space succeed, and ex
 
 ## 18. Remaining uncertainties
 
-- **R1-SIM:** whether the converged dense-network echo exceeds exact classical reach (⟦R1SIM-SHORT⟧).
+- **R1-SIM:** whether the converged dense-network echo exceeds exact classical reach (answered at 40 µs (classically computable, K-119, provisional pending replication R-1); open at 80–120 µs as idealised-model physics only).
 - **Protein Loschmidt-echo T3/T2:** no measurement is known. The feasibility kill uses model-solid values (INFERENCE). Fine et al. 2014 and Krojanski–Suter 2004/06 suggest the size-dependence of irreversibility is not settled.
 - **Learned-energy hardness:** whether the λ-path's classical difficulty is a barrier or ill-conditioning (0 round trips, uninformative at L ≥ 100). It does not affect the quantum verdict (K-101 is landscape-independent).
 - **Generality:** only one learned energy (A80/esmprior_v1), two small proteins for NMR, one orientation mostly. No membrane or large protein.
@@ -285,7 +351,7 @@ The best candidate that was examined is **quantum forward simulation of dipolar 
 | Learned-posterior sampling / optimisation | L2 same-chain (quadratic, walk steps), L3 with T3 costs; L0 vs best classical | L0 | D (resource-normalised) **negative** |
 | NMR transfer forward model | L0 | L0 | killed |
 | NMR echo forward model (R1) | L1 at most, in a narrow sense (measured failure of ≥ 9 compression families on a fixed unconverged model) | L0 | A (formulation; prior art O'Brien 2022) only |
-| R1-SIM | ⟦R1SIM-LEVEL⟧ | L0 | ⟦R1SIM-LADDER⟧ |
+| R1-SIM | L0 (no separation; 40 µs classically computable, 80–120 µs open physics) | L0 | none (C failed at 40 µs; analog simulators killed, K-118) |
 
 **Overall: no quantum advantage for protein structure computation is supported at any level above practical L0.** The strongest supported statements are rigorous negatives (categories 3 and 6, in negative form).
 
@@ -314,7 +380,82 @@ The best candidate that was examined is **quantum forward simulation of dipolar 
 
 ## 24. Final sprint decision (the 17 questions)
 
-⟦DECISION⟧
+1. **Most promising mechanisms.**
+   - Quantum forward simulation of protein ¹H dipolar echoes (OTOC(1)) was the only formulation with a measured classical-approximation failure.
+   - Hypothetically, an s ≥ 3 algorithm for all-atom Langevin dynamics. No such algorithm exists yet.
+2. **Killed.** All examined mechanisms:
+   - 28 discovery mechanisms;
+   - ~30 round-3 variants;
+   - 4 round-4 directions;
+   - K-101 to K-120.
+3. **Survived strong classical controls.** None as an advantage. Surviving *observations*:
+   - the echo resists every sub-exponential classical compression tried (≥ 10 families);
+   - the model-internal hybrid failure (L1, excluded from tallies).
+4. **Different from S29–S33.** The genuinely new directions are:
+   - quantum forward models of physical quantum data (non-diagonal, outside the T1 reduction);
+   - the any-exponent floor;
+   - the quantum-data theorem;
+   - the all-atom no-algorithm regime.
+
+   Sampling routes are new relative to S29–S33 but die by K-101/K-107.
+5. **Novel relative to the literature** (scope: arXiv API + the 448-paper bibliography):
+   - the landscape-independent T*_Q floor and its any-exponent generalisation;
+   - T3 costing of a learned pair-energy walk step;
+   - the cross-family σ-level classical computation of protein ¹H OTOC(1) at observable times;
+   - the transfer-compressible / echo-incompressible mechanism (T6).
+
+   The NMR idea itself is O'Brien et al. 2022.
+6. **Where the quantum algorithm enters.**
+   - Sampling routes: a coherent walk or Langevin step replacing the MCMC kernel.
+   - NMR routes: the forward model s(t; θ) inside geometry inference.
+7. **What classical computation it replaces.**
+   - HMC/NRPT/multistart (sampling), which the DG portfolio beats outright.
+   - Exact or approximate spin-dynamics simulation (NMR).
+8. **Why the same effect cannot simply be reproduced classically.**
+   - It can, wherever it is structurally informative: the DG portfolio, and b-aware exact clusters at 40 µs.
+   - Where classical reproduction is unresolved (the echo at ≥ 80 µs), the signal is beyond the site-resolved reversal horizon and structurally uninformative (g < 2).
+9. **Strongest evidence of advantage.**
+   - The echo is incompressible by every sub-exponential classical method tried.
+   - Its idealised-model Fisher information is 3–183× that of transfer.
+   - Neither survives exact classical simulation at observable times plus physical reversal limits.
+10. **Strongest evidence against advantage.** Where structure information exists the classical route is cheap and exact; where hardness might exist there is no usable signal or no algorithm. In detail:
+    - K-101/K-107 floors vs the measured ~420-evaluation DG portfolio;
+    - K-119 (40 µs echo classically computable);
+    - site-resolved reversal horizons (g < 2);
+    - K-117 (no applicable all-atom algorithm).
+11. **Does the effect scale?**
+    - Learned-energy "hardness" does not: it is a baseline artefact.
+    - The echo cone converges by ~22 spins at 40 µs and is unresolved at 80–120 µs.
+    - All-atom cost scales classically hard, but no quantum algorithm has s > 2.
+12. **Complete resource requirements.**
+    - Sampling: G(L) ≈ 3×10⁴·L² Toffolis per walk step; 10⁴–10⁵ logical, 10⁷–10⁸ physical qubits; T*_Q ≥ 0.26 yr per sample at 1 µs.
+    - NMR echo forward model: 10¹¹–10¹³ T per evaluation (hours, depth-limited).
+    - All-atom: T*_Q,2 ≥ 2.2 yr at 10 ns.
+    - FeMoco E4: ≥ 10.8 QPU-days per question.
+13. **Break-even regime.**
+    - Quadratic routes: t_T ≲ 12–100 ns (A80, most optimistic) or sub-ns for one-day samples.
+    - Any exponent against the DG portfolio: t_T ≲ 3 ns.
+    - All-atom: s ≥ 3 at 10 ns (T*_Q,4 = 2.6 h–10 d).
+    - NMR vs exact simulation: N_eff ≈ 30–47. At observable times the needed N is ≤ 22.
+14. **Nature of any advantage.**
+    - Empirical: none.
+    - Theoretical: only same-chain quadratic (L2/L3) and query-model statements.
+    - Sampling: none.
+    - Computational: none.
+    - Hardware: none.
+    - Fault-tolerant: negative estimates.
+    - End-to-end: none.
+15. **Unproven.**
+    - Whether an s ≥ 3 algorithm for chaotic force-field Langevin dynamics exists.
+    - Protein site-resolved T3/T2.
+    - The echo at 80–120 µs.
+    - Generality beyond one learned energy, two proteins and one field orientation.
+    - FeMoco E4 model floor.
+16. **Strongest publishable claim.** The resource-normalised negative (landscape-independent floor + T3 costing + DG classical twin + 28-mechanism map). Plus the NMR statement: protein ¹H OTOC(1) echoes are classically computable to σ at observable times (cross-family + spinDMFT) and structurally uninformative beyond the reversal horizon.
+17. **Most decisive next experiment.**
+    - Experimental: a measured site-resolved polarisation-echo T3/T2 in microcrystalline GB1 or ubiquitin.
+    - Theoretical: an s ≥ 3 quantum algorithm (or no-go) for chaotic multi-basin Langevin dynamics with a compiled force oracle.
+    - Computational confirmation: R-1 (replicate K-119 on 1PGA p390, 1UBQ p487 and more orientations; ~2 CPU-h).
 
 ## 25. Reproducibility commands
 

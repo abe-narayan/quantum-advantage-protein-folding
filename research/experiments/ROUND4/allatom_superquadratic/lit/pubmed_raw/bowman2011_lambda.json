@@ -1,0 +1,9 @@
+{
+ "key": "bowman2011_lambda",
+ "term": "Atomistic folding simulations of the five-helix bundle protein[Title]",
+ "pmids": [
+  "21174461"
+ ],
+ "text": "1. J Am Chem Soc. 2011 Feb 2;133(4):664-7. doi: 10.1021/ja106936n.\n\nAtomistic folding simulations of the five-helix bundle protein \u03bb(6\u221285).\n\nBowman GR(1), Voelz VA, Pande VS.\n\nAuthor information:\n(1)Department of Chemistry, Stanford University, Stanford, California 94305, \nUnited States.\n\nProtein folding is a classic grand challenge that is relevant to numerous human \ndiseases, such as protein misfolding diseases like Alzheimer\u2019s disease. Solving \nthe folding problem will ultimately require a combination of theory, simulation, \nand experiment, with theory and simulation providing an atomically detailed \npicture of both the thermodynamics and kinetics of folding and experimental \ntests grounding these models in reality. However, theory and simulation \ngenerally fall orders of magnitude short of biologically relevant time scales. \nHere we report significant progress toward closing this gap: an atomistic model \nof the folding of an 80-residue fragment of the \u03bb repressor protein with \nexplicit solvent that captures dynamics on a 10 milliseconds time scale. In \naddition, we provide a number of predictions that warrant further experimental \ninvestigation. For example, our model\u2019s native state is a kinetic hub, and \nbiexponential kinetics arises from the presence of many free-energy basins \nseparated by barriers of different heights rather than a single low barrier \nalong one reaction coordinate (the previously proposed incipient downhill \nfolding scenario).\n\nDOI: 10.1021/ja106936n\nPMCID: PMC3043158\nPMID: 21174461 [Indexed for MEDLINE]",
+ "fetched": "2026-09-28T11:35:35"
+}
