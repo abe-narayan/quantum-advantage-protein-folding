@@ -1,0 +1,2 @@
+{"name": "cone2_1UBQ_p19_N20", "cmd": "python scripts/nmr_cone.py --probe 19 --N 20", "ram_gb": 1.2, "threads": 1}
+{"name": "cone2_1UBQ_p245_N20", "cmd": "python scripts/nmr_cone.py --probe 245 --N 20", "ram_gb": 1.2, "threads": 1}

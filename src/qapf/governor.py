@@ -8,7 +8,8 @@ Mechanics
 * A job is launched only if (projected RAM after launch) <= RAM_LAUNCH_CAP and the recent CPU mean leaves room.
 * Every SAMPLE_S seconds:
     - RAM > RAM_SUSPEND  -> suspend the youngest running job (psutil suspend) and stop launching;
-    - RAM > RAM_KILL     -> terminate the youngest running job and requeue it (at most MAX_REQUEUE times);
+    - RAM > RAM_KILL     -> suspend every active job (progress is kept);
+    - RAM > RAM_HARD for 5 consecutive samples -> terminate the youngest job and requeue it (jobs should checkpoint);
     - CPU (10 s mean) > CPU_SUSPEND -> suspend the youngest job; resumes when CPU < CPU_RESUME and RAM < RAM_RESUME.
 * Each job gets OMP/MKL/OPENBLAS/NUMEXPR threads = its "threads" field (default 1) so the total thread count is known.
 * Everything is logged to a JSONL log (one sample per line) so utilisation can be reported afterwards.
@@ -31,7 +32,8 @@ import psutil
 RAM_LAUNCH_CAP = 0.88     # projected fraction after launching a new job
 RAM_SUSPEND = 0.93
 RAM_RESUME = 0.88
-RAM_KILL = 0.95
+RAM_KILL = 0.95          # suspend ALL active jobs above this
+RAM_HARD = 0.985         # only a sustained excess above this terminates (youngest) a job
 CPU_LAUNCH_MAX = 0.80     # launch only if 10 s CPU mean below this
 CPU_SUSPEND = 0.93
 CPU_RESUME = 0.85
@@ -142,7 +144,7 @@ class Governor:
             c = json.load(open(f))
         except Exception:
             return
-        global CPU_LAUNCH_MAX, CPU_SUSPEND, CPU_RESUME, RAM_LAUNCH_CAP, RAM_SUSPEND, RAM_RESUME, RAM_KILL
+        global CPU_LAUNCH_MAX, CPU_SUSPEND, CPU_RESUME, RAM_LAUNCH_CAP, RAM_SUSPEND, RAM_RESUME, RAM_KILL, RAM_HARD
         self.max_workers = int(c.get("max_workers", self.max_workers))
         CPU_LAUNCH_MAX = float(c.get("cpu_launch_max", CPU_LAUNCH_MAX))
         CPU_SUSPEND = float(c.get("cpu_suspend", CPU_SUSPEND))
@@ -151,6 +153,7 @@ class Governor:
         RAM_SUSPEND = float(c.get("ram_suspend", RAM_SUSPEND))
         RAM_RESUME = float(c.get("ram_resume", RAM_RESUME))
         RAM_KILL = float(c.get("ram_kill", RAM_KILL))
+        RAM_HARD = float(c.get("ram_hard", RAM_HARD))
         self.paused = bool(c.get("pause", False))
 
     def step(self):
@@ -167,8 +170,14 @@ class Governor:
                 self._log(ev="exit", job=job.name, rc=rc, secs=round(time.time() - job.started, 1))
         active = [j for j in self.running if not j.suspended]
         suspended = [j for j in self.running if j.suspended]
-        # RAM emergencies
-        if st["ram_frac"] > RAM_KILL and self.running:
+        # RAM emergencies (policy 2026-09-28: never discard progress first -- suspend every active job at RAM_KILL;
+        # terminate (youngest, requeued; jobs checkpoint) only if RAM stays above RAM_HARD for 5 consecutive samples)
+        self._ram_hi = getattr(self, "_ram_hi", 0) + 1 if st["ram_frac"] > RAM_HARD else 0
+        if st["ram_frac"] > RAM_KILL and active and self._ram_hi < 5:
+            for j in active:
+                self._suspend(j)
+        elif self._ram_hi >= 5 and self.running:
+            self._ram_hi = 0
             victim = max(self.running, key=lambda j: j.started)
             self._kill(victim)
             self.running.remove(victim)

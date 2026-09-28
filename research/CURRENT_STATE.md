@@ -1,5 +1,33 @@
 # Current State
 
+_Last updated: 2026-09-28 ~06:30. **WAITING FOR USER GO-AHEAD.** The user is using the machine and said: run the pending jobs "after im finished when I tell you to". Nothing is running. This supersedes the entry below._
+
+## Pending, to run only when the user says so
+
+1. **R1-SIM N = 20 echo-convergence runs** (probes 19 and 245), staged in `research/results/RAW/master/spool_next.jsonl`. They use the new checkpointing script `scripts/nmr_cone.py` (validated bit-identical to the original; resumes after a kill).
+   - Twice lost: once to a governor RAM kill (~23:00), once to host memory reaping (~06:00).
+   - Start with: `python -m qapf.governor /dev/null --log research/results/RAW/master/governor.jsonl --max-workers 2 --spool research/results/RAW/master/spool_next.jsonl --forever --stop-file research/results/RAW/master/STOP` after checking RAM < 75%.
+   - Analyse with `python scripts/analyze_cone.py`.
+2. **User request: investigate quantum advantages suggested by the learned-energy sampling runs, and any other promising ones.** Use a Workflow (ultracode). Inputs:
+   - G1 production (λ-path NRPT with 0 round trips at L ≥ 80 for T = 1–8; p_hit ~ exp(−0.028 L), censored);
+   - transmission (+0.54 Å at L = 60, 1.01 MDE; ~0 at L = 100);
+   - temperature exchange (no cooperative barrier);
+   - K-101 (landscape-independent floor) as the constraint any revival must beat.
+3. **Then** fill the remaining report markers (EXEC-SUMMARY, DECISION, SCALING, R1SIM*), commit, and give the condensed final report.
+
+## Standing rule (user, 2026-09-28)
+
+Never lose computed results to memory pressure. Jobs checkpoint and resume. The governor now suspends all jobs above `ram_kill` and terminates only on sustained RAM > `ram_hard` (0.985).
+
+## Results status
+
+- All other queued experiments finished and were analysed (commit 933abde): transmission, G1 production (T-scan, census L = 120/150, 2048 census), temperature exchange, synthetic lab.
+- R1-SIM so far: echo converging at N = 16 → 18 (Δ ≤ 0.037 for p19, ≤ 0.057 for p245), formally INCONCLUSIVE; the hybrid classical-bath adversary fails (4–20 σ).
+
+---
+
+# Previous entry
+
 _Last updated: 2026-09-27, later the same day. **Discovery sprint RESUMED.** This supersedes the "PAUSED" entry below, which is kept for history._
 
 ## Status after resume and the adversarial review of R1
