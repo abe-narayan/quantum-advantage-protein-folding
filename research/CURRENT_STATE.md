@@ -144,3 +144,5 @@ If compute must be cut: C2/C3 at N = 12–16 (γ = 0) and the transmission test 
   - Scoop risk is high: arXiv:2605.22920 (verified) announces WDM linear response as ongoing work.
 - Slots 2-3 are deliberately left empty.
 - Next step, only on the user's go-ahead: pre-register K-C01a, a laptop-scale classical information test.
+
+- 2026-09-28 (late): research and publication plan for C01 written as a Claude Doc (private until shared): https://claude.ai/code/artifact/32195920-5170-4a1b-94bb-c50cd798e5bc. It covers the literature review, the precise problem, the quantum pipeline, resources, the kill gates, the roadmap, the paper sequence and how the result would be used. An independent reviewer found 15 issues; all were fixed.
