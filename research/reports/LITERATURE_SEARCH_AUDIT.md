@@ -6,6 +6,8 @@ This file records **how** the literature search was done: tools, queries, screen
 
 **Outcome.** The brief asked for exactly three problems. Selection (`lit_work/selection.md`) found only one that clears the bar, and only conditionally: **C01, correlated thermal S_ee(q,w) of partially degenerate warm dense matter at theta 0.25-0.5 for X-ray Thomson scattering (XRTS)**. Slots 2 and 3 were deliberately left empty. The two red-team reviews then narrowed C01 further (section 5.6).
 
+**Revision note (2026-09-28, round 2).** Sections 1-10 describe round 1 and are left as written. Section 11 adds the round-2 audit trail from the 7 round-2 notes (`round2_discovery_static_inside_wall.md`, `round2_discovery_short_time_dynamics_inside_wall.md`, `round2_prefilter.md`, `audit_N01_{novelty,classical,resources}.md`, `round2_selection.md`). Round-2 outcome: one candidate (N01) was audited and ranked `eligible = false`. **Slots 2 and 3 are still empty.** C01 still holds slot 1, conditionally, and was not re-audited in round 2.
+
 ---
 
 ## 1. Inputs and structure of the search
@@ -411,3 +413,213 @@ Every novelty category in this round is **scoped**. The standard form, taken fro
 - Pool, merge map and filters: `lit_work/pool_and_shortlist.md`.
 - Final ranking and gates: `lit_work/selection.md`.
 - Red-team revisions to the gates: `lit_work/redteam_C01_classical.md` section 7 and `lit_work/redteam_C01_priorart.md` "Required revisions".
+
+---
+
+## 11. Round 2 (added 2026-09-28)
+
+Everything in this section comes from the 7 round-2 notes in `research/reports/lit_work/`. As in sections 1-10, it records how the search was done and adds no findings. Where a claim is quoted, the note is named.
+
+### 11.1 Inputs and structure
+
+| Stage | File | Agent | New literature search? |
+|---|---|---|---|
+| Discovery lens A: static / ground / low-T thermal quantities inside a multi-family wall | `round2_discovery_static_inside_wall.md` | 1 lens agent | yes (32-entry query log) |
+| Discovery lens B: short-time (lifetime-limited / ultrafast) correlated dynamics inside the wall | `round2_discovery_short_time_dynamics_inside_wall.md` | 1 lens agent | yes (33-entry query log) |
+| Prefilter: sharpen the 6 round-1 reserves, the C14 redesign lane and the lens outputs | `round2_prefilter.md` | prefilter lead | **no** ("No new literature search was run"; one local lambda estimate and dimension counts) |
+| Deep audit of N01 (3 roles) | `audit_N01_{novelty,classical,resources}.md` | 3 auditors | yes (26, 17 and ~19 logged queries or fetches) |
+| Selection for slots 2-3 | `round2_selection.md` | selection lead | **no** ("No new literature searches or computations") |
+| Red team | none | none | **not run.** No `redteam_N01_*` file exists. Selection marked N01 `eligible = false`, so round 2 produced no finalist to red-team. |
+
+All round-2 searches were run on **2026-09-28**. Newest arXiv items seen: 2609.23615 (short-time lens), 2609.16483 and 2609.09422 (N01 audits). The novelty audit's rhombohedral-graphene listing covered roughly 2023-09 to 2026-09-25 (about 65 entries, 2 pages).
+
+### 11.2 Databases used, and their failures
+
+**Sources that returned data.**
+
+| Source | Used by | Notes |
+|---|---|---|
+| arXiv export API | static lens, N01 novelty, classical and resources audits | The main engine again. Boolean `abs:`/`all:`/`ti:`/`au:` queries, date-sorted where stated. The short-time lens could not use it (see failures). |
+| arxiv.org/search listing (HTML) | short-time lens (its main engine) | Keyword-literal. It carried the short-time lens after the API returned 429 or timed out. |
+| arXiv abs and HTML full-text pages | all 5 searching notes | Verification. HTML full text of 2608.12452 was read in targeted passes: 2 by the novelty audit, 3 prompts by the classical audit. |
+| arXiv PDF with local text extraction | static lens (2302.05531 Table VI via pypdf), resources audit (2302.05531 via pdftotext) | The resources audit found the table text garbled and quoted ranges only. |
+| Crossref | static lens (Ir17+, iron porphyrin, Mn4CaO5 DOIs), short-time lens (charge migration, TD-DMRG, XAS; DOI checks), N01 novelty (2 keyword queries, LL-mixing DOIs), N01 resources (1 keyword query) | Keyword relevance noisy ("noise; nothing new", short-time query 8). Main DOI verifier. |
+
+**Failures and limits (as recorded).**
+- **WebSearch unavailable.** The static lens and the classical audit both state that WebSearch was not used (budget exhausted). Every round-2 query went through WebFetch or local scripts. There was **no general web search in round 2**.
+- **OpenAlex: blocked for the whole round.** Every OpenAlex call returned HTTP 429. The static lens got Retry-After of about 78000 s (query 8) and stayed blocked. The short-time lens got 78498 s, the novelty audit 76291 s, and the resources audit 75294 s. No round-2 note used an OpenAlex result.
+- **Semantic Scholar: blocked.** HTTP 429 in the short-time lens (query 11). In the novelty audit, the citations endpoint for 2407.13770 also returned 429, through both WebFetch and curl.
+- **Consequence: no forward-citation (cited-by) sweep was possible in round 2.** Section 3.3's main defence against wording misses was unavailable. The novelty audit replaced it with arXiv abstract-term searches, an author search (`au:Regnault AND au:Bernevig`) and a key-phrase search (`"moire capacitor"`, which returned only 2608.12452). `round2_selection.md` repeats this limit.
+- **arXiv API.** The short-time lens records a timeout (query 2) and HTTP 429 (queries 5 and 9), and says the arXiv API was rate-limited "for this whole session". Its coverage is narrower than round 1 by its own statement. In the novelty audit, queries 11-12 hit broken OR grouping, returned irrelevant results, and were discarded. Query 13 (`abs:"Bloch orbitals" AND abs:"fault-tolerant"`) replaced them.
+- **Individual access failures.**
+  - The HTML full text of 2607.08710 returned 404 (classical Q16). Only the abstract was used.
+  - Several details of 2608.12452, 2504.20140, 2509.09275, 2512.01863 and 2608.00167 came from HTML extraction by a summarizing fetcher. The classical audit asks for PDF re-checks before any number is quoted.
+  - The 2512.01863 extraction contradicted itself: an NN energy above the single-band ED energy was described as "outperforming". It is marked [UNRELIABLE EXTRACTION].
+- **Indexing limits.** As in round 1, arXiv listing search is keyword-literal. The short-time lens recorded several zero-result listing queries ("L-edge multinuclear cluster spectra DMRG", "iron-sulfur L-edge X-ray absorption simulation", "charge migration ADC correlation"). Those zeros are weak evidence.
+
+### 11.3 Query families and representative queries
+
+Complete logs are in each note ("Query log" section). Representative queries are quoted below.
+
+**Lens A, static inside the wall (17 target families).**
+
+| Family | Representative queries |
+|---|---|
+| FT cost anchors, early-FT QPE | arXiv abs 2302.05531 (Table VI from PDF); API `abs:"early fault-tolerant" AND abs:"ground state energy" AND (resource|chemistry)` (9 hits); abs 2211.11973 (QCELS), 2011.03494 (THC) |
+| Contested periodic ground states | API `all:LiNiO2 AND (QMC | AFQMC | Jahn-Teller)` (9 hits) |
+| Multi-center TM spin-state disagreement | API `AFQMC AND (DMRG|NEVPT2|CASPT2) AND (iron|copper|manganese|cluster) AND spin` (0 hits); `abs:"auxiliary-field quantum Monte Carlo" AND abs:"spin gap"` (6); Crossref "iron porphyrin spin state auxiliary-field QMC coupled cluster"; `abs:"advantage tracker"` (2603.28648 only) |
+| HCI clock lines | API `all:"Ir17+" OR (highly charged AND level crossing AND 4f)`; `highly charged AND iridium AND (clock | alpha)` (0); Crossref "Identifying optical transitions Ir17+ highly charged" |
+| WDM static branch | API `hydrogen AND PIMC AND (density response | ITCF)` (10); `warm dense AND (pseudo-fermion | fictitious identical | sign problem) AND hydrogen` (4) |
+| Neutron-matter pairing | API `neutron matter AND pairing gap AND (Monte Carlo | neural | lattice)` (12) |
+| SMM relaxation | API `single-molecule magnet AND spin-phonon AND ab initio AND Raman` |
+| Moire / FCI band mixing (led to S-M1) | API `fractional Chern AND band mixing AND (MoTe2|pentalayer|rhombohedral)`; `(moire|fractional Chern|twisted bilayer) AND (quantum computer|phase estimation|fault-tolerant|quantum algorithm)` (25); `(neural network|DMRG|VMC) AND rhombohedral AND (fractional|anomalous Hall crystal)`; `MoTe2 AND continuum model AND fractional Chern AND parameters` |
+| nu = 5/2 LL mixing | API `5/2 AND Landau level mixing AND (anti-Pfaffian|PH-Pfaffian)` (6) |
+
+**Lens B, short-time dynamics (12 problems checked).**
+
+| Family | Representative queries |
+|---|---|
+| Classical short-time algorithms | arXiv abs 2210.11490; listing "Majorana propagation fermionic simulation" (2608.19448, 2511.02809, 2503.18939) |
+| Attosecond charge migration | API `abs:"charge migration" AND quantum computer/algorithm/qubit` (timeout); Crossref "charge migration quantum computer simulation attosecond", "TD-DMRG charge migration molecules"; listing "charge migration DMRG", "charge migration electron correlation benchmark", "attosecond \"quantum computer\"" |
+| Quantum core-level spectroscopy | abs 2405.11015, 2602.20270, 2505.08612, 2602.20234; listing "core-hole quantum algorithm spectroscopy" (2511.17985); Crossref "quantum algorithm core-level XAS fault-tolerant" |
+| Classical core-level solvers | listing "DMFT core-level photoemission nonlocal screening", "Hariki LDA+DMFT core-level spectroscopy"; abs 1908.05802, 2305.08184 |
+| Auger | listing "Auger quantum computer" (2603.12859; 2110.08925, 2501.03362) |
+| Lifetime widths | Crossref 10.1063/1.555595 (Krause & Oliver 1979) |
+
+**N01 audits.**
+
+| Role | Families | Representative queries |
+|---|---|---|
+| Novelty | FT/QPE costing of FQH/FCI/moire; FQH on quantum computers; moire + QC; FT Bloch-orbital line; multi-band classical competitors; experiments; scoop watch; perturbative ablation | API `(FQH | "fractional Chern" | "Landau level" | moire) AND ("phase estimation" | "fault-tolerant" | qubitization | "resource estimate")`; `(Laughlin | FQH | "fractional Chern") AND ("quantum computer" | ... | "quantum processor")` (50); `rhombohedral AND ("fractional Chern" | "fractional quantum anomalous" | "anomalous Hall crystal")` (2 pages); `abs:"Bloch orbitals" AND abs:"fault-tolerant"`; `(pentalayer | hexalayer | tetralayer | heptalayer) AND graphene AND fractional AND (hBN | moire)`; `au:Regnault AND au:Bernevig`; `"moire capacitor"`; `(three-body | Schrieffer-Wolff | ...) AND ("fractional Chern" | FQAH) AND ("band mixing" | ...)`; Crossref `fault-tolerant quantum phase estimation fractional Chern insulator moire` |
+| Classical adversary | NQS, DMRG, QMC and AFQMC on moire Chern bands; experiments; FT scoop check | API `abs:rhombohedral AND graphene AND fractional AND (DMRG OR neural OR "Monte Carlo")`; `neural AND ("fractional Chern" OR ... OR "anomalous Hall crystal")`; `DMRG AND ("fractional Chern" OR FQAH) AND (moire OR graphene OR MoTe2)`; `(auxiliary-field OR AFQMC OR "quantum Monte Carlo") AND (moire OR rhombohedral) AND (Chern OR "anomalous Hall")` (2210.11486 only); `rhombohedral AND graphene AND (FQAH OR "fractional Chern")` (40 newest); 17 abs pages in Q14 |
+| Resources | FT costing anchors; FCI/FQH/moire QPE; spectrum amplification; QCELS variants | abs 2302.05531, 2502.15882, 2211.11973, 2303.05714; API `abs:"fractional Chern" AND abs:quantum AND (phase estimation | fault-tolerant | qubitization | resource estimate)` (3, none relevant); `(twisted bilayer | rhombohedral | moire | Chern band) AND (fault-tolerant | quantum algorithm | resource estimation | variational quantum)` (6); Crossref `quantum phase estimation fractional Chern insulator moire resource estimate` (20, none relevant) |
+
+**Local computation used as search support** (not literature, not repo files). The prefilter recomputed momentum-sector dimensions and a back-of-envelope lambda. The classical audit counted truncated-ED dimensions. The resources audit built a SWMcC+hBN continuum model with real form factors, a small multi-band ED pilot (N_k = 9, 12) and a cost script, all in its session scratchpad (`n01_model.py`, `n01_ed.py`, `n01_cost.py`, `lam_scan.txt`).
+
+### 11.4 Screening
+
+**Discovery.**
+- Lens A tested 17 static target families. It killed K-S1 to K-S17 and returned one conditional survivor, S-M1, the multi-band FCI/CDW/AHC competition in hBN-aligned rhombohedral graphene. Its structural finding is a "trilemma": each filter kills a different static family (molecular clusters: floor or cost; ab initio solids: cost and phonon floor; downfolded lattices: floor; exact-Hamiltonian systems: no decision or a disorder floor; WDM static: wall and affordable regime do not overlap).
+- Lens B checked the brief's short-time examples plus seven more problems (K1-K12). It returned **zero candidates**, with two residuals (R1, R2) recorded as `eligible = false`. Its structural reason: short evolution time makes the problem classical by light-cone embedding, moment truncation, or perturbative limits. The only regime that escapes all three folds back into round-1 C01/C07.
+
+**Prefilter** (`round2_prefilter.md`).
+- Inputs: the 6 round-1 reserves (C02, C15, C17, C19, C32, C34), the C14 redesign lane (C14R, optionally merged with C17's Gibbs-only targets), and the two lens outputs.
+- Method: write the most defensible form of each input, then check F1-F3 and L1-L7 against numbers already in the audit record. Drop an input only if the sharpened form fails on existing evidence. If failure depends on a number nobody has computed, send it to audit.
+- Result: **N01 (= S-M1) to audit, alone.** C02, C14R, C15, C17, C19, C32 and C34 dropped, each with a reopen condition (prefilter section 4 register). Five audit slots were deliberately left unfilled.
+- One forward warning: the prefilter estimated lambda at 7e5-1.3e6 meV and made the cost gate G3 the first gate. The resources audit later refuted this (11.6).
+
+**Audits (N01, 3 roles).**
+
+| Role | Verdict (note header) | Decisive content |
+|---|---|---|
+| Novelty | WOUNDED, category B (C for the FQH family) | 2608.12452 had already answered the primary yes/no at 21 sites. Experiments put the T -> 0 state at nu ~ 2/3 in an EQAH/AHC regime in several devices. Alignment windows are measured directly. NQS/iDMRG transfer is a classical scoop risk. |
+| Classical adversary | WOUNDED, leaning to kill | The yes/no is not invariant across the prior (V_val 9-12 meV vs window edge ~10 meV). The experimental competition is finite-T and entropy-driven. Truncated ED reaches N_k = 24-27. The hardness rests on a single family (full torus ED). Proposed kill test K1 -> K2. |
+| Resources | WOUNDED, not killed on cost | lambda from real form factors is 2e4-3.4e4 meV. One (27,3) rung costs S*G ~ 2e12. A decision-grade ladder is ~3e13 (1-3x over the screen). The phase map fails (3e14-1.5e15). |
+
+**Selection** (`round2_selection.md`).
+- N01 ranked 1st of one, **`eligible = false`**. Two hard fails: wall with the decision inside it, and model floor. Plus a marginal cost fail for a decision-grade answer.
+- **Slots 2 and 3 left empty**, "by decision rather than by omission". N01 is parked as WOUNDED, with reopen chain K1 -> K2 -> G2 -> G4. If K1 fails, it goes to `research/KILLBOOK.md`.
+- The dropped prefilter inputs were not re-ranked.
+
+**Red team.** Not run in round 2. There was no eligible candidate.
+
+### 11.5 Inclusion and exclusion criteria (round 2)
+
+Section 6 still applies. Round 2 added the following.
+
+**The round-1 cross-cutting filter, applied up front** (prefilter section 0):
+
+| Filter | Requirement |
+|---|---|
+| F1 decision inside the wall | the observable that carries the decision lives where the multi-family classical wall is, not beside it |
+| F2 cost | S*G <~ 1e13 Toffoli per useful state point |
+| F3 floor | model floor below the solver spread |
+
+The binding protein lessons L1-L7 were checked with them. A single-family classical failure did not count as a wall (L7). This was decisive for N01 at selection.
+
+**Lens-specific screens.**
+- Lens A: the three filters, with early-FT QPE (QCELS) cost conventions: G ~ delta * pi * (lambda/eps) * C_W, S ~ 1e2-1e3 per eigenvalue [ESTIMATE].
+- Lens B: the dimensionless screen K = t_max * E_corr / hbar with t_max ~ hbar/Gamma_eff. Pass condition: K >~ 3-10, *and* a light cone containing many strongly correlated degrees of freedom within t_max, *and* a low model floor. Short-time dynamics of local lattice Hamiltonians was treated as suspect by default, because of classical cluster-expansion algorithms (2210.11490).
+
+**Selection quality bar** (`round2_selection.md` section 2.1): practical use; concrete input -> output; multi-family classical wall with the decision inside it; matched quantum mechanism; S*G <~ 1e13; measurable comparison; scalable benchmark; novelty B/C; model floor below solver spread.
+
+**Filters proposed for any later round** (recommendations, not applied criteria):
+- Prefilter section 5: require up front (a) an eigenvalue-type or few-expectation-value output, (b) a certified classical trial state whose overlap does not decay exponentially, and (c) an explicit L2 ablation that folds the extra degrees of freedom in perturbatively.
+- Selection section 4: require a **floor-to-spread ratio** < 1, i.e. (∂ decision / ∂ parameters) x (prior width), divided by the classical solver spread, at the proposed state point. For N01 it reads >= 1.
+
+### 11.6 Key papers (round 2; verified in the notes)
+
+Round-1 anchors in section 7 are not repeated here. Status markers ([V], [V listing], [title V]) are those of the source note.
+
+**Quantum side, N01 family**
+- Rubin et al., PRX Quantum 4, 040303 (2023), arXiv:2302.05531: Bloch-orbital DF/THC template; LNO Table VI read from the PDF.
+- Low et al., arXiv:2502.15882 (PRX 15, 041016 (2025), per the arXiv page): spectrum amplification.
+- Ding & Lin, arXiv:2211.11973, PRX Quantum 4, 020331 (2023): QCELS. Ding & Lin, arXiv:2303.05714, Quantum 7, 1136 (2023): multi-modal QCELS.
+- Bhardwaj, Munoz, Jones et al., arXiv:2604.12142 and 2606.27734: FT Bloch-UPAW and static structure factor [V listing].
+- Exposito et al., arXiv:2607.11380 (VQE/VQD for FQH manifolds); Bai et al., arXiv:2510.09999 (modified-QPE single-particle DOS of TBG quasicrystals); Xu et al., arXiv:2608.05140 (FQH factory, IBM Heron). These are the only moire/FQH quantum items found; none is an FT costing.
+
+**Classical side, N01**
+- Yu, Herzog-Arbeitman, Kwan, Regnault, Bernevig, arXiv:2407.13770, PRB 112, 075110 (2025).
+- Li, Bernevig, Regnault, arXiv:2504.20140, PRB 112, 075130 (2025).
+- Regnault, Li, Kwan, Bernevig, Herzog-Arbeitman, arXiv:2608.12452 (Aug 2026): moire capacitor effect; multi-band ED FCI at nu = 2/3, 21 sites. The single most decisive paper of round 2.
+- May-Mann, Tan, Ledwith, Shi, Devakul, arXiv:2608.14535 (skyrmion FCI); Desrochers & Vishwanath, arXiv:2607.08822; Kim & Kivelson, arXiv:2609.16483 (entropy-driven transitions).
+- Zhang & Luo, arXiv:2509.09275 (NTB multi-band NQS); Luo, Zaklama, Fu, arXiv:2503.13585; Abouelkomsan, Geier, Fu, arXiv:2512.01863; Abouelkomsan et al., arXiv:2608.00167.
+- Zaletel, Mong, Pollmann, Rezayi, arXiv:1410.3861 (multicomponent iDMRG with LL mixing); Wang & Zaletel, arXiv:2507.07921; He, Simon, Parameswaran, arXiv:2505.06354.
+- Li, Yu, Xu, Bernevig, Regnault, arXiv:2608.23675; Morales-Duran et al., arXiv:2604.16847.
+- Läuchli, Sudan, Moessner, PRB 100, 155142 (2019): Lanczos ED reach (classical audit).
+
+**Experiments, N01**
+- Lu et al., arXiv:2309.17436; Lu et al., arXiv:2408.10203; Waters et al., arXiv:2408.10133, PRX 15, 011045 (2025); Li et al., arXiv:2607.08710 (abstract only).
+- Huo et al., arXiv:2510.15309; Uzan et al., arXiv:2507.20647; Li et al., arXiv:2505.01767; Pan et al., arXiv:2608.24684; Nashabeh & Ochoa, arXiv:2605.16218 (lattice relaxation).
+
+**Lens B, load-bearing for the short-time negative**
+- Wild & Alhambra, arXiv:2210.11490; Zhao, Marvian, Tong, arXiv:2608.19448; D'Anna, Nys, Carrasquilla, arXiv:2511.02809.
+- Wahyutama & Larsson, arXiv:2409.05959, JCTC 2024 (TDDMRG charge migration converged to 2 fs); Dubey & Neufeld, arXiv:2609.23615.
+- Fomichev et al., arXiv:2405.11015; Loaiza et al., arXiv:2602.20270; Kharazi et al., arXiv:2602.20234; Abraham et al., arXiv:2511.17985, JCP 164, 104113 (2026).
+- Ghiasi et al., arXiv:1812.06432, PRB 100, 075146 (2019).
+
+**Lens A, load-bearing kills**
+- Cheung et al., arXiv:1912.08714, PRL 124, 163001 (2020); Rehbehn et al., arXiv:2509.06710 (HCI).
+- Mondal et al. (Lunghi), arXiv:2412.04362 (SMM spin-phonon).
+- Gandolfi et al., arXiv:2201.01308 (1S0 pairing).
+- 1411.1068, 1410.3861, 1209.6606, 1603.03754 (nu = 5/2 multi-family disagreement and its disorder floor).
+
+### 11.7 Duplicate handling (round 2)
+
+1. **Round-1 items reused, not re-searched.** Both lenses began from round-1 notes, and they mark reused anchors "Reused from round 1" or "round-1 [V]" (e.g. 2601.04621, 2603.28648, 2507.00688, 2012.12228). The prefilter and selection ran no new searches and cite the audit record instead.
+2. **Lens kills mapped to existing pool rows.** Lens B: K1 = round-1 C34; K3 = round-1 C31/C28; K5 relies on the C40 kill; K7 = C05 (2308.12352); K10 is C06-type; K12 follows the C08/C09 pattern. Lens A: K-S2 = C33; K-S12 = C14/C17 territory; K-S10 was recorded as an input to C01 gate 1, not as a new row.
+3. **Folding instead of duplicating.**
+   - Lens A folded tMoTe2 FQAH (K-S7) into S-M1 as a secondary target.
+   - The prefilter parked C02 as a conditional **C01 branch**, not a slot: same Hamiltonian, same thermal-preparation gate and same competitor group.
+   - The prefilter merged C17's Gibbs-only targets into the C14R lane and noted that the merged QSI-thermodynamics lane had already been killed as K-S12.
+   - Lens B stated that its only surviving regime folds back into C01/C07 and adds no new slot.
+4. **One candidate, two names.** S-M1 (lens A) = N01 (prefilter onward).
+5. **Repeated verification across agents counts once.** 2608.12452, 2407.13770, 2504.20140, 2302.05531 and 2211.11973 were verified independently by two to four agents.
+6. **Corrections recorded, not overwritten.**
+   - The prefilter's lambda bound (7e5-1.3e6 meV) was replaced by the resources audit's form-factor computation (2e4-3.4e4 meV). Selection records the correction for the state files.
+   - The prefilter's [recalled, UNVERIFIED] experimental-disagreement items were replaced by verified items (novelty audit section 7).
+   - The resources audit corrected the reading of Wang & Zaletel 2507.07921. It is DMRG on a lowest-Landau-level-plus-periodic-potential toy model, not iDMRG on the rhombohedral graphene/hBN continuum model. Lens A had listed it as "iDMRG, single-band so far".
+
+### 11.8 Novelty uncertainty (round 2)
+
+The N01 scoped negative (novelty audit section 9) reads: as of 2026-09-28, the arXiv API and Crossref searches found no fault-tolerant resource estimate, QPE/QCELS study or quantum-advantage study for any interacting moire, FCI, FQH or Landau-level Hamiltonian. The known gaps in that statement, and in round 2 generally:
+
+1. **No cited-by at all.** OpenAlex and Semantic Scholar returned 429 for the whole round. Citing works of 2407.13770, 2503.13585 and 2608.12452 were checked only by arXiv term and author searches. The novelty audit names this as a residual blind spot.
+2. **No general web search**, as in round 1 (11.2). Group pages, talks, press releases and blogs were not searched.
+3. **Narrower coverage in lens B.** The lens says so itself. It also lists what it did not search: theses, patents, conference talks, specific J/B values for Fe-S/Mn-oxo clusters, and the ECHo, XFEL-damage and WDM-XANES literature. K8-K11 are argument-level kills without new citations.
+4. **Full-text reading was partial.** Key numbers from 2608.12452 (the n2 = n3 = 0 CDW result, truncation levels, gaps) came from HTML summaries and are flagged for PDF confirmation. 2607.08710 was read as an abstract only. The 2512.01863 energy comparison is marked unreliable. Many classical and experimental items are [V listing] or [title V] only.
+5. **Recency and scoop risk.** The decisive papers are weeks old: 2608.12452 (12 Aug 2026), 2608.14535, 2608.23675, 2609.16483. Both N01 audits and the selection rate scoop risk high. On the classical side: the Bernevig/Regnault multi-band ED series and the Fu/Luo NQS groups. On the quantum side: the Rubin/Babbush/Low group, which already has Bloch-orbital DF/THC and spectrum amplification.
+6. **Repositories and indexes not queried in round 2:** ChemRxiv, patents, INSPIRE-HEP, NASA ADS, Web of Science and Scopus. There were no non-English queries. The section 9 gaps carry over.
+7. **Items still marked [UNVERIFIED] or [ESTIMATE].**
+   - Lens A: the FeMoco THC Toffoli count (~1e10); the Cs APV method spread and its QED and neutron-skin floors; the MAE k-point requirement; FDT thermometry references; tMoTe2 parameter literature beyond 2406.20036.
+   - Lens B: J/B values; Vinko et al. 2014; the 163Ho/ECHo literature; the XFEL-damage literature; the first-author attribution of doi:10.1038/s41567-022-01727-4.
+   - Prefilter, on dropped inputs only: KYbSe2 analyses (C15), YbMgGaO4 disorder specifics (C19), and CASSCF-SO reproducing Gould-type observables (C32). These were never verified, because the inputs were dropped on other, stated grounds.
+   - Resources audit: every lambda, C_W, overlap and S*G figure is a derivation from scratchpad scripts. C_W is formula-based, not compiled (about 2x uncertainty). The first-quantized band-basis block encoding and the spectrum-amplification application are the auditor's own derivations. The E_SOS value is estimated, not computed by ED.
+8. **What "not found" covers.** Every novelty class in round 2 is scoped to the logged queries through 2026-09-28. "Not found" is not proof of absence. That applies to category B for N01 and to C for the FQH family.
+
+### 11.9 Reproducibility pointers (round 2)
+
+- Query logs: section 1 of `round2_discovery_static_inside_wall.md`; section 5 of `round2_discovery_short_time_dynamics_inside_wall.md`; the end of each `audit_N01_*.md`.
+- Drop register and reopen conditions: `round2_prefilter.md` section 4.
+- N01 ranking, quality-bar table, reopen chain and round-2 cross-cutting finding: `round2_selection.md` sections 2-4.
+- Resource scripts: named in `audit_N01_resources.md` section 10. They live in the auditor's session scratchpad and are **not** in the repository.

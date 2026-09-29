@@ -129,3 +129,18 @@ If compute must be cut: C2/C3 at N = 12–16 (γ = 0) and the transmission test 
 - **Pre-registration + deviation log:** `research/experiments/PREREGISTERED/PREREG_G1_C1_Q4.md`. Ledger: `research/experiments/README.md`.
 - **Code:** `src/qapf/nmr/` (spins.py: sector-exact, Pauli, classical spins; circuit_pop.py: shot-based quantum circuit), `src/qapf/protein`, `src/qapf/sampling`, `scripts/`.
 - **Governor state:** `research/results/RAW/master/` (governor.jsonl, spool.jsonl, cancel.txt, control.json, joblogs/).
+
+---
+
+## 2026-09-28 (evening): post-sprint topic search — top-3 quantum-advantage candidates
+
+- Full report: `research/reports/TOP3_QUANTUM_ADVANTAGE_CANDIDATES.md`. Search trail: `research/reports/LITERATURE_SEARCH_AUDIT.md`. Working notes: `research/reports/lit_work/`.
+- **Round 1:** 12 discovery lenses, a pool of 50, 6 shortlisted with 3 audits each, then selection and a hostile red team.
+- **Round 2:** 2 targeted lenses using the round-1 filter. All reserves were re-screened. N01 (the rhombohedral-graphene FCI competition) was audited and marked not eligible.
+- **Outcome: 1 conditional finalist, not 3.**
+  - C01 is the correlated thermal S_ee(q,w) of warm dense hydrogen (r_s~2, theta 0.25-0.5) for XRTS.
+  - Novelty is category B (scoped). The claim target is category 3, accuracy class only.
+  - It is gated by an information test (K-C01a), a multi-family classical gate (K-C01b), a bound on thermal-state preparation, and a resource recheck.
+  - Scoop risk is high: arXiv:2605.22920 (verified) announces WDM linear response as ongoing work.
+- Slots 2-3 are deliberately left empty.
+- Next step, only on the user's go-ahead: pre-register K-C01a, a laptop-scale classical information test.

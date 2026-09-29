@@ -128,3 +128,11 @@ Durable conclusions (L = literature claim with key; I(prog) = program reasoning)
    - Physics-based all-atom sampling is a no-applicable-algorithm negative, and the only examined regime a new algorithm could open.
 5. **Cost every pre-registered test against the compute cap** before registering it.
 6. **Argue classical-ease results from classical cost**, not from a quantum cost ratio at an assumed gate time.
+
+
+## 2026-09-28: Lesson from the top-3 topic search (source: `reports/lit_work/selection.md`, `round2_prefilter.md`)
+
+1. **The wall and the information are usually in different places.** This held for all audited candidates: WDM, spin ice, TMD e-h plasma, strong-field ionization, supernova response, kilonova opacity and FCI graphene. Either the regime where exact classical methods fail is not what the data or decisions need, or cheap approximate classical families already match the measured observable. Test this first.
+2. **Cost is dominated by sampling and state preparation, not by Hamiltonian simulation.** Real-frequency response and Gibbs-state targets reached S*G ~ 1e13-1e19 Toffoli per useful state point. Screen for S*G <~ 1e13 before any other analysis.
+3. **Short circuits from lifetime broadening come with a cost:** the same broadening usually washes out the correlation signature (multinuclear L-edge RIXS).
+4. **Static chemistry trilemma.** Active-space QPE is cheap but hits the model floor. Full-basis QPE is too expensive and has poor overlap. The advantage over DMRG is polynomial.
